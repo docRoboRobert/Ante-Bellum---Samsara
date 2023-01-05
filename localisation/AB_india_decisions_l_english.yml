@@ -1,0 +1,14 @@
+﻿l_english:
+
+ #COUNTRY RENAMES DECISIONS
+ 
+ india_BKH_rename_1_title:0 "Alternate Country Name"
+ india_BKH_rename_1_desc:0 "Change starting name of your country from Qarkanad, to its alternate version - Black Khanate. No new mechanics will be gained, it is only a cosmetic change."
+ india_YAD_rename_1_title:0 "Alternate Country Name"
+ india_YAD_rename_1_desc:0 "Change starting name of your country from Seuna, to its second version - Yadavas. Rulers of Seuna claimed to be desendants of ancient Yadava dynasty, thus titling their realm like that. No new mechanics will be gained, it is only a cosmetic change."
+ 
+ #Malankara decisions
+ 
+ india_convert_to_malankara_title:0 "Convert to Malankara"
+ india_convert_to_malankara_desc:0 "Influence of Christianity within our country has grown high enough that it is worthy considering adopting Malankara as our state religion."
+ india_convert_to_malankara.tooltip:0 "All known nations that also follow Malankara will be pleased with our decision"

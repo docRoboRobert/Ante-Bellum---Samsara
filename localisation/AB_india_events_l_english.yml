@@ -1,0 +1,34 @@
+﻿l_english:
+
+ #Misc / utility events
+ 
+ abindia_shitevent.1.t:0 "What do you think you're doing?"
+ abindia_shitevent.1.d:0 "In case you haven't noticed, this nation isn't supposed to be played by the player. \n \nParmistan is a meme tag added as a placeholder to replace Timurid Empire before the upcoming Ante Bellum Persia Update. The non-existance of Timurid nation is vital for the India Expansion mod's lore, therefore such decision was made. \n \nAs this nation is just a placeholder, do not expect any flavour content besides what you've already seen. No unique events nor goals. \n \nIf you realized your mistake, please reload the game and try to play actual nation instead. \n \nYou're still reading this aren't you? Listen, it's an empty tag to fill in the void left by necessary removal of Timurids. That's it. AI is supposed to play this nation for a while and then (hopefully) get conquered before disrupting the balance of cosmos. \n \nThis isn't lore-accurate at all. Stop looking. \n \nOh, you're reading till the end expecting some sort of crazy twist? Nuh uh... \n \nCome on, just return to the main menu. That's it! You've made a mistake. Time to move on. \n \n... \n \nThe code to immortality orb is 2751094"
+ abindia_shitevent.1.a:0 "Let's make it quick then"
+ abindia_shitevent.1.tooltip1:0 "YOUR GAME WILL CRASH NOW!"
+ abindia_shitevent.1.b:0 "Listen here, I know EXACTLY what I'm doing"
+ abindia_shitevent.1.tooltip2:0 "You will continue to play the broken nation but with different national indeas."
+ 
+ #Mission events
+ abindia_mission.1.t:0 "Expedition to Lakshadweeps"
+ abindia_mission.1.d:0 "To the north of Maldives lies another chain of tiny islands known as Lakshadweeps. Those tiny rocks west of Malabar coast were known and inhabited by the locals since antiquity. Due to their size and insignificane, nobody has yet made any effort of establishing permanent rule over there. For centuries islands served as stop and resupply hub for merchants and travellers. The locals, despite adopting Islam thanks to Ubaidullah in 661 CE, still live in free stateless society. As our pirate republic seeks expansion, claiming those islands for the black flag would be a perfect beginning. Not to mention that once within our hands, those islands would make a perfect naval base to organize pirate raids on Western Indian Coast. \nIntegrating the islands permanently to our republic won't be an easy task though. Land there is mostly empty and unsustainable. First settlers to arrive there to establish administrative structures would require constant flow of supplies from Maldives before building enough infrastructure to support basic fishing economy.But once it's done, we can expect it to serve as excellent naval base. It is a mission worth consideration."
+ abindia_mission.1.a:0 "The islands belong to the pirates!"
+ abindia_mission.1.tooltip:0 "We will send our men to establish permanent outpost on Lakshadweeps Archipelago. Our chances of success will be the highest if we can protect ourselves from the unhappy locals."
+ abindia_mission.1.b:0 "We could use eager men somewhere else"
+ abindia_mission.2.t:0 "Status of Sri Lanka"
+ abindia_mission.2.d:0 "Recently, we've greatly expanded our realm from small archipelago to sizeable island of Sri Lanka. Terrirories of which reach deep indland, which may pose difficulties in governing it as a pirate state. We must also consider native population living on the island and local noble class which definetely will not be happy with our radical anti-monarchic views. Shall we liberate the population from their masters or let them remain slaves to their overlords? Shall we directly control the land for future exploitation or leave it to its own and only set on the coast? We must decide before we continue our endeavours."
+ abindia_mission.2.a:0 "Keep the status quo"
+ abindia_mission.2.b:0 "Liberate its people and occupy the island"
+ abindia_mission.2.c:0 "Take ports and establish puppet state elsewhere"
+ abindia_mission.2.e:0 "Give island its liberties but keep direct control"
+ abindia_mission.3.t:0 "The Great Raid on Villarvattom"
+ abindia_mission.3.d:0 "Our pirate republic has successfully overwhelmed malankara christians on Malabar coast and managed to run-sack most of the coastal ports. The cherry on top being the capture of Villarvattom - largest and most developed port in Southern India, which also serves as most important holy city for malankara christians. City of great splendor, now within our hands. Its riches within our reach. Our boys are hungry for 'yer booty, so how shall we treat our new posession?"
+ abindia_mission.3.a:0 "Let's keep it modest, otherwise there will be no future use"
+ abindia_mission.3.b:0 "Take all that's not screwed to the floor... then give me screwdriver!"
+ abindia_mission.3.c:0 "It belongs to us as our new pirate heaven!"
+ abindia_mission.3.tooltip:0 "Great City of Villarvattom will be plundered, its riches distributed among our men. Malankara christians will be greatly upset about it."
+ abindia_mission.3.tooltip2:0 "Since holy city now lies within pirate hands, all §MMalankara§! nations will get §R-75§! opinion of us and get §YDiplomatic Insult Casus Belli§! against our country."
+ abindia_mission.4.t:0 "Rise of new Capital"
+ abindia_mission.4.d:0 "With the recent conquest of Hormuz and development on the island, the place grown prominent and its importance becomes more and more significant. Strategic location of the island makes it decent fortress and perfect trade post to control sea routes in all of Persian Gulf. Suggestions to abandon our poor old capital and move royal court there recently become louder and louder, especially after we've finished construction of new important buildings on the island."
+ abindia_mission.4.a:0 "Sultan of Oman lives in Hormuz now"
+ abindia_mission.4.b:0 "It will serve better as a fortress"

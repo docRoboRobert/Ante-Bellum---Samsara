@@ -1,0 +1,28 @@
+﻿l_english:
+ india_achievement_diff_1: "Difficulty: £mil£"
+ india_achievement_diff_2: "Difficulty: £mil£ £mil£"
+ india_achievement_diff_3: "Difficulty: £mil£ £mil£ £mil£"
+ india_achievement_diff_4: "Difficulty: £mil£ £mil£ £mil£ £mil£"
+ india_achievement_diff_5: "Difficulty: £mil£ £mil£ £mil£ £mil£ £mil£"
+ 
+ india_achievement_ironman_on: "§YTo earn achievements, Ironman must be ON§!"
+ 
+ india_achievement_tonga_time_title: "Achievement Available: §YIndian Tonga Time§!"
+ india_achievement_tonga_time_desc: "Starting as @DGL Maldives conquer every island (highlighted) on the Indian Ocean before the year 1500."
+ achiev_tonga_time_desc: "§YStarting as @DGL Maldives own every (highlighted) island on the Indian Ocean before the year 1500.§! \n"
+ 
+ india_achievement_tamilakam_title: "Achievement Available: §YTamilakam§!"
+ india_achievement_tamilakam_desc: "Starting as any Tamil Kingdom @PND @COA @PLV @NLM @JFN own all provinces within §GDravidian§! culture group, then convert all of those provinces to either §YTamil§! or §YAndhran Tamili§!. Your primary culture must match your provinces."
+ achiev_tamilakam_desc: "Starting as any Tamil Kingdom @PND @COA @PLV @NLM @JFN own all provinces within §GDravidian§! culture group, then convert all of those provinces to either §YTamil§! or §YAndhran Tamili§!. Your primary culture must match your provinces.\n"
+ 
+ india_achievement_malaysialam_title: "Achievement Available: §YMalaysialam§!"
+ india_achievement_malaysialam_desc: "While having §GMalayalam§! as primary culture, conquer and core all of §YMalaya§! region."
+ achiev_malaysialam_desc: "While having §GMalayalam§! as primary culture, conquer and core all of §YMalaya§! region.\n"
+ 
+ india_achievement_deva_victory_title: "Achievement Available: §YDeva victory§!"
+ india_achievement_deva_victory_desc: "As any §MHindu§! nation from §YIndian Subcontinent§! conquer all of §YPersia and Khorasan§! region and convert it to your religion."
+ achiev_deva_victory_desc: "As any §MHindu§! nation from §YIndian Subcontinent§! conquer all of §YPersia and Khorasan§! region and convert it to your religion.\n"
+ 
+ india_achievement_tamil_speedrun_title: "Achievement Available: §YCan't wait to do it myself!§!"
+ india_achievement_tamil_speedrun_desc: "Starting as @PLV Pallava unite all the Tamil lands (highlighted) before §RNandivarman V§! - your starting ruler dies."
+ achiev_tamil_speedrun_desc: "Starting as @PLV Pallava unite all the Tamil lands (highlighted) before §RNandivarman V§! - your starting ruler - dies.\n"
