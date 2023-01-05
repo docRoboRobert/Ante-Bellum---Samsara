@@ -1,0 +1,7 @@
+government = monarchy
+add_government_reform = nayankara_reform
+technology_group = indian
+religion = hinduism
+primary_culture = north_tamil
+add_accepted_culture = tamil
+capital = 2083

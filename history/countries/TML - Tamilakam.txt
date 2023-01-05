@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = nayankara_reform
+government_rank = 3
+technology_group = indian
+religion = hinduism
+primary_culture = tamil
+add_accepted_culture = north_tamil
+add_accepted_culture = telegu
+capital = 2026

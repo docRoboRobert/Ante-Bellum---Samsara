@@ -219,6 +219,12 @@
  QDI_ADJ:0 "Qarikanadi"
  BHD:0 "Black Horde"
  BHD_ADJ:0 "Black Horde"
+ RDY:0 "Reddy"
+ RDY_ADJ:0 "Reddi"
+ NTL:0 "Northern Tamililand"
+ NTL_ADJ:0 "North Tamililandan"
+ TML:0 "Tamilakam"
+ TML_ADJ:0 "Tamil"
  
  NNN:0 "Parmistan"
  NNN_ADJ:0 "Parmistan"
