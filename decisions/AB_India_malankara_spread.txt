@@ -1,0 +1,55 @@
+country_decisions = {
+
+	india_convert_to_malankara = {
+		major = yes
+		potential = {
+			OR = {
+				religion = hinduism
+				religion = sarnaism
+			}
+			any_owned_province = {
+				religion = malankara
+			}
+		}
+		allow = {
+			any_owned_province = {
+				religion = malankara
+			}
+			stability = -2
+			NOT = { religious_unity = 0.8 }
+			num_of_religion = {
+				religion = malankara
+				value = 0.35
+			}
+		}
+		effect = {
+			change_religion = malankara
+			add_corruption = 1
+			custom_tooltip = india_convert_to_malankara.tooltip
+			hidden_effect = {
+				every_known_country = {
+					limit = { religion = malankara }
+					add_opinion = {
+						who = ROOT
+						modifier = converted_to_malankara_1
+					}
+				}
+			}
+			add_church_power = 25
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { 		#AI won't convert unless nearly all of nation is malankara
+					num_of_religion = {
+						religion = malankara
+						value = 0.8
+					}
+				}
+				NOT = { stability = -1 }
+			}
+		}
+		ai_importance = 25
+	}
+}

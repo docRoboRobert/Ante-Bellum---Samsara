@@ -1,0 +1,42 @@
+country_decisions = {
+
+	india_BKH_rename_1 = {
+		major = yes
+		potential = {
+			tag = BKH
+			NOT = { has_country_flag = BKH_changed_name_flag }
+			NOT = { is_year = 1445 }
+		}
+		allow = {
+			NOT = { is_year = 1445 }
+		}
+		effect = {
+			override_country_name = BKH_RENAME_1
+			set_country_flag = BKH_changed_name_flag 
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
+	
+	india_YAD_rename_1 = {
+		major = yes
+		potential = {
+			tag = YAD
+			NOT = { has_country_flag = YAD_changed_name_flag }
+			NOT = { is_year = 1445 }
+		}
+		allow = {
+			NOT = { is_year = 1445 }
+		}
+		effect = {
+			override_country_name = YAD_RENAME_1
+			set_country_flag = YAD_changed_name_flag 
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
+}

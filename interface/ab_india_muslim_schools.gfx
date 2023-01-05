@@ -1,0 +1,18 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_icon_muslim_school_digambara"
+		texturefile = "gfx/interface/religious_schools/icon_muslim_school_digambara.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_icon_muslim_school_svetambara"
+		texturefile = "gfx/interface/religious_schools/icon_muslim_school_svetambara.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_icon_muslim_school_yapaniya"
+		texturefile = "gfx/interface/religious_schools/icon_muslim_school_yapaniya.dds"
+	}
+	
+}

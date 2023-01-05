@@ -1,0 +1,40 @@
+#Misc or utility events
+namespace = abindia_shitevent
+
+country_event = {
+	id = abindia_shitevent.1
+	title = abindia_shitevent.1.t
+	desc = abindia_shitevent.1.d
+	picture = ABINDIA_JERMY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = NNN
+		ai = no
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = can_have_based_ideas_flag
+		}
+	}
+	
+	option = {
+		name = abindia_shitevent.1.a
+		custom_tooltip = abindia_shitevent.1.tooltip1
+		hidden_effect = {
+			every_province = {
+				limit = { owned_by = NNN }
+				cede_province = ULM
+			}
+		}
+	}
+	
+	option = {
+		name = abindia_shitevent.1.b
+		highlight = yes
+		custom_tooltip = abindia_shitevent.1.tooltip2
+		swap_free_idea_group = yes
+	}
+}

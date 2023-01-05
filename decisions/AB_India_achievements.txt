@@ -1,0 +1,306 @@
+country_decisions = {
+
+	india_achievement_tonga_time = {
+		major = yes
+		potential = {
+			tag = DGL
+			NOT = { has_country_flag = achiev_tonga_time }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1099
+				province_id = 1201
+				province_id = 1248
+				province_id = 1998
+				province_id = 1999
+				province_id = 2683
+				province_id = 2684
+				province_id = 4020
+				province_id = 5171
+				area = lanka_area
+				area = south_lanka_area
+				area = indian_ocean_islands_area
+				area = mascarenes_area
+				area = betsimasaraka_area
+				area = sakalava_area
+				area = southern_madagascar
+				area = madagascar_highlands_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = india_achievement_ironman_on
+				ironman = yes
+			}
+			tag = DGL
+			is_free_or_tributary_trigger = yes
+			NOT = { is_year = 1500 }
+			lanka_area = {
+				type = all
+				owned_by = ROOT
+			}
+			south_lanka_area = {
+				type = all
+				owned_by = ROOT
+			}
+			indian_ocean_islands_area = {
+				type = all
+				owned_by = ROOT
+			}
+			mascarenes_area = {
+				type = all
+				owned_by = ROOT
+			}
+			betsimasaraka_area = {
+				type = all
+				owned_by = ROOT
+			}
+			sakalava_area = {
+				type = all
+				owned_by = ROOT
+			}
+			southern_madagascar = {
+				type = all
+				owned_by = ROOT
+			}
+			madagascar_highlands_area = {
+				type = all
+				owned_by = ROOT
+			}
+			owns = 1099
+			owns = 1201
+			owns_core_province = 1248
+			owns = 1998
+			owns = 1999
+			owns = 2683
+			owns = 2684
+			owns = 4020
+			owns_core_province = 5171
+		}
+		effect = {
+			custom_tooltip = india_achievement_diff_4
+			custom_tooltip = achiev_tonga_time_desc
+			set_country_flag = achiev_tonga_time
+			add_treasury = 1
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
+	
+	india_achievement_tamilakam = {
+		major = yes
+		potential = {
+			OR = {
+				primary_culture = tamil
+				primary_culture = north_tamil
+			}
+			NOT = { has_country_flag = achiev_tamilakam }
+		}
+		provinces_to_highlight = {
+			culture_group = dravidian
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = india_achievement_ironman_on
+				ironman = yes
+			}
+			OR = { 
+				tag = PND
+				tag = COA
+				tag = PLV
+				tag = NLM
+				tag = JFN
+			}
+			is_free_or_tributary_trigger = yes
+			owns_all_provinces = {
+				continent = asia
+				culture_group = dravidian
+			}
+			OR = {
+				AND = {
+					primary_culture = tamil
+					all_owned_province = {
+						NOT = { culture = malayalam }
+						NOT = { culture = kannada }
+						NOT = { culture = telegu }
+						NOT = { culture = north_tamil }
+						NOT = { culture = malayankara_toma }
+					}
+				}
+				AND = {
+					primary_culture = north_tamil
+					all_owned_province = {
+						NOT = { culture = malayalam }
+						NOT = { culture = kannada }
+						NOT = { culture = telegu }
+						NOT = { culture = tamil }
+						NOT = { culture = malayankara_toma }
+					}
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = india_achievement_diff_2
+			custom_tooltip = achiev_tamilakam_desc
+			set_country_flag = achiev_tamilakam
+			add_treasury = 1
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
+	
+	india_achievement_malaysialam = {
+		major = yes
+		potential = {
+			primary_culture = malayalam
+			NOT = { has_country_flag = achiev_malaysialam }
+		}
+		provinces_to_highlight = {
+			region = malaya_region
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = india_achievement_ironman_on
+				ironman = yes
+			}
+			primary_culture = malayalam
+			is_free_or_tributary_trigger = yes
+			malaya_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			custom_tooltip = india_achievement_diff_3
+			custom_tooltip = achiev_malaysialam_desc
+			set_country_flag = achiev_malaysialam
+			add_treasury = 1
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
+	
+	india_achievement_deva_victory = {
+		major = yes
+		potential = {
+			religion = hinduism
+			capital_scope = { superregion = india_superregion }
+			NOT = { has_country_flag = achiev_deva_victory }
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = persia_region
+				region = khorsan_region
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = india_achievement_ironman_on
+				ironman = yes
+			}
+			religion = hinduism
+			capital_scope = { superregion = india_superregion }
+			is_free_or_tributary_trigger = yes
+			persia_region = {
+				type = all
+				owned_by = ROOT
+				religion = hinduism
+			}
+			khorasan_region = {
+				type = all
+				owned_by = ROOT
+				religion = hinduism
+			}
+		}
+		effect = {
+			custom_tooltip = india_achievement_diff_4
+			custom_tooltip = achiev_deva_victory_desc
+			set_country_flag = achiev_deva_victory
+			add_treasury = 1
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
+	
+	india_achievement_tamil_speedrun = {
+		major = yes
+		potential = {
+			tag = PLV
+			NOT = { has_country_flag = achiev_tamil_speedrun }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5191
+				province_id = 4420
+				province_id = 2100
+				province_id = 5186
+				province_id = 5184
+				province_id = 4414
+				province_id = 2085
+				province_id = 538
+				province_id = 5172
+				area = tanjore_area
+				area = south_carnatic_area
+				area = madura_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = india_achievement_ironman_on
+				ironman = yes
+			}
+			tag = PLV
+			has_ruler = "Nandivarman V"
+			tanjore_area = {
+				type = all
+				owned_by = ROOT
+			}
+			south_carnatic_area = {
+				type = all
+				owned_by = ROOT
+			}
+			madura_area = {
+				type = all
+				owned_by = ROOT
+			}
+			OR = {
+				owns = 2100
+				owns = 5186
+			}
+			owns_core_province = 2026
+			owns_core_province = 536
+			owns_core_province = 4420
+			owns_core_province = 1947
+			owns = 5172
+			owns = 538
+			owns = 2085
+			owns = 5184
+			owns = 4414
+			owns = 5191
+		}
+		effect = {
+			custom_tooltip = india_achievement_diff_5
+			custom_tooltip = achiev_tamil_speedrun_desc
+			set_country_flag = achiev_tamil_speedrun
+			add_treasury = 1
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
+}

@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "ABINDIA_JERMY_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/ABindia_jermy_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+}
