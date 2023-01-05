@@ -1,0 +1,463 @@
+reconciliate_with_heathens_aspect = {
+	cost = 100
+	effect = {
+		hidden_effect = { 
+			clr_malankara_aspects_buffs = yes
+			add_country_modifier = {
+				name = reconciliate_with_heathens_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = {
+		religious_unity = 0.1
+		tolerance_heathen = 2
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0.25
+			religious_unity = 0.95
+		}
+		modifier = {
+			factor = 0.5
+			religious_unity = 0.75
+		}
+		modifier = {
+			factor = 5
+			NOT = { religious_unity = 0.75 }
+		}
+		modifier = {
+			factor = 0
+			has_global_modifier_value = {
+				which = global_missionary_strength
+				value = 0.05
+			}
+		}
+	}
+}
+
+centralized_thoma_authority_aspect = {
+	cost = 100
+	effect = {
+		hidden_effect = { 
+			clr_malankara_aspects_buffs = yes
+			add_country_modifier = {
+				name = centralized_thoma_authority_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = {
+		reform_progress_growth = 0.05
+		max_absolutism = 10
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0.25
+			current_age = age_of_discovery
+		}
+		modifier = {
+			factor = 0.25
+			current_age = age_of_reformation
+		}
+		modifier = {
+			factor = 2
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 0.2
+			estate_influence = {
+				estate = estate_church
+				influence = 80
+			}
+		}
+	}
+}
+
+tamil_cooperation_aspect = {
+	cost = 100
+	effect = {
+		hidden_effect = { 
+			clr_malankara_aspects_buffs = yes
+			add_country_modifier = {
+				name = tamil_cooperation_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = {
+		production_efficiency = 0.1
+	}
+	ai_will_do = {
+		factor = 15
+	}
+}
+
+continue_missions_aspect = {
+	cost = 100
+	effect = {
+		hidden_effect = { 
+			clr_malankara_aspects_buffs = yes
+			add_country_modifier = {
+				name = continue_missions_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = {
+		warscore_cost_vs_other_religion = -0.1
+	}
+	ai_will_do = {
+		factor = 15
+	}
+}
+
+organize_missionaries_aspect = {
+	cost = 100
+	effect = {
+		hidden_effect = { 
+			clr_malankara_aspects_buffs = yes
+			add_country_modifier = {
+				name = organize_missionaries_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = {
+		prestige_per_development_from_conversion = 0.5
+		missionary_maintenance_cost = -0.15
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 1.5
+			current_age = age_of_discovery
+		}
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+		modifier = {
+			factor = 0.5
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 3
+			estate_influence = {
+				estate = estate_church
+				influence = 80
+			}
+		}
+		modifier = {
+			factor = 0.75
+			religious_unity = 0.75
+		}
+	}
+}
+
+footsteps_of_thomas_aspect = {
+	cost = 100
+	effect = {
+		hidden_effect = { 
+			clr_malankara_aspects_buffs = yes
+			add_country_modifier = {
+				name = footsteps_of_thomas_aspect_modifier
+				duration = 3650
+			}
+			define_explorer = {
+				shock = 1
+				fire = 1
+				manuever = 1
+				siege = 0
+			}
+		}
+	}
+	modifier = {
+		colonists = 1
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			current_age = age_of_discovery
+		}
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+		modifier = {
+			factor = 2
+			estate_influence = {
+				estate = estate_burghers
+				influence = 50
+			}
+		}
+		modifier = {
+			factor = 2
+			estate_influence = {
+				estate = estate_burghers
+				influence = 75
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 1 }
+		}
+	}
+}
+
+order_protectors_of_christ_aspect = {
+	cost = 100
+	effect = {
+		hidden_effect = { 
+			clr_malankara_aspects_buffs = yes
+			add_country_modifier = {
+				name = order_protectors_of_christ_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = {
+		discipline = 0.03
+	}
+	ai_will_do = {
+		factor = 15
+	}
+}
+
+translate_scripture_aspect = {
+	cost = 100
+	effect = {
+		hidden_effect = { 
+			clr_malankara_aspects_buffs = yes
+			add_country_modifier = {
+				name = translate_scripture_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = {
+		promote_culture_cost = -0.2
+		global_unrest = -1
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 1.5
+			num_accepted_cultures = 1
+		}
+		modifier = {
+			factor = 2
+			num_accepted_cultures = 3
+		}
+	}
+}
+
+church_education_aspect = {
+	cost = 100
+	effect = {
+		hidden_effect = { 
+			clr_malankara_aspects_buffs = yes
+			add_country_modifier = {
+				name = church_education_aspect_modifier
+				duration = 3650
+			}
+			change_innovativeness = 1
+		}
+	}
+	modifier = {
+		institution_spread_from_true_faith = 0.25
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 1.5
+			in_golden_age = yes
+		}
+		modifier = {
+			factor = 0.1
+			innovativeness = 95
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
+				tech_difference = 1
+			} 
+		}
+		modifier = {
+			factor = 5
+			any_neighbor_country = {
+				tech_difference = 2
+			} 
+		}
+		modifier = {
+			factor = 0
+			innovativeness = 100
+		}
+	}
+}
+
+study_world_aspect = {
+	cost = 100
+	effect = {
+		hidden_effect = { 
+			clr_malankara_aspects_buffs = yes
+			add_country_modifier = {
+				name = study_world_aspect_modifier
+				duration = 3650
+			}
+			define_advisor = {
+				type = philosopher
+				skill = 2
+				religion = ROOT
+				discount = yes
+				cost_multiplier = 0.5
+			}
+		}
+	}
+	modifier = {
+		technology_cost = -0.05
+		monthly_splendor = 1
+	}
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 3
+			in_golden_age = yes
+		}
+		modifier = {
+			factor = 0.2
+			innovativeness = 95
+		}
+		modifier = {
+			factor = 3
+			any_neighbor_country = {
+				tech_difference = 1
+			} 
+		}
+		modifier = {
+			factor = 6
+			any_neighbor_country = {
+				tech_difference = 2
+			} 
+		}
+		modifier = {
+			factor = 9
+			any_neighbor_country = {
+				tech_difference = 3
+			} 
+		}
+		modifier = {
+			factor = 0.1
+			innovativeness = 100
+		}
+	}
+}
+
+defensive_monasteries_aspect = {
+	cost = 100
+	effect = {
+		hidden_effect = { 
+			clr_malankara_aspects_buffs = yes
+			add_country_modifier = {
+				name = defensive_monasteries_aspect_modifier
+				duration = 3650
+			}
+			define_advisor = {
+				type = commandant
+				skill = 2
+				religion = ROOT
+				discount = yes
+				cost_multiplier = 0.75
+			}
+		}
+	}
+	modifier = {
+		fire_damage_received = -0.075
+		defensiveness = 0.10
+	}
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+	}
+}
+
+ties_with_old_world_aspect = {
+	cost = 100
+	effect = {
+		hidden_effect = { 
+			clr_malankara_aspects_buffs = yes
+			add_country_modifier = {
+				name = ties_with_old_world_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = {
+		diplomats = 1
+		embracement_cost = -0.1
+	}
+	ai_will_do = {
+		factor = 15
+	}
+}
+
+prime_production_rights_aspect = {
+	cost = 100
+	effect = {
+		hidden_effect = { 
+			clr_malankara_aspects_buffs = yes
+			add_country_modifier = {
+				name = prime_production_rights_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	ai_will_do = {
+		factor = 15
+	}
+}
+
+vassal_charity_aspect = {
+	cost = 100
+	effect = {
+		hidden_effect = { 
+			clr_malankara_aspects_buffs = yes
+			add_country_modifier = {
+				name = vassal_charity_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = {
+		diplomatic_upkeep = 1
+		reduced_liberty_desire = 15
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			num_of_subjects = 3
+		}
+		modifier = {
+			factor = 3
+			any_subject_country = { liberty_desire = 50 }
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { num_of_subjects = 1 }
+		}
+		modifier = {
+			factor = 0
+			is_subject = yes
+		}
+	}
+}

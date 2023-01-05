@@ -1,0 +1,32 @@
+#Permanent province modifiers
+
+narmada_river_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+
+vembanad_lake_modifier = {
+	province_trade_power_value = 10
+}
+
+diamond_deposits_modifier = {
+	trade_goods_size = 1
+	trade_value = 1
+}
+
+dharmapuri_mango_modifier = {
+	trade_value = 1
+	trade_goods_size_modifier = 0.1
+}
+
+ponnaiyar_battle_memorial_modifier = {
+	trade_value_modifier = 0.1
+	local_governing_cost = -0.2
+	prestige_from_land = 0.05
+	prestige_decay = -0.005
+}
+
+lakshadweep_island_modifier = {
+	local_development_cost = 0.45
+	supply_limit_modifier = -0.25
+}

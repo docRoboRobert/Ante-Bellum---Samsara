@@ -1,0 +1,267 @@
+protector_of_village = {
+	global_unrest = -1
+	shock_damage_received = -0.075
+
+	allow = {
+		religion = sarnaism
+	}
+	sprite = 23
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_balanced
+			factor = 2
+		}
+		modifier = {
+			NOT = { stability = 0 }
+			factor = 2
+		}
+	}
+}
+
+gaon_khunt = {
+	global_prosperity_growth = 0.1
+	development_cost = -0.05
+
+	allow = {
+		religion = sarnaism
+		OR = {
+			tag = JPR
+			owns = 2048
+			reverse_has_opinion = {
+				who = JPR
+				value = 100
+			}
+		}
+	}
+	sprite = 18
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_balanced
+			factor = 2
+		}
+		modifier = {
+			personality = ai_militarist
+			factor = 0.5
+		}
+	}
+}
+
+gram_deoti = {
+	movement_speed = 0.1
+	hostile_attrition = 1
+	max_hostile_attrition = 1
+	allow = {
+		religion = sarnaism
+		OR = {
+			tag = BST
+			tag = KNK
+			owns = 547
+			owns = 4445
+			reverse_has_opinion = {
+				who = BST
+				value = 100
+			}
+			reverse_has_opinion = {
+				who = KNK
+				value = 100
+			}
+		}
+	}
+	sprite = 19
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_militarist
+			factor = 2
+		}
+	}
+}
+
+dharmes = {
+	global_manpower_modifier = 0.05
+	technology_cost = -0.05
+	
+	allow = {
+		religion = sarnaism
+		OR = {
+			tag = KJH
+			owns = 5214
+			reverse_has_opinion = {
+				who = KJH
+				value = 100
+			}
+		}
+	}
+	sprite = 20
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_balanced
+			factor = 2
+		}
+		modifier = {
+			any_neighbor_country = {
+				tech_difference = 2
+			}
+			factor = 4
+		}
+	}
+}
+
+marang_buru = {
+	yearly_corruption = -0.05
+	defensiveness = 0.15
+	allow = {
+		religion = sarnaism
+		OR = {
+			tag = PLH
+			tag = PTT
+			owns = 4447
+			owns = 5215
+			reverse_has_opinion = {
+				who = PLH
+				value = 100
+			}
+			reverse_has_opinion = {
+				who = PTT
+				value = 100
+			}
+		}
+	}
+	sprite = 21
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_militarist
+			factor = 2
+		}
+	}
+}
+
+singbonga = {
+	diplomatic_reputation = 1
+	global_trade_goods_size_modifier = 0.1
+	allow = {
+		religion = sarnaism
+		OR = {
+			tag = KLH
+			tag = BMB
+			owns = 5213
+			owns = 4446
+			reverse_has_opinion = {
+				who = KLH
+				value = 100
+			}
+			reverse_has_opinion = {
+				who = BMB
+				value = 100
+			}
+		}
+	}
+	sprite = 22
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_capitalist
+			factor = 4
+		}
+	}
+}
+
+mother_goddess = {
+	global_monthly_devastation = -0.1
+	idea_cost = -0.025
+	state_governing_cost = -0.05
+
+	allow = {
+		religion = sarnaism
+	}
+	sprite = 26
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_balanced
+			factor = 2
+		}
+		modifier = {
+			NOT = { stability = 0 }
+			factor = 2
+		}
+	}
+}
+
+dharti_ayo = {
+	relation_with_same_culture_group = 10
+	stability_cost_modifier = -0.15
+
+	allow = {
+		religion = sarnaism
+		OR = {
+			tag = KLH
+			tag = GNP
+			owns = 5216
+			owns = 4446
+			reverse_has_opinion = {
+				who = KLH
+				value = 100
+			}
+			reverse_has_opinion = {
+				who = GNP
+				value = 100
+			}
+		}
+	}
+	sprite = 24
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_balanced
+			factor = 2
+		}
+		modifier = {
+			NOT = { stability = 0 }
+			factor = 2
+		}
+	}
+}
+
+chalapachho_devi = {
+	tolerance_own = 1
+	production_efficiency = 0.025
+	tolerance_heathen = 1
+
+	allow = {
+		religion = sarnaism
+		OR = {
+			tag = GRJ
+			owns = 2049
+			reverse_has_opinion = {
+				who = GRJ
+				value = 100
+			}
+		}
+	}
+	sprite = 25
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_balanced
+			factor = 2
+		}
+		modifier = {
+			NOT = { stability = 0 }
+			factor = 2
+		}
+	}
+}

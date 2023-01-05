@@ -1,0 +1,177 @@
+#Country Name: Please see filename.
+
+graphical_culture = asiangfx
+
+color = { 255 248 233 }
+
+revolutionary_colors = { 250 240 230 }
+
+historical_idea_groups = {
+	quantity_ideas
+	offensive_ideas
+	trade_ideas
+	defensive_ideas
+	diplomatic_ideas
+	spy_ideas
+	economic_ideas
+	innovativeness_ideas
+}
+
+historical_units = {
+	chinese_longspear
+	eastern_bow
+	chinese_footsoldier
+	chinese_steppe
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	manchu_banner
+	han_banner
+	asian_musketeer
+	chinese_dragoon
+	reformed_asian_musketeer
+	reformed_asian_cavalry
+	reformed_manchu_rifle
+}
+
+monarch_names = {
+	"Karampa Lama #1" = 60
+	"Dusum Khyenpa #1" = 40
+	"Namgyal De #0" = 20
+	"Namkha Wangpo Phuntsog De #0" = 20
+	"Namri Sanggye De #0" = 20
+	"Lobsang Rabten #0" = 20
+	"Phagspa Lha #0" = 20
+	"Shakya Ö #0" = 20
+	"Jigten Wangchuk Pekar De #0" = 20
+	"Ngagi Wangchuk #0" = 20
+	"Namkha Wangchuk #0" = 20
+	"Tri Nyima Wangchuk #0" = 20
+	"Tri Dragpa Wangchuk #0" = 20
+	"Tri Namgyal Dragpa De #0" = 20
+	"Tri Trashi Dragpa De #0" = 20
+	"Pratapamalla #0" = 20
+	"Kalyanamalla #0" = 20
+	"Ajitamalla #0" = 20
+
+	"Kamala #0" = -1
+	"Indira #0" = -1
+	"Surah Palinyal #0" = -1
+	"Kunzang #0" = -1
+	"Deki Choden #0" = -1
+	"Jayajyotimalla #0" = 10
+	"Jayayakshamalla #0" = 10
+	"Ratmamalla #0" = 10
+	"Suryamalla #0" = 10
+	"Amaramalla #0" = 10
+	"Narendramalla #0" = 10
+	"Mahendramalla #0" = 10
+	"Sadashivamalla #0" = 10
+	"Shivasimhamalla #0" = 10
+	"Lakshminarasimhamalla #0" = 10
+	"Pratapamalla #0" = 10
+	"Jayanripendramalla #0" = 10
+	"Parthivendramalla #0" = 10
+	"Bhupendramalla #0" = 10
+	"Bhaskaramalla #0" = 10
+	"Mahendrasimhamalla #0" = 10
+	"Jayaprakasamalla #0" = 10
+	"Bhimsen #0" = 0
+	"Amar Singh #0" = 0
+	"Ranjur Singh #0" = 0
+	"Bhakti #0" = 0
+	"Devaladevi #0" = -10
+	"Kaushalyawati #0" = -1
+	"Rajendralakshmi #0" = -1
+	"Megh Chand #0" = 20
+	"Hari Chand #0" = 20
+	"Karan Chand #0" = 20
+	"Sansar Chand #0" = 10
+	"Devangga Chand #0" = 10
+	"Narendra Chand #0" = 10
+	"Suvira Chand #0" = 5
+	"Prayag Chand #0" = 5
+	"Ram Chand #0" = 5
+	"Dharam Chand #0" = 5
+	"Jai Chand #0" = 5
+	"Manika Chand #0" = 5
+	"Triloka Chand #0" = 5
+	"Chandarbhan Chand #0" = 5
+	"Vijay Ram Chand #0" = 5
+	"Alam Chand #0" = 5
+	"Bhim Chand #0" = 5
+	"Abhay Chand #0" = 5
+	"Shrinagar Chand #0" = 5
+	"Ghamir Chand #0" = 5
+	"Ghamand Chand #0" = 5
+	"Tegh Chand #0" = 5
+	"Karnavati #0" = -10
+	"Gita Chand #0" = -1
+	"Uma #0" = -1
+	"Krishna Devi #0" = -1
+}
+
+leader_names = {
+	Gampo
+	Srong
+	Sregs
+	Thekchen
+	Sonam
+	Tashi
+	Tsewang
+	Wangdue
+	Wangdak
+	Phuntsok
+	Thapa
+	Bahadur
+	Bikram
+	Chhettri
+	Dev
+	Koirala
+	Magar
+	Yadav
+	Gurung
+	Limbu
+	Rai
+	Rana
+	Malla
+	Chand
+	Madhesi
+	Vijamasi
+	Haltar
+	Singh
+	Katoch
+	Bhangalia
+	Pundir
+	Pakhral
+	Minha
+	Chattar
+	Bais
+	Saran
+	Jadeja
+	Chudasama
+	Pahore
+	Bhaal
+	Parhan
+	Pauhri
+}
+
+ship_names = {
+	Barkam
+	Dartsendo
+	Gyantse Gartse
+	Lhasa Lhotse
+	Makalu 
+	Nagqu Nyingchi Nedong
+	Pelbar
+	Qamdo
+	Shigatse Sakya
+	Tinggri
+	Arun Behri "Bhote Kosi" Devi
+	"Dudh Kosi" Durga Gayatri Jalsena
+	"Kala Jahazi" "Kali Gandaki" Karnali
+	Lakshmi "Lal Jahazi" Narayani Nausena
+	"Nav ka Yudh" "Nila Jahazi" Parvati
+	Radha Rapti Ratri Sagar "Sapt Kosi"
+	Sarasvati Sita Seti "Sun Kosi" Trishuli
+}

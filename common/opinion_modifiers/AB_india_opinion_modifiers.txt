@@ -1,0 +1,13 @@
+#####################
+# OPINION MODIFIERS #
+#####################
+
+converted_to_malankara_1 = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+destroyed_villarvattom = {
+	opinion = -75
+	yearly_decay = 1.5
+}

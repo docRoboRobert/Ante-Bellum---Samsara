@@ -1,0 +1,171 @@
+#Country Name: See the Name of this File.
+
+graphical_culture = indiangfx
+
+color = { 32 45 162 }
+
+historical_idea_groups = {
+	defensive_ideas
+	aristocracy_ideas
+	offensive_ideas
+	diplomatic_ideas
+	religious_ideas
+	trade_ideas
+	spy_ideas
+	economic_ideas
+}
+
+historical_units = {
+	indian_footsoldier
+	rajput_hill_fighters
+	indian_arquebusier
+	mughal_musketeer
+	mughal_mansabdar
+	sikh_hit_and_run
+	reformed_mughal_mansabdar
+	bhonsle_cavalry
+	indian_rifle
+	tipu_sultan_rocket
+}
+
+monarch_names = {
+	"Abba #0" = 0
+	"Ahab #1" = 20
+	"Aharon #0" = 0
+	"Ahaziah #1" = 20
+	"Baasha #1" = 20
+	"Baruch #0" = 0
+	"Batia #0" = -1
+	"Chayim #0" = 0
+	"Daniel #0" = 0
+	"David #1" = 40
+	"Elah #1" = 20
+	"Giza #0" = 0
+	"Hoshea #1" = 20
+	"Isaac #0" = 0
+	"Ish-bosheth #1" = 20
+	"Jehoahaz #1" = 20
+	"Jehoash #1" = 20
+	"Jehu #1" = 20
+	"Jeroboam #3" = 20
+	"Joram #1" = 20
+	"Liat #0" = -1
+	"Malcha #0" = 0
+	"Malka #0" = -1
+	"Menahem #1" = 20
+	"Nadab #1" = 20
+	"Nissim #0" = 0
+	"Omri #1" = 20
+	"Pekah #1" = 20
+	"Pekahiah #1" = 20
+	"Rahel #0" = -1
+	"Rebekkaa #0" = -1
+	"Rivai #0" = 0
+	"Saul #1" = 20
+	"Shallum #1" = 20
+	"Solomon #1" = 30
+	"Yehoshua #0" = 0
+	"Yehudai #0" = 0
+	"Zachariah #1" = 20
+	"Zimri #1" = 20
+	"Ajabsinhji #0" = 10
+	"Ramsinhji #0" = 10
+	"Pratapsinhji #0" = 10
+	"Naharsinhji #0" = 10
+	"Vairisalji #0" = 10
+	"Gambhirsinhji #0" = 10
+	"Chhatrasinhji #0" = 10
+	"Vijaysinhji #0" = 10
+	"Narandas #0" = 10
+	"Surajmal #0" = 10
+	"Raimalji #0" = 10
+	"Bharmal #0" = 10
+	"Punjaji #0" = 10
+	"Viramdev #0" = 10
+	"Kalianmal #0" = 10
+	"Jagannath #0" = 10
+	"Arjundas #0" = 10
+	"Gopinath #0" = 10
+	"Karansingh #0" = 10
+	"Chandrasing #0" = 10
+	"Bhim #0" = 10
+	"Bhan #0" = 10
+	"Punja #0" = 10
+	"Baz #0" = 0
+	"Kumbhakarna #0" = 0
+	"Natwar #0" = 0
+	"Ratan #0" = 0
+	"Jhala #0" = 0
+	"Hakim #0" = 0
+	"Sidhraj #0" = 0
+	"Raj #0" = 0
+	"Jai #0" = 0
+	"Sangram #0" = 0
+	"Sejakji #0" = 0
+	"Dilip #0" = 0
+	"Kshetra #0" = 0
+	"Kunwar #0" = 0
+	"Nath #0" = 0
+	"Viram #0" = 0
+	"Baiji Lal #0" = 0
+	"Jawan #0" = 0
+	"Bhawani #0" = 0
+	"Naryan #0" = 0
+	"Krishna #0" = 0
+	"Ballu #0" = 0
+	
+	"Ziva #0" = -1
+	"Songari #0" = -1
+	"Ajab #0" = -1
+	"Kamala #0" = -1
+	"Dev #0" = -1
+}
+
+leader_names = {
+	Abba Abbaye Acha Achai Achunai Aharon Alechsandri Ammi Amram Amunah Asher Ashi Avomai 
+	Avraham Azariah Baboi Baruch Bibai Binyamin Boaz Bustenai Chaim Chanan Chananel Chaninai 
+	Chanoch Chayim Chelbo Chisdai Chiyya Chizkiyah Chofni Chushiel Daniel David Dimi Dodai Dudai 
+	Efrayim Eina Elazar Elchanan Eldad Eliezer Elyakim Gedalyah Gershom Ghayyat Giat Giza Hila 
+	Hillel Isaac Ivomai Kafnai Kahana Kalonymos Kiyomi Levi Machir Malcha Mar Mari Matiyahu Meir 
+	Menashe Menechem Mesharsheya Meshulam Mevasser Mishael Mordechai Moshe Nachman Nachshon Nasan 
+	Natan Natroi Natronai Nechemiah Nehilai Nesanel Nissim Paltoi Peter Pirkoi Rava Ravai Ravi 
+	Ravya Reuven Rivai Saadiah Sechok Shabsai Shalom Shanoi Shemaryah Sherira Sheshna Shila Shimon 
+	Shinoi Shlomo Shmuel Sorgo Sulam Tachlifa Tamar Tzadok Tzemach Uri Yaakov Yachya Yechiel Yehoshua 
+	Yehudah Yehudai Yeshayah Yisrael Yitzchak Yoel Yosef Yoshiah Yosi Yuda Zakkai Zelekman Zuiskind
+	Sahu
+	Sisodiya
+	Saran
+	Bhati
+	Chandela
+	Das
+	Jadon
+	Jadeja
+	Chudasama
+	Tomara
+	Bhaal
+	Chauhan
+	Mori
+	Bargujar
+	Chundawa
+	Gohil
+	Khumba
+	Pratap
+	Singh
+	Vaghela
+}
+
+ship_names = {
+	Chambal Devi Durga Gayatri Ghaggar
+	Godwar Jalsena "Kala Jahazi" Lakshmi
+	"Lal Jahazi" Luni Nausena
+	"Merwar ka Nav" "Nav ka Yudh" "Nila Jahazi"
+	Parvati Radha Rani Ratri Sagar Sarasvati
+	Sekhawati Sita
+	Hosea Joel Amos Obadiah Jonah Micah Nahum Habakkuk Zephaniah Haggai Zechariah Malachi
+	Achai Achunai Acre Aharon Alechsandri Ammi Ashdod Beit Bēt Laḥm Chaim Chananel Chaninai 
+	Chanoch Chayim Chelbo Chisdai Chiyya Chizkiyah Chofni Chushiel Daniel David Dimi Dodai 
+	Dudai Efrayim Eina Elazar Elchanan Haifa Jerusalem Nazareth Rava Ravai Ravi Ravya Reuven 
+	Rivai Saadiah Sechok Shabsai Shalom Shanoi Shemaryah Shemesh Sherira Sheshna Shila Shimon 
+	Shinoi Shlomo Shmuel Sorgo Sulam Tira Yerushaláyim Yisrael Yitzchak Yoel Yosef Yoshiah 
+	Yosi Yuda Zakkai Zelekman Zuiskind
+}

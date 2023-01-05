@@ -1,0 +1,164 @@
+
+graphical_culture = indiangfx
+
+color = { 155 92 169 }
+revolutionary_colors = { 15 9 16 }
+
+historical_idea_groups = {
+	religious_ideas
+	quantity_ideas
+	innovativeness_ideas
+	offensive_ideas
+	trade_ideas
+	diplomatic_ideas
+	economic_ideas
+	spy_ideas
+}
+
+historical_units = {
+	indian_footsoldier
+	rajput_hill_fighters
+	indian_arquebusier
+	south_indian_musketeer
+	reformed_mughal_musketeer
+	indian_elephant
+	bhonsle_infantry
+	indian_shock_cavalry
+	maharathan_guerilla_warfare
+	sikh_rifle
+	tipu_sultan_rocket
+}
+
+monarch_names = {
+	"Thomas #0" = 60
+	"Thomas Villari #0" = 40
+	"Thomas Malivaram #1" = 40
+	"Thomas Prekateor #0" = 20
+	"Thomas Vajiaya #0" = 20
+	"Thomas Kalindi #1" = 20
+	"Thomas Asurama #0" = 20
+	"Thomas Asuram #0" = 20
+	"Thomas Marsapo #0" = 20
+	"Thomas Marproth #0" = 20
+	"Thomas Kochinos #0" = 20
+	"Thomas Udayamperoor #0" = 20
+	"Thomas Triumpala #0" = 20
+	"Thomas Udayama #0" = 20
+	"Thomarkan #0" = 10
+	"Mar Sapor #0" = 10
+	"Mar Prothos #0" = 10
+	"Marvallari #0" = 5
+	"Thomas Themavi #0" = 5
+	"Thomas Balupor #1" = 1
+	"Thomas Ikillan #1" = 1
+	"Thomas Deva #2" = 1
+	"Thomas Radjamagda #1" = 1
+	"Thomas Vira Vijaya #0" = 1
+	"Thomas Kali Nabarsya #0" = 1
+	"Anhdaros #0" = 0
+	"Pantorktap #0" = 0
+	"Kellapuratya #0" = 0
+	"Devarkandhis #0" = 0
+	"Devillari #0" = 0
+	"Duohr #0" = 0
+	"Duohr Hiperapatam #0" = 0
+	"Hiparapatamo #0" = 0
+	"Sebestopi #0" = 0
+	"Rakunda #0" = 0
+	"Rakunda Marhata #0" = 0
+	"Pantakod #0" = 0
+	"Purandaradasa #0" = 0
+	"Rishi #0" = 0
+	"Sarvanishi #0" = 0
+	
+	"Elusava #0" = -10
+	"Thomalia #0" = -5
+	"Apastorkia #0" = -1
+	"Fesiklia #0" = -1
+	"Maritia #0" = -5
+	"Padmavati Devi #0" = -1
+	"Tirumala Devi #0" = -1
+	"China Devi #0" = -1
+	"Mangammal #0" = -10
+	"Meenakshi #0" = -10
+	"Velunatchiyar #0" = -1
+	"Lakshmi #0" = -1
+	"Jaganmohini #0" = -1
+	"Annapurna Devi #0" = -1
+	"Rudramba #0" = -1
+	"Anitalli #0" = -1
+	"Rudramadevi #0" = -1
+}
+
+leader_names = {
+	Alupa
+	Nayak
+	Nayaka
+	Nayudu
+	Narasa
+	Heuna
+	Kampana
+	Gopana
+	Saluva
+	Keladi
+	Kamma
+	Tuluva
+	Govindaraya
+	Mangu
+	Timma
+	Timmarasa
+	Tiruvadi
+	Ummattur
+	Paruchuri
+	Velama
+	Vasireddy
+	Reddy
+	Thomas
+	"Thomas Villari"
+	"Thomas Malivaram"
+	"Thomas Prekateor"
+	"Thomas Vajiaya"
+	"Thomas Kalindi"
+	"Thomas Asurama"
+	"Thomas Asuram"
+	"Thomas Kochinos"
+	"Thomas Udayamperoor"
+	"Thomas Triumpala"
+	"Thomas Udayama"
+	Thomarkan
+	Marvallari
+	"Thomas Themavi"
+	"Thomas Balupor"
+	"Thomas Ikillan"
+	"Thomas Deva"
+	"Thomas Radjamagda"
+	"Thomas Vira Vijaya"
+	"Thomas Kali Nabarsya"
+	Anhdaros
+	Pantorktap
+	Kellapuratya
+	Devarkandhis
+	Devillari
+	Duohr
+	"Duohr Hiperapatam"
+	Hiperapatam
+	Hiparapatamo
+	Sebestopi
+	Rakunda
+	"Rakunda Marhata"
+	Pantakod
+	Purandaradasa
+	Rishi
+	Sarvanishi
+	Asuravi
+}
+
+ship_names = {
+	Asurak Amirtha Amman Arul Bharatapuza
+	Bhavani Bhima Chellam Devi Durga
+	Gayatri Godavari Iniya Kabani
+	Kaveri Krishna Lakshmi Madhu
+	Meenakshi Nalini Pambar Parvati
+	Periyar Ponni Radha Ratri Sarasvati
+	Sita Tamarai Tungabhadra Thomapatra
+}

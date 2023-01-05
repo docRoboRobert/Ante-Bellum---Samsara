@@ -1,0 +1,77 @@
+reconciliate_with_heathens_aspect_modifier = {
+	global_heathen_missionary_strength = -0.02
+	global_unrest = -0.5
+}
+
+centralized_thoma_authority_aspect_modifier = {
+	church_influence_modifier = 0.1
+	autonomy_change_time = -0.2
+}
+
+tamil_cooperation_aspect_modifier = {
+	global_spy_defence = -0.25
+	center_of_trade_upgrade_cost = -0.1
+	global_institution_spread = 0.05
+	state_governing_cost = 0.05
+	burghers_loyalty_modifier = 0.025
+}
+
+continue_missions_aspect_modifier = {
+	monthly_church_power = 0.1
+	global_tax_modifier = -0.1
+}
+
+organize_missionaries_aspect_modifier = {
+	adm_advisor_cost = -0.1
+	church_influence_modifier = 0.05
+	relation_with_same_religion = 5
+}
+
+footsteps_of_thomas_aspect_modifier = {
+	native_uprising_chance = -0.2
+	trade_range_modifier = 0.1
+}
+
+order_protectors_of_christ_aspect_modifier = {
+	drill_decay_modifier = -0.15
+}
+
+translate_scripture_aspect_modifier = {
+	manpower_in_culture_group_provinces = 0.1
+	years_of_nationalism = -2.5
+	relation_with_accepted_culture = 10
+}
+
+church_education_aspect_modifier = {
+	production_efficiency = 0.05
+	reform_progress_growth = 0.1
+	global_unrest = 1
+}
+
+study_world_aspect_modifier = {
+	all_power_cost = -0.02
+	stability_cost_modifier = 0.1
+}
+
+defensive_monasteries_aspect_modifier = {
+	build_time = -0.1
+	global_garrison_growth = 0.10
+}
+
+ties_with_old_world_aspect_modifier = {
+	envoy_travel_time = -0.2
+	improve_relation_modifier = 0.2
+	trade_range_modifier = 0.1
+}
+
+prime_production_rights_aspect_modifier = {
+	build_cost = -0.1
+	all_estate_influence_modifier = 0.05
+}
+
+vassal_charity_aspect_modifier = {
+	global_tax_modifier = -0.1
+	improve_relation_modifier = 0.1
+	vassal_forcelimit_bonus = 0.1
+	production_efficiency = -0.02
+}

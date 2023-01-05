@@ -1,0 +1,512 @@
+#
+# National Ideas (one per country)
+#
+
+#Super based ideas of Parmistan
+NNN_ideas = {
+	start = {
+		land_maintenance_modifier = -0.2
+		caravan_power = 0.25
+	}
+
+	bonus = {
+		all_power_cost = -0.1
+	}
+	
+	trigger = {
+		tag = NNN
+		ai = no
+		has_country_flag = can_have_based_ideas_flag
+	}
+	free = yes		
+	
+	NNN_first = {
+		monarch_admin_power = 1
+		monarch_diplomatic_power = 1
+		monarch_military_power = 1
+		global_tax_modifier = 0.05
+	}
+	NNN_second = {
+		siege_ability = 0.25
+		global_tax_modifier = 0.05
+	}
+	NNN_third = {
+		technology_cost = -0.1
+		global_tax_modifier = 0.05
+	}
+	NNN_fourth = {
+		cavalry_flanking = 0.5
+		movement_speed = 0.15
+		global_tax_modifier = 0.05
+	}
+	NNN_fifth = {
+		core_creation = -0.15
+		diplomatic_reputation = 2
+		global_tax_modifier = 0.05
+	}
+	NNN_sixth = {
+		cavalry_fire = 2
+		cavalry_power = 0.25
+		global_tax_modifier = 0.05
+	}
+	NNN_seventh = {
+		development_cost = -0.15
+		production_efficiency = 0.1
+		global_tax_modifier = 0.05
+	}
+}
+
+#Cringe ideas for AI Parmistan
+NNN1_ideas = {
+	start = {
+		land_maintenance_modifier = -0.2
+		global_tax_modifier = 0.2
+	}
+
+	bonus = {
+		all_power_cost = -0.1
+	}
+	
+	trigger = {
+		tag = NNN
+	}
+	free = yes		
+	
+	NNN1_first = {
+		global_tax_modifier = 0.1
+	}
+	NNN1_second = {
+		global_tax_modifier = 0.1
+		build_cost = -0.1
+	}
+	NNN1_third = {
+		global_tax_modifier = 0.1
+	}
+	NNN1_fourth = {
+		global_tax_modifier = 0.1
+		build_time = -0.2
+	}
+	NNN1_fifth = {
+		global_tax_modifier = 0.1
+	}
+	NNN1_sixth = {
+		global_tax_modifier = 0.1
+		global_allowed_num_of_buildings = 1
+	}
+	NNN1_seventh = {
+		global_tax_modifier = 0.1
+		inflation_action_cost = -0.25
+	}
+}
+
+#
+# Okay, real ideas this time
+#
+
+#Baruch ideas
+BUH_ideas = {
+	start = {
+		trade_efficiency = 0.1
+		diplomatic_reputation = 1
+	}
+	
+	bonus = {
+		merchants = 1
+	}	
+
+	trigger = { 
+		tag = BUH
+	}
+	
+        free = yes
+	
+	BUH_reform_the_administration = {
+		devotion = 0.35
+		republican_tradition = 0.5
+		legitimacy = 0.5
+		advisor_cost = -0.05
+	}
+	BUH_reform_the_city_guard = {
+		defensiveness = 0.10
+		land_morale = 0.05
+	}
+	BUH_reform_the_city_planning = {
+		development_cost = -0.1
+		production_efficiency = 0.1
+	}
+	BUH_trading_fleet = {
+		global_ship_trade_power = 0.25
+	}
+	BUH_rabbanut_of_the_east = {
+		church_power_modifier = 0.25
+		global_unrest = -1
+	}
+	BUH_safe_haven_of_india = {
+		tolerance_heathen = 2
+		tolerance_heretic = 2
+	}
+	BUH_establish_the_university = {
+		technology_cost = -0.1
+		idea_cost = -0.05
+	}
+}
+
+#Buddhist Bengal ideas
+BNG_ideas = {
+	start = {
+		missionaries = 1
+		global_manpower_modifier = 0.15
+	}
+	
+	bonus = {
+		diplomatic_reputation = 2
+	}	
+
+	trigger = { 
+		tag = BNG
+		OR = {
+			religion = mahayana
+			religion = buddhism
+			religion = vajrayana
+		}
+	}
+	
+        free = yes
+	
+	BNG_buddha_teachings = {
+		tolerance_own = 3
+	}
+	BNG_bengal_bay = {
+		ship_power_propagation = 0.1
+		light_ship_cost = -0.15
+	}
+	BNG_dukkha = {
+		warscore_cost_vs_other_religion = -0.1
+	}
+	BNG_spice_tax = {
+		global_tax_modifier = 0.15
+	}
+	BNG_elephant_units = {
+		cavalry_cost = -0.10
+		cavalry_power = 0.15
+	}
+	BNG_knowledge_hunger = {
+		institution_spread_from_true_faith = 0.1
+		embracement_cost = -0.1
+	}
+	BNG_explaining_dharma = {
+		global_missionary_strength = 0.015
+		discipline = 0.025
+	}
+}
+
+#Chola ideas
+COA_ideas = {
+	start = {
+		dip_tech_cost_modifier = -0.075
+		global_trade_power = 0.1
+	}
+	
+	bonus = {
+		diplomats = 1
+	}	
+
+	trigger = { 
+		tag = COA
+	}
+	
+	free = yes
+	
+	COA_deep_sea_navy = {
+		global_ship_cost = -0.05
+		heavy_ship_power = 0.15
+	}
+	COA_destroyers_of_invaders = {
+		shock_damage_received = -0.075
+		hostile_attrition = 2
+		max_hostile_attrition = 1
+	}
+	COA_into_unknown = {
+		may_explore = yes
+		colonists = 1
+	}
+	COA_tamil_unification = {
+		manpower_in_culture_group_provinces = 0.15
+		stability_cost_modifier = -0.1
+	}
+	COA_seacrossing_empire = {
+		cb_on_overseas = yes
+		core_creation = -0.1
+	}
+	COA_tributary_system = {
+		accept_vassalization_reasons = 10
+		diplomatic_upkeep = 1
+	}
+	COA_new_chola_empire = {
+		global_ship_trade_power = 0.15
+		global_trade_goods_size_modifier = 0.05
+	}
+}
+
+#Kakatiya ideas
+KAK_ideas = {
+	start = {
+		infantry_power = 0.10
+		defensiveness = 0.2
+	}
+	
+	bonus = {
+		prestige_decay = -0.01
+	}	
+
+	trigger = { 
+		tag = KAK
+	}
+	
+	free = yes
+	
+	KAK_culture_sphere = {
+		culture_conversion_cost = -0.2
+	}
+	KAK_telugu_art = {
+		prestige = 0.75
+		great_project_upgrade_cost = -0.15
+	}
+	KAK_highland_agriculture = {
+		global_manpower_modifier = 0.2
+		global_trade_goods_size_modifier = 0.05
+	}
+	KAK_mahadeva_legend = {
+		stability_cost_modifier = -0.1
+	}
+	KAK_bhadrakali_blessing = {
+		siege_ability = 0.05
+		discipline = 0.05
+	}
+	KAK_great_fort_cities = {
+		development_cost = -0.05
+		fort_maintenance_modifier = -0.15
+	}
+	KAK_restore_the_might = {
+		state_governing_cost = -0.1
+	}
+}
+
+#Maldives Ideas
+DGL_ideas = {
+	start = {
+		range = 0.2
+		privateer_efficiency = 0.25
+	}
+
+	bonus = {
+		capture_ship_chance = 0.1
+	}
+	
+	trigger = {
+		tag = DGL
+	}
+	free = yes		
+	
+	DGL_strategic_trade = {
+		global_trade_power = 0.1
+	}
+	DGL_coastal_raids = {
+		siege_blockade_progress = 1
+		global_naval_barrage_cost = -0.3
+	}
+	DGL_indian_colonies = {
+		colonists = 1
+	}
+	DGL_high_sea_navy = {
+		global_ship_cost = -0.1
+		heavy_ship_power = 0.125
+	}
+	DGL_land_of_the_free = {
+		stability_cost_modifier = -0.1
+		religious_unity = 0.33
+	}
+	DGL_tousend_spices = {
+		global_trade_goods_size_modifier = 0.15
+		global_prosperity_growth = 0.05
+	}
+	DGL_muslim_marines = {
+		landing_penalty = -1
+		discipline = 0.05
+	}
+}
+
+#Chera Ideas
+CER_ideas = {
+	start = {
+		global_ship_trade_power = 0.1
+		global_trade_goods_size_modifier = 0.1
+	}
+	
+	bonus = {
+		state_maintenance_modifier = -0.15
+	}	
+
+	trigger = { 
+		tag = CER
+	}
+	
+	free = yes
+	
+	CER_black_pepper = {
+		production_efficiency = 0.075
+	}
+	CER_retake_the_homeland = {
+		fabricate_claims_cost = -0.2
+	}
+	CER_indian_ships = {
+		ship_power_propagation = 0.1
+		galley_power = 0.1
+	}
+	CER_malabar_unification = {
+		land_morale = 0.10
+		manpower_in_own_culture_provinces = 0.25
+	}
+	CER_tamiland_gov = {
+		administrative_efficiency = 0.05
+	}
+	CER_control_trade_routes = {
+		envoy_travel_time = -0.15
+		trade_steering = 0.1
+	}
+	CER_contacts_with_outer_world = {
+		technology_cost = -0.05
+	}
+}
+
+#Pandya Ideas
+PND_ideas = {
+	start = {
+		global_ship_trade_power = 0.1
+		global_trade_goods_size_modifier = 0.1
+	}
+	
+	bonus = {
+		state_maintenance_modifier = -0.15
+	}	
+
+	trigger = { 
+		tag = PND
+	}
+	
+	free = yes
+	
+	PND_rebuild_old_glory = {
+		unjustified_demands = -0.1
+		prestige = 0.5
+	}
+	PND_madurai_primacy = {
+		build_cost = -0.1
+		stability_cost_modifier = -0.1
+	}
+	PND_tamil_ports = {
+		trade_efficiency = 0.1
+	}
+	PND_tamil_guilds = {
+		development_cost = -0.075
+	}
+	PND_secure_three_crowns = {
+		diplomatic_reputation = 2
+	}
+	PND_revive_maravarman = {
+		global_prosperity_growth = 0.1
+		advisor_cost = -0.15
+	}
+	PND_army_reforms = {
+		discipline = 0.025
+		fire_damage_received = -0.05
+	}
+}
+
+#Pallava Ideas
+PLV_ideas = {
+	start = {
+		siege_ability = 0.10
+		global_tax_modifier = 0.2
+	}
+	
+	bonus = {
+		administrative_efficiency = 0.05
+	}	
+
+	trigger = { 
+		tag = PLV
+	}
+	
+	free = yes
+	
+	PLV_hindu_deities = {
+		global_unrest = -1
+		missionary_maintenance_cost = -0.1
+	}
+	PLV_war_lions = {
+		cavalry_shock = 1
+	}
+	PLV_temple_patronage = {
+		prestige_decay = -0.005
+		build_cost = -0.1
+		church_loyalty_modifier = 0.05
+	}
+	PLV_guerilla_and_propaganda = {
+		enemy_core_creation = 0.25
+		spy_offence = 0.15
+	}
+	PLV_expand_architecture = {
+		monthly_splendor = 1
+	}
+	PLV_coastal_guilds = {
+		merchants = 1
+	}
+	PLV_dominate_tamils = {
+		monthly_reform_progress_modifier = 0.1
+		diplomatic_reputation = 1
+	}
+}
+
+#Hormuz TC Ideas
+HTC_ideas = {
+	start = {
+		mercenary_cost = -0.15
+		trade_efficiency = 0.1
+	}
+	
+	bonus = {
+		ship_power_propagation = 0.15
+	}	
+
+	trigger = { 
+		tag = HTC
+	}
+	
+	free = yes
+	
+	HTC_arab_mercs = {
+		mercenary_discipline = 0.075
+		merc_maintenance_modifier = -0.10
+	}
+	HTC_efficient_investing = {
+		center_of_trade_upgrade_cost = -0.2
+		build_cost = -0.1
+	}
+	HTC_hormuz_colonizers = {
+		colonist_placement_chance = 0.1
+		global_manpower_modifier = 0.10
+	}
+	HTC_influence_locals = {
+		culture_conversion_cost = -0.225
+	}
+	HTC_plantations = {
+		production_efficiency = 0.1
+	}
+	HTC_spice_trade = {
+		merchants = 1
+	}
+	HTC_further_colonial = {
+		colonists = 1
+	}
+}
