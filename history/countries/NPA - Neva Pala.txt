@@ -1,0 +1,30 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+primary_culture = bihari
+religion = mahayana
+technology_group = indian
+capital = 4489
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Namapala III"
+		dynasty = "Pala"
+		birth_date = 1380.7.3
+		ADM = 2
+		DIP = 2
+		MIL = 3
+	}
+	heir = {
+		name = "Gordinvipala"
+		monarch_name = "Gorvindipala II"
+		dynasty = "Pala"
+		birth_date = 1406.6.14
+		death_date = 1455.1.29
+		claim = 95
+		ADM = 4
+		DIP = 4
+		MIL = 2
+	}
+}

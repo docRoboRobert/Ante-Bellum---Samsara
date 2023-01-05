@@ -1,0 +1,20 @@
+#565 - Bhutan
+
+owner = BHU
+controller = BHU
+culture = tibetan
+religion = vajrayana
+#capital = "Thimbu"
+trade_goods = wool
+hre = no
+base_tax = 2 
+base_production = 2
+base_manpower = 1
+is_city = yes
+add_core = BHU
+discovered_by = indian
+discovered_by = nomad_group
+discovered_by = chinese
+
+
+1634.1.1 = { discovered_by = POR } 

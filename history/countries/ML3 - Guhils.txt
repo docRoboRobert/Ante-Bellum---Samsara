@@ -1,0 +1,33 @@
+government = monarchy
+add_government_reform = rajput_kingdom
+primary_culture = malvi
+religion = zoroastrian
+technology_group = indian
+capital = 4461
+add_accepted_culture = zorathi
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Kalikatrap"
+		dynasty = "Zarmantasur"
+		birth_date = 1396.12.18
+		ADM = 6
+		DIP = 2
+		MIL = 4
+	}
+}
+
+1444.3.1 = {
+	leader = {
+		name = "Sakaruhi Depi"
+		type = general
+
+		fire = 3
+		shock = 4
+		manuever = 3
+		siege = 3
+		death_date = 1463.7.5
+		personality = siege_specialist_personality
+	}
+}

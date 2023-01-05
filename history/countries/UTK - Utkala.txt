@@ -1,0 +1,34 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = indian
+religion = hinduism
+primary_culture = oriya
+capital = 2043
+
+
+1444.1.1 = {
+	monarch = {
+		name= "Malakunderma I"
+		dynasty = "Oriyaya"
+		birth_date = 1403.4.22
+		dip = 3
+		mil = 2
+		adm = 2
+	}
+}
+
+
+1444.3.1 = {
+	heir = {
+		name = "Oriasini"
+		monarch_name = "Oriasini II"
+		dynasty = "Oriyaya"
+		birth_date = 1425.11.20
+		death_date = 1475.11.24
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 6
+	}
+}

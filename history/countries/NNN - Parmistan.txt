@@ -1,0 +1,69 @@
+technology_group = muslim
+primary_culture = khorasani
+add_accepted_culture = persian
+religion = sunni
+government = monarchy
+add_government_reform = iqta
+government_rank = 2
+capital = 454 # Samarkand
+historical_rival = DLH
+historical_rival = MUL
+religious_school = hanafi_school
+
+change_estate_land_share = {
+	estate = estate_church
+	share = -12
+}
+change_estate_land_share = {
+	estate = estate_nobles
+	share = 12
+}
+
+1444.1.1 = {
+	capital = 446
+	monarch = {
+		name = "Anton Bellukh"
+		birth_date = 1392.9.02
+		dynasty = "Parmalionid"
+		adm = 3
+		dip = 3
+		mil = 3
+		culture = khorasani
+		religion = sunni
+		leader = {
+			name = "Anton Bellukh"
+			type = general
+			fire = 3
+			shock = 3
+			manuever = 3
+			siege = 2
+		}
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = architectural_visionary_personality
+	add_ruler_personality = benevolent_personality
+	queen = {
+		name = "Parmina"
+		birth_date = 1399.8.12
+		death_date = 1457.9.29
+		dynasty = "Persanid"
+		culture = persian
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+	add_piety = -0.4
+}
+
+1444.3.1 = {
+	heir = {
+		name = "Anton Bellukh II"
+		dynasty = "Parmalionid"
+		birth_date = 1420.3.1
+		death_date = 1463.5.25
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}

@@ -1,0 +1,7 @@
+government = monarchy
+government_rank = 2
+add_government_reform = rajput_kingdom
+primary_culture = rajput
+religion = jainism
+technology_group = indian
+capital = 514

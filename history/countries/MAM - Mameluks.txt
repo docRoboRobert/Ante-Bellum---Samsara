@@ -1,0 +1,53 @@
+government = monarchy
+add_government_reform = mamluk_government
+primary_culture = turkmeni
+add_accepted_culture = videsheani
+religion = tengri_pagan_reformed
+secondary_religion = sunni
+technology_group = muslim
+historical_rival = JAN
+historical_rival = GUJ
+capital = 512
+add_army_professionalism = 0.05
+
+change_estate_land_share = {
+	estate = estate_church
+	share = -10
+}
+change_estate_land_share = {
+	estate = estate_burghers
+	share = 10
+}
+
+1444.1.1 = {
+	monarch = {
+		name = "Tûmân Bay"
+		dynasty = "Bahri"
+		religion = sunni
+		birth_date = 1413.4.23
+		adm = 1
+		dip = 4
+		mil = 4
+	}
+	leader = {	
+		name = "Atmur Qâ-Tugur"
+		type = general
+		fire = 5
+		shock = 0
+		manuever = 4
+		siege = 0
+	}
+}
+1444.3.1 = {	
+	heir = {
+		name = "Qâ'itbay"
+		monarch_name = "Qâ'itbay"
+		dynasty = "Bahri"
+		birth_date = 1434.9.14
+		death_date = 1496.7.18
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 3
+	}
+}

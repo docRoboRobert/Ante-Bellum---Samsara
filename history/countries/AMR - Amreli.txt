@@ -1,0 +1,19 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = indian
+religion = jainism
+religious_school = yapaniya_school
+primary_culture = saurashtri
+capital = 5270
+
+1444.1.1 = {
+	monarch = {
+		name = "Nabisri Delbal"
+		dynasty = "Farajkat"
+		birth_date = 1397.10.12
+		ADM = 3
+		DIP = 3
+		MIL = 2
+	}
+}

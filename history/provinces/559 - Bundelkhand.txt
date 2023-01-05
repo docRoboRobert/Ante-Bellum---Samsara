@@ -1,0 +1,26 @@
+#559 - Bundelkhand
+
+owner = CDE
+controller = CDE
+culture = vindhyan
+religion = jainism
+capital = "Jhansi"
+trade_goods = iron
+hre = no
+base_tax = 1
+base_production = 2
+base_manpower = 2
+is_city = yes
+add_core = KLP
+add_core = CDE
+add_core = BND
+add_devastation = 10
+discovered_by = indian
+discovered_by = muslim 
+discovered_by = ottoman
+discovered_by = nomad_group
+discovered_by = chinese
+
+1501.1.1 = { capital = "Orchha" }
+1690.1.1 = { discovered_by = ENG }
+1707.5.12 = { discovered_by = GBR }

@@ -1,0 +1,20 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = indian
+religion = hinduism
+primary_culture = jharkhandi
+capital = 5216
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Gangduhar IV"
+		dynasty = "Sekhar"
+		birth_date = 1411.4.9
+		ADM = 1
+		DIP = 2
+		MIL = 6
+	}
+
+}

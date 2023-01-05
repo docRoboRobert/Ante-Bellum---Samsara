@@ -1,0 +1,32 @@
+government = monarchy
+add_government_reform = iqta
+government_rank = 1
+primary_culture = gulf_arabic
+add_accepted_culture = videsheani
+religion = sunni
+religious_school = hanafi_school
+technology_group = muslim
+capital = 4506
+
+1444.1.1 = {
+	add_piety = 0.5
+	monarch = {
+		name = "Hazwadiz III"
+		dynasty = "Muhadargin"
+		birth_date = 1402.3.16
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+	heir = {
+		name = "Abdallah ab Kaljihir"
+		monarch_name = "Abdallah ab Kaljihir I"
+		dynasty = "Muhadargin"
+		birth_date = 1433.5.12
+		death_date = 1472.9.2
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 4
+	}
+}

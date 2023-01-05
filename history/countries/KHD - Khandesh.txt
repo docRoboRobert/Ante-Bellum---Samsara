@@ -1,0 +1,34 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = indian
+religion = hinduism
+primary_culture = khandesh
+capital = 4434
+fixed_capital = 527 # Cannot move capital away from this province & no power cost to move to it
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Balbagan Taptapira"
+		dynasty = "Chalukya"
+		birth_date = 1378.6.13
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1444.3.1 = {
+	heir = {
+		name = "Mundasvari"
+		monarch_name = "Mundasvari II"
+		dynasty = "Chalukya"
+		birth_date = 1398.9.13
+		death_date = 1459.4.29
+		claim = 95
+		ADM = 5
+		DIP = 1
+		MIL = 5
+	}
+}

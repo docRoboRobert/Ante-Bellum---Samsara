@@ -1,0 +1,20 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = indian
+religion = shiite
+religious_school = jafari_school
+primary_culture = kathisaura
+add_accepted_culture = gujarati
+capital = 2051
+
+1444.1.1 = {
+	monarch = {
+		name = "Almunahidi Gadwi"
+		dynasty = "Thakur"
+		birth_date = 1390.8.28
+		ADM = 1
+		DIP = 6
+		MIL = 2
+	}
+}

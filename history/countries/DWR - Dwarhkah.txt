@@ -1,0 +1,23 @@
+government = monarchy
+add_government_reform = feudal_theocracy
+government_rank = 1
+mercantilism = 25
+technology_group = muslim
+religion = sunni
+primary_culture = indian_arabic
+capital = 5266
+religious_school = hanbali_school
+
+
+1440.1.1 = {
+	monarch = {
+		name = "Malumundari IV"
+		dynasty = "Gawarmatyid"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 1376.11.27
+		religion = sunni
+		culture = indian_arabic
+	}
+}

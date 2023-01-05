@@ -1,0 +1,34 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+primary_culture = kannada
+religion = malankara
+technology_group = indian
+capital = 532
+
+
+1444.1.1 = {
+	monarch = {
+		name= "Rajamandi III"
+		dynasty = "Alariachuri"
+		birth_date = 1400.7.31
+		adm = 5
+		dip = 5
+		mil = 4
+	}
+}
+
+
+1444.3.1 = {
+	heir = {
+		name = "Balkanra Marsi"
+		monarch_name = "Balkarna Marsi I"
+		dynasty = "Alariachuri"
+		birth_date = 1429.4.26
+		death_date = 1492.12.28
+		claim = 95
+		ADM = 2
+		DIP = 3
+		MIL = 4
+	}
+}

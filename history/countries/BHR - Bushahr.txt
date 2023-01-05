@@ -1,0 +1,32 @@
+government = tribal
+add_government_reform = tribal_kingdom
+primary_culture = tibetan
+add_accepted_culture = kashmiri
+religion = bon_religion
+technology_group = indian
+capital = 5261
+fixed_capital = 5261
+
+1444.1.1 = {
+	monarch = {
+		name = "Kehri II"
+		dynasty = "Singh"
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+1444.3.1 = {
+	heir = {
+		name = "Ugar"
+		monarch_name = "Ugar I"
+		dynasty = "Singh"
+		birth_date = 1430.1.2
+		death_Date = 1488.9.8
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}

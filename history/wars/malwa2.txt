@@ -1,0 +1,16 @@
+name = "Malwan Religious Civil War"
+war_goal = {
+	type = take_capital_conquest
+	casus_belli = cb_annex
+}
+
+1443.1.1 = {
+	add_attacker = ML2
+	add_defender = ML3
+}
+
+
+1446.11.12 = {
+	rem_attacker = ML2
+	rem_defender = ML3
+}

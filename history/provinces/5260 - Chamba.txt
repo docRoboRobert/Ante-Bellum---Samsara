@@ -1,0 +1,23 @@
+#5260 - Chamba
+
+owner = CHB
+controller = CHB
+culture = pahari
+religion = hinduism
+capital = "Chamba"
+trade_goods = salt #himalayan salt
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+add_core = CHB
+discovered_by = indian
+discovered_by = muslim 
+discovered_by = ottoman
+discovered_by = nomad_group
+discovered_by = chinese
+
+
+1690.1.1 = { discovered_by = ENG }
+1707.5.12 = { discovered_by = GBR }

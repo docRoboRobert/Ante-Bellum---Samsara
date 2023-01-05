@@ -1,0 +1,35 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = indian
+religion = sarnaism
+primary_culture = garjati
+capital = 5215
+
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Murang Japal"
+		dynasty = "Pal"
+		birth_date = 1417.7.1
+		ADM = 2
+		DIP = 3
+		MIL = 4
+	}
+
+}
+
+1444.3.1 = {
+	heir = {
+		name = "Ballapar"
+		monarch_name = "Ballapar II"
+		dynasty = "Pal"
+		birth_date = 1440.2.6
+		death_Date = 1499.9.3
+		claim = 95
+		ADM = 6
+		DIP = 1
+		MIL = 3
+	}
+}

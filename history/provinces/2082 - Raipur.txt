@@ -1,0 +1,24 @@
+#2082 - Raipur
+
+owner = GON
+controller = GON
+culture = gondi
+religion = hinduism
+capital = "Raipur"
+trade_goods = grain
+hre = no
+base_tax = 2
+base_production = 3
+base_manpower = 1
+is_city = yes
+add_rajputs_or_marathas_or_nobles_effect = yes
+add_core = RTT
+add_core = GON
+discovered_by = indian
+discovered_by = nomad_group
+discovered_by = muslim 
+discovered_by = ottoman
+discovered_by = chinese
+
+1690.1.1 = { discovered_by = ENG }
+1707.5.12 = { discovered_by = GBR }

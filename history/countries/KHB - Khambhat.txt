@@ -1,0 +1,19 @@
+government = republic
+add_government_reform = oligarchy_reform
+government_rank = 1
+technology_group = indian
+religion = jainism
+religious_school = svetambara_school
+primary_culture = gujarati
+capital = 4457
+fixed_capital = 4457
+
+1444.1.1 = {
+	monarch = {
+		name = "Andra Pudkhara III"
+		birth_date = 1374.9.1
+		ADM = 3
+		DIP = 5
+		MIL = 0
+	}
+}

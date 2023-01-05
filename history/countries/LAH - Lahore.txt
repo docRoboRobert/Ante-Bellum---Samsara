@@ -1,0 +1,31 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = indian
+primary_culture = panjabi
+religion = zoroastrian
+capital = 507
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Ougarkatera II"
+		dynasty = "Sisodiya"
+		birth_date = 1422.6.24
+		ADM = 5
+		DIP = 4
+		MIL = 4
+	}
+	leader = {
+		name = "Ougarkatera II"
+		type = general
+
+		fire = 4
+		shock = 4
+		manuever = 5
+		siege = 1
+		death_date = 1468.4.29
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = industrious_personality
+}

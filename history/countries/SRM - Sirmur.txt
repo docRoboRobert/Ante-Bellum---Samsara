@@ -1,0 +1,30 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = indian
+primary_culture = pahari
+religion = zoroastrian
+capital = 4493	#Sirmur
+
+# Dynasty founded by Subans Prakash in 1095
+
+#Prakash Rajas of shifting Capitals
+1440.1.1 = {
+	monarch = {
+		name = "Bir"
+		dynasty = "Plassia"
+		ADM = 2
+		DIP = 3
+		MIL = 2
+	}
+}
+
+1570.1.1 = {
+	monarch = {
+		name = "Dip"
+		dynasty = "Plassia"
+		ADM = 2
+		DIP = 3
+		MIL = 2
+	}
+}

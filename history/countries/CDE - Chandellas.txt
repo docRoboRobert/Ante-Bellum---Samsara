@@ -1,0 +1,40 @@
+government = monarchy
+add_government_reform = rajput_kingdom
+government_rank = 2
+technology_group = indian
+religion = hinduism
+primary_culture = vindhyan
+capital = 4466
+historical_rival = BKH
+
+
+1444.1.1 = {
+	if = {
+		limit = {
+			NOT = { has_dlc = "Dharma" }
+		}
+		add_government_reform = feudalism_reform
+	}
+	monarch = {
+		name = "Vira Varman IV"
+		dynasty = "Chandella"
+		birth_Date = 1411.6.20
+		adm = 4
+		dip = 1
+		mil = 3
+	}
+}
+
+1444.3.1 = {
+	heir = {
+		name = "Naukannara"
+		monarch_name = "Naukannara"
+		dynasty = "Chandella"
+		birth_Date = 1436.9.12
+		death_Date = 1475.6.29
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}

@@ -1,0 +1,20 @@
+government = republic
+add_government_reform = merchants_reform
+government_rank = 1
+mercantilism = 25
+technology_group = indian
+religion = hinduism
+primary_culture = north_tamil
+capital = 4418
+
+1444.1.1 = {
+	monarch = {
+		name = "Arganhipatam Raiji"
+		birth_date = 1388.4.23
+		ADM = 4
+		DIP = 2
+		MIL = 3
+		religion = hinduism
+		culture = north_tamil
+	}
+}

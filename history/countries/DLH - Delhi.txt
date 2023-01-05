@@ -1,0 +1,34 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = kanauji
+religion = hinduism
+technology_group = indian
+capital = 522	# Delhi
+fixed_capital = 522 # Cannot move capital away from this province & no power cost to move to it
+
+1444.1.1 = {
+	monarch = {
+		name = "Balukhekarna I"
+		dynasty = "Sisodiya"
+		birth_date = 1397.11.16
+		ADM = 2
+		DIP = 1
+		MIL = 4
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = babbling_buffoon_personality
+}
+
+1444.3.1 = {
+	heir = {
+		name = "Janputri"
+		monarch_name = "Janputri III"
+		dynasty = "Sisodiya"
+		birth_date = 1420.1.12
+		death_Date = 1455.8.20
+		claim = 95
+		ADM = 3
+		DIP = 2
+		MIL = 2
+	}
+}

@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = indian
+religion = zoroastrian
+primary_culture = zorathi
+capital = 527
+fixed_capital = 527
+historical_friend = CRG
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Balshi Keva"
+		dynasty = "Farapti"
+		birth_date = 1416.4.18
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+}

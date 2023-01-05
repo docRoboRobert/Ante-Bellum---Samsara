@@ -1,0 +1,69 @@
+government = tribal
+add_government_reform = gond_kingdom
+government_rank = 1
+primary_culture = gondi
+religion = hinduism
+technology_group = indian
+capital = 547	# Bastar
+fixed_capital = 547 # Cannot move capital away from this province & no power cost to move to it
+
+1369.1.1 = {
+	monarch = {
+		name = "Hamir Deo"
+		dynasty = "Bhanja" 
+		ADM = 3
+		DIP = 0
+		MIL = 3
+	}
+}
+
+
+1380.1.1 = {
+	heir = {
+		name = "Bhaitai"
+		monarch_name = "Bhaitai Deo"
+		dynasty = "Bhanja"
+		birth_date = 1380.1.1
+		death_date = 1468.1.1
+		claim = 95
+		ADM = 1
+		DIP = 2
+		MIL = 1
+	}
+}
+
+ 
+
+1410.1.1 = {
+	monarch = {
+		name = "Bhaitai Deo"
+		dynasty = "Bhanja"
+		ADM = 1
+		DIP = 2
+		MIL = 1
+	}
+}
+
+1450.1.1 = {
+	heir = {
+		name = "Purushottam"
+		monarch_name = "Purushottam Deo"
+		dynasty = "Bhanja"
+		birth_date = 1450.1.1
+		death_date = 1534.1.1
+		claim = 95
+		ADM = 2
+		DIP = 0
+		MIL = 2
+	}
+}
+
+1468.1.1 = {
+	monarch = {
+		name = "Purushottam Deo"
+		dynasty = "Bhanja"
+		ADM = 2
+		DIP = 0
+		MIL = 2
+	}
+}

@@ -1,0 +1,33 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = indian
+religion = hinduism
+primary_culture = jharkhandi
+capital = 2098
+historical_rival = GON
+
+1444.1.1 = {
+	monarch = {
+		name = "Jitrai II"
+		dynasty = "Singh"
+		birth_date = 1421.6.9
+		ADM = 5
+		DIP = 1
+		MIL = 6
+	}
+}
+
+1444.3.1 = {
+	heir = {
+		name = "Balhndih"
+		monarch_name = "Balhndih"
+		dynasty = "Singh"
+		birth_date = 1442.4.14
+		death_Date = 1498.8.21
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 5
+	}
+}

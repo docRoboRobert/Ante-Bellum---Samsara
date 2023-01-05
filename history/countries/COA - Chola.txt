@@ -1,0 +1,32 @@
+government = monarchy
+add_government_reform = nayankara_reform
+technology_group = indian
+religion = hinduism
+primary_culture = tamil
+capital = 2026 #Tanjore
+historical_rival = PLV
+
+1444.1.1 = {
+	monarch = {
+		name = "Rajaraja VI"
+		dynasty = "Chola"
+		birth_date = 1420.3.14
+		ADM = 3
+		DIP = 3
+		MIL = 2
+	}
+}
+
+1444.3.1 = {
+	heir = {
+		name = "Nejavendra"
+		monarch_name = "Nejavendra II"
+		dynasty = "Chola"
+		birth_date = 1440.7.12
+		death_date = 1485.10.8
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 3
+	}
+}

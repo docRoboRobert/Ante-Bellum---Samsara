@@ -1,0 +1,8 @@
+government = monarchy
+government_rank = 2
+add_government_reform = autocracy_reform
+technology_group = indian
+primary_culture = sindhi
+religion = jainism
+capital = 4503
+religious_school = digambara_school

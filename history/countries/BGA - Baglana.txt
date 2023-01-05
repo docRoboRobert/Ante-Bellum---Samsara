@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = indian
+religion = zoroastrian
+primary_culture = marathi
+capital = 2036	# Mayuragiri
+
+#Rajas of Baglana
+1399.1.1 = {
+	monarch = {
+		name = "Jopideva"
+		dynasty = "Rastraudha"
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1399.1.1 = {
+	heir = {
+		name = "Nanadeva"
+		monarch_name = "Nanadeva II"
+		dynasty = "Rastraudha"
+		birth_Date = 1370.1.1
+		death_date = 1441.4.28
+		claim = 80	#Uncle of Jopideva
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+1431.1.1 = {
+	monarch = {
+		name = "Nanadeva II"
+		dynasty = "Rastraudha"
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+1431.1.1 = {
+	heir = {
+		name = "Bhairava"
+		monarch_name = "Bhairava"
+		dynasty = "Rastraudha"
+		birth_Date = 1425.1.1
+		death_date = 1510.1.1
+		claim = 95	#Son of Nanadeva II
+		adm = 1
+		dip = 2
+		mil = 0
+	}
+}

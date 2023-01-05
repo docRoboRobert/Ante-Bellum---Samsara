@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = muslim
+religion = tengri_pagan_reformed
+primary_culture = kirgiz
+add_accepted_culture = afghani
+capital = 578
+fixed_capital = 578
+
+
+1443.1.1 = {
+	monarch = {
+		name = "Kardwar Sulk"
+		dynasty = "Banu Hapsik"
+		birth_date = 1421.8.15
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}

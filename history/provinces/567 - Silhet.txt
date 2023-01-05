@@ -1,0 +1,20 @@
+#567 - Sylhet
+
+owner = BNG
+controller = BNG
+culture = bengali
+religion = hinduism
+capital = "Sylhet"
+trade_goods = cotton
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 2
+is_city = yes
+add_core = BNG
+discovered_by = indian
+discovered_by = chinese
+discovered_by = nomad_group
+
+
+1627.1.1 = { discovered_by = POR }

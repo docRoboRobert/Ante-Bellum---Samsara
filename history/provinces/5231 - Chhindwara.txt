@@ -1,0 +1,25 @@
+#5231 - Chhindwara
+
+owner = CRG
+controller = CRG
+culture = zorathi
+religion = zoroastrian
+capital = "Chhindwara"
+trade_goods = tropical_wood
+hre = no
+base_tax = 2
+base_production = 1
+base_manpower = 1
+is_city = yes
+add_core = CRG
+add_core = GDW
+
+
+discovered_by = indian
+discovered_by = nomad_group
+discovered_by = muslim 
+discovered_by = ottoman
+discovered_by = chinese
+
+
+1498.1.1 = { discovered_by = POR }

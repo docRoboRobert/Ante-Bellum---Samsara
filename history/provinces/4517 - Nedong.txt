@@ -1,0 +1,20 @@
+#4517 - Nedong
+
+owner = PHA
+controller = PHA
+add_core = PHA
+culture = tibetan
+religion = vajrayana
+capital = "Nedong"
+trade_goods = grain
+hre = no
+base_tax = 2 
+base_production = 1
+base_manpower = 3
+is_city = yes
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group
+
+
+1721.1.1 = { discovered_by = SPA }

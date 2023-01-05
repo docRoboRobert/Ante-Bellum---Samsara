@@ -1,0 +1,56 @@
+government = tribal
+add_government_reform = tribal_kingdom
+primary_culture = tibetan
+add_accepted_culture = kashmiri
+religion = vajrayana
+technology_group = indian
+capital = 2074	# Ladakh
+fixed_capital = 2074 # Cannot move capital away from this province & no power cost to move to it
+
+1430.1.1 = {	#Realm divided between 2 monarchs at this date.
+	monarch = {
+		name = "Gyalpo Takpa Bomlde"
+		dynasty = "Namgyal"
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1430.1.1 = {
+	heir = {
+		name = "Lotus Chhogaldan"
+		monarch_name = "Lotus Chhogaldan"
+		dynasty = "Namgyal"
+		birth_date = 1430.1.1
+		death_Date = 1500.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1470.1.1 = {
+	monarch = {
+		name = "Lotus Chhogaldan"
+		dynasty = "Namgyal"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1470.1.1 = {
+	heir = {
+		name = "Tashi"
+		monarch_name = "Tashi"
+		dynasty = "Namgyal"
+		birth_date = 1450.1.1
+		death_Date = 1532.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}

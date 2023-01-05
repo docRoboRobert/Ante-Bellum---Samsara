@@ -1,0 +1,46 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = indian
+primary_culture = sindhi
+religion = jainism
+capital = 4504
+religious_school = digambara_school
+
+change_estate_land_share = {
+	estate = estate_nobles
+	share = -3
+}
+change_rajputs_or_marathas_or_nobles_land_share_effect = {
+	share = 3
+}
+change_jains_or_burghers_land_share_effect = {
+	share = 5
+}
+
+1444.1.1 = {
+	monarch = {
+		name = "Divasah II"
+		dynasty = "Chacha"
+		birth_date = 1409.3.1
+		ADM = 4
+		DIP = 2
+		MIL = 1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = just_personality
+	add_ruler_personality = naive_personality
+}
+
+1444.3.1 = {
+	heir = {
+		name = "Latashiya"
+		monarch_name = "Latashiya"
+		dynasty = "Chacha"
+		birth_date = 1428.10.7
+		death_date = 1457.6.18
+		claim = 95
+		ADM = 3
+		DIP = 1
+		MIL = 2
+	}
+}

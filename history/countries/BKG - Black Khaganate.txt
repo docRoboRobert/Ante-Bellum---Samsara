@@ -1,0 +1,11 @@
+government = tribal
+add_government_reform = steppe_nomads
+primary_culture = uzbehk
+add_accepted_culture = bihari
+add_accepted_culture = avadhi
+religion = tengri_pagan_reformed
+secondary_religion = hinduism
+technology_group = nomad_group
+capital = 4497
+historical_rival = BNG
+historical_rival = DLH

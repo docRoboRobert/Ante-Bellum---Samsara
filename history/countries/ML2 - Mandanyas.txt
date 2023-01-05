@@ -1,0 +1,33 @@
+government = monarchy
+add_government_reform = rajput_kingdom
+primary_culture = malvi
+religion = jainism
+religious_school = digambara_school
+technology_group = indian
+capital = 2093
+add_accepted_culture = rajput
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Hudibanti"
+		dynasty = "An Mandsaur"
+		birth_date = 1408.9.14
+		ADM = 3
+		DIP = 3
+		MIL = 5
+	}
+}
+
+1444.3.1 = {
+	leader = {
+		name = "Galgapatra"
+		type = general
+
+		fire = 2
+		shock = 5
+		manuever = 2
+		siege = 1
+		death_date = 1465.11.11
+	}
+}

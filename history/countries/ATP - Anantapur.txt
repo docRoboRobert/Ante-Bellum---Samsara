@@ -1,0 +1,33 @@
+government = monarchy
+add_government_reform = nayankara_reform
+government_rank = 1
+technology_group = indian
+religion = hinduism
+primary_culture = kannada
+add_accepted_culture = north_tamil
+capital = 1949 #Anantapur
+
+1444.1.1 = {
+	monarch = {
+		name = "Veera Hisirvaana"
+		dynasty = "Hoysala"
+		birth_date = 1421.5.27
+		ADM = 1
+		DIP = 3
+		MIL = 0
+	}
+}
+
+1444.3.1 = {
+	heir = {
+		name = "Tirivanashim"
+		monarch_name = "Tirivanashim I"
+		dynasty = "Hoysala"
+		birth_date = 1439.4.10
+		death_date = 1499.9.2
+		claim = 95
+		ADM = 5
+		DIP = 5
+		MIL = 5
+	}
+}

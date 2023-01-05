@@ -1,0 +1,91 @@
+government = monarchy
+add_government_reform = rajput_kingdom
+government_rank = 1
+primary_culture = rajput
+religion = jainism
+religious_school = digambara_school
+technology_group = indian
+capital = 528 # Kota
+fixed_capital = 528 # Cannot move capital away from this province & no power cost to move to it
+
+1384.1.1 = {
+	if = {
+		limit = {
+			NOT = { has_dlc = "Dharma" }
+		}
+		add_government_reform = feudalism_reform
+	}
+	monarch = {
+		name = "Hamuj"
+		dynasty = "Hada-Chauhan"
+		DIP = 1
+		ADM = 2
+		MIL = 3
+	}
+}
+
+1384.1.1 = {
+	heir = {
+		name = "Birsingh"
+		monarch_name = "Birsingh"
+		dynasty = "Hada-Chauhan"
+		birth_Date = 1370.1.1
+		death_date = 1415.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+ 
+
+1400.1.1 = {
+	monarch = {
+		name = "Birsingh"
+		dynasty = "Hada-Chauhan"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1400.1.1 = {
+	heir = {
+		name = "Biru"
+		monarch_name = "Biru"
+		dynasty = "Hada-Chauhan"
+		birth_Date = 1390.1.1
+		death_date = 1470.1.1
+		claim = 95
+		adm = 0
+		dip = 1
+		mil = 2
+	}
+}
+
+1415.1.1 = {
+	monarch = {
+		name = "Biru"
+		dynasty = "Hada-Chauhan"
+		adm = 0
+		dip = 1
+		mil = 2
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = naive_personality
+}
+
+1415.1.1 = {
+	heir = {
+		name = "Bandu"
+		monarch_name = "Bandu"
+		dynasty = "Hada-Chauhan"
+		birth_Date = 1410.1.1
+		death_date = 1491.1.1
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 0
+	}
+}

@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = indian
+primary_culture = panjabi
+religion = zoroastrian
+capital = 510 #Sirhind
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Fautap"
+		dynasty = "Bardanhni"
+		birth_date = 1413.1.15
+		ADM = 4
+		DIP = 3
+		MIL = 3
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = strict_personality
+}

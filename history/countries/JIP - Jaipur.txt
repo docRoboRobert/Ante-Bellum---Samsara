@@ -1,0 +1,39 @@
+government = monarchy
+add_government_reform = rajput_kingdom
+government_rank = 1
+primary_culture = rajput
+add_accepted_culture = haryan
+religion = hinduism
+technology_group = indian
+capital = 4500
+
+1444.1.1 = {
+	if = {
+		limit = {
+			NOT = { has_dlc = "Dharma" }
+		}
+		add_government_reform = feudalism_reform
+	}
+	monarch = {
+		name = "Marthanipura V"
+		dynasty = "Jainini"
+		birth_date = 1392.8.22
+		DIP = 4
+		MIL = 2
+		ADM = 3
+	}
+}
+
+1444.3.1 = {
+	heir = {
+		name = "Ballwa"
+		monarch_name = "Ballwa III"
+		dynasty = "Jainini"
+		birth_date = 1423.2.7
+		death_date = 1466.3.2
+		claim = 95
+		DIP = 6
+		MIL = 0
+		ADM = 1
+	}
+}

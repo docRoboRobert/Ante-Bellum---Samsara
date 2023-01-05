@@ -1,0 +1,35 @@
+government = tribal
+add_government_reform = gond_kingdom
+government_rank = 1
+primary_culture = gondi
+religion = hinduism
+technology_group = indian
+capital = 4445 #Kanker
+fixed_capital = 4445
+
+1444.1.1 = {
+	monarch = {
+		name = "Bandai II"
+		dynasty = "Garjhan"
+		birth_date = 1405.9.17
+		religion = animism
+		DIP = 2
+		ADM = 2
+		MIL = 2
+	}
+}
+
+1444.3.1 = {
+	heir = {
+		name = "Amnatap"
+		monarch_name = "Amnatap I"
+		dynasty = "Garjhan"
+		birth_date = 1427.1.12
+		death_date = 1472.5.22
+		religion = hinduism
+		claim = 95
+		ADM = 3
+		DIP = 4
+		MIL = 3
+	}
+}

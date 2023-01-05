@@ -1,0 +1,48 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+primary_culture = baluchi
+add_accepted_culture = brahui
+religion = zoroastrian
+technology_group = muslim
+capital = 577	# Quetta
+
+#Mirwaris, ancestors of later Kambarani dynasty:
+
+1444.1.1 = {
+	monarch = {
+	name = "Kumbar"
+		dynasty = "Mirwari"
+		dip = 1
+		adm = 1 
+		mil = 1
+	}
+}
+
+#Rind kingdom:
+
+1468.1.1 = { 
+	monarch = {
+	name = "Mir Chakar"
+		dynasty = "Rind"
+		dip = 2
+		adm = 1 
+		mil = 3
+	}
+}
+
+1468.1.1 = {
+	heir = {
+		name = "Mir Shahzad"
+		monarch_name = "Mir Shahzad"
+		dynasty = "Rind"
+		birth_date = 1450.1.1
+		death_Date = 1580.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1547.1.1 = { capital = 576 } # Kalat

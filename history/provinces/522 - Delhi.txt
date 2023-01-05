@@ -1,0 +1,30 @@
+#522 - Delhi
+
+owner = DLH
+controller = DLH
+culture = kanauji
+religion = zoroastrian
+capital = "Delhi"
+trade_goods = silk
+hre = no
+base_tax = 9
+base_production = 9
+base_manpower = 4
+is_city = yes	#Still Recovering after sack by Timur
+add_devastation = 10
+add_core = DLH
+discovered_by = indian
+discovered_by = nomad_group
+discovered_by = muslim 
+discovered_by = ottoman
+discovered_by = chinese
+extra_cost = 16
+center_of_trade = 2
+
+
+1546.1.1 = { fort_15th = yes }
+1638.1.1 = { capital = "Shahjahanabad" }
+1648.1.1 = { fort_15th = no fort_16th = yes }
+1690.1.1 = { discovered_by = ENG }
+1707.5.12 = { discovered_by = GBR }
+1784.1.1 = { capital = "Delhi" }

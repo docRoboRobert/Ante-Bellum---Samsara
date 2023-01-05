@@ -1,0 +1,8 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 2
+technology_group = indian
+religion = sarnaism
+primary_culture = garjati
+capital = 2082
+historical_rival = GRJ

@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = tribal_federation
+government_rank = 1
+mercantilism = 20
+technology_group = indian
+religion = jainism
+religious_school = yapaniya_school
+primary_culture = bhili
+capital = 5230
+
+
+1444.1.1 = {
+	monarch = {
+		name= "Nankondorkama II"
+		dynasty = "Tapti Pardanesh"
+		birth_date = 1419.4.18
+		dip = 3
+		mil = 2
+		adm = 4
+	}
+}

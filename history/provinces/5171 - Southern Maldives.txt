@@ -1,0 +1,17 @@
+#5171 - Southern Maldives
+
+owner = DGL
+controller = DGL
+add_core = DGL
+culture = malayalam
+religion = buddhism
+capital = "Gan"
+trade_goods = slaves #Slave trade hub, besides muslim pirates
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+discovered_by = indian
+discovered_by = muslim
+discovered_by = east_african

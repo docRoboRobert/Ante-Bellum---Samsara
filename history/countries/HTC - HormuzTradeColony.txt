@@ -1,0 +1,27 @@
+government = republic
+add_government_reform = merchants_reform
+government_rank = 1
+mercantilism = 25
+technology_group = muslim
+religion = ibadi
+primary_culture = indian_arabic
+add_accepted_culture = sinhala
+capital = 572
+religious_school = shafii_school
+
+1444.1.1 = {
+	set_estate_privilege = estate_dhimmi_guaranteed_autonomy
+}
+
+#Governor
+1440.1.1 = {
+	monarch = {
+		name = "Azamir Baddalhdi"
+		adm = 5
+		dip = 4
+		mil = 1
+		birth_date = 1405.6.27
+		religion = ibadi
+		culture = indian_arabic
+	}
+}

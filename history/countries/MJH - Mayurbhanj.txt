@@ -1,0 +1,34 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = indian
+religion = mahayana
+primary_culture = garjati
+capital = 4450
+
+# Bhanjas of Keonjhar and Mayurbhanj
+
+1444.1.1 = {
+	monarch = {
+		name = "Iswanath"
+		dynasty = "Bhanj"
+		birth_date = 1400.5.7
+		ADM = 2
+		DIP = 2
+		MIL = 1
+	}
+}
+
+1444.1.1 = {
+	heir = {
+		name = "Jagannath"
+		monarch_name = "Jagannath II"
+		dynasty = "Bhanj"
+		birth_date = 1422.9.2
+		death_Date = 1455.8.11
+		claim = 95
+		ADM = 2
+		DIP = 4
+		MIL = 1
+	}
+}

@@ -1,0 +1,22 @@
+#2028 - Mahur
+
+owner = MAR
+controller = MAR
+culture = telegu
+religion = jainism
+capital = "Mahur"
+trade_goods = tropical_wood
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 1
+is_city = yes
+add_core = MAR
+discovered_by = indian
+discovered_by = nomad_group
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = chinese
+
+
+1498.1.1 = { discovered_by = POR }

@@ -1,0 +1,55 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = indian
+primary_culture = pahari
+religion = hinduism
+capital = 511	# Garhwal
+
+1398.1.1 = {
+	monarch = {
+		name = "Sundar Pal"
+		dynasty = "Parmar"
+		DIP = 0
+		ADM = 1
+		MIL = 2
+	}
+}
+
+1420.1.1 = {
+	heir = {
+		name = "Hansdeo"
+		monarch_name = "Hansdeo Pal"
+		dynasty = "Parmar"
+		birth_Date = 1420.1.1
+		death_Date = 1500.1.1
+		claim = 95
+		DIP = 2
+		ADM = 2
+		MIL = 1
+	}
+}
+
+1450.1.1 = {
+	monarch = {
+		name = "Hansdeo Pal"
+		dynasty = "Parmar"
+		DIP = 2
+		ADM = 2
+		MIL = 1
+	}
+}
+
+1450.1.1 = {
+	heir = {
+		name = "Bijai"
+		monarch_name = "Bijai Pal"
+		dynasty = "Parmar"
+		birth_Date = 1430.1.1
+		death_Date = 1548.1.1
+		claim = 95
+		DIP = 2
+		ADM = 2
+		MIL = 1
+	}
+}

@@ -1,0 +1,33 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = indian
+religion = sarnaism
+primary_culture = garjati
+capital = 5214
+
+# Bhanjas of Keonjhar and Mayurbhanj
+
+1444.1.1 = {
+	monarch = {
+		name = "Batuli"
+		dynasty = "Bhanj"
+		ADM = 2
+		DIP = 0
+		MIL = 1
+	}
+}
+
+1444.1.1 = {
+	heir = {
+		name = "Govind"
+		monarch_name = "Govind"
+		dynasty = "Bhanj"
+		birth_date = 1444.1.1
+		death_Date = 1480.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 3
+	}
+}

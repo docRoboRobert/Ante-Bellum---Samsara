@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 2
+technology_group = indian
+religion = sarnaism
+primary_culture = garjati
+add_accepted_culture = gondi
+capital = 553

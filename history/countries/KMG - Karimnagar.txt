@@ -1,0 +1,20 @@
+government = tribal
+add_government_reform = tribal_federation
+government_rank = 1
+technology_group = indian
+primary_culture = telegu
+religion = hinduism
+capital = 5221
+fixed_capital = 5221
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Lankada Utelva"
+		dynasty = "Karimnari"
+		birth_date = 1410.12.7
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}

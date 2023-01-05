@@ -1,0 +1,83 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = indian
+religion = sarnaism
+primary_culture = garjati
+capital = 4446	# Kalahandi
+
+#The royal house of Kalahandi
+
+1366.1.1 = {
+	monarch = {
+		name = "Haria Deo"
+		dynasty = "Gangavanshi"
+		ADM = 3
+		DIP = 1
+		MIL = 2
+	}
+}
+
+1380.1.1 = {
+	heir = {
+		name = "Jugasai"
+		monarch_name = "Jugasai Deo II"
+		dynasty = "Gangavanshi"
+		birth_date = 1380.1.1
+		death_Date = 1436.1.1
+		claim = 95
+		ADM = 2
+		DIP = 0
+		MIL = 3
+	}
+}
+
+ 
+
+1400.1.1 = {
+	monarch = {
+		name = "Jugasai Deo II"
+		dynasty = "Gangavanshi"
+		ADM = 2
+		DIP = 0
+		MIL = 3
+	}
+}
+
+1400.1.1 = {
+	heir = {
+		name = "Pratapnayan"
+		monarch_name = "Pratapnayan Deo II"
+		dynasty = "Gangavanshi"
+		birth_date = 1400.1.1
+		death_Date = 1468.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 3
+	}
+}
+
+1436.1.1 = {
+	monarch = {
+		name = "Pratapnayan Deo II"
+		dynasty = "Gangavanshi"
+		ADM = 2
+		DIP = 2
+		MIL = 3
+	}
+}
+
+1436.1.1 = {
+	heir = {
+		name = "Harirudra"
+		monarch_name = "Harirudra Deo"
+		dynasty = "Gangavanshi"
+		birth_date = 1400.1.1
+		death_Date = 1496.1.1
+		claim = 95
+		ADM = 1
+		DIP = 1
+		MIL = 2
+	}
+}

@@ -1,0 +1,24 @@
+#5232 - Sheopur
+
+owner = CDE
+controller = CDE
+culture = vindhyan
+religion = hinduism
+capital = "Sheopur"
+trade_goods = ivory		#Records of sultan hunting elephants here
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 2
+is_city = yes
+add_core = GWA
+add_core = CDE
+add_devastation = 5
+discovered_by = indian
+discovered_by = muslimdiscovered_by = ottoman
+discovered_by = nomad_group
+discovered_by = chinese
+
+
+1690.1.1 = { discovered_by = ENG }
+1707.5.12 = { discovered_by = GBR }

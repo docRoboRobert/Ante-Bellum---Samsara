@@ -1,0 +1,8 @@
+government = monarchy
+government_rank = 1
+add_government_reform = autocracy_reform
+primary_culture = kanauji
+add_accepted_culture = avadhi
+religion = hinduism
+technology_group = indian
+capital = 2063

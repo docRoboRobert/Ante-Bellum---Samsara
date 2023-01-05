@@ -1,0 +1,26 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = indian
+primary_culture = pahari
+religion = hinduism
+capital = 2069	#Kumaon
+
+1437.1.1 = {
+	monarch = {
+		name = "Bharati"
+		dynasty = "Chand"
+		ADM = 2
+		DIP = 3
+		MIL = 3
+	}
+}
+
+1450.1.1 = {
+	monarch = {
+		name = "Ratna"
+		dynasty = "Chand"
+		ADM = 2
+		DIP = 2
+		MIL = 4
+	}
+}

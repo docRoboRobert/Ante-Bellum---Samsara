@@ -1,0 +1,20 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = indian
+religion = jainism
+religious_school = svetambara_school
+primary_culture = gujarati
+capital = 4455
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Surkudarnajot I"
+		dynasty = "Nagena"
+		birth_date = 1415.4.26
+		ADM = 3
+		DIP = 3
+		MIL = 4
+	}
+}

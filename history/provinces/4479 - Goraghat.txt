@@ -1,0 +1,22 @@
+#4479 - Goraghat
+
+owner = BNG
+controller = BNG
+culture = bengali
+religion = mahayana
+capital = "Goraghat"
+trade_goods = silk
+hre = no
+base_tax = 4
+base_production = 4
+base_manpower = 3
+is_city = yes
+add_core = BNG
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = nomad_group
+discovered_by = chinese
+
+
+1627.1.1 = { discovered_by = POR }

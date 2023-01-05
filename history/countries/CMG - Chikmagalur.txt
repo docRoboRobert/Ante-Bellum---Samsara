@@ -1,0 +1,35 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+primary_culture = kannada
+add_accepted_culture = malayankara_toma
+religion = malankara
+technology_group = indian
+capital = 5196
+
+
+1444.1.1 = {
+	monarch = {
+		name= "Kanderi Mathiana III"
+		dynasty = "Kandana"
+		birth_date = 1419.5.31
+		adm = 2
+		dip = 1
+		mil = 4
+	}
+}
+
+
+1444.3.1 = {
+	heir = {
+		name = "Chennakasamma Emmanual Balla"
+		monarch_name = "Chennakasamma Emmanual Balla I"
+		dynasty = "Kandana"
+		birth_date = 1438.3.21
+		death_date = 1493.12.18
+		claim = 95
+		ADM = 6
+		DIP = 5
+		MIL = 0
+	}
+}

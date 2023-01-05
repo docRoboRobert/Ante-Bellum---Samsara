@@ -1,0 +1,21 @@
+government = republic
+add_government_reform = merchants_reform
+government_rank = 1
+mercantilism = 25
+technology_group = indian
+religion = zoroastrian
+primary_culture = kathisaura
+capital = 517
+fixed_capital = 517
+
+1444.1.1 = {
+	monarch = {
+		name = "Nankuumarjan Gunti"
+		birth_date = 1389.6.24
+		ADM = 4
+		DIP = 4
+		MIL = 2
+		religion = hinduism
+		culture = marathi
+	}
+}

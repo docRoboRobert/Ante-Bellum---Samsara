@@ -1,0 +1,35 @@
+government = monarchy
+add_government_reform = plutocratic_reform
+government_rank = 1
+technology_group = indian
+religion = hinduism
+primary_culture = telegu
+capital = 5194
+fixed_capital = 5194
+
+
+1444.1.1 = {
+	monarch = {
+		name= "Mandularagia II"
+		dynasty = "Chalkaya"
+		birth_date = 1396.7.19
+		dip = 3
+		mil = 1
+		adm = 2
+	}
+}
+
+
+1444.3.1 = {
+	heir = {
+		name = "Kolonkarttom"
+		monarch_name = "Kolonkarttom I"
+		dynasty = "Chalkaya"
+		birth_date = 1420.4.30
+		death_date = 1488.6.3
+		claim = 95
+		ADM = 2
+		DIP = 1
+		MIL = 4
+	}
+}

@@ -1,0 +1,44 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = indian
+religion = hinduism
+primary_culture = bengali
+add_accepted_culture = jharkhandi
+capital = 5217
+
+# Mallabhum, Malla Kingdom of Bishnupur
+
+1444.1.1 = { # start of reign uncertain
+	monarch = {
+		name = "Uday"
+		dynasty = "Malla"
+		ADM = 1
+		DIP = 0
+		MIL = 3
+	}
+}
+
+1444.1.1 = {
+	heir = {
+		name = "Chandra"
+		monarch_name = "Chandra"
+		dynasty = "Malla"
+		birth_date = 1434.1.1
+		death_Date = 1501.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1460.1.1 = {
+	monarch = {
+		name = "Chandra"
+		dynasty = "Malla"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}

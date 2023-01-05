@@ -1,0 +1,43 @@
+government = monarchy
+add_government_reform = rajput_kingdom
+government_rank = 1
+technology_group = indian
+religion = zoroastrian
+primary_culture = kathisaura
+capital = 2051	# Gohilvad
+
+1400.1.1 = {
+	if = {
+		limit = {
+			NOT = { has_dlc = "Dharma" }
+		}
+		add_government_reform = feudalism_reform
+	}
+	monarch = {
+		name = "Banaji"
+		dynasty = "Gohil"
+		ADM = 2
+		DIP = 3
+		MIL = 3
+	}
+}
+
+1455.1.1 = {
+	monarch = {
+		name = "Savaji"
+		dynasty = "Gohil"
+		ADM = 1
+		DIP = 1
+		MIL = 3
+	}
+}
+
+1487.1.1 = {
+	monarch = {
+		name = "Hadaji"
+		dynasty = "Gohil"
+		ADM = 2
+		DIP = 1
+		MIL = 1
+	}
+}

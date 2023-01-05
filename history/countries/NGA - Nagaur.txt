@@ -1,0 +1,33 @@
+government = tribal
+government_rank = 1
+add_government_reform = tribal_kingdom
+primary_culture = rajput
+religion = hinduism
+technology_group = indian
+capital = 2066	# Nagaur
+fixed_capital = 2066
+
+1399.1.1 = {
+	monarch = {
+		name = "Anajmer IV"
+		dynasty = "Bhati"
+		birth_date = 1399.1.10
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1399.1.1 = {
+	heir = {
+		name = "Bhatnapi"
+		monarch_name = "Bhatnapi II"
+		dynasty = "Bhati"
+		birth_date = 1417.4.10
+		death_date = 1458.11.15
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}

@@ -1,0 +1,18 @@
+government = theocracy
+add_government_reform = leading_clergy_reform
+government_rank = 1
+technology_group = chinese
+religion = vajrayana
+primary_culture = tibetan
+capital = 565 # Thimphu
+
+1444.1.1 = {
+	monarch = {
+		name = "Ngawang I"
+		dynasty = "Zangpo"
+		birth_date = 1367.7.2
+		ADM = 5
+		DIP = 5
+		MIL = 4
+	}
+}

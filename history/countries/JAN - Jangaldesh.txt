@@ -1,0 +1,37 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+primary_culture = rajput
+religion = hinduism
+technology_group = indian
+capital = 4507	# Churu
+fixed_capital = 512 #
+historical_rival = MAM
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Bika Roah"
+		dynasty = "Rathore"
+		birth_date = 1385.8.28
+		DIP = 2
+		MIL = 2
+		ADM = 3
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = bold_fighter_personality
+}
+
+1444.3.1 = {
+	heir = {
+		name = "Naroji"
+		monarch_name = "Naroji Singh"
+		dynasty = "Rathore"
+		birth_date = 1406.10.17
+		death_date = 1468.5.28
+		claim = 95
+		DIP = 2
+		MIL = 3
+		ADM = 1
+	}
+}

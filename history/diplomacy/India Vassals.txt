@@ -1,0 +1,172 @@
+#Hormuz and its trade colony
+vassal = {
+	first = ORM
+	second = HTC
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+#Tamil tributaries
+dependency = {
+	subject_type = "tributary_state"
+	first = COA
+	second = JFN
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = COA
+	second = PND
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+#Orissa vassal of ECL
+vassal = {
+	first = ECL
+	second = ORI
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+#Bengali vassals
+vassal = {
+	first = BNG
+	second = UTK
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+vassal = {
+	first = BNG
+	second = ARK
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+march = {
+	first = BNG
+	second = NPA
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+#Eastern Nepali vassals
+vassal = {
+	first = ENP
+	second = GRK
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+vassal = {
+	first = ENP
+	second = DTI
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+vassal = {
+	first = ENP
+	second = GYI
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+#Marathas vassal
+vassal = {
+	first = MAR
+	second = KHD
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+#Seuna and its protectorate
+dependency = {
+	subject_type = "tributary_state"
+	first = YAD
+	second = KKA
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+#Churganhid vassal
+vassal = {
+	first = CRG
+	second = MDL
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+#Black Khantate's subjects
+dependency = {
+	subject_type = "tributary_state"
+	first = BKH
+	second = TPI
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = BKH
+	second = MSB
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+#Burhanpur guarantees and alliance
+guarantee = {
+	first = YAD
+	second = BRH
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+alliance = {
+	first = CRG
+	second = BRH
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+#Hadoti vassal of Malwa
+vassal = {
+	first = MLW
+	second = HAD
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+#Timurids vassal of Marwar
+vassal = {
+	first = MAW
+	second = TMD
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+#Gujarat Tributaries
+dependency = {
+	subject_type = "tributary_state"
+	first = GUJ
+	second = CMP
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = GUJ
+	second = SNT
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = GUJ
+	second = WDH
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = GUJ
+	second = KHB
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}

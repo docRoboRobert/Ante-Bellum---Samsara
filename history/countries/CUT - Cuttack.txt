@@ -1,0 +1,35 @@
+government = monarchy
+add_government_reform = plutocratic_reform
+government_rank = 1
+technology_group = indian
+religion = hinduism
+primary_culture = oriya
+capital = 552
+fixed_capital = 552
+
+
+1444.1.1 = {
+	monarch = {
+		name= "Rajraidyia IV"
+		dynasty = "Chalkaya"
+		birth_date = 1398.8.22
+		dip = 2
+		mil = 3
+		adm = 3
+	}
+}
+
+
+1444.3.1 = {
+	heir = {
+		name = "Rajraidyia"
+		monarch_name = "Rajraidyia V"
+		dynasty = "Chalkaya"
+		birth_date = 1419.9.27
+		death_date = 1461.7.30
+		claim = 95
+		ADM = 5
+		DIP = 2
+		MIL = 1
+	}
+}

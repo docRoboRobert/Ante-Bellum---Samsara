@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 3
+technology_group = indian
+religion = hinduism
+primary_culture = kannada
+add_accepted_culture = telegu
+add_accepted_culture = gondi
+capital = 541

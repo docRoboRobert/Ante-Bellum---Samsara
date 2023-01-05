@@ -1,0 +1,21 @@
+government = republic
+add_government_reform = merchants_reform
+government_rank = 1
+mercantilism = 25
+technology_group = indian
+religion = jewish
+primary_culture = baruchi
+add_accepted_culture = gujarati
+capital = 4512
+
+1444.1.1 = {
+	monarch = {
+		name = "Enumarkh II"
+		birth_date = 1385.3.28
+		ADM = 4
+		DIP = 4
+		MIL = 4
+		religion = jewish
+		culture = hebrew
+	}
+}

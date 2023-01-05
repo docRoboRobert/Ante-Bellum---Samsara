@@ -1,0 +1,23 @@
+government = theocracy
+add_government_reform = leading_clergy_reform
+government_rank = 1
+mercantilism = 25
+technology_group = muslim
+religion = shiite
+primary_culture = indian_arabic
+add_accepted_culture = konkan
+capital = 530
+religious_school = zaidi_school
+
+
+1440.1.1 = {
+	monarch = {
+		name = "Halumanakh Berefi"
+		adm = 4
+		dip = 3
+		mil = 3
+		birth_date = 1401.4.21
+		religion = shiite
+		culture = indian_arabic
+	}
+}

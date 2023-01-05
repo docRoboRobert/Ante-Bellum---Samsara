@@ -1,0 +1,20 @@
+government = republic
+add_government_reform = merchants_reform
+government_rank = 1
+mercantilism = 25
+technology_group = indian
+religion = hinduism
+primary_culture = tamil
+capital = 2026 #Tanjore
+
+1444.1.1 = {
+	monarch = {
+		name = "Arganhipatam Raiji"
+		birth_date = 1407.1.19
+		ADM = 2
+		DIP = 2
+		MIL = 2
+		religion = hinduism
+		culture = north_tamil
+	}
+}

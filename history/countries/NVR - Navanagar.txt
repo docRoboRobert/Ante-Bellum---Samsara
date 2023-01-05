@@ -1,0 +1,31 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = indian
+religion = jainism
+religious_school = digambara_school
+primary_culture = gujarati
+capital = 2052	# Navanagar
+
+#Navanagar Jadejas
+
+1444.1.1 = {
+	monarch = {
+		name = "Tamachi I"
+		dynasty = "Nagena"
+		birth_date = 1423.6.22
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1540.1.1 = {
+	monarch = {
+		name = "Ravalj Lakhaji"
+		dynasty = "Jadeja"
+		ADM = 2
+		DIP = 0
+		MIL = 1
+	}
+}

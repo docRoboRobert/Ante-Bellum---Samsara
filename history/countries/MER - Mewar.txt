@@ -1,0 +1,124 @@
+government = monarchy
+add_government_reform = rajput_kingdom
+primary_culture = rajput
+religion = jainism
+religious_school = svetambara_school
+technology_group = indian
+capital = 518	# Chittogarh
+
+1382.1.1 = {
+	if = {
+		limit = {
+			NOT = { has_dlc = "Dharma" }
+		}
+		add_government_reform = feudalism_reform
+	}
+	monarch = {
+		name = "Lakha Singh"
+		dynasty = "Sisodiya"
+		DIP = 1
+		MIL = 2
+		ADM = 3 # Builds palaces and temples, exploits new silver and zinc mines.
+	}
+}
+
+1382.1.1 = {
+	heir = {
+		name = "Mokal"
+		monarch_name = "Mokal Singh"
+		dynasty = "Sisodiya"
+		birth_date = 1382.1.1
+		death_date = 1433.1.1
+		claim = 95
+		DIP = 2
+		MIL = 3
+		ADM = 2
+	}
+}
+
+ 
+
+1421.1.1 = {
+	monarch = {
+		name = "Mokal Singh"
+		dynasty = "Sisodiya"
+		DIP = 2
+		MIL = 3
+		ADM = 2
+	}
+}
+
+1427.1.1 = {
+	heir = {
+		name = "Kumbha"
+		monarch_name = "Kumbhakarna Singh"
+		dynasty = "Sisodiya"
+		birth_date = 1427.1.1
+		death_date = 1468.1.1
+		claim = 95
+		DIP = 4
+		MIL = 4
+		ADM = 4
+	}
+}
+
+1433.1.1 = {
+	monarch = {
+		name = "Kumbhakarna Singh"
+		dynasty = "Sisodiya"
+		DIP = 4
+		MIL = 6
+		ADM = 4
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = inspiring_leader_personality
+	add_ruler_personality = architectural_visionary_personality
+	#add_ruler_personality = scholar_personality
+	add_heir_personality = malevolent_personality #Murders own father, very unpopular with influential nobles
+	heir = {
+		name = "Udai"
+		monarch_name = "Udai Singh I"
+		dynasty = "Sisodiya"
+		birth_date = 1420.1.1
+		death_date = 1473.1.1
+		claim = 95
+		DIP = 1
+		MIL = 3
+		ADM = 2
+	}
+	queen = {
+		country_of_origin = CMP #Idar
+		name = "Khumbal Devi"
+		dynasty = "Rathore"
+		birth_date = 1400.1.1
+		death_date = 1450.1.1
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1468.1.1 = {
+	monarch = {
+		name = "Udai Singh I"
+		dynasty = "Sisodiya"
+		DIP = 1
+		MIL = 3
+		ADM = 2
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = malevolent_personality #Murders own father, very unpopular with influential nobles
+	add_heir_personality = silver_tongue_personality
+	heir = {
+		name = "Raimal"
+		monarch_name = "Raimal Singh"
+		dynasty = "Sisodiya"
+		birth_date = 1430.1.1
+		death_date = 1509.1.1
+		claim = 95
+		DIP = 3
+		MIL = 3
+		ADM = 1
+	}
+}

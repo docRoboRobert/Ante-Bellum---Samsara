@@ -1,0 +1,23 @@
+#5236 - Guna
+
+owner = MLW
+controller = MLW
+culture = malvi
+religion = jainism
+capital = "Guna"
+trade_goods = incense	#religious centre?
+hre = no
+base_tax = 1
+base_production = 2
+base_manpower = 2
+is_city = yes
+add_core = MLW
+add_core = ML2
+add_core = ML3
+discovered_by = indian
+discovered_by = muslim 
+discovered_by = ottoman
+discovered_by = nomad_group
+discovered_by = chinese
+
+1498.1.1 = { discovered_by = POR }

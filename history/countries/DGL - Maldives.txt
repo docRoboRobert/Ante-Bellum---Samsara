@@ -1,0 +1,33 @@
+government = republic
+add_government_reform = pirate_republic_reform
+government_rank = 1
+mercantilism = 25
+technology_group = indian
+religion = sunni
+primary_culture = malayalam
+capital = 1248	# Malé
+religious_school = shafii_school
+
+#Chiefs of Maldives
+1402.5.12 = {
+	monarch = {
+		name = "Jarkhali Anmuysin"
+		adm = 2
+		dip = 3
+		mil = 5
+		birth_date = 1378.1.30
+		religion = sunni
+		culture = malayalam
+	}
+}
+1440.1.1 = {
+	monarch = {
+		name = "Hussan Darvahdi"
+		adm = 3
+		dip = 4
+		mil = 2
+		birth_date = 1410.8.24
+		religion = sunni
+		culture = malayalam
+	}
+}

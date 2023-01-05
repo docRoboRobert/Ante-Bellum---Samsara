@@ -1,0 +1,9 @@
+government = monarchy
+government_rank = 3
+add_government_reform = autocracy_reform
+technology_group = indian
+primary_culture = sashindi
+add_accepted_culture = saraiki
+add_accepted_culture = rajput
+religion = zoroastrian
+capital = 5247

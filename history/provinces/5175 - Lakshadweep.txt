@@ -1,0 +1,22 @@
+#5175 - Lakshadweep
+
+capital = "Kavaratti"
+trade_goods = fish
+hre = no
+culture = malayalam
+religion = sunni
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+native_size = 5
+native_ferocity = 6
+native_hostileness = 10
+
+discovered_by = indian
+discovered_by = muslim
+discovered_by = east_african
+
+add_permanent_province_modifier = {
+	name = lakshadweep_island_modifier
+	duration = -1
+}

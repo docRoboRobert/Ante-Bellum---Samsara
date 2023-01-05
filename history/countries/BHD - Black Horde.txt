@@ -1,0 +1,16 @@
+government = tribal
+add_government_reform = steppe_nomads
+government_rank = 3
+primary_culture = uzbehk
+add_accepted_culture = bihari
+add_accepted_culture = avadhi
+religion = tengri_pagan_reformed
+technology_group = nomad_group
+capital = 507
+historical_rival = LAH
+historical_rival = DLH
+historical_rival = TRS
+historical_rival = AFG
+historical_friend = SHY
+historical_friend = GLH
+historical_friend = YUA

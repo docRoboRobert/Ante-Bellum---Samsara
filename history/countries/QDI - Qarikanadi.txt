@@ -1,0 +1,12 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = uzbehk
+add_accepted_culture = bihari
+add_accepted_culture = avadhi
+add_accepted_culture = kanauji
+religion = tengri_pagan_reformed
+secondary_religion = hinduism
+technology_group = nomad_group
+capital = 2063
+historical_rival = BNG
+historical_rival = DLH

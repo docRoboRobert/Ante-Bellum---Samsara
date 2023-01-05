@@ -1,0 +1,48 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = nepali
+religion = vajrayana
+technology_group = indian
+capital = 4482	# Sikkim
+
+# Lepchas of Kabi Lungchok
+# Elective tribal leadership
+
+1444.1.1 = {
+	monarch = {
+		name = "Purthang Ve Pa No"
+		dynasty = "Namgyal"
+		ADM = 3
+		DIP = 1
+		MIL = 2
+	}
+	government = tribal
+	add_government_reform = tribal_kingdom
+}
+
+1642.1.1 = {
+	government = monarchy
+	add_government_reform = feudalism_reform
+	monarch = {
+		name = "Phuntsog"
+		dynasty = "Namgyal"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1642.1.1 = {
+	heir = {
+		name = "Tensung"
+		monarch_name = "Tensung"
+		dynasty = "Namgyal"
+		birth_date = 1632.1.1
+		death_date = 1700.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 0
+	}
+}

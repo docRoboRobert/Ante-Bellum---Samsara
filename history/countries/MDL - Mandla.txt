@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = rajput_kingdom
+government_rank = 1
+technology_group = indian
+religion = hinduism
+primary_culture = gondi
+capital = 551
+fixed_capital = 551
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Hirpati"
+		dynasty = "Garha-Mandli"
+		birth_date = 1403.8.23
+		ADM = 3
+		DIP = 3
+		MIL = 2
+	}
+}

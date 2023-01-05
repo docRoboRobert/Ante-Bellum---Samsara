@@ -1,0 +1,35 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = indian
+religion = sarnaism
+primary_culture = garjati
+capital = 2049	# Khurda
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Hatakeshwar III"
+		dynasty = "Raut"
+		birth_date = 1388.9.1
+		religion = hinduism
+		ADM = 2
+		DIP = 3
+		MIL = 2
+	}
+}
+
+1444.1.1 = {
+	heir = {
+		name = "Ballvanhadi"
+		monarch_name = "Ballvanhadi I"
+		dynasty = "Raut"
+		birth_date = 1410.7.15
+		death_Date = 1575.9.9
+		religion = hinduism
+		claim = 95
+		ADM = 3
+		DIP = 3
+		MIL = 2
+	}
+}

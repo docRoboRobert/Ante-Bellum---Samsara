@@ -1,0 +1,18 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = indian
+religion = jainism
+religious_school = yapaniya_school
+primary_culture = gujarati
+capital = 5271
+
+1444.1.1 = {
+	monarch = {
+		name = "Malunasti"
+		dynasty = "Chandrasinhji"
+		ADM = 0
+		DIP = 5
+		MIL = 3
+	}
+}

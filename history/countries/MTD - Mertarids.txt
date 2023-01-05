@@ -1,0 +1,32 @@
+government = monarchy
+add_government_reform = iqta
+government_rank = 1
+primary_culture = afghani
+add_accepted_culture = videsheani
+religion = shiite
+religious_school = jafari_school
+technology_group = muslim
+capital = 4502
+
+1444.1.1 = {
+	add_piety = 0.25
+	monarch = {
+		name = "Albuddalih Fayum"
+		dynasty = "Mertarid"
+		birth_date = 1395.5.10
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+	heir = {
+		name = "Jalvatair"
+		monarch_name = "Jalvatair II"
+		dynasty = "Mertarid"
+		birth_date = 1428.9.30
+		death_date = 1463.3.20
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 4
+	}
+}

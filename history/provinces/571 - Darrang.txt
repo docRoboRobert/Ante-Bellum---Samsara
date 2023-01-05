@@ -1,0 +1,21 @@
+#571 - Darrang
+
+owner = KMR
+controller = KMR
+culture = assamese
+religion = hinduism
+capital = "Koliabar"
+trade_goods = silk
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 3
+is_city = yes
+add_core = KMR
+extra_cost = 8
+center_of_trade = 1
+discovered_by = indian
+discovered_by = chinese
+discovered_by = nomad_group
+
+1627.1.1 = { discovered_by = POR }

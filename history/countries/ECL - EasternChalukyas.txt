@@ -1,0 +1,33 @@
+government = monarchy
+add_government_reform = nayankara_reform
+government_rank = 2
+technology_group = indian
+religion = hinduism
+primary_culture = kannada
+add_accepted_culture = telegu
+capital = 543
+
+1444.1.1 = {
+	monarch = {
+		name = "Amma Krasfadja"
+		dynasty = "Chalukya"
+		birth_date = 1383.2.19
+		ADM = 3
+		DIP = 4
+		MIL = 2
+	}
+}
+
+1444.3.1 = {
+	heir = {
+		name = "Rajaraya"
+		monarch_name = "Rajaraya VII"
+		dynasty = "Chalukya"
+		birth_date = 1439.4.10
+		death_date = 1499.9.2
+		claim = 95
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+}

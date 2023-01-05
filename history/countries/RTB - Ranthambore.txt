@@ -1,0 +1,45 @@
+government = republic
+add_government_reform = oligarchy_reform #Add merc host gov reform later
+government_rank = 1
+primary_culture = persian
+add_accepted_culture = rajput
+religion = zoroastrian
+technology_group = indian
+capital = 4465
+fixed_capital = 4465
+
+
+#Grand master
+1444.1.1 = {
+	monarch = {
+		name = "Asfadarafi Kata"
+		birth_date = 1388.4.23
+		ADM = 4
+		DIP = 2
+		MIL = 3
+		religion = zoroastrian
+		culture = khorasani
+	}
+	leader = {
+		name = "Mardinukrid"
+		type = general
+
+		fire = 4
+		shock = 2
+		manuever = 5
+		siege = 2
+		birth_date = 1394.4.27
+		death_date = 1457.11.26
+	}
+	leader = {
+		name = "Lehtark Jardid"
+		type = general
+
+		fire = 2
+		shock = 1
+		manuever = 2
+		siege = 4
+		birth_date = 1410.6.29
+		death_date = 1458.11.22
+	}
+}

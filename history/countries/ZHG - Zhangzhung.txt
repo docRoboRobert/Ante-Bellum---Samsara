@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 2
+primary_culture = tibetan
+religion = bon_religion
+technology_group = chinese
+capital = 4516
+fixed_capital = 4516

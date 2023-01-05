@@ -1,0 +1,90 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+primary_culture = assamese
+religion = buddhism
+technology_group = indian
+capital = 566	# Gargaon
+
+
+1397.1.1 = {
+	monarch = {
+		name = "Sudangpha"
+		dynasty = "Ahom"
+		ADM = 0
+		DIP = 0
+		MIL = 3
+	}
+}
+
+1397.1.1 = {
+	heir = {
+		name = "Sujangpha"
+		monarch_name = "Sujangpha"
+		dynasty = "Ahom"
+		birth_date = 1370.1.1
+		death_Date = 1422.1.1
+		claim = 95
+		ADM = 1
+		DIP = 1
+		MIL = 1
+	}
+}
+
+1407.1.1 = {
+	monarch = {
+		name = "Sujangpha"
+		dynasty = "Ahom"
+		ADM = 1
+		DIP = 1
+		MIL = 1
+	}
+}
+
+1407.1.1 = {
+	heir = {
+		name = "Siphakpha"
+		monarch_name = "Siphakpha"
+		dynasty = "Ahom"
+		birth_date = 1400.1.1
+		death_Date = 1439.1.1
+		claim = 95
+		ADM = 2
+		DIP = 0
+		MIL = 2
+	}
+}
+
+1422.1.1 = {
+	monarch = {
+		name = "Siphakpha"
+		dynasty = "Ahom"
+		ADM = 2
+		DIP = 0
+		MIL = 2
+	}
+}
+
+1422.1.1 = {
+	heir = {
+		name = "Susenphâ"
+		monarch_name = "Susenphâ"
+		dynasty = "Ahom"
+		birth_date = 1420.1.1
+		death_Date = 1488.1.1
+		claim = 95
+		ADM = 4
+		DIP = 2
+		MIL = 3
+	}
+}
+
+1439.1.1 = {
+	monarch = {
+		name = "Susenphâ"
+		dynasty = "Ahom"
+		ADM = 4
+		DIP = 2
+		MIL = 3
+	}
+}

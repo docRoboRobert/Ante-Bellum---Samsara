@@ -1,0 +1,44 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = gujarati
+religion = hinduism
+technology_group = indian
+capital = 5243 #Dholka
+
+change_jains_or_burghers_land_share_effect = {
+	share = 20
+}
+change_rajputs_or_marathas_or_nobles_land_share_effect = {
+	share = -3
+}
+change_estate_land_share = {
+	estate = estate_nobles
+	share = -10
+}
+change_brahmins_or_church_land_share_effect = {
+	share = -2
+}
+
+1444.1.1 = {
+	monarch = {
+		name = "Pulkarna Deva"
+		dynasty = "Vaghela"
+		birth_date = 1388.9.13
+		ADM = 3
+		DIP = 4
+		MIL = 4
+	}
+} 
+1444.3.1 = {
+	heir = {
+		name = "Tampura Deva"
+		monarch_name = "Tampura Deva III"
+		dynasty = "Vaghela"
+		birth_date = 1411.11.11
+		death_date = 1454.4.14
+		claim = 95
+		ADM = 1
+		DIP = 1
+		MIL = 3
+	}
+}

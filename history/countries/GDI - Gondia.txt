@@ -1,0 +1,10 @@
+government = tribal
+add_government_reform = gond_kingdom
+government_rank = 3
+technology_group = indian
+religion = hinduism
+primary_culture = gondi
+capital = 2082 # Raipur
+historical_rival = CTG
+historical_rival = NCH
+historical_rival = LCH

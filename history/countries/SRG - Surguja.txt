@@ -1,0 +1,33 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = indian
+religion = hinduism
+primary_culture = jharkhandi
+capital = 4470
+fixed_capital = 2098 # Garha
+
+1444.1.1 = {
+	monarch = {
+		name = "Jagganath"
+		dynasty = "Raksel"
+		birth_date = 1397.8.4
+		ADM = 1
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1444.3.1 = {
+	heir = {
+		name = "Garagnath"
+		monarch_name = "Garagnath"
+		dynasty = "Raksel"
+		birth_date = 1418.12.5
+		death_Date = 1472.8.30
+		claim = 95
+		ADM = 3
+		DIP = 3
+		MIL = 2
+	}
+}

@@ -1,0 +1,55 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = indian
+religion = sarnaism
+primary_culture = garjati
+capital = 4447	# Patna
+
+1421.1.1 = {
+	monarch = {
+		name = "Vikramaditya"
+		dynasty = "Chauhan"
+		ADM = 3
+		DIP = 2
+		MIL = 3
+	}
+}
+
+1421.1.1 = {
+	heir = {
+		name = "Baijal"
+		monarch_name = "Baijal"
+		dynasty = "Chauhan"
+		birth_date = 1420.1.1
+		death_Date = 1485.1.1
+		claim = 95
+		ADM = 2
+		DIP = 0
+		MIL = 1
+	}
+}
+
+1455.1.1 = {
+	monarch = {
+		name = "Baijal"
+		dynasty = "Chauhan"
+		ADM = 2
+		DIP = 0
+		MIL = 1
+	}
+}
+
+1455.1.1 = {
+	heir = {
+		name = "Bhanjan"
+		monarch_name = "Bhanjan"
+		dynasty = "Chauhan"
+		birth_date = 1455.1.1
+		death_Date = 1515.1.1
+		claim = 95
+		ADM = 2
+		DIP = 0
+		MIL = 1
+	}
+}

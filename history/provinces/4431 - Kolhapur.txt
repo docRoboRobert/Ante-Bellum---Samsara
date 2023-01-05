@@ -1,0 +1,23 @@
+#4431 - Kolhapur
+
+owner = KNN
+controller = KNN
+culture = marathi
+religion = hinduism
+capital = "Kolhapur"
+trade_goods = naval_supplies
+hre = no
+base_tax = 4
+base_production = 4
+base_manpower = 2
+is_city = yes
+add_rajputs_or_marathas_or_nobles_effect = yes
+add_core = KNN
+add_core = BIJ
+discovered_by = indian
+discovered_by = nomad_group
+discovered_by = muslim 
+discovered_by = ottoman
+discovered_by = chinese
+
+1498.1.1 = { discovered_by = POR }

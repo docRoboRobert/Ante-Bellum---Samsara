@@ -1,0 +1,19 @@
+government = tribal
+add_government_reform = gond_kingdom
+government_rank = 1
+technology_group = indian
+religion = hinduism
+primary_culture = gondi
+capital = 2082 # Raipur
+historical_rival = NCH
+
+1444.1.1 = { 
+	monarch = {
+		name = "Paldarputra III"
+		dynasty = "Gondwi"
+		birth_date = 1412.5.22
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+}

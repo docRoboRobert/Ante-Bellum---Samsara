@@ -1,0 +1,41 @@
+government = monarchy
+add_government_reform = rajput_kingdom
+government_rank = 1
+technology_group = indian
+religion = hinduism
+primary_culture = bagheli
+add_accepted_culture = gondi
+capital = 550
+historical_rival = BKH
+
+
+1444.1.1 = {
+	if = {
+		limit = {
+			NOT = { has_dlc = "Dharma" }
+		}
+		add_government_reform = feudalism_reform
+	}
+	monarch = {
+		name = "Shankaragana IV"
+		dynasty = "Kalachuri"
+		birth_Date = 1421.4.22
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1444.3.1 = {
+	heir = {
+		name = "Yudvaraba Pela"
+		monarch_name = "Yudvaraba Pela"
+		dynasty = "Kalachuri"
+		birth_Date = 1440.2.1
+		death_Date = 1499.8.24
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 5
+	}
+}

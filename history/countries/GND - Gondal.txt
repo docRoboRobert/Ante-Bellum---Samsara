@@ -1,0 +1,19 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = indian
+religion = zoroastrian
+primary_culture = kathisaura
+add_accepted_culture = gujarati
+capital = 5267
+
+1444.1.1 = {
+	monarch = {
+		name = "Sarnadavi II"
+		dynasty = "Kumbhoji"
+		birth_date = 1398.4.30
+		ADM = 2
+		DIP = 4
+		MIL = 3
+	}
+}

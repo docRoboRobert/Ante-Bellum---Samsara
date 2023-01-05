@@ -1,0 +1,36 @@
+government = monarchy
+government_rank = 1
+add_government_reform = autocracy_reform
+primary_culture = saraiki
+religion = nestorian
+technology_group = indian
+capital = 506	# Multan
+fixed_capital = 506 # Cannot move capital away from this province & no power cost to move to it
+historical_rival = SHS
+
+#Langas
+
+1444.1.1 = {
+	monarch = {
+		name = "Jakhabind"
+		dynasty = "Chacha"
+		birth_date = 1400.5.2
+		ADM = 0
+		DIP = 1
+		MIL = 3
+	}
+}
+
+1444.3.1 = {
+	heir = {
+		name = "Pandakit"
+		monarch_name = "Pandakit III"
+		dynasty = "Chacha"
+		birth_date = 1424.5.23
+		death_date = 1481.9.19
+		claim = 95
+		ADM = 4
+		DIP = 0
+		MIL = 1
+	}
+}

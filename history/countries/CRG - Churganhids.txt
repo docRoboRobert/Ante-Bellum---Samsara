@@ -1,0 +1,35 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = muslim
+primary_culture = khorasani
+add_accepted_culture = zorathi
+add_accepted_culture = gondi
+religion = zoroastrian
+capital = 546
+historical_friend = BRH
+
+1444.1.1 = {
+	monarch = {
+		name = "Albukharh"
+		dynasty = "Churganhid"
+		birth_date = 1403.5.19
+		ADM = 4
+		DIP = 3
+		MIL = 5
+	}
+}
+
+1444.3.1 = {
+	heir = {
+		name = "Janmurin"
+		monarch_name = "Janmurin II"
+		dynasty = "Churganhid"
+		birth_date = 1430.7.22
+		death_date = 1459.12.3
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 5
+	}
+}

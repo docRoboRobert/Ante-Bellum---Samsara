@@ -1,0 +1,34 @@
+government = monarchy
+add_government_reform = plutocratic_reform
+government_rank = 1
+technology_group = indian
+religion = malankara
+primary_culture = kannada
+capital = 5187
+
+
+1444.1.1 = {
+	monarch = {
+		name= "Alimushura XI"
+		dynasty = "Wayanad"
+		birth_date = 1408.10.1
+		adm = 5
+		dip = 1
+		mil = 5
+	}
+}
+
+
+1444.3.1 = {
+	heir = {
+		name = "Alimushura"
+		monarch_name = "Alimushura XII"
+		dynasty = "Wayanad"
+		birth_date = 1434.5.26
+		death_date = 1501.3.29
+		claim = 95
+		ADM = 3
+		DIP = 3
+		MIL = 2
+	}
+}

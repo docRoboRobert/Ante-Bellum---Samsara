@@ -1,0 +1,37 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = indian
+religion = malankara
+primary_culture = kathisaura
+capital = 4456	# Jhalavad
+
+1400.1.1 = {
+	monarch = {
+		name = "Vagohoji"
+		dynasty = "Jhala"
+		ADM = 2
+		DIP = 4
+		MIL = 2
+	}
+}
+
+1499.1.1 = {
+	monarch = {
+		name = "Ajoji"
+		dynasty = "Jhala"
+		ADM = 1
+		DIP = 2
+		MIL = 4
+	}
+}
+
+1499.1.1 = {
+	monarch = {
+		name = "Ranoji"
+		dynasty = "Jhala"
+		ADM = 2
+		DIP = 2
+		MIL = 3
+	}
+}

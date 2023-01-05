@@ -1,0 +1,20 @@
+#676 - U-Tsang
+
+owner = SKY
+controller = SKY
+add_core = SKY
+culture = tibetan
+religion = vajrayana
+capital = "Shigatse"
+trade_goods = incense
+hre = no
+base_tax = 2 
+base_production = 2
+base_manpower = 2
+is_city = yes
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group
+
+
+1721.1.1 = { discovered_by = SPA }

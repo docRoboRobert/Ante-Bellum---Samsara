@@ -1,0 +1,22 @@
+government = theocracy
+add_government_reform = leading_clergy_reform
+government_rank = 1
+technology_group = indian
+religion = jainism
+religious_school = svetambara_school
+primary_culture = marathi
+capital = 544
+fixed_capital = 544
+historical_friend = MNK
+
+
+1444.1.1 = {
+	monarch = {
+		name= "Danhidaji III"
+		dynasty = "Haipati Keva"
+		birth_date = 1414.1.14
+		dip = 5
+		mil = 0
+		adm = 3
+	}
+}

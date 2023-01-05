@@ -1,0 +1,35 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = indian
+religion = malankara
+primary_culture = kannada
+add_accepted_culture = konkan
+capital = 4427
+
+
+1444.1.1 = {
+	monarch = {
+		name= "Avasara VIII"
+		dynasty = "Shilahara"
+		birth_date = 1412.9.14
+		dip = 4
+		mil = 1
+		adm = 4
+	}
+}
+
+
+1444.3.1 = {
+	heir = {
+		name = "Pelkuraja"
+		monarch_name = "Pelkuraja I"
+		dynasty = "Shilahara"
+		birth_date = 1437.4.20
+		death_date = 1477.11.1
+		claim = 95
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+}

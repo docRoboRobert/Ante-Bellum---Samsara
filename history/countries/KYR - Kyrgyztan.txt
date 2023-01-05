@@ -1,0 +1,8 @@
+government = monarchy
+government_rank = 2
+add_government_reform = autocracy_reform
+technology_group = muslim
+religion = tengri_pagan_reformed
+primary_culture = kirgiz
+add_accepted_culture = uzbehk
+capital = 2364

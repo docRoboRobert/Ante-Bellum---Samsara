@@ -1,0 +1,31 @@
+government = monarchy
+add_government_reform = nayankara_reform
+technology_group = indian
+religion = hinduism
+primary_culture = tamil
+capital = 536 #Madurai
+
+1444.1.1 = {
+	monarch = {
+		name = "Maravarman Sundara IV"
+		dynasty = "Pandya"
+		birth_date = 1397.12.11
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1444.3.1 = {
+	heir = {
+		name = "Kulusvira Pandya"
+		monarch_name = "Kulusvira Pandya I"
+		dynasty = "Pandya"
+		birth_date = 1430.11.28
+		death_date = 1467.4.1
+		claim = 95
+		ADM = 4
+		DIP = 5
+		MIL = 3
+	}
+}
