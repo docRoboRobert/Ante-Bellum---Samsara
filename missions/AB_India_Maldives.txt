@@ -99,7 +99,7 @@ abi_maldives_second = {
 			5171 = {
 				owned_by = ROOT
 				religion = ROOT
-				NOT = { unrest = 0.1 }
+				NOT = { unrest = 0.5 }
 				NOT = { local_autonomy = 2.5 }
 			}
 		}
@@ -129,7 +129,7 @@ abi_maldives_second = {
 			grown_by_development = 13
 			5171 = {
 				owned_by = ROOT
-				NOT = { local_autonomy_above_min = 0 }
+				NOT = { local_autonomy_above_min = 1 }
 				num_of_times_improved_by_owner = 6
 				OR = {
 					has_building = marketplace
@@ -138,7 +138,7 @@ abi_maldives_second = {
 			}
 			1248 = {
 				owned_by = ROOT
-				NOT = { local_autonomy_above_min = 0 }
+				NOT = { local_autonomy_above_min = 1 }
 				num_of_times_improved_by_owner = 7
 				has_building = marketplace
 			}
@@ -178,13 +178,13 @@ abi_maldives_second = {
 				4410 = {
 					has_privateer_share_in_trade_node = {
 						who = ROOT
-						share = 0.25
+						share = 0.2
 					}
 				}
 				4410 = {
 					trade_share = {
 						country = ROOT
-						share = 25
+						share = 20
 					}
 				}
 			}
@@ -543,7 +543,10 @@ abi_maldives_fourth = {
 		required_missions = { }
 		
 		trigger = {
-			advisor = navigator
+			OR = {
+				advisor = navigator
+				advisor = naval_reformer
+			}
 			OR = {
 				monthly_adm = 9
 				monthly_dip = 9
@@ -978,7 +981,7 @@ abi_maldives_fifth = {
 				NOT = { local_autonomy_above_min = 5 }
 				development = 10
 				OR = {
-					NOT = { unrest = 0 }
+					NOT = { unrest = 0.5 }
 					is_owned_by_trade_company = yes
 				}
 			}
