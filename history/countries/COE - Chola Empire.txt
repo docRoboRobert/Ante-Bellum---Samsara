@@ -1,0 +1,12 @@
+government = monarchy
+add_government_reform = nayankara_reform
+government_rank = 3
+technology_group = indian
+religion = hinduism
+primary_culture = tamil
+add_accepted_culture = oriya
+add_accepted_culture = bengali
+capital = 2026 #Tanjore
+historical_rival = PLV
+historical_rival = TMS
+historical_rival = TML

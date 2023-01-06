@@ -227,6 +227,12 @@
  TML_ADJ:0 "Tamil"
  TMA:0 "Tamilasia"
  TMA_ADJ:0 "Tamilasian"
+ COE:0 "Chola Empire"
+ COE_ADJ:0 "Cholan Empire" 
+ KTH:0 "Kathiawar"
+ KTH_ADJ:0 "Kathiawari"
+ SAU:0 "Saurashtra"
+ SAU_ADJ:0 "Saurashtran"
  
  NNN:0 "Parmistan"
  NNN_ADJ:0 "Parmistan"

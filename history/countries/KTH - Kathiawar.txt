@@ -1,0 +1,9 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 2
+technology_group = indian
+religion = jainism
+religious_school = yapaniya_school
+primary_culture = gujarati
+add_accepted_culture = sindhi
+capital = 2052
