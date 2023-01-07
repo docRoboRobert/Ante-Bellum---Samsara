@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 2
+technology_group = indian
+religion = hinduism
+primary_culture = gujarati
+add_accepted_culture = kathisaura
+capital = 515

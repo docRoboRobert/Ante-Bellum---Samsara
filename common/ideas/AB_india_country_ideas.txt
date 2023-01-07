@@ -510,3 +510,45 @@ HTC_ideas = {
 		colonists = 1
 	}
 }
+
+#Sri Lankan ideas
+LNK_ideas = {
+	start = {
+		development_cost = -0.1
+		infantry_power = 0.10
+	}
+
+	bonus = {
+		navy_tradition = 0.25
+	}
+	
+	trigger = {
+		tag = LNK
+	}
+	free = yes		
+	
+	LNK_coastal_ports = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	LNK_reorganized_divisions = {
+		stability_cost_modifier = -0.1
+		state_maintenance_modifier = -0.1
+	}
+	LNK_religious_temples = {
+		tolerance_own = 1
+		global_tax_modifier = 0.1
+	}
+	LNK_anuradhapura = {
+		build_cost = -0.1
+	}
+	LNK_cinamon_kings = {
+		production_efficiency = 0.1
+	}
+	LNK_protecting_island = {
+		naval_morale = 0.1
+		sunk_ship_morale_hit_recieved = -0.1
+	}
+	LNK_guarding_the_passage = {
+		fire_damage_received = -0.075
+	}
+}

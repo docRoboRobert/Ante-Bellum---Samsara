@@ -233,6 +233,10 @@
  KTH_ADJ:0 "Kathiawari"
  SAU:0 "Saurashtra"
  SAU_ADJ:0 "Saurashtran"
+ STH:0 "Sorath"
+ STH_ADJ:0 "Sorathan"
+ LNK:0 "Lanka"
+ LNK_ADJ:0 "Lankan"
  
  NNN:0 "Parmistan"
  NNN_ADJ:0 "Parmistan"
@@ -242,3 +246,5 @@
  BKH_RENAME_1_ADJ:0 "Black Khanatan"
  YAD_RENAME_1:0 "Yadavas"
  YAD_RENAME_1_ADJ:0 "Yadavan"
+ LNK_RENAME_1:0 "Ceylon"
+ LNK_RENAME_1_ADJ:0 "Ceyloni"

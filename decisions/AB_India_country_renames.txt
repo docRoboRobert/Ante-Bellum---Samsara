@@ -39,4 +39,23 @@ country_decisions = {
 		}
 		ai_importance = 0
 	}
+	
+	india_LNK_rename_1 = {
+		major = yes
+		potential = {
+			tag = LNK
+			NOT = { has_country_flag = LNK_changed_name_flag }
+		}
+		allow = {
+			tag = LNK
+		}
+		effect = {
+			override_country_name = LNK_RENAME_1
+			set_country_flag = LNK_changed_name_flag 
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
 }
