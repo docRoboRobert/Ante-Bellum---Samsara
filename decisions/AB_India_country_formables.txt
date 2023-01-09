@@ -78,4 +78,142 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
+	
+	abi_pahar_formation = {
+		major = yes
+		potential = {
+			primary_culture = pahari
+			NOT = { has_country_flag = formed_pahar_flag }
+			NOT = { tag = PHR }
+			NOT = { exists = PHR }
+		}
+		provinces_to_highlight = {
+			area = himalayan_hills_area
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			OR = {
+				primary_culture = pahari
+				tag = GHR
+				tag = KGR
+			}
+			NOT = { exists = PHR }
+			is_at_war = no
+			himalayan_hills_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			change_tag = PHR
+			restore_country_name = yes
+			add_prestige = 20
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			baisi_rajya_area = { add_permanent_claim = ROOT }
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 10
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_pahar_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	abi_himalaya_formation = {
+		major = yes
+		potential = {
+			culture_group = northern_aryan
+			NOT = { has_country_flag = formed_himalaya_flag }
+			NOT = { tag = HIM }
+			NOT = { exists = HIM }
+			OR = {
+				tag = PHR
+				tag = NPL
+				tag = ENP
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = himalayan_hills_area
+				area = baisi_rajya_area
+				area = nepal_area
+				province_id = 4482
+				province_id = 2074
+				province_id = 4515
+				province_id = 4484
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			culture_group = northern_aryan
+			OR = {
+				tag = PHR
+				tag = NPL
+			}
+			NOT = { exists = HIM }
+			is_at_war = no
+			himalayan_hills_area = {
+				type = all
+				owned_by = ROOT
+			}
+			nepal_area = {
+				type = all
+				owned_by = ROOT
+			}
+			baisi_rajya_area = {
+				type = all
+				owned_by = ROOT
+			}
+			OR = {
+				owns_or_non_sovereign_subject_of = 4515
+				owns_or_non_sovereign_subject_of = 2074
+			}
+			OR = {
+				is_core = 4482
+				is_core = 4484
+			}
+		}
+		effect = {
+			change_tag = HIM
+			restore_country_name = yes
+			add_prestige = 20
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			set_government_rank = 2
+			change_government = monarchy
+			ngari_area = { add_permanent_claim = ROOT }
+			kashmir_area = { add_permanent_claim = ROOT }
+			bhutan_area = { add_permanent_claim = ROOT }
+			tsang_area = { add_permanent_claim = ROOT }
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 10
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_himalaya_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
 }

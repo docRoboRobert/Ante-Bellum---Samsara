@@ -549,6 +549,91 @@ LNK_ideas = {
 		sunk_ship_morale_hit_recieved = -0.1
 	}
 	LNK_guarding_the_passage = {
-		fire_damage_received = -0.075
+		fire_damage_received = -0.082
+	}
+}
+
+#Pahari ideas
+PHR_ideas = {
+	start = {
+		defensiveness = 0.15
+		hostile_attrition = 2
+	}
+
+	bonus = {
+		enemy_core_creation = 0.2
+	}
+	
+	trigger = {
+		tag = PHR
+	}
+	free = yes		
+	
+	PHR_himalayan_mountains = {
+		shock_damage_received = -0.10
+	}
+	PHR_many_religions = {
+		tolerance_own = 1
+		tolerance_heathen = 1
+	}
+	PHR_mountain_pastures = {
+		production_efficiency = 0.075
+	}
+	PHR_adaptation = {
+		development_cost = -0.1
+	}
+	PHR_strategic_passes = {
+		fort_maintenance_modifier = -0.15
+		fire_damage_received = -0.05
+	}
+	PHR_pahari_mobilization = {
+		manpower_in_own_culture_provinces = 0.25
+		global_tax_modifier = 0.05
+	}
+	PHR_monk_arts = {
+		advisor_cost = -0.1
+	}
+}
+
+#Himalayan ideas
+HIM_ideas = {
+	start = {
+		defensiveness = 0.2
+		tolerance_own = 1
+	}
+
+	bonus = {
+		stability_cost_modifier = -0.15
+	}
+	
+	trigger = {
+		tag = HIM
+	}
+	free = yes		
+	
+	HIM_himalayan_mountains = {
+		max_hostile_attrition = 2
+		hostile_attrition = 2
+	}
+	HIM_many_religions = {
+		global_unrest = -1
+		global_tax_modifier = 0.05
+	}
+	HIM_mountain_pastures = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	HIM_adaptation = {
+		development_cost = -0.1
+	}
+	HIM_strategic_passes = {
+		discipline = 0.05
+	}
+	HIM_aryan_unification = {
+		same_culture_advisor_cost = -0.15
+		culture_conversion_cost = -0.15
+	}
+	HIM_monk_arts = {
+		religious_unity = 0.1
+		prestige = 0.5
 	}
 }
