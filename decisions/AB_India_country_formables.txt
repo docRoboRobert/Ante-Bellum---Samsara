@@ -200,12 +200,182 @@ country_decisions = {
 			kashmir_area = { add_permanent_claim = ROOT }
 			bhutan_area = { add_permanent_claim = ROOT }
 			tsang_area = { add_permanent_claim = ROOT }
+			utsang_area = { add_permanent_claim = ROOT }
 			add_power_projection = {
 				type = mission_rewards_power_projection
 				amount = 10
 			}
 			swap_non_generic_missions = yes
 			set_country_flag = formed_himalaya_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	abi_zhangzhung_formation = {
+		major = yes
+		potential = {
+			culture = tibetan
+			NOT = { has_country_flag = formed_zhangzhung_flag }
+			NOT = { tag = ZHG }
+			NOT = { exists = ZHG }
+			OR = {
+				tag = GUG
+				tag = NGR
+				tag = TSU
+				tag = GYI
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4518
+				province_id = 4519
+				province_id = 4514
+				province_id = 4515
+				province_id = 4516
+				province_id = 4520
+				province_id = 2074
+				province_id = 2128
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			culture = tibetan
+			religion = bon_religion
+			NOT = { exists = ZHG }
+			is_at_war = no
+			owns_core_province = 4516
+			owns_core_province = 4518
+			owns_core_province = 4520
+			owns_core_province = 2128
+			OR = {
+				owns_or_non_sovereign_subject_of = 4519
+				owns_or_non_sovereign_subject_of = 4514
+			}
+			OR = {
+				owns_or_non_sovereign_subject_of = 2074
+				owns_or_non_sovereign_subject_of = 4515
+			}
+			mil_power = 100
+		}
+		effect = {
+			change_tag = ZHG
+			restore_country_name = yes
+			add_prestige = 20
+			
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			set_government_rank = 2
+			change_government = monarchy
+			tsang_area = { add_permanent_claim = ROOT }
+			utsang_area = { add_permanent_claim = ROOT }
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 10
+			}
+			tibet_region = {
+				limit = { religion = bon_religion }
+				add_core = ROOT
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_zhangzhung_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	abi_pahadi_formation = {
+		major = yes
+		potential = {
+			culture = tibetan
+			NOT = { has_country_flag = formed_pahadi_flag }
+			NOT = { tag = QNH }
+			NOT = { exists = QNH }
+			OR = {
+				tag = HIM
+				tag = ZHG
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = tibet_region
+				area = himalayan_hills_area
+				area = baisi_rajya_area
+				area = nepal_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			OR = {
+				culture = tibetan
+				accepted_culture = tibetan
+			}
+			OR = {
+				religion = bon_religion
+				religion = vajrayana
+				religion = hinduism
+			}
+			OR = {
+				tag = HIM
+				tag = ZHG
+			}
+			NOT = { exists = QNH }
+			is_at_war = no
+			himalayan_hills_area = {
+				type = all
+				owned_by = ROOT
+			}
+			nepal_area = {
+				type = all
+				owned_by = ROOT
+			}
+			baisi_rajya_area = {
+				type = all
+				owned_by = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 20
+				region = tibet_region
+			}
+			mil_power = 100
+		}
+		effect = {
+			change_tag = QNH
+			restore_country_name = yes
+			add_prestige = 20
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			set_government_rank = 3
+			change_government = monarchy
+			add_legitimacy = 20
+			tibet_region = { add_core = ROOT }
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 25
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_zhangzhung_flag
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas

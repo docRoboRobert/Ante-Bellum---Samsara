@@ -19,10 +19,16 @@
  india_achievement_malaysialam_desc: "While having §GMalayalam§! as primary culture, conquer and core all of §YMalaya§! region."
  achiev_malaysialam_desc: "While having §GMalayalam§! as primary culture, conquer and core all of §YMalaya§! region.\n"
  
- india_achievement_deva_victory_title: "Achievement Available: §YDeva victory§!"
+ india_achievement_deva_victory_title: "Achievement Available: §YDeva Victory§!"
  india_achievement_deva_victory_desc: "As any §MHindu§! nation from §YIndian Subcontinent§! conquer all of §YPersia and Khorasan§! region and convert it to your religion."
  achiev_deva_victory_desc: "As any §MHindu§! nation from §YIndian Subcontinent§! conquer all of §YPersia and Khorasan§! region and convert it to your religion.\n"
  
  india_achievement_tamil_speedrun_title: "Achievement Available: §YCan't wait to do it myself!§!"
  india_achievement_tamil_speedrun_desc: "Starting as @PLV Pallava unite all the Tamil lands (highlighted) before §RNandivarman V§! - your starting ruler dies."
  achiev_tamil_speedrun_desc: "Starting as @PLV Pallava unite all the Tamil lands (highlighted) before §RNandivarman V§! - your starting ruler - dies.\n"
+ 
+ india_achievement_mountain_kingdom_title: "Achievement Available: §YMountain Kingdom§!"
+ india_achievement_mountain_kingdom_desc: "Form @QNH Pahadi Samrajya, then own §GALL highlighted§! mountainous provinces §Rand nothing else!§!"
+ achiev_mountain_kingdom_desc: "Form @QNH Pahadi Samrajya, then own §GALL highlighted§! mountainous provinces §Rand nothing else!§!\n"
+ india_achievement_owns_mountains: "Owns all highlighted mountainous provinces"
+ india_achievement_owns_nothing_else_1: "Does not own any provinces other than the highlighted ones"

@@ -303,4 +303,265 @@ country_decisions = {
 		}
 		ai_importance = 0
 	}
+	
+	india_achievement_mountain_kingdom = {
+		major = yes
+		potential = {
+			OR = {
+				culture = tibetan
+				culture_group = northern_aryan
+			}
+			NOT = { has_country_flag = achiev_mountain_kingdom }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 449
+				province_id = 2225
+				province_id = 2127
+				province_id = 4210
+				province_id = 739
+				province_id = 2125
+				province_id = 1968
+				province_id = 460
+				province_id = 4482
+				province_id = 565
+				province_id = 705
+				province_id = 2134
+				province_id = 2395
+				province_id = 2396
+				province_id = 4404
+				province_id = 2040
+				province_id = 2167
+				province_id = 661
+				province_id = 2165
+				province_id = 2371
+				province_id = 2381
+				province_id = 1844
+				province_id = 4406
+				province_id = 583
+				province_id = 2183
+				province_id = 2180
+				province_id = 2181
+				province_id = 689
+				province_id = 4198
+				province_id = 5087
+				province_id = 2179
+				province_id = 2136
+				province_id = 702
+				province_id = 2748
+				province_id = 675
+				province_id = 2168
+				province_id = 662
+				province_id = 674
+				province_id = 673
+				province_id = 4199
+				province_id = 5099
+				province_id = 680
+				province_id = 5090
+				province_id = 681
+				province_id = 5091
+				province_id = 5088
+				province_id = 2173
+				province_id = 5110
+				area = kabulistan_area
+				area = kashmir_area
+				area = ngari_area
+				area = utsang_area
+				area = tsang_area
+				area = himalayan_hills_area
+				area = baisi_rajya_area
+				area = nepal_area
+				area = kham_area
+				area = karenni_area
+				area = chuanbei_area
+				area = shanxi_area
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = india_achievement_ironman_on
+				ironman = yes
+			}
+			tag = QNH
+			custom_trigger_tooltip = {
+				tooltip = india_achievement_owns_mountains
+				kabulistan_area = {
+					type = all
+					owned_by = ROOT
+				}
+				kashmir_area = {
+					type = all
+					owned_by = ROOT
+				}
+				ngari_area = {
+					type = all
+					owned_by = ROOT
+				}
+				utsang_area = {
+					type = all
+					owned_by = ROOT
+				}
+				tsang_area = {
+					type = all
+					owned_by = ROOT
+				}
+				himalayan_hills_area = {
+					type = all
+					owned_by = ROOT
+				}
+				baisi_rajya_area = {
+					type = all
+					owned_by = ROOT
+				}
+				nepal_area = {
+					type = all
+					owned_by = ROOT
+				}
+				kham_area = {
+					type = all
+					owned_by = ROOT
+				}
+				karenni_area = {
+					type = all
+					owned_by = ROOT
+				}
+				chuanbei_area = {
+					type = all
+					owned_by = ROOT
+				}
+				shanxi_area = {
+					type = all
+					owned_by = ROOT
+				}
+				owns = 449
+				owns = 2225
+				owns = 2127
+				owns = 4210
+				owns = 739
+				owns = 2125
+				owns = 1968
+				owns = 460
+				owns = 4482
+				owns = 565
+				owns = 705
+				owns = 2134
+				owns = 2395
+				owns = 2396
+				owns = 4404
+				owns = 2040
+				owns = 2167
+				owns = 661
+				owns = 2165
+				owns = 2371
+				owns = 2381
+				owns = 1844
+				owns = 4406
+				owns = 583
+				owns = 2183
+				owns = 2180
+				owns = 2181
+				owns = 689
+				owns = 4198
+				owns = 5087
+				owns = 2179
+				owns = 2136
+				owns = 702
+				owns = 2748
+				owns = 675
+				owns = 2168
+				owns = 662
+				owns = 674
+				owns = 673
+				owns = 4199
+				owns = 5099
+				owns = 680
+				owns = 5090
+				owns = 681
+				owns = 5091
+				owns = 5088
+				owns = 2173
+				owns = 5110
+			}
+			custom_trigger_tooltip = {
+				tooltip = india_achievement_owns_nothing_else_1
+				all_province = {
+					NOT = {
+						OR = {
+							province_id = 449
+							province_id = 2225
+							province_id = 2127
+							province_id = 4210
+							province_id = 739
+							province_id = 2125
+							province_id = 1968
+							province_id = 460
+							province_id = 4482
+							province_id = 565
+							province_id = 705
+							province_id = 2134
+							province_id = 2395
+							province_id = 2396
+							province_id = 4404
+							province_id = 2040
+							province_id = 2167
+							province_id = 661
+							province_id = 2165
+							province_id = 2371
+							province_id = 2381
+							province_id = 1844
+							province_id = 4406
+							province_id = 583
+							province_id = 2183
+							province_id = 2180
+							province_id = 2181
+							province_id = 689
+							province_id = 4198
+							province_id = 5087
+							province_id = 2179
+							province_id = 2136
+							province_id = 702
+							province_id = 2748
+							province_id = 675
+							province_id = 2168
+							province_id = 662
+							province_id = 674
+							province_id = 673
+							province_id = 4199
+							province_id = 5099
+							province_id = 680
+							province_id = 5090
+							province_id = 681
+							province_id = 5091
+							province_id = 5088
+							province_id = 2173
+							province_id = 5110
+							area = kabulistan_area
+							area = kashmir_area
+							area = ngari_area
+							area = utsang_area
+							area = tsang_area
+							area = himalayan_hills_area
+							area = baisi_rajya_area
+							area = nepal_area
+							area = kham_area
+							area = karenni_area
+							area = chuanbei_area
+							area = shanxi_area
+						}
+					}
+					NOT = { owned_by = ROOT }
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = india_achievement_diff_4
+			custom_tooltip = achiev_mountain_kingdom_desc
+			set_country_flag = achiev_mountain_kingdom
+			add_treasury = 1
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
 }

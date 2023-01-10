@@ -637,3 +637,88 @@ HIM_ideas = {
 		prestige = 0.5
 	}
 }
+
+#Zhangzhung ideas
+ZHG_ideas = {
+	start = {
+		defensiveness = 0.2
+		global_unrest = -1
+	}
+
+	bonus = {
+		same_culture_advisor_cost = -0.2
+	}
+	
+	trigger = {
+		tag = ZHG
+	}
+	free = yes		
+	
+	ZHG_bon_prctise = {
+		religious_unity = 0.2
+	}
+	ZHG_western_administration = {
+		state_maintenance_modifier = -0.15
+		global_autonomy = -0.05
+	}
+	ZHG_highland_roads = {
+		movement_speed = 0.10
+		build_cost = -0.1
+	}
+	ZHG_mountain_forts = {
+		shock_damage_received = -0.10
+	}
+	ZHG_harsh_adaptation = {
+		development_cost = -0.1
+	}
+	ZHG_language = {
+		culture_conversion_cost = -0.15
+		improve_relation_modifier = 0.15
+	}
+	ZHG_bon_revival = {
+		global_heathen_missionary_strength = 0.02
+	}
+}
+
+#Pahadi Samarajya ideas
+QNH_ideas = {
+	start = {
+		hostile_attrition = 2
+		diplomatic_reputation = 1
+	}
+
+	bonus = {
+		global_supply_limit_modifier = 0.2
+	}
+	
+	trigger = {
+		tag = QNH
+	}
+	free = yes		
+	
+	QNH_unite_two_regions = {
+		development_cost = -0.075
+		build_cost = -0.1
+	}
+	QNH_king_on_high_mountain = {
+		defensiveness = 0.25
+	}
+	QNH_himalayan_stronghold = {
+		fire_damage_received = -0.05
+		shock_damage_received = -0.05
+	}
+	QNH_administative_reform = {
+		state_governing_cost = 0.1
+		global_tax_modifier = 0.1
+	}
+	QNH_large_realm = {
+		administrative_efficiency = 0.05
+	}
+	QNH_unpenetrable = {
+		own_territory_dice_roll_bonus = 1
+	}
+	QNH_high_above_world = {
+		yearly_corruption = -0.025
+		prestige = 0.5
+	}
+}
