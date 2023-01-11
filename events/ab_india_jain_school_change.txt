@@ -1,0 +1,43 @@
+#Change Jain school
+namespace = abi_jain_picker
+
+country_event = {
+	id = abi_jain_picker.1
+	title = abi_jain_picker.1.t
+	desc = abi_jain_picker.1.d
+	picture = PRAYING_eventPicture
+	
+	is_triggered_only = yes
+	
+	#Choose jain school below
+	
+	option = {
+		name = abi_jain_picker.1.a
+		set_religious_school = {
+			group = jain_group
+			school = digambara_school
+		}
+		add_adm_power = -10
+		add_dip_power = -10
+	}
+	
+	option = {
+		name = abi_jain_picker.1.b
+		set_religious_school = {
+			group = jain_group
+			school = svetambara_school
+		}
+		add_adm_power = -10
+		add_dip_power = -10
+	}
+	
+	option = {
+		name = abi_jain_picker.1.c
+		set_religious_school = {
+			group = jain_group
+			school = yapaniya_school
+		}
+		add_adm_power = -10
+		add_dip_power = -10
+	}
+}

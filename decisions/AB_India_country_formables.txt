@@ -196,6 +196,10 @@ country_decisions = {
 			}
 			set_government_rank = 2
 			change_government = monarchy
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
 			ngari_area = { add_permanent_claim = ROOT }
 			kashmir_area = { add_permanent_claim = ROOT }
 			bhutan_area = { add_permanent_claim = ROOT }
@@ -276,6 +280,10 @@ country_decisions = {
 			}
 			set_government_rank = 2
 			change_government = monarchy
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
 			tsang_area = { add_permanent_claim = ROOT }
 			utsang_area = { add_permanent_claim = ROOT }
 			add_power_projection = {
@@ -365,6 +373,10 @@ country_decisions = {
 				add_base_tax = 1
 				add_base_production = 1
 				add_base_manpower = 1
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
 			}
 			set_government_rank = 3
 			change_government = monarchy

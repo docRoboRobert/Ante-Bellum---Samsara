@@ -9,6 +9,14 @@
  abindia_shitevent.1.b:0 "Listen here, I know EXACTLY what I'm doing"
  abindia_shitevent.1.tooltip2:0 "You will continue to play the broken nation but with different national indeas."
  
+ #Jain school change
+ 
+ abi_jain_picker.1.t:0 "New school of thought"
+ abi_jain_picker.1.d:0 "For reasons known only to gods and the ruling class, current jainist philosophy no longer suits us or our nation's needs. After heated debates with religious scholars, we have decided to choose new way of thought abandoning our previous teachings. \nNow one question rises, which jain philosophy should we now follow?"
+ abi_jain_picker.1.a:0 "Embrace Digambara teachings"
+ abi_jain_picker.1.b:0 "Embrace Svetambara teachings"
+ abi_jain_picker.1.c:0 "Embrace Yapaniya teachings"
+ 
  #Mission events
  abindia_mission.1.t:0 "Expedition to Lakshadweeps"
  abindia_mission.1.d:0 "To the north of Maldives lies another chain of tiny islands known as Lakshadweeps. Those tiny rocks west of Malabar coast were known and inhabited by the locals since antiquity. Due to their size and insignificane, nobody has yet made any effort of establishing permanent rule over there. For centuries islands served as stop and resupply hub for merchants and travellers. The locals, despite adopting Islam thanks to Ubaidullah in 661 CE, still live in free stateless society. As our pirate republic seeks expansion, claiming those islands for the black flag would be a perfect beginning. Not to mention that once within our hands, those islands would make a perfect naval base to organize pirate raids on Western Indian Coast. \nIntegrating the islands permanently to our republic won't be an easy task though. Land there is mostly empty and unsustainable. First settlers to arrive there to establish administrative structures would require constant flow of supplies from Maldives before building enough infrastructure to support basic fishing economy.But once it's done, we can expect it to serve as excellent naval base. It is a mission worth consideration."

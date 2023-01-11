@@ -26,3 +26,9 @@
  india_convert_to_malankara_title:0 "Convert to Malankara"
  india_convert_to_malankara_desc:0 "Influence of Christianity within our country has grown high enough that it is worthy considering adopting Malankara as our state religion."
  india_convert_to_malankara.tooltip:0 "All known nations that also follow Malankara will be pleased with our decision"
+ 
+ #Jain school change
+ 
+ india_pick_jain_school_title:0 "Change Jain school of thought"
+ india_pick_jain_school_desc:0 "Jain branch we are currently following no longer suits our nation. We shall pick new jain school to follow and invite new scholars."
+ india_pick_jain_school_cooldown_tooltip:0 "Did not change religious school in the last §Y10 Years§!"

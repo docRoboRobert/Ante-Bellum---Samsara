@@ -75,3 +75,13 @@ vassal_charity_aspect_modifier = {
 	vassal_forcelimit_bonus = 0.1
 	production_efficiency = -0.02
 }
+
+#Timers for jain school change
+jain_school_change_timer = {
+
+}
+
+jain_school_change_timer_ai = {
+
+}
+# # # # #

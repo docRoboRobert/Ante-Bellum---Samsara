@@ -1,0 +1,57 @@
+country_decisions = {
+
+	india_pick_jain_school = {
+		potential = {
+			religion = jainism
+			NOT = { has_country_modifier = jain_school_change_timer }
+			NOT = { has_country_modifier = jain_school_change_timer_ai }
+		}
+		allow = {
+			religion = jainism
+			custom_trigger_tooltip = {
+				tooltip = india_pick_jain_school_cooldown_tooltip
+				NOT = { has_country_modifier = jain_school_change_timer }
+				NOT = { has_country_modifier = jain_school_change_timer_ai }
+			}
+		}
+		effect = {
+			add_prestige = -5
+			hidden_effect = {
+				if = {
+					limit = { ai = no }
+					add_country_modifier = {
+						name = jain_school_change_timer
+						duration = 3650
+						hidden = yes
+					}
+				}
+				if = {
+					limit = { ai = yes }
+					add_country_modifier = {
+						name = jain_school_change_timer_ai
+						duration = 7300
+						hidden = yes
+					}
+				}
+			}
+			country_event = { 
+				id = abi_jain_picker.1
+				days = 0
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					num_of_religion = {
+						religion = jainism
+						value = 0.67
+					}
+				}
+				NOT = { stability = 0 }
+			}
+		}
+		ai_importance = 25
+	}
+}
