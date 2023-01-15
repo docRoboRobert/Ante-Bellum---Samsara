@@ -238,6 +238,20 @@
  LNK:0 "Lanka"
  LNK_ADJ:0 "Lankan"
  
+ #Unique colonial
+ AU1:0 "Aljanubia"
+ AU1_ADJ:0 "Aljanubian"
+ AU2:0 "Ulimaroa"
+ AU2_ADJ:0 "Ulimaroan"
+ AU3:0 "Spaidar Dvipam"
+ AU3_ADJ:0 "Spaidar Dvipami"
+ AU4:0 "Neechedveep"
+ AU4_ADJ:0 "Neechedveep"
+ AU5:0 "Australisia"
+ AU5_ADJ:0 "Australisian"
+ 
+ #
+ 
  NNN:0 "Parmistan"
  NNN_ADJ:0 "Parmistan"
  

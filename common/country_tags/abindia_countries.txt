@@ -118,3 +118,10 @@ KTH = "countries/Kathiawar2.txt"
 SAU = "countries/Saurashtra.txt"
 STH = "countries/Sorath.txt"
 LNK = "countries/Lanka.txt"
+
+#Colonial countries
+AU1 = "countries/Aljanubia.txt"		#Muslim Australia
+AU2 = "countries/Ulimaroa.txt"		#Maldivian Australia
+AU3 = "countries/SpaidarDvipam.txt"	#Tamil Australia
+AU4 = "countries/NeecheDveep.txt"	#General Hindu Australia
+AU5 = "countries/Australisia.txt"	#Christian Australia

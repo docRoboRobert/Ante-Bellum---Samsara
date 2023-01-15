@@ -1,0 +1,8 @@
+government = republic
+government_rank = 1
+mercantilism = 25
+technology_group = muslim
+religion = sunni
+primary_culture = indian_arabic
+capital = 1084
+religious_school = shafii_school

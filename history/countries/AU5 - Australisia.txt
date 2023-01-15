@@ -1,0 +1,7 @@
+government = republic
+mercantilism = 25
+government_rank = 1
+technology_group = indian
+religion = malankara
+primary_culture = malayankara_toma
+capital = 1084
