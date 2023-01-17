@@ -398,4 +398,112 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
+	
+	abi_chola_emp_formation = {
+		major = yes
+		potential = {
+			tag = COA
+			NOT = { has_country_flag = formed_chola_emp_flag }
+			NOT = { exists = COE }
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = madura_area
+				area = lanka_area
+				area = kongu_area
+				area = south_carnatic_area
+				area = north_carnatic_area
+				area = andhra_area
+				#
+				province_id = 552
+				province_id = 561
+				province_id = 2039
+				#
+				province_id = 574
+				province_id = 1815
+				province_id = 4399
+				#
+				province_id = 2673
+				province_id = 617
+				province_id = 596
+				province_id = 2684
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			primary_culture = tamil
+			NOT = { exists = COE }
+			lanka_area = {
+				type = all
+				owned_by = ROOT
+			}
+			madura_area = {
+				type = all
+				owned_by = ROOT
+			}
+			kongu_area = {
+				type = all
+				owned_by = ROOT
+			}
+			south_carnatic_area = {
+				type = all
+				owned_by = ROOT
+			}
+			north_carnatic_area = {
+				type = all
+				owned_by = ROOT
+			}
+			andhra_area = {
+				type = all
+				owned_by = ROOT
+			}
+			OR = {
+				owns_core_province = 552
+				owns_core_province = 561
+				owns_core_province = 2039
+			}
+			OR = {
+				owns_core_province = 574
+				owns_core_province = 1815
+				owns_core_province = 4399
+			}
+			OR = {
+				owns_core_province = 2673
+				owns_core_province = 617
+				owns_core_province = 596
+				owns_core_province = 2684
+			}
+			2026 = { development = 25 }
+			4415 = { development = 20 }
+			4416 = { development = 20 }
+			4417 = { development = 25 }
+			543 = { development = 20 }
+			government_rank = 2
+			total_development = 450
+			stability = 1
+			prestige = 0
+		}
+		effect = {
+			change_tag = COE
+			restore_country_name = yes
+			add_prestige = 25
+			set_government_rank = 3
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			malaya_region = { add_permanent_claim = ROOT }
+			swap_non_generic_missions = yes
+			set_country_flag = formed_chola_emp_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
 }

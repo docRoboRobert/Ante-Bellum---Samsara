@@ -722,3 +722,51 @@ QNH_ideas = {
 		prestige = 0.5
 	}
 }
+
+#Chola Empire ideas
+COE_ideas = {
+	start = {
+		technology_cost = -0.05
+		global_trade_power = 0.1
+	}
+	
+	bonus = {
+		diplomats = 1
+	}	
+
+	trigger = { 
+		tag = COE
+	}
+	
+	free = yes
+	
+	COE_deep_sea_navy = {
+		naval_attrition = -0.1
+		heavy_ship_power = 0.15
+	}
+	COE_destroyers_of_invaders = {
+		shock_damage_received = -0.075
+		hostile_attrition = 2
+		max_hostile_attrition = 2
+	}
+	COE_into_unknown = {
+		may_explore = yes
+		colonists = 1
+	}
+	COE_tamil_unification = {
+		manpower_in_culture_group_provinces = 0.2
+		same_culture_advisor_cost = -0.2
+	}
+	COE_seacrossing_empire = {
+		cb_on_overseas = yes
+		core_creation = -0.15
+	}
+	COE_tributary_system = {
+		accept_vassalization_reasons = 15
+		diplomatic_upkeep = 1
+	}
+	COE_new_chola_empire = {
+		ship_power_propagation = 0.1
+		global_trade_goods_size_modifier = 0.075
+	}
+}

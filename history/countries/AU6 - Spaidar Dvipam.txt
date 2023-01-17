@@ -1,0 +1,6 @@
+government = republic
+mercantilism = 25
+technology_group = indian
+religion = hinduism
+primary_culture = tamil
+capital = 1084
