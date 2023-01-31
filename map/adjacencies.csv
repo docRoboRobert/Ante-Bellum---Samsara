@@ -28,7 +28,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2335;4282;sea;1779;-1;-1;-1;-1;Dawasir-Sahda
 4477;561;sea;1343;-1;-1;-1;-1;Satgaon-BengalDelta
 4475;564;sea;5204;-1;-1;-1;-1;Fathabad-Dhaka
-5171;1248;sea;1619;-1;-1;-1;-1;Maldives-SouthernMaldives
+5275;1248;sea;1619;-1;-1;-1;-1;Maldives-SouthernMaldives
 4475;5203;sea;5204;-1;-1;-1;-1;Fathabad-Rajshahi
 503;4456;sea;5229;-1;-1;-1;-1;Kutch-Jhalavad
 503;2053;sea;5229;-1;-1;-1;-1;Kutch-Patan
@@ -121,7 +121,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2587;1001;sea;1661;1511;1656;1510;1660;Odawa-Soto
 2576;2578;sea;1490;-1;-1;-1;-1;Mingan-Anticosti
 249;4121;sea;1284;-1;-1;-1;-1;Ayrshire-Ulster
-5180;5172;sea;5177;4044;803;-1;-1;Ramanathapuram-Jaffna
+5180;5276;sea;5281;4044;803;-1;-1;Ramanathapuram-Jaffna
 2803;502;sea;1522;-1;-1;-1;-1;Orinoco Delta-Trinidad
 500;499;sea;1522;-1;-1;-1;-1;St Vincent-St Lucia
 499;498;sea;1523;-1;-1;-1;-1;St Lucia-Martinique

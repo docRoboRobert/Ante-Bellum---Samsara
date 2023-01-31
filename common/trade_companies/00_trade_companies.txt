@@ -161,10 +161,10 @@ trade_company_coromandel = {
 	provinces = {
 		2083 4418 4419 4420 5191 #north_carnatic_area
 		539 540 1947 2027 4417 5190 #south_carnatic_area
-		536 2101 4412 5179 5180 #madura_area
-		2100 4408 4409 5172 5173 #lanka_area
-		572 2099 4407 5174 #south_lanka_area
-		574 1101 1248 1998 1999 5171 5175#indian_ocean_islands_area
+		536 2101 4412 5283 5180 #madura_area
+		2100 4408 4409 5276 5277 #lanka_area
+		572 2099 4407 5278 #south_lanka_area
+		574 1101 1248 1998 1999 5275 5279 #indian_ocean_islands_area
 		538 2085 4414 5184 5185 5186 #kongu_area
 		2026 4415 4416 #tanjore_area
 		533 2031 4421 4422 4426 5187 5189 5196 #mysore_area
@@ -1005,6 +1005,7 @@ trade_company_kiev = {
 		276 4115 4242 #minsk_area
 		4538 4537 4536 4535 4545 4544 4540 4539 4542 4543 269
 		4974 5007 4969 4971 5013 5015
+		5171 5178 5179 5172 5173
 	}
 	
 	# Specific
@@ -1031,6 +1032,7 @@ trade_company_novgorod = {
 		308 1753 4117 4250 #yaroslavl_area
 		1754 1956 4254 #suzdal_area
 		312 4259 4261 #beloozero_area
+		5177 5176
 	}
 	
 	# Specific
@@ -1053,6 +1055,7 @@ trade_company_crimea = {
 		2196 2204 4303 #samtskhe_area
 		4529 4530
 		4962 5014 5147 5148 5151 5150 5149
+		5174
 	}
 	
 	# Specific
@@ -1119,6 +1122,7 @@ trade_company_astrakhan = {
 		288 303 465 467 469 470 474 1971 2365 2367 2366 2409 2418 2419 472 471 464 466 468 2416 2417 
 		302 304 2415 #tambov_area
 		425 2198 2199 2208 4306 #dagestan_area
+		5175
 	}
 	
 	# Specific

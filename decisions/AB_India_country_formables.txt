@@ -43,7 +43,7 @@ country_decisions = {
 				is_core = ROOT
 				development = 15
 			}
-			5172 = {
+			5276 = {
 				is_core = ROOT
 				development = 15
 			}

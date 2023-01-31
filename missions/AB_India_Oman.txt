@@ -512,7 +512,7 @@ abi_oman_fourth = {
 		
 		effect = {
 			1248 = { add_permanent_claim = ROOT }
-			5171 = { add_permanent_claim = ROOT }
+			5275 = { add_permanent_claim = ROOT }
 			add_country_modifier = { 
 				name = new_omani_fleet_modifier
 				duration = 36500
@@ -529,7 +529,7 @@ abi_oman_fourth = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 1248
-				province_id = 5171
+				province_id = 5275
 			}
 		}
 		
@@ -538,7 +538,7 @@ abi_oman_fourth = {
 				owned_by = ROOT
 				has_building = shipyard
 			}
-			5171 = {
+			5275 = {
 				owned_by = ROOT
 				has_building = shipyard
 			}

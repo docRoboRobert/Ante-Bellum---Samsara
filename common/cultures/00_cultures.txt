@@ -2543,7 +2543,7 @@ south_slavic = {
 		}
 	}
 	slovene = {
-		primary = CLI
+		primary = SLV
 		male_names = {
 			Andrej Albreht Alojzij Anton Adam Avgust Boris Blaz	Davorin	Etbin Filip Franc Friderik
 			Gregorij Henrik Ivan Igor Ignacij Janez Janko Jernej Jozef Karel Konrad	Lovro Luka Ludvik
@@ -2581,7 +2581,7 @@ south_slavic = {
 	bulgarian = {
 		primary = BUL
 		male_names = {
-			Iwan Asen Koloman Petar Todor Michael Aleksandar Iwan Kalojan Georgi Konstantin Stepan Stracimir 
+			Ivan Asen Koloman Petar Todor Michael Aleksandar Kalojan Georgi Konstantin Stepan Stracimir 
 			Simeon Andon Andrei Angel Atanas Bogdan Bogomil Branimir Damyan Dimitar Emil Gavril Hristo Iordan 
 			Krasimir Lazar Marko Mikhail Miroslav Nikola Pavel Radomir Samuil Vasil Vladimir Zhivko
 			Aleksii Balin Bernardin Bernard Bertalan Bogoris Boril Bozidar Theodat Braslav Dan Dionisii 
@@ -2593,14 +2593,15 @@ south_slavic = {
 		}
 		female_names = {
 			Aleksandra Aleksandrina Bilyana Bisera Bogdana Bogna Borislava Boyana Dana Desislava Donka 
-			Elisaveta Elisabeth Emiliya Emily Evdokiya Filipa Philippa Gergana
+			Elisaveta Emiliya Evdokiya Filipa Gergana
 			Hristina Iskra Iva Ivana Ivanka Ivet Lala Lidiya Lilyana Lyudmila Maya Nadejda Nevena 
 			Penka Rada Radka Raina Raya Rayna Rosa Nikolina
-			Rositsa Silva Silviya Snezhana Stoyanka Tereza Teresa Todorka Tsveta Tsvetanka Vasilka 
-			Yolanda Yana Yoanan Yordanka Zhivka Violeta Bogomilia Sofija Krasimira
+			Rositsa Silviya Snezhana Stoyanka Tereza Teresa Todorka Tsveta Tsvetanka Vasilka 
+			Yolanda Yana Yoanan Yordanka Zhivka Violeta Bogomilia Sofija Krasimira Tatyana
 		}
 		dynasty_names = {
-			"Krum" "Dulo" "Cometopuli" "Asen" "Terter" "Shishman" "Teleki"
+			"Krum" "Dulo" "Cometopuli" "Asen" "Terter" "Shishman" "Teleki" "Pejacevic" "Smilets" "Sratsimir"
+			"Knesovich" "Soymirovic" "Tsablak"
 		}
 	}
 }
@@ -2744,6 +2745,26 @@ west_slavic = {
 			Novohradsky Preslavsky Devinsky Tatransky Zemplinsky Presporsky Kollar Jesensky Rakovsky 
 		}
 	}
+	slavichungarian = {
+		primary = PNN
+		dynasty_names = {
+			Batory Hunadi Zapolsky Rakoci Bockaj Betlen Andrasy Caky
+			Karoly Madary Pereny Ronaj Sepesi Tokoly Tisa Zrinsky Teleky
+			Docy Kohár Frankopán Garaj Mikes
+			
+		}
+		male_names = {
+			Zigmund Saul Tomas Tibor Vaclav Viliam Peter Samuel Alexander Salamun Silvester
+			Jozef Markus Martin Matej Jakub Konrad Karol Filip Gabriel Gaspar Demeter Boris
+			Albert Blazej Benedikt Bernard Otto 
+		}
+		female_names = {
+			Ester Berta Anna Dorota Erika Aranka Agáta Eva Agnesa
+			Etela Gizela Irena Júlia Juliana Judita
+			Kinga Klára Kristina Lucia Maria Marta Magdalena Sára Zuza
+			Ruzena Tereza Viola Zofia Sofia
+		}
+	}
 	Slovien = {
 		primary = GMA
 		dynasty_names = {
@@ -2803,7 +2824,7 @@ west_slavic = {
 			Premyslovci Podebrad 
 			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
 			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
-			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski Lubelski
 		}
 	}
 	
@@ -2927,7 +2948,7 @@ west_slavic = {
 			Premyslovci Podebrad 
 			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
 			Ostrogski Ostroróg Pac Sapieha Sanguszko Tarnowski Teczynski
-			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski Lubelski
 		}
 	}
 	
@@ -3176,83 +3197,41 @@ carpathian = {
 	Szekler = {
 		primary = SZK
 		dynasty_names = {
-			Árpád Báthory Hunyadi Szapolyai Rákóczy Bocskai Bethlen Almásy Andrássy Batthyány Csáky Dessewffy
-			Erdody Eszterházy Festetics Hajdú Károlyi Kun Magyary Perényi Rónai Széchenyi Szepessy 
-			Thököly Tisza Zrínyi Teleki
-			Majláth Dóczy Dobó Koháry Orczy Frankopan Garay Mikes Szécsi Imreffy Nádasdy Rhédey
-			
-			#CK2
-			Zrinski Hadik Both "Rákóczi" Forgách Cseszneky Derencsényi Décsey Révay Esterházy
-			Kállay Kemény Thurzó Zichy
+			Aba Acsád Agmánd Ajtony Ákos Apor Árpád Baksa Baracska Barcz Bána Bár-Kalán Bél Borsa Böszörmény 
+			Bõ Csanád Csák Csolt Dorozsma Jákó Kaján Kaplyony Katapán Káta Kölcse Kölpény Miskolc Monoszló 	
+			Oslu Örsúr Rosd Szaonok Szemere Tardos Tomaj Turul Záh Zsombor
 		}
 		male_names = {
-			Ulászló László Lajos Albert János Mátyás Zsigmond András Károly István Béla Anasztáz Barnabás 
-			Boldizsár Dávid Dömötör Edvárd Ernö Ferenc Gábor György Izsák Jenö József Kálmán Kázmér Lörinc 
-			Miklós Oszkár Ottó Patrik Péter Simon Tamás Vencel
-			Ábel Ádárn Ágoston Álmos Árpád Õdön Otto Alajos Ambrus András Andrew Antal Attila Bálint 
-			Albert Balázs Benedek Benedict Bernát Bernard Bertók Bertalan Boldizsár Bonuslo
-			Borisz Boris Csák Csaba Csongor Dénes Dömötör Dezsõ Domoszló Donát Elek Elemér Endre Ernõ 
-			Philip Ferenc Francis Frigyes Gábor Gábriel Gabriel Gáspár Caspar Géza Gazsi
-			Gellért Gergely György George Gyula Imre István Stephen Izsák Jákob Jacob János John József 
-			Joseph Jenõ Kálmán Károly Charles Konrád Konrad Kornél Kristóf László Lázár Lõrinc Lajos 
-			Lampert Levente Lukács Márk Marcus Márton Martin Máté Mátyás Matthew Móric Mózes Mihály 
-			Michael Louis Fulöp Béla
-			Miklós Nándor Orbán Oszkár Pál Paul Péter Peter Sámuel Samuel Sándor Alexander Salamon 
-			Szilveszter Silvester Tádor Tacsony Tamás Thomas Tibor Tivadar Vazul Vencel Vaclav Vilmos 
-			Zoltán Zsigmond Sigmund Zsolt Saul Soma
+			Ajtony Ampud Attila Ákos Álmos Apor Árpád Ártánd Árvád Balog Bátor Bekõ Bél Béla Bors Botos Bódog 
+			Böngér Bõd Bõs Csaba Csaha Csanád Cenk Cenke Csonta Elõd Ete Fajsz Farkas Fiacs Finta Geregen Gyeücsa 
+			Gyécs Hetény Huba Jenõ Kadicsa Kaba Karuly Keménd Kese Ketel Ketüd Keve Kölked Könd Kurszán Küsid Lél 
+			Liüntika Mágócs Miskolc Mohar Mokud Négye Opos Ösöd Ötény Õrs Õze Pósa Somogy Súr Szalók Szaonok Szend 	
+			Taja Tar Tarcsa Tarkacsu Tas Tege Tetemeh Torda Tormacsu Turul Tühütüm Vajk Vata Ula Yelegh Zoárd
 		}
 		female_names = {
-			Ágnes Agnes Éva Eva Adelaida Adelaide Agáta Agatha Amália Amelia Angyalka Anikó Aranka 
-			Bertha Borbála Csilla Csillag Czenzi Dorottya Dorothy Edit Edith Emõke Emese Erika Erzsébet 
-			Elisabeth Eszter Berta Anna
-			Etel Euphemia Euphemia Gizella Gisela Györgyi Georgia Hajnal Hedwig Hedwig Ibolya Ildikó 
-			Irén Irene Jácinta Józsa Júlia Juliana Jolán Judith Judith Kamilla Camilla Katalin 
-			Kinga Klára Clara Catherine Illona
-			Konstancia Constance Krisztina Christina Kunigunda Kunigunde Luca Mária Maria Márta Martha 
-			Magdolna Magdalena Margaréta Margaret Margit Matild Matilda Natália Natalia Odola Orsolya 
-			Panni Piroska Rózsa Rosa Sára Sarah Sarolt Zsuzsa Zsanett
-			Skolasztika Sophia Sophia Tundér Terezia Teresa Viola Viola Virág Zoltána Zsófia Sophia
+			Angyalka Anikó Aranka Askam Borbála Csilla Csillag Czenzi Emõke Emese Eperjes Etel Gilvád Gyöngyös 
+			Hajnal Ibolya Ildikó Józsa Kinga Ilona Leáncs Luca Magó Nyeste Odola Orsolya Panni Piroska Sarolt 
+			Sáfely Sebe Szentõ Szépa Szinta Szüga Tündér Virág Zoltána Zsuzsa Zsanett
 		}
 	}
 	hungarian = {
 		primary = MGY
 		dynasty_names = {
-			Báthory Hunyadi Szapolyai Rákóczy Bocskai Bethlen Almásy Andrássy Batthyány Csáky Dessewffy
-			Erdody Eszterházy Festetics Hajdú Károlyi Kun Magyary Perényi Rónai Széchenyi Szepessy 
-			Thököly Tisza Zrínyi Teleki
-			Majláth Dóczy Dobó Koháry Orczy Frankopan Garay Mikes Szécsi Imreffy Nádasdy Rhédey
-			
-			#CK2
-			Zrinski Hadik Both "Rákóczi" Forgách Cseszneky Derencsényi Décsey Révay Esterházy
-			Kállay Kemény Thurzó Zichy
+			Aba Acsád Agmánd Ajtony Ákos Apor Árpád Baksa Baracska Barcz Bána Bár-Kalán Bél Borsa Böszörmény 
+			Bõ Csanád Csák Csolt Dorozsma Jákó Kaján Kaplyony Katapán Káta Kölcse Kölpény Miskolc Monoszló 	
+			Oslu Örsúr Rosd Szaonok Szemere Tardos Tomaj Turul Záh Zsombor
 		}
 		male_names = {
-			Ulászló László Lajos Albert János Mátyás Zsigmond András Károly István Béla Anasztáz Barnabás 
-			Boldizsár Dávid Dömötör Edvárd Ernö Ferenc Gábor György Izsák Jenö József Kálmán Kázmér Lörinc 
-			Miklós Oszkár Ottó Patrik Péter Simon Tamás Vencel
-			Ábel Ádárn Ágoston Álmos Árpád Õdön Otto Alajos Ambrus András Andrew Antal Attila Bálint 
-			Albert Balázs Benedek Benedict Bernát Bernard Bertók Bertalan Boldizsár Bonuslo
-			Borisz Boris Csák Csaba Csongor Dénes Dömötör Dezsõ Domoszló Donát Elek Elemér Endre Ernõ 
-			Philip Ferenc Francis Frigyes Gábor Gábriel Gabriel Gáspár Caspar Géza Gazsi
-			Gellért Gergely György George Gyula Imre István Stephen Izsák Jákob Jacob János John József 
-			Joseph Jenõ Kálmán Károly Charles Konrád Konrad Kornél Kristóf László Lázár Lõrinc Lajos 
-			Lampert Levente Lukács Márk Marcus Márton Martin Máté Mátyás Matthew Móric Mózes Mihály 
-			Michael Louis Fulöp Béla
-			Miklós Nándor Orbán Oszkár Pál Paul Péter Peter Sámuel Samuel Sándor Alexander Salamon 
-			Szilveszter Silvester Tádor Tacsony Tamás Thomas Tibor Tivadar Vazul Vencel Vaclav Vilmos 
-			Zoltán Zsigmond Sigmund Zsolt Saul Soma
+			Ajtony Ampud Attila Ákos Álmos Apor Árpád Ártánd Árvád Balog Bátor Bekõ Bél Béla Bors Botos Bódog 
+			Böngér Bõd Bõs Csaba Csaha Csanád Cenk Cenke Csonta Elõd Ete Fajsz Farkas Fiacs Finta Geregen Gyeücsa 
+			Gyécs Hetény Huba Jenõ Kadicsa Kaba Karuly Keménd Kese Ketel Ketüd Keve Kölked Könd Kurszán Küsid Lél 
+			Liüntika Mágócs Miskolc Mohar Mokud Négye Opos Ösöd Ötény Õrs Õze Pósa Somogy Súr Szalók Szaonok Szend 	
+			Taja Tar Tarcsa Tarkacsu Tas Tege Tetemeh Torda Tormacsu Turul Tühütüm Vajk Vata Ula Yelegh Zoárd
 		}
 		female_names = {
-			Ágnes Agnes Éva Eva Adelaida Adelaide Agáta Agatha Amália Amelia Angyalka Anikó Aranka 
-			Bertha Borbála Csilla Csillag Czenzi Dorottya Dorothy Edit Edith Emõke Emese Erika Erzsébet 
-			Elisabeth Eszter Berta Anna
-			Etel Euphemia Euphemia Gizella Gisela Györgyi Georgia Hajnal Hedwig Hedwig Ibolya Ildikó 
-			Irén Irene Jácinta Józsa Júlia Juliana Jolán Judith Judith Kamilla Camilla Katalin 
-			Kinga Klára Clara Catherine Illona
-			Konstancia Constance Krisztina Christina Kunigunda Kunigunde Luca Mária Maria Márta Martha 
-			Magdolna Magdalena Margaréta Margaret Margit Matild Matilda Natália Natalia Odola Orsolya 
-			Panni Piroska Rózsa Rosa Sára Sarah Sarolt Zsuzsa Zsanett
-			Skolasztika Sophia Sophia Tundér Terezia Teresa Viola Viola Virág Zoltána Zsófia Sophia
+			Angyalka Anikó Aranka Askam Borbála Csilla Csillag Czenzi Emõke Emese Eperjes Etel Gilvád Gyöngyös 
+			Hajnal Ibolya Ildikó Józsa Kinga Ilona Leáncs Luca Magó Nyeste Odola Orsolya Panni Piroska Sarolt 
+			Sáfely Sebe Szentõ Szépa Szinta Szüga Tündér Virág Zoltána Zsuzsa Zsanett
 		}
 	}
 }
@@ -3431,17 +3410,84 @@ east_slavic = {
 			Gavriila Larisa Aleksandra Alla Bronislava Svetlana Yuliya Yaroslava Vladislava Lyudmila Nadejda Rostislava
 		}
 	}
+	Litvin = {
+		primary = LTV
+		male_names = {
+			Adomas Elijah Emilis Juozapas Gabrielius Liudvikas Lukas Ricardas Tomas Vincentas Filip Benediktas
+			Dominykas Darius Elijas Henrikas Ignas Jonas Kristijonas Leonardas Vladas Albertas Danielius Marijus Pailius Petras
+			Robertas Stanislovas Anatolijus Jokubas Konstantinas Aleksandras Bronislovas Vladislovas Andrius
+		}
+		female_names = {
+			Emilija Edita Janina Karolina Kamile Regina Rozalija Sofija Terese Roze Angelika Aleksandra Adele Barbora Gabriele
+			Greta Marija Svetlana Beata Lidija Marina Silvija Tamara Martyna Viktorija Irena Terese
+		}
+	}
 	ruthenian = {
 		primary = KIE
 		male_names = {
-			Ivan Dmitriy Yuriy Andrei Semen Boris Fyodor Oleg Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy 
-			Dorofey Feodosiy Feofilakt Gavriil Innokentiy Iosif Lavrentiy Makariy Matveiy Mikhail Nazariy 
-			Onisim Pavel Prokopiy Pyotr Radomir Saveliy Sergei Terentiy Valeriy Yakim Yevgeniy Yaroslav Yaropolk 
-			Vyacheslav Vsevolod Igor Izyaslav Rostislav Vladimir Mstislav Gleb Roman Ryurik Svyatoslav Ingvar 	
-			Stanislav Daniil Nikifor
+			Ivan Dmytro Yuriy Andriy Semen Borys Fedir Oleg Afanasiy Akim Oleksandr Olexei Anatoliy Arkadiy 
+			Dorofiy Feodosiy Feofilakt Gavryil Innokentiy Iosif Lavrentiy Makariy Matviy Mykhailo Nazariy 
+			Onisim Pavlo Prokip Petro Radomyr Saveliy Sergiy Terentiy Valeriy Yakim Yevgeniy Yaroslav Yaropolk 
+			Vyacheslav Vsevolod Igor Izyaslav Rostyslav Volodymyr Mstyslav Glib Roman Ryuryk Svyatoslav Ingvar 	
+			Stanislav Danyil Nykifor
 		}
 		female_names = {
-			Gavriila Larisa Aleksandra Alla Bronislava Svetlana Yuliya Yaroslava Vladislava Lyudmila Nadejda Rostislava
+			Gavryila Larysa Oleksandra Alla Bronyslava Svitlana Yuliya Yaroslava Vladyslava Lyudmyla Nadija Rostyslava
+			Anastasiya Predslava Zbyslava Anna Kateryna Maria
+		}
+	}
+	volhynian = {
+		primary = VOL
+		male_names = {
+			Ivan Dmytro Yuriy Andriy Semen Borys Fedir Oleg Afanasiy Akim Oleksandr Olexei Anatoliy Arkadiy 
+			Dorofiy Feodosiy Feofilakt Gavryil Innokentiy Iosif Lavrentiy Makariy Matviy Mykhailo Nazariy 
+			Onisim Pavlo Prokip Petro Radomyr Saveliy Sergiy Terentiy Valeriy Yakim Yevgeniy Yaroslav Yaropolk 
+			Vyacheslav Vsevolod Igor Izyaslav Rostyslav Volodymyr Mstyslav Glib Roman Ryuryk Svyatoslav Ingvar 	
+			Stanislav Danyil Nykifor
+		}
+		female_names = {
+			Gavryila Larysa Oleksandra Alla Bronyslava Svitlana Yuliya Yaroslava Vladyslava Lyudmyla Nadija Rostyslava
+			Anastasiya Predslava Zbyslava Anna Kateryna Maria
+		}
+	}
+	pomorian = {
+		primary = NOV
+		male_names = {
+			Vasiliy Ivan Dmitriy Yuriy Andrei Semen Fyodor Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy 
+			Dorofey Feodosiy Feofilakt Gavriil Innokentiy Iosif Lavrentiy Makariy Matveiy Mikhail Nazariy 
+			Onisim Pavel Prokopiy Pyotr Radomir Saveliy Sergei Terentiy Valeriy Yakim Yevgeniy
+			Afanasiy Athanasius Alexandr Alexander Alexei Alexis Andrei Andrew Boris Briachislav 
+			Bretislaus Nikifor
+			Daniil Daniel Davyd David Demid Dmitriy Demetrius Dobrynia Fedot Theodat Feodor Theodore 
+			Gavriil Gabriel Gleb
+			Grigoriy Gregory Iakov Jacob Igor Iliya Ingvar Ingvar Ivan John Iziaslav Kirill Cyril 
+			Konstantin Constantine Koz'ma Cosma Lev Leo Matfei Matthew Mikhail Michael Mitrofan 
+			Mstislav Nikita Oleg Helge Pavel Paul Putiata Radoslav Rodislav Rogvolod Roman 
+			Rostislav Rurik 
+			Rurik Ruslan Simeon Simon Stanislav Stanislav Stepan Stephen Sudislav
+			Svetozar Sviatopolk Svatopluk Sviatoslav Sviatoslav Terentiy Trifon Vasiliy Basil Vasilko 
+			Viacheslav Vladimir Vladimir Vladislav Vladislav Voislav Volodar Vseslav
+			Vsevolod Vyshata Vysheslav Yaropolk Yaroslav Jaroslav Yefimiy Yelisey Yemelyan Emil Yeremey 
+			Yevstafiy Yuriy George
+		}
+		female_names = {
+			Agafya Agatha Agrafena Alexandra Anastasia Anastasia Anna Anna Boleslava Darya Dobrava 
+			Dobronega Dobroslava Yefimia Euphemia Yefrosinia Euphrosyne Yekaterina Catherine
+			Yelizaveta Elisabeth Yevdokia Eudocia Yevpraxia Feodora Theodora Feodosia Theodosia 
+			Fevronia Gorislava Gradislava Gremislava Irina Irene Xenia Liubava
+			Liudmila Malfrida Malusha Maria Maria Marina Olena Helen Olga Pereyaslava Praskovya Praxida 
+			Prebrana Predslava Premyslava Svetlana Yuliya
+			Pribislava Rogneda Rostislava Sbyslava Sofia Sophia Sviatoslava Tatyana Ulita Ulyana
+			Varvara Vasilisa Veleslava Verkhoslava Vseslava Viacheslava Yaroslava Zabava Zvenislava
+		}
+		dynasty_names = {
+			Rurikovich Godunov Shuisky Romanov Sheremetev Golitsyn Naryshkin Khilkov Gorchakov
+			Belosselsky Chelyadnin Potyomkin Poloch Izbor Tversky Lukisky Pleskov Toropetsky Dukhovsky
+			Koroviev Woland Tyvertsky Buzhansky Slutsky Pinesky Zhytomyrsky Vynnytsky Polan Ulich Drevl 
+			Lyubech Roslavsky Turov
+			Dolgorukov Gagarin Galitzine Massalski Shuysky Gantimurov Sibirsky
+			# CKII
+			Demidov Lopukhin Tolstoy "Lobanov-Rostovsky" Menshikov Obolensky
 		}
 	}
 	karelian = {
@@ -3523,24 +3569,73 @@ baltic	= {
 	lithuanian = {
 		primary = LIT
 		male_names = {
-			Zygimantas Kazimieras Aleksandras Jonas Albertas Zygimantas Augustas Vytautas Jogaila Vladislovas 
-			Algirdas Stanislovas Svitrigaila Mindaugas Albertas Andrius Antanas Aras Arturas Azuolas 
-			Gediminas Giedrius Gintaras Henrikas Jonas Jonusas Juozapas Jurgis Kaributas Karolis Kristupas 
-			Liudvikas Marijus Mykolas Paulius Petras Pranciskus Raimondas Ramunas Steponas Skirgaila Tomas 
-			Vincentas Vilhelmas Vytenis Kestutis Viktoras Leonas Linas Bronislovas Darius 
+		Algirdas Antanas Antavas Aras Arunas Azuolas Budrys Bukantas Butavas Butigeidis Butvydas 
+		Daugvilas Daumantas Dausprungas Dravenis Erdenis Erdvilas Gedigaudas
+		Gediminas Gedivilas Gintaras Gintautas Girdenis Irmantas Jaunutis Jogaila Jovirdas Kantibutas 
+		Karijotas Kesgaila Kestutis Korigaila Korybutas
+		Lasukas Lingvenis Liudas Lubartas Lutuveras Merkelis Mindaugas Minigaila Mantvydas Movkoldas 
+		Narimantas Povilas Pukuveras Rimantas 
+		Rimgaila Rimvydas Ringaudas Sarunas Skirgaila Songaila Svarnas Svitrigaila Tarvydas Tovtivilas 
+		Traidenis Treniotas Vainius Vaisvilkas Valimantas Zygimantas
+		Vidmantas Vingoldas Virmantas Visvaldis Vizgirdas Vykintas Vytautas Vytenis Zivinbudas 
 		}
 		female_names = {
-			Agné Morta Viltauté Agné Aldona Amalija Audra Aurelija Aušra Austeja Barbora Daina Daiva Dalia Danute Diana Doroteja 
-			Edita Egle Elena Elžbieta Elze Emilija Ernesta Estera Gabija Gabriele Giedre Gintare Ieva Ilona Inga Irena Jadvyga 
-			Janina Jelena Yelena Jolanta Julija Justina Kamile Karolina Katre Kotryna Kristina Laima Leja Lilija Lina Liucija 
-			Liudvika Margarita Marija Marijona Melanija Migle Milda Monika Morta Ona Rasa Regina Rozalija Rože Ruta Sandra Saule 
-			Smilte Sofija Solveiga Svajone Tatjana Ugne Urte Valerija Veronika Viktorija Vilhelmina Viltaute Vilte Vita Vitalija
+			Aldona Anele Audra Ausra Birute Dannila Danute Evalda Gaudimante Giedre Gintare Jevna Kenna 
+			Mikova Roze Saule Svajone Vida Laima
 		}
 		dynasty_names = {
-			Ugandi Gediminai Radziwill Gostautas Astikas Kesgaila Chodkiewicz Olshanski Chartoryski
-			Giedraiciai Pac Plater Tyzenhaus Sapieha Ostrogski Oginski
+			Ugandi Gediminai Gostautas Astikas Kesgaila
+			Giedraiciai Pac Plater Tyzenhaus Sapieha
 			# CKII
-			"Giedraitis" "Mantigirdaitis" "Chodkevicius" "Sudimantaitis" "Korybut" "Jogailaitis" "Gediminaitis"
+			"Giedraitis" "Mantigirdaitis" "Chodkevicius" "Sudimantaitis" "Korybut" "Jogailaitis"
+		}
+	}
+	Yotvingian = {
+		primary = YOT
+		male_names = {
+		Algirdas Antanas Antavas Aras Arunas Azuolas Budrys Bukantas Butavas Butigeidis Butvydas 
+		Daugvilas Daumantas Dausprungas Dravenis Erdenis Erdvilas Gedigaudas
+		Gediminas Gedivilas Gintaras Gintautas Girdenis Irmantas Jaunutis Jogaila Jovirdas Kantibutas 
+		Karijotas Kesgaila Kestutis Korigaila Korybutas
+		Lasukas Lingvenis Liudas Lubartas Lutuveras Merkelis Mindaugas Minigaila Mantvydas Movkoldas 
+		Narimantas Povilas Pukuveras Rimantas 
+		Rimgaila Rimvydas Ringaudas Sarunas Skirgaila Songaila Svarnas Svitrigaila Tarvydas Tovtivilas 
+		Traidenis Treniotas Vainius Vaisvilkas Valimantas Zygimantas
+		Vidmantas Vingoldas Virmantas Visvaldis Vizgirdas Vykintas Vytautas Vytenis Zivinbudas 
+		}
+		female_names = {
+			Aldona Anele Audra Ausra Birute Dannila Danute Evalda Gaudimante Giedre Gintare Jevna Kenna 
+			Mikova Roze Saule Svajone Vida Laima
+		}
+		dynasty_names = {
+			Ugandi Gediminai Radziwill Gostautas Astikas Kesgaila Giedraiciai Pac Plater Tyzenhaus Sapieha
+			# CKII
+			"Wilks" "Klakis" "Luks" "Kuilis" "Kalabijjan"
+			"Penikis" "Tontegode" "Vidins" "Draguns" "Sirkants"
+		}
+	}
+	Curonian = {
+		primary = CUR
+		male_names = {
+		Algirdas Antanas Antavas Aras Arunas Azuolas Budrys Bukantas Butavas Butigeidis Butvydas 
+		Daugvilas Daumantas Dausprungas Dravenis Erdenis Erdvilas Gedigaudas
+		Gediminas Gedivilas Gintaras Gintautas Girdenis Irmantas Jaunutis Jogaila Jovirdas Kantibutas 
+		Karijotas Kesgaila Kestutis Korigaila Korybutas
+		Lasukas Lingvenis Liudas Lubartas Lutuveras Merkelis Mindaugas Minigaila Mantvydas Movkoldas 
+		Narimantas Povilas Pukuveras Rimantas 
+		Rimgaila Rimvydas Ringaudas Sarunas Skirgaila Songaila Svarnas Svitrigaila Tarvydas Tovtivilas 
+		Traidenis Treniotas Vainius Vaisvilkas Valimantas Zygimantas
+		Vidmantas Vingoldas Virmantas Visvaldis Vizgirdas Vykintas Vytautas Vytenis Zivinbudas 
+		}
+		female_names = {
+			Aldona Anele Audra Ausra Birute Dannila Danute Evalda Gaudimante Giedre Gintare Jevna Kenna 
+			Mikova Roze Saule Svajone Vida Laima
+		}
+		dynasty_names = {
+			Ugandi Gediminai Radziwill Gostautas Astikas Kesgaila Giedraiciai Pac Plater Tyzenhaus Sapieha
+			# CKII
+			"Wilks" "Klakis" "Luks" "Kuilis" "Kalabijjan"
+			"Penikis" "Tontegode" "Vidins" "Draguns" "Sirkants"
 		}
 	}
 	latvian = {
@@ -4083,30 +4178,6 @@ turko_semitic = { #Levantine
 		dynasty_names = {
 			"Saud" "Rasulid" "Tahiride" "Jabrid" "al-Qasimi"
 			"Nabhani" "Yaruba" "al-Said" "Usfurid" "Jarwanid" "Hashim"
-		}
-		male_names = {
-			Mani Rabi'a Musa Ibrahim Markhan Watban Nasir Idris "'Abd-Allah" Sa'ud Zayid Abdullah Muhammad
-			'Abdullah Turki Faisal Al-Rahman Khalid Fahd Aziz Abu-Bakr Abu-Bakr Aarif Abdul-Gafur Abdul-Jaleel Abdul-Qadir 
-			Abdul-Wahab Abdul Abdul Abdullah Abdullah Aghlab Akin Ali Ali Alim Aram Azam Bahir Burhanaddin
-			Fadil Fadl Faruk Ghalib Hafiz Halil Hasan Hasan Husam Hussayn Hussayn Ibrahim Abraham Idris 
-			Is'mail Ismail Isa Jabir Jalil Jibril Khaireddin Khalil Mahdi Mahmud Mahmud
-			Mansur Mirza Mubarak Muhammad Muhammad Mukhtar Murad Musa Moses Muslihiddin Muzaffaraddin Najib 
-			Nasr Nizam Qawurd Ramadan Sa'daddin Sadiq Sami Samir Shaiban
-			Shamir Shujah Sulayman Solomon Talib Ubayd Uways Yahya Yahya Ya'qub Jacob Youkhanna John Yusuf 
-			Joseph Zeyd 
-		}
-		female_names = {
-			Nadiyya Adila Amsha Asiya Faghira Habiba Hanifa Jahaira Kamala Layla Maryam Nafisa Nyawela Parand 
-			Parween Paymaneh Paywand Qamara Rafiqa Rasa Rashida Reshawna
-			Saaman Sabba Saghar Sahba Sajida Samira Semeah Setara Shahrbano Shahzadah Shameem Shararah 
-			Sheeftah Sheeva Shogofa Shokouh Shola Sholah Simin Souzan
-			Taliba Tanaz Taneen Yagana Yakta Yasmin Zaynab
-		}
-	}
-	indian_arabic = {
-		dynasty_names = {
-			"Sinhali" "Syinahi" "Al-Lankh" "Rasulid" "Tahiride" "Jabrid" "al-Qasili"
-			"Nabhani" "Yaruba" "al-Said" "Usfurid" "Jarwanid" "Hashim" "Nadiri" "Kalimbah" "Lankhani"
 		}
 		male_names = {
 			Mani Rabi'a Musa Ibrahim Markhan Watban Nasir Idris "'Abd-Allah" Sa'ud Zayid Abdullah Muhammad

@@ -16,7 +16,7 @@ country_decisions = {
 				province_id = 2683
 				province_id = 2684
 				province_id = 4020
-				province_id = 5171
+				province_id = 5275
 				area = lanka_area
 				area = south_lanka_area
 				area = indian_ocean_islands_area
@@ -76,7 +76,7 @@ country_decisions = {
 			owns = 2683
 			owns = 2684
 			owns = 4020
-			owns_core_province = 5171
+			owns_core_province = 5275
 		}
 		effect = {
 			custom_tooltip = india_achievement_diff_4
@@ -251,7 +251,7 @@ country_decisions = {
 				province_id = 4414
 				province_id = 2085
 				province_id = 538
-				province_id = 5172
+				province_id = 5276
 				area = tanjore_area
 				area = south_carnatic_area
 				area = madura_area
@@ -285,7 +285,7 @@ country_decisions = {
 			owns_core_province = 536
 			owns_core_province = 4420
 			owns_core_province = 1947
-			owns = 5172
+			owns = 5276
 			owns = 538
 			owns = 2085
 			owns = 5184
@@ -484,6 +484,7 @@ country_decisions = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = india_achievement_owns_nothing_else_1
+				NOT = {
 				all_province = {
 					NOT = {
 						OR = {
@@ -549,7 +550,8 @@ country_decisions = {
 							area = shanxi_area
 						}
 					}
-					NOT = { owned_by = ROOT }
+					owned_by = ROOT
+				}
 				}
 			}
 		}

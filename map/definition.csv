@@ -5169,15 +5169,15 @@ province;red;green;blue;x;x
 5168;190;52;22;Lochaber;x
 5169;162;126;254;Ross;x
 5170;202;124;124;Banff;x
-5171;220;200;129;Southern Maldives;x
-5172;228;158;27;Jaffna;x
-5173;30;183;80;Puttalam;x
-5174;219;104;66;Hambantota;x
-5175;204;96;240;Lakshadweep;x
-5176;92;168;224;Mid Indian Basin;x
-5177;53;197;238;Palk Strait;x
-5178;58;71;86;Southern Ghats;x
-5179;179;112;218;Korkai;x
+5171;69;133;133;Shostka;x
+5172;1;159;159;Uman;x
+5173;32;32;32;Lutsk;x
+5174;80;81;82;Lugansk;x
+5175;101;101;101;Bielska Sloboda;x
+5176;120;125;188;Rusa;x
+5177;188;94;133;Ostashkov;x
+5178;121;188;84;Rostislav;x
+5179;188;142;135;Belgorod;x
 5180;145;172;154;Ramanathapuram;x
 5181;215;199;187;Turbat;x
 5182;255;247;147;Villarvattom;x
@@ -5273,3 +5273,12 @@ province;red;green;blue;x;x
 5272;169;121;59;Palitana;x
 5273;77;32;79;Miani Hor;x
 5274;255;154;182;Khuzdar;x
+5275;220;200;129;Southern Maldives;x
+5276;228;158;27;Jaffna;x
+5277;30;183;80;Puttalam;x
+5278;219;104;66;Hambantota;x
+5279;204;96;240;Lakshadweep;x
+5280;92;168;224;Mid Indian Basin;x
+5281;53;197;238;Palk Strait;x
+5282;58;71;86;Southern Ghats;x
+5283;179;112;218;Korkai;x

@@ -4,8 +4,8 @@ government_rank = 1
 technology_group = indian
 religion = hinduism
 primary_culture = tamil
-capital = 5172 # Jaffna
-fixed_capital = 5172 # Cannot move capital away from this province & no power cost to move to it
+capital = 5276 # Jaffna
+fixed_capital = 5276 # Cannot move capital away from this province & no power cost to move to it
 
 1440.1.1 = {
 	monarch = {

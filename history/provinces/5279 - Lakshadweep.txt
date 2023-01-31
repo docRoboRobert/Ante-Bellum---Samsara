@@ -1,4 +1,4 @@
-#5175 - Lakshadweep
+#5279 - Lakshadweep
 
 capital = "Kavaratti"
 trade_goods = fish

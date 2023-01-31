@@ -56,7 +56,7 @@ andaman_sea_area = {
 }
 
 bay_of_bengal_area = {
-	1341 1342 1343 1344 1346 1611 1612 1613 1614 5177 5204
+	1341 1342 1343 1344 1346 1611 1612 1613 1614 5281 5204
 }
 
 eastern_indian_ocean_area = {
@@ -64,7 +64,7 @@ eastern_indian_ocean_area = {
 }
 
 western_indian_ocean_area = {
- 	1450 1453 1454 1455 1616 1617 1618 1619 1620 1621 1625 1626 1627 1628 1629 1630 5176
+ 	1450 1453 1454 1455 1616 1617 1618 1619 1620 1621 1625 1626 1627 1628 1629 1630 5280
 }
 
 south_indian_ocean_area = {
@@ -705,12 +705,12 @@ red_ruthenia_area = { #5
 	261 2961 4541
 }
 
-podolia_volhynia_area = { #3
-	281 4540 1943 
+podolia_volhynia_area = { #4
+	281 4540 1943 5172
 }
 
-volhynia_area = { # 4
-	279 2962 4539 4974
+volhynia_area = { # 5
+	279 2962 4539 4974 5173
 }
 
 pripyat_area = { #4
@@ -753,12 +753,12 @@ east_dniepr_area = { #4 Left bank Ukraine
 	290 2407 4542 5015
 }
 
-chernigov_area = {
-	1945 289 4543
+chernigov_area = { #4
+	1945 289 4543 5171
 }
 
-sloboda_ukraine_area = { #4
-	291 298 299 2408
+sloboda_ukraine_area = { #5
+	291 298 299 2408 5179
 }
 
 yedisan_area = { #3
@@ -770,7 +770,7 @@ zaporizhia_area = { #3
 }
 
 azov_area = { #4
-	286 287 2413 2414
+	286 287 2413 2414 5174
 }
 
 crimea_area = { #4
@@ -811,16 +811,16 @@ suzdal_area = { #3
 	1754 1956 4254
 }
 
-smolensk_area = { #4
-	293 297 4244 4245
+smolensk_area = { #5
+	293 297 4244 4245 5178
 }
 
 oka_area = { #3
 	296 300 4116
 }
 
-novgorod_area = { #5
-	310 311 1959 2749 4260
+novgorod_area = { #7
+	310 311 1959 2749 4260 5176 5177
 }
 
 pskov_area = { #4
@@ -839,8 +839,8 @@ astrakhan_area = { #5
 	464 466 468 2416 2417
 }
 
-lower_don_area = { #4
-	288 467 1971 2409
+lower_don_area = { #5
+	288 467 1971 2409 5175
 }
 
 kazan_area = { #3
@@ -1705,7 +1705,7 @@ mascarenes_area = { #3
 }
 
 indian_ocean_islands_area = { #7
-	574 1101 1248 1998 1999 5171 5175
+	574 1101 1248 1998 1999 5275 5279
 }
 
 papua_area = { #5 (Papuan Peninsula)
@@ -2281,7 +2281,7 @@ south_carnatic_area = { #6 (Only the Golcondan Karnatak)
 }
 
 madura_area = { #5
-	536 2101 4412 5179 5180
+	536 2101 4412 5283 5180
 }
 
 tanjore_area = { #3
@@ -2345,11 +2345,11 @@ kashmir_area = { #7
 }
 
 lanka_area = { #North Lanka #5
-	2100 4408 4409 5172 5173
+	2100 4408 4409 5276 5277
 }
 
 south_lanka_area = { #4
-	572 2099 4407 5174
+	572 2099 4407 5278
 }
 
 ahmedabad_area = { #7
