@@ -237,6 +237,8 @@
  STH_ADJ:0 "Sorathan"
  LNK:0 "Lanka"
  LNK_ADJ:0 "Lankan"
+ ACM:0 "Andhra-Coromandel"
+ ACM_ADJ:0 "Andhran-Coromandel"
  
  #Unique colonial
  AU1:0 "Aljanubia"

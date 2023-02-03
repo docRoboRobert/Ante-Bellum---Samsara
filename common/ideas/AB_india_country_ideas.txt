@@ -708,7 +708,7 @@ QNH_ideas = {
 		shock_damage_received = -0.05
 	}
 	QNH_administative_reform = {
-		state_governing_cost = 0.1
+		state_governing_cost = -0.1
 		global_tax_modifier = 0.1
 	}
 	QNH_large_realm = {
