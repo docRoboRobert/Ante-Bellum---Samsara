@@ -939,3 +939,85 @@ PUN_ideas_new = {
 		land_morale = 0.1
 	}
 }
+
+#Jainist Sindh ideas
+SND_new_ideas = {
+	start = {
+		land_forcelimit_modifier = 0.25
+		missionaries = 1
+	}
+	
+	bonus = {
+		global_manpower_modifier = 0.15
+	}
+	
+	trigger = {
+		tag = SND
+	}
+	free = yes #will be added at load.
+
+	snd_enduring_chacha_dynasty = {
+		legitimacy = 1
+	}
+	snd_jainist_frontier = {
+		global_missionary_strength = 0.02
+	}
+	snd_gujarati_connections = {
+		placed_merchant_power = 5
+	}
+	snd_aror_necropolis = {
+		missionary_maintenance_cost = -0.1
+		development_cost = -0.05
+	}
+	snd_end_judicial_corruption = {
+		yearly_corruption = -0.1
+	}
+	snd_oversee_rise_of_thatta = {
+		build_cost = -0.1
+	}
+	snd_recruit_baloch_tribesmen = {
+		mercenary_discipline = 0.025
+	}
+}
+
+#Brahmin Sindh ideas
+SIN_ideas = {
+	start = {
+		land_forcelimit_modifier = 0.2
+		missionaries = 1
+	}
+	
+	bonus = {
+		yearly_corruption = -0.1
+	}
+	
+	trigger = {
+		tag = SIN
+	}
+	free = yes #will be added at load.
+
+	sin_brahmin_elite = {
+		tolerance_heathen = 1
+		advisor_cost = -0.15
+	}
+	sin_jainist_frontier = {
+		global_missionary_strength = 0.025
+	}
+	snd_gujarati_connections = {
+		placed_merchant_power = 5
+	}
+	sin_develop_river = {
+		development_cost = -0.1
+	}
+	sin_rebuild_cities_temples = {
+		build_cost = -0.1
+		global_tax_modifier = 0.1
+	}
+	sin_defend_homeland = {
+		defensiveness = 0.10
+		rival_border_fort_maintenance = -0.2
+	}
+	sin_persian_zoroastrian_guard = {
+		discipline = 0.025
+	}
+}

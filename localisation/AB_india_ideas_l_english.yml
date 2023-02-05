@@ -391,3 +391,38 @@
  PUN_strength_of_the_misls_desc:0 "The administrative system of the Misl states of the Punjab allow them to field impressive cavalry forces. In times of need we may call upon these forces to fight a common enemy."
  PUN_reforming_the_punjabi_army:0 "Reformed Punjabi Army"
  PUN_reforming_the_punjabi_army_desc:0 "The ways of our ancestors served us well for the past decades but it is time to adapt to changing battlefield. Better military training and more charismatic leadership is what will lead Punjabi people to victory."
+ 
+ #New ideas for Sindh
+ SND_new_ideas:0 "Jain Sindhi Ideas"
+ SND_new_ideas_start:0 "Jain Sindhi Traditions"
+ SND_new_ideas_bonus:0 "Jain Sindhi Ambition"
+ #
+ # Rest of loc is copied from vanilla Sindh ideas
+ #
+ snd_enduring_chacha_dynasty:0 "Enduring Chacha Dynasty"
+ snd_enduring_chacha_dynasty_desc:0 "Sindh's Chacha dynasty has ruled the lower indus since the establishment of Brahmin Sindh in 632AD. They have endured countless invasions from Persians and Mongols that ravaged through the area. Despite many losses and defeats, their skills let them stand up to this day. Now that era of invasions is over and our neighbors are fractured, ambitions of the Chacha can finally be reckoned with."
+ #
+ snd_jainist_frontier:0 "Jainist Frontier"
+ snd_jainist_frontier_desc:0 "Though originally Hindu, under pressure from invaders and devastating troubles, our nation adopted Jainism as its main doctrine. Most of our land already follows Jainism though we are under constant clash from ever-so-growing Zoroastrian influence from the west. As the frontline against Zoroastrian surge, we must do our best to maintain old Indian beliefs."
+ snd_aror_necropolis:0 "Expand Aror Necropolis"
+ snd_aror_necropolis_desc:0 "City of Arlor, Aror or Arorkot has history that can be traced back to antiquity. Being one of the most important forts in lower Indus Valley, the city served as capital to many forgotten empires. Great site of Hindu, Buddhist and Jainist religions. Beseiged many times and eventually lost to Zoroastrians, it still managed to survive though its splendor no longer shines. With the rise of our nation this can finally change. Old temples shall be rebuilt and it shall no longer serve as graveyard of failed besiegers."
+ 
+ #Brahmin Sindh
+ SIN_ideas:0 "Brahmin Sindh Ideas"
+ SIN_ideas_start:0 "Brahmin Sindh Traditions"
+ SIN_ideas_bonus:0 "Brahmin Sindh Ambition"
+ sin_brahmin_elite:0 "Brahmin Elite"
+ sin_brahmin_elite_desc:0 "Even though our nation is primarily Jainist, our dynasty finds origin in Brahmin Hindu circles. Brahmin elite forms its unique caste of government servants that was allowed to maintain their Hindu traditions for the exchange of state servitude."
+ sin_jainist_frontier:0 "Jainist Frontier"
+ sin_jainist_frontier_desc:0 "Though originally Hindu, under pressure from invaders and devastating troubles, our nation adopted Jainism as its main doctrine. Most of our land already follows Jainism though we are under constant clash from ever-so-growing Zoroastrian influence from the west. As the frontline against Zoroastrian surge, we must do our best to maintain old Indian beliefs."
+ #same as in vanilla Sindh
+ #
+ sin_develop_river:0 "Regulated Indus River"
+ sin_develop_river_desc:0 "Regulating the flow of Indus River - our prime source of prosperity and survival - will let us develop the lands alongside it more effectively."
+ sin_rebuild_cities_temples:0 "Rebuild Cities and Temples"
+ sin_rebuild_cities_temples_desc:0 "Persians... Mongols... Ilkhanate... then many minor Indian warlords... everyone eventually tried to subjugate Sindh area. Countless sieges and army movements brought devastation and famine to our once-great temples and towns. With our lands secured and state growing, it is finally time to restore the might of old cities and rebuild temples that were destroyed centuries ago."
+ sin_defend_homeland:0 "Defend Homeland"
+ sin_defend_homeland_desc:0 "For too long this region served as passing ground for armies invading India. We must secure our precious posessions so that enemies may never enter our homeland again!"
+ sin_persian_zoroastrian_guard:0 "Zorahadi Guard"
+ sin_persian_zoroastrian_guard_desc:0 "Zoroastrian influence that plagued the region for centuries can end up being useful for us. Elite royal guard - Zorahadi - of warriors and generals of Zoroastrian and Persian origin was formed as a way to reinforce our army with better trained soldiers. Zoroastrian people that once came here as invaders shall be effectively assimilated to our military."
+ 

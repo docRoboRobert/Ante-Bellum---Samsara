@@ -29,6 +29,10 @@
  abi_kyrgyztan_formation_desc:0 "Rally the scattered Kyrgyz tribes and reclaim their old homeland. Kyrgyz nation shall rise above its old overlords."
  abi_kyrgyztan_formation.tooltip:0 "Receive cores on every province with §YKyrgyz§! culture"
  punjab_nation.tooltip:0 "New national ideas will be available if the country' religion is Sikhism."
+ abi_SIN_formation_title:0 "Unite Greater Sindh"
+ abi_SIN_formation_desc:0 "For centuries lands of Sindh were divided and fractured by passing invasions. If we unite Sindh region once more, we can restore the glory it had during the Brahmin Sindh Dynasty."
+ abi_industan_formation_title:0 "@IDU Proclaim Industan"
+ abi_industan_formation_desc:0 "Indus River valley shall be ruled by unified entity. Region, in which civilization originated 3000 years ago, must once again see prosperity when the north and the south unite together."
  
  #Malankara decisions
  

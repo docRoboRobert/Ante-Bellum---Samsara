@@ -13522,6 +13522,7 @@ SND_ideas = {
 	
 	trigger = {
 		tag = SND
+		religion_group = muslim
 	}
 	free = yes #will be added at load.
 

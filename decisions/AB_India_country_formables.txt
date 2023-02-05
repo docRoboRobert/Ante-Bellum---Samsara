@@ -655,4 +655,170 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
+	
+	abi_SIN_formation = {
+		major = yes
+		potential = {
+			OR = {
+				primary_culture = sindhi
+				primary_culture = sashindi
+				primary_culture = saraiki
+				tag = SND
+			}
+			NOT = { has_country_flag = formed_SIN_flag }
+			NOT = { exists = SIN }
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = sindh_area
+				area = northern_sindh_area
+				province_id = 2086
+				province_id = 2079
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			NOT = { exists = SIN }
+			OR = {
+				primary_culture = sindhi
+				primary_culture = sashindi
+				tag = SND
+			}
+			OR = {
+				religion = jainism
+				tag = HND
+			}
+			sindh_area = {
+				type = all
+				owned_by = ROOT
+			}
+			northern_sindh_area = {
+				type = all
+				owned_by = ROOT
+			}
+			owns_core_province = 2086
+			owns_core_province = 2079
+		}
+		effect = {
+			change_tag = SIN
+			restore_country_name = yes
+			add_prestige = 20
+			set_capital = 4503
+			4503 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			swap_non_generic_missions = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			set_country_flag = formed_SIN_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			multan_area = { add_permanent_claim = ROOT }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	abi_industan_formation = {
+		major = yes
+		potential = {
+			OR = {
+				tag = PUN
+				tag = SIN
+			}
+			NOT = { has_country_flag = formed_industan_flag }
+			NOT = { exists = IDU }
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = sindh_area
+				area = northern_sindh_area
+				area = multan_area
+				area = lahore_area
+				area = sind_sagar_area
+				area = kalat_area
+				province_id = 5273
+				province_id = 2231
+				province_id = 578
+				province_id = 510
+				province_id = 5259
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			NOT = { exists = IDU }
+			culture_group = western_aryan
+			OR = {
+				tag = SIN
+				tag = PUN
+			}
+			sindh_area = {
+				type = all
+				owned_by = ROOT
+			}
+			northern_sindh_area = {
+				type = all
+				owned_by = ROOT
+			}
+			multan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			lahore_area = {
+				type = all
+				owned_by = ROOT
+			}
+			sind_sagar_area = {
+				type = all
+				owned_by = ROOT
+			}
+			kalat_area = {
+				type = all
+				owned_by = ROOT
+			}
+			owns_core_province = 5273
+			OR = {
+				owns_core_province = 2231
+				owns_core_province = 578
+			}
+			OR = {
+				owns_core_province = 510
+				owns_core_province = 5259
+			}
+			5247 = { development = 20 }
+			506 = { development = 20 }
+			507 = { development = 20 }
+		}
+		effect = {
+			change_tag = IDU
+			restore_country_name = yes
+			add_prestige = 20
+			swap_non_generic_missions = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			set_country_flag = formed_industan_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 10
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
 }
