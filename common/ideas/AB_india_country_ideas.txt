@@ -770,3 +770,126 @@ COE_ideas = {
 		global_trade_goods_size_modifier = 0.075
 	}
 }
+
+#Peshawar ideas
+PSW_ideas = {
+	start = {
+		fort_maintenance_modifier = -0.10
+		development_cost = -0.1
+	}
+
+	bonus = {
+		cavalry_power = 0.15
+	}
+	
+	trigger = {
+		tag = PSW
+	}
+	free = yes		
+	
+	PSW_invite_travellers = {
+		advisor_cost = -0.15
+	}
+	PSW_settlers = {
+		culture_conversion_cost = -0.2
+	}
+	PSW_rally_tribes = {
+		manpower_in_culture_group_provinces = 0.2
+		relation_with_same_culture_group = 10
+	}
+	PSW_fortress = {
+		defensiveness = 0.15
+	}
+	PSW_valley = {
+		global_prosperity_growth = 0.1
+	}
+	PSW_crossroads = {
+		global_institution_spread = 0.1
+		global_own_trade_power = 0.1
+	}
+	PSW_historical_graveyard = {
+		leader_land_shock = 1
+	}
+}
+
+#Sind Sagar ideas
+SSG_ideas = {
+	start = {
+		state_maintenance_modifier = -0.1
+		development_cost = -0.1
+	}
+
+	bonus = {
+		infantry_power = 0.1
+	}
+	
+	trigger = {
+		tag = SSG
+	}
+	free = yes		
+	
+	SSG_invite_travellers = {
+		advisor_cost = -0.15
+	}
+	SSG_cultural_pot = {
+		promote_culture_cost = -0.2
+		relation_with_accepted_culture = 10
+	}
+	SSG_develop_plain = {
+		production_efficiency = 0.075
+	}
+	SSG_hill_forts = {
+		defensiveness = 0.075
+		shock_damage_received = -0.025
+	}
+	SSG_valley = {
+		global_prosperity_growth = 0.1
+	}
+	SSG_religious_turns = {
+		religious_unity = 0.2
+	}
+	SSG_river_cannals = {
+		movement_speed = 0.1
+	}
+}
+
+#Kyrgyztan ideas
+KYR_ideas = {
+	start = {
+		shock_damage = 0.1
+		culture_conversion_cost = -0.2
+	}
+
+	bonus = {
+		infantry_power = 0.1
+	}
+	
+	trigger = {
+		tag = KYR
+	}
+	free = yes		
+	
+	KYR_cavalry = {
+		movement_speed = 0.10
+		cavalry_power = 0.10
+	}
+	KYR_rally_tribes = {
+		promote_culture_cost = -0.15
+		manpower_in_own_culture_provinces = 0.25
+	}
+	KYR_plains_of_asia = {
+		state_governing_cost = -0.1
+	}
+	KYR_centralize_steppe = {
+		min_autonomy_in_territories = -0.1
+	}
+	KYR_shamanism_legacy = {
+		tolerance_heathen = 1
+	}
+	KYR_settle_homeland = {
+		global_tax_modifier = 0.15
+	}
+	KYR_heavy_raiders = {
+		cavalry_fire = 1
+	}
+}

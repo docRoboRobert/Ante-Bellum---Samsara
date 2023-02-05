@@ -22,6 +22,12 @@
  abi_pahadi_formation_desc:0 "The Sky Kingdom, Kingdom of Clouds, Pahadi Samrajya... many such names. The highest regions of the world shall be united under one banner. Mountains and highlands of Tibet and Himalaya will remain strong and independent."
  abi_chola_emp_formation_title:0 "Restore Chola Empire"
  abi_chola_emp_formation_desc:0 "Chola was once a dominant power in both India and Indonesia. Its reach spanning across the Indian Ocean. We can once again bring back its might and control all of Eastern Indian Ocean trade."
+ abi_sind_sagar_formation_title:0 "@SSG Claim Sind Sagar Legacy"
+ abi_sind_sagar_formation_desc:0 "Reclaim the legacy of Sind Sagar by controlling all its core territory."
+ abi_sind_sagar_formation.tooltip:0 "§YWarning! If you are playing as Peshawar @PSW , going with Sind Sagar route and tying your future with India will prevent you from forming Kyrgyztan.§!"
+ abi_kyrgyztan_formation_title:0 "@KYR Unite Kyrgyz People"
+ abi_kyrgyztan_formation_desc:0 "Rally the scattered Kyrgyz tribes and reclaim their old homeland. Kyrgyz nation shall rise above its old overlords."
+ abi_kyrgyztan_formation.tooltip:0 "Receive cores on every province with §YKyrgyz§! culture"
  
  #Malankara decisions
  

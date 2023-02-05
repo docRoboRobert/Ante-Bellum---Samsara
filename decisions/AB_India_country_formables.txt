@@ -506,4 +506,153 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
+	
+	abi_sind_sagar_formation = {
+		major = yes
+		potential = {
+			OR = {
+				primary_culture = panjabi
+				tag = PSW
+			}
+			NOT = { has_country_flag = formed_sind_sagar_flag }
+			NOT = { exists = SSG }
+			NOT = { tag = LAH }
+			NOT = { tag = PUN }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2077
+				province_id = 5249
+				province_id = 2078
+				province_id = 4511
+				province_id = 5252
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			OR = {
+				primary_culture = panjabi
+				tag = PSW
+			}
+			prestige = 0
+			NOT = { exists = SSG }
+			2077 = { owned_by = ROOT }
+			5249 = { owned_by = ROOT }
+			2078 = { owned_by = ROOT }
+			4511 = { owned_by = ROOT }
+			OR = {
+				5252 = { is_core = ROOT }
+				AND = {
+					578 = { owned_by = ROOT }
+					2077 = { development = 12 }
+				}
+			}
+		}
+		effect = {
+			change_tag = SSG
+			restore_country_name = yes
+			add_prestige = 20
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			2078 = { change_culture = panjabi }
+			swap_non_generic_missions = yes
+			set_country_flag = formed_sind_sagar_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			custom_tooltip = abi_sind_sagar_formation.tooltip
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	abi_kyrgyztan_formation = {
+		major = yes
+		potential = {
+			OR = {
+				primary_culture = kirgiz
+				tag = PSW
+			}
+			NOT = { has_country_flag = formed_skyrgyztan_flag }
+			NOT = { exists = KYR }
+			NOT = { tag = SSG }
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = ferghana_area
+				province_id = 739
+				province_id = 2125
+				province_id = 2364
+				province_id = 2126
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			primary_culture = kirgiz
+			OR = {
+				primary_culture = kirgiz
+				tag = PSW
+			}
+			NOT = { exists = KYR }
+			ferghana_area = {
+				type = all
+				owned_by = ROOT
+			}
+			739 = {
+				owned_by = ROOT
+				culture = kirgiz
+			}
+			2125 = {
+				owned_by = ROOT
+				culture = kirgiz
+			}
+			2364 = {
+				owned_by = ROOT
+				culture = kirgiz
+			}
+			2126 = { owned_by = ROOT }
+			458 = { culture = kirgiz }
+			460 = { culture = kirgiz }
+			stability = 1
+		}
+		effect = {
+			change_tag = KYR
+			restore_country_name = yes
+			add_prestige = 20
+			set_capital = 2125
+			2125 = {
+				add_base_tax = 2
+				add_base_production = 1
+				add_base_manpower = 2
+			}
+			2126 = {
+				rename_capital = "Bishkek" 
+				add_base_manpower = 1
+				add_base_production = 1
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_sind_sagar_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			custom_tooltip = abi_kyrgyztan_formation.tooltip
+			hidden_effect = {
+				every_province = {
+					limit = { culture = kirgiz }
+					add_core = ROOT
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
 }
