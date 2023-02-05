@@ -354,7 +354,7 @@
  SSG_valley:0 "Rich Valley"
  SSG_valley_desc:0 "Peshawar Valley is surrounded by mountain ranges on three sides, with the fourth opening to the Punjab plains. Most of the cities are located in the generally level base of the valley, known as the Gandhara Plains. It also sits at the eastern end of the Khyber Pass, which has been used as a trade route since the Kushan era approximately 2,000 years ago. Fertile flatland offers prime development grounds compared to surrounding dry highlands."
  SSG_religious_turns:0 "End Religious Tensions"
- SSG_religious_turns_desc:0 "Just as with the culutres, Sind Sagar features a variety of religions. Though originally Buddhist, the region was gradually converted to zoroastrianism, which now occupies most of the region. Despite this, there are many strong communities of christian, hindu, buddhist or even muslim origin. One must learn how to compromise with religious matters so that the nation may prosper in peace."
+ SSG_religious_turns_desc:0 "Just as with the culutres, Sind Sagar features a variety of religions. Though originally Buddhist, the region was gradually converted to Zoroastrianism, which now occupies most of the region. Despite this, there are many strong communities of Christian, Hindu, Buddhist or even Muslim origin. One must learn how to compromise with religious matters so that the nation may prosper in peace."
  SSG_river_cannals:0 "River Sailing"
  SSG_river_cannals_desc:0 "Rivers offer great way for communication and travel. Being located in a region with many significant rivers, we can expand on this natural system and greatly improve our mobility."
  
@@ -377,3 +377,17 @@
  KYR_heavy_raiders:0 "Heavy Riders"
  KYR_heavy_raiders_desc:0 "With technological progress comes development of better military. New formation of heavy raiders utilizes gunpowder weaponry and tough armor. That combined with old nomad tactics will let us dominate the Central Asia."
  
+ #Punjab, Lahore, Sirhind, Multan, (not sikh)
+ PUN_ideas_new:0 "Punjab Ideas"
+ PUN_ideas_new_start:0 "Punjabi Traditions"
+ PUN_ideas_new_bonus:0 "Punjabi Ambition"
+ #
+ # Rest of loc is copied from vanilla Punjab ideas
+ #
+ PUN_efficient_draft:0 "Regulated Draft"
+ PUN_efficient_draft_desc:0 "Punjab region, ridden with fertile river valleys and doabs, is home to excessive number of people. With such high density we can expect higher pool of manpower ready to supply our armies. Provided they are our loyal citizens, they can be very useful."
+ #
+ PUN_strength_of_the_misls:0 "Strength of the Misls"
+ PUN_strength_of_the_misls_desc:0 "The administrative system of the Misl states of the Punjab allow them to field impressive cavalry forces. In times of need we may call upon these forces to fight a common enemy."
+ PUN_reforming_the_punjabi_army:0 "Reformed Punjabi Army"
+ PUN_reforming_the_punjabi_army_desc:0 "The ways of our ancestors served us well for the past decades but it is time to adapt to changing battlefield. Better military training and more charismatic leadership is what will lead Punjabi people to victory."

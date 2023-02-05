@@ -893,3 +893,49 @@ KYR_ideas = {
 		cavalry_fire = 1
 	}
 }
+
+#New Punjab ideas
+PUN_ideas_new = {
+	start = {
+		religious_unity = 0.25	#melting pot of religions
+		fabricate_claims_cost = -0.2
+	}
+
+	bonus = {
+		cavalry_power = 0.1
+	}
+	
+	trigger = {
+		OR = {
+			tag = PUN
+			tag = MUL
+			tag = LAH
+			tag = SRH
+		}
+		NOT = { religion = sikhism }
+	}
+	free = yes
+	
+	breadbasket_of_india = {					
+		global_trade_goods_size_modifier = 0.10
+	}
+	encourage_indo_persian_trade = {				
+		trade_efficiency = 0.1
+	}
+	punjabi_textile_industry = {			
+		production_efficiency = 0.15
+	}
+	PUN_efficient_draft = { 							
+		manpower_in_accepted_culture_provinces = 0.25
+	}
+	gurmukhi_script = {
+		stability_cost_modifier = -0.1
+	}
+	PUN_strength_of_the_misls = {
+		cavalry_cost = -0.10
+		cavalry_flanking = 0.10
+	}
+	PUN_reforming_the_punjabi_army = {
+		land_morale = 0.1
+	}
+}

@@ -566,4 +566,39 @@ country_decisions = {
 		}
 		ai_importance = 0
 	}
+	
+	india_achievement_sky_rim = {
+		major = yes
+		potential = {
+			tag = QNH
+			NOT = { has_country_flag = achiev_sky_rim }
+		}
+		provinces_to_highlight = {
+			region = scandinavia_region
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = india_achievement_ironman_on
+				ironman = yes
+			}
+			tag = QNH
+			is_free_or_tributary_trigger = yes
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 50
+				region = scandinavia_region
+			}
+			full_idea_group = defensive_ideas
+		}
+		effect = {
+			custom_tooltip = india_achievement_diff_4
+			custom_tooltip = achiev_sky_rim_desc
+			set_country_flag = achiev_sky_rim
+			add_treasury = 1
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
 }

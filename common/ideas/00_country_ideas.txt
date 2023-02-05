@@ -2869,6 +2869,7 @@ PUN_ideas = {
 	
 	trigger = {
 		tag = PUN
+		religion = sikhism
 	}
 	free = yes
 	
