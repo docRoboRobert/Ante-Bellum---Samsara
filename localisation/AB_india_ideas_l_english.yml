@@ -426,3 +426,22 @@
  sin_persian_zoroastrian_guard:0 "Zorahadi Guard"
  sin_persian_zoroastrian_guard_desc:0 "Zoroastrian influence that plagued the region for centuries can end up being useful for us. Elite royal guard - Zorahadi - of warriors and generals of Zoroastrian and Persian origin was formed as a way to reinforce our army with better trained soldiers. Zoroastrian people that once came here as invaders shall be effectively assimilated to our military."
  
+ #Hind
+ HND_ideas:0 "Hind Ideas"
+ HND_ideas_start:0 "Hind Traditions"
+ HND_ideas_bonus:0 "Hind Ambition"
+ HND_persian_administration:0 "Persian Administration"
+ HND_persian_administration_desc:0 "Being a successor state to Sassanid satrapy gave us access to efficient Persian administration and many western solutions in managing our realm."
+ HND_reclaim_lost_lands:0 "Reclaiming Hind Territory"
+ HND_reclaim_lost_lands_desc:0 "Ever since the collapse of Sassanids and the Ilkhanate invasions, extent of our nation has been greatly reduced. Holding only to the western bank of Indus river, we may even find ourselves lucky to still be around. Nonetheless as Hind rises from ashes again, it is time to take back lost land as it it rightfully ours. Enemies who taken it from us shall be reminded of it."
+ HND_import_technology:0 "Import Western Technology"
+ HND_import_technology_desc:0 "Our historical and geographical connections to Persia and other western lands cannot be undermined. As we reestablish ourselves, we shall seek old influences and bing advanced Persian technology to Indus River region."
+ HND_zoroastrian_mission:0 "Zoroastrian Mission"
+ HND_zoroastrian_mission_desc:0 "As frontier nation we find ourselves obligated to propagate Zoroastrian religion further east and spread the word Zarathustra."
+ HND_develop_river:0 "Indus Settlement"
+ HND_develop_river_desc:0 "Our nation relies on Indus River to thrive. We must expand the infrastructure alongside it so our nation can prosper."
+ HND_rebuild_arlor:0 "Rebuild Arlor"
+ HND_rebuild_arlor_desc:0 "City of Arlor or Aror used to be the capital of Hind Satrapy in the days of Persian Empire. Lost to the enemy forces during invasions, it lost most of its glory. As we march forward, it is time to rebuild the once great capital and restore its former significance. Same could be done for other great settlements later."
+ HND_reclaim_persian_dream:0 "Revive Persian Dream"
+ HND_reclaim_persian_dream_desc:0 "Persia could never march deep into India. This time we will not fail. Its influence shall spread beyond the Indus River."
+ 

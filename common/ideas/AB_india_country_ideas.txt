@@ -994,7 +994,7 @@ SIN_ideas = {
 	trigger = {
 		tag = SIN
 	}
-	free = yes #will be added at load.
+	free = yes
 
 	sin_brahmin_elite = {
 		tolerance_heathen = 1
@@ -1019,5 +1019,47 @@ SIN_ideas = {
 	}
 	sin_persian_zoroastrian_guard = {
 		discipline = 0.025
+	}
+}
+
+#Hind Ideas
+HND_ideas = {
+	start = {
+		discipline = 0.025
+		placed_merchant_power = 5
+	}
+	
+	bonus = {
+		advisor_cost = -0.1
+	}
+	
+	trigger = {
+		tag = HND
+	}
+	free = yes
+
+	HND_persian_administration = {
+		state_maintenance_modifier = -0.15
+	}
+	HND_reclaim_lost_lands = {
+		ae_impact = -0.15
+	}
+	HND_import_technology = {
+		mil_tech_cost_modifier = -0.05
+		spy_offence = 0.15
+	}
+	HND_zoroastrian_mission = {
+		global_missionary_strength = 0.015
+		missionary_maintenance_cost = -0.1
+	}
+	HND_develop_river = {
+		production_efficiency = 0.05
+	}
+	HND_rebuild_arlor = {
+		build_cost = -0.1
+	}
+	HND_reclaim_persian_dream = {
+		culture_conversion_cost = -0.15
+		core_creation = -0.1
 	}
 }
