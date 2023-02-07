@@ -686,7 +686,10 @@ country_decisions = {
 			}
 			OR = {
 				religion = jainism
-				tag = HND
+				AND = {
+					tag = HND
+					NOT = { religion = zoroastrian }
+				}
 			}
 			sindh_area = {
 				type = all
@@ -815,6 +818,214 @@ country_decisions = {
 				type = mission_rewards_power_projection
 				amount = 10
 			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	abi_indus_satrapy_formation = {
+		major = yes
+		potential = {
+			tag = HND
+			NOT = { has_country_flag = formed_indus_satrapy_flag }
+			NOT = { exists = IDS }
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = sindh_area
+				area = northern_sindh_area
+				area = multan_area
+				area = marwar_area
+				province_id = 5273
+				province_id = 2231
+				province_id = 2068
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			NOT = { exists = IDS }
+			religion = zoroastrian
+			OR = {
+				tag = HND
+				primary_culture = sashindi
+			}
+			sindh_area = {
+				type = all
+				owned_by = ROOT
+			}
+			northern_sindh_area = {
+				type = all
+				owned_by = ROOT
+			}
+			OR = {
+				multan_area = {
+					type = all
+					owned_by = ROOT
+				}
+				marwar_area = {
+					type = all
+					owned_by = ROOT
+				}
+			}
+			owns_core_province = 2068
+			5273 = { owned_by = ROOT }
+			2231 = { owned_by = ROOT }
+		}
+		effect = {
+			change_tag = IDS
+			restore_country_name = yes
+			set_government_rank = 2
+			add_prestige = 20
+			swap_non_generic_missions = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			set_country_flag = formed_indus_satrapy_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 10
+			}
+			2068 = { change_culture = ROOT }
+			5247 = { change_culture = ROOT }
+			4505 = { change_culture = ROOT }
+			marwar_area = { add_permanent_claim = ROOT }
+			multan_area = { add_permanent_claim = ROOT }
+			patan_area = { add_permanent_claim = ROOT }
+			lahore_area = { add_permanent_claim = ROOT }
+			sind_sagar_area = { add_permanent_claim = ROOT }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	abi_WHS_formation = {
+		major = yes
+		potential = {
+			tag = IDS
+			NOT = { has_country_flag = formed_WHS_flag }
+			NOT = { exists = WHS }
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = sindh_area
+				area = northern_sindh_area
+				area = multan_area
+				area = marwar_area
+				area = lahore_area
+				area = sind_sagar_area
+				area = patan_area
+				area = sirhind_area
+				area = jangladesh_area
+				province_id = 2068
+				province_id = 4457
+				province_id = 5243
+				province_id = 517
+				province_id = 515  # c
+				province_id = 5272 # c
+				province_id = 2058
+				province_id = 519
+				province_id = 4465 # b
+				province_id = 522  # b
+				province_id = 4461 # a
+				province_id = 2093 # a
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			NOT = { exists = WHS }
+			religion = zoroastrian
+			OR = {
+				tag = IDS
+				primary_culture = sashindi
+			}
+			sindh_area = {
+				type = all
+				owned_by = ROOT
+			}
+			northern_sindh_area = {
+				type = all
+				owned_by = ROOT
+			}
+			multan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			marwar_area = {
+				type = all
+				owned_by = ROOT
+			}
+			lahore_area = {
+				type = all
+				owned_by = ROOT
+			}
+			patan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			sind_sagar_area = {
+				type = all
+				owned_by = ROOT
+			}
+			sirhind_area = {
+				type = all
+				owned_by = ROOT
+			}
+			jangladesh_area = {
+				type = all
+				owned_by = ROOT
+			}
+			owns_core_province = 2068
+			owns_core_province = 4457
+			owns_core_province = 5243
+			owns_core_province = 517
+			OR = {
+				owns_core_province = 515
+				owns_core_province = 5272
+			}
+			owns_core_province = 2058
+			owns_core_province = 519
+			OR = {
+				owns_core_province = 4465
+				owns_core_province = 522
+			}
+			OR = {
+				owns_core_province = 4461
+				owns_core_province = 2093
+			}
+		}
+		effect = {
+			change_tag = WHS
+			restore_country_name = yes
+			add_prestige = 20
+			add_adm_power = 75
+			add_dip_power = 75
+			add_mil_power = 75
+			set_government_rank = 3
+			swap_non_generic_missions = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			set_country_flag = formed_WHS_flag
+			custom_tooltip = abi_WHS_formation.tooltip
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 20
+			}
+			west_india_region = { add_permanent_claim = ROOT }
 		}
 		ai_will_do = {
 			factor = 1

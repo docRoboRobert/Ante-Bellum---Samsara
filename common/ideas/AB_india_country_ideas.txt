@@ -1063,3 +1063,90 @@ HND_ideas = {
 		core_creation = -0.1
 	}
 }
+
+#Indus Satrapy Ideas
+IDS_ideas = {
+	start = {
+		land_morale = 0.10
+		production_efficiency = 0.05
+	}
+	
+	bonus = {
+		infantry_fire = 1
+	}
+	
+	trigger = {
+		tag = IDS
+	}
+	free = yes
+
+	IDS_persian_administration = {
+		state_governing_cost = -0.1
+	}
+	IDS_coinage = {
+		global_tax_modifier = 0.05
+		inflation_reduction = 0.03
+	}
+	IDS_exotric_trade = {
+		caravan_power = 0.15
+		global_prov_trade_power_modifier = 0.05
+	}
+	IDS_zoroastrian_mission = {
+		global_missionary_strength = 0.02
+	}
+	IDS_sail_seven_seas = {
+		ship_power_propagation = 0.1
+		trade_company_investment_cost = -0.1
+	}
+	IDS_indian_excursions = {
+		core_creation = -0.075
+		siege_ability = 0.10
+	}
+	IDS_cultural_assimilation = {
+		culture_conversion_cost = -0.1
+	}
+}
+
+#Western Hind Satrapy Ideas
+WHS_ideas = {
+	start = {
+		land_morale = 0.10
+		production_efficiency = 0.05
+	}
+	
+	bonus = {
+		infantry_fire = 1
+	}
+	
+	trigger = {
+		tag = WHS
+	}
+	free = yes
+
+	WHS_persian_administration = {
+		state_governing_cost = -0.15
+	}
+	WHS_coinage = {
+		global_tax_modifier = 0.05
+		inflation_reduction = 0.03
+	}
+	WHS_exotric_trade = {
+		caravan_power = 0.15
+		global_prov_trade_power_modifier = 0.05
+	}
+	WHS_zoroastrian_mission = {
+		global_missionary_strength = 0.025
+	}
+	WHS_sail_seven_seas = {
+		global_ship_trade_power = 0.15
+		trade_company_investment_cost = -0.1
+	}
+	WHS_indian_excursions = {
+		core_creation = -0.1
+		siege_ability = 0.15
+	}
+	WHS_cultural_assimilation = {
+		culture_conversion_cost = -0.15
+		same_culture_advisor_cost = -0.1
+	}
+}

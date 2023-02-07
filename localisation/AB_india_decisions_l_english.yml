@@ -33,6 +33,11 @@
  abi_SIN_formation_desc:0 "For centuries lands of Sindh were divided and fractured by passing invasions. If we unite Sindh region once more, we can restore the glory it had during the Brahmin Sindh Dynasty."
  abi_industan_formation_title:0 "@IDU Proclaim Industan"
  abi_industan_formation_desc:0 "Indus River valley shall be ruled by unified entity. Region, in which civilization originated 3000 years ago, must once again see prosperity when the north and the south unite together."
+ abi_indus_satrapy_formation_title:0 "@IDS Reclaim Old Satrapy Status"
+ abi_indus_satrapy_formation_desc:0 "After years of struggle and invasions, we have an opportunity to reclaim the lands Hind Satrapy once lost. Revive the glorious days when Hind province reached its peak territory under Sassanid Persia. Our claims over Indus Valley must be solidified."
+ abi_WHS_formation_title:0 "@WHS Establish Satrapy of Western India"
+ abi_WHS_formation_desc:0 "Persians and previous Hind rulers have never managed to make deep incurion into India. Their invasions from 11th century were all cut short, failing to even cross the Thar Desert. Time seem different now. As Hind Indus Satrapy consolidates its power, it is time to march eastwards and finalize the old dream of Persia. Indus river will finally be crossed and western civilization may finally establish its presence in Hindu lands."
+ abi_WHS_formation.tooltip:0 "If you pick new set of national ideas and your §YIndus Satrapy Ideas§! will be §MEmpowered!§!"
  
  #Malankara decisions
  
