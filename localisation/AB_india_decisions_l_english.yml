@@ -8,6 +8,10 @@
  india_YAD_rename_1_desc:0 "Change starting name of your country from Seuna, to its second version - Yadavas. Rulers of Seuna claimed to be desendants of ancient Yadava dynasty, thus titling their realm like that. No new mechanics will be gained, it is only a cosmetic change."
  india_LNK_rename_1_title:0 "Alternate Country Name"
  india_LNK_rename_1_desc:0 "Change name of your country from Lanka, to its alternative version - Ceylon. Ceylon was the name given to the island during the colonial era. No new mechanics will be gained, it is only a cosmetic change."
+ india_IDS_rename_1_title:0 "Alternate Country Name"
+ india_IDS_rename_1_desc:0 "Changes the name of your country from Indus Satrapy to Greater Hind. The current name may suggest our subjugation to Persia and feel inappropriate for expansively growing nation. No new mechanics will be gained, it is only a cosmetic change."
+ india_WHS_rename_1_title:0 "Alternate Country Name"
+ india_WHS_rename_1_desc:0 "Changes the name of your country from Western Hind Satrapy to Hind Empire. The current name may suggest our subjugation to Persia and feel inappropriate for expansively growing nation. No new mechanics will be gained, it is only a cosmetic change."
  
  #COUNTRY FORMATIONS
  abi_lanka_formation_title:0 "Unite Lanka"

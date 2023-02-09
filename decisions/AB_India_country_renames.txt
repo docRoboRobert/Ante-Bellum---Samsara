@@ -58,4 +58,42 @@ country_decisions = {
 		}
 		ai_importance = 0
 	}
+	
+	india_IDS_rename_1 = {
+		major = yes
+		potential = {
+			tag = IDS
+			NOT = { has_country_flag = IDS_changed_name_flag }
+		}
+		allow = {
+			tag = IDS
+		}
+		effect = {
+			override_country_name = IDS_RENAME_1
+			set_country_flag = IDS_changed_name_flag 
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
+	
+	india_WHS_rename_1 = {
+		major = yes
+		potential = {
+			tag = WHS
+			NOT = { has_country_flag = WHS_changed_name_flag }
+		}
+		allow = {
+			tag = WHS
+		}
+		effect = {
+			override_country_name = WHS_RENAME_1
+			set_country_flag = WHS_changed_name_flag 
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
 }

@@ -1100,6 +1100,7 @@ dambulla_caves = {
 			religion = buddhism
 			religion = mahayana
 			religion = vajrayana
+			religion = shinto
 		}
 		owner = {
 			OR = {
@@ -1109,6 +1110,7 @@ dambulla_caves = {
 				religion = buddhism
 				religion = mahayana
 				religion = vajrayana
+				religion = shinto
 			}
 		}
 	}
@@ -1132,6 +1134,7 @@ dambulla_caves = {
 			religion = buddhism
 			religion = mahayana
 			religion = vajrayana
+			religion = shinto
 		}
 		owner = {
 			OR = {
@@ -1141,6 +1144,7 @@ dambulla_caves = {
 				religion = buddhism
 				religion = mahayana
 				religion = vajrayana
+				religion = shinto
 			}
 		}
 	}
@@ -1158,6 +1162,7 @@ dambulla_caves = {
 			religion = buddhism
 			religion = mahayana
 			religion = vajrayana
+			religion = shinto
 		}
 		owner = {
 			OR = {
@@ -1167,6 +1172,7 @@ dambulla_caves = {
 				religion = buddhism
 				religion = mahayana
 				religion = vajrayana
+				religion = shinto
 			}
 		}
 	}
