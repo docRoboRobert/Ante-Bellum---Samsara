@@ -1,38 +1,43 @@
 spriteTypes = {
 
 	spriteType = {
-        name = "GFX_great_project_bhuvanagiri"    
+        name = "GFX_great_project_bhuvanagiri"
         texturefile = "gfx//interface//great_projects//great_project_bhuvanagiri.dds"
     }
 	
 	spriteType = {
-        name = "GFX_great_project_goa_port"    
+        name = "GFX_great_project_goa_port"
         texturefile = "gfx//interface//great_projects//great_project_goa_port.dds"
     }
 	
 	spriteType = {
-        name = "GFX_great_project_golconda_mine"    
+        name = "GFX_great_project_golconda_mine"
         texturefile = "gfx//interface//great_projects//great_project_golconda_mine.dds"
     }
 	
 	spriteType = {
-        name = "GFX_great_project_malankara_statue"    
+        name = "GFX_great_project_malankara_statue"
         texturefile = "gfx//interface//great_projects//great_project_malankara_statue.dds"
     }
 	
 	spriteType = {
-        name = "GFX_great_project_navsari_port"    
+        name = "GFX_great_project_navsari_port"
         texturefile = "gfx//interface//great_projects//great_project_navsari_port.dds"
     }
 	
 	spriteType = {
-        name = "GFX_great_project_probandar_port"    
+        name = "GFX_great_project_probandar_port"
         texturefile = "gfx//interface//great_projects//great_project_probandar_port.dds"
     }
 	
 	spriteType = {
-        name = "GFX_great_project_ram_setu"    
+        name = "GFX_great_project_ram_setu"
         texturefile = "gfx//interface//great_projects//great_project_ram_setu.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_great_project_dambulla_caves"
+        texturefile = "gfx//interface//great_projects//great_project_dambulla_caves.dds"
     }
 	
 }
