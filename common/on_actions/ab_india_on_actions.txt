@@ -1,0 +1,32 @@
+
+# ROOT = Overlord, FROM = Minor
+on_dependency_gained = {
+	
+	FROM = {
+		country_event = {
+			id = colonial_AUS_india.1
+			days = 21
+		}
+		country_event = {
+			id = colonial_AUS_india.2
+			days = 21
+		}
+		country_event = {
+			id = colonial_AUS_india.3
+			days = 21
+		}
+		country_event = {
+			id = colonial_AUS_india.4
+			days = 21
+		}
+		country_event = {
+			id = colonial_AUS_india.5
+			days = 21
+		}
+		country_event = {
+			id = colonial_AUS_india.6
+			days = 21
+		}
+	}
+
+}

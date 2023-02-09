@@ -1,0 +1,352 @@
+#Mission events
+namespace = colonial_AUS_india
+namespace = colonial_AUS_india_overlord
+
+country_event = {
+	id = colonial_AUS_india.1
+	title = colonial_AUS_india.1.t
+	desc = colonial_AUS_india.1.d
+	picture = COLONIZATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		overlord = {
+			NOT = { tag = DGL }
+			religion_group = muslim
+			OR = {
+				tag = OMA
+				tag = ORM
+				primary_culture = indian_arabic
+				capital_scope = { superregion = india_superregion }
+			}
+		}
+		capital_scope = {
+			colonial_region = colonial_australia
+			is_core = ROOT
+		}
+		NOT = { exists = AU1 }
+		NOT = { has_global_flag = NO_CNS }
+		is_colonial_nation = yes
+	}
+	immediate = {
+		change_tag = AU1
+		swap_non_generic_missions = yes
+	}
+	option = {
+		name = colonial_AUS_india.1.a
+		overlord = {
+			country_event = {
+				id = colonial_AUS_india_overlord.1
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = colonial_AUS_india_overlord.1
+	title = colonial_AUS_india_overlord.1.t
+	desc = colonial_AUS_india_overlord.1.d
+	picture = COLONIZATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = colonial_AUS_india_overlord.1.a
+		add_prestige = 5
+	}
+}
+
+###
+
+country_event = {
+	id = colonial_AUS_india.2
+	title = colonial_AUS_india.2.t
+	desc = colonial_AUS_india.2.d
+	picture = COLONIZATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		overlord = {
+			tag = DGL
+			government = republic
+		}
+		capital_scope = {
+			colonial_region = colonial_australia
+			is_core = ROOT
+		}
+		NOT = { exists = AU2 }
+		NOT = { has_global_flag = NO_CNS }
+		is_colonial_nation = yes
+	}
+	immediate = {
+		change_tag = AU2
+		swap_non_generic_missions = yes
+	}
+	option = {
+		name = colonial_AUS_india.2.a
+		overlord = {
+			country_event = {
+				id = colonial_AUS_india_overlord.2
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = colonial_AUS_india_overlord.2
+	title = colonial_AUS_india_overlord.2.t
+	desc = colonial_AUS_india_overlord.2.d
+	picture = COLONIZATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = colonial_AUS_india_overlord.2.a
+		add_prestige = 5
+	}
+}
+
+###
+
+country_event = {
+	id = colonial_AUS_india.3
+	title = colonial_AUS_india.3.t
+	desc = colonial_AUS_india.3.d
+	picture = COLONIZATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		overlord = {
+			OR = {
+				tag = COA
+				primary_culture = tamil
+				primary_culture = north_tamil
+			}
+		}
+		capital_scope = {
+			colonial_region = colonial_australia
+			is_core = ROOT
+		}
+		NOT = { exists = AU3 }
+		NOT = { has_global_flag = NO_CNS }
+		is_colonial_nation = yes
+	}
+	immediate = {
+		change_tag = AU3
+		swap_non_generic_missions = yes
+	}
+	option = {
+		name = colonial_AUS_india.3.a
+		overlord = {
+			country_event = {
+				id = colonial_AUS_india_overlord.3
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = colonial_AUS_india_overlord.3
+	title = colonial_AUS_india_overlord.3.t
+	desc = colonial_AUS_india_overlord.3.d
+	picture = COLONIZATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = colonial_AUS_india_overlord.3.a
+		add_prestige = 5
+	}
+}
+
+###
+
+country_event = {
+	id = colonial_AUS_india.4
+	title = colonial_AUS_india.4.t
+	desc = colonial_AUS_india.4.d
+	picture = COLONIZATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		overlord = {
+			capital_scope = { superregion = india_superregion }
+			OR = {
+				religion = hinduism
+				religion = jainism
+				religion = sarnaism
+			}
+			NOT = { tag = COA }
+			NOT = { tag = HTC }
+			NOT = { tag = PLV }
+			NOT = { tag = DGL }
+			NOT = { tag = PND }
+			NOT = { primary_culture = tamil }
+			NOT = { primary_culture = north_tamil }
+			NOT = { primary_culture = indian_arabic }
+			NOT = { primary_culture = telegu }
+		}
+		capital_scope = {
+			colonial_region = colonial_australia
+			is_core = ROOT
+		}
+		NOT = { exists = AU4 }
+		NOT = { has_global_flag = NO_CNS }
+		is_colonial_nation = yes
+	}
+	immediate = {
+		change_tag = AU4
+		swap_non_generic_missions = yes
+	}
+	option = {
+		name = colonial_AUS_india.4.a
+		overlord = {
+			country_event = {
+				id = colonial_AUS_india_overlord.4
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = colonial_AUS_india_overlord.4
+	title = colonial_AUS_india_overlord.4.t
+	desc = colonial_AUS_india_overlord.4.d
+	picture = COLONIZATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = colonial_AUS_india_overlord.4.a
+		add_prestige = 5
+	}
+}
+
+###
+
+country_event = {
+	id = colonial_AUS_india.5
+	title = colonial_AUS_india.5.t
+	desc = colonial_AUS_india.5.d
+	picture = COLONIZATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		overlord = {
+			capital_scope = { superregion = india_superregion }
+			OR = {
+				religion = malankara
+				religion = nestorian
+				tag = VLR
+			}
+			NOT = { tag = COA }
+			NOT = { tag = HTC }
+			NOT = { tag = PLV }
+			NOT = { tag = DGL }
+			NOT = { tag = PND }
+			NOT = { primary_culture = tamil }
+			NOT = { primary_culture = north_tamil }
+			NOT = { primary_culture = indian_arabic }
+			NOT = { primary_culture = telegu }
+		}
+		capital_scope = {
+			colonial_region = colonial_australia
+			is_core = ROOT
+		}
+		NOT = { exists = AU5 }
+		NOT = { has_global_flag = NO_CNS }
+		is_colonial_nation = yes
+	}
+	immediate = {
+		change_tag = AU5
+		swap_non_generic_missions = yes
+	}
+	option = {
+		name = colonial_AUS_india.5.a
+		overlord = {
+			country_event = {
+				id = colonial_AUS_india_overlord.5
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = colonial_AUS_india_overlord.5
+	title = colonial_AUS_india_overlord.5.t
+	desc = colonial_AUS_india_overlord.5.d
+	picture = COLONIZATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = colonial_AUS_india_overlord.5.a
+		add_prestige = 5
+	}
+}
+
+###
+
+country_event = {
+	id = colonial_AUS_india.6
+	title = colonial_AUS_india.6.t
+	desc = colonial_AUS_india.6.d
+	picture = COLONIZATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		capital_scope = {
+			overlord = {
+				capital_scope = { superregion = india_superregion }
+				primary_culture = telegu
+				NOT = { tag = COA }
+				NOT = { tag = HTC }
+				NOT = { tag = DGL }
+				NOT = { tag = PND }
+			}
+			colonial_region = colonial_australia
+			is_core = ROOT
+		}
+		NOT = { exists = AU6 }
+		NOT = { has_global_flag = NO_CNS }
+		is_colonial_nation = yes
+	}
+	immediate = {
+		change_tag = AU6
+		swap_non_generic_missions = yes
+	}
+	option = {
+		name = colonial_AUS_india.6.a
+		overlord = {
+			country_event = {
+				id = colonial_AUS_india_overlord.6
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = colonial_AUS_india_overlord.6
+	title = colonial_AUS_india_overlord.6.t
+	desc = colonial_AUS_india_overlord.6.d
+	picture = COLONIZATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = colonial_AUS_india_overlord.6.a
+		add_prestige = 5
+	}
+}
