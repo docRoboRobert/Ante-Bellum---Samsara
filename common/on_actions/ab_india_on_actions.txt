@@ -1,4 +1,3 @@
-
 # ROOT = Overlord, FROM = Minor
 on_dependency_gained = {
 	

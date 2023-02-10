@@ -104,3 +104,7 @@
  desc_new_omani_fleet_modifier:0 "New Deal of the Sea!"
  oma_west_india_dominant:0 "Dominance over West India"
  desc_oma_west_india_dominant:0 "We are the dominant trade power in all of the Western Indian Coast. Nobody can match us there."
+ abi_palk_strait_toll:0 "Palk Strait Toll"
+ desc_abi_palk_strait_toll:0 "We are in a controll of Palk Strait and its trade. All merchant ships passing through have to pay us toll or choose more dangerous and longer route around Sri Lanka."
+ abi_sumatran_pirate_puppets:0 "Sumatran Pirate Puppets"
+ desc_abi_sumatran_pirate_puppets:0 "We have established puppet states in Malacca region. They contribute greatly to our influence over the spice trade."
