@@ -482,6 +482,106 @@ abi_oman_second = {
 		}
 	}
 	
+	oma_rule_in_gujarat = {
+		icon = mission_turning_the_tables
+		position = 7
+		required_missions = { oma_fund_trade_cities }
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5243
+				province_id = 516
+				province_id = 2054
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			owns_core_province = 5243
+			owns_core_province = 516
+			owns_core_province = 2054
+			OR = {
+				NOT = { exists = GUJ }
+				AND = {
+					army_strength = {
+						who = GUJ
+						value = 2.0
+					}
+					GUJ = {
+						NOT = { total_development = 200 }
+					}
+				}
+			}
+		}
+		
+		effect = {
+			2054 = {
+				change_province_name = "Ahmadabad"
+				rename_capital = "Ahmadabad"
+			}
+			custom_tooltip = oma_rule_in_gujarat.tooltip
+			hidden_effect = {
+				every_province = {
+					limit = {
+						has_port = yes
+						trade_company_region = trade_company_west_india
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			custom_tooltip = oma_rule_in_gujarat.tooltip2	#Unlock decision
+			set_country_flag = oma_guj_slave_decision_access
+			custom_tooltip = oma_rule_in_gujarat.tooltip3	#Fall of Gujarat
+			if = {
+				limit = { exists = GUJ }
+				GUJ = {
+					country_event = {
+						id = abindia_mission.6
+						days = 1
+					}
+				}
+			}
+		}
+	}
+	
+	oma_follow_indus = {
+		icon = mission_advance_to_the_arabian_sea
+		position = 8
+		required_missions = { oma_rule_in_gujarat }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = sindh_area
+				area = northern_sindh_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			sindh_area = {
+				type = all
+				owned_by = ROOT
+			}
+			northern_sindh_area = {
+				type = all
+				owned_by = ROOT
+			}
+			NOT = { exists = SND }
+		}
+		
+		effect = {
+			multan_area = { add_permanent_claim = ROOT }
+			lahore_area = { add_permanent_claim = ROOT }
+			sind_sagar_area = { add_permanent_claim = ROOT }
+			add_country_modifier = { 
+				name = oma_push_indus
+				duration = 7300
+				hidden = no
+			}
+		}
+	}
+	
 }
 
 abi_oman_third = {
@@ -645,6 +745,83 @@ abi_oman_third = {
 				duration = -1
 				hidden = no
 			}
+		}
+	}
+	
+	oma_land_on_serendib = {
+		icon = mission_portuguese_ceylon
+		position = 7
+		required_missions = { oma_fund_trade_cities }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = lanka_area
+				area = south_lanka_area
+			}
+		}
+		
+		trigger = {
+			OR = {
+				num_of_owned_provinces_with = {
+					value = 1
+					OR = {
+						area = lanka_area
+						area = south_lanka_area
+					}
+				}
+				any_country = {
+					capital_scope = {
+						OR = {
+							area = lanka_area
+							area = south_lanka_area
+						}
+					}
+					war_with = ROOT
+					NOT = {
+						war_score_against = {
+							who = ROOT
+							value = -50
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			lanka_area = { add_permanent_claim = ROOT }
+			south_lanka_area = { add_permanent_claim = ROOT }
+		}
+	}
+	
+	oma_rule_serendib = {
+		icon = mission_conquer_lanka
+		position = 8
+		required_missions = { oma_land_on_serendib }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = lanka_area
+				area = south_lanka_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			lanka_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				NOT = { unrest = 1 }
+			}
+			south_lanka_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				NOT = { unrest = 1 }
+			}
+		}
+		
+		effect = {
+			custom_tooltip = oma_rule_serendib.tooltip
+			set_country_flag = oma_lanka_slave_decision_access
 		}
 	}
 }

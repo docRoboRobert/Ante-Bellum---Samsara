@@ -312,3 +312,90 @@ country_event = {
 		swap_non_generic_missions = yes
 	}
 }
+
+country_event = {
+	id = abindia_mission.6
+	title = abindia_mission.6.t
+	desc = abindia_mission.6.d
+	picture = BANKRUPTCY_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = abindia_mission.6.a
+		ai_chance = { factor = 80 }
+		add_stability = -1
+		add_prestige = -20
+		release_all_subjects = yes
+		if = {
+			limit = { NOT = { exists = IDR } }
+			release = IDR
+		}
+		if = {
+			limit = { NOT = { exists = MER } }
+			release = MER
+		}
+		if = {
+			limit = { NOT = { exists = SNT } }
+			release = SNT
+		}
+		if = {
+			limit = { NOT = { exists = CMP } }
+			release = CMP
+		}
+		if = {
+			limit = { NOT = { exists = MAW } }
+			release = MAW
+		}
+		if = {
+			limit = { NOT = { exists = GUH } }
+			release = GUH
+		}
+		if = {
+			limit = { NOT = { exists = KHB } }
+			release = KHB
+		}
+		if = {
+			limit = { NOT = { exists = LTP } }
+			release = LTP
+		}
+		if = {
+			limit = { NOT = { exists = BUH } }
+			release = BUH
+		}
+		if = {
+			limit = { NOT = { exists = MLW } }
+			release = MLW
+		}
+		if = {
+			limit = { NOT = { exists = WDH } }
+			release = WDH
+		}
+		if = {
+			limit = { NOT = { exists = MTD } }
+			release = MTD
+		}
+		if = {
+			limit = { NOT = { exists = MHD } }
+			release = MHD
+		}
+		if = {
+			limit = { NOT = { exists = BHV } }
+			release = BHV
+		}
+	}
+	
+	option = {
+		name = abindia_mission.6.b
+		ai_chance = { factor = 20 }
+		add_stability = -3
+		add_prestige = -50
+		add_country_modifier = { 
+			name = oma_gujarat_collapse_modifier
+			duration = 10950
+			hidden = no
+		}
+	}
+}

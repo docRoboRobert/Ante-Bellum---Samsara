@@ -108,3 +108,7 @@
  desc_abi_palk_strait_toll:0 "We are in a controll of Palk Strait and its trade. All merchant ships passing through have to pay us toll or choose more dangerous and longer route around Sri Lanka."
  abi_sumatran_pirate_puppets:0 "Sumatran Pirate Puppets"
  desc_abi_sumatran_pirate_puppets:0 "We have established puppet states in Malacca region. They contribute greatly to our influence over the spice trade."
+ oma_push_indus:0 "Pushing Along Indus River"
+ desc_oma_push_indus:0 "We have claimed Idus River Valley as our domain. With those rightful claims our justification for conquest shouldn't take that much effort."
+ oma_gujarat_collapse_modifier:0 "Collapse of Gujarat State"
+ desc_oma_gujarat_collapse_modifier:0 "After humiliating defeat and losing our capital territories, Gujarat state dwindles as authority of ruling class collapses. To recover from such chaos is not an easy task."
