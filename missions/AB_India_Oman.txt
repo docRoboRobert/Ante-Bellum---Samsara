@@ -1,13 +1,260 @@
-#abi_oman_first = {
-#	slot = 1
-#	generic = no
-#	ai = yes
-#	potential = {
-#		tag = OMA
-#	}
-#	has_country_shield = yes
-#	
-#}
+abi_oman_first = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = OMA
+	}
+	has_country_shield = yes
+	
+	#
+	
+	#Imported from vanilla MT
+	
+	oma_buildforces = {
+		icon = mission_bedouins
+		required_missions = { }
+		position = 1
+		completed_by = 1460.1.1
+		
+		trigger = {
+			army_size_percentage = 1
+			manpower_percentage = 0.8
+			num_of_generals = 1
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "oma_buildforces_mod"
+				duration = 5475
+			}
+		}
+	}
+	
+	oma_conquest_of_batinah = {
+		icon = mission_arabian_fort
+		required_missions = { oma_buildforces }
+		position = 2
+		completed_by = 1660.1.1
+		
+		provinces_to_highlight = {
+			area = mascat_area
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			mascat_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 15
+			add_adm_power = 100
+			dhofar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	oma_conquest_of_dhofar = {
+		icon = mission_junk_boat
+		required_missions = { oma_conquest_of_batinah }
+		position = 3
+		completed_by = 1660.1.1
+		
+		provinces_to_highlight = {
+			area = dhofar_area
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			dhofar_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 15
+			add_adm_power = 100
+			add_country_modifier = {
+				name = "oma_maritime_mod"
+				duration = 5475
+			}
+			1202 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	oma_conquest_of_mombasa = {
+		icon = mission_market_place_with_asian_traders
+		required_missions = { oma_conquest_of_dhofar }
+		position = 4
+		
+		provinces_to_highlight = {
+			province_id = 1202
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			1202 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			mombasa_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			1201 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	oma_conquest_of_zanzibar = {
+		icon = mission_invade_island
+		required_missions = { oma_conquest_of_mombasa }
+		position = 5
+		
+		provinces_to_highlight = {
+			province_id = 1201
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			1201 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			central_swahili_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+	
+	#
+	
+	oma_slavery_question = {
+		icon = mission_african_trade_post
+		position = 7
+		required_missions = { oma_fund_trade_cities }
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 504
+				province_id = 4410
+			}
+		}
+		
+		trigger = {
+			504 = {
+				is_strongest_trade_power = ROOT
+			}
+			4410 = {
+				is_strongest_trade_power = ROOT
+			}
+		}
+		
+		effect = {
+			country_event = {
+				id = abindia_mission.5
+				days = 1
+			}
+		}
+	}
+}
+
+abi_oman_first_locked = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = OMA
+		NOT = {
+			OR = {
+				has_country_flag = oman_slave_path
+				has_country_flag = oman_india_path
+			}
+		}
+	}
+	has_country_shield = yes
+	
+	oman_placeholder1 = {
+		icon = mission_unknown_mission
+		position = 8
+		required_missions = { oma_slavery_question }
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = OMAN_UNLOCKED_PATH
+				OR = {
+					has_country_flag = oman_slave_path
+					has_country_flag = oman_india_path
+				}
+			}
+		}
+		
+		effect = {
+			custom_tooltip = OMAN_UNLOCKED_PATH
+		}
+	}
+	oman_placeholder2 = {
+		icon = mission_unknown_mission
+		position = 9
+		required_missions = { oman_placeholder1 }
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = OMAN_UNLOCKED_PATH
+				OR = {
+					has_country_flag = oman_slave_path
+					has_country_flag = oman_india_path
+				}
+			}
+		}
+		
+		effect = {
+			custom_tooltip = OMAN_UNLOCKED_PATH
+		}
+	}
+	oman_placeholder3 = {
+		icon = mission_unknown_mission
+		position = 10
+		required_missions = { oman_placeholder2 }
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = OMAN_UNLOCKED_PATH
+				OR = {
+					has_country_flag = oman_slave_path
+					has_country_flag = oman_india_path
+				}
+			}
+		}
+		
+		effect = {
+			custom_tooltip = OMAN_UNLOCKED_PATH
+		}
+	}
+}
 
 abi_oman_second = {
 	slot = 2
@@ -235,85 +482,6 @@ abi_oman_second = {
 		}
 	}
 	
-	oma_dominate_gulf = {
-		icon = mission_galleys_in_port
-		position = 7
-		required_missions = {  }
-		
-		provinces_to_highlight = {
-			province_id = 2999
-		}
-		
-		trigger = {
-			2999 = {
-				is_strongest_trade_power = ROOT
-				trade_share = {
-					country = ROOT
-					share = 50
-				}
-			}
-		}
-		
-		effect = {
-			add_country_modifier = { 
-				name = oma_dominated_hormuz_trade
-				duration = 18250
-				hidden = no
-			}
-			if = {
-				limit = {
-					2999 = { owned_by = ROOT }
-				}
-				add_base_production = 2
-			}
-			capital_scope = { add_base_production = 1 }
-		}
-	}
-	
-	oma_gulf_monopoly = {
-		icon = mission_african_gold
-		position = 8
-		required_missions = { oma_dominate_gulf }
-		
-		provinces_to_highlight = {
-			OR = {
-				province_id = 2999
-				province_id = 408
-			}
-		}
-		
-		trigger = {
-			2999 = {
-				owned_by = ROOT
-				province_has_center_of_trade_of_level = 3
-				base_production = 8
-				is_strongest_trade_power = ROOT
-				trade_share = {
-					country = ROOT
-					share = 90
-				}
-			}
-			408 = {
-				owned_by = ROOT
-				province_has_center_of_trade_of_level = 2
-				is_strongest_trade_power = ROOT
-				trade_share = {
-					country = ROOT
-					share = 60
-				}
-			}
-			num_of_centers_of_trade = 8
-		}
-		
-		effect = {
-			add_country_modifier = { 
-				name = oma_monopoly_gulf_modifier
-				duration = -1
-				hidden = no
-			}
-			add_mercantilism = 4
-		}
-	}
 }
 
 abi_oman_third = {
@@ -489,6 +657,86 @@ abi_oman_fourth = {
 		tag = OMA
 	}
 	has_country_shield = yes
+	
+	oma_dominate_gulf = {
+		icon = mission_galleys_in_port
+		position = 1
+		required_missions = {  }
+		
+		provinces_to_highlight = {
+			province_id = 2999
+		}
+		
+		trigger = {
+			2999 = {
+				is_strongest_trade_power = ROOT
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = { 
+				name = oma_dominated_hormuz_trade
+				duration = 18250
+				hidden = no
+			}
+			if = {
+				limit = {
+					2999 = { owned_by = ROOT }
+				}
+				add_base_production = 2
+			}
+			capital_scope = { add_base_production = 1 }
+		}
+	}
+	
+	oma_gulf_monopoly = {
+		icon = mission_african_gold
+		position = 2
+		required_missions = { oma_dominate_gulf }
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2999
+				province_id = 408
+			}
+		}
+		
+		trigger = {
+			2999 = {
+				owned_by = ROOT
+				province_has_center_of_trade_of_level = 3
+				base_production = 8
+				is_strongest_trade_power = ROOT
+				trade_share = {
+					country = ROOT
+					share = 90
+				}
+			}
+			408 = {
+				owned_by = ROOT
+				province_has_center_of_trade_of_level = 2
+				is_strongest_trade_power = ROOT
+				trade_share = {
+					country = ROOT
+					share = 60
+				}
+			}
+			num_of_centers_of_trade = 8
+		}
+		
+		effect = {
+			add_country_modifier = { 
+				name = oma_monopoly_gulf_modifier
+				duration = -1
+				hidden = no
+			}
+			add_mercantilism = 4
+		}
+	}
 	
 	omani_grand_fleet = {
 		icon = mission_corsairs_of_the_north_sea

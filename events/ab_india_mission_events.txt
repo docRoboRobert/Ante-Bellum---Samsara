@@ -287,3 +287,28 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = abindia_mission.5
+	title = abindia_mission.5.t
+	desc = abindia_mission.5.d
+	picture = MERCHANTS_TALKING_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = abindia_mission.5.a
+		ai_chance = { factor = 50 }
+		set_country_flag = oman_slave_path
+		custom_tooltip = abindia_mission.5.tooltip
+		swap_non_generic_missions = yes
+	}
+	
+	option = {
+		name = abindia_mission.5.b
+		ai_chance = { factor = 50 }
+		set_country_flag = oman_india_path
+		custom_tooltip = abindia_mission.5.tooltip2
+		swap_non_generic_missions = yes
+	}
+}
