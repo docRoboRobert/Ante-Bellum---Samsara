@@ -1,0 +1,2064 @@
+on_startup = {
+	if = {
+		limit = {
+			current_age = age_of_discovery
+		}
+		LXA = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = lxa_loyalty_flag }
+				}
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = -10
+				}
+				set_country_flag = lxa_loyalty_flag
+			}
+		}
+	}
+	emperor = {
+		save_global_event_target_as = Emperor
+	}
+	if = {
+		limit = {
+			is_emperor_of_china = yes
+		}
+		save_global_event_target_as = EmperorOfChina
+	}
+	events = {
+		muslim_school_events.20 #Pick School
+		flavor_got.1 #Event for Gotland to select their mission tree
+	#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
+	}
+	if = {
+		limit = {
+			has_dlc = "Cradle of Civilization"
+			has_country_modifier = tur_janissary
+		}
+		remove_country_modifier = tur_janissary
+	}
+	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
+
+	if = {
+		limit = {
+			NOT = { has_country_flag = new_flavour_bav_13_has_been_triggered }
+			OR = {
+				tag = UBV
+				tag = LBV
+				tag = ING
+			}
+		}
+		set_country_flag = new_flavour_bav_13_has_been_triggered
+		country_event = { id = new_flavour_bav.13 days = 90 } #better not to allow almost instant DOWs
+	}
+	if = {
+		limit = {
+			tag = FRA
+			started_in = 1789.7.14
+			NOT = { is_year = 1790 }
+			NOT = { has_disaster = french_revolution }
+		}
+		add_disaster_progress = {
+			value = 100
+			disaster = french_revolution
+		}
+	}
+	if = {
+		limit = {
+			exists = SUK
+		}
+		SUK = {
+			set_ruler_flag = suk_monarch_flag
+		}
+		AYU = {
+			set_country_flag = ayu_monarch_flag
+		}
+	}
+	#AB
+	if = {
+		limit = {
+			tag = FRC
+		}
+		country_event = { id = ab_frc_disaster_event.0 days = 1 }
+	}
+	if = {
+		limit = {
+			tag = ADU
+		}
+		country_event = { id = ab_andalusian_event.0 days = 1 }
+	}
+	if = {
+		limit = {
+			tag = BYZ
+		}
+		country_event = { id = ab_byzantium.9 days = 0 }
+	}
+	if = {
+		limit = {
+			tag = GLH
+		}
+		country_event = { id = ab_ghorde.1 days = 0 }
+	}
+	if = {
+		limit = {
+			has_dlc = "Mandate of Heaven"
+			has_reform = celestial_empire
+		}
+		add_faction = temples
+		add_faction = enuchs
+		add_faction = bureaucrats
+		add_faction_influence = {
+			faction = enuchs
+			influence = 45
+		}
+		add_faction_influence = {
+			faction = bureaucrats
+			influence = 25
+		}
+		add_faction_influence = {
+			faction = temples
+			influence = 30
+		}
+	}
+	#if = {
+	#	limit = {
+	#		OR = {
+	#			primary_culture = norse
+	#			AND = {
+	#				culture_group = scandinavian
+	#				religion = norse_pagan_reformed
+	#			}
+	#		}
+	#		NOT = { has_idea_group = norse_ideas }
+	#		is_playing_custom_nation = no
+	#	}
+	#	country_event = { id = ideagroups.1 } #Swap Ideas
+	#}
+	if = {
+		limit = {
+			NOT = { has_global_flag = ab_checked_dlc }
+			ai = no
+		}
+		set_global_flag = ab_checked_dlc
+		if = {
+			limit = {
+				has_all_major_dlc = no
+			}
+			country_event = {
+				id = ab_dlc_check.1
+			}
+		}
+	}
+	if = { 
+		limit = { 
+			tag = BUL
+			ai = no
+			is_year = 1444
+			NOT = {
+				is_year = 1445
+			}
+		}
+		random_list = { 
+			33 = { 
+				define_advisor = {
+					type = statesman
+					name = "Kristiyan Petrov"
+					skill = 1
+					culture = bulgarian
+					religion = orthodox
+				}
+			}
+			33 = { 
+				define_advisor = {
+					type = spymaster
+					name = "Kristiyan Petrov"
+					skill = 1
+					culture = bulgarian
+					religion = orthodox
+				}
+			}
+			33 = { 
+				define_advisor = {
+					type = diplomat
+					name = "Kristiyan Petrov"
+					skill = 1
+					culture = bulgarian
+					religion = orthodox
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			is_year = 1444
+			NOT = {
+				is_year = 1445
+			}
+			NOT = {
+				tag = ZAZ
+			}
+			NOT = {
+				tag = NOV
+			}
+			NOT = {
+				has_global_flag = ab_tatar_yoke_flag
+			}
+			culture_group = east_slavic
+		}
+		country_event = { id = ab_rus.1 }
+	}
+}
+
+on_monarch_death = {
+	if = {
+		limit = {
+			tag = ANS
+			BRA = {
+				has_country_flag = albrecht_achilles_flag
+			}
+		}
+		BRA = {
+			clr_country_flag = albrecht_achilles_flag #Just to be sure
+			kill_heir = {} #If Albrecht Achilles dies in Ansbach he will also be dead in Brandenburg, will appear as normal death of heir to BRA.
+		}
+	}
+	if = {
+		limit = { has_country_modifier = sought_after_bachelor }
+		remove_country_modifier = sought_after_bachelor
+	}
+	if = {
+		limit = {
+			tag = SAX
+			has_country_flag = sax_thuringen_split_to_happen
+			OR = {
+				NOT = { dynasty = "von Wettin" }
+				NOT = { senior_union_with = THU }
+				has_regency = yes
+			}
+		}
+		clr_country_flag = sax_thuringen_split_to_happen
+	}
+	if = {
+		limit = { tag = SAM }
+		country_event = { id = polynesian.35 }
+	}
+	if = {
+		limit = { tag = TOG }
+		country_event = { id = polynesian.36 }
+	}
+	if = {	# Ascension of Trailokanat	
+		limit = { tag = AYU }
+		country_event = { id = flavor_suk.1 }
+	}
+	if = {
+		limit = { tag = GOT }
+		country_event = { id = flavor_got.37 }
+	}
+	if = {
+		limit = { has_government_attribute = no_stability_loss_on_monarch_death }
+		add_stability = 1
+	}
+	burgundian_inheritance_start_effect = yes
+	ladislaus_postumus_king_died_effect = yes
+	joan_de_trastamara_king_died_effect = yes
+	events = {
+		flavor_wal.1 # Vlad the Impaler. So that he doesn't try to usurp his father.
+		flavor_nav.4 # Navarra succession event
+		flavor_sax.8 # Treaty of Leipzig
+		flavor_pap.16 # Borgia Pope
+		flavor_pap.19 # death of borgia pope
+		flavor_tus.22 # Medici Pope
+		flavor_tus.24 # death of the Medici Pope
+		majapahit.8 # Majapahit pretenders
+		flavor_mal.11 # Mali pretenders
+		flavor_mal.47 # Pilgrimage ends prematurely
+	}
+	#AB
+	if = {
+		limit = {
+			has_ruler_flag = eng_heir_in_waiting
+		}
+		clr_ruler_flag = eng_heir_in_waiting
+	}
+	else = {
+		country_event = { id = antebellum_england.1 }
+	}
+	if = {
+		limit = {
+			tag = GLH
+			NOT = {
+				mission_completed = glh_succession
+			}
+		}
+		country_event = { id = ab_ghorde.2 }
+	}
+}
+
+on_integrate = {
+	events = {
+		610
+	}
+	# AB
+	if = {
+		limit = {
+			is_part_of_hre = yes
+			FROM = {
+				is_elector = yes
+			}
+		}
+		FROM = {
+			elector = no
+		}
+		elector = yes
+		country_event = {
+			id = hre_elector_inherit.001
+		}
+	}
+}
+
+on_annexed = {
+	events = {
+		celestial_empire_events.1 # Empire dismantled
+	}
+	on_annexed_estate_privileges_effect = yes
+	FROM = {
+		if = {
+			limit = { is_emperor_of_china = yes }
+			dismantle_empire_of_china = yes
+			set_global_flag = empire_of_china_dismantled
+		}
+		if = {
+			limit = { has_country_modifier = legatus_natus }
+			remove_country_modifier = legatus_natus
+			set_global_flag = no_legatus_natus
+		}
+		if = {
+			limit = { has_country_modifier = primas_germaniae }
+			remove_country_modifier = primas_germaniae
+			set_global_flag = no_primas_germaniae
+		}
+	}
+	#AB
+	if = {
+		limit = {
+			is_part_of_hre = yes
+			FROM = {
+				is_subject_of = ROOT
+				is_elector = yes
+			}
+		}
+		FROM = {
+			elector = no
+		}
+		elector = yes
+		country_event = {
+			id = hre_elector_inherit.001
+		}
+	}
+	if = {
+		limit = {
+			has_reform = shogunate
+		}
+		set_country_flag = tjj_annexed_daimyo
+	}
+	if = {
+		limit = {
+			FROM = {
+				has_reform = irish_highking_opp
+			}
+		}
+		FROM = { save_event_target_as = hk_ire }
+		# howard: it is possible to annex a country via a subject
+		# so we need to redirect the event to the overlord.
+		if = {
+			limit = {
+				is_subject = yes
+			}
+			overlord = {
+				country_event = { id = hk_ire.11 } # Foreign power annexes HK
+				country_event = { id = hk_ire.15 } # Irish minor annexes HK
+			}
+		}
+		else = {
+			country_event = { id = hk_ire.11 } # Foreign power annexes HK
+			country_event = { id = hk_ire.15 } # Irish minor annexes HK
+		}
+	}
+}
+
+on_mandate_of_heaven_gained = {
+	save_global_event_target_as = EmperorOfChina
+	if = {
+		limit = {
+			technology_group = nomad_group
+		}
+		change_technology_group = chinese
+		change_unit_type = chinese
+	}
+	if = {
+		limit = {
+			OR = {
+				NOT = { government = monarchy }
+				government = tribal
+			}
+		}
+		change_government_to_monarchy = yes
+	}
+	add_government_reform = celestial_empire
+	set_mandate = 60
+	set_meritocracy = 60
+	add_country_modifier = {
+		name = new_mandate_holder
+		duration = 9125
+	}
+	1816 = {
+		if = {
+			limit = {
+				NOT = { owned_by = root }
+				NOT = { is_core = root }
+			}
+			add_core = root
+		}
+	}
+	1821 = {
+		if = {
+			limit = {
+				NOT = { owned_by = root }
+				NOT = { is_core = root }
+			}
+			add_core = root
+		}
+	}
+	667 = {
+		if = {
+			limit = {
+				NOT = { owned_by = root }
+				NOT = { is_core = root }
+			}
+			add_core = root
+		}
+	}
+	china_superregion = {
+		limit = {
+			NOT = { is_core = ROOT }
+		}
+		add_permanent_claim = ROOT
+	}
+	if = {
+		limit = {
+			has_country_modifier = lost_mandate_of_heaven
+		}
+		remove_country_modifier = lost_mandate_of_heaven
+	}
+	country_event = { #Reforming the Bureaucracy
+		id = china_events.31
+		days = 365
+	}
+	country_event = {
+		id = china_events.32 #Records of the last Empire
+		days = 183
+	}
+	country_event = {
+		id = celestial_empire_events.2
+		days = 1825
+	}
+	#AB
+	if = {
+		limit = {
+			has_dlc = "Mandate of Heaven"
+		}
+		add_faction = temples
+		add_faction = enuchs
+		add_faction = bureaucrats
+	}
+}
+
+on_mandate_of_heaven_lost = {
+	remove_government_reform = celestial_empire
+	set_government_rank = 2
+	add_country_modifier = {
+		name = lost_mandate_of_heaven
+		duration = 7300	# 20 years
+	}
+	add_stability = -2
+	china_superregion = {
+		limit = {
+			is_permanent_claim = ROOT
+		}
+		remove_claim = ROOT
+	}
+	if = {
+		limit = {
+			has_country_modifier = new_mandate_holder
+		}
+		remove_country_modifier = new_mandate_holder
+	}
+	#AB
+	if = {
+		limit = {
+			has_dlc = "Mandate of Heaven"
+		}
+		remove_faction = temples
+		remove_faction = enuchs
+		remove_faction = bureaucrats
+	}
+}
+
+on_raid_coast = {
+	if = {
+		limit = {
+			has_faction = pr_buccaneers
+		}
+		add_faction_influence = {
+			faction = pr_buccaneers
+			influence = 1
+		}
+	}
+	if = {
+		limit = {
+			has_government_attribute = raiding_increases_pp
+		}
+		add_power_projection = {
+			type = high_sea_power_projection
+			amount = 1
+		}
+	}
+	if = {
+		limit = {
+			has_mission = dan_raid_the_north_sea
+			NOT = { mission_completed = dan_raid_the_north_sea } 
+		}
+		change_variable = {
+			which = num_of_raided_coasts
+			value = 1
+		}
+	}
+	# AB
+	events = {
+		ab_norway.10
+		ab_norway.11
+		ab_norway.12
+		ab_norway.13
+		ab_norway.14
+		ab_norway.15
+		ab_norway.16
+	}
+	# Give a 20% chance that a raided coast by Vikings
+	# Triggers an event wherein we can react to it
+	random_list = {
+		20 = { 
+			province_event = { id = ire_flavor.4 }
+		}
+		80 = { }
+	}
+}
+
+on_successive_emperor = {
+	emperor = {
+		save_global_event_target_as = Emperor
+	}
+	events = {
+		900
+	}
+	# AB
+	if = {
+		limit = {
+			emperor = {
+				has_government_attribute = gain_dip_on_emperor_reelection
+			}
+		}
+		add_dip_power = 100
+	}
+}
+
+on_general_recruited = {
+	if = {
+		limit = { has_country_modifier = pol_trigger_for_army_professionalism_modifier } 
+		add_army_professionalism = 0.0125 
+	}
+	else = { add_army_professionalism = 0.01 }
+	if = {
+		limit = { has_government_attribute = recruiting_generals_increases_nobles_loyalty }
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 2
+			}
+		}
+		if = {
+			limit = {
+				has_estate = estate_maratha
+			}
+			add_estate_loyalty = {
+				estate = estate_maratha
+				loyalty = 2
+			}
+		}
+		if = {
+			limit = {
+				has_estate = estate_rajput
+			}
+			add_estate_loyalty = {
+				estate = estate_rajput
+				loyalty = 2
+			}
+		}
+	}
+	# AB
+	if = {
+		limit = {
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+			mission_completed = byzantium_unrivaled
+		}
+		add_army_tradition = 1
+	}
+	if = {
+		limit = {
+			mission_completed = naz_empower_stratocracy
+		}
+		add_estate_loyalty = { estate = estate_nobles loyalty = 2.5 }
+	}
+
+}
+
+on_mercenary_recruited = {
+	if = {
+		limit = {
+			FROM = { has_not_free_mercs_trait = yes }
+			is_not_free_merc_company = yes
+			AND = {
+				OR = {
+					FROM = { NOT = { has_country_flag = oyo_cavalry_do_not_consume_ap } }
+					ROOT = { NOT = { mercenary_company = merc_oyo_cavalry } }
+				}
+				# AB {{{
+				OR = {
+					FROM = { NOT = { mission_completed = seljuk_sands } }
+					ROOT = { NOT = { mercenary_company = ab_merc_ghilman } }
+				}
+				OR = {
+					FROM = { NOT = { mission_completed = ab_slavic_warriors } }
+					ROOT = { NOT = { mercenary_company = ab_merc_perun } }
+				}
+				OR = {
+					FROM = { NOT = { mission_completed = lit_recruit } }
+					ROOT = { NOT = { mercenary_company = ab_merc_haka } }
+				}
+				OR = {
+					FROM = {
+						NOT = {
+							has_reform = varangian_guard
+						}
+					}
+					ROOT = { NOT = { mercenary_company = ab_merc_varangian_guard } }
+				}
+				OR = {
+					FROM = {
+						NOT = {
+							has_idea = tur_first
+						}
+					}
+				}
+				OR = {
+					FROM = {
+						NOT = {
+							full_idea_group = mercenary_ideas
+						}
+					}
+				}
+				# }}}
+			}
+		}
+		if = {
+			limit = {
+				FROM = { 
+					OR = {
+						has_country_flag = fifty_percent_merc_army_professionalism_cost 
+						has_country_modifier = pol_cheap_ap_mercs_modifier
+					}
+				}
+			}
+			FROM = {
+				add_army_professionalism = -0.025
+			}
+		}
+		else = {
+			FROM = {
+				add_army_professionalism = -0.05
+			}
+		}
+	}
+}
+
+# THIS = One province in the state
+on_add_pasha = {
+	if = {
+		limit = {
+			owner = {
+				OR = {
+					mission_completed = seljuk_pasha
+					mission_completed = rum_muslim_pashas
+				}
+			}
+		}
+		area = {
+			add_province_modifier = {
+				name = "sel_pasha_administration"
+				duration = -1
+			}
+		}
+	}
+}
+
+# THIS = One province in the state
+on_remove_pasha = {
+	hidden_effect = {
+		owner = {
+			save_event_target_as = province_owner
+		}
+	}
+
+	area = {
+		limit = { owned_by = event_target:province_owner }
+		add_or_extend_province_modifier_effect = { MODIFIER = pasha_removed_modifier DURATION = 3650 }
+	}
+	# AB
+	area = {
+		remove_province_modifier = sel_pasha_administration
+	}
+}
+
+on_admiral_recruited = {
+	if = {
+		limit = { has_country_flag = admirals_give_army_professionalism }
+		add_army_professionalism = 0.005
+	}
+	if = {
+		limit = { 
+			OR = {
+				has_country_modifier = pol_global_maritime_empire_modifier 
+				has_country_modifier = pol_global_maritime_empire_2_modifier
+			}
+		}
+		add_navy_tradition = 1 
+	}
+	# AB
+    if = {
+        limit = {
+            OR = {
+                mission_completed = eng_admiralty
+                mission_completed = ab_eng_admiralty
+                mission_completed = tur_corsairs
+            }
+        }
+        add_navy_tradition = 1
+    }
+}
+
+on_center_of_trade_upgrade = {
+	if = {
+		limit = { owner = { has_country_flag = enable_upgrading_centers_of_trade_dev } }
+		add_base_production = 1 
+	}
+	# AB
+	if = { 
+		limit = { 
+			owner = { mission_completed = ab_eng_portsmouth } 
+		}
+		add_base_production = 1
+	}
+	if = { 
+		limit = { 
+			owner = { has_country_modifier = tur_trading_cities } 
+		}
+		add_base_production = 1
+	}
+	if = { 
+		limit = { 
+			owner = { has_country_modifier = nicene_centers } 
+		}
+		add_base_production = 1
+	}
+	if = { 
+		limit = { 
+			superregion = china_superregion
+			owner = { has_country_modifier = japan_trading } 
+		}
+		add_base_production = 1
+	}
+	if = { 
+		limit = { 
+			superregion = china_superregion
+			owner = { has_country_modifier = china_grip_trade } 
+		}
+		add_base_production = 1
+	}
+}
+
+on_center_of_trade_downgrade = {
+	if = {
+		limit = { owner = { has_country_flag = enable_upgrading_centers_of_trade_dev } }
+		add_base_production = -1 
+	}
+	# AB
+	if = { 
+		limit = { 
+			owner = { mission_completed = ab_eng_portsmouth } 
+		}
+		add_base_production = -1
+	}
+	if = { 
+		limit = { 
+			owner = { has_country_modifier = tur_trading_cities } 
+		}
+		add_base_production = -1
+	}
+	if = { 
+		limit = { 
+			owner = { has_country_modifier = nicene_centers } 
+		}
+		add_base_production = -1
+	}
+	if = { 
+		limit = { 
+			superregion = china_superregion
+			owner = { has_country_modifier = japan_trading } 
+		}
+		add_base_production = -1
+	}
+	if = { 
+		limit = { 
+			superregion = china_superregion
+			owner = { has_country_modifier = china_grip_trade } 
+		}
+		add_base_production = -1
+	}
+}
+
+on_adm_development = {
+	if = {
+		limit = { owner = { has_country_flag = enable_supplemental_development_flag } }
+		random_list = {
+			20 = { add_base_tax = 1 }
+			80 = { }
+		}
+	}
+	if = {
+		limit = { 
+			owner = { has_country_modifier = lit_increased_dev_modifier }
+		}
+		add_base_tax = 1 
+	}
+	# AB
+	if = {
+		limit = { 
+			owner = { has_reform = yuainward } 
+		}
+		random_list = { 
+			10 = { add_base_tax = 1 } 
+			90 = { } 
+		}
+	}
+	if = {
+		limit = { 
+			OR = {
+				region = east_siberia_region
+				region = west_siberia_region
+			}
+			owner = { has_reform = russloboda } 
+		}
+		random_list = { 
+			10 = { add_base_tax = 1 } 
+			90 = { } 
+		}
+	}
+	if = {
+		limit = { 
+			region = carpathia_region
+			owner = { mission_completed = pnn_heart } 
+		}
+		random_list = { 
+			10 = { add_base_tax = 1 } 
+			90 = { } 
+		}
+	}
+}
+
+on_dip_development = {
+	if = {
+		limit = { owner = { has_country_flag = enable_supplemental_development_flag } }
+		random_list = {
+			20 = { add_base_production = 1 }
+			80 = { }
+		}
+	}
+	if = {
+		limit = { 
+			owner = { has_country_modifier = lit_increased_dev_modifier }
+		}
+		add_base_production = 1 
+	}
+	# AB
+	if = { 
+		limit = { 
+			trade_goods = gold
+			owner = { mission_completed = mva_kremnica } 
+		}
+		random_list = { 
+			20 = { add_base_production = 1 } 
+			80 = { } 
+		}
+	}
+	if = {
+		limit = { 
+			OR = {
+				region = east_siberia_region
+				region = west_siberia_region
+			}
+			owner = { has_reform = russloboda } 
+		}
+		random_list = { 
+			10 = { add_base_production = 1 } 
+			90 = { } 
+		}
+	}
+	if = { 
+		limit = { 
+			trade_goods = gold
+			owner = { mission_completed = pnn_kremnica } 
+		}
+		random_list = { 
+			20 = { add_base_production = 1 } 
+			80 = { } 
+		}
+	}
+	if = { 
+		limit = { 
+			trade_goods = grain
+			owner = { mission_completed = lit_bread } 
+		}
+		random_list = { 
+			20 = { add_base_production = 1 } 
+			80 = { } 
+		}
+	}
+	if = { 
+		limit = { 
+			trade_goods = grain
+			owner = { mission_completed = litc_bread } 
+		}
+		random_list = { 
+			20 = { add_base_production = 1 } 
+			80 = { } 
+		}
+	}
+	if = {
+		limit = { 
+			owner = { has_reform = yuainward } 
+		}
+		random_list = { 
+			10 = { add_base_production = 1 } 
+			90 = { } 
+		}
+	}
+	if = {
+		limit = { 
+			region = carpathia_region
+			owner = { mission_completed = pnn_heart } 
+		}
+		random_list = { 
+			10 = { add_base_production = 1 } 
+			90 = { } 
+		}
+	}
+	if = {
+		limit = {
+			trade_goods = fur
+			owner = {
+				has_country_modifier = rus_fur_market
+			}
+		}
+		random_list = { 
+			25 = { add_base_production = 1 } 
+			75 = { } 
+		}
+	}
+	if = {
+		limit = {
+			has_building = furnace
+			owner = {
+				mission_completed = ab_russia_industrial
+			}
+		}
+		random_list = { 
+			20 = { add_base_production = 1 } 
+			80 = { } 
+		}
+	}
+}
+
+on_mil_development = {
+	if = {
+		limit = { owner = { has_country_flag = enable_supplemental_development_flag } }
+		random_list = {
+			20 = { add_base_manpower = 1 }
+			80 = { }
+		}
+	}
+	if = {
+		limit = { 
+			owner = { has_country_modifier = lit_increased_dev_modifier }
+		}
+		add_base_manpower = 1 
+	}
+	# AB
+	if = { 
+		limit = { 
+			owner = { mission_completed = nicene_infrastructure } 
+		}
+		random_list = { 
+			20 = { add_base_manpower = 1 } 
+			80 = { } 
+		}
+	}
+	if = {
+		limit = { 
+			OR = {
+				region = east_siberia_region
+				region = west_siberia_region
+			}
+			owner = { has_reform = russloboda } 
+		}
+		random_list = { 
+			10 = { add_base_manpower = 1 } 
+			90 = { } 
+		}
+	}
+	if = { 
+		limit = { 
+			NOT = { religion_group = muslim }
+			owner = { mission_completed = tur_janissary } 
+		}
+		random_list = { 
+			20 = { add_base_manpower = 1 } 
+			80 = { } 
+		}
+	}
+	if = {
+		limit = { 
+			owner = { has_reform = yuainward } 
+		}
+		random_list = { 
+			10 = { add_base_manpower = 1 } 
+			90 = { } 
+		}
+	}
+	if = {
+		limit = { 
+			region = carpathia_region
+			owner = { mission_completed = pnn_heart } 
+		}
+		random_list = { 
+			10 = { add_base_manpower = 1 } 
+			90 = { } 
+		}
+	}
+}
+
+# province
+on_consecrate_patriarch = {
+	if = {
+		limit = {
+			owner = { has_reform = mvapatriarch }
+		}
+		owner = {
+			add_patriarch_authority = 0.03
+		}
+	}
+	if = {
+		limit = {
+			owner = { mission_completed = pnn_diocese }
+		}
+		owner = {
+			add_patriarch_authority = 0.03
+		}
+	}
+	if = {
+		limit = {
+			owner = { mission_completed = ab_russia_patriarchate_rus }
+		}
+		owner = {
+			add_patriarch_authority = 0.03
+		}
+	}
+}
+
+on_war_won = {
+	FROM = { country_event = { id = flavor_cri.6 } }
+	ROOT = { country_event = { id = tributary_events.32 } }
+	if = {
+		limit = {
+			has_country_flag = can_gain_legendary_pirates_flag
+			NOT = { has_ruler_flag = historical_pirate }
+			has_government_attribute = is_pirate_republic_reform
+			FROM = { total_development = ROOT }
+		}
+		random = {
+			chance = 5
+			country_event = {
+				id = pirates.25
+			}
+		}
+	}
+	
+	if = {
+		limit = {
+			is_part_of_hre = yes
+			FROM  = { is_part_of_hre = yes }
+		}
+		ROOT = { save_global_event_target_as = hre_winner }
+		FROM = { save_global_event_target_as = hre_loser }
+		random_known_country = {
+			limit = {
+				has_reform = free_city
+				NOT = {
+					prestige = 40
+				}
+				NOT = {
+					has_country_modifier = fc_treatyconference_timer
+				}
+			}
+			add_country_modifier = {
+				name = fc_treatyconference_timer
+				duration = 3650
+				hidden = yes
+			}
+			country_event = {
+				id = free_cities.7
+				days = 7
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			tag = MLO
+			NOT = { has_country_flag = emp_mlo_won_war_with_swiss_mercs }
+			any_hired_mercenary_company = {
+				home_province = {
+					OR = {
+						area = switzerland_area
+						area = romandie_area
+					}
+				}
+			}
+		}
+		set_country_flag = emp_mlo_won_war_with_swiss_mercs
+	}
+	
+	if = {
+		limit = {
+			is_hiring_condottiere_from = SWI
+		}
+		SWI = { set_country_flag = won_condottiere_war }
+		if = {
+			limit = {
+				tag = PAP
+			}
+			SWI = {
+				set_country_flag = hired_to_pope
+			}
+		}
+	}
+	
+	if = {
+		limit = {
+			primary_culture = melanesian
+			NOT = { has_country_modifier = warlord_mod }
+		}
+		FROM = {
+			country_event = {
+				id = polynesian.17
+			}
+		}
+	}
+	if = {
+		limit = {
+			ROOT = { 
+				tag = SWE
+				has_country_modifier = swe_vasa_leads_the_rebellion
+				is_subject = no
+			}
+			FROM = { tag = DAN }
+		}
+		country_event = {
+			id = flavor_swe.111
+		}
+	}
+	if = {
+		limit = {
+			ROOT = { 
+				tag = SWE
+				has_country_modifier = swe_any_vasa_leads_the_rebellion
+				is_subject = no
+			}
+			FROM = { tag = DAN }
+		}
+		country_event = {
+			id = flavor_swe.105
+		}
+	}
+	if = {
+		limit = {
+			ROOT = { 
+				tag = SWE
+				has_country_flag = swe_declared_independence_war
+				is_subject = no
+			}
+			FROM = { tag = DAN }
+		}
+		country_event = {
+			id = flavor_swe.121
+		}
+	}
+	# AB
+	if = {
+		limit = {
+			ROOT = {
+				has_idea = domination_third
+			}
+		}
+		add_power_projection = {
+			type = mission_rewards_power_projection
+			amount = 10
+		}
+	}
+}
+
+# country
+# root = loser country, from = winner country
+on_war_lost = {
+	ROOT = { country_event = { id = flavor_cri.6 } }
+	ROOT = { country_event = { id = tributary_events.32 } }
+	if = {
+        limit = {
+            government = republic
+            is_lesser_in_union = yes
+		}
+		change_government_to_monarchy = yes
+    }
+	if = {
+		limit = {
+			FROM = { is_emperor = yes }
+			NOT = { has_country_flag = reined_in_for_shadow_kingdom }
+			NOT = { has_global_flag = italians_leave_hre }
+			is_emperor = no
+			is_part_of_hre = yes
+			OR = {
+				capital_scope = { region = italy_region }
+				AND = {
+					culture_group = latin
+					any_owned_province = {
+						region = italy_region
+					}
+				}
+			}
+		}
+		set_country_flag = reined_in_for_shadow_kingdom
+	}
+	add_country_modifier = {
+		name = just_lost_war_timer
+		duration = 10
+		hidden = yes
+	}
+	#AB
+	if = {
+		limit = {
+			has_country_modifier = ire_high_king_opp
+		}
+		save_event_target_as = hk_ire
+		FROM = { country_event = { id = hk_ire.4 } } # High King collapse
+	}
+	if = {
+		limit = {
+			has_idea_group = globaldomination_ideas
+		}
+		country_event = { id = ab_domination.2 }
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = FRC
+					tag = ADU
+				}
+			}
+			FROM = {
+				OR = {
+					tag = FRC
+					tag = ADU
+				}
+			}
+			FRC = {
+				has_country_modifier = frc_valencia_avenge
+			}
+		}
+		FRC = {
+			remove_country_modifier = frc_valencia_avenge
+		}
+	}
+}
+
+# ROOT = Overlord, FROM = Minor
+on_dependency_gained = {
+	if = {
+		limit = {
+			FROM = {
+				has_reform = dutch_republic
+			}
+		}
+		ROOT = {
+			country_event = {
+				id = dutch_republic.31
+			}# States General falls under a PU
+		}
+	}
+	#AB
+	if = {
+		limit = {
+			FROM = {
+				OR = {
+					tag = FEO
+					tag = GTH
+				}
+				is_subject_of = GLH
+			}
+		}
+		FROM = { set_country_flag = feo_was_vassalized }
+	}
+	if = {
+		limit = {
+			FROM = { has_reform = irish_highking_opp }
+		}
+		FROM = { save_event_target_as = hk_ire }
+		country_event = { id = hk_ire.9 } # Foreign power vassalizes HK
+		country_event = { id = hk_ire.14 } # Irish minor vassalizes HK
+	}
+	# Workaround for AI picking Vassalization Peace Option
+	# instead of Become Ruirech peace option
+	if = {
+		limit = {
+			ai = yes
+			FROM = {
+				ai = yes
+				NOT = { has_country_modifier = ire_high_king_opp } 
+				NOT = { is_subject_of_type = ire_vassal }
+				OR = {
+					primary_culture = irish
+					primary_culture = norse_gael
+				}
+				capital_scope = {
+					OR = {
+						area = munster_area
+						area = ulster_area
+						area = connacht_area
+						area = leinster_area
+					}
+				}
+			}
+			OR = {
+				primary_culture = irish
+				primary_culture = norse_gael
+			}
+			capital_scope = {
+				OR = {
+					area = munster_area
+					area = ulster_area
+					area = connacht_area
+					area = leinster_area
+				}
+			}
+		}
+		FROM = { grant_independence = yes }
+		create_subject = {
+			subject_type = ire_vassal
+			subject = FROM
+		}
+		FROM = { add_government_reform = irish_ruirech }
+	}
+	FROM = {
+		# Using `days = 21` is extremely important for the AI
+		# without it the event will because the capital_scope
+		# triggers of the event will fail for some reason.
+		#
+		# Also if we fire on 1 day then it means that players
+		# that have select colonial nation unpaused will end up
+		# being forced to spend 1000 if they did not want crown
+		# colony
+		country_event = { id = colonial_england.1 days = 21 }
+		country_event = { id = colonial_england.2 days = 21 }
+		country_event = { id = colonial_england.3 days = 21 }
+		country_event = { id = colonial_england.4 days = 21 }
+		country_event = { id = colonial_england.5 days = 21 }
+		country_event = { id = colonial_england.6 days = 21 }
+		country_event = { id = colonial_england.7 days = 21 }
+		country_event = { id = colonial_england.8 days = 21 }
+		country_event = { id = colonial_england.9 days = 21 }
+		country_event = { id = colonial_england.10 days = 21 }
+		country_event = { id = colonial_england.11 days = 21 }
+		country_event = { id = colonial_england.12 days = 21 }
+		country_event = { id = colonial_andalusia.1 days = 21 }
+		country_event = { id = colonial_andalusia.2 days = 21 }
+		country_event = { id = colonial_andalusia.3 days = 21 }
+		country_event = { id = colonial_andalusia.4 days = 21 }
+		country_event = { id = colonial_andalusia.5 days = 21 }
+		country_event = { id = colonial_andalusia.6 days = 21 }
+		country_event = { id = colonial_andalusia.7 days = 21 }
+		country_event = { id = colonial_andalusia.8 days = 21 }
+		country_event = { id = colonial_andalusia.9 days = 21 }
+		country_event = { id = colonial_andalusia.10 days = 21 }
+		country_event = { id = colonial_andalusia.11 days = 21 }
+		country_event = { id = colonial_andalusia.12 days = 21 }
+		country_event = { id = colonial_nse.1 days = 21 }
+		country_event = { id = colonial_nse.2 days = 21 }
+		country_event = { id = colonial_nse.3 days = 21 }
+		country_event = { id = colonial_nse.4 days = 21 }
+		country_event = { id = colonial_nse.5 days = 21 }
+		country_event = { id = colonial_nse.6 days = 21 }
+		country_event = { id = colonial_nse.7 days = 21 }
+		country_event = { id = colonial_nse.8 days = 21 }
+		country_event = { id = colonial_nse.9 days = 21 }
+		country_event = { id = colonial_nse.10 days = 21 }
+		country_event = { id = colonial_nse.11 days = 21 }
+		country_event = { id = colonial_nse.12 days = 21 }
+		country_event = { id = colonial_francia.1 days = 21 }
+		country_event = { id = colonial_francia.2 days = 21 }
+		country_event = { id = colonial_francia.3 days = 21 }
+		country_event = { id = colonial_francia.4 days = 21 }
+		country_event = { id = colonial_francia.5 days = 21 }
+		country_event = { id = colonial_francia.6 days = 21 }
+		country_event = { id = colonial_francia.7 days = 21 }
+		country_event = { id = colonial_francia.8 days = 21 }
+		country_event = { id = colonial_francia.9 days = 21 }
+		country_event = { id = colonial_francia.10 days = 21 }
+		country_event = { id = colonial_francia.11 days = 21 }
+		country_event = { id = colonial_francia.12 days = 21 }
+		country_event = { id = colonial_iberia.1 days = 21 }
+		country_event = { id = colonial_iberia.2 days = 21 }
+		country_event = { id = colonial_iberia.3 days = 21 }
+		country_event = { id = colonial_iberia.4 days = 21 }
+		country_event = { id = colonial_iberia.5 days = 21 }
+		country_event = { id = colonial_iberia.6 days = 21 }
+		country_event = { id = colonial_iberia.7 days = 21 }
+		country_event = { id = colonial_iberia.8 days = 21 }
+		country_event = { id = colonial_iberia.9 days = 21 }
+		country_event = { id = colonial_iberia.10 days = 21 }
+		country_event = { id = colonial_iberia.11 days = 21 }
+		country_event = { id = colonial_iberia.12 days = 21 }
+		# Samsara
+		country_event = {
+			id = colonial_AUS_india.1
+			days = 21
+		}
+		country_event = {
+			id = colonial_AUS_india.2
+			days = 21
+		}
+		country_event = {
+			id = colonial_AUS_india.3
+			days = 21
+		}
+		country_event = {
+			id = colonial_AUS_india.4
+			days = 21
+		}
+		country_event = {
+			id = colonial_AUS_india.5
+			days = 21
+		}
+		country_event = {
+			id = colonial_AUS_india.6
+			days = 21
+		}
+	}
+}
+
+# province
+# FROM = old owner
+on_province_owner_change = {
+	events = {
+		japan.1
+	}
+	on_province_owner_change_government_effect = yes
+
+	if = {
+		limit = {
+			owned_by = SRU
+			exists = ARA
+		}
+		ARA = {
+			set_country_flag = ARA_defeat_saruhan
+		}
+	}
+	if = {
+		limit = {
+			NOT = { owner = { religion_group = muslim } }
+			has_province_modifier = sufi_shrine
+		}
+		remove_province_modifier = sufi_shrine
+	}
+	on_province_owner_change_estate_privileges_effect = yes
+	judaism_on_province_change_religion_or_change_owner_effect = yes
+	imperial_modifiers_on_province_change_culture_or_change_owner_effect = yes
+	
+	if = {
+		limit = {
+			region = indo_china_region
+			has_building = farm_estate
+			trade_goods = grain
+			owner = {
+				has_mission = mnd_khm_irrigation 
+				NOT = {
+					OR = {
+						has_estate = estate_vaisyas
+						has_estate = estate_burghers
+					}
+				}
+			}
+		}
+		add_province_modifier = {
+			name = grain_production_improved
+			duration = 7300
+		}
+	}
+
+	if = {
+		limit = {
+			trade_goods = gold
+			NOT = { has_province_modifier = estate_burghers_control_over_gold_mine }
+			owner = {
+				has_estate_privilege = estate_burghers_control_over_the_mint
+			}
+		}
+		add_province_modifier = {
+			name = estate_burghers_control_over_gold_mine
+			duration = -1
+		}
+	}
+	
+	if = {
+		limit = {
+			province_id = 379
+			owner = {
+				NOT = { religion = jewish }
+			}
+		}
+		remove_country_modifier = third_temple_country_modifier
+	}
+	if = {
+		limit = {
+			owner = {
+				has_country_modifier = son_fetishism_as_secondary_religion
+			}
+			religion = shamanism
+			NOT = { has_province_modifier = son_fetishism_as_secondary_religion_province }
+		}
+		add_province_modifier = {
+			name = son_fetishism_as_secondary_religion_province
+			duration = -1
+			desc = son_fetishism_as_secondary_religion_province_desc
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				owner = {
+					NOT = { has_country_modifier = son_fetishism_as_secondary_religion }
+				}
+				NOT = { religion = shamanism }
+			}
+			has_province_modifier = son_fetishism_as_secondary_religion_province
+		}
+		remove_province_modifier = son_fetishism_as_secondary_religion_province
+	}
+	# AB
+	# If the province with the high king is captured then move it
+	# to their new capital inside ireland, or exile him.
+	if = {
+		limit = {
+			FROM = {
+				has_country_modifier = ire_high_king_opp
+			}
+		}
+		FROM = { save_event_target_as = hk_ire }
+		owner = {
+			if = {
+				limit = {
+					is_subject = yes
+				}
+				overlord = {
+					country_event = { id = hk_ire.16 } # Foreign power exiles HK
+					country_event = { id = hk_ire.18 } # Irish minor exiles HK
+				}
+			}
+			else = {
+				country_event = { id = hk_ire.16 } # Foreign power exiles HK
+				country_event = { id = hk_ire.18 } # Irish minor exiles HK
+			}
+		}
+	}
+	ab_on_province_owner_change_update_modifiers_effect = yes
+	# This will fire only once
+	owner = {
+		country_event = { id = ab_rome.1 }
+	}
+}
+
+# OBS: Consider that the following on_actions can be called for Personal Union juniors as well.
+# country
+on_new_monarch = {
+	crimean_succession_effect = yes #Scripted effect
+	slesvig_question_effect = yes #Scripted effect
+	if = {
+		limit = {
+			has_consort_regency = no
+			any_owned_province = {
+				has_province_modifier = domain_of_spouses_family
+			}
+		}
+		every_owned_province = {
+			limit = { has_province_modifier = domain_of_spouses_family }
+			remove_province_modifier = domain_of_spouses_family
+		}
+	}
+	if = {
+		limit = {
+			has_consort_regency = no
+			any_owned_province = {
+				has_province_modifier = home_of_consort
+			}
+		}
+		every_owned_province = {
+			limit = { has_province_modifier = home_of_consort }
+			remove_province_modifier = home_of_consort
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_dlc = "Mandate of Heaven" }
+			has_country_modifier = the_mandate_of_heaven
+			NOT = { legitimacy = 80 }
+		}
+		country_event = { id = china_events.32 }	# History of last ruler
+	}
+	if = {
+		limit = {
+			religion = jewish
+		}
+		clr_country_flag = ruler_is_messiah
+	}
+	# ambrosian_republic_effect = yes
+	succession_culture_religion_effect = yes
+	sheik_ul_islam_effect = yes
+	hab_remove_mission_mods_if_not_emperor_effect = yes
+	if = {
+		limit = {
+			is_or_was_tag = {
+				tag = TEU
+			}
+			is_emperor = no
+			NOT = { tag = HLR }
+			has_country_modifier = teu_pru_imperial_crown
+		}
+		remove_country_modifier = teu_pru_imperial_crown
+	}
+	thu_remain_von_wettin_effect = yes
+	ladislaus_postumus_union_effect = yes
+	if = {
+		limit = { has_any_heir_cult_active = yes }
+		remove_heir_cult = yes
+	}
+	if = {
+		limit = { 
+			has_government_attribute = kalmar_union_succession
+			has_regency = no
+			has_consort_regency = no
+		}
+		if = {
+			limit = { has_country_flag = dan_new_elected_ruler }
+			clr_country_flag = dan_new_elected_ruler
+		}
+		else = {
+			country_event = {
+				id = kalmar_union_events.1	# A new king of the Kalmar Union
+			}
+		}
+	}
+	if = {
+		limit = { has_government_attribute = absolutism_reduction_on_ruler_death }
+		add_absolutism = -60
+		set_variable = {
+			which = election_term
+			value = 1
+		}
+	}
+	events = {
+		tribal_succession.1		# Harsh anti-tribals.
+		9492 					# Remove some event modifiers
+		flavor_boh.8			# Winter King in Prague
+		flavor_kol.1			# Bavarian Archbishop
+		war_of_the_roses.101	# WotR - House of Lancaster wins
+		war_of_the_roses.102	# WotR - House of York wins
+		war_of_the_roses.106	# WotR - Another dynasty has seized the throne
+		flavor_tur.102			# Janissary Reward
+		flavor_ori.7			# Hamvira Victorious
+		flavor_kbo.1			# The two branches of the Sayfawa dynasty
+		flavor_kbo.8			# Sayfawa pretenders
+		flavor_zan.5			# Coup of Coup of Suleiman and Muhammad al-Mazlum.
+		purple_phoenix.1		# BYZ pretenders
+		flavor_pol.3480			# The Pacta Conventa
+		protestantism_events.15	# Catholic Leaning Monarch
+		tengri_events.17		# Keep the Khojas in Power?
+		flavor_tus.15			# Savonarola Dies
+		flavor_brapru.22		# Succession of Albrecht Achilles
+		flavor_brapru.25		# Dispositio Achillea (can also trigger from flavor_brapru.22)
+		flavor_nor.27			# Proclamation in Hamar
+		china_events.43			# Picking new Capital for China
+		celestial_empire_events.3 #Resistance to Sinicization
+		flavor_boh.2			#Heretic Kings
+		flavor_hun.17			#Maintaining the Black Army
+		flavor_tim.1			#Death of Shah Rukh
+		muslim_school_events.20 #No Religious School
+		flavor_daimyo.4			#Shiba Yoshikado
+		flavor_fra.9000			# François Villon
+		flavor_sca.2			# Education Focus of the new Ruler
+		# AB {{{
+		ire_flavor.2
+		# }}}
+	}
+	random_events = {
+		1000 = 0
+		100 = flavor_kol.1		# Bavarian Archbishop
+		100 = flavor_hsa.3		# Hansa: Tagfahrt
+		100 = inti_events.1		# Birth of a Panaca
+		50 = dynastic_events.4
+		50 = dynastic_events.5
+		25 = harem_events.7		#Failed Policy of Fratricide
+	}
+}
+
+# country
+on_lose_great_power_status = {
+	if = {
+		limit = {
+			FROM = {
+				has_idea_group = globaldomination_ideas
+			}
+		}
+		country_event = { id = ab_domination.3 }
+	}
+}
+
+# country
+on_heir_death = {
+	if = {
+		limit = { has_country_flag = heir_dip_education }
+		clr_country_flag = heir_dip_education
+	}
+	if = {
+		limit = { has_country_flag = heir_mil_education }
+		clr_country_flag = heir_mil_education
+	}
+	if = {
+		limit = { has_country_flag = heir_adm_education }
+		clr_country_flag = heir_adm_education
+	}
+	if = {
+		limit = { has_ruler_flag = well_advised_tutored_heir }
+		clr_ruler_flag = well_advised_tutored_heir
+	}
+	if = {
+		limit = { has_ruler_flag = heir_went_on_grand_tour }
+		clr_ruler_flag = heir_went_on_grand_tour
+	}
+	if = {
+		limit = { has_country_flag = albrecht_achilles_flag }
+		clr_country_flag = albrecht_achilles_flag #Death of original Albrecht Achilles
+	}
+	if = {
+		limit = { has_ruler_flag = sancaga_cikma }
+		clr_ruler_flag = sancaga_cikma
+		every_owned_province = {
+			limit = {
+				has_province_modifier = heir_in_training
+			}
+			remove_province_modifier = heir_in_training
+		}
+	}
+	if = {
+		limit = { has_ruler_flag = returned_from_sancaga_sikma_province }
+		clr_ruler_flag = returned_from_sancaga_sikma_province
+	}
+	ladislaus_postumus_heir_died_effect = yes
+	joan_de_trastamara_heir_died_effect = yes
+	if = {
+		limit = { primary_culture = maori }
+		country_event = { id = polynesian.26 }
+	}
+	if = {
+		limit = { has_any_heir_cult_active = yes }
+		remove_heir_cult = yes
+	}
+	#AB
+	if = { 
+		limit = {
+			# we are waiting for a heir and he died (lmao)
+			has_heir_flag = eng_heir_in_waiting
+		}
+		# clear the eng_heir_in_waiting and set another
+		# flag to indicate our heir has died and we should
+		# force an election between the 4 houses of the
+		# heptarchy
+		clr_heir_flag = eng_heir_in_waiting
+		set_country_flag = eng_heir_died_in_waiting
+		country_event = { id = antebellum_england.1 }
+	}
+}
+
+# country
+on_religion_change = {
+	on_religion_change_estate_privileges_effect = yes
+	judaism_on_religion_change_effect = yes
+	###removes catholic modifiers
+		remove_country_modifier = counter_reformation
+		remove_country_modifier = the_statue_in_restraint_of_appeals
+		remove_country_modifier = revocation_of_restraint_of_appeals
+		remove_country_modifier = bavarian_jesuits
+		remove_country_modifier = the_societas_jesu
+		remove_country_modifier = the_declaration_of_indulgence
+		remove_country_modifier = de_heretico_comburendo
+		remove_country_modifier = the_conventicle_act
+	if = {
+		limit = {
+			has_reform = indian_sultanate_reform
+			NOT = { religion_group = muslim }
+		}
+		remove_government_reform = indian_sultanate_reform
+	}
+
+	if = {
+		limit = {
+			has_reform = feudal_theocracy
+			NOT = { religion_group = muslim }
+			NOT = { religion_group = zoroastrian_group }
+		}
+		remove_government_reform = feudal_theocracy
+	}
+
+	if = {
+		limit = {
+			government = native
+			OR = {
+				religion = nahuatl
+				religion = mesoamerican_religion
+				religion = inti
+			}
+		}
+		change_government = monarchy
+		add_government_reform = autocracy_reform
+	}
+
+
+	if = {
+		limit = {
+			has_heir = yes
+		}
+		set_heir_religion = ROOT
+	}
+	if = {
+		limit = {
+			has_regency = no
+		}
+		set_ruler_religion = ROOT
+	}
+	if = {
+		limit = {
+			has_dlc = "Rights of Man"
+			has_consort = yes
+		}
+		set_consort_religion = ROOT
+	}
+	if = {
+		limit = {
+			NOT = { religion = orthodox }
+		}
+		every_known_country = {
+			limit = {
+				reverse_has_opinion_modifier = {
+					who = ROOT
+					modifier = closed_down_the_patriarchate
+				}
+			}
+			reverse_remove_opinion = {
+				who = ROOT
+				modifier = closed_down_the_patriarchate
+			}
+		}
+	}
+	if = {
+		limit = {
+			religion = catholic
+			has_ruler_flag = personal_catholic_sympathies
+		}
+		country_event = { id = protestantism_events.19 }
+	}
+	if = {
+		limit = {
+			religion = protestant
+		}
+		set_country_flag = converted_to_protestantism
+	}
+	if = {
+		limit = {
+			religion = hussite
+		}
+		remove_country_modifier = hussite_persecution
+	}
+	if = {
+		limit = { has_country_modifier = bav_religious_mandate_mod }
+		remove_country_modifier = bav_religious_mandate_mod
+	}
+	add_country_modifier = {
+		name = recently_changed_religion_dummy
+		duration = 10
+		hidden = yes
+	}
+	if = {
+		limit = {
+			NOT = { religion_group = muslim }
+			any_owned_province = { has_province_modifier = sufi_shrine }
+		}
+		every_owned_province = {
+			limit = { has_province_modifier = sufi_shrine }
+			remove_province_modifier = sufi_shrine
+		}
+	}
+	if = {
+		limit = {
+			religion = shamanism
+			has_country_modifier = son_fetishism_as_secondary_religion
+		}
+		remove_country_modifier = son_fetishism_as_secondary_religion
+		every_owned_province = {
+			limit = {
+				has_province_modifier = son_fetishism_as_secondary_religion_province
+			}
+			remove_province_modifier = son_fetishism_as_secondary_religion_province
+		}
+	}
+	events = {
+		muslim_school_events.20 #Pick School
+		propagate_religion_events.7 #Propagated Country is now Muslim
+	}
+	# AB {{{
+	# Remove Liberation of Rome.
+	if = {
+		limit = {
+			has_country_modifier = ab_rome_liberation
+			NOT = { religion = catholic }
+		}
+		remove_country_modifier = ab_rome_liberation
+	}	
+	# }}}
+}
+
+on_siege_won_province = {
+	events = {
+		synthetic_dawn.4
+	}
+	if = {
+		limit = {
+			from = {
+				tag = REB
+				is_rebel_type = revolutionary_rebels
+			}
+			owner = {
+				any_owned_province = {
+					region = root
+					has_revolution_in_province = yes
+				}
+				NOT = { has_disaster = french_revolution }
+				NOT = { has_disaster = revolution }
+				NOT = { has_spawned_rebels = revolutionary_rebels }
+			}
+		}
+		owner = { country_event = { id = center_of_revolution.1600 } }
+	}
+	if = {
+		limit = {
+			superregion = china_superregion
+			controller = {
+				has_government_attribute = has_unify_china_cb
+				OR = {
+					is_in_war = {
+						attacker_leader = this
+						casus_belli = cb_chinese_unification
+					}
+					is_in_war = {
+						defender_leader = this
+						casus_belli = cb_chinese_unification
+					}
+				}
+				NOT = { is_core = ROOT }
+			}
+		}
+		controller = { 
+			add_core = ROOT
+			remove_claim = ROOT
+		}
+	}
+	if = {
+		limit = {
+			controller = {
+				has_country_modifier = rus_all_belongs
+			}
+		}
+		controller = {
+			add_permanent_claim = ROOT
+		}
+	}
+}
+
+# ROOT = province, FROM = country
+on_trade_good_changed = {
+	on_trade_good_changed_estate_privileges_effect = yes
+	on_trade_good_changed_government_effect = yes
+	ab_on_trade_good_changed_government_effect = yes
+}
+
+# province
+on_consecrate_patriarch = {
+	# It should be safe to do this instead of:
+	# area = { limit = { owned_by = FROM } }
+	# because the patriarch mechanics require all provinces
+	# to be in a state and not be territorial cores
+	every_province_in_state = {
+		limit = {
+			owner = { 
+				has_government_attribute = metropolitans_spread_institution
+			}
+			has_state_patriach = yes
+			NOT = { has_province_modifier = rus_metropolitan_institution_spread }
+		}
+		add_province_modifier = {
+			name = rus_metropolitan_institution_spread
+			duration = -1
+		}
+	}
+}
