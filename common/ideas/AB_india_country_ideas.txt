@@ -1150,3 +1150,89 @@ WHS_ideas = {
 		same_culture_advisor_cost = -0.1
 	}
 }
+
+#Sarahosian Ideas
+SHS_ideas = {
+	start = {
+		leader_land_shock = 1
+		fabricate_claims_cost = -0.2
+	}
+	
+	bonus = {
+		state_maintenance_modifier = -0.2
+	}
+	
+	trigger = {
+		tag = SHS
+	}
+	free = yes
+
+	SHS_learn_from_glory_battles = {
+		army_tradition_from_battle = 0.5
+		mil_tech_cost_modifier = -0.05
+	}
+	SHS_spartan_training = {
+		discipline = 0.025
+	}
+	SHS_punjabi_influence = {
+		state_governing_cost = -0.1
+	}
+	SHS_right_of_conquest = {
+		core_creation = -0.15
+	}
+	SHS_hellenization = {
+		culture_conversion_cost = -0.15
+	}
+	SHS_reformed_hoplites = {
+		fire_damage_received = -0.05
+		shock_damage_received = -0.05
+	}
+	SHS_across_asia = {
+		movement_speed = 0.10
+		caravan_power = 0.15
+	}
+}
+
+#Arachosian Ideas
+ARH_ideas = {
+	start = {
+		leader_land_shock = 1
+		ae_impact = -0.1
+	}
+	
+	bonus = {
+		prestige = 1
+	}
+	
+	trigger = {
+		tag = ARH
+	}
+	free = yes
+
+	ARH_reformed_administration = {
+		free_adm_policy = 1
+		all_estate_loyalty_equilibrium = 0.05
+	}
+	ARH_spartan_training = {
+		discipline = 0.025
+		cavalry_power = 0.15
+	}
+	ARH_arid_development = {
+		development_cost = -0.1
+	}
+	ARH_cultural_pot = {
+		advisor_pool = 1
+		manpower_in_accepted_culture_provinces = 0.10
+	}
+	ARH_hellenization = {
+		culture_conversion_cost = -0.2
+	}
+	ARH_reformed_hoplites = {
+		fire_damage_received = -0.05
+		shock_damage_received = -0.05
+	}
+	ARH_justified_conquest = {
+		core_creation = -0.1
+		siege_ability = 0.15
+	}
+}

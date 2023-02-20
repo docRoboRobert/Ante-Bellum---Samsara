@@ -1032,4 +1032,114 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
+	
+	abi_arachosia_formation = {
+		major = yes
+		potential = {
+			OR = {
+				primary_culture = saraihizan
+				tag = SHS
+			}
+			NOT = { has_country_flag = formed_arachosia_flag }
+			NOT = { exists = ARH }
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = ghor_area
+				area = sistan_area
+				area = kalat_area
+				area = multan_area
+				province_id = 448
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			OR = {
+				primary_culture = saraihizan
+				tag = SHS
+			}
+			NOT = { exists = ARH }
+			prestige = 25
+			legitimacy_equivalent = 80
+			ghor_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			sistan_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			kalat_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			multan_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			448 = {
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			447 = { development = 15 }
+		}
+		effect = {
+			change_tag = ARH
+			restore_country_name = yes
+			set_capital = 447
+			447 = {
+				change_culture = ROOT
+				change_religion = ROOT
+				change_province_name = "Arachosia"
+				rename_capital = "Alexandria in Arachosia"
+			}
+			set_government_rank = 2
+			add_prestige = 20
+			add_splendor = 100
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_arachosia_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			custom_tooltip = abi_arachosia_formation.tooltip
+			hidden_effect = {
+				577 = { change_province_name = "Qilla" }
+				576 = { change_province_name = "Qiqan" }
+				2068 = { change_province_name = "Sattagydia" }
+				448 = {
+					change_province_name = "Opiana"
+					rename_capital = "Alexandria in Opiana"
+				}
+				2225 = { change_province_name = "Caucasus Indicus" }
+				449 = {
+					change_province_name = "Ghur"
+					rename_capital = "Firozkoh"
+				}
+				2229 = { change_province_name = "Demetrias" }
+				2224 = {
+					change_province_name = "Phrada"
+					rename_capital = "Phra"
+				}
+				2230 = { change_province_name = "Drangiana" }
+				435 = {
+					change_province_name = "Sisan"
+					rename_capital = "Zranka"
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
 }

@@ -12,10 +12,6 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
 			NOT = { exists = TIB }
 			OR = {
 				primary_culture = tibetan
@@ -52,7 +48,6 @@ country_decisions = {
 			NOT = { tag = ZHG }
 			religion = vajrayana
 			is_at_war = no
-			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			owns_core_province = 2135
 			owns_core_province = 678
