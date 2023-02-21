@@ -97,3 +97,13 @@
  oma_rule_serendib_title:0 "Rule in Lanka"
  oma_rule_serendib_desc:0 "Unite Lanka under our banner and pacify its inhabitants. Island' riches await us."
  oma_rule_serendib.tooltip:0 "§OGrants access to unique decision to turn Sri Lanka Island into slave-oriented colony.§!"
+ 
+ #Lanka MT
+ LNK_assemble_forces_title:0 "Gather Friendly Forces"
+ LNK_assemble_forces_desc:0 "Enemy states have taken over parts of the island. If we want to push them out, securing strategic alliances and gathering loyal forces is a necessity."
+ LNK_assemble_forces.tooltip:0 "If we complete the mission while having at least §O50§! §YSpy Network§! in @JFN Jaffna, we will instigate Vanni Tribes to be more rebellious."
+ LNK_destroy_HTC_title:0 "Erase the Colonies"
+ LNK_destroy_HTC_desc:0 "Allowing Arab merchants to settle colonies on the coast of Lanka was our great mistake. Hormuzi Trade Company has grown out of hand and we must put an end to their power."
+ LNK_unite_island_title:0 "Island United"
+ LNK_unite_island_desc:0 "Lanka was not ruled under one sinhalese tag ever since the Tamil invasions from 11th century. Now they we are ressurgent, the dream of unification can once again be revived."
+ LNK_unite_island.tooltip:0 "§YIf @KND Kandy, @JFN Jaffna or @VNN Vanni are our subjects, we will inherit them instantly.§!"

@@ -112,3 +112,7 @@
  desc_oma_push_indus:0 "We have claimed Idus River Valley as our domain. With those rightful claims our justification for conquest shouldn't take that much effort."
  oma_gujarat_collapse_modifier:0 "Collapse of Gujarat State"
  desc_oma_gujarat_collapse_modifier:0 "After humiliating defeat and losing our capital territories, Gujarat state dwindles as authority of ruling class collapses. To recover from such chaos is not an easy task."
+ LNK_vanni_unrest:0 "Unrest in Vanni Tribes"
+ desc_LNK_vanni_unrest:0 ""
+ LNK_alhindi_minority:0 "Coexisting Arab Minority"
+ desc_LNK_alhindi_minority:0 "Alhindi minorty inhabits this province as part of the compromise we've make earlier. Their presence boosts commerce in this province."

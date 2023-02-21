@@ -1,0 +1,174 @@
+abi_lanka_first = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CEY
+			tag = KND
+			tag = LNK
+		}
+	}
+	has_country_shield = yes
+	
+	LNK_assemble_forces = {
+		icon = mission_new_army
+		position = 1
+		required_missions = {  }
+		
+		
+		trigger = {
+			is_subject = no
+			army_size_percentage = 0.90
+			navy_size_percentage = 0.90
+			num_of_allies = 2
+			OR = {
+				is_rival = HTC
+				is_rival = JFN
+				is_rival = ORM
+				AND = {
+					NOT = { exists = HTC }
+					572 = { owned_by = ROOT }
+				}
+			}
+			OR = {
+				army_size = 14
+				monthly_mil = 10
+			}
+			OR = {
+				NOT = { exists = HTC }
+				any_ally = { 
+					OR = {
+						is_rival = ORM
+						is_rival = HTC
+						is_rival = JFN
+					}
+				}
+			}
+		}
+		
+		effect = {
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 10
+			}
+			4409 = { add_permanent_claim = ROOT }
+			572 = { add_permanent_claim = ROOT }
+			5277 = { add_permanent_claim = ROOT }
+			2100 = { add_permanent_claim = ROOT }
+			custom_tooltip = LNK_assemble_forces.tooltip
+			if = {
+				limit = {
+					has_spy_network_in = {
+						who = JFN
+						value = 40
+					}
+				}
+				2100 = {
+					add_province_modifier = {
+						name = LNK_vanni_unrest
+						duration = 7300
+					}
+				}
+			}
+		}
+	}
+	
+	LNK_destroy_HTC = {
+		icon = mission_conquer_siam
+		position = 3
+		required_missions = { LNK_assemble_forces }
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 572
+				province_id = 4409
+				province_id = 5277
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			OR = {
+				NOT = { exists = HTC }
+				has_won_war_against = {
+					who = HTC
+					max_years_since = 20
+				}
+			}
+			owns_core_province = 572
+			owns_core_province = 4409
+			owns_core_province = 5277
+			OR = {
+				NOT = { exists = JFN }
+				army_size = JFN
+			}
+		}
+		
+		effect = {
+			country_event = {
+				id = abindia_mission.7
+				days = 1
+			}
+			add_prestige = 10
+			2100 = { add_core = ROOT }
+			5276 = { add_permanent_claim = ROOT }
+		}
+	}
+	
+	LNK_unite_island = {
+		icon = mission_conquer_lanka
+		position = 5
+		required_missions = { LNK_destroy_HTC }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = lanka_area
+				area = south_lanka_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			lanka_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_lanka_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			capital_scope = { development = 15 }
+			stability = 1
+		}
+		
+		effect = {
+			add_prestige = 20
+			add_legitimacy = 10
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 10
+			}
+			add_stability = 1
+			custom_tooltip = LNK_unite_island.tooltip
+			if = {
+				limit = {
+					KND = { is_subject_of = ROOT }
+				}
+				inherit = KND
+			}
+			if = {
+				limit = {
+					JFN = { is_subject_of = ROOT }
+				}
+				inherit = JFN
+			}
+			if = {
+				limit = {
+					VNN = { is_subject_of = ROOT }
+				}
+				inherit = VNN
+			}
+		}
+	}
+}

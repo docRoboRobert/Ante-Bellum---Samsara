@@ -399,3 +399,49 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = abindia_mission.7
+	title = abindia_mission.7.t
+	desc = abindia_mission.7.d
+	picture = EUROPEAN_REFUGEES_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = abindia_mission.7.a
+		ai_chance = { factor = 80 }
+		5277 = {
+			change_religion = ROOT
+			change_culture = ROOT
+			add_base_manpower = -1
+			add_base_tax = -1
+			add_devastation = 20
+		}
+		add_adm_power = 25
+		add_dip_power = 25
+		add_mil_power = 25
+		572 = { add_devastation = 10 }
+		if = {
+			limit = {
+				5283 = { owned_by = HTC }
+			}
+			5283 = {
+				change_culture = indian_arabic
+				change_religion = ibadi
+				add_base_manpower = 1
+			}
+		}
+	}
+	
+	option = {
+		name = abindia_mission.7.b
+		ai_chance = { factor = 20 }
+		5277 = {
+			add_province_modifier = {
+				name = LNK_alhindi_minority
+				duration = -1
+			}
+		}
+	}
+}
