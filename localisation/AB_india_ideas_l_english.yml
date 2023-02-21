@@ -521,3 +521,22 @@
  ARH_justified_conquest:0 "Justified Conquest"
  ARH_justified_conquest_desc:0 "We seek expansion in a true spirit of great empires that once roamed the region of Persia."
  
+ #Qarkanad
+ BKH_ideas:0 "Qarkanad Ideas"
+ BKH_ideas_start:0 "Qarkanadan Traditions"
+ BKH_ideas_bonus:0 "Qarkanadan Ambition"
+ BKH_switf_maneuvers:0 "Organized Maneuvers"
+ BKH_switf_maneuvers_desc:0 "Mobility and fast reaction is a key of maintaining advantage of our enemies. Thankfully, as a horde descendant, we can become experts on high mobility."
+ BKH_efficient_ruleship:0 "Efficient Tax Extorsion"
+ BKH_efficient_ruleship_desc:0 "Yes, 'Taxation'. That's a good word for finessing wealth from people we rule over."
+ BKH_peace_with_local_classes:0 "Pacification of Local Classes"
+ BKH_peace_with_local_classes_desc:0 "We are ruling as a elite minority in a foreign envirorment. We must appease and maintain balance with the old ruling class and their subjects, lest we will quickly be deposed by unhappy masses."
+ BKH_doab_development:0 "Development of Doab"
+ BKH_doab_development_desc:0 "Fertile Doab region spanning along major river in India is prime source of agricultural goods. Arable terrain easily supports large population and sophisticated infrastructure. By investing heavily in this region, we can multiply our income from production."
+ BKH_cavalry_reforms:0 "Cavalry Reforms"
+ BKH_cavalry_reforms_desc:0 "We are far away from the steppes and the terrain is much different. We must adapt our cavalry-heavy army to the new envirorment."
+ BKH_rising_from_ashes:0 "Black Phoenix Rises"
+ BKH_rising_from_ashes_desc:0 "We have survived times of the greatest trouble and preserved our independence from being consumed by Indian states. Our victory inspires us on our ressurgent journey to new domination."
+ BKH_subjugation:0 "Subjugate India"
+ BKH_subjugation_desc:0 "As a true descendant of horde nation, we are destined to fulfill the goal which started our nation. India must be pillaged and its lands secured for us."
+ 

@@ -21,7 +21,9 @@ historical_rival = BNG
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = architectural_visionary_personality
+	add_ruler_personality = babbling_buffoon_personality
 	add_heir_personality = bold_fighter_personality
+	add_stability = -2
 	heir = {
 		name = "Qarbikai Oli"
 		monarch_name = "Qarbikai Oli I"

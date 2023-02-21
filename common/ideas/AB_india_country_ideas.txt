@@ -1236,3 +1236,45 @@ ARH_ideas = {
 		siege_ability = 0.15
 	}
 }
+
+#Qarkanad Ideas
+BKH_ideas = {
+	start = {
+		cavalry_power = 0.15
+		vassal_income = 0.2
+	}
+	
+	bonus = {
+		land_attrition = -0.15
+	}
+	
+	trigger = {
+		tag = BKH
+	}
+	free = yes
+
+	BKH_switf_maneuvers = {
+		loot_amount = 0.2
+		movement_speed = 0.10
+	}
+	BKH_efficient_ruleship = {
+		global_tax_modifier = 0.15
+	}
+	BKH_peace_with_local_classes = {
+		all_estate_loyalty_equilibrium = 0.05
+		stability_cost_modifier = -0.1
+	}
+	BKH_doab_development = {
+		production_efficiency = 0.1
+	}
+	BKH_cavalry_reforms = {
+		cavalry_shock = 1
+		leader_land_manuever = 1
+	}
+	BKH_rising_from_ashes = {
+		land_morale = 0.10
+	}
+	BKH_subjugation = {
+		province_warscore_cost = -0.15
+	}
+}
