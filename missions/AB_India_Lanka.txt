@@ -171,4 +171,145 @@ abi_lanka_first = {
 			}
 		}
 	}
+	
+	LNK_centralize_state = {
+		icon = mission_order_in_the_domain
+		position = 6
+		required_missions = { LNK_unite_island }
+		
+		trigger = {
+			lanka_area = {
+				type = all
+				owned_by = ROOT
+				is_state_core = ROOT
+				NOT = { devastation = 1 }
+				NOT = { local_autonomy_above_min = 1 }
+				NOT = { unrest = 1 }
+			}
+			south_lanka_area = {
+				type = all
+				owned_by = ROOT
+				is_state_core = ROOT
+				NOT = { devastation = 1 }
+				NOT = { local_autonomy_above_min = 1 }
+				NOT = { unrest = 1 }
+			}
+			crown_land_share = 40
+		}
+		
+		effect = {
+			change_adm = 1
+			lanka_area = {
+				add_province_modifier = {
+					name = LNK_centralized_island
+					duration = 7300
+				}
+			}
+			south_lanka_area = {
+				add_province_modifier = {
+					name = LNK_centralized_island
+					duration = 7300
+				}
+			}
+		}
+	}
+}
+
+abi_lanka_third = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CEY
+			tag = KND
+			tag = LNK
+		}
+	}
+	has_country_shield = yes
+	
+	proclaim_lanka_unification = {
+		icon = mission_new_army
+		position = 6
+		required_missions = { LNK_unite_island }
+		
+		
+		trigger = {
+			stability = 2
+			legitimacy_equivalent = 80
+			lanka_area = {
+				type = all
+				is_state_core = ROOT
+			}
+			south_lanka_area = {
+				type = all
+				is_state_core = ROOT
+			}
+			OR = {
+				power_projection = 60
+				monthly_mil = 10
+			}
+			army_size = 18
+		}
+		
+		effect = {
+			add_adm_power = 25
+			add_dip_power = 25
+			add_mil_power = 25
+			create_general = { tradition = 75 }
+			custom_tooltip = proclaim_lanka_unification.tooltip
+			add_stability = 1
+		}
+	}
+	
+	
+}
+
+abi_kotte_fifth = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = CEY
+	}
+	has_country_shield = yes
+	
+	depose_kandy_tribe = {
+		icon = mission_clear_the_delta
+		position = 6
+		required_missions = {  }
+		
+		provinces_to_highlight = {
+			province_id = 2099
+		}
+		
+		trigger = {
+			stability = 2
+			legitimacy_equivalent = 75
+			prestige = 25
+			army_size = 12
+			KND = { ai = yes }
+			KND = { is_subject_of = ROOT }
+			grown_by_development = 10
+			OR = {
+				NOT = { exists = KND }
+				AND = {
+					has_spy_network_in = {
+						who = KND
+						value = 50
+					}
+					reverse_has_opinion = {
+						who = KND
+						value = 150
+					}
+				}
+			}
+		}
+		
+		effect = {
+			inherit = KND
+			capital_scope = { add_prosperity = 50 }
+			add_manpower = 4
+		}
+	}
 }

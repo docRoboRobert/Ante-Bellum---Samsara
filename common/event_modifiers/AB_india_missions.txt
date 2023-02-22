@@ -188,3 +188,10 @@ LNK_alhindi_minority = {
 	province_trade_power_modifier = 0.2
 	local_governing_cost = -0.1
 }
+
+LNK_centralized_island = {
+	local_manpower_modifier = 0.1
+	local_tax_modifier = 0.15
+	local_autonomy = -0.05
+	local_prosperity_growth = 0.2
+}
