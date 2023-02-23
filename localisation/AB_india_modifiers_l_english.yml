@@ -118,3 +118,5 @@
  desc_LNK_alhindi_minority:0 "Alhindi minorty inhabits this province as part of the compromise we've make earlier. Their presence boosts commerce in this province."
  LNK_centralized_island:0 "Centralization of Lankan Lands"
  desc_LNK_centralized_island:0 ""
+ abi_independence_effort_modifier:0 "Increased Independence Efforts"
+ desc_abi_independence_effort_modifier:0 "Country is putting extra effort into seeking allies and aid in their effort of gaining freedom."

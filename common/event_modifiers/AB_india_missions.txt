@@ -195,3 +195,8 @@ LNK_centralized_island = {
 	local_autonomy = -0.05
 	local_prosperity_growth = 0.2
 }
+
+abi_independence_effort_modifier = {
+	diplomatic_reputation = 1
+	liberty_desire = 33
+}

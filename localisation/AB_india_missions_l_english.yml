@@ -114,3 +114,8 @@
  proclaim_lanka_unification.tooltip:0 "\n§YAt this point you should be able to form Lanka nation from the decisions menu.§!"
  depose_kandy_tribe_title:0 "Depose Highlanders"
  depose_kandy_tribe_desc:0 "Kandy is our vassal in the lankan highlands but their existance will soon become an obstacle in our unification of the island. If we can infiltrate them and put enough pressure, we could integrate their jungle lands into our direct domain."
+ knd_gather_forces_title:0 "Gather Forces"
+ knd_gather_forces_desc:0 "First step of gaining freedom from Kotte is forming formidable army, backed by turstworthy allies."
+ knd_turn_tables_title:0 "Turn The Tables"
+ knd_turn_tables_desc:0 "Retake back our lost land dominate our former overlord. It is time for the highland tribes to strike back."
+ knd_turn_tables.tooltip:0 "§YWe will gain core on every province that is also a core of§! @CEY §YKotte.§! \n \nIf we complete this mission while @CEY §YKotte§! does §Rnot§! exist, we will gain additional §G20§! §YPower Projection§!."

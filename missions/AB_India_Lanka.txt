@@ -313,3 +313,91 @@ abi_kotte_fifth = {
 		}
 	}
 }
+
+abi_kandy_fifth = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = KND
+	}
+	has_country_shield = yes
+	
+	knd_gather_forces = {
+		icon = mission_accomodate_the_rajputs
+		position = 5
+		required_missions = {  }
+		
+		
+		trigger = {
+			stability = 1
+			army_size_percentage = 1
+			OR = {
+				num_of_generals = 2
+				AND = {
+					is_monarch_leader = yes
+					monthly_mil = 9
+				}
+			}
+			OR = {
+				advisor = quartermaster
+				advisor = army_organiser
+				advisor = siegeengineer
+				advisor = drillmaster
+				advisor = army_reformer
+				advisor = commandant
+			}
+			any_known_country = { is_supporting_independence_of = ROOT }
+			mil_power = 200
+		}
+		
+		effect = {
+			add_mil_power = 100
+			add_manpower = 2
+			change_mil = 1
+			add_country_modifier = {
+				name = abi_independence_effort_modifier
+				duration = 3650
+			}
+		}
+	}
+	
+	knd_turn_tables = {
+		icon = mission_end_arakan_piracy
+		position = 6
+		required_missions = { knd_gather_forces }
+		
+		
+		trigger = {
+			is_subject = no
+			OR = {
+				NOT = { exists = CEY }
+				has_won_war_against = {
+					who = CEY
+					max_years_since = 20
+				}
+			}
+			5278 = { owned_by = ROOT }
+		}
+		
+		effect = {
+			add_stability = 1
+			custom_tooltip = knd_turn_tables.tooltip
+			hidden_effect = {
+				every_province = {
+					limit = { is_core = CEY }
+					add_core = ROOT
+				}
+			}
+			if = {
+				limit = {
+					NOT = { exists = CEY }
+				}
+				add_power_projection = {
+					type = mission_rewards_power_projection
+					amount = 20
+				}
+			}
+		}
+	}
+}
