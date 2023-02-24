@@ -401,3 +401,243 @@ abi_kandy_fifth = {
 		}
 	}
 }
+
+########################################
+# SRI LANKA MISSIONS
+########################################
+
+ab_sri_lanka_first = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = LNK } 
+
+	LNK_new_army = {
+		icon = mission_invade_the_deccan_ori
+		position = 8
+		required_missions = { LNK_restore_prosperity } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	LNK_new_navy = {
+		icon = mission_naval_dominance
+		position = 9
+		required_missions = { LNK_new_army } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	LNK_plantations = {
+		icon = mission_a_million_rice_fields
+		position = 12
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	LNK_spice_monopoly = {
+		icon = mission_dominate_persian_gulf
+		position = 13
+		required_missions = { LNK_plantations } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+ab_sri_lanka_second = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = LNK } 
+
+	LNK_kick_tamils_out = {
+		icon = mission_integrate_jaffna
+		position = 8
+		required_missions = { LNK_restore_prosperity } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	LNK_strategic_ports = {
+		icon = secure_the_republic
+		position = 11
+		required_missions = { LNK_anuradhapura_revived } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+ab_sri_lanka_third = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = LNK } 
+
+	LNK_restore_prosperity = {
+		icon = mission_southern_frontier
+		position = 7
+		required_missions = { proclaim_lanka_unification } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	LNK_secure_passage = {
+		icon = mission_cromandel_coast
+		position = 8
+		required_missions = { LNK_restore_prosperity } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	LNK_rebuild_old_capitals = {
+		icon = mission_develop_the_capital
+		position = 9
+		required_missions = {
+			LNK_kick_tamils_out
+			LNK_secure_passage
+			LNK_revive_networks
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	LNK_anuradhapura_revived = {
+		icon = mission_conquer_orissa_vij
+		position = 10
+		required_missions = { LNK_rebuild_old_capitals } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	LNK_across_strait = {
+		icon = mission_retake_ceuta
+		position = 11
+		required_missions = { LNK_anuradhapura_revived } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	LNK_invade_tamils = {
+		icon = mission_end_tamil_insurgency
+		position = 12
+		required_missions = { LNK_across_strait } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+ab_sri_lanka_fourth = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = LNK } 
+
+	LNK_revive_networks = {
+		icon = mission_conquer_malwa_bah
+		position = 8
+		required_missions = { LNK_restore_prosperity } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	LNK_end_piracy = {
+		icon = mission_pirate_flag
+		position = 11
+		required_missions = { LNK_anuradhapura_revived } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+ab_sri_lanka_fifth = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = LNK } 
+
+	LNK_restore_buddhism = {
+		icon = mission_temple_patronage
+		position = 8
+		required_missions = { LNK_restore_prosperity } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	LNK_expand_dambulla = {
+		icon = mission_protect_lankan_buddhism
+		position = 9
+		required_missions = { LNK_restore_buddhism } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	LNK_eastern_interest = {
+		icon = mission_entrepot_of_india
+		position = 12
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	LNK_colonize_indonesia = {
+		icon = mission_mnd_maj_rein_in_brunei
+		position = 13
+		required_missions = { LNK_eastern_interest } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
