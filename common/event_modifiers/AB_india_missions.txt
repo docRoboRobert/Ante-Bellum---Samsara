@@ -200,3 +200,43 @@ abi_independence_effort_modifier = {
 	diplomatic_reputation = 1
 	liberty_desire = 33
 }
+
+rising_lankan_inward_focus = {
+	fabricate_claims_cost = 1
+	can_not_declare_war = yes
+	capped_by_forcelimit = yes
+	siege_ability = -0.20
+	defensiveness = 0.20
+	fire_damage = -0.10
+	fire_damage_received = -0.10
+	shock_damage = -0.10
+	shock_damage_received = -0.10
+	trade_range_modifier = -0.25
+	global_foreign_trade_power = -0.2
+}
+
+rising_lankan_prosperity = {
+	build_cost = -0.15
+	build_time = -0.1
+	global_prosperity_growth = 0.1
+	global_monthly_devastation = -0.1
+	development_cost = -0.1
+	production_efficiency = 0.05
+	great_project_upgrade_cost = -0.2
+	idea_cost = -0.1
+	prestige_decay = -0.01
+	advisor_pool = 1
+	monarch_lifespan = 0.1
+	culture_conversion_cost = -0.2
+	same_culture_advisor_cost = -0.2
+	stability_cost_modifier = -0.15
+	missionary_maintenance_cost = -0.2
+	tolerance_own = 1
+	global_trade_goods_size_modifier = 0.1
+}
+
+LNK_mannar_fort = {
+	local_defender_dice_roll_bonus = 1
+	local_defensiveness = 0.1
+	local_hostile_movement_speed = -0.2
+}
