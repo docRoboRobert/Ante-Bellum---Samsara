@@ -445,3 +445,42 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = abindia_mission.8
+	title = abindia_mission.8.t
+	desc = abindia_mission.8.d
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = abindia_mission.8.a
+		ai_chance = { factor = 70 }
+		add_splendor = 100
+		5277 = {
+			change_trade_goods = tea
+		}
+		change_price = {
+			trade_goods = tea
+			key = tea_from_ceylon
+			value = 0.25
+			duration = 7300
+		}
+	}
+	
+	option = {
+		name = abindia_mission.8.b
+		ai_chance = { factor = 30 }
+		add_splendor = 100
+		5277 = {
+			change_trade_goods = sugar
+		}
+		change_price = {
+			trade_goods = sugar
+			key = sugar_from_ceylon
+			value = 0.2
+			duration = 7300
+		}
+	}
+}

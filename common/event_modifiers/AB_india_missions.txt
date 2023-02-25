@@ -240,3 +240,20 @@ LNK_mannar_fort = {
 	local_defensiveness = 0.1
 	local_hostile_movement_speed = -0.2
 }
+
+LNK_army_reforms = {
+	discipline = 0.05
+	morale_damage = 0.025
+	reinforce_cost_modifier = -0.15
+}
+
+LNK_navy_reforms = {
+	ship_durability = 0.1
+	naval_morale = 0.1
+	own_coast_naval_combat_bonus = 1.0
+}
+
+LNK_ceylon_plantation = {
+	trade_goods_size = 0.75
+	trade_value_modifier = 0.1
+}

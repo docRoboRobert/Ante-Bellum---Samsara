@@ -416,44 +416,243 @@ ab_sri_lanka_first = {
 	LNK_new_army = {
 		icon = mission_invade_the_deccan_ori
 		position = 8
-		required_missions = { LNK_restore_prosperity } 
-		provinces_to_highlight = {  } 
+		required_missions = { LNK_restore_prosperity }
 
-		trigger = {  } 
+		trigger = {
+			army_size_percentage = 1
+			num_of_cavalry = 6
+			num_of_artillery = 4
+			OR = {
+				num_of_generals_with_traits = 1
+				is_monarch_leader = yes
+			}
+			num_of_generals = 2
+			has_leader_with = {
+				fire = 3
+				shock = 2
+				manuever = 3
+				siege = 1
+				general = yes
+			}
+			has_leader_with = {
+				total_pips = 10
+				general = yes
+			}
+			OR = {
+				quartermaster = 2
+				army_organiser = 2
+				siegeengineer = 2
+				drillmaster = 2
+				army_reformer = 2
+				commandant = 2
+			}
+			num_of_owned_provinces_with = {
+				value = 5
+				has_building = barracks
+				base_manpower = 4
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			add_army_tradition = 20
+			add_army_professionalism = 0.05
+			add_ruler_modifier = { 
+				name = LNK_army_reforms
+				duration = -1
+			}
+		}
 	}
 
 	LNK_new_navy = {
 		icon = mission_naval_dominance
 		position = 9
-		required_missions = { LNK_new_army } 
-		provinces_to_highlight = {  } 
+		required_missions = { LNK_new_army }
 
-		trigger = {  } 
+		trigger = {
+			navy_size_percentage = 1
+			naval_morale = 3.25
+			num_of_admirals = 2
+			OR = {
+				num_of_admirals_with_traits = 1
+				has_leader_with = {
+					fire = 2
+					shock = 2
+					manuever = 4
+					admiral = yes
+				}
+			}
+			has_leader_with = {
+				total_pips = 11
+				admiral = yes
+			}
+			num_of_heavy_ship = 5
+			num_of_owned_provinces_with = {
+				value = 4
+				has_building = shipyard
+				base_production = 4
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			add_navy_tradition = 20
+			add_ruler_modifier = { 
+				name = LNK_navy_reforms
+				duration = -1
+			}
+			custom_tooltip = LNK_new_navy.tooltip
+			random_owned_province = {
+				limit = {
+					has_port = yes
+					has_building = shipyard
+				}
+				remove_building = shipyard
+				add_building = grand_shipyard
+			}
+			random_owned_province = {
+				limit = {
+					has_port = yes
+					has_building = shipyard
+				}
+				remove_building = shipyard
+				add_building = grand_shipyard
+			}
+		}
 	}
 
 	LNK_plantations = {
 		icon = mission_a_million_rice_fields
 		position = 12
-		provinces_to_highlight = {  } 
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 572
+				province_id = 4408
+				province_id = 4409
+				province_id = 5277
+				province_id = 5278
+			}
+		}
 
-		trigger = {  } 
+		trigger = {
+			5277 = {
+				base_production = 4
+				has_building = workshop
+				has_building = gravel_road
+			}
+			572 = {
+				base_production = 5
+				has_manufactory = yes
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+				has_building = gravel_road
+			}
+			4408 = {
+				base_production = 5
+				has_manufactory = yes
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+				has_building = gravel_road
+			}
+			4409 = {
+				base_production = 5
+				has_manufactory = yes
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+				has_building = gravel_road
+			}
+			5278 = {
+				base_production = 5
+				has_manufactory = yes
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+				has_building = gravel_road
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			add_years_of_owned_provinces_production_income = {
+				years = 2
+				trigger = {
+					trade_goods = spices
+				}
+				custom_tooltip = LNK_income_from_spice
+			}
+			change_price = {
+				trade_goods = spices
+				key = lankan_spice_boom
+				value = 0.2
+				duration = 7300
+			}
+			custom_tooltip = LNK_plantations.tooltip
+			if = {
+				limit = {
+					5277 = {
+						base_production = 6
+						has_manufactory = yes
+					}
+				}
+				country_event = {
+					id = abindia_mission.8
+					days = 1
+				}
+			}
+		}
 	}
 
 	LNK_spice_monopoly = {
 		icon = mission_dominate_persian_gulf
 		position = 13
-		required_missions = { LNK_plantations } 
-		provinces_to_highlight = {  } 
+		required_missions = { LNK_plantations }
+		
+		trigger = {
+			trading_bonus = {
+				trade_goods = spices
+				value = yes
+			}
+			trading_part = {
+				trade_goods = spices
+				value = 0.1
+			}
+			spices = 15
+			num_of_owned_provinces_with = {
+				value = 10
+				has_manufactory = yes
+				base_production = 8
+				trade_goods = spices
+			}
+		}
 
-		trigger = {  } 
-
-		effect = {  } 
+		effect = {
+			change_price = {
+				trade_goods = spices
+				key = lankan_spice_empire
+				value = 0.2
+				duration = -1
+			}
+			add_splendor = 250
+			custom_tooltip = LNK_spice_monopoly.tooltip
+			every_owned_province = {
+				limit = {
+					trade_goods = spices
+					OR = {
+						area = lanka_area
+						area = south_lanka_area
+					}
+				}
+				add_province_modifier = {
+					name = LNK_ceylon_plantation
+					duration = -1
+				}
+			}
+		}
 	}
 }
 ab_sri_lanka_second = {
