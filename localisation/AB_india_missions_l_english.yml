@@ -137,6 +137,7 @@
  LNK_kick_tamils_out_desc:0 "Area around Jaffna has been gradually settled and converted by Tamil settlers. Now the northern island seemingly belongs to Tamil sphere of influence. We must show them that this is not ther homeland. Either by expelling them or limiting their presence at least."
  LNK_strategic_ports_title:0 "Strategic Ports"
  LNK_strategic_ports_desc:0 "To dominate trade around Lanka Island we must secure strategic ports along the Coromandel Coast. This shall be a test of our capabilities of pushing outside our heartland."
+ LNK_strategic_ports.tooltip:0 "If we complete this mission while §YKorkai§! has §G20§! development, §YCenter of Trade§! will appear in the province. \nIf we complete this mission while §YNegapatam§! has §G25§! development, §YCenter of Trade§! will appear in the provine."
  LNK_restore_prosperity_title:0 "Restore Prosperity"
  LNK_restore_prosperity_desc:0 "Whole of the Lanka is under our control. The island has been occupied and exploited by many foerign powers but now with stable rule secured, we can begin to restore its might."
  LNK_restore_prosperity.tooltip:0 "§OOur rising nation will experience rapid economic growth as we channel all our efforts into rebuilding the state and organizing its infrastructure. During this period we will sacrifise our external capabilities, effectively giving up on foreign matters.§! \nUse this time wisely to complete further missions about reviving the nation."

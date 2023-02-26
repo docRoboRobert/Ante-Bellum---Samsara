@@ -257,3 +257,20 @@ LNK_ceylon_plantation = {
 	trade_goods_size = 0.75
 	trade_value_modifier = 0.1
 }
+
+LNK_tamils_expelled = {
+	manpower_in_own_culture_provinces = 0.2
+	relation_with_same_culture_group = 10
+	same_culture_advisor_cost = -0.1
+}
+
+LNK_convert_mission = {
+	harsh_treatment_cost = -0.2
+	culture_conversion_cost = -0.2
+	global_heathen_missionary_strength = 0.02
+}
+
+LNK_nation_under_construction = {
+	build_cost = -0.1
+	build_time = -0.1
+}

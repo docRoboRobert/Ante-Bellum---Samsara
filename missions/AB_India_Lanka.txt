@@ -665,23 +665,125 @@ ab_sri_lanka_second = {
 	LNK_kick_tamils_out = {
 		icon = mission_integrate_jaffna
 		position = 8
-		required_missions = { LNK_restore_prosperity } 
-		provinces_to_highlight = {  } 
+		required_missions = { LNK_restore_prosperity }
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2100
+				province_id = 5276
+				province_id = 5277
+			}
+		} 
 
-		trigger = {  } 
+		trigger = {
+			2100 = {
+				NOT = { unrest = 1 }
+				culture = sinhala
+				religion = ROOT
+				has_owner_culture = yes
+			}
+			5276 = {
+				NOT = { unrest = 1 }
+				culture = sinhala
+				religion = ROOT
+				has_owner_culture = yes
+			}
+			5277 = {
+				OR = {
+					AND = {
+						religion = ROOT
+						culture = sinhala
+					}
+					has_province_modifier = LNK_alhindi_minority
+				}
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			2100 = {
+				remove_core = VNN
+				remove_core = JFN
+			}
+			5276 = { remove_core = JFN }
+			add_country_modifier = {
+				name = LNK_tamils_expelled
+				duration = 7300
+			}
+		}
 	}
 
 	LNK_strategic_ports = {
 		icon = secure_the_republic
 		position = 11
-		required_missions = { LNK_anuradhapura_revived } 
-		provinces_to_highlight = {  } 
+		required_missions = { LNK_anuradhapura_revived }
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5283
+				province_id = 4415
+				province_id = 4416
+				province_id = 540
+				province_id = 539
+				province_id = 4410
+			}
+			NOT = { owned_by = ROOT }
+		}
 
-		trigger = {  } 
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 4
+				OR = {
+					province_id = 5283
+					province_id = 4415
+					province_id = 4416
+					province_id = 540
+					province_id = 539
+					province_id = 4410
+				}
+			}
+			OR = {
+				has_won_war_against = {
+					who = COA
+					max_years_since = 10
+				}
+				has_won_war_against = {
+					who = PND
+					max_years_since = 10
+				}
+				has_won_war_against = {
+					who = CER
+					max_years_since = 10
+				}
+				AND = {
+					NOT = { exists = COA }
+					NOT = { exists = PND }
+					NOT = { exists = CER }
+				}
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			add_country_modifier = {
+				name = LNK_convert_mission
+				duration = 10950
+			}
+			custom_tooltip = LNK_strategic_ports.tooltip
+			if = {
+				limit = {
+					5283 = { development = 20 }
+				}
+				center_of_trade = 1
+			}
+			if = {
+				limit = {
+					4415 = { development = 25 }
+				}
+				center_of_trade = 1
+			}
+			madura_area = { add_permanent_claim = ROOT }
+			south_carnatic_area = { add_permanent_claim = ROOT }
+			tanjore_area = { add_permanent_claim = ROOT }
+		}
 	}
 }
 ab_sri_lanka_third = {
@@ -859,12 +961,41 @@ ab_sri_lanka_fourth = {
 	LNK_revive_networks = {
 		icon = mission_conquer_malwa_bah
 		position = 8
-		required_missions = { LNK_restore_prosperity } 
-		provinces_to_highlight = {  } 
+		required_missions = { LNK_restore_prosperity }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = lanka_area
+				area = south_lanka_area
+			}
+		}
 
-		trigger = {  } 
+		trigger = {
+			lanka_area = {
+				type = all
+				has_road_building_trigger = yes
+				development = 10
+			}
+			south_lanka_area = {
+				type = all
+				has_road_building_trigger = yes
+				development = 10
+			}
+			advisor = trader
+			OR = {
+				advisor = natural_scientist
+				advisor = planner
+			}
+			mercantilism = 20
+		}
 
-		effect = {  } 
+		effect = {
+			add_mercantilism = 4
+			add_country_modifier = {
+				name = LNK_nation_under_construction
+				duration = 5475
+			}
+		}
 	}
 
 	LNK_end_piracy = {
