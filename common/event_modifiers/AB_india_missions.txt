@@ -274,3 +274,51 @@ LNK_nation_under_construction = {
 	build_cost = -0.1
 	build_time = -0.1
 }
+
+LNK_end_of_maldives = {
+	global_own_trade_power = 0.1
+	ship_power_propagation = 0.1
+	diplomatic_reputation = 1
+}
+
+LNK_restored_temples = {
+	religious_unity = 0.15
+	tolerance_own = 1
+	relation_with_heretics = 10
+	relation_with_same_religion = 10
+}
+
+LNK_dambulla_cave_works = {
+	local_great_project_upgrade_cost = -0.33
+	local_tax_modifier = 0.1
+}
+
+LNK_dambulla_restored = {
+	global_heathen_missionary_strength = 0.01
+	prestige_per_development_from_conversion = 0.25
+	stability_cost_modifier = -0.1
+}
+
+LNK_lankan_indonesia_company = {
+	placed_merchant_power = 5
+	trade_steering = 0.1
+}
+
+LNK_kotte_capital = {
+	local_development_cost = -0.1
+	ship_recruit_speed = -0.1
+	trade_goods_size = 0.25
+}
+
+LNK_polonnaruwa_capital = {
+	local_development_cost = -0.2
+	allowed_num_of_buildings = 1
+	local_tax_modifier = 0.33
+	trade_goods_size = 0.25
+}
+
+LNK_anuradhapura_capital = {
+	local_development_cost = -0.2
+	local_production_efficiency = 0.2
+	trade_goods_size = 0.25
+}

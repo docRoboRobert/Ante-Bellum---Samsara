@@ -484,3 +484,42 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = abindia_mission.9
+	title = abindia_mission.9.t
+	desc = abindia_mission.9.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = abindia_mission.9.a
+		set_capital = 572
+	}
+	
+	option = {
+		name = abindia_mission.9.b
+		set_capital = 2100
+		2100 = {
+			change_province_name = "Anuradhapura"
+		}
+	}
+	
+	option = {
+		name = abindia_mission.9.c
+		set_capital = 2099
+		2099 = {
+			change_province_name = "Polonnaruwa"
+		}
+	}
+	
+	option = {
+		name = abindia_mission.9.e
+		set_capital = 2099
+		2099 = {
+			change_province_name = "Dambulla"
+			rename_capital = "Dambulla"
+		}
+	}
+}

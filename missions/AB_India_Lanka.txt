@@ -541,7 +541,7 @@ ab_sri_lanka_first = {
 			}
 			572 = {
 				base_production = 5
-				has_manufactory = yes
+				has_manufactory_trigger = yes
 				OR = {
 					has_building = workshop
 					has_building = counting_house
@@ -550,7 +550,7 @@ ab_sri_lanka_first = {
 			}
 			4408 = {
 				base_production = 5
-				has_manufactory = yes
+				has_manufactory_trigger = yes
 				OR = {
 					has_building = workshop
 					has_building = counting_house
@@ -559,7 +559,7 @@ ab_sri_lanka_first = {
 			}
 			4409 = {
 				base_production = 5
-				has_manufactory = yes
+				has_manufactory_trigger = yes
 				OR = {
 					has_building = workshop
 					has_building = counting_house
@@ -568,7 +568,7 @@ ab_sri_lanka_first = {
 			}
 			5278 = {
 				base_production = 5
-				has_manufactory = yes
+				has_manufactory_trigger = yes
 				OR = {
 					has_building = workshop
 					has_building = counting_house
@@ -596,7 +596,7 @@ ab_sri_lanka_first = {
 				limit = {
 					5277 = {
 						base_production = 6
-						has_manufactory = yes
+						has_manufactory_trigger = yes
 					}
 				}
 				country_event = {
@@ -624,7 +624,7 @@ ab_sri_lanka_first = {
 			spices = 15
 			num_of_owned_provinces_with = {
 				value = 10
-				has_manufactory = yes
+				has_manufactory_trigger = yes
 				base_production = 8
 				trade_goods = spices
 			}
@@ -911,33 +911,173 @@ ab_sri_lanka_third = {
 			LNK_secure_passage
 			LNK_revive_networks
 		}
-		provinces_to_highlight = {  } 
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 572
+				province_id = 2099
+				province_id = 2100
+			}
+		}
 
-		trigger = {  } 
+		trigger = {
+			trader = 2
+			planner = 2
+			572 = {
+				development = 25
+				province_has_center_of_trade_of_level = 2
+				has_road_building_trigger = yes
+				has_building = marketplace
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+				has_building = counrthouse
+				has_building = shipyard
+				is_prosperous = yes
+			}
+			2099 = {
+				development = 25
+				has_road_building_trigger = yes
+				has_building = marketplace
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+				has_building = counrthouse
+				has_building = barracks
+				is_prosperous = yes
+			}
+			2100 = {
+				development = 25
+				has_road_building_trigger = yes
+				has_building = marketplace
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+				has_building = counrthouse
+				has_building = barracks
+				is_prosperous = yes
+			}
+			OR = {
+				monthly_adm = 10
+				adm = 4
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			572 = {
+				add_province_modifier = {
+					name = LNK_kotte_capital
+					duration = -1
+				}
+			}
+			2099 = {
+				add_province_modifier = {
+					name = LNK_polonnaruwa_capital
+					duration = -1
+				}
+				rename_capital = "Polonnaruwa"
+			}
+			2100 = {
+				add_province_modifier = {
+					name = LNK_anuradhapura_capital
+					duration = -1
+				}
+				rename_capital = "Anuradhapura"
+			}
+		}
 	}
 
 	LNK_anuradhapura_revived = {
 		icon = mission_conquer_orissa_vij
 		position = 10
-		required_missions = { LNK_rebuild_old_capitals } 
-		provinces_to_highlight = {  } 
+		required_missions = { LNK_rebuild_old_capitals }
 
-		trigger = {  } 
+		trigger = {
+			OR = {
+				AND = {
+					adm = 4
+					dip = 4
+					mil = 4
+				}
+				AND = {
+					monthly_adm = 10
+					monthly_dip = 10
+					monthly_mil = 10
+				}
+			}
+			grown_by_development = 100
+			stability = 3
+			prestige = 80
+			legitimacy_equivalent = 95
+			OR = {
+				power_projection = 60
+				splendor = 800
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+			change_heir_adm = 1
+			change_heir_dip = 1
+			change_heir_mil = 1
+			change_government_reform_progress = 100
+			override_country_name = ANURADHAPURA_RENAME
+			country_event = {
+				id = abindia_mission.9
+				days = 1
+			}
+			572 = { add_center_of_trade_level = 1 }
+			5180 = { add_permanent_claim = ROOT }
+			4415 = { add_permanent_claim = ROOT }
+			5283 = { add_permanent_claim = ROOT }
+		}
 	}
 
 	LNK_across_strait = {
 		icon = mission_retake_ceuta
 		position = 11
-		required_missions = { LNK_anuradhapura_revived } 
-		provinces_to_highlight = {  } 
+		required_missions = { LNK_anuradhapura_revived }
+		
+		provinces_to_highlight = {
+			province_id = 5180
+		}
 
-		trigger = {  } 
+		trigger = {
+			owns_core_province = 5180
+			5180 = {
+				has_great_project = {
+					type = ram_setu
+					tier = 2
+				}
+				fort_level = 2
+				OR = {
+					has_building = ramparts
+					has_building = naval_battery
+				}
+			}
+			num_of_cities = 12
+		}
 
-		effect = {  } 
+		effect = {
+			add_prestige = 15
+		}
 	}
 
 	LNK_invade_tamils = {
@@ -995,6 +1135,14 @@ ab_sri_lanka_fourth = {
 				name = LNK_nation_under_construction
 				duration = 5475
 			}
+			custom_tooltip = LNK_revive_networks.tooltip
+			if = {
+				limit = {
+					NOT = { num_of_ruler_traits = { amount = 3 } }
+					NOT = { ruler_has_personality = industrious_personality }
+				}
+				add_ruler_personality = industrious_personality
+			}
 		}
 	}
 
@@ -1002,11 +1150,46 @@ ab_sri_lanka_fourth = {
 		icon = mission_pirate_flag
 		position = 11
 		required_missions = { LNK_anuradhapura_revived } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				owned_by = DGL
+				province_id = 1248
+				province_id = 5275
+			}
+		}
 
-		trigger = {  } 
+		trigger = {
+			NOT = { exists = DGL }
+			1248 = { country_or_non_sovereign_subject_holds = ROOT }
+			5275 = { country_or_non_sovereign_subject_holds = ROOT }
+			any_country = {
+				NOT = {
+					4410 = {
+						has_privateer_share_in_trade_node = {
+							who = PREV
+							share = 0.02
+						}
+					}
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 5
+				OR = {
+					has_building = coastal_defence
+					has_building = naval_battery
+				}
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			add_treasury = 500
+			add_prestige = 15
+			add_years_of_income = 1
+			add_country_modifier = {
+				name = LNK_end_of_maldives
+				duration = 10950
+			}
+		}
 	}
 }
 ab_sri_lanka_fifth = {
@@ -1019,43 +1202,233 @@ ab_sri_lanka_fifth = {
 	LNK_restore_buddhism = {
 		icon = mission_temple_patronage
 		position = 8
-		required_missions = { LNK_restore_prosperity } 
-		provinces_to_highlight = {  } 
+		required_missions = { LNK_restore_prosperity }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = lanka_area
+				area = south_lanka_area
+			}
+		}
 
-		trigger = {  } 
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+			}
+			num_of_estate_privileges = {
+				estate = estate_church
+				value = 4
+			}
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 60
+			}
+			religious_unity = 0.75
+			2099 = {
+				has_great_project = {
+					type = dambulla_caves
+					tier = 1
+				}
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			add_years_of_income = 1
+			add_country_modifier = {
+				name = LNK_restored_temples
+				duration = 7300
+			}
+			2099 = {
+				add_province_modifier = {
+					name = LNK_dambulla_cave_works
+					duration = 10950
+				}
+			}
+		}
 	}
 
 	LNK_expand_dambulla = {
 		icon = mission_protect_lankan_buddhism
 		position = 9
-		required_missions = { LNK_restore_buddhism } 
-		provinces_to_highlight = {  } 
+		required_missions = { LNK_restore_buddhism }
+		
+		provinces_to_highlight = {
+			province_id = 2099
+		}
 
-		trigger = {  } 
+		trigger = {
+			2099 = {
+				has_great_project = {
+					type = dambulla_caves
+					tier = 2
+				}
+			}
+			2099 = {
+				development = 18
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			add_splendor = 250
+			add_country_modifier = {
+				name = LNK_dambulla_restored
+				duration = -1
+			}
+			custom_tooltip = LNK_expand_dambulla.tooltip
+			if = {
+				limit = {
+					ruler_has_personality = architectural_visionary_personality
+				}
+				2099 = {
+					add_province_modifier = {
+						name = LNK_dambulla_cave_works
+						duration = 10950
+					}
+				}
+			}
+		}
 	}
 
 	LNK_eastern_interest = {
 		icon = mission_entrepot_of_india
 		position = 12
-		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			any_ally = {
+				capital_scope = { region = malaya_region }
+				has_opinion = {
+					who = ROOT
+					value = 175
+				}
+			}
+			trader = 2
+			mercantilism = 25
+			596 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+				trade_range = ROOT
+				has_trader = ROOT
+			}
+			num_of_light_ship = 20
+		}
 
-		effect = {  } 
+		effect = {
+			define_advisor = {
+				type = treasurer
+				skill = 3
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.4
+			}
+			define_advisor = {
+				type = trader
+				skill = 3
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.4
+			}
+			kalimantan_area = { add_permanent_claim = ROOT }
+			banjar_area = { add_permanent_claim = ROOT }
+			custom_tooltip = LNK_eastern_interest.tooltip2
+			every_province = {
+				limit = {
+					region = malaya_region
+					has_port = yes
+					province_has_center_of_trade_of_level = 1
+				}
+				add_claim = ROOT
+			}
+			custom_tooltip = LNK_eastern_interest.tooltip
+			if = {
+				limit = {
+					574 = { is_colony = no }
+				}
+				574 = { create_colony = 250 }
+			}
+		}
 	}
 
 	LNK_colonize_indonesia = {
 		icon = mission_mnd_maj_rein_in_brunei
 		position = 13
-		required_missions = { LNK_eastern_interest } 
-		provinces_to_highlight = {  } 
+		required_missions = { LNK_eastern_interest }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = banjar_area
+				area = kutai_area
+				area = sabah_area
+				area = brunei_area
+				area = kalimantan_area
+			}
+			NOT = { owned_by = ROOT }
+		}
 
-		trigger = {  } 
+		trigger = {
+			OR = {
+				owns_core_province = 2706
+				owns_core_province = 2708
+			}
+			num_of_owned_provinces_with = {
+				value = 15
+				OR = {
+					area = banjar_area
+					area = kutai_area
+					area = sabah_area
+					area = brunei_area
+					area = kalimantan_area
+				}
+				is_owned_by_trade_company = yes
+			}
+			2706 = {
+				has_trade_company_investment_in_area  = {
+					investment = company_depot
+					investor = ROOT
+				}
+				has_trade_company_investment_in_area  = {
+					investment = brokers_exchange
+					investor = ROOT
+				}
+				trade_share = {
+					country = ROOT
+					share = 33
+				}
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			add_mercantilism = 4
+			makassar_area = { add_permanent_claim = ROOT }
+			sulawesi_area = { add_permanent_claim = ROOT }
+			south_sulawesi_area = { add_permanent_claim = ROOT }
+			molluca_area = { add_permanent_claim = ROOT }
+			spice_islands_area = { add_permanent_claim = ROOT }
+			add_country_modifier = {
+				name = LNK_lankan_indonesia_company
+				duration = -1
+			}
+			custom_tooltip = LNK_colonize_indonesia.tooltip
+			if = {
+				limit = {
+					639 = {
+						owned_by = ROOT
+						development = 20
+						is_owned_by_trade_company = yes
+						has_owner_religion = yes
+					}
+				}
+				639 = { center_of_trade = 1 }
+			}
+		}
 	}
 }
