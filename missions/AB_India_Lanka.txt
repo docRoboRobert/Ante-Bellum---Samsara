@@ -772,13 +772,13 @@ ab_sri_lanka_second = {
 				limit = {
 					5283 = { development = 20 }
 				}
-				center_of_trade = 1
+				5283 = { center_of_trade = 1 }
 			}
 			if = {
 				limit = {
 					4415 = { development = 25 }
 				}
-				center_of_trade = 1
+				4415 = { center_of_trade = 1 }
 			}
 			madura_area = { add_permanent_claim = ROOT }
 			south_carnatic_area = { add_permanent_claim = ROOT }
@@ -858,7 +858,7 @@ ab_sri_lanka_third = {
 		
 		provinces_to_highlight = {
 			province_id = 5276
-		} 
+		}
 
 		trigger = {
 			5276 = {
@@ -936,7 +936,7 @@ ab_sri_lanka_third = {
 					has_building = workshop
 					has_building = counting_house
 				}
-				has_building = counrthouse
+				has_building = courthouse
 				has_building = shipyard
 				is_prosperous = yes
 			}
@@ -952,7 +952,7 @@ ab_sri_lanka_third = {
 					has_building = workshop
 					has_building = counting_house
 				}
-				has_building = counrthouse
+				has_building = courthouse
 				has_building = barracks
 				is_prosperous = yes
 			}
@@ -968,7 +968,7 @@ ab_sri_lanka_third = {
 					has_building = workshop
 					has_building = counting_house
 				}
-				has_building = counrthouse
+				has_building = courthouse
 				has_building = barracks
 				is_prosperous = yes
 			}
@@ -1077,18 +1077,332 @@ ab_sri_lanka_third = {
 
 		effect = {
 			add_prestige = 15
+			custom_tooltip = LNK_across_strait.tooltip
+			PLV = {
+				capital_scope = { add_permanent_claim = ROOT }
+			}
+			PND = {
+				capital_scope = { add_permanent_claim = ROOT }
+			}
+			COA = {
+				capital_scope = { add_permanent_claim = ROOT }
+			}
+			TML = {
+				capital_scope = { add_permanent_claim = ROOT }
+			}
+			COE = {
+				capital_scope = { add_permanent_claim = ROOT }
+			}
+			TMA = {
+				capital_scope = { add_permanent_claim = ROOT }
+			}
+			2026 = { add_permanent_claim = ROOT }
+			if = {
+				limit = { exists = PLV }
+				add_casus_belli = {
+					target = PLV
+					type = cb_insult
+					months = 48
+				}
+			}
+			if = {
+				limit = { exists = PND }
+				add_casus_belli = {
+					target = PND
+					type = cb_insult
+					months = 48
+				}
+			}
+			if = {
+				limit = { exists = COA }
+				add_casus_belli = {
+					target = COA
+					type = cb_insult
+					months = 48
+				}
+			}
+			if = {
+				limit = { exists = TML }
+				add_casus_belli = {
+					target = TML
+					type = cb_insult
+					months = 48
+				}
+			}
+			if = {
+				limit = { exists = COE }
+				add_casus_belli = {
+					target = COE
+					type = cb_insult
+					months = 48
+				}
+			}
+			if = {
+				limit = { exists = TMA }
+				add_casus_belli = {
+					target = TMA
+					type = cb_insult
+					months = 48
+				}
+			}
 		}
 	}
 
 	LNK_invade_tamils = {
 		icon = mission_end_tamil_insurgency
 		position = 12
-		required_missions = { LNK_across_strait } 
-		provinces_to_highlight = {  } 
+		required_missions = { LNK_across_strait }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = madura_area
+				area = tanjore_area
+				area = kongu_area
+				area = south_carnatic_area
+				area = north_carantic_area
+			}
+		}
 
-		trigger = {  } 
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				OR = {
+					area = madura_area
+					area = tanjore_area
+					area = kongu_area
+					area = south_carnatic_area
+					area = north_carantic_area
+				}
+			}
+			OR = {
+				NOT = { exists = PLV }
+				PLV = { is_subject_of = ROOT }
+				war_score_against = {
+					who = PLV
+					value = 80
+				}
+			}
+			OR = {
+				NOT = { exists = COA }
+				COA = { is_subject_of = ROOT }
+				war_score_against = {
+					who = COA
+					value = 80
+				}
+			}
+			OR = {
+				NOT = { exists = PND }
+				PND = { is_subject_of = ROOT }
+				war_score_against = {
+					who = PND
+					value = 80
+				}
+			}
+			OR = {
+				NOT = { exists = TML }
+				TML = { is_subject_of = ROOT }
+				war_score_against = {
+					who = TML
+					value = 80
+				}
+			}
+			OR = {
+				NOT = { exists = COE }
+				COE = { is_subject_of = ROOT }
+				war_score_against = {
+					who = COE
+					value = 80
+				}
+			}
+			OR = {
+				NOT = { exists = TMA }
+				TMA = { is_subject_of = ROOT }
+				war_score_against = {
+					who = TMA
+					value = 80
+				}
+			}
+			2026 = { controlled_by = ROOT }
+			536 = { controlled_by = ROOT }
+			4420 = { controlled_by = ROOT }
+			2027 = { controlled_by = ROOT }
+		}
 
-		effect = {  } 
+		effect = {
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 30
+			}
+			set_government_rank = 3
+			add_prestige = 25
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			add_treasury = 2000
+			add_years_of_income = 2
+			add_splendor = 250
+			if = {
+				limit = {
+					2026 = {
+						controlled_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+				}
+				2026 = {
+					add_devastation = 100
+					set_base_tax = 3
+					set_base_production = 3
+					set_base_manpower = 1
+					remove_building = temple
+					remove_building = cathedral
+					remove_building = workshop
+					remove_building = marketplace
+					remove_building = dock
+					remove_building = drydock
+					remove_building = shipyard
+					remove_building = grand_shipyard
+					remove_building = counting_house
+					remove_building = courthouse
+					remove_building = trade_depot
+					remove_building = barracks
+				}
+			}
+			if = {
+				limit = {
+					536 = {
+						controlled_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+				}
+				536 = {
+					add_devastation = 100
+					set_base_tax = 2
+					set_base_production = 2
+					set_base_manpower = 1
+					remove_building = temple
+					remove_building = cathedral
+					remove_building = workshop
+					remove_building = marketplace
+					remove_building = counting_house
+					remove_building = courthouse
+					remove_building = trade_depot
+					remove_building = barracks
+				}
+			}
+			if = {
+				limit = {
+					4420 = {
+						controlled_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+				}
+				4420 = {
+					add_devastation = 100
+					set_base_tax = 2
+					set_base_production = 2
+					set_base_manpower = 1
+					remove_building = temple
+					remove_building = cathedral
+					remove_building = workshop
+					remove_building = marketplace
+					remove_building = counting_house
+					remove_building = courthouse
+					remove_building = trade_depot
+					remove_building = barracks
+				}
+			}
+			if = {
+				limit = {
+					2027 = {
+						controlled_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+				}
+				2027 = {
+					add_devastation = 100
+					set_base_tax = 2
+					set_base_production = 2
+					set_base_manpower = 1
+					remove_building = temple
+					remove_building = cathedral
+					remove_building = workshop
+					remove_building = marketplace
+					remove_building = counting_house
+					remove_building = courthouse
+					remove_building = trade_depot
+					remove_building = barracks
+				}
+			}
+			custom_tooltip = LNK_invade_tamils.tooltip
+			hidden_effect = {
+				if = {
+					limit = {
+						PLV = { war_with = ROOT }
+					}
+					PLV = {
+						every_owned_province = {
+							add_devastation = 80
+							add_base_manpower = -1
+						}
+					}
+				}
+				if = {
+					limit = {
+						COA = { war_with = ROOT }
+					}
+					COA = {
+						every_owned_province = {
+							add_devastation = 80
+							add_base_manpower = -1
+						}
+					}
+				}
+				if = {
+					limit = {
+						PND = { war_with = ROOT }
+					}
+					PND = {
+						every_owned_province = {
+							add_devastation = 80
+							add_base_manpower = -1
+						}
+					}
+				}
+				if = {
+					limit = {
+						COE = { war_with = ROOT }
+					}
+					COE = {
+						every_owned_province = {
+							add_devastation = 80
+							add_base_manpower = -1
+						}
+					}
+				}
+				if = {
+					limit = {
+						TML = { war_with = ROOT }
+					}
+					TML = {
+						every_owned_province = {
+							add_devastation = 80
+							add_base_manpower = -1
+						}
+					}
+				}
+				if = {
+					limit = {
+						TMA = { war_with = ROOT }
+					}
+					TMA = {
+						every_owned_province = {
+							add_devastation = 80
+							add_base_manpower = -1
+						}
+					}
+				}
+			}
+		}
 	}
 }
 ab_sri_lanka_fourth = {
