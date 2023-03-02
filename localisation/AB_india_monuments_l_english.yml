@@ -2,8 +2,10 @@
 
  #Bhuvanagiri
  bhuvanagiri:0 "Bhuvanagiri Fort"
+ bhuvanagiri_desc:0 "§OBhuvanagiri is a fort located in Teligana region. Built in 10th century on an isolated monolithic rock by the ruler of Western Chalukya - Tribhuvanamalla Vikramaditya IV. The work was completed in 1076AD and from then, fort towers over its surroundings, sitting on a unique egg-shaped rock, more than 160 meters above local terrain. Narrow path leads to the main castle. At the beginning of which lies Hanuman Temple with two entry points protected by huge rocks, so the fort is considered practically impregnable by invading armies, lest artillery is used extensively.§!"
  #Golconda Diamond Mines
  golconda_mine:0 "Golconda Diamond Mines"
+ golconda_mine_desc:0 "§ORegion of Godavari Delta and Teligana is famously known as being rich in diamond desposits. Many mines scattered around the area specify in mining high-quality diamonds that are later exported, granting great benefits to whoever comes in posession of those mines. Golconda diamonds are graded as Type IIa, formed of pure carbon, are devoid of nitrogen, and are large with high clarity. They are often described as diamonds of the first water, making them among history's most celebrated diamonds. The word "Golconda diamond" became symbolic of diamonds of incomparable quality.§!"
  #Goa Foreign Quarter
  goa_port:0 "Goa Foreign Quarter"
  #St Thomas Gulf Protector
@@ -14,6 +16,6 @@
  probandar_port:0 "Probandar Ancient Port"
  #Ram Setu
  ram_setu:0 "Ram Setu"
- ram_setu_desc.tooltip:0 "§ORam Setu, also known as Rama's Bridge or Rama Setu, is a chain of natural limestone shoals, between Pamban Island off the south-eastern coast of Tamil Nadu, India, and Mannar Island, off the north-western coast of Sri Lanka. Geological evidence suggests that this bridge is a former land connection between India and Sri Lanka. The feature is 48km long and separates the Gulf of Mannar and Palk Strait. Formation serves as a naval choke point and trading post.§!"
+ ram_setu_desc:0 "§ORam Setu, also known as Rama's Bridge or Rama Setu, is a chain of natural limestone shoals, between Pamban Island off the south-eastern coast of Tamil Nadu, India, and Mannar Island, off the north-western coast of Sri Lanka. Geological evidence suggests that this bridge is a former land connection between India and Sri Lanka. The feature is 48km long and separates the Gulf of Mannar and Palk Strait. Formation serves as a naval choke point and trading post.§!"
  #Dambulla Cave Temples
  dambulla_caves:0 "Dambulla Cave Temples"

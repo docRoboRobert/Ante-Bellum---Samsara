@@ -992,7 +992,6 @@ ram_setu = {
 		country_modifiers = {
 		}
 		on_upgraded = {
-			custom_tooltip = ram_setu_desc.tooltip
 		}
 	}
 
@@ -1015,7 +1014,6 @@ ram_setu = {
 			prestige_from_naval = 0.05
 		}
 		on_upgraded = {
-			custom_tooltip = ram_setu_desc.tooltip
 		}
 	}
 
@@ -1039,7 +1037,6 @@ ram_setu = {
 			prestige_from_naval = 0.1
 		}
 		on_upgraded = {
-			custom_tooltip = ram_setu_desc.tooltip
 		}
 	}
 
@@ -1065,7 +1062,6 @@ ram_setu = {
 			prestige_from_naval = 0.2
 		}
 		on_upgraded = {
-			custom_tooltip = ram_setu_desc.tooltip
 		}
 	}
 }
