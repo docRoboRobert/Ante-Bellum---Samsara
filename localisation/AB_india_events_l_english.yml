@@ -105,3 +105,9 @@
  abindia_mission.9.b:0 "The old capital of course!"
  abindia_mission.9.c:0 "We shall rule from Polonnaruwa"
  abindia_mission.9.e:0 "Dambulla is a holy place we shall be proud of"
+ 
+ #Flavour for Sri Lanka
+ abindia_lankan_event.1.t:0 "Looming Upheaval"
+ abindia_lankan_event.1.d:0 "Vanni Tribes living in the jungles to the south of our most developed regions have always been causing trouble for the mercantile-oriented state. Poorly developed and disconnected from the capital, local chieftains have been gradually distancing themselves from the rulers in Jaffna. Since the nation has been realistically subjugated after seeking protection from mighty Chola kingdom, plots of secession began to spread among dissatisfied tribes. Rumors of upcoming uprising taint jaffnan court. Dark times surely form ahead of Jaffna, which only gods know the outcome of."
+ abindia_lankan_event.1.a:0 "Time will tell for whom the bell tolls"
+ abindia_lankan_event.1.tooltip:0 "Something ominous grows within our realm. The modifier will be removed when the issue is resolved."

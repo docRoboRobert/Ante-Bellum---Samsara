@@ -154,3 +154,7 @@
  desc_LNK_polonnaruwa_capital:0 ""
  LNK_anuradhapura_capital:0 "Capital City of Anuradhapura"
  desc_LNK_anuradhapura_capital:0 ""
+ vanni_separatism_modifier:0 "Vanni Separatism"
+ desc_vanni_separatism_modifier:0 "Vanni tribes living in this province are getting ever so discontent with the ruling body."
+ tamil_settlement_encouraged:0 "Encouraged Tamil Settlement"
+ desc_tamil_settlement_encouraged:0 "We are taking heavy efforts into bringing more settlers from the mainland to populate Lanka Island with our loyal men."

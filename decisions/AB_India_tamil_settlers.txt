@@ -1,0 +1,45 @@
+country_decisions = {
+
+	encourage_tamil_settlement = {
+		potential = {
+			primary_culture = tamil
+			capital_scope = {
+				OR = {
+					area = lanka_area
+					area = south_lanka_area
+				}
+			}
+			NOT = { has_ruler_modifier = tamil_settlement_encouraged }
+		}
+		allow = {
+			primary_culture = tamil
+			NOT = { has_ruler_modifier = tamil_settlement_encouraged }
+			adm_power = 50
+			dip_power = 75
+			cash = 50
+		}
+		effect = {
+			add_ruler_modifier = {
+				name = tamil_settlement_encouraged
+				duration = -1
+			}
+			add_treasury = -50
+			add_dip_power = -75
+			add_adm_power = -50
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = { adm_power = 600 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { dip_power = 800 }
+			}
+		}
+		ai_importance = 200
+	}
+
+}

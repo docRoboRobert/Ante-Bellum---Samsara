@@ -322,3 +322,8 @@ LNK_anuradhapura_capital = {
 	local_production_efficiency = 0.2
 	trade_goods_size = 0.25
 }
+
+tamil_settlement_encouraged = {
+	manpower_in_culture_group_provinces = 0.1
+	culture_conversion_cost = -0.125
+}
