@@ -9860,7 +9860,7 @@ dravidian = {
 	telegu = {
 		primary = GOC
 		dynasty_names = {
-			"Aravidu" "Talpura" "Velama" "Saluva" "Tuluva" "Sangama" "Pemmasani" "Tupakula"
+			"Reddi" "Aravidu" "Talpura" "Velama" "Saluva" "Tuluva" "Sangama" "Pemmasani" "Tupakula"
 			# CKII
 			"Nanduri" "Chalukya" "Pattavardhani" "Chola"
 		}
@@ -9889,7 +9889,7 @@ dravidian = {
 	}
 	north_tamil = {
 		dynasty_names = {
-			"Saadatullahid" "Anwarudid" "Pandya" "Thondaiman" "Thanjavuri" "Sethupathy" "Saluva" 
+			"Reddi" "Saadatullahid" "Anwarudid" "Pandya" "Thondaiman" "Thanjavuri" "Sethupathy" "Saluva" 
 			"Thanjavur Mutharaiyar" "Udayagiri Mutharaiyar" "Simhapuri Mutharaiyar" "Ay" "Pallava" "Chola" 
 			"Pandya" "Chera" "Aryacakravarti" "Aravidu" "Talpura" "Velama" "Saluva" "Tuluva" "Sangama" 
 			"Pemmasani" "Tupakula" "Nanduri" "Chalukya" "Pattavardhani" "Chola"

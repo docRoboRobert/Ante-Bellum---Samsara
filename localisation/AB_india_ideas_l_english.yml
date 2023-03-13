@@ -540,3 +540,22 @@
  BKH_subjugation:0 "Subjugate India"
  BKH_subjugation_desc:0 "As a true descendant of horde nation, we are destined to fulfill the goal which started our nation. India must be pillaged and its lands secured for us."
  
+ #Reddy
+ RDY_ideas:0 "Reddi Ideas"
+ RDY_ideas_start:0 "Reddy Traditions"
+ RDY_ideas_bonus:0 "Reddy Ambition"
+ RDY_expand_village_rulers:0 "Empower Village Ruleship"
+ RDY_expand_village_rulers_desc:0 "Traditionally, most of Reddy class has been the land-owning aristocracy of the villages. Reddy were efficient in managing them and developing the countryside. If we empower them, we can extort extra revenue."
+ RDY_hindu_patronage:0 "Patronize Hindu Practises"
+ RDY_hindu_patronage_desc:0 "The Reddi rulers patronised and protected Hinduism and its institutions. The Brahmins shall be given liberal grants by the Reddi kings and the agraharas of Brahmins must be restored. Vedic studies are encouraged."
+ RDY_warrior_class:0 "Reddy Warriors"
+ RDY_warrior_class_desc:0 "Many members of Reddy class held positions in the military and gained decent experience in combat. Their prowess as rulers and warriors is well documented in Telugu history. We must bring their skills to the army to improve our leadership."
+ RDY_great_forts:0 "Great Eastern Forts"
+ RDY_great_forts_desc:0 "A number of great fortresses in the Eastern Ghats protects our lands from invaders. We must study the technology of those magnificent builds and improve upon it."
+ RDY_diamond_mines:0 "Teligana Diaminds"
+ RDY_diamond_mines_desc:0 "Famously-rich diamond deposits rest beneath our core territory. Our home region of Andhra and Teligana is home to some of the biggest diamond mines in the known world. Such wealth must be taken care of. Mines shall be modernized and expanded, and the extra source of wealth will help us with managing the economy."
+ RDY_dharmasutras_admin:0 "Dharmasutras Administration"
+ RDY_dharmasutras_admin_desc:0 "The administration in Reddi Kingdom is carried according to the "Dharmasutras". One-sixth of agriculture surplus is levied as tax. Under the reign of our enlightened leaders, custom duties and taxes on trade were lifted. As a result, trade shall flouris. Sea trade shall also be expanded and carried through many ports near Motupalli. We shall put our efforts into settling a large number of merchants there too."
+ RDY_literature_revival:0 "Revival of Literature"
+ RDY_literature_revival_desc:0 "Telugu literature blossoms under the Reddi kings. The Reddi kings shall also patronize Sanskrit. Reformed royal education will surely make several of the Reddi kings distinguished scholars and authors."
+ 

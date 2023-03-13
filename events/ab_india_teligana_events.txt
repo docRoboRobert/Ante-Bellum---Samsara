@@ -1,0 +1,316 @@
+#Events for Teligana and Reddy
+namespace = abindia_teligana_event
+
+country_event = { #Strong Reddy Influence
+	id = abindia_teligana_event.1
+	title = abindia_teligana_event.1.t
+	desc = abindia_teligana_event.1.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+		tag = TLG
+	}
+	
+	option = {
+		name = abindia_teligana_event.1.a
+		add_ruler_personality = infertile_personality
+		add_country_modifier = {
+			name = strong_reddy_influence
+			duration = -1
+		}
+	}
+	
+}
+
+country_event = { #Reddy Demand Privileges
+	id = abindia_teligana_event.2
+	title = abindia_teligana_event.2.t
+	desc = abindia_teligana_event.2.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	trigger = {
+		tag = TLG
+		is_year = 1450
+		has_country_modifier = strong_reddy_influence
+	}
+	
+	option = {
+		name = abindia_teligana_event.2.a
+		add_country_modifier = {
+			name = granted_reddy_influence
+			duration = 10950
+		}
+		custom_tooltip = abindia_teligana_event.3.a.tooltip
+		set_country_flag = teligana_reddy_influence_1_flag
+		add_years_of_income = 1
+		add_mil_power = 25
+		add_dip_power = -25
+		add_adm_power = -25
+		add_legitimacy = -10
+	}
+	option = {
+		name = abindia_teligana_event.2.b
+		add_country_modifier = {
+			name = denied_reddy_influence
+			duration = 10950
+		}
+		add_legitimacy = 10
+		add_prestige = 10
+		add_mil_power = -25
+	}
+}
+
+country_event = { #Contract with Reddy class
+	id = abindia_teligana_event.3
+	title = abindia_teligana_event.3.t
+	desc = abindia_teligana_event.3.d
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	trigger = {
+		tag = TLG
+		is_year = 1446
+		has_heir = no
+		has_country_modifier = strong_reddy_influence
+	}
+	
+	option = {	#Promise that if ruler dies without heir, Reddy prince will get on the throne
+		name = abindia_teligana_event.3.a
+		ai_chance = { factor = 100 }
+		highlight = yes
+		add_legitimacy = -10
+		add_adm_power = 25
+		add_dip_power = 25
+		add_mil_power = 25
+		custom_tooltip = abindia_teligana_event.3.a.tooltip
+		set_country_flag = teligana_reddy_influence_2_flag
+	}
+	option = {
+		name = abindia_teligana_event.3.b
+		ai_chance = { factor = 0 }
+		add_prestige = -5
+		add_corruption = 1
+	}
+}
+
+country_event = { #Reddy aid the military
+	id = abindia_teligana_event.4
+	title = abindia_teligana_event.4.t
+	desc = abindia_teligana_event.4.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 9
+	}
+	
+	trigger = {
+		tag = TLG
+		is_year = 1445
+		has_country_modifier = strong_reddy_influence
+		OR = {
+			exists = KAK
+			is_at_war = yes
+		}
+	}
+	
+	option = {
+		name = abindia_teligana_event.4.a
+		ai_chance = { factor = 75 }
+		highlight = yes
+		add_mil_power = -25
+		add_country_modifier = {
+			name = reddy_aid_in_army
+			duration = 3650
+		}
+		custom_tooltip = abindia_teligana_event.4.a.tooltip
+		set_country_flag = teligana_reddy_influence_3_flag
+		
+	}
+	option = {
+		name = abindia_teligana_event.4.b
+		ai_chance = { factor = 25 }
+		add_prestige = 5
+	}
+}
+
+country_event = { #Introduce Reddy heir directly
+	id = abindia_teligana_event.5
+	title = abindia_teligana_event.5.t
+	desc = abindia_teligana_event.5.d
+	picture = KING_SICK_IN_BED_eventPicture
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	trigger = {
+		tag = TLG
+		is_year = 1450
+		has_heir = no
+		has_country_modifier = strong_reddy_influence
+		has_ruler = "Lingama"
+		ruler_age = 45
+		has_country_flag = teligana_reddy_influence_2_flag
+	}
+	
+	option = {	#Place the heir now
+		name = abindia_teligana_event.5.a
+		ai_chance = { factor = 75 }
+		highlight = yes
+		add_corruption = 1
+		add_legitimacy = -20
+		define_heir = {
+			male = yes
+			dynasty = "Reddi"
+			name = "Veerabhadra"
+			age = 26
+			claim = 25
+			adm = 3
+			dip = 3
+			mil = 3
+		}
+		custom_tooltip = abindia_teligana_event.5.a.tooltip	#By this point, you can form Reddy 
+		set_country_flag = teligana_reddy_influence_4_flag
+	}
+	option = {	#Keep waiting
+		name = abindia_teligana_event.5.b
+		ai_chance = { factor = 0 }
+		add_legitimacy = 5
+		add_prestige = 5
+		add_ruler_modifier = { 
+			name = teligana_ruler_old
+			duration = -1  
+		}
+	}
+}
+
+country_event = { #Starting ruler dies without heir, promise was made, Reddy ruler rises
+	id = abindia_teligana_event.6
+	title = abindia_teligana_event.6.t
+	desc = abindia_teligana_event.6.d
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			remove_heir = { allow_new_heir = no }
+			remove_consort = yes
+		}
+	}
+	
+	option = {	#Give him throne
+		name = abindia_teligana_event.6.a
+		ai_chance = { factor = 90 }
+		highlight = yes
+		add_legitimacy = -10
+		define_ruler = {
+			male = yes
+			name = "Veerabhadra"
+			dynasty = "Reddi"
+			adm = 3
+			dip = 3
+			mil = 3
+			age = 26
+			claim = 40
+		}
+		define_heir = {
+			male = yes
+			dynasty = "Reddi"
+			name = "Allada II"
+			age = 4
+			claim = 20
+			adm = 3
+			dip = 3
+			mil = 3
+		}
+		remove_country_modifier = strong_reddy_influence
+		custom_tooltip = abindia_teligana_event.5.a.tooltip	#By this point, you can form Reddy
+	}
+	option = {	#Rebel against them
+		name = abindia_teligana_event.6.b
+		ai_chance = { factor = 10 }
+		add_stability = -2
+		add_legitimacy = 5
+		add_prestige = 5
+		add_corruption = 4
+		add_adm_power = -40
+		add_dip_power = -40
+		define_ruler = {
+			male = yes
+			adm = 4
+			dip = 2
+			mil = 4
+			age = 35
+			claim = 20
+		}
+		capital_scope = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+				leader_dynasty = "Reddi"
+			}
+		}
+		remove_country_modifier = strong_reddy_influence
+	}
+}
+
+country_event = { #Curtail Reddy influence (if no agreement)
+	id = abindia_teligana_event.7
+	title = abindia_teligana_event.7.t
+	desc = abindia_teligana_event.7.d
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	trigger = {
+		has_country_modifier = strong_reddy_influence
+		is_year = 1475
+		NOT = { has_ruler = "Lingama" }
+		NOT = { has_country_flag = teligana_reddy_influence_2_flag }
+	}
+	
+	option = {	#Prolong it
+		name = abindia_teligana_event.7.a
+		ai_chance = { factor = 60 }
+		remove_country_modifier = strong_reddy_influence
+		add_country_modifier = {
+			name = strong_reddy_influence
+			duration = 10950
+		}
+	}
+	option = {	#End it
+		name = abindia_teligana_event.7.b
+		ai_chance = { factor = 40 }
+		add_stability = -1
+		add_adm_power = -50
+		add_dip_power = -50
+		add_mil_power = -50
+		remove_country_modifier = strong_reddy_influence
+	}
+}

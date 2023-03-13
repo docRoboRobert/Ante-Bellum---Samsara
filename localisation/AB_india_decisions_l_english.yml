@@ -45,6 +45,9 @@
  abi_arachosia_formation_title:0 "Reestablish Arachosia"
  abi_arachosia_formation_desc:0 "Lands of long-gone Arachosia shall once again be united under strong state. Revive the heritage of old greco-persian province."
  abi_arachosia_formation.tooltip:0 "§YProvinces' names and capitals in Arachosia region will be restored to their old names.§!"
+ abi_reddy_formation_title:0 "Reddi Kingdom"
+ abi_reddy_formation_desc:0 "Reddy caste has overtaken the leadership in Teligana. With enemies crushed and new ruling class established, Kingdom of Reddy can now rise to power."
+ HAS_REDDI_DYNASTY:0 "Ruling dynasty is §MReddi§! or Reddy power is high enough to allow for their dominance"
  
  #Malankara decisions
  

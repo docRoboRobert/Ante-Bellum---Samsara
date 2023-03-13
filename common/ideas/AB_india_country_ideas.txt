@@ -1278,3 +1278,45 @@ BKH_ideas = {
 		province_warscore_cost = -0.15
 	}
 }
+
+#Reddy Ideas
+RDY_ideas = {
+	start = {
+		build_cost = -0.15
+		advisor_cost = -0.1
+	}
+	
+	bonus = {
+		manpower_in_true_faith_provinces= 0.2
+	}
+	
+	trigger = {
+		tag = RDY
+	}
+	free = yes
+
+	RDY_expand_village_rulers = {
+		global_tax_modifier = 0.2
+	}
+	RDY_hindu_patronage = {
+		tolerance_own = 1
+		stability_cost_modifier = -0.1
+	}
+	RDY_warrior_class = {
+		leader_land_shock = 1
+	}
+	RDY_great_forts = {
+		defensiveness = 0.15
+	}
+	RDY_diamond_mines = {
+		global_trade_goods_size_modifier = 0.05
+		inflation_reduction = 0.025
+	}
+	RDY_dharmasutras_admin = {
+		administrative_efficiency = 0.025
+		production_efficiency = 0.05
+	}
+	RDY_literature_revival = {
+		technology_cost = -0.05
+	}
+}

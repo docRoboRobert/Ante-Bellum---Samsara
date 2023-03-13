@@ -1142,4 +1142,92 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
+	
+	abi_reddy_formation = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = formed_reddy_flag }
+			NOT = { exists = RDY }
+			OR = {
+				primary_culture = telegu
+				tag = TLG
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = golconda_area
+				province_id = 4425
+				province_id = 543
+				province_id = 2084
+				province_id = 5193
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			OR = {
+				primary_culture = telegu
+				tag = TLG
+			}
+			NOT = { exists = KAK }
+			NOT = { exists = RDY }
+			prestige = 0
+			golconda_area = {
+				type = all
+				owned_by = ROOT
+			}
+			owns_core_province = 2084
+			owns_core_province = 5193
+			OR = {
+				owns_core_province = 4425
+				owns_core_province = 543
+			}
+			custom_trigger_tooltip = {
+				tooltip = HAS_REDDI_DYNASTY
+				OR = {
+					dynasty = "Reddi"
+					has_country_flag = can_form_reddy_flag
+				}
+			}
+		}
+		effect = {
+			change_tag = RDY
+			restore_country_name = yes
+			add_prestige = 20
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			set_capital = 2084
+			2084 = {
+				add_base_tax = 2
+				add_base_production = 1
+				add_base_manpower = 2
+			}
+			5193 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_reddy_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
+				limit = { has_country_modifier = strong_reddy_influence }
+				remove_country_modifier = strong_reddy_influence
+			}
+			clr_country_flag = teligana_reddy_influence_1_flag
+			clr_country_flag = teligana_reddy_influence_2_flag
+			clr_country_flag = teligana_reddy_influence_3_flag
+			clr_country_flag = teligana_reddy_influence_4_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
 }

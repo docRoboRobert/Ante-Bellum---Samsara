@@ -85,3 +85,25 @@ jain_school_change_timer_ai = {
 
 }
 # # # # #
+
+#Harmonized
+harmonized_jain_group = {
+	global_autonomy = -0.02
+	religion = yes
+}
+
+harmonized_indian_group = {
+	defensiveness = 0.05
+	hostile_attrition = 1
+	religion = yes
+}
+
+harmonized_sarnaism_religion = {
+	stability_cost_modifier = -0.1
+	religion = yes
+}
+
+harmonized_bon_religion = {
+	shock_damage_received = -0.05
+	religion = yes
+}
