@@ -1185,7 +1185,14 @@ country_decisions = {
 				tooltip = HAS_REDDI_DYNASTY
 				OR = {
 					dynasty = "Reddi"
-					has_country_flag = can_form_reddy_flag
+					AND = {
+						has_country_flag = teligana_reddy_influence_4_flag
+						has_country_flag = teligana_reddy_influence_2_flag
+						OR = {
+							has_country_flag = teligana_reddy_influence_1_flag
+							has_country_flag = teligana_reddy_influence_3_flag
+						}
+					}
 				}
 			}
 		}

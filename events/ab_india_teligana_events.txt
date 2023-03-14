@@ -52,7 +52,7 @@ country_event = { #Reddy Demand Privileges
 			name = granted_reddy_influence
 			duration = 10950
 		}
-		custom_tooltip = abindia_teligana_event.3.a.tooltip
+		custom_tooltip = abindia_teligana_event.2.a.tooltip
 		set_country_flag = teligana_reddy_influence_1_flag
 		add_years_of_income = 1
 		add_mil_power = 25
@@ -246,7 +246,7 @@ country_event = { #Starting ruler dies without heir, promise was made, Reddy rul
 			mil = 3
 		}
 		remove_country_modifier = strong_reddy_influence
-		custom_tooltip = abindia_teligana_event.5.a.tooltip	#By this point, you can form Reddy
+		custom_tooltip = abindia_teligana_event.6.a.tooltip	#By this point, you can form Reddy
 	}
 	option = {	#Rebel against them
 		name = abindia_teligana_event.6.b
@@ -265,6 +265,7 @@ country_event = { #Starting ruler dies without heir, promise was made, Reddy rul
 			age = 35
 			claim = 20
 		}
+		custom_tooltip = abindia_teligana_event.6.b.tooltip
 		capital_scope = {
 			spawn_rebels = {
 				type = pretender_rebels
