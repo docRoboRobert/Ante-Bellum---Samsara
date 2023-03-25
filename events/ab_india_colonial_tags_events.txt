@@ -126,6 +126,7 @@ country_event = {
 				tag = COA
 				primary_culture = tamil
 				primary_culture = north_tamil
+				primary_culture = eelami
 			}
 		}
 		capital_scope = {
@@ -190,6 +191,7 @@ country_event = {
 			NOT = { tag = PND }
 			NOT = { primary_culture = tamil }
 			NOT = { primary_culture = north_tamil }
+			NOT = { primary_culture = eelami }
 			NOT = { primary_culture = indian_arabic }
 			NOT = { primary_culture = telegu }
 		}
@@ -255,6 +257,7 @@ country_event = {
 			NOT = { tag = PND }
 			NOT = { primary_culture = tamil }
 			NOT = { primary_culture = north_tamil }
+			NOT = { primary_culture = eelami }
 			NOT = { primary_culture = indian_arabic }
 			NOT = { primary_culture = telegu }
 		}

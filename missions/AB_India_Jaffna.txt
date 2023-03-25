@@ -1,0 +1,328 @@
+JFN_first = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = JFN } 
+
+	JFN_sieze_company = {
+		icon = mission_portuguese_malacca
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4409
+				province_id = 5277
+				province_id = 572
+			}
+		} 
+		
+		trigger = {
+			owns_or_non_sovereign_subject_of = 4409
+			owns_or_non_sovereign_subject_of = 5277
+			owns_or_non_sovereign_subject_of = 572
+			HTC = {
+				NOT = {
+					owns_or_non_sovereign_subject_of = 4409
+					owns_or_non_sovereign_subject_of = 5277
+					owns_or_non_sovereign_subject_of = 572
+				}
+			}
+		}
+		
+		effect = {
+			add_claim = 4415
+			add_claim = 5283
+			add_treasury = 250
+			add_permanent_claim = 4408
+			add_prestige = 20
+		}
+	}
+
+	JFN_assert_control = {
+		icon = mission_naval_dominance
+		position = 2
+		required_missions = { JFN_sieze_company } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	JFN_raid_outside = {
+		icon = mission_end_arakan_piracy
+		position = 3
+		required_missions = { JFN_assert_control } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	JFN_piracy_question = {
+		icon = mission_pirate_flag
+		position = 5
+		required_missions = {
+			JFN_raid_outside
+			JFN_looking_beyond
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	JFN_crush_maldives = {
+		icon = mission_pirate_fleet
+		position = 6
+		required_missions = { JFN_piracy_question } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	JFN_land_of_pandyas = {
+		icon = mission_southern_frontier
+		position = 7
+		required_missions = { JFN_rule_over_strait } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	JFN_northern_tamils = {
+		icon = mission_conquer_andhra_vij
+		position = 8
+		required_missions = {
+			JFN_land_of_pandyas
+			JFN_land_of_chola
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	JFN_spread_the_hindu = {
+		icon = mission_vedic_education
+		position = 10
+		required_missions = { JFN_deal_with_vanni } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	JFN_trade_advance = {
+		icon = mission_market_place_with_asian_traders
+		position = 12
+		provinces_to_highlight = {  }
+
+		trigger = {
+			num_of_centers_of_trade = 5
+			num_of_light_ship = 20
+			4410 = {
+				is_strongest_trade_power = ROOT
+				trade_share = {
+					country = ROOT
+					share = 25
+				}
+			}
+			5276 = {
+				OR = {
+					province_has_center_of_trade_of_level = 3
+					development = 30
+					province_trade_power = 30
+				}
+			}
+		}
+
+		effect = {
+			add_years_of_income = 1
+		}
+	}
+}
+JFN_second = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = JFN } 
+
+	JFN_conquer_coast = {
+		icon = mission_unite_coromandel
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4408
+				province_id = 5278
+				province_id = 4407
+			}
+		}
+
+		trigger = {
+			owns_or_non_sovereign_subject_of = 4408
+			owns_or_non_sovereign_subject_of = 5278
+			owns_or_non_sovereign_subject_of = 4407
+		}
+
+		effect = {
+			add_prestige = 10
+			add_permanent_claim = 2099
+			add_permanent_claim = 4409
+			add_permanent_claim = 5277
+			add_splendor = 50
+		}
+	}
+
+	JFN_pacify_the_inside = {
+		icon = mission_hills_of_gondwana
+		position = 2
+		required_missions = {
+			JFN_sieze_company
+			JFN_conquer_coast
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	JFN_lanka_united = {
+		icon = mission_conquer_lanka
+		position = 3
+		required_missions = { JFN_pacify_the_inside } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	JFN_looking_beyond = {
+		icon = mission_retake_ceuta
+		position = 4
+		required_missions = { JFN_lanka_united } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	JFN_rule_over_strait = {
+		icon = mission_cromandel_coast
+		position = 6
+		required_missions = { JFN_looking_beyond } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	JFN_land_of_chola = {
+		icon = mission_coromandel_expansion
+		position = 7
+		required_missions = { JFN_rule_over_strait } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	JFN_deal_with_vanni = {
+		icon = mission_prepare_an_invasion_force
+		position = 9
+		provinces_to_highlight = {
+			province_id = 2100
+		}
+
+		trigger = {
+			2100 = {
+				NOT = { unrest = 0.5 }
+				NOT = { local_autonomy = 1 }
+				NOT = { devastation = 1 }
+				NOT = { nationalism = 1 }
+			}
+			NOT = { exists = VNN }
+		}
+
+		effect = {
+			add_stability = 1
+			2100 = { remove_core = VNN }
+		}
+	}
+
+	JFN_settle_tamils = {
+		icon = mission_conquer_malwa_bah
+		position = 10
+		required_missions = { JFN_deal_with_vanni } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	JFN_tamil_lanka = {
+		icon = mission_integrate_jaffna
+		position = 11
+		required_missions = {
+			JFN_spread_the_hindu
+			JFN_settle_tamils
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	JFN_develop_goods = {
+		icon = mission_industrialize_bengal
+		position = 12
+		provinces_to_highlight = {
+			OR = {
+				area = lanka_area
+				area = south_lanka_area
+			}
+		}
+
+		trigger = {
+			grown_by_development = 100
+			OR = {
+				workshop = 9
+				counting_house = 9
+			}
+			lanka_area = {
+				type = all
+				num_of_times_improved = 5
+				development = 10
+				num_of_buildings_in_province = 3
+			}
+			south_lanka_area = {
+				type = all
+				num_of_times_improved = 5
+				development = 10
+				num_of_buildings_in_province = 3
+			}
+		}
+
+		effect = {
+			add_years_of_income = 1.5
+			add_adm_power = 75
+			add_dip_power = 75
+		}
+	}
+}

@@ -129,6 +129,7 @@ country_decisions = {
 						NOT = { culture = telegu }
 						NOT = { culture = north_tamil }
 						NOT = { culture = malayankara_toma }
+						NOT = { culture = eelami }
 					}
 				}
 				AND = {
@@ -139,6 +140,7 @@ country_decisions = {
 						NOT = { culture = telegu }
 						NOT = { culture = tamil }
 						NOT = { culture = malayankara_toma }
+						NOT = { culture = eelami }
 					}
 				}
 			}
