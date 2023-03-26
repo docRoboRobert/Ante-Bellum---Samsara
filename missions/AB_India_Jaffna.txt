@@ -42,22 +42,173 @@ JFN_first = {
 		icon = mission_naval_dominance
 		position = 2
 		required_missions = { JFN_sieze_company } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {  }
 
-		trigger = {  } 
+		trigger = {
+			navy_size_percentage = 1
+			OR = {
+				has_flagship = yes
+				num_of_heavy_ship = 2
+			}
+			num_of_ports = 6
+			5180 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+				has_trader = ROOT
+			}
+			561 = { has_trader = ROOT }
+			all_neighbor_country = {
+				NOT = { navy_size = ROOT }
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			if = {
+				limit = {
+					5276 = {
+						NOT = { has_building = shipyard }
+						NOT = { has_building = grand_shipyard }
+						NOT = { has_building = coastal_defence }
+					}
+				}
+				5276 = {
+					add_building = shipyard
+					add_building = coastal_defence
+				}
+			}
+			add_navy_tradition = 10
+			add_country_modifier = { 
+				name = abi_navy_reforms
+				duration = 3650
+			}
+			5180 = { add_permanent_claim = ROOT }
+			5283 = { add_permanent_claim = ROOT }
+			custom_tooltip = JFN_assert_control.tooltip
+			hidden_effect = {
+				if = {
+					limit = { has_flagship = no }
+					random_owned_province = {
+						limit = { has_port = yes }
+						ROOT = {
+							create_flagship = {    
+								name = "Sri Jaffna"
+								type = galley
+							}
+						}
+					}
+				}
+				if = {
+					limit = { has_flagship = yes }
+					define_admiral = {
+						shock = 3
+						fire = 2
+						manuever = 4
+						siege = 2
+					}
+				}
+			}
+		}
 	}
 
 	JFN_raid_outside = {
 		icon = mission_end_arakan_piracy
 		position = 3
 		required_missions = { JFN_assert_control } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4415
+				province_id = 2026
+				province_id = 5180
+				province_id = 5283
+				province_id = 2101
+				province_id = 4410
+			}
+		}
 
-		trigger = {  } 
+		trigger = {
+			OR = {
+				OR = {
+					4415 = {
+						owned_by = ROOT
+					}
+					4415 = {
+						controlled_by = ROOT
+						devastation = 10
+						is_looted = yes
+					}
+				}
+				OR = {
+					2026 = {
+						owned_by = ROOT
+					}
+					2026 = {
+						controlled_by = ROOT
+						devastation = 10
+						is_looted = yes
+					}
+				}
+			}
+			OR = {
+				5180 = {
+					owned_by = ROOT
+				}
+				5180 = {
+					controlled_by = ROOT
+					devastation = 10
+					is_looted = yes
+				}
+				5180 = { has_province_modifier = slaves_raided }
+			}
+			OR = {
+				5283 = {
+					owned_by = ROOT
+				}
+				5283 = {
+					controlled_by = ROOT
+					devastation = 10
+					is_looted = yes
+				}
+				5283 = { has_province_modifier = slaves_raided }
+			}
+			OR = {
+				2101 = {
+					owned_by = ROOT
+				}
+				2101 = {
+					controlled_by = ROOT
+					devastation = 10
+					is_looted = yes
+				}
+				2101 = { has_province_modifier = slaves_raided }
+			}
+			OR = {
+				4410 = {
+					owned_by = ROOT
+				}
+				4410 = {
+					controlled_by = ROOT
+					devastation = 10
+					is_looted = yes
+				}
+				4410 = { has_province_modifier = slaves_raided }
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			add_years_of_income = 1
+			add_sailors = 2000
+			add_manpower = 2
+			add_splendor = 100
+			every_province = {
+				limit = {
+					area = madura_area
+					NOT = { owned_by = ROOT }
+				}
+				add_devastation = 50
+			}
+		}
 	}
 
 	JFN_piracy_question = {
@@ -68,10 +219,93 @@ JFN_first = {
 			JFN_looking_beyond
 		}
 		provinces_to_highlight = {  } 
+		
+		trigger = {
+			num_of_light_ship = 25
+			OR = {
+				num_of_heavy_ship = 5
+				num_of_galley = 20
+			}
+			navy_size_percentage = 1
+			employed_advisor = {
+				category = DIP
+			}
+			OR = {
+				estate_influence = {
+					estate = estate_jains
+					influence = 60
+				}
+				estate_influence = {
+					estate = estate_burghers
+					influence = 60
+				}
+			}
+			OR = {
+				num_of_estate_privileges = {
+					estate = estate_jains
+					value = 4
+				}
+				num_of_estate_privileges = {
+					estate = estate_burghers
+					value = 4
+				}
+			}
+			trade_income_percentage = 0.4
+			num_ships_privateering = 20
+			OR = {
+				mercantilism = 16
+				trade_efficiency = 0.15
+			}
+			4410 = {
+				has_privateer_share_in_trade_node = {
+					who = ROOT
+					share = 0.10
+				}
+			}
+			561 = {
+				privateer_power = {
+					country = FROM
+					share = 20
+				}
+			}
+			4410 = {
+				OR = {
+					privateer_power = {
+						country = FROM
+						share = 25
+					}
+					trade_share = {
+						country = ROOT
+						share = 15
+					}
+				}
+			}
+		}
 
-		trigger = {  } 
-
-		effect = {  } 
+		effect = {
+			add_mercantilism = 4
+			custom_tooltip = JFN_piracy_question.tooltip
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						OR = {
+							region = coromandel_region
+							region = deccan_region
+						}
+						has_port = yes
+						province_has_center_of_trade_of_level = 1
+					}
+					add_claim = ROOT
+				}
+			}
+			1248 = { add_permanent_claim = ROOT }
+			5275 = { add_permanent_claim = ROOT }
+			country_event = { 
+				id = abindia_mission.10
+				days = 1
+			}
+		}
 	}
 
 	JFN_crush_maldives = {

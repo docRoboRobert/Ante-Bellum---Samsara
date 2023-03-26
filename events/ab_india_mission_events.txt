@@ -523,3 +523,46 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = abindia_mission.10
+	title = abindia_mission.10.t
+	desc = abindia_mission.10.d
+	picture = BUCCANEERS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	#Become pirate republic
+		name = abindia_mission.10.a
+		add_stability = -1
+		add_adm_power = -50
+		add_dip_power = -50
+		add_mil_power = -50
+		add_prestige = -25
+		change_government = republic
+		change_government_reform_progress = 200
+		set_government_rank = 2
+		add_republican_tradition = 10
+		add_government_reform = pirate_republic_reform
+		add_country_modifier = { 
+			name = pirate_heaven_of_lanka
+			duration = -1
+			hidden = no
+		}
+		override_country_name = JFN_CONFEDERACY_OF_EELAM
+	}
+	
+	option = {
+		name = abindia_mission.10.b
+		add_country_modifier = { 
+			name = JFN_pirates_at_service
+			duration = -1
+			hidden = no
+		}
+		add_country_modifier = { 
+			name = JFN_state_funded_pirate_heaven
+			duration = 18250
+			hidden = no
+		}
+	}
+}

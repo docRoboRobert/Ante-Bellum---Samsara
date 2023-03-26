@@ -105,6 +105,10 @@
  abindia_mission.9.b:0 "The old capital of course!"
  abindia_mission.9.c:0 "We shall rule from Polonnaruwa"
  abindia_mission.9.e:0 "Dambulla is a holy place we shall be proud of"
+ abindia_mission.10.t:0 "Potential of the Pirate Takeover"
+ abindia_mission.10.d:0 "Ever since the growth of the pirate factions within our nation, we are facing a potential takeover. The government of Jaffna has been funding buccaneers and privateers to work for the state. Investing in piracy has brought us immense wealth but we must now face the consequences of it. We have allowed them to settle in our island and use it as their base of operation as long as they plundered in our benefit and left alone our interests. Adventurers and crimminals from all around the region would come to seek new opportunity in this new buisness. Recently, pirate leaders began organizing and forming clanns. They've gained trust of local governors that were subverted by the potential revenue from piracy and influenced our nation greatly. \nNow we shall take an action whilst we still can. The pirate factions have already gained strong support. Many of our people don't mind forming official comitees to coordinate common actions. Not only that, some of those people, allured by the vision of freedom and shared power, don't even mind if monarchy stepped down and only held representative power. Most suggest that we need to formallize our relations with pirate factions in one form or another, to ensure maximum benefits for us and maintain stability within our realm."
+ abindia_mission.10.a:0 "Era of cruel rule is over. Era of gold begins!"
+ abindia_mission.10.b:0 "We must formallize our relations with the pirates"
  
  #Flavour for Sri Lanka
  abindia_lankan_event.1.t:0 "Looming Upheaval"
