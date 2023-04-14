@@ -2208,7 +2208,7 @@ dharmic = {
 
 	zunist = {
 		color = { 255 255 255 }
-		icon = 38
+		icon = 44
 		province = {
 			local_missionary_strength = 0.02
 		}
@@ -2897,7 +2897,7 @@ reformed_pagan = {
 			tolerance_own = 1
 			idea_cost = -0.05
 		}
-		icon = 39
+		icon = 45
 		country_as_secondary = {
 			hostile_attrition = 1
 			garrison_size = 0.1
@@ -2927,7 +2927,7 @@ reformed_pagan = {
 			may_perform_slave_raid = yes
 			naval_forcelimit_modifier = 0.10
 		}
-		icon = 40
+		icon = 46
 		country_as_secondary = {
 			merc_maintenance_modifier = -0.1
 			galley_power = 0.2
@@ -2954,7 +2954,7 @@ reformed_pagan = {
 	
 	reformed_baltic = {
 		color = { 132 223 148 }
-		icon = 41
+		icon = 47
 		country = {
 			global_regiment_cost = -0.1
 			production_efficiency = 0.1
@@ -2992,7 +2992,7 @@ reformed_pagan = {
 			global_unrest = -1
 			defensiveness = 0.1
 		}
-		icon = 42
+		icon = 48
 		
 		uses_church_power = yes				# Uses church power/aspect mechanics
 		
@@ -3463,7 +3463,7 @@ zoroastrian_group = {
 
 	manichaean = {
 		color = { 37 147 139 }
-		icon = 37
+		icon = 43
 		can_have_secondary_religion = yes
 		
 		uses_anglican_power = yes				# Uses church power/aspect mechanics
