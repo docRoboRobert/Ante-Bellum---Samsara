@@ -1,4 +1,14 @@
 
+on_monarch_death = {
+	if = {
+		limit = {
+			tag = TLG
+			has_country_flag = teligana_reddy_influence_2_flag
+			NOT = { has_ruler = "Lingama" }
+		}
+		country_event = { id = abindia_teligana_event.6 }
+	}
+}
 # ROOT = Overlord, FROM = Minor
 on_dependency_gained = {
 	FROM = {
