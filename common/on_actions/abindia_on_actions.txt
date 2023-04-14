@@ -2,6 +2,102 @@
 on_monarch_death = {
 	if = {
 		limit = {
+			tag = ANS
+			BRA = {
+				has_country_flag = albrecht_achilles_flag
+			}
+		}
+		BRA = {
+			clr_country_flag = albrecht_achilles_flag #Just to be sure
+			kill_heir = {} #If Albrecht Achilles dies in Ansbach he will also be dead in Brandenburg, will appear as normal death of heir to BRA.
+		}
+	}
+	if = {
+		limit = { has_country_modifier = sought_after_bachelor }
+		remove_country_modifier = sought_after_bachelor
+	}
+	if = {
+		limit = {
+			tag = SAX
+			has_country_flag = sax_thuringen_split_to_happen
+			OR = {
+				NOT = { dynasty = "von Wettin" }
+				NOT = { senior_union_with = THU }
+				has_regency = yes
+			}
+		}
+		clr_country_flag = sax_thuringen_split_to_happen
+	}
+	if = {
+		limit = { tag = SAM }
+		country_event = { id = polynesian.35 }
+	}
+	if = {
+		limit = { tag = TOG }
+		country_event = { id = polynesian.36 }
+	}
+	if = {	# Ascension of Trailokanat	
+		limit = { tag = AYU }
+		country_event = { id = flavor_suk.1 }
+	}
+	if = {
+		limit = { tag = GOT }
+		country_event = { id = flavor_got.37 }
+	}
+	if = {
+		limit = { has_government_attribute = no_stability_loss_on_monarch_death }
+		add_stability = 1
+	}
+	burgundian_inheritance_start_effect = yes
+	ladislaus_postumus_king_died_effect = yes
+	joan_de_trastamara_king_died_effect = yes
+	events = {
+		flavor_wal.1 # Vlad the Impaler. So that he doesn't try to usurp his father.
+		flavor_nav.4 # Navarra succession event
+		flavor_sax.8 # Treaty of Leipzig
+		flavor_pap.16 # Borgia Pope
+		flavor_pap.19 # death of borgia pope
+		flavor_tus.22 # Medici Pope
+		flavor_tus.24 # death of the Medici Pope
+		majapahit.8 # Majapahit pretenders
+		flavor_mal.11 # Mali pretenders
+		flavor_mal.47 # Pilgrimage ends prematurely
+	}
+	#AB
+	if = {
+		limit = {
+			has_reform = japanempire
+			legitimacy = 90
+		}
+		add_stability = 1
+	}
+	if = {
+		limit = {
+			has_reform = bultsardom
+		}
+		country_event = { id = ab_bulgaria.4 }
+	}
+	if = {
+		limit = {
+			has_ruler_flag = eng_heir_in_waiting
+		}
+		clr_ruler_flag = eng_heir_in_waiting
+	}
+	else = {
+		country_event = { id = antebellum_england.1 }
+	}
+	if = {
+		limit = {
+			tag = GLH
+			NOT = {
+				mission_completed = glh_succession
+			}
+		}
+		country_event = { id = ab_ghorde.2 }
+	}
+	#India
+	if = {
+		limit = {
 			tag = TLG
 			has_country_flag = teligana_reddy_influence_2_flag
 			NOT = { has_ruler = "Lingama" }
@@ -11,6 +107,164 @@ on_monarch_death = {
 }
 # ROOT = Overlord, FROM = Minor
 on_dependency_gained = {
+	if = {
+		limit = {
+			FROM = {
+				has_reform = dutch_republic
+			}
+		}
+		ROOT = {
+			country_event = {
+				id = dutch_republic.31
+			}# States General falls under a PU
+		}
+	}
+	#AB
+	if = {
+		limit = {
+			FROM = {
+				OR = {
+					tag = FEO
+					tag = GTH
+				}
+				is_subject_of = GLH
+			}
+		}
+		FROM = { set_country_flag = feo_was_vassalized }
+	}
+	if = {
+		limit = {
+			FROM = {
+				OR = {
+					tag = MGS
+					was_tag = MGS
+				}
+				is_subject_of_type = tributary_state
+			}
+		}
+		FROM = { set_country_flag = mgs_became_tributary }
+	}
+	if = {
+		limit = {
+			FROM = { has_reform = irish_highking_opp }
+		}
+		FROM = { save_event_target_as = hk_ire }
+		country_event = { id = hk_ire.9 } # Foreign power vassalizes HK
+		country_event = { id = hk_ire.14 } # Irish minor vassalizes HK
+	}
+	# Workaround for AI picking Vassalization Peace Option
+	# instead of Become Ruirech peace option
+	if = {
+		limit = {
+			ai = yes
+			FROM = {
+				ai = yes
+				NOT = { has_country_modifier = ire_high_king_opp } 
+				NOT = { is_subject_of_type = ire_vassal }
+				OR = {
+					primary_culture = irish
+					primary_culture = norse_gael
+				}
+				capital_scope = {
+					OR = {
+						area = munster_area
+						area = ulster_area
+						area = connacht_area
+						area = leinster_area
+					}
+				}
+			}
+			OR = {
+				primary_culture = irish
+				primary_culture = norse_gael
+			}
+			capital_scope = {
+				OR = {
+					area = munster_area
+					area = ulster_area
+					area = connacht_area
+					area = leinster_area
+				}
+			}
+		}
+		FROM = { grant_independence = yes }
+		create_subject = {
+			subject_type = ire_vassal
+			subject = FROM
+		}
+		FROM = { add_government_reform = irish_ruirech }
+	}
+	FROM = {
+		# Using `days = 21` is extremely important for the AI
+		# without it the event will because the capital_scope
+		# triggers of the event will fail for some reason.
+		#
+		# Also if we fire on 1 day then it means that players
+		# that have select colonial nation unpaused will end up
+		# being forced to spend 1000 if they did not want crown
+		# colony
+		country_event = { id = colonial_england.1 days = 21 }
+		country_event = { id = colonial_england.2 days = 21 }
+		country_event = { id = colonial_england.3 days = 21 }
+		country_event = { id = colonial_england.4 days = 21 }
+		country_event = { id = colonial_england.5 days = 21 }
+		country_event = { id = colonial_england.6 days = 21 }
+		country_event = { id = colonial_england.7 days = 21 }
+		country_event = { id = colonial_england.8 days = 21 }
+		country_event = { id = colonial_england.9 days = 21 }
+		country_event = { id = colonial_england.10 days = 21 }
+		country_event = { id = colonial_england.11 days = 21 }
+		country_event = { id = colonial_england.12 days = 21 }
+		country_event = { id = colonial_andalusia.1 days = 21 }
+		country_event = { id = colonial_andalusia.2 days = 21 }
+		country_event = { id = colonial_andalusia.3 days = 21 }
+		country_event = { id = colonial_andalusia.4 days = 21 }
+		country_event = { id = colonial_andalusia.5 days = 21 }
+		country_event = { id = colonial_andalusia.6 days = 21 }
+		country_event = { id = colonial_andalusia.7 days = 21 }
+		country_event = { id = colonial_andalusia.8 days = 21 }
+		country_event = { id = colonial_andalusia.9 days = 21 }
+		country_event = { id = colonial_andalusia.10 days = 21 }
+		country_event = { id = colonial_andalusia.11 days = 21 }
+		country_event = { id = colonial_andalusia.12 days = 21 }
+		country_event = { id = colonial_nse.1 days = 21 }
+		country_event = { id = colonial_nse.2 days = 21 }
+		country_event = { id = colonial_nse.3 days = 21 }
+		country_event = { id = colonial_nse.4 days = 21 }
+		country_event = { id = colonial_nse.5 days = 21 }
+		country_event = { id = colonial_nse.6 days = 21 }
+		country_event = { id = colonial_nse.7 days = 21 }
+		country_event = { id = colonial_nse.8 days = 21 }
+		country_event = { id = colonial_nse.9 days = 21 }
+		country_event = { id = colonial_nse.10 days = 21 }
+		country_event = { id = colonial_nse.11 days = 21 }
+		country_event = { id = colonial_nse.12 days = 21 }
+		country_event = { id = colonial_francia.1 days = 21 }
+		country_event = { id = colonial_francia.2 days = 21 }
+		country_event = { id = colonial_francia.3 days = 21 }
+		country_event = { id = colonial_francia.4 days = 21 }
+		country_event = { id = colonial_francia.5 days = 21 }
+		country_event = { id = colonial_francia.6 days = 21 }
+		country_event = { id = colonial_francia.7 days = 21 }
+		country_event = { id = colonial_francia.8 days = 21 }
+		country_event = { id = colonial_francia.9 days = 21 }
+		country_event = { id = colonial_francia.10 days = 21 }
+		country_event = { id = colonial_francia.11 days = 21 }
+		country_event = { id = colonial_francia.12 days = 21 }
+		country_event = { id = colonial_iberia.1 days = 21 }
+		country_event = { id = colonial_iberia.2 days = 21 }
+		country_event = { id = colonial_iberia.3 days = 21 }
+		country_event = { id = colonial_iberia.4 days = 21 }
+		country_event = { id = colonial_iberia.5 days = 21 }
+		country_event = { id = colonial_iberia.6 days = 21 }
+		country_event = { id = colonial_iberia.7 days = 21 }
+		country_event = { id = colonial_iberia.8 days = 21 }
+		country_event = { id = colonial_iberia.9 days = 21 }
+		country_event = { id = colonial_iberia.10 days = 21 }
+		country_event = { id = colonial_iberia.11 days = 21 }
+		country_event = { id = colonial_iberia.12 days = 21 }
+	}
+	#India
 	FROM = {
 		# Samsara
 		country_event = {
