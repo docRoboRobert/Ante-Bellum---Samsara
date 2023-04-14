@@ -5,7 +5,7 @@ primary_culture = baluchi
 add_accepted_culture = brahui
 religion = zoroastrian
 technology_group = muslim
-capital = 577	# Quetta
+capital = 576	# Qalat
 
 #Mirwaris, ancestors of later Kambarani dynasty:
 

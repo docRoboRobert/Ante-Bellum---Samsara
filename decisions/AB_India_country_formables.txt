@@ -1159,7 +1159,7 @@ country_decisions = {
 				province_id = 4425
 				province_id = 543
 				province_id = 2084
-				province_id = 5193
+				province_id = 5297
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -1176,7 +1176,7 @@ country_decisions = {
 				owned_by = ROOT
 			}
 			owns_core_province = 2084
-			owns_core_province = 5193
+			owns_core_province = 5297
 			OR = {
 				owns_core_province = 4425
 				owns_core_province = 543
@@ -1212,7 +1212,7 @@ country_decisions = {
 				add_base_production = 1
 				add_base_manpower = 2
 			}
-			5193 = {
+			5297 = {
 				add_base_tax = 1
 				add_base_production = 1
 				add_base_manpower = 1

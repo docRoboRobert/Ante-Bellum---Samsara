@@ -442,7 +442,7 @@ goa_port = {
 
 malankara_statue = {
 	
-	start = 5182
+	start = 5286
 	
 	date = 894.01.01
 	
@@ -937,7 +937,7 @@ probandar_port = {
 
 ram_setu = {
 	
-	start = 5180
+	start = 5284
 	
 	date = 50.01.01
 	

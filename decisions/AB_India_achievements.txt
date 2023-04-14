@@ -245,11 +245,11 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 5191
+				province_id = 5295
 				province_id = 4420
 				province_id = 2100
-				province_id = 5186
-				province_id = 5184
+				province_id = 5290
+				province_id = 5288
 				province_id = 4414
 				province_id = 2085
 				province_id = 538
@@ -281,7 +281,7 @@ country_decisions = {
 			}
 			OR = {
 				owns = 2100
-				owns = 5186
+				owns = 5290
 			}
 			owns_core_province = 2026
 			owns_core_province = 536
@@ -290,9 +290,9 @@ country_decisions = {
 			owns = 5276
 			owns = 538
 			owns = 2085
-			owns = 5184
+			owns = 5288
 			owns = 4414
-			owns = 5191
+			owns = 5295
 		}
 		effect = {
 			custom_tooltip = india_achievement_diff_5

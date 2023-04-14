@@ -25,11 +25,13 @@ christian = {
 		}
 		country = {
 			tolerance_own = 1
-			manpower_in_true_faith_provinces= 0.1
+			global_heathen_missionary_strength = 0.01
 		}
+		# AB {{{
 		allowed_center_conversion = {
 			protestant
 		}
+		# }}}
 		
 		country_as_secondary = {
 			diplomatic_reputation = 1
@@ -717,14 +719,17 @@ christian = {
 				discipline = 0.05
 				manpower_recovery_speed = 0.1
 				
+				# AB {{{
 				allow = {
 					religion = orthodox
 				}
 				visible = {
 					religion = orthodox
 				}
+				# }}}
+
 				ai_will_do = {
-					factor = 1
+					factor = 0.05
 					modifier = {
 						factor = 0
 						is_at_war = no
@@ -740,14 +745,17 @@ christian = {
 				global_unrest = -3
 				harsh_treatment_cost = -0.25
 				
+				# AB {{{
 				allow = {
 					religion = orthodox
 				}
 				visible = {
 					religion = orthodox
 				}
+				# }}}
+
 				ai_will_do = {
-					factor = 1
+					factor = 0.02
 					modifier = {
 						factor = 0
 						NOT = {
@@ -775,12 +783,15 @@ christian = {
 				development_cost = -0.10
 				build_cost = -0.1
 				
+				# AB {{{
 				allow = {
 					religion = orthodox
 				}
 				visible = {
 					religion = orthodox
 				}
+				# }}}
+
 				ai_will_do = {
 					factor = 0
 				}
@@ -789,28 +800,36 @@ christian = {
 			icon_nicholas = {
 				improve_relation_modifier = 0.25
 				ae_impact = -0.1
+				
+				# AB {{{
 				allow = {
 					religion = orthodox
 				}
 				visible = {
 					religion = orthodox
 				}
+				# }}}
+
 				ai_will_do = {
-					factor = 0.5
+					factor = 0.01
 				}
 			}
 
 			icon_climacus = {
 				global_institution_spread = 0.25
 				embracement_cost = -0.2
+
+				# AB {{{
 				allow = {
 					religion = orthodox
 				}
 				visible = {
 					religion = orthodox
 				}
+				# }}}
+
 				ai_will_do = {
-					factor = 0.8
+					factor = 0.02
 					modifier = {
 						factor = 0
 						NOT = {
@@ -836,15 +855,36 @@ christian = {
 				}
 			}
 			
+			# AB {{{
 			icon_rostislav = {
 				global_missionary_strength = 0.02
 				missionaries = 1
 				
 				allow = {
 					religion = orthodox
-					OR = {
+					if = {
+						limit = {
+							has_country_flag = has_unlocked_rostislav_icon
+						}
+						has_country_flag = has_unlocked_rostislav_icon
+					}
+					else_if = {
+						limit = {
+							has_mission = mva_canonize
+						}
 						mission_completed = mva_canonize
+					}
+					else_if = {
+						limit = {
+							has_mission = bulgaria_revive_moravia
+						}
 						mission_completed = bulgaria_revive_moravia
+					}
+					else = {
+						custom_trigger_tooltip = {
+							tooltip = only_mva_and_bul_can_unlock
+							always = no
+						}
 					}
 				}
 				visible = {
@@ -948,10 +988,32 @@ christian = {
 					}
 				}
 			}
+			
+			icon_timur = {
+				manpower_in_true_faith_provinces = 0.1
+				culture_conversion_cost = -0.2
+				allow = {
+					religion = nestorian
+					any_owned_province = {
+						has_great_project = {
+							type = tomb_timur
+							tier = 1
+						}	
+					}
+				}
+				visible = {
+					religion = nestorian
+				}
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			# }}}
 		}
 	}
 	
-	
+	# AB {{{
+	# TODO: add `heretic = { HERETIC_NAME_1 HERETIC_NAME_2 HERETIC_NAME_N... }`
 	nestorian = {
 	
 		flags_with_emblem_percentage = 0
@@ -995,8 +1057,9 @@ christian = {
 				visible = {
 					religion = orthodox
 				}
+
 				ai_will_do = {
-					factor = 1
+					factor = 0.01
 					modifier = {
 						factor = 0
 						is_at_war = no
@@ -1019,7 +1082,7 @@ christian = {
 					religion = orthodox
 				}
 				ai_will_do = {
-					factor = 1
+					factor = 0.02
 					modifier = {
 						factor = 0
 						NOT = {
@@ -1068,7 +1131,7 @@ christian = {
 					religion = orthodox
 				}
 				ai_will_do = {
-					factor = 0.5
+					factor = 0.01
 				}
 			}
 
@@ -1082,7 +1145,7 @@ christian = {
 					religion = orthodox
 				}
 				ai_will_do = {
-					factor = 0.8
+					factor = 0.02
 					modifier = {
 						factor = 0
 						NOT = {
@@ -1219,8 +1282,29 @@ christian = {
 					}
 				}
 			}
+			
+			icon_timur = {
+				manpower_in_true_faith_provinces = 0.1
+				culture_conversion_cost = -0.2
+				allow = {
+					religion = nestorian
+					any_owned_province = {
+						has_great_project = {
+							type = tomb_timur
+							tier = 1
+						}	
+					}
+				}
+				visible = {
+					religion = nestorian
+				}
+				ai_will_do = {
+					factor = 0
+				}
+			}
 		}
 	}
+	# }}}
 	
 	coptic = {
 	
@@ -1857,6 +1941,9 @@ muslim = {
 			trade_efficiency = 0.1
 			heir_chance = 1.0
 		}
+		allowed_center_conversion = {
+			zoroastrian
+		}
 		province = {
 			local_missionary_strength = -0.02
 		}
@@ -1947,6 +2034,7 @@ eastern = {
 		uses_karma = yes
 	}
 	
+	# AB {{{
 	maitreya = {
         color = { 222 0 43 }
         icon = 34
@@ -1978,6 +2066,7 @@ eastern = {
         
         uses_karma = yes
     }
+	# }}}
 	
 	vajrayana = {
 		color = { 204 76 76 }
@@ -2114,6 +2203,37 @@ dharmic = {
 			}
 		}
 		
+		heretic = { BHAKTI }
+	}
+
+	zunist = {
+		color = { 255 255 255 }
+		icon = 38
+		province = {
+			local_missionary_strength = 0.02
+		}
+		country = {
+			land_morale = 0.10
+			shock_damage_received = -0.1
+		}
+		country_as_secondary = {
+			land_morale = 0.05
+			shock_damage_received = -0.05
+		}
+
+		uses_church_power = yes				# Uses church power/aspect mechanics
+		aspects = {
+			zun_festival_sun
+			zun_great_purification
+			zun_warriors_of_light
+			zun_shrines
+			zun_judgment
+			zun_safeguard
+			zun_wrath
+			zun_crusade
+		}
+		aspects_name = ZUNIST_PRACTICE
+
 		heretic = { BHAKTI }
 	}
 
@@ -2734,6 +2854,7 @@ dharmic = {
 	crusade_name = CRUSADE
 }
 
+# AB {{{
 reformed_pagan = {
 	defender_of_faith = yes
 	
@@ -2770,9 +2891,130 @@ reformed_pagan = {
 		heretic = { OLD_SLAVIC }
 	}
 
+	reformed_hellenic = {
+		color = { 17 168 225 }
+		country = {
+			tolerance_own = 1
+			idea_cost = -0.05
+		}
+		icon = 39
+		country_as_secondary = {
+			hostile_attrition = 1
+			garrison_size = 0.1
+		}
+		
+		uses_church_power = yes				# Uses church power/aspect mechanics
+		
+		aspects = {
+			aspect_zeus
+			aspect_poseidon
+			aspect_demeter
+			aspect_ares
+			aspect_hera
+			aspect_apollo
+			aspect_athena
+			aspect_hades
+			aspect_artemis
+		}
+		aspects_name = GREEK_PANTHEON
+		
+		heretic = { HELLENIC }
+	}
+	
+	reformed_norse = {
+		color = { 168 168 168 }
+		country = {
+			may_perform_slave_raid = yes
+			naval_forcelimit_modifier = 0.10
+		}
+		icon = 40
+		country_as_secondary = {
+			merc_maintenance_modifier = -0.1
+			galley_power = 0.2
+		}
+		
+		uses_church_power = yes				# Uses church power/aspect mechanics
+		
+		aspects = {
+			blessing_odin 
+			blessing_tor 
+			blessing_freya 
+			blessing_snotra 
+			blessing_tyr 
+			blessing_njord 
+			blessing_freyr 
+			blessing_heimdall 
+			blessing_loki 
+			blessing_frigg 
+		}
+		aspects_name = NORSE_BLESSINGS
+		
+		heretic = { NORSE }
+	}
+	
+	reformed_baltic = {
+		color = { 132 223 148 }
+		icon = 41
+		country = {
+			global_regiment_cost = -0.1
+			production_efficiency = 0.1
+		}
+		country_as_secondary = {
+			global_manpower_modifier = 0.1
+			garrison_size = 0.1
+		}
+		
+		uses_church_power = yes				# Uses church power/aspect mechanics
+		
+		aspects = {
+			blessing_dievas 
+			blessing_perkunas 
+			blessing_milda 
+			blessing_medeina 
+			blessing_velnias
+			blessing_andajus
+			blessing_zemyna 
+			blessing_saule
+			blessing_bangputys
+		}
+		aspects_name = BALTIC_BLESSINGS
+		
+		heretic = { BALTIC }
+	}
+	
+	reformed_suomi = {
+		color = { 181 89 89 }
+		country = {
+			cavalry_power = 0.1
+			advisor_cost = -0.1
+		}
+		country_as_secondary = {
+			global_unrest = -1
+			defensiveness = 0.1
+		}
+		icon = 42
+		
+		uses_church_power = yes				# Uses church power/aspect mechanics
+		
+		aspects = {
+			blessing_ukko 
+			blessing_jumala 
+			blessing_mielikki 
+			blessing_tapio 
+			blessing_akras 
+			blessing_kuu 
+			blessing_ahti 
+			blessing_ilmarinen 
+		}
+		aspects_name = SUOMI_BLESSINGS
+		
+		heretic = { SUOMENUSKO }
+	}
+
 	crusade_name = CRUSADE
 	
 }
+# }}}
 
 pagan = {
 
@@ -2786,11 +3028,13 @@ pagan = {
 			tolerance_own = 1
 			global_unrest = -1
 		}
+		# AB {{{
+		personal_deity = yes
+		# }}}
 		country_as_secondary = {
 			tolerance_own = 2
 			loot_amount = 0.25
 		}
-		personal_deity = yes
 		province = {
 			local_missionary_strength = 0.02
 		}
@@ -2803,9 +3047,6 @@ pagan = {
 		country = {
 			tolerance_heathen = 2
 			diplomatic_reputation = 1
-		}
-		province = {
-			local_missionary_strength = 0.02
 		}
 		country_as_secondary = {
 			tolerance_own = 2
@@ -2909,7 +3150,9 @@ pagan = {
 		icon = 21
 		color = { 191 191 191 }
 		country = {
+			# AB {{[
 			may_perform_slave_raid = yes
+			# }}}
 			naval_forcelimit_modifier = 0.10
 		}
 		country_as_secondary = {
@@ -2925,6 +3168,7 @@ pagan = {
 		heretic = { OLD_NORSE }	
 	}
 	
+	# AB {{{
 	slavic_pagan = {
 		icon = 30
 		color = { 88 99 131 }
@@ -3017,6 +3261,7 @@ pagan = {
 		heretic = { OLD_SUOMI }
 	
 	}
+	# }}}
 	
 	tengri_pagan_reformed = {
 		icon = 27
@@ -3024,6 +3269,10 @@ pagan = {
 		country = {
 			cav_to_inf_ratio = 0.25
 			global_regiment_cost = -0.2
+		}
+		country_as_secondary = {
+			cav_to_inf_ratio = 0.25
+			global_regiment_cost = -0.05
 		}
 		can_have_secondary_religion = yes
 		heretic = { OLD_TENGRI }
@@ -3117,7 +3366,7 @@ jewish_group = {
 					limit = {
 						has_church_aspect = judaism_simchat_torah_aspect
 					}
-					change_government_reform_progress = 20
+					change_government_reform_progress = 25
 					add_legitimacy_equivalent = {
 						amount = 5
 						republican_tradition = 5
@@ -3192,10 +3441,12 @@ zoroastrian_group = {
 			tolerance_own = 2
 			trade_efficiency = 0.1
 		}
+		# AB {{{
 		country_as_secondary = {
 			merchants = 1
 			tolerance_own = 1
 		}
+		# }}}
 
 		holy_sites = { 421 4430 2223 441 2235 }
 
@@ -3209,12 +3460,49 @@ zoroastrian_group = {
 		
 		heretic = { MAZDAKI MANICHEAN }	
 	}
+
+	manichaean = {
+		color = { 37 147 139 }
+		icon = 37
+		can_have_secondary_religion = yes
+		
+		uses_anglican_power = yes				# Uses church power/aspect mechanics
+		
+		aspects = {
+			teaching_mani
+			teaching_zoroaster
+			teaching_jesus
+			teaching_buddha
+			teaching_muhammad
+			teaching_confucius
+			teaching_moses
+			teaching_tengri
+		}
+		aspects_name = MANI_TEACHING
+		
+		province = {
+			local_missionary_strength = -0.02
+		}
+		country = {
+			improve_relation_modifier = 0.1
+			tolerance_heathen = 2
+		}
+		country_as_secondary = {
+			improve_relation_modifier = 0.1
+			tolerance_heathen = 1
+		}
+
+		heretic = { MAZDAKI ZOROASTRIAN }
+
+		date = 240.1.1
+	}
 	
 	harmonized_modifier = harmonized_zoroastrian_group
 	
 	crusade_name = HOLY_WAR
 	
 }
+
 
 ancient_indian_group = {
 	

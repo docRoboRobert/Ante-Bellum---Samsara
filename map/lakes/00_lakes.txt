@@ -25,5 +25,5 @@ lake = {
 #Qinghai Lake
 lake = {
 	triangle_strip = { 4354 1262 4357 1281 4371 1256 4377 1280 4385 1255 4388 1271 }
-	height = 33
+	height = 26
 }

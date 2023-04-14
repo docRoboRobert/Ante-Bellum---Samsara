@@ -949,6 +949,7 @@ horde_unity = {
 	#nomadic_tribes_loyalty_modifier = 0.05	#New Change
 }
 
+
 # Multiplied by current Devotion - 50
 devotion = {
 	papal_influence = 2
@@ -964,14 +965,14 @@ devotion = {
 	global_tax_modifier = 0.50
 	church_loyalty_modifier = 0.1
 	brahmins_hindu_loyalty_modifier = 0.1
-	reform_progress_growth = 0.5
+	reform_progress_growth = 2.0
 }
 
 # Multiplied by current meritocracy - 50
 meritocracy = {
 	global_spy_defence = 1.0
 	advisor_cost = -0.5
-	reform_progress_growth = 0.5
+	reform_progress_growth = 2.0
 }
 
 # Multiplied by 50 - meritocracy
@@ -1365,7 +1366,7 @@ primitive_nation = {
 
 pirate_subject = {
 	global_manpower = 4
-	global_sailors = 2000
+	global_sailors = 2
 	global_sailors_modifier = 0.1
 	global_manpower_modifier = 0.05
 	navy_tradition = 0.25
@@ -1842,8 +1843,9 @@ cossacks_regiment = {
 }
 
 carolean_regiment = {
-	morale_damage = 0.1
-	drill_decay_modifier = -0.25
+	discipline = 0.05
+	morale_damage = 0.25
+	drill_decay_modifier = -0.5
 }
 
 revolutionary_guard_regiment = {

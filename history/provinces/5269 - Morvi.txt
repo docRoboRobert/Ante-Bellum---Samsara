@@ -1,7 +1,7 @@
 #5269 - Morvi
 
-owner = MRV
-controller = MRV
+owner = MVI
+controller = MVI
 culture = gujarati
 religion = jainism
 capital = "Morvi"
@@ -11,7 +11,7 @@ base_tax = 2
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = MRV
+add_core = MVI
 discovered_by = indian
 discovered_by = muslim
 discovered_by = ottoman

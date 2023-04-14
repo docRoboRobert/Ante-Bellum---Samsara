@@ -1275,7 +1275,7 @@ luristan_area = { #4
 }
 
 north_kurdistan_area = { #5
-	418 2306 2307 4295 4296
+	418 2306 2307 4295 4296 5191
 }
 
 khuzestan_area = { #5
@@ -1284,7 +1284,7 @@ khuzestan_area = { #5
 
 shahrizor_area = {	#4
 	color = { 152 102 102 }
-	415 2211 4293 4294
+	415 2211 4293 4294 5192 5194
 }
 
 al_jazira_area = { #5
@@ -2002,11 +2002,11 @@ chad_area = {
 ########################################
 
 makran_area = { #8
-	434 575 2231 2232 2233 5181 5273 5274
+	434 575 2231 2232 2233 5273 5274 5285
 }
 
 sistan_area = { #4
-	435 2224 2229 2230
+	435 2224 2229 2230 5186
 }
 
 kalat_area = { #3
@@ -2026,7 +2026,7 @@ kyzylkum_area = { #3
 }
 
 transoxiana_area = { #3
-	442 453 454
+	442 453 454 5200
 }
 
 termez_area = { #3
@@ -2043,7 +2043,7 @@ kabulistan_area = { #5
 }
 
 transcaspia_area = {
-	437 438 439 443 2349
+	437 438 439 443 2349 5198
 }
 
 mashhad_area = { #4 - Northern Khorasan
@@ -2065,7 +2065,7 @@ ghor_area = { #3
 
 merv_area = { #3
 	color = { 60 186 134 }
-	444 445 2350
+	444 445 2350 5199
 }
 
 balkh_area = { #3
@@ -2073,7 +2073,7 @@ balkh_area = { #3
 }
 
 kerman_area = { #4
-	432 2220 2234 4345
+	432 2220 2234 4345 5187 5188
 }
 
 persian_gulf_coast = { #4
@@ -2088,8 +2088,8 @@ farsistan_area = { #4
 	2218 4329 4330 4331
 }
 
-iraq_e_ajam_area = { #5
-	427 428 2213 2216 4337
+iraq_e_ajam_area = { #6
+	427 428 2213 2216 4337 5190
 }
 
 azerbaijan_area = { #5 #Southern Azerbaijan
@@ -2101,7 +2101,7 @@ isfahan_area = { #3
 }
 
 tabriz_area = { #4 Central Azerbaijan
-	416 2206 2207 4304
+	416 2206 2207 4304 5193
 }
 
 tabarestan_area = { #5
@@ -2222,11 +2222,11 @@ golconda_area = { #5
 }
 
 andhra_area = { #7
-	543 549 2084 2080 4425 5193 5194
+	543 549 2084 2080 4425 5297 5298
 }
 
-raichur_doab_area = { #4
-	532 2033 4428 5199 5201
+raichur_doab_area = { #5
+	532 2033 4428 5303 5305
 }
 
 khandesh_area = { #4
@@ -2234,11 +2234,11 @@ khandesh_area = { #4
 }
 
 rayalaseema_area = { #7
-	541 1949 2090 4423 4424 5192 5198
+	541 1949 2090 4423 4424 5296 5302
 }
 
 malabar_area = { #8
-	534 535 537 4410 4413 5182 5183 5188
+	534 535 537 4410 4413 5286 5287 5292
 }
 
 malwa_area = { #11
@@ -2272,16 +2272,16 @@ northern_sindh_area = { #4
 }
 
 north_carnatic_area = { #5 (Only the Golcondan Karnatak)
-	2083 4418 4419 4420 5191
+	2083 4418 4419 4420 5295
 }
 
 south_carnatic_area = { #6 (Only the Golcondan Karnatak)
 	color = { 77 149 195 }
-	539 540 1947 2027 4417 5190
+	539 540 1947 2027 4417 5294
 }
 
 madura_area = { #5
-	536 2101 4412 5283 5180
+	536 2101 4412 5283 5284
 }
 
 tanjore_area = { #3
@@ -2289,7 +2289,7 @@ tanjore_area = { #3
 }
 
 kongu_area = { #6
-	538 2085 4414 5184 5185 5186
+	538 2085 4414 5288 5289 5290
 }
 
 konkan_area = { #5
@@ -2304,8 +2304,8 @@ ahmednagar_area = { #6
 	544 545 4432 4433 4437 5227
 }
 
-kanara_area = { #6
-	531 2029 2030 2032 4427 5195 5197
+kanara_area = { #7
+	531 2029 2030 2032 4427 5299 5301
 }
 
 maidan_area = { #5 (northern Bayuluseeme)
@@ -2313,7 +2313,7 @@ maidan_area = { #5 (northern Bayuluseeme)
 }
 
 mysore_area = { #8
-	533 2031 4421 4422 4426 5187 5189 5196
+	533 2031 4421 4422 4426 5291 5293 5300
 }
 
 berar_area = { #6
@@ -2321,7 +2321,7 @@ berar_area = { #6
 }
 
 assam_area = { #6
-	566 571 2040 2042 4440 5202
+	566 571 2040 2042 4440 5306
 }
 
 himalayan_hills_area = { #6

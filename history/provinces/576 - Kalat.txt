@@ -1,7 +1,7 @@
 #576 - Kalat
 
-owner = BAL
-controller = BAL
+owner = KYN
+controller = KYN
 culture = brahui
 religion = zoroastrian
 capital = "Kalat"
@@ -13,6 +13,7 @@ base_manpower = 4
 is_city = yes
 fort_15th = yes
 add_core = BAL
+add_core = KYN
 
 discovered_by = KAS
 discovered_by = indian

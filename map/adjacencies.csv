@@ -5,7 +5,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2456;2472;sea;1794;-1;-1;-1;-1;Touggourt-Ouargla
 2472;2450;sea;1794;-1;-1;-1;-1;Ouargla-Ghadames
 2456;352;sea;1794;-1;-1;-1;-1;Touggourt-Qafsa
-4980;2318;sea;1795;3235;1134;3243;1120;Birnahid-Bahiryia
+4980;2318;sea;4321;3235;1134;3243;1120;Birnahid-Bahiryia
 2327;4272;sea;2334;-1;-1;-1;-1;Maan-AlJawf
 4272;2328;sea;2334;-1;-1;-1;-1;AlJawf-AlUla
 4272;393;sea;2334;-1;-1;-1;-1;AlJawf-JabalShammar
@@ -38,6 +38,12 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2323;1229;sea;1795;-1;-1;-1;-1;SahraAnNubyah-Berber
 623;624;sea;1352;-1;-1;-1;-1;Tulangbewang-Banten
 4353;654;sea;1402;-1;-1;-1;-1;Leyte-Samar
+2191;4677;sea;5092;-1;-1;-1;-1;Yijinai-Xuanwei
+2191;4670;sea;5092;-1;-1;-1;-1;Yijinai-Shangwulahai
+709;4670;sea;5092;-1;-1;-1;-1;Zhuowulahai-Shangwulahai
+2114;4671;sea;5092;-1;-1;-1;-1;Kuowotu-Yekedieliesun
+2114;723;sea;5092;-1;-1;-1;-1;Kuowotu-Alahumaqi
+2145;5115;sea;1372;-1;-1;-1;-1;Zhanjiang-Nantong
 
 36;4999;sea;1926;-1;-1;-1;-1;Jutland-Jutland
 4999;35;sea;1926;-1;-1;-1;-1;Jutland-Jutland

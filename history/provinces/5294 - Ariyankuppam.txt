@@ -1,0 +1,25 @@
+#5190 - Ariyankuppam
+
+owner = COA
+controller = COA
+culture = tamil
+religion = hinduism
+capital = "Ariyankuppam"
+trade_goods = sugar
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 1
+is_city = yes
+add_core = PLV
+add_core = COA
+add_core = KRK
+add_local_autonomy = 50
+discovered_by = indian
+discovered_by = nomad_group
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = chinese
+
+1405.1.1 = { discovered_by = chinese }
+1498.1.1 = { discovered_by = POR }

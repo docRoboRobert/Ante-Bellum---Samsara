@@ -5178,29 +5178,29 @@ province;red;green;blue;x;x
 5177;188;94;133;Ostashkov;x
 5178;121;188;84;Rostislav;x
 5179;188;142;135;Belgorod;x
-5180;145;172;154;Ramanathapuram;x
-5181;215;199;187;Turbat;x
-5182;255;247;147;Villarvattom;x
-5183;168;54;34;Upper Venad;x
-5184;223;160;91;Dharmapuri;x
-5185;149;194;54;Noyyal;x
-5186;248;244;222;Erode;x
-5187;205;216;10;Wayanad;x
-5188;228;194;186;Palakkad;x
-5189;244;160;47;Tumkur;x
-5190;215;222;118;Ariyankuppam;x
-5191;129;124;216;Gudur;x
-5192;61;179;218;West Kurnool;x
-5193;211;173;206;Godavari;x
-5194;221;164;165;Visakhapatnam;x
-5195;117;227;43;Udupi;x
-5196;88;146;192;Chikmagalur;x
-5197;67;108;49;Bhadra;x
-5198;219;184;45;Davanagere;x
-5199;177;100;29;Haveri;x
-5200;26;40;32;Northern Ghats;x
-5201;232;218;45;Upper Krishna;x
-5202;192;158;20;Guwahati;x
+5180;221;80;240;Kopetdag;x
+5181;222;81;240;Karkas;x
+5182;185;24;155;Albarez;x
+5183;190;24;155;Shirkuh;x
+5184;175;24;155;Zagros;x
+5185;220;79;239;Alborz;x
+5186;188;130;192;Zahedan;x
+5187;189;30;192;Sabzvaran;x
+5188;25;236;240;Shahdad;x
+5189;225;83;240;Kavir;x
+5190;61;142;33;Nain;x
+5191;110;155;105;Tyare;x
+5192;20;11;71;Hakkari;x
+5193;77;224;142;Nochiyaye;x
+5194;255;25;40;Nineveh;x
+5195;210;80;240;Ustyurt;x
+5196;210;80;239;Karakum;x
+5197;210;80;238;Kyzylkum;x
+5198;189;140;255;Kyzylrabat;x
+5199;210;33;239;Dargan;x
+5200;195;74;22;Dabusiyya;x
+5201;188;154;79;Hindukush;x
+5202;158;154;79;Paropamisus;x
 5203;233;218;131;Rajshahi;x
 5204;164;216;247;Ganges Estuary;x
 5205;196;201;215;Bhojpur;x
@@ -5282,3 +5282,26 @@ province;red;green;blue;x;x
 5281;53;197;238;Palk Strait;x
 5282;58;71;86;Southern Ghats;x
 5283;179;112;218;Korkai;x
+5284;145;172;154;Ramanathapuram;x
+5285;215;199;187;Turbat;x
+5286;255;247;147;Villarvattom;x
+5287;168;54;34;Upper Venad;x
+5288;223;160;91;Dharmapuri;x
+5289;149;194;54;Noyyal;x
+5290;248;244;222;Erode;x
+5291;205;216;10;Wayanad;x
+5292;228;194;186;Palakkad;x
+5293;244;160;47;Tumkur;x
+5294;215;222;118;Ariyankuppam;x
+5295;129;124;216;Gudur;x
+5296;61;179;218;West Kurnool;x
+5297;211;173;206;Godavari;x
+5298;221;164;165;Visakhapatnam;x
+5299;117;227;43;Udupi;x
+5300;88;146;192;Chikmagalur;x
+5301;67;108;49;Bhadra;x
+5302;219;184;45;Davanagere;x
+5303;177;100;29;Haveri;x
+5304;26;40;32;Northern Ghats;x
+5305;232;218;45;Upper Krishna;x
+5306;192;158;20;Guwahati;x

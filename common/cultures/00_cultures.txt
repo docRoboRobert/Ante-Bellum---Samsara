@@ -3540,6 +3540,7 @@ baltic	= {
 	graphical_culture = easterngfx
 	
 	pruthenian = {
+		primary = PRR
 		male_names = {
 		Algirdas Antanas Antavas Aras Arunas Azuolas Budrys Bukantas Butavas Butigeidis Butvydas 
 		Daugvilas Daumantas Dausprungas Dravenis Erdenis Erdvilas Gedigaudas
@@ -4271,6 +4272,36 @@ turko_semitic = { #Levantine
 			Taliba Tanaz Taneen Yagana Yakta Yasmin Zaynab
 		}
 	}
+	assyrian = {
+		primary = NNV
+		male_names = {
+			Aba Abahu Abaya Abaye Abayi Abba Abdima Abdisho Abgar Abimalek Abraham Abris Abrisius Acacius Achan Achina Addai
+			Adlai Aggai Ahai Ahadabui Ahha Asa Ashur Avahu Avda Avdima Avdimi Avina Avira Azai
+			Babaeus Babai Babowai Babwahi Bar Bustan
+			Caiaphas Cephas Cephus Chadlai Chama Chanin Chanina Chaninai Chinena Chozai Chuma Chunya Clopas
+			Dadisho Denha Dikla Diklah Dimi Dinkha Dunanu Elisha Eliya Emmanuel Enosh Ezekiel Farbokht Foma Giwargis Grwgari
+			Hanina Hnanisho Hozai Idan Idra Ila Isaac Isho Ishoyahb Israel Kaiapha Karna Katsiu Kelaya
+			Laszio Lazar Lazare Lazaro Lazaros Lazarus Lazarz Lazer Lebbaeus Maadai Macabee Maccabee Magna Makkikha Maluch Marabokht Maremmeh Mari Mikha_il Moqli Muna
+			Nahir Nahor Nahur Narsai Nazuk Nechunya Nehor Nehorai Niv Nun Nur Oran Pappa Paul Pethion Petros Petuel Qaligh Qayyoma Raca Rachim Rahim Raka Raz Raziel Rubil
+			Saad Saba Sabah Sabbae Sabrisho Salu Samal Sami Samiy Sagi Sargis Sava Sawma Shafer Shahdost
+			Shahlufa Shai Shalmai Shama Shamir Shammai Shemaiah Shemon Sheraga Shila Shovai Shraga Sima  Surin
+			Tabbai Taddai Talia Taliah Talmai Talya Tam Ta_mhas Targhal Tauma Tavi Tavish Tevis Thoma Timai Tiv Toba Todos Tolmai Tomarsa Tamuza Tulmay
+			Ukba Yahballaha Yanai Yaqob Yeshua Yohannan Yosip Yousef Yunanis Zerika
+		}
+		female_names = {
+			Adva Alya Anena Anina Bustan Chanina Chasina Chayuta China Chiyuta
+			Dikla Diklah Diklit Duvsha Hanina Hasna Hayuta Hina Ketina Kitra
+			Magdala Mahalia Mahalie Marfa Mariam Marta Marte Martha Marthe Marti
+			Martita Mehalia Meiriona Meirona Morta Nahara Nura Raz Reuma
+			Saba Sabah Samantha Sameah Samee Sameea Samiya Samiyah Samiyya Samya Sava Shapira Sima
+			Tabatha Tabby Tabetha Tabitha Tadea Talia Taliah Talya Talitha
+			Tam Tamasin Tami Tammy Tamsin Tamsyn Tamzin Thaddea Thomasa
+			Zeita Zeta
+		}
+		dynasty_names = { 
+			Bukhtishu Qatwa Nimreh Gazarta Salamas Zakho Arbilaya
+		}
+	}
 	hejazi_culture = {
 		primary = HED
 		dynasty_names = {
@@ -4527,34 +4558,24 @@ iranian	= {
 	graphical_culture = muslimgfx
 	persian = {
 		primary = PER
+		dynasty_names = {
+			Varza Vaansh Tirandazian Shahnavaz Shahukar Saran Samya Sorkhab Sabza Roshan Radmand Rahtabad Payedar Parastar Oross
+			Ostevari Namir Mazdiyasni Mayan Mashreghi Kerman Kamkar Kayanizad Kayanipur Kharanwala Kabir Javanmard Izad Hormazdi
+			Farouzan Firouzgar Faravhari Farahi Eranee Darvish Deshmukh Dangor Arestani Azdapur Azad Abester 
+			Ispahbad Zik Sasan Shapur Injuid Mihran Suren Karen Spandiyadh Varaz Zohrab Zaigar Zadah Zaaykar Yazdi Yegtahi Vakshur
+		}
 		male_names = { 
-			Abbas Abolhassan Afshar Afshar Ahmad Ahmad Akbar Akbar Allahyar Amin Anushirvan Anushirvan 
-			Aram Ardahan Ardahan Ardavan Ardavan Ardeshir Ardeshir Assad Aurang Ayeshah Babak Babak Bahman 
-			Bahram Bahram Bakhtiar Bakhtiar Behrad Behrouz Bozorg Danush Danush Darab Dariush Darius Davud 
-			David Djamasp Ebrahim Abraham Ehsan Esfandiar Esfandiar Eskander Alexander Esma'il Ismail 
-			Faramarz Faramarz Faraz Faraz Fareed Farid Farhad Farhad Fariborz Fariborz Farroukh Farroukh 
-			Farrukhzad Farrukhzad Farzad Farzad Fath Ferdows Ferdows Fereedun Feridun Ghobad Gholam Godarz 
-			Goshtasb Goshtasb Hafez Hassan Hasan Hazarasp Hazarasp Hedayat Hooshyar Hooshyar Hormazd 
-			Hormazd Hormoz Hossein Hossein Humayun Jahandar Jahandar Jahangir Jahangir Jahanshah Jahanshah 
-			Jamshid Jamshid Javeed Javeed Kambiz Kamran Kavoos Kavoos Keyghobad Keykhosrau Keykhosrau 
-			Kharmandar Kharmandar Khashayar Khashayar Kavadh Khodadad Khodadad Khosrau Khosrau Khudayar 
-			Khudayar Khurshid Khurshid Kurush Cyrus Mahmud Manuchihr Manuchihr Manushihr Manushihr Marzuban 
-			Marzuban Mashad Mashad Maziar Mehrab Mehrzad Mohammed Muhammad Morad Morad Morteza Mozaffar 
-			Nard Naveed Nawid Nezam Parviz Pashang Pashang Peroz Peroz Pujman Reza Rostam Rostam Ruhollah 
-			Sadri Salman Shahab Shahab Shahbaz Shahbaz Shahin Shahin Shahram Shahram Shahrokh Sharokh 
-			Shahruz Shahruz Shahryar Shahryar Shapur Shapur Shayan Shayan Sina Tahmasb Tahmasb Vahhab 
-			Vahhab Vahid Vali Vandad Varshasb Varshasb Vishtasb Vishtasb Yazdegerd Yousef Joseph Zahak 
-			Zakaria Zand Zartosht Zartosht Zia Joneid Haidar Ismâ'îl Tamâshp Mohammad Kodabânda 'Abbâs Safi 
-			Hosayn Nâder Shâh 'Âdel Shâh Ebrâhim Shâh Rukh Nâder Mirza Karim Khân Abu'l Fath 
-			Sâdiq Morâd Ja'far Loft Ali Aga Muhammad Fath Alî Solaymân
+			Rostam Huzail Anoshagan Andarzaghar Bahman Jaban Mardanshah Isfandiyar Nakhiragan Azadbed Farrukhzad Siyavaksh Busburha
+			Shahriyar Karin Mushegh Varaztirots Muta Narsi Tiruyih Kanadbak Shirazd Javanshir Burzin Siyah Aparviz Shahrag Faylakan Yazdanfar
+			Khorshid Farrukhan Dabuya Yazdegerd Hormizd Farrokh Khosrau Azarmidokht Peroz Shapur Borandukht Shahrbaraz
+			Ardashir Kavadh Vistahm Bahram Djamasp Balash Peroz Narseh Adur Anahid Farrbay Gusnasp Mah Mihran Sabuhr
+			Vahram Artabaz Ardun Arasp Ramin Siroos Shahriar Farbod Freydun Kurosh Mani Mazdak Hadish 
 		}
 		female_names = { 
-			Afsaneh Ahu Arghavan Azarmidokht Asa Azadeh Bahar Banafsheh Behnaz Burandokht Darya Delaram 
-			Delbar Dinah Donya Elham Elnaz Farah Fareedeh Farnaz Farrin Farva Furuzan Ghamze Ghazal 
-			Ghoncheh Ghoncheh Golbahar Golbahar Golnaz Golnaz Golpari Golshan Hamdam Hurmat Irandokht 
-			Jamileh Javaneh Leila Mahdokht Mahtab Mariam Mariam Navvaba Nazgol Nazgol Nazilla Noor Parvaneh 
-			Parvaneh Parvin Pertevniyal Pourandokht Pourandokht Roshanora Roxana Salomeh Shahrzad Shahzadeh 
-			Shirin Soraya Touran Tourandokht Yasaman Yekta Zarrindokht Zeynab Zohreh Atiya
+			Amstrida Aryames Anoosha Azar Bahareh Bita Behfar Taraneh Homa Khandan Darya Zar Samirah Sanaz 
+			Anzoy Mihran Rodag Denag Myrod Ifra Faraya Tishtar Virbanu Zarin Rambanu Puran Parin Parendi 
+			Nazakat Meherbanu Meherokh Meher Manizeh Mahzarin Mahtab Lilya Laleh Katayun Kaidokht Gulzar
+			Gohar Gulafruz Feroza Farida Bostan Behruz Azadeh Asha Arzu Arnaz Arnavaz Armindokht
 		}
 	}
 	Tocharian = {	
@@ -4626,208 +4647,189 @@ iranian	= {
 		}
 	}
 	luri = {
-		primary = LRI
-		dynasty_names = { 
-			Khorshidi Bakhtiari Jangardi "Banu Hussayn" Charlang Haftlang
-			Dorikan Babadi Baharvand Dinarini Meyvand
+		primary = INJ
+		dynasty_names = {
+			Varza Vaansh Tirandazian Shahnavaz Shahukar Saran Samya Sorkhab Sabza Roshan Radmand Rahtabad Payedar Parastar Oross
+			Ostevari Namir Mazdiyasni Mayan Mashreghi Kerman Kamkar Kayanizad Kayanipur Kharanwala Kabir Javanmard Izad Hormazdi
+			Farouzan Firouzgar Faravhari Farahi Eranee Darvish Deshmukh Dangor Arestani Azdapur Azad Abester 
+			Ispahbad Zik Sasan Shapur Injuid Mihran Suren Karen Spandiyadh Varaz Zohrab Zaigar Zadah Zaaykar Yazdi Yegtahi Vakshur
 		}
-		male_names = {
-			Bawa Helo Timur Ahmad Soleiman Sobhanverdi Khosrow Bozorg Hosayn Aman-Allah Faqi Ahmad Mohammad 
-			Khalid Nawaub Salim Abdolla Mahmoud Ibrahim Abdurrahman Kulos Isa Mir Saifeddin Saidi Budak
-			Abbas Abolhassan Alah-Verdi Allahyar Amin Aram Assad Aurang Ayeshah Azad Babek Babak Bahman 
-			Behrad Behram Bahram Behrouz Bextîyar Bakhtiar Bozorg Cehandar Jahandar Cehangir Jahangir 
-			Cehanšah Jahanshah Cemšîd Jamshid Cevid Javeed Danûš Danush Darab Daryûš Darius Davud David 
-			Ebrahim Abraham Efrasiyab Afrasiyab Efšer Afshar Ehmed Ahmad Ehsan Ekber Akbar Elî Ali 
-			Enûširwan Anushirvan Erdehan Ardahan Erdewan Ardavan Erdešîr Ardeshir Esfendiyar Esfandiar 
-			Eskander Alexander Ešot Ashot Eyyub Ayyub Feramez Faramarz Feraz Faraz Fath Ferhad Farhad 
-			Ferhan Farhan Ferheng Farhang Feriburz Fariborz Ferîd Farid Ferîdun Feridun Ferux Farroukh 
-			Feruxzad Farrukhzad Ferzad Farzad Fezl Fadl Fezlun Fadlun Firdews Ferdows Ghobad Gholam Godarz 
-			Goštasp Goshtasb Hezarhesp Hazarasp Hafez Hedayat Hesen Hasan Hisên Hussein Hormoz Hosen 
-			Hossein Humayun Hurmiz Hormazd Îsmaîl Ismail Kambiz Kamran Keyghobad Keyxusrew Keykhosrau Kâvus 
-			Kavoos Kûrušê Cyrus Mamlan Muhammad Mashad Mehmûd Mahmud Mehrab Mehrzad Mensûr Mansur Menûçihr 
-			Manuchihr Menûšihr Manushihr Merwan Marwan Merzuban Marzuban Mesûd Masud Mihemed Muhammad Mîrza 
-			Mirza Mistefa Mustafa Murad Morad Morteza Mozaffar Nard Naveed Nawid Nesir Nazir Nesr Nasr 
-			Nezam Nošîrwan Nawshirwan Nêçîrvan Nechirwan Parviz Pujman Pêšeng Pashang Pîroz Peroz Revend 
-			Rawwad Reza Ruhollah Rustam Rostam Sadri Salman Sina Surxap Surkhab Tahmasp Tahmasb Vahhab 
-			Vahid Vahusdan Wahustan Vali Varšasp Varshasb Vîštap Vishtasb Xarmandar Kharmandar Xašayar 
-			Khashayar Xuršîd Khurshid Xusrew Khosrau Xušyar Hooshyar Xwedadad Khodadad Xwedayar Khudayar 
-			Yezîd Yazid Yousef Zahak Zakaria Zand Zerdešt Zartosht Zia Šadî Shadhi Šahab Shahab Šahbaz 
-			Shahbaz Šahenšah Shahanshah Šahin Shahin Šahram Shahram Šahryar Shahryar Šahrux Shahrokh Šahruz 
-			Shahruz Šapur Shapur Šarvin Sharwin Šawur Shavur Šayan Shayan Šîrkûh Shirkuh
+		male_names = { 
+			Rostam Huzail Anoshagan Andarzaghar Bahman Jaban Mardanshah Isfandiyar Nakhiragan Azadbed Farrukhzad Siyavaksh Busburha
+			Shahriyar Karin Mushegh Varaztirots Muta Narsi Tiruyih Kanadbak Shirazd Javanshir Burzin Siyah Aparviz Shahrag Faylakan Yazdanfar
+			Khorshid Farrukhan Dabuya Yazdegerd Hormizd Farrokh Khosrau Azarmidokht Peroz Shapur Borandukht Shahrbaraz
+			Ardashir Kavadh Vistahm Bahram Djamasp Balash Peroz Narseh Adur Anahid Farrbay Gusnasp Mah Mihran Sabuhr
+			Vahram Artabaz Ardun Arasp Ramin Siroos Shahriar Farbod Freydun Kurosh Mani Mazdak Hadish 
 		}
-		female_names = {
-			Adan Adar Ara Ardil Arezo Arezu Ariyan Arêz Arîman Arîn Asan Asteng Asê Avan Azadî Azrîn Aštî 
-			Badil Bahar Balnexšîn Banê Barîn Bawan Baziyan Bazê Befraw Befrîn Begîxan Belalûk Belqis 
-			Belîcan Benav Benaz Berbijîn Berdar Berdil Bersîn Berîcan Bexšîn Beyan Beybîn Beybûn Bezîn 
-			Bihar Bijîn Bilêse Binar Binav Binefš Binevš Biyan Biškoj Biškurîn Bohar Bênaz Bêrîcan Bêrîvan 
-			Burandoxt Pourandokht Dengîn Derav Derzîn Desmal Devken Dilar Dilaram Dilare Dilawaz Dilber 
-			Dilcan Dildar Dilgerm Dilistan Dilkanî Dilnaz Dilvîn Dilxoš Dilxweš Diyarî Doman Dêrsim Dîlan 
-			Dîristan Esmercan Esmerxan Estêre Evîn Ewrîn Eyšan Ezcan Felek Fener Ferašîn Firmêsk Fîdan 
-			Gazî Gelavêj Gerdengaz Gozel Gozê Grîvan Guhtem Gulbehar Golbahar Gulšen Gulnar Gulnaz Golnaz 
-			Gêlas Helez Heliz Helvîn Hemayîl Kejê Keser Kevok Kevî Kewser Kezîzer Koçer Leylê Leymîn Lezîn 
-			Lolav Lorkê Lorî Lorîcan Lorîn Lêlav Lêvken Lîlyan Lîza Maša Mebest Mehrîban Mehrîcan Mehrîvan 
-			Mejbîr Mendal Mercam Merîvan Mirarîxan Miryem Mariam Mizgîn Muhabad Mêmê Mêrdîn Mêxek Mîdya 
-			Mîran Narîman Narîncan Navbihar Nawxoš Naz Nazdar Nazenîn Nazgul Nazgol Nazik Naznaz Nazê Nermê 
-			Nermîn Nesrîn Newbohar Nexšîn Nešmîl Nešmîn Norcan Nêrgiz Nêrîn Nêzîk Nîdar Nîgar Nîroj Nîšan 
-			Nîštîman Perjîn Pervîn Perwane Parvaneh Perwîn Perçem Perî Perîgul Perînaz Perîxan Perîšan 
-			Pexšan Peyman Pirjîn Piršeng Piršing Pore Poršeng Pêlîn Pîroz Pîšeng Rana Rengîn Rewša Rewšen 
-			Rihan Rindê Rojhelat Rojê Ronahî Ronak Rondik Rêjîn Rêzan Rîhan Rîken Rûciwan Rûgeš Rûken 
-			Rûzerîn Sarê Serbar Sercan Serferaz Serfiraz Sergul Serçinar Seyran Xatûn Xêlîcan Xonçe 
-			Ghoncheh Zernîšan Zerya Zerê Zerî Zerîxan Zeytîn Zeytûn Zilfê Zoya Zozan Zêrîn Zîlan Zînet Zînê 
-			Šana Šanaz Šayan Šehrîban Šelal Šemam Šengê Šepal Šepirze Šermîn Ševba Ševîn Šêlaz Šîlan Šînî 
-			Šîwen Atiya
+		female_names = { 
+			Amstrida Aryames Anoosha Azar Bahareh Bita Behfar Taraneh Homa Khandan Darya Zar Samirah Sanaz 
+			Anzoy Mihran Rodag Denag Myrod Ifra Faraya Tishtar Virbanu Zarin Rambanu Puran Parin Parendi 
+			Nazakat Meherbanu Meherokh Meher Manizeh Mahzarin Mahtab Lilya Laleh Katayun Kaidokht Gulzar
+			Gohar Gulafruz Feroza Farida Bostan Behruz Azadeh Asha Arzu Arnaz Arnavaz Armindokht
 		}
 	}
 	azerbaijani = {
 		primary = ARL
 		dynasty_names = {
-			"Qara Qoyunlu" "Aq Qoyunlu" "Safavid" "Shirvanshah" Javanshir Chupanid Ziyadoghlu Chalabi
-			Talysh "Haji Chalabi"
+			Varza Vaansh Tirandazian Shahnavaz Shahukar Saran Samya Sorkhab Sabza Roshan Radmand Rahtabad Payedar Parastar Oross
+			Ostevari Namir Mazdiyasni Mayan Mashreghi Kerman Kamkar Kayanizad Kayanipur Kharanwala Kabir Javanmard Izad Hormazdi
+			Farouzan Firouzgar Faravhari Farahi Eranee Darvish Deshmukh Dangor Arestani Azdapur Azad Abester 
+			Ispahbad Zik Sasan Shapur Injuid Mihran Suren Karen Spandiyadh Varaz Zohrab Zaigar Zadah Zaaykar Yazdi Yegtahi Vakshur
 		}
-		male_names = {
-			Ibrahim Muhammad Ibrahim Farrukhsiyar Khalil Bahram Farrukhsiyar Ghazi Farrukhsiyar Mahmud Ghazi Eldar
+		male_names = { 
+			Rostam Huzail Anoshagan Andarzaghar Bahman Jaban Mardanshah Isfandiyar Nakhiragan Azadbed Farrukhzad Siyavaksh Busburha
+			Shahriyar Karin Mushegh Varaztirots Muta Narsi Tiruyih Kanadbak Shirazd Javanshir Burzin Siyah Aparviz Shahrag Faylakan Yazdanfar
+			Khorshid Farrukhan Dabuya Yazdegerd Hormizd Farrokh Khosrau Azarmidokht Peroz Shapur Borandukht Shahrbaraz
+			Ardashir Kavadh Vistahm Bahram Djamasp Balash Peroz Narseh Adur Anahid Farrbay Gusnasp Mah Mihran Sabuhr
+			Vahram Artabaz Ardun Arasp Ramin Siroos Shahriar Farbod Freydun Kurosh Mani Mazdak Hadish 
 		}
-		female_names = {
-			Malahat Amsha Asiya Faghira Habiba Hanifa Jahaira Kamala Layla Maryam Nafisa Nyawela Parand 
-			Aaliyah Aamina Aamira Aaqila Aarifa Aazzi Adelah Adela Adiba Adilah Adilia Adiva Adjan Aeesha 
-			Adila Ikram            
+		female_names = { 
+			Amstrida Aryames Anoosha Azar Bahareh Bita Behfar Taraneh Homa Khandan Darya Zar Samirah Sanaz 
+			Anzoy Mihran Rodag Denag Myrod Ifra Faraya Tishtar Virbanu Zarin Rambanu Puran Parin Parendi 
+			Nazakat Meherbanu Meherokh Meher Manizeh Mahzarin Mahtab Lilya Laleh Katayun Kaidokht Gulzar
+			Gohar Gulafruz Feroza Farida Bostan Behruz Azadeh Asha Arzu Arnaz Arnavaz Armindokht
 		}
 	}
 	khorasani = {
 		primary = KHO
-		male_names = {
-			Abû Sa'îd Bâbur Badî al-Zamân Husayn Bâyqarâ Abu al-Qasim Mahmûd Shâh Rukh Ulugh Beg 'Abbas 'Abd 
-			'Abd al-Rahman 'Alî 'Abdallâh Anwar Bakr Fahd Faruq Fouad Hakim Harun Hisham Husayn Isma'il Jafar 
-			Karim Khalil Malîk Mirza Muhammad Qasim Rashîd Sulayman Tarîq 'Umar Usama Yasir Yusuf Zaid Zîyad 
-			Zulqifar al-Karim Jamaal
+		dynasty_names = {
+			Varza Vaansh Tirandazian Shahnavaz Shahukar Saran Samya Sorkhab Sabza Roshan Radmand Rahtabad Payedar Parastar Oross
+			Ostevari Namir Mazdiyasni Mayan Mashreghi Kerman Kamkar Kayanizad Kayanipur Kharanwala Kabir Javanmard Izad Hormazdi
+			Farouzan Firouzgar Faravhari Farahi Eranee Darvish Deshmukh Dangor Arestani Azdapur Azad Abester 
+			Ispahbad Zik Sasan Shapur Injuid Mihran Suren Karen Spandiyadh Varaz Zohrab Zaigar Zadah Zaaykar Yazdi Yegtahi Vakshur
 		}
-		female_names = {
-			Abda Ahu Aiza Aliyah Butayna Daniyah Dima Fahra Fahriya Fatima Gamila Ghada Habiba Huda Ibtisam 
-			Isra Karima Kera Khadija Layla Maha Malika Mariam Maria Munya Munia Nadia Naila Nur Rafiqa Rahat 
-			Raisa Randa Safiya Salma Shakira Suraya Tahira Tarifa Thashim Umm Wahida Yasmin Zahida Zahra Haniyya 
+		male_names = { 
+			Rostam Huzail Anoshagan Andarzaghar Bahman Jaban Mardanshah Isfandiyar Nakhiragan Azadbed Farrukhzad Siyavaksh Busburha
+			Shahriyar Karin Mushegh Varaztirots Muta Narsi Tiruyih Kanadbak Shirazd Javanshir Burzin Siyah Aparviz Shahrag Faylakan Yazdanfar
+			Khorshid Farrukhan Dabuya Yazdegerd Hormizd Farrokh Khosrau Azarmidokht Peroz Shapur Borandukht Shahrbaraz
+			Ardashir Kavadh Vistahm Bahram Djamasp Balash Peroz Narseh Adur Anahid Farrbay Gusnasp Mah Mihran Sabuhr
+			Vahram Artabaz Ardun Arasp Ramin Siroos Shahriar Farbod Freydun Kurosh Mani Mazdak Hadish 
+		}
+		female_names = { 
+			Amstrida Aryames Anoosha Azar Bahareh Bita Behfar Taraneh Homa Khandan Darya Zar Samirah Sanaz 
+			Anzoy Mihran Rodag Denag Myrod Ifra Faraya Tishtar Virbanu Zarin Rambanu Puran Parin Parendi 
+			Nazakat Meherbanu Meherokh Meher Manizeh Mahzarin Mahtab Lilya Laleh Katayun Kaidokht Gulzar
+			Gohar Gulafruz Feroza Farida Bostan Behruz Azadeh Asha Arzu Arnaz Arnavaz Armindokht
 		}
 	}
 	baluchi = {
-		primary = BAL
+		primary = KYN
 		dynasty_names = {
-			Rind Lashari Kambarani Mirwari Jamot Bugti Zikri Ghilzai Barakzay
-			Bozdar Mirrani Mihrabanid Khokhar Shar Lashari Lund Hooth Korai
-			Jatoi Nausherwani
+			Varza Vaansh Tirandazian Shahnavaz Shahukar Saran Samya Sorkhab Sabza Roshan Radmand Rahtabad Payedar Parastar Oross
+			Ostevari Namir Mazdiyasni Mayan Mashreghi Kerman Kamkar Kayanizad Kayanipur Kharanwala Kabir Javanmard Izad Hormazdi
+			Farouzan Firouzgar Faravhari Farahi Eranee Darvish Deshmukh Dangor Arestani Azdapur Azad Abester 
+			Ispahbad Zik Sasan Shapur Injuid Mihran Suren Karen Spandiyadh Varaz Zohrab Zaigar Zadah Zaaykar Yazdi Yegtahi Vakshur
 		}
-		male_names = {
-			Ahmad Mir Mehrab Samandar Mir Abdullah Mir Muhabbat Mir Muhammad Naseer Mir Mahmud Kumbar Mir 
-			Shahzad Hasan Chakar Mir
-			Abbas Abolhassan Alah-Verdi Allahyar Amin Aram Assad Aurang Ayeshah Azad Babek Babak Bahman 
-			Behrad Behram Bahram Behrouz Bextîyar Bakhtiar Bozorg Cehandar Jahandar Cehangir Jahangir
-			Cehanšah Jahanshah Cemšîd Jamshid Cevid Javeed Danûš Danush Darab Daryûš Darius Davud David 
-			Ebrahim Abraham Efrasiyab Afrasiyab Efšer Afshar Ehmed Ahmad Ehsan
-			Ekber Akbar Elî Ali Enûširwan Anushirvan Erdehan Ardahan Erdewan Ardavan Erdešîr Ardeshir 
-			Esfendiyar Esfandiar
-			Eskander Alexander Ešot Ashot Eyyub Ayyub Feramez Faramarz Feraz Faraz Fath Ferhad Farhad 
-			Ferhan Farhan Ferheng Farhang Feriburz Fariborz Ferîd Farid
-			Ferîdun Feridun Ferux Farroukh Feruxzad Farrukhzad Ferzad Farzad Fezl Fadl Fezlun Fadlun 
-			Firdews Ferdows Ghobad Gholam Godarz Goštasp Goshtasb Hezarhesp Hazarasp Hafez Hedayat
-			Hesen Hasan Hisên Hussein Hormoz Hosen Hossein Humayun Hurmiz Hormazd Îsmaîl Ismail Kambiz 
-			Kamran Keyghobad Keyxusrew Keykhosrau Kâvus Kavoos
-			Kûrušê Cyrus Mamlan Muhammad Mashad Mehmûd Mahmud Mehrab Mehrzad Mensûr Mansur Menûçihr 
-			Manuchihr Menûšihr Manushihr Merwan Marwan Merzuban Marzuban Mesûd Masud
-			Mihemed Muhammad Mîrza Mirza Mistefa Mustafa Murad Morad Morteza Mozaffar Nard Naveed Nawid 
-			Nesir Nazir
-			Nesr Nasr Nezam Nošîrwan Nawshirwan Nêçîrvan Nechirwan Parviz Pujman Pêšeng Pashang Pîroz Peroz 
-			Revend Rawwad Reza Ruhollah Rustam Rostam Sadri Salman Sina Surxap Surkhab Tahmasp Tahmasb
-			Vahhab Vahid Vahusdan Wahustan Vali Varšasp Varshasb Vîštap Vishtasb Xarmandar Kharmandar 
-			Xašayar Khashayar 
-			Xuršîd Khurshid Xusrew Khosrau Xušyar Hooshyar Xwedadad Khodadad Xwedayar Khudayar Yezîd Yazid 
-			Yousef Zahak Zakaria Zand Zerdešt Zartosht Zia
-			Šadî Shadhi Šahab Shahab Šahbaz Shahbaz Šahenšah Shahanshah Šahin Shahin Šahram Shahram Šahryar 
-			Shahryar Šahrux Shahrokh Šahruz Shahruz Šapur Shapur Šarvin Sharwin Šawur Shavur Šayan Shayan 
-			Šîrkûh Shirkuh
+		male_names = { 
+			Rostam Huzail Anoshagan Andarzaghar Bahman Jaban Mardanshah Isfandiyar Nakhiragan Azadbed Farrukhzad Siyavaksh Busburha
+			Shahriyar Karin Mushegh Varaztirots Muta Narsi Tiruyih Kanadbak Shirazd Javanshir Burzin Siyah Aparviz Shahrag Faylakan Yazdanfar
+			Khorshid Farrukhan Dabuya Yazdegerd Hormizd Farrokh Khosrau Azarmidokht Peroz Shapur Borandukht Shahrbaraz
+			Ardashir Kavadh Vistahm Bahram Djamasp Balash Peroz Narseh Adur Anahid Farrbay Gusnasp Mah Mihran Sabuhr
+			Vahram Artabaz Ardun Arasp Ramin Siroos Shahriar Farbod Freydun Kurosh Mani Mazdak Hadish 
 		}
-		female_names = {
-			Adan Adar Ara Ardil Arezo Arezu Ariyan Arêz Arîman Arîn Asan Asteng Asê Avan Azadî Azrîn Aštî 
-			Badil Bahar Balnexšîn Banê Barîn Bawan Baziyan Bazê Befraw Befrîn Begîxan Belalûk Belqis
-			Belîcan Benav Benaz Berbijîn Berdar Berdil Bersîn Berîcan Bexšîn Beyan Beybîn Beybûn Bezîn 
-			Bihar Bijîn Bilêse Binar Binav Binefš Binevš Biyan Biškoj Biškurîn Bohar Bênaz Bêrîcan Bêrîvan 
-			Burandoxt Pourandokht
-			Dengîn Derav Derzîn Desmal Devken Dilar Dilaram Dilare Dilawaz Dilber Dilcan Dildar Dilgerm 
-			Dilistan Dilkanî Dilnaz Dilvîn Dilxoš Dilxweš Diyarî Doman Dêrsim Dîlan Dîristan Esmercan 
-			Esmerxan Khonza Ashraf Khanam Nur Khair Bibi
-			Estêre Evîn Ewrîn Eyšan Ezcan Felek Fener Ferašîn Firmêsk Fîdan Gazî Gelavêj Gerdengaz Gozel 
-			Gozê Grîvan Guhtem Gulbehar Golbahar Gulšen Gulnar Gulnaz Golnaz Gêlas Helez Heliz Helvîn 
-			Hemayîl 
-			Kejê Keser Kevok Kevî Kewser Kezîzer Koçer Leylê Leymîn Lezîn Lolav Lorkê Lorî Lorîcan Lorîn 
-			Lêlav Lêvken Lîlyan Lîza Maša Mebest Mehrîban Mehrîcan Mehrîvan
-			Mejbîr Mendal Mercam Merîvan Mirarîxan Miryem Mariam Mizgîn Muhabad Mêmê Mêrdîn Mêxek Mîdya 
-			Mîran Narîman Narîncan Navbihar Nawxoš Naz Nazdar Nazenîn Nazgul Nazgol Nazik Naznaz Nazê Nermê 
-			Nermîn Nesrîn Newbohar Nexšîn
-			Nešmîl Nešmîn Norcan Nêrgiz Nêrîn Nêzîk Nîdar Nîgar Nîroj Nîšan Nîštîman Perjîn Pervîn Perwane 
-			Parvaneh Perwîn Perçem Perî Perîgul Perînaz Perîxan Perîšan Pexšan Peyman Pirjîn Piršeng 
-			Piršing Pore Poršeng Pêlîn Pîroz Pîšeng 
-			Rana Rengîn Rewša Rewšen Rihan Rindê Rojhelat Rojê Ronahî Ronak Rondik Rêjîn Rêzan Rîhan Rîken 
-			Rûciwan Rûgeš Rûken Rûzerîn Sarê Serbar Sercan Serferaz Serfiraz Sergul Serçinar Seyran Xatûn 
-			Xêlîcan Xonçe Ghoncheh Zernîšan Zerya Zerê Zerî Zerîxan Zeytîn Zeytûn Zilfê Zoya Zozan Zêrîn 
-			Zîlan Zînet Zînê Šana Šanaz Šayan Šehrîban Šelal Šemam Šengê Šepal Šepirze Šermîn Ševba Ševîn 
-			Šêlaz Šîlan Šînî Šîwen
+		female_names = { 
+			Amstrida Aryames Anoosha Azar Bahareh Bita Behfar Taraneh Homa Khandan Darya Zar Samirah Sanaz 
+			Anzoy Mihran Rodag Denag Myrod Ifra Faraya Tishtar Virbanu Zarin Rambanu Puran Parin Parendi 
+			Nazakat Meherbanu Meherokh Meher Manizeh Mahzarin Mahtab Lilya Laleh Katayun Kaidokht Gulzar
+			Gohar Gulafruz Feroza Farida Bostan Behruz Azadeh Asha Arzu Arnaz Arnavaz Armindokht
 		}
 	}
-	afghani= {
-		primary = AFG
-		male_names = {
-			Abbas Abolhassan Alah-Verdi Allahyar Amin Aram Assad Aurang Ayeshah Azad Babek Babak Bahman 
-			Behrad Behram Bahram Behrouz Bextîyar Bakhtiar Bozorg Cehandar Jahandar Cehangir Jahangir
-			Cehanšah Jahanshah Cemšîd Jamshid Cevid Javeed Danûš Danush Darab Daryûš Darius Davud David 
-			Ebrahim Abraham Efrasiyab Afrasiyab Efšer Afshar Ehmed Ahmad Ehsan Zaman
-			Ekber Akbar Elî Ali Enûširwan Anushirvan Erdehan Ardahan Erdewan Ardavan Erdešîr Ardeshir 
-			Esfendiyar Esfandiar Mir Ways Humayun Ahmad Timur Shoja al-Mulk Muhammad Shoja Fath Jang Shahpur 
-			Eskander Alexander Ešot Ashot Eyyub Ayyub Feramez Faramarz Feraz Faraz Fath Ferhad Farhad 
-			Ferhan Farhan Ferheng Farhang Feriburz Fariborz Ferîd Farid
-			Ferîdun Feridun Ferux Farroukh Feruxzad Farrukhzad Ferzad Farzad Fezl Fadl Fezlun Fadlun 
-			Firdews Ferdows Ghobad Gholam Godarz Goštasp Goshtasb Hezarhesp Hazarasp Hafez Hedayat
-			Hesen Hasan Hisên Hussein Hormoz Hosen Hossein Humayun Hurmiz Hormazd Îsmaîl Ismail Kambiz 
-			Kamran Keyghobad Keyxusrew Keykhosrau Kâvus Kavoos
-			Kûrušê Cyrus Mamlan Muhammad Mashad Mehmûd Mahmud Mehrab Mehrzad Mensûr Mansur Menûçihr 
-			Manuchihr Menûšihr Manushihr Merwan Marwan Merzuban Marzuban Mesûd Masud
-			Mihemed Muhammad Mîrza Mirza Mistefa Mustafa Murad Morad Morteza Mozaffar Nard Naveed Nawid 
-			Nesir Nazir Mahmud Ayub
-			Nesr Nasr Nezam Nošîrwan Nawshirwan Nêçîrvan Nechirwan Parviz Pujman Pêšeng Pashang Pîroz Peroz 
-			Revend Rawwad Reza Ruhollah Rustam Rostam Sadri Salman Sina Surxap Surkhab Tahmasp Tahmasb
-			Vahhab Vahid Vahusdan Wahustan Vali Varšasp Varshasb Vîštap Vishtasb Xarmandar Kharmandar 
-			Xašayar Khashayar 
-			Xuršîd Khurshid Xusrew Khosrau Xušyar Hooshyar Xwedadad Khodadad Xwedayar Khudayar Yezîd Yazid 
-			Yousef Zahak Zakaria Zand Zerdešt Zartosht Zia
-			Šadî Shadhi Šahab Shahab Šahbaz Shahbaz Šahenšah Shahanshah Šahin Shahin Šahram Shahram Šahryar 
-			Shahryar Šahrux Shahrokh Šahruz Shahruz Šapur Shapur Šarvin Sharwin Šawur Shavur Šayan Shayan 
-			Šîrkûh Shirkuh
+	afghani = {
+		primary = GHU
+		male_names = { 
+			Gurak Divashtich Yodkhsetak Tuhun Tarkhun Urak Turghar Lushan Nanaifarn Avyaman Yechi Chaki Mechun Tishifan Wupoyan
+			Tarxun Wanxanak Nawekat Wiyus Uxushukan Bharxuman Skatch Sheshch Chaxren Ramch Shaw Maxak Ramtish Axushfarn Bhurz Chukshak Fudanyan Dishebo Vandak Khudayfarn Sili Tishrat Chunakk Namdar Xutawch Pisak Karz Nijat Chatfaratsaran Dewastich Varzakk Nanaithvar Chuzakk Khwatawch Karzh Nizat Nanaikuch Ukhwan Pator Wakhushuvirt Maniakh Watch Shafnoshak
+			Akhurmaztakk Akhushfarn Anghatnaw Anghatspadh Anushirvan Ardavan Ardeshir Armatsach Arsach Artikhuvandakh
+			Artivan Aspandhat Astken Aurang Avyamanyan Avyaman Avyamanch Avyamanvandak Babak Bahram
+			Banda Barak Bharkhuman Bhurz Buddhadasa Chakar Chakhapak Chakhren Cher Chetvandak Dariush
+			Devadasa Dewashtich Dhakh Dhruwaspvandak Esfandiar Eskander Ewakhsh Faramarz Farhad Farn Farnaghat
+			Farnch Farnkhund Farroukh Farrukhzad Farzad Fatmiwach Ferdows Fereedun Frikhwataw Ghawtus Ghobad
+			Ghoshfarn Ghotamsach Godarz Goshtasb Hazarasp Hormazd Hormoz Induk Irkin Jamshid Jiamut
+			Jimatvande Kanak Kanakk Kartir Karzhtik Kavoos Kaway Kharstrang Khosrow Khun Khurshid Khwadhawanakk
+			Khwarmew Khwasaw Khwasawch Kund Kundakk Kurush Kushan Kushanakanak Makhak Marti Marzuban Maymarghch Methakan Mew Miren
+			Muqanna Nanai Nanaidhvar Nanaifarn Nanaikhsay Nanaithvar Nanaizanch Nanayakk Nanevante Narisaf Narshakhi Nawchirth
+			Nibothak Nipak Nithan Ottegin Papakk Parsak Parviz Pashang Patrodhan Pekako Peroz Pesakk
+			Pujman Qishiq Ramtish Rashdhes Razmwanwan Resan Rewdhvar Rokhshan Rostam Rutha Sagharak Sas Sasan Satasp
+			Sesh Shahbaz Shahin Shahrokh Shans Shapur Shaw Shennu Shirch Sina Spadh Spadhkharsh Srawakk
+			Stayidh Suryakk Tahmasb Takhsich Takhsichvandak Takut Tarkhun Taw Tir Tishtrya Tishvandak Turghar Ukhushukan
+			Urak Vagh Vaghrew Vahhab Varshasb Varzak Varzirak Vishtasb Viyus Vuvva Wakhunam Wakhushakk Wakhushu Wanenak
+			Wankaway Wankhanak Wanrazmak Wanwans Wishaghn Xeykhosrow Zand Zartosht Zymt Zigil
 		}
-		female_names = {
-			Adan Adar Ara Ardil Arezo Arezu Ariyan Arêz Arîman Arîn Asan Asteng Asê Avan Azadî Azrîn Aštî 
-			Badil Bahar Balnexšîn Banê Barîn Bawan Baziyan Bazê Befraw Befrîn Begîxan Belalûk Belqis
-			Belîcan Benav Benaz Berbijîn Berdar Berdil Bersîn Berîcan Bexšîn Beyan Beybîn Beybûn Bezîn 
-			Bihar Bijîn Bilêse Binar Binav Binefš Binevš Biyan Biškoj Biškurîn Bohar Bênaz Bêrîcan Bêrîvan 
-			Burandoxt Pourandokht
-			Dengîn Derav Derzîn Desmal Devken Dilar Dilaram Dilare Dilawaz Dilber Dilcan Dildar Dilgerm 
-			Dilistan Dilkanî Dilnaz Dilvîn Dilxoš Dilxweš Diyarî Doman Dêrsim Dîlan Dîristan Esmercan 
-			Esmerxan Nawal
-			Estêre Evîn Ewrîn Eyšan Ezcan Felek Fener Ferašîn Firmêsk Fîdan Gazî Gelavêj Gerdengaz Gozel 
-			Gozê Grîvan Guhtem Gulbehar Golbahar Gulšen Gulnar Gulnaz Golnaz Gêlas Helez Heliz Helvîn 
-			Hemayîl 
-			Kejê Keser Kevok Kevî Kewser Kezîzer Koçer Leylê Leymîn Lezîn Lolav Lorkê Lorî Lorîcan Lorîn 
-			Lêlav Lêvken Lîlyan Lîza Maša Mebest Mehrîban Mehrîcan Mehrîvan
-			Mejbîr Mendal Mercam Merîvan Mirarîxan Miryem Mariam Mizgîn Muhabad Mêmê Mêrdîn Mêxek Mîdya 
-			Mîran Narîman Narîncan Navbihar Nawxoš Naz Nazdar Nazenîn Nazgul Nazgol Nazik Naznaz Nazê Nermê 
-			Nermîn Nesrîn Newbohar Nexšîn
-			Nešmîl Nešmîn Norcan Nêrgiz Nêrîn Nêzîk Nîdar Nîgar Nîroj Nîšan Nîštîman Perjîn Pervîn Perwane 
-			Parvaneh Perwîn Perçem Perî Perîgul Perînaz Perîxan Perîšan Pexšan Peyman Pirjîn Piršeng 
-			Piršing Pore Poršeng Pêlîn Pîroz Pîšeng 
-			Rana Rengîn Rewša Rewšen Rihan Rindê Rojhelat Rojê Ronahî Ronak Rondik Rêjîn Rêzan Rîhan Rîken 
-			Rûciwan Rûgeš Rûken Rûzerîn Sarê Serbar Sercan Serferaz Serfiraz Sergul Serçinar Seyran Xatûn 
-			Xêlîcan Xonçe Ghoncheh Zernîšan Zerya Zerê Zerî Zerîxan Zeytîn Zeytûn Zilfê Zoya Zozan Zêrîn 
-			Zîlan Zînet Zînê Šana Šanaz Šayan Šehrîban Šelal Šemam Šengê Šepal Šepirze Šermîn Ševba Ševîn 
-			Šêlaz Šîlan Šînî Šîwen
+		female_names = { 
+			Nana Upach An Kang
+			Aghatzak Anakhit Arghavan Banafsheh Chat Chatis Chet Chinanch Darya Funa Furuzan Ghamze Ghoncheh
+			Golbahar Golshan Khansch Makh Mah Mahtab Miwnay Nana Nanai Nanaidhat Navvaba Nazgol
+			Nazilla Parvaneh Parvin Ranisa Roxana Sanakhram Shahrzad Shahzadeh Shayn Shirin Touran
+			Yasaman Yena
+		}
+		dynasty_names = {
+			Kang Maymurg Kesh Namdar Lushan Tuhun Calmandana Kayan Muqan Barm Ghoriyan Zabul Virk Tomar Tarar Sidhu Sial Sekhon Sarai
+			Sandhu Rehvar Rawn Rath Ranjha Kharal Khatkar Marhal Mirdha Panwar Rahal Khakh Katewa Johiya Grewal Goriya Dhaliwal Dhaulya
+			Ahlawat Aulakh Bagri Bajwa Bargoti Brar Buttar Cheema Chhina Chilka Dabas Dahiya Dara Dharan
+		}
+	}
+	Chorasmian = {
+		primary = GRG
+		male_names = { 
+			Gurak Divashtich Yodkhsetak Tuhun Tarkhun Urak Turghar Lushan Nanaifarn Avyaman Yechi Chaki Mechun Tishifan Wupoyan
+			Tarxun Wanxanak Nawekat Wiyus Uxushukan Bharxuman Skatch Sheshch Chaxren Ramch Shaw Maxak Ramtish Axushfarn Bhurz Chukshak Fudanyan Dishebo Vandak Khudayfarn Sili Tishrat Chunakk Namdar Xutawch Pisak Karz Nijat Chatfaratsaran Dewastich Varzakk Nanaithvar Chuzakk Khwatawch Karzh Nizat Nanaikuch Ukhwan Pator Wakhushuvirt Maniakh Watch Shafnoshak
+			Akhurmaztakk Akhushfarn Anghatnaw Anghatspadh Anushirvan Ardavan Ardeshir Armatsach Arsach Artikhuvandakh
+			Artivan Aspandhat Astken Aurang Avyaman-yan Avyaman Avyamanch Avyamanvandak Babak Bahram
+			Banda Barak Bharkhuman Bhurz Buddhadasa Chakar Chakhapak Chakhren Cher Chetvandak Dariush
+			Devadasa Dewashtich Dhakh Dhruwaspvandak Esfandiar Eskander Ewakhsh Faramarz Farhad Farn Farnaghat
+			Farnch Farnkhund Farroukh Farrukhzad Farzad Fatmiwach Ferdows Fereedun Frikhwataw Ghawtus Ghobad
+			Ghoshfarn Ghotamsach Godarz Goshtasb Hazarasp Hormazd Hormoz Induk Irkin Jamshid Jiamut
+			Jimatvande Kanak Kanakk Kartir Karzhtik Kavoos Kaway Kharstrang Khosrow Khun Khurshid Khwadhawanakk
+			Khwarmew Khwasaw Khwasawch Kund Kundakk Kurush Kushan Kushanakanak Makhak Marti Marzuban Maymarghch Methakan Mew Miren
+			Muqanna Nanai Nanaidhvar Nanaifarn Nanaikhsay Nanaithvar Nanaizanch Nanayakk Nanevante Narisaf Narshakhi Nawchirth
+			Nibothak Nipak Nithan Ottegin Papakk Parsak Parviz Pashang Patrodhan Pekako Peroz Pesakk
+			Pujman Qishiq Ramtish Rashdhes Razmwanwan Resan Rewdhvar Rokhshan Rostam Rutha Sagharak Sas Sasan Satasp
+			Sesh Shahbaz Shahin Shahrokh Shans Shapur Shaw Shennu Shirch Sina Spadh Spadhkharsh Srawakk
+			Stayidh Suryakk Tahmasb Takhsich Takhsichvandak Takut Tarkhun Taw Tir Tishtrya Tishvandak Turghar Ukhushukan
+			Urak Vagh Vaghrew Vahhab Varshasb Varzak Varzirak Vishtasb Viyus Vuvva Wakhunam Wakhushakk Wakhushu Wanenak
+			Wankaway Wankhanak Wanrazmak Wanwans Wishaghn Xeykhosrow Zand Zartosht Zymt
+		}
+		female_names = { 
+			Amstrida Aryames Anoosha Azar Bahareh Bita Behfar Taraneh Homa Khandan Darya Zar Samirah Sanaz 
+			Anzoy Mihran Rodag Denag Myrod Ifra Faraya Tishtar Virbanu Zarin Rambanu Puran Parin Parendi 
+			Nazakat Meherbanu Meherokh Meher Manizeh Mahzarin Mahtab Lilya Laleh Katayun Kaidokht Gulzar
+			Gohar Gulafruz Feroza Farida Bostan Behruz Azadeh Asha Arzu Arnaz Arnavaz Armindokht
+		}
+	}
+	Sogdian = {
+		primary = MGS
+		male_names = { 
+			Gurak Divashtich Yodkhsetak Tuhun Tarkhun Urak Turghar Lushan Nanaifarn Avyaman Yechi Chaki Mechun Tishifan Wupoyan
+			Tarxun Wanxanak Nawekat Wiyus Uxushukan Bharxuman Skatch Sheshch Chaxren Ramch Shaw Maxak Ramtish Axushfarn Bhurz Chukshak Fudanyan Dishebo Vandak Khudayfarn Sili Tishrat Chunakk Namdar Xutawch Pisak Karz Nijat Chatfaratsaran Dewastich Varzakk Nanaithvar Chuzakk Khwatawch Karzh Nizat Nanaikuch Ukhwan Pator Wakhushuvirt Maniakh Watch Shafnoshak
+			Akhurmaztakk Akhushfarn Anghatnaw Anghatspadh Anushirvan Ardavan Ardeshir Armatsach Arsach Artikhuvandakh
+			Artivan Aspandhat Astken Aurang Avyamanyan Avyaman Avyamanch Avyamanvandak Babak Bahram
+			Banda Barak Bharkhuman Bhurz Buddhadasa Chakar Chakhapak Chakhren Cher Chetvandak Dariush
+			Devadasa Dewashtich Dhakh Dhruwaspvandak Esfandiar Eskander Ewakhsh Faramarz Farhad Farn Farnaghat
+			Farnch Farnkhund Farroukh Farrukhzad Farzad Fatmiwach Ferdows Fereedun Frikhwataw Ghawtus Ghobad
+			Ghoshfarn Ghotamsach Godarz Goshtasb Hazarasp Hormazd Hormoz Induk Irkin Jamshid Jiamut
+			Jimatvande Kanak Kanakk Kartir Karzhtik Kavoos Kaway Kharstrang Khosrow Khun Khurshid Khwadhawanakk
+			Khwarmew Khwasaw Khwasawch Kund Kundakk Kurush Kushan Kushanakanak Makhak Marti Marzuban Maymarghch Methakan Mew Miren
+			Muqanna Nanai Nanaidhvar Nanaifarn Nanaikhsay Nanaithvar Nanaizanch Nanayakk Nanevante Narisaf Narshakhi Nawchirth
+			Nibothak Nipak Nithan Ottegin Papakk Parsak Parviz Pashang Patrodhan Pekako Peroz Pesakk
+			Pujman Qishiq Ramtish Rashdhes Razmwanwan Resan Rewdhvar Rokhshan Rostam Rutha Sagharak Sas Sasan Satasp
+			Sesh Shahbaz Shahin Shahrokh Shans Shapur Shaw Shennu Shirch Sina Spadh Spadhkharsh Srawakk
+			Stayidh Suryakk Tahmasb Takhsich Takhsichvandak Takut Tarkhun Taw Tir Tishtrya Tishvandak Turghar Ukhushukan
+			Urak Vagh Vaghrew Vahhab Varshasb Varzak Varzirak Vishtasb Viyus Vuvva Wakhunam Wakhushakk Wakhushu Wanenak
+			Wankaway Wankhanak Wanrazmak Wanwans Wishaghn Xeykhosrow Zand Zartosht Zymt
+		}
+		female_names = { 
+			Nana Upach An Kang
+			Aghatzak Anakhit Arghavan Banafsheh Chat Chatis Chet Chinanch Darya Funa Furuzan Ghamze Ghoncheh
+			Golbahar Golshan Khansch Makh Mah Mahtab Miwnay Nana Nanai Nanaidhat Navvaba Nazgol
+			Nazilla Parvaneh Parvin Ranisa Roxana Sanakhram Shahrzad Shahzadeh Shayn Shirin Touran
+			Yasaman Yena
+		}
+		dynasty_names = {
+			Kang Maymurg Kesh Namdar Lushan Tuhun Calmandana Kayan Muqan Barm 
 		}
 	}
 	kurdish = {
-		primary = ARD
+		primary = HSN
 		dynasty_names = { 
 			Hazaraspid "Soran" "Justanid" Bozorg Ardalan Bukhti Ferozkohi Feyli Gewirk Rekani
 			Hadhabani  "Ali Sherwan" Herki Jalilavand
@@ -4880,21 +4882,26 @@ iranian	= {
 		}
 	}
 	mazandarani = {
-		primary = TAB
-		male_names = {
-			Bisutun "Adud ud-Dawlah" Kayumarth "Bakir Almaluf" "Kai-Ka'us" Jahangir Aziz "Sa'ad ud-Dawlah" Bahman
-		}
-		female_names = {
-			Manli Mitchka Mila Vanoosheh Marjam Marzhan Milaana Nurbiika Nurishat Nuura Peet'mat Qoqa  
-		}
+		primary = ISP
 		dynasty_names = {
-			Afrasiyab Paduspanid Alid "Banu Kawus" "Banu Iskandar" Marashi Kiya
-			Bavandid Eshaqvand
+			Varza Vaansh Tirandazian Shahnavaz Shahukar Saran Samya Sorkhab Sabza Roshan Radmand Rahtabad Payedar Parastar Oross
+			Ostevari Namir Mazdiyasni Mayan Mashreghi Kerman Kamkar Kayanizad Kayanipur Kharanwala Kabir Javanmard Izad Hormazdi
+			Farouzan Firouzgar Faravhari Farahi Eranee Darvish Deshmukh Dangor Arestani Azdapur Azad Abester 
+			Ispahbad Zik Sasan Shapur Injuid Mihran Suren Karen Spandiyadh Varaz Zohrab Zaigar Zadah Zaaykar Yazdi Yegtahi Vakshur
 		}
-	}
-	dynasty_names = {
-		Afsharid Zand Qajar Qoli Zahedi Talish Safavid Zulqadr Shamlu Sahandlu Zanganeh
-		Zaman Ustajlu Tekkelu Jaberi Khuzani Kujuji Ordubadi Khalifeh Karaki 
+		male_names = { 
+			Rostam Huzail Anoshagan Andarzaghar Bahman Jaban Mardanshah Isfandiyar Nakhiragan Azadbed Farrukhzad Siyavaksh Busburha
+			Shahriyar Karin Mushegh Varaztirots Muta Narsi Tiruyih Kanadbak Shirazd Javanshir Burzin Siyah Aparviz Shahrag Faylakan Yazdanfar
+			Khorshid Farrukhan Dabuya Yazdegerd Hormizd Farrokh Khosrau Azarmidokht Peroz Shapur Borandukht Shahrbaraz
+			Ardashir Kavadh Vistahm Bahram Djamasp Balash Peroz Narseh Adur Anahid Farrbay Gusnasp Mah Mihran Sabuhr
+			Vahram Artabaz Ardun Arasp Ramin Siroos Shahriar Farbod Freydun Kurosh Mani Mazdak Hadish 
+		}
+		female_names = { 
+			Amstrida Aryames Anoosha Azar Bahareh Bita Behfar Taraneh Homa Khandan Darya Zar Samirah Sanaz 
+			Anzoy Mihran Rodag Denag Myrod Ifra Faraya Tishtar Virbanu Zarin Rambanu Puran Parin Parendi 
+			Nazakat Meherbanu Meherokh Meher Manizeh Mahzarin Mahtab Lilya Laleh Katayun Kaidokht Gulzar
+			Gohar Gulafruz Feroza Farida Bostan Behruz Azadeh Asha Arzu Arnaz Arnavaz Armindokht
+		}
 	}
 }
 
@@ -5001,18 +5008,24 @@ altaic = {
 	graphical_culture = muslimgfx
 	
 	uzbehk = {
-		primary = SHY
+		primary = TRK
+		dynasty_names = {
+			"Arabshahid" "Qungrat" "Bayan Arslan" "Mongke Cheren" "Mongke Bayar" "Suren Chinua" "Oyugun Nasan"
+			"Bora Tolui" Qadancher Batulun Batutai Bokejin Arighqan Burilgiteni
+			Bayarnai Subegene Tegusdai Yekedei Tigin Arslan Bunduqdarid Kitbughai Karesili Altar Doganin Gokhan Ilhan Kagan Metehan Ozan Tarkan Utku Ozkan Tughluq Tughral Kyzylid Yesil Uzengi
+		}
 		male_names = {
-			Abdul-Aziz Abdul-Karim Abdul-Mumin Abdul-Rahim Abdulla Abu Said Abu'l-Feiz Abu'l-Ghazi Abu'l-Khayr 
-			Abu'l-Mansur Agatay Alim Anusha Arab Muhammad Avanesh Bahadur Bakht Baqi Muhammad Budjuga Bureke 
-			Djuchi Dost Habash Hadji Hadji Muhammad Hassan Quli Haydar Imam Quli Ilbars Irdana Isfandiyar Isim 
-			Janibek Kal Khudayar Khudaydad Kochkunju Muhammad Muhammad Amin Muhammad Hakim Muhammad Rahim Nadir 
-			Muhammad Narbuta Navruz Ahmad Niyaz Pir Muhammad Sanjar Sevinch Shadi Shahmurad Shahrukh Shaykh 
-			Subhan Quli Sufyan Suleyman Tahir Timur Ubaydulla Umar Vali Vali Muhammad Yadgar Daniyal Haidar 
-			Iskandar
+			"Alp Arslan" Bagha Baghatur Balgici Barjik Barsbek Bastu Bashtwa Bugha Buzer Corpan Ilik Iltabar Itakh Kamaj Karadakh Kayghalagh Khatir Khuterkin
+			Kibar Kisa Kundaciq Kundac Manar Otemis Sartac Tabghac Tarkhan Tuzniq Vakrim Yabghu Yavantey Yencepi Yerneslu Yectirek Yilig
+			Agatay Anusha Avanesh Bahadur Bakht Baqi Budjuga Bureke
+			Haydar Ilbars Khudayar Sevinch Sufyan Tahir Timur Tughluq Yadgar Cagri Afsin Artuk Basbuga Baytas Berkan Berkiyaruk Dukak Erdem Ertan Kilic Kutalmis Kutay Kutlug Mengucek Saruca Savtekin Savur Togay Tolun Toruntay Tughril Tunga Tutus Yinal
+			Cagri "Alp Yurek" Alptigin Baybars Bayezid Berkiyaruk Dundar Ertugrul Gunduz Kaikaus Kaiqobad Kara Karatay Kaytun Tanrivermis Tekin Timurtas Togtekin Uluc
 		}
 		female_names = {
-			Temülen Börte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Ho'elun Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene 
+			Cicek Cilen Ciltanesi Ozgul Ozlem Akgul Asli Aslihan Ayasun Ayla Ayse Ayten Azize Bahar Banu Bozcin Canan Ceylan Dunya Dilber Dilek Emine
+			Esin Fatma Firuze Gulay Gulbahar Gulfem Gulsum Gumus Gunduz Gundes Gunes Hatice Hayat Huriye Ilkay Ilknur Ipek Ipekel Irge
+			Karacik Lale Leyla Mala Mansure Merve Mutlu Nagihan Nergis Neslihan Nilufer Nur Peksen Terkhen Samur Sarica Sati Sehnaz Serap Serife Sevilay
+			Sevindik Sibel Sirin Sirma Songul Sumru Tekce Tura Umay Usunbike Vahide Yasar Yeldem Yildiz Zehra Zuhal
 		}
 	}
 	turkish = {
@@ -5052,23 +5065,24 @@ altaic = {
 		}
 	}
 	turkmeni = {
-		primary = KHI
+		primary = OGZ
 		dynasty_names = {
 			"Arabshahid" "Qungrat" "Bayan Arslan" "Mongke Cheren" "Mongke Bayar" "Suren Chinua" "Oyugun Nasan"
 			"Bora Tolui" Qadancher Batulun Batutai Bokejin Arighqan Burilgiteni
-			Bayarnai Subegene Tegusdai Yekedei
+			Bayarnai Subegene Tegusdai Yekedei Tigin Arslan Bunduqdarid Kitbughai Karesili Altar Doganin Gokhan Ilhan Kagan Metehan Ozan Tarkan Utku Ozkan Tughluq Tughral Kyzylid Yesil Uzengi
 		}
 		male_names = {
-			Abdul-Aziz Abdul-Karim Abdul-Mumin Abdul-Rahim Abdulla Abu Said Abu'l-Feiz Abu'l-Ghazi Abu'l-Khayr 
-			Abu'l-Mansur Agatay Alim Anusha Arab Muhammad Avanesh Bahadur Bakht Baqi Muhammad Budjuga Bureke 
-			Djuchi Dost Habash Hadji Hadji Muhammad Hassan Quli Haydar Imam Quli Ilbars Irdana Isfandiyar Isim 
-			Janibek Kal Khudayar Khudaydad Kochkunju Muhammad Muhammad Amin Muhammad Hakim Muhammad Rahim Nadir 
-			Muhammad Narbuta Navruz Ahmad Niyaz Pir Muhammad Sanjar Sevinch Shadi Shahmurad Shahrukh Shaykh 
-			Subhan Quli Sufyan Suleyman Tahir Timur Ubaydulla Umar Vali Vali Muhammad Yadgar Daniyal Haidar 
-			Iskandar
+			"Alp Arslan" Bagha Baghatur Balgici Barjik Barsbek Bastu Bashtwa Bugha Buzer Corpan Ilik Iltabar Itakh Kamaj Karadakh Kayghalagh Khatir Khuterkin
+			Kibar Kisa Kundaciq Kundac Manar Otemis Sartac Tabghac Tarkhan Tuzniq Vakrim Yabghu Yavantey Yencepi Yerneslu Yectirek Yilig
+			Agatay Anusha Avanesh Bahadur Bakht Baqi Budjuga Bureke
+			Haydar Ilbars Khudayar Sevinch Sufyan Tahir Timur Tughluq Yadgar Cagri Afsin Artuk Basbuga Baytas Berkan Berkiyaruk Dukak Erdem Ertan Kilic Kutalmis Kutay Kutlug Mengucek Saruca Savtekin Savur Togay Tolun Toruntay Tughril Tunga Tutus Yinal
+			Cagri "Alp Yurek" Alptigin Baybars Bayezid Berkiyaruk Dundar Ertugrul Gunduz Kaikaus Kaiqobad Kara Karatay Kaytun Tanrivermis Tekin Timurtas Togtekin Uluc
 		}
 		female_names = {
-			Hooda Malaika Munira Rabiya Rafiqa Ksyusha Sabina Zarina Hatyra Gulnaza Selbi Aziza Jeren Zeynab Myahri
+			Cicek Cilen Ciltanesi Ozgul Ozlem Akgul Asli Aslihan Ayasun Ayla Ayse Ayten Azize Bahar Banu Bozcin Canan Ceylan Dunya Dilber Dilek Emine
+			Esin Fatma Firuze Gulay Gulbahar Gulfem Gulsum Gumus Gunduz Gundes Gunes Hatice Hayat Huriye Ilkay Ilknur Ipek Ipekel Irge
+			Karacik Lale Leyla Mala Mansure Merve Mutlu Nagihan Nergis Neslihan Nilufer Nur Peksen Terkhen Samur Sarica Sati Sehnaz Serap Serife Sevilay
+			Sevindik Sibel Sirin Sirma Songul Sumru Tekce Tura Umay Usunbike Vahide Yasar Yeldem Yildiz Zehra Zuhal
 		}
 	}
 	turanian_culture = {
@@ -5076,152 +5090,102 @@ altaic = {
 		dynasty_names = {
 			"Arabshahid" "Qungrat" "Bayan Arslan" "Mongke Cheren" "Mongke Bayar" "Suren Chinua" "Oyugun Nasan"
 			"Bora Tolui" Qadancher Batulun Batutai Bokejin Arighqan Burilgiteni
-			Bayarnai Subegene Tegusdai Yekedei
+			Bayarnai Subegene Tegusdai Yekedei Tigin Arslan Bunduqdarid Kitbughai Karesili Altar Doganin Gokhan Ilhan Kagan Metehan Ozan Tarkan Utku Ozkan Tughluq Tughral Kyzylid Yesil Uzengi
 		}
 		male_names = {
-			Abdul-Aziz Abdul-Karim Abdul-Mumin Abdul-Rahim Abdulla Abu Said Abu'l-Feiz Abu'l-Ghazi Abu'l-Khayr 
-			Abu'l-Mansur Agatay Alim Anusha Arab Muhammad Avanesh Bahadur Bakht Baqi Muhammad Budjuga Bureke 
-			Djuchi Dost Habash Hadji Hadji Muhammad Hassan Quli Haydar Imam Quli Ilbars Irdana Isfandiyar Isim 
-			Janibek Kal Khudayar Khudaydad Kochkunju Muhammad Muhammad Amin Muhammad Hakim Muhammad Rahim Nadir 
-			Muhammad Narbuta Navruz Ahmad Niyaz Pir Muhammad Sanjar Sevinch Shadi Shahmurad Shahrukh Shaykh 
-			Subhan Quli Sufyan Suleyman Tahir Timur Ubaydulla Umar Vali Vali Muhammad Yadgar Daniyal Haidar 
-			Iskandar
+			"Alp Arslan" Bagha Baghatur Balgici Barjik Barsbek Bastu Bashtwa Bugha Buzer Corpan Ilik Iltabar Itakh Kamaj Karadakh Kayghalagh Khatir Khuterkin
+			Kibar Kisa Kundaciq Kundac Manar Otemis Sartac Tabghac Tarkhan Tuzniq Vakrim Yabghu Yavantey Yencepi Yerneslu Yectirek Yilig
+			Agatay Anusha Avanesh Bahadur Bakht Baqi Budjuga Bureke
+			Haydar Ilbars Khudayar Sevinch Sufyan Tahir Timur Tughluq Yadgar Cagri Afsin Artuk Basbuga Baytas Berkan Berkiyaruk Dukak Erdem Ertan Kilic Kutalmis Kutay Kutlug Mengucek Saruca Savtekin Savur Togay Tolun Toruntay Tughril Tunga Tutus Yinal
+			Cagri "Alp Yurek" Alptigin Baybars Bayezid Berkiyaruk Dundar Ertugrul Gunduz Kaikaus Kaiqobad Kara Karatay Kaytun Tanrivermis Tekin Timurtas Togtekin Uluc
 		}
 		female_names = {
-			Hooda Malaika Munira Rabiya Rafiqa Ksyusha Sabina Zarina Hatyra Gulnaza Selbi Aziza Jeren Zeynab Myahri
+			Cicek Cilen Ciltanesi Ozgul Ozlem Akgul Asli Aslihan Ayasun Ayla Ayse Ayten Azize Bahar Banu Bozcin Canan Ceylan Dunya Dilber Dilek Emine
+			Esin Fatma Firuze Gulay Gulbahar Gulfem Gulsum Gumus Gunduz Gundes Gunes Hatice Hayat Huriye Ilkay Ilknur Ipek Ipekel Irge
+			Karacik Lale Leyla Mala Mansure Merve Mutlu Nagihan Nergis Neslihan Nilufer Nur Peksen Terkhen Samur Sarica Sati Sehnaz Serap Serife Sevilay
+			Sevindik Sibel Sirin Sirma Songul Sumru Tekce Tura Umay Usunbike Vahide Yasar Yeldem Yildiz Zehra Zuhal
 		}
 	}
 	uyghur = {
 		primary = KAS
+		dynasty_names = {
+			"Arabshahid" "Qungrat" "Bayan Arslan" "Mongke Cheren" "Mongke Bayar" "Suren Chinua" "Oyugun Nasan"
+			"Bora Tolui" Qadancher Batulun Batutai Bokejin Arighqan Burilgiteni
+			Bayarnai Subegene Tegusdai Yekedei Tigin Arslan Bunduqdarid Kitbughai Karesili Altar Doganin Gokhan Ilhan Kagan Metehan Ozan Tarkan Utku Ozkan Tughluq Tughral Kyzylid Yesil Uzengi
+		}
 		male_names = {
-			Abdul-Karim Abdul-Latif Abdul-Rashîd Abdullah Ahmad Alghu Ali Baraq Bayan Quli Buqa Temür Buzan 
-			Changshi Danishmendji Dost Muhammad Dughlat Duwa Duwa Temür Eljigidey Esen Buqa Ilbars Ilyas Ismail 
-			Khabul Khizr Könchek Mahmud Mansur Mubarak Muhammad Muhammad Amin Muhammad Mumin Naqsh-i-Jahan 
-			Hulagu Qazaghan Qazan Quraysh Sa'id Satuq Shams-i-Jahan Sher Muhammad Soyurghatmish Taliqu 
-			Temür Tughlugh Temür Uwais Yasa'ur Yesu Mongke Yesun Temür Yunus Chagatay Tarmashirin Negübei Qara 
-			Kebek Yahballaha 
+			"Alp Arslan" Bagha Baghatur Balgici Barjik Barsbek Bastu Bashtwa Bugha Buzer Corpan Ilik Iltabar Itakh Kamaj Karadakh Kayghalagh Khatir Khuterkin
+			Kibar Kisa Kundaciq Kundac Manar Otemis Sartac Tabghac Tarkhan Tuzniq Vakrim Yabghu Yavantey Yencepi Yerneslu Yectirek Yilig
+			Agatay Anusha Avanesh Bahadur Bakht Baqi Budjuga Bureke
+			Haydar Ilbars Khudayar Sevinch Sufyan Tahir Timur Tughluq Yadgar Cagri Afsin Artuk Basbuga Baytas Berkan Berkiyaruk Dukak Erdem Ertan Kilic Kutalmis Kutay Kutlug Mengucek Saruca Savtekin Savur Togay Tolun Toruntay Tughril Tunga Tutus Yinal
+			Cagri "Alp Yurek" Alptigin Baybars Bayezid Berkiyaruk Dundar Ertugrul Gunduz Kaikaus Kaiqobad Kara Karatay Kaytun Tanrivermis Tekin Timurtas Togtekin Uluc
 		}
 		female_names = {
-			Sakina Temülen Börte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Ho'elun 
-			Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene "Fatima" "Ibtisam" "Jalila" "Janan" 
-			"Layla" "Sakina" "Sharifa"
+			Cicek Cilen Ciltanesi Ozgul Ozlem Akgul Asli Aslihan Ayasun Ayla Ayse Ayten Azize Bahar Banu Bozcin Canan Ceylan Dunya Dilber Dilek Emine
+			Esin Fatma Firuze Gulay Gulbahar Gulfem Gulsum Gumus Gunduz Gundes Gunes Hatice Hayat Huriye Ilkay Ilknur Ipek Ipekel Irge
+			Karacik Lale Leyla Mala Mansure Merve Mutlu Nagihan Nergis Neslihan Nilufer Nur Peksen Terkhen Samur Sarica Sati Sehnaz Serap Serife Sevilay
+			Sevindik Sibel Sirin Sirma Songul Sumru Tekce Tura Umay Usunbike Vahide Yasar Yeldem Yildiz Zehra Zuhal
 		}
 	}
 	khazak = {
 		primary = KZH
+		dynasty_names = {
+			"Arabshahid" "Qungrat" "Bayan Arslan" "Mongke Cheren" "Mongke Bayar" "Suren Chinua" "Oyugun Nasan"
+			"Bora Tolui" Qadancher Batulun Batutai Bokejin Arighqan Burilgiteni
+			Bayarnai Subegene Tegusdai Yekedei Tigin Arslan Bunduqdarid Kitbughai Karesili Altar Doganin Gokhan Ilhan Kagan Metehan Ozan Tarkan Utku Ozkan Tughluq Tughral Kyzylid Yesil Uzengi
+		}
 		male_names = {
-			Abilghazi Abilmambet Abulay Abulkhayr Ahmat Ayshwak Arunghazi Barak Batir Bokey Bulat Burunduq 
-			Erali Esim Ghubaydulla Haqnazar Jangir Janibek Jantore Jarmuhambet Jolbaris Kenesari Kerey Mamash 
-			Qaratay Qasim Qayip Sameke Sherghazi Shighay Tahir Tauke Tawekel Tugum Wali Buydash Nurali
+			"Alp Arslan" Bagha Baghatur Balgici Barjik Barsbek Bastu Bashtwa Bugha Buzer Corpan Ilik Iltabar Itakh Kamaj Karadakh Kayghalagh Khatir Khuterkin
+			Kibar Kisa Kundaciq Kundac Manar Otemis Sartac Tabghac Tarkhan Tuzniq Vakrim Yabghu Yavantey Yencepi Yerneslu Yectirek Yilig
+			Agatay Anusha Avanesh Bahadur Bakht Baqi Budjuga Bureke
+			Haydar Ilbars Khudayar Sevinch Sufyan Tahir Timur Tughluq Yadgar Cagri Afsin Artuk Basbuga Baytas Berkan Berkiyaruk Dukak Erdem Ertan Kilic Kutalmis Kutay Kutlug Mengucek Saruca Savtekin Savur Togay Tolun Toruntay Tughril Tunga Tutus Yinal
+			Cagri "Alp Yurek" Alptigin Baybars Bayezid Berkiyaruk Dundar Ertugrul Gunduz Kaikaus Kaiqobad Kara Karatay Kaytun Tanrivermis Tekin Timurtas Togtekin Uluc
 		}
 		female_names = {
-			Hayfa Aisara Asem Aisulu Aizhan Aikorkem Aisha Aiganim Aisaule Aigul Ainur Agila Ademi Ajar Aziza Aida Aibala 
-			Aibanu Aibarsha Aigerim Aidana Aizhamal Aizharkyn Aizada Aiman Aina Ainagul Ainash Aisana Aishagul Aishat Aim 
-			Aimgul Aimzhan Akbota Akjamal Akkenje Akmaral Aksamal Aktolkin Aktoty Aliya Alia Alma Altyn Altynai Altingul 
-			Alua Albina Alfia Amangul Amina Anar Anargul Aray Arai Araylim Arailym Aru Arujan Asel Asemgul Asiya Asyl Asil 
-			Asylgul Ayagoz Ayajan Ayazhan Bazargul Bakyt Balbike Balzhan Balziya Balkiya Balym Banu Bayan Bibigul Bibinur 
-			Bota Botagoz Botakoz Damilia Damira Dana Danagul Daniya Dariga Dariya Diana Didar Didara Dilara Dilyara Dilda 
-			Dilya Dina Dinara Enlik Erke Erkejan Farida Fariza Fatima Fatiha Gaziza Galiya Gaukhar Gul Gulayim Gulbarshin 
-			Gulbahram Gulim Gulnaz Gulbanu Guldana Guldariga Guldaria Guljazira Guljaina Guljan Gulzada Gulziya Gulmarzhan 
-			Gulmira Gulnur Gulsara Gulsezim Gulsim Gulshat Gulshakhar Hadisha Halila Halima Hamida Hanifa Hanshayim Hanym 
-			Hatima Iltipat Inabat Inju Indira Inkar Irada Jadyra Jazira Jayna Jaina Jamal Jamilya Janar Jangul Janiya Janna 
-			Janat Jansaule Jansaya Jansulu Jarkin Jarkynai Jibek Juldiz Juldyz Jumagul Jumakiz Jupar Kamila Kamshat Karima 
-			Karina Kenje Klara Kulimjan Kulyan Kumis Kunsulu Laura Leyla Luiza Lyazzat Magripa Madina Maira Maya Maqpal 
-			Malika Manshuk Maral Marzhan Marjan Maria Mariyam Mahabbat Marhabbat Meyirgul Mirgul Meyramgul Meruert Mira 
-			Munira Nagima Nazgul Nazira Nazim Nazym Nasibeli Nurai Nurbike Nurgul Nurjamal Nurjanat Nurziya Nuriya Nursulu 
-			Oryngul Perizat Qazyna Qalamqas Qaljan Qalima Qamaria Qaragoz Qarashash Qarlygash Qundyz Quralai Qymbat Rabiga 
-			Raziya Raisa Raygul Raykhan Raushan Raya Rizagul Rita Roza Sabira Sagida Sagimgul Saida Sayra Sakypjamal Salima 
-			Saltanat Samal Sandigul Sandugash Sara Saule Saya Sayagul Shakizat Shakira Shara Shahzada Sholpan Shynar Shinar 
-			Sveta Senim Sezim Sulu Sulujan Sulushash Symbat Talshin Tamara Tanzilya Tansholpan Tatti Togjan Tolganai 
-			Tomiris Tursin Tursinai Tursingul Uazira Ulbala Ulbolsyn Uldana Uljan Umit Umitjan Venera Zaida Zamzagul Zamira 
-			Zarina Zaure Zauresh Zeyne Zeynep Zemfira Zere Zlikha Zoya Zubaira Zulfia Zukhra Zlika
+			Cicek Cilen Ciltanesi Ozgul Ozlem Akgul Asli Aslihan Ayasun Ayla Ayse Ayten Azize Bahar Banu Bozcin Canan Ceylan Dunya Dilber Dilek Emine
+			Esin Fatma Firuze Gulay Gulbahar Gulfem Gulsum Gumus Gunduz Gundes Gunes Hatice Hayat Huriye Ilkay Ilknur Ipek Ipekel Irge
+			Karacik Lale Leyla Mala Mansure Merve Mutlu Nagihan Nergis Neslihan Nilufer Nur Peksen Terkhen Samur Sarica Sati Sehnaz Serap Serife Sevilay
+			Sevindik Sibel Sirin Sirma Songul Sumru Tekce Tura Umay Usunbike Vahide Yasar Yeldem Yildiz Zehra Zuhal
 		}
 	}
 	kirgiz = {
-		primary = CHG
+		primary = KOK
+		dynasty_names = {
+			"Arabshahid" "Qungrat" "Bayan Arslan" "Mongke Cheren" "Mongke Bayar" "Suren Chinua" "Oyugun Nasan"
+			"Bora Tolui" Qadancher Batulun Batutai Bokejin Arighqan Burilgiteni
+			Bayarnai Subegene Tegusdai Yekedei Tigin Arslan Bunduqdarid Kitbughai Karesili Altar Doganin Gokhan Ilhan Kagan Metehan Ozan Tarkan Utku Ozkan Tughluq Tughral Kyzylid Yesil Uzengi
+		}
 		male_names = {
-			Abdul-Karim Abdul-Latif Abdul-Rashîd Abdullah Ahmad Alghu Ali Baraq Bayan Quli Buqa Temür Buzan 
-			Changshi Danishmendji Dost Muhammad Dughlat Duwa Duwa Temür Eljigidey Esen Buqa Ilbars Ilyas Ismail 
-			Khabul Khizr Könchek Mahmud Mansur Mubarak Muhammad Muhammad Amin Muhammad Mumin Naqsh-i-Jahan 
-			Hulagu Qazaghan Qazan Quraysh Sa'id Satuq Shams-i-Jahan Sher Muhammad Soyurghatmish Taliqu 
-			Temür Tughlugh Temür Uwais Yasa'ur Yesu Mongke Yesun Temür Yunus Tarmashirin Negübei Qara Kebek 
-			Chagatay
+			"Alp Arslan" Bagha Baghatur Balgici Barjik Barsbek Bastu Bashtwa Bugha Buzer Corpan Ilik Iltabar Itakh Kamaj Karadakh Kayghalagh Khatir Khuterkin
+			Kibar Kisa Kundaciq Kundac Manar Otemis Sartac Tabghac Tarkhan Tuzniq Vakrim Yabghu Yavantey Yencepi Yerneslu Yectirek Yilig
+			Agatay Anusha Avanesh Bahadur Bakht Baqi Budjuga Bureke
+			Haydar Ilbars Khudayar Sevinch Sufyan Tahir Timur Tughluq Yadgar Cagri Afsin Artuk Basbuga Baytas Berkan Berkiyaruk Dukak Erdem Ertan Kilic Kutalmis Kutay Kutlug Mengucek Saruca Savtekin Savur Togay Tolun Toruntay Tughril Tunga Tutus Yinal
+			Cagri "Alp Yurek" Alptigin Baybars Bayezid Berkiyaruk Dundar Ertugrul Gunduz Kaikaus Kaiqobad Kara Karatay Kaytun Tanrivermis Tekin Timurtas Togtekin Uluc
 		}
 		female_names = {
-			Mandughai Hoelun Tamülün Kokachin Beki Temülen Börte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka 
-			Doquez-khatum Goland Ho'elun Khultulun  Qamish Orqina Sorghaghtani Toregene "Fatima" "Ibtisam" "Jalila" "Janan" Sakina
+			Cicek Cilen Ciltanesi Ozgul Ozlem Akgul Asli Aslihan Ayasun Ayla Ayse Ayten Azize Bahar Banu Bozcin Canan Ceylan Dunya Dilber Dilek Emine
+			Esin Fatma Firuze Gulay Gulbahar Gulfem Gulsum Gumus Gunduz Gundes Gunes Hatice Hayat Huriye Ilkay Ilknur Ipek Ipekel Irge
+			Karacik Lale Leyla Mala Mansure Merve Mutlu Nagihan Nergis Neslihan Nilufer Nur Peksen Terkhen Samur Sarica Sati Sehnaz Serap Serife Sevilay
+			Sevindik Sibel Sirin Sirma Songul Sumru Tekce Tura Umay Usunbike Vahide Yasar Yeldem Yildiz Zehra Zuhal
 		}
 	}
 	male_names = {
-		Abagha Achigh Aguchu Ajai Ajinai Akhutai Alagh Alchi Alchidai Altan Ambaghai Arkhai Arasen 
-		Babur Badai Bagaridai Bala Barghujin Bartan Batu Bedugun Begter Belgutei Belgunutei Bilge Berke 
-		Bodonchar Bogen Bogorchu Bolkhadar Borjigidai Boroghul Bughu Bugidai Bugunutei Bujeg Bukha 
-		Bulughan Buri Burkhan Burundai Chagatai Chaghagan Chanai Chigu Chidukhul Chilagun Chiledu 
-		Chormakhan Chulgetei Dagun Daritai Dayir Dodai Duua Eljigedei Ghazan Ghunan Guchu Gughlug Guyug 
-		Harghasun Horkhudagh Hulegu Husun Inalchi Inancha Iturgen Jajiradai Jamugha Jebe Jochi 
-		Jurchedei Khabichi Khachi Khachigun Khadagh Khagatai Khaidu Khal Khorchi Khorilartai Khubilai 
-		Khudu Khutula Khuyildar Kogsegu Kokochu Megetu Megujin Menggei Mongke Morokha Munglig Nakhu 
-		Narin Nayaga Nogai Odchigin Ogodei Okhotur Oljaitu Oronartai Shiraghul Shirgugetu Subetei 
-		Suyiketu Taghai Tamachi Targhutai Temuge Temujin Temur Todogen Toghoril Toghtoga Tokhtamis 
-		Tolui Torolchi Tumen Uighurtai Ukhuna Usun Yedi Yegu Yeke Yesugei Yesunge Yokhunan Kadan Godan
-		# PECHENEG
-		Çelgil Aba Baitzas Balgor Batan Batas Bator Bayça Biçkili Bizel Boru Bula Giazis Ildey Ipa Ipaos 
-		Kabuksin Karaca Kaydum Kegen Konel
-		Korkutan Kortan Kostas Kourkoutai Kuerçi Kugel Kure Sol Suru Tatus Teber Temir Tyrach Yavdi Yazi 
-		# CUMAN / KARLUK / KIRGHIZ
-		Çilbu Aepak Asalup Asep Atrak Bönek Bachman Begluk Blush Bonyak Borç Eldeçyuk Etrek Girgen Gzi 
-		Itlar Ituk Könçek Kobyak Kopti Kotyan Koza Kozel Kubasar Kuntuvdi Kutan Pulad Saru Sevenç Sirçan 
-		Sokal Sotan Sugr Törtogul Togli Tolun Tugor Uzluk Uzur
-		# AVAR
-		Almish Alp Alzek Anzi Apskhih Araslan Arslan Asparukh Bagha Baghatur Balambär Balambar Barjik 
-		Bars Barsbek Bashtwa Bastu Bataul Batbayan Batoya Batulia Bayan Belkermak Bezmer Bihor Boyan Bugha 
-		Bughra Bulan Bulger Bulçan Busir Buzan Buzer Bälgiçi Böri 
-		Chepa Chinialush Dengizikh Dizeng Dometa Dristar Drong Dukum Elemag Ellak Ernakh Eskhakh Goleda 
-		Gostun Guar Hudbad Iani Ilik Iltäbär Irnek Isbul Islivan Isperikh Ispor Itakh Kamaj Kano Karadakh 
-		Karan Karaton Kardam Kayghalagh Kharaton Khatir Khinialon 
-		Khudbard Khuterkin Kibar Kisa Kordil Kormesiy Kormisosh Kotrag Krovat Krum Kuber Kubrat Kundaç 
-		Kundaçiq Kurt Kutrigur Kälaç Labertam Magotin Malamir Mugel Mänär Mänäs Mënümarót Odolgan Okhsi 
-		Okhsun Okors Omurtag Onegavon Organ Organa Ornag 
-		Oshi Ostro Pagan Pakhtiyar Bakhtiar Papaçyz Paväl Praksa Rassate Rugila Sabin Samsam Sandil 
-		Sandilkh Sarkhan Sartäç Savin Sevar Shilki Simsam Sondoke Tabghaç Tarasiy Taridin Tarkhan Tarmaç 
-		Tatra Telec Telerig Tervel Timër Timur Timëreç Timërpälat 
-		Tingiz Tiradin Toghan Toghrïl Toghrul Tokhtaman Toktu Tsog Tsul Tuk Tuzniq Täbär Teber Tähtaman 
-		Umor Uturgur Vakrim Venda Vetam Vinekh Yabghu Yani Yavantey Yençepi Yerneslu Yeçtirek Yilig 
-		Zabergan Zenti Çat Çat'n Çorpan Ötemis
+		"Alp Arslan" Bagha Baghatur Balgici Barjik Barsbek Bastu Bashtwa Bugha Buzer Corpan Ilik Iltabar Itakh Kamaj Karadakh Kayghalagh Khatir Khuterkin
+		Kibar Kisa Kundaciq Kundac Manar Otemis Sartac Tabghac Tarkhan Tuzniq Vakrim Yabghu Yavantey Yencepi Yerneslu Yectirek Yilig
+		Agatay Anusha Avanesh Bahadur Bakht Baqi Budjuga Bureke
+		Haydar Ilbars Khudayar Sevinch Sufyan Tahir Timur Tughluq Yadgar Cagri Afsin Artuk Basbuga Baytas Berkan Berkiyaruk Dukak Erdem Ertan Kilic Kutalmis Kutay Kutlug Mengucek Saruca Savtekin Savur Togay Tolun Toruntay Tughril Tunga Tutus Yinal
+		Cagri "Alp Yurek" Alptigin Baybars Bayezid Berkiyaruk Dundar Ertugrul Gunduz Kaikaus Kaiqobad Kara Karatay Kaytun Tanrivermis Tekin Timurtas Togtekin Uluc
 	}
-	female_names = { 
-		Al-Alta Alan Altani Borte Botokhui Bulughan Chabi Chagur Chakha Checheyigen Chotan Doregene 
-		Doquz Ebegei Gurbesu Hogelun Holuikhan Ibakha Khadagan Khogaghchin Khojin Khorijin Khugurchin 
-		Khulan Mandukhai Mongoljin Nomolun Oghul Orbei Sokhatai Sorkhaghatani Tekine Temulun Töregene 
-		Yesugun Yesui Hoelun
-		# PECHENEG
-		Çiçek Çilen Çiltanesi Özgul Özlem Akgul Asli Ayasun Ayten Bozçin Dilek Esin Gulçiçek Gulay 
-		Gunduz Gundes Gunes Ilkay Ipek Ipekel Irge Karacik Mala Mutlu Peksen Samur Sarica Sati Sevilay 
-		Sevindik Sibel Sirin Sirma Songul Tekçe Tura Umay Usunbike Yasar Yeldem Yildiz
-		# CUMAN
-		Çiçek Çilen Çiltanesi Özgul Özlem Akgul Asli Ayasun Ayten Bozçin Dilek Esin Gulçiçek Gulay Gunduz 
-		Gundes Gunes Ilkay Ipek Ipekel Irge Karacik Mala Mutlu Peksen Samur Sarica Sati Sevilay Sevindik 
-		Sibel Sirin Sirma Songul Tekçe Tura Umay Usunbike Yasar Yeldem Yildiz
-		# KHAZAR / BOLGHAR
-		Çiçäk Çiçek Çeçeppi Çeçki Çeçtilet Çilen Çiltanesi Özgul Özlem Akgul Asli Ayasun Ayten Bozçin Dilek 
-		Esin Gulçiçäk Gulçiçek Gulay Gunduz Gundes Gunes Ikalay Ilkay Ipek Ipekel Irge 
-		Karacik Kätyarikka Këlnissa Këlyamal Khatun Lärkka Lyukha Mala Maturkka Mutlu Naça Parsbit Patiyer 
-		Paykëlti Peksen Puyantay Samur Sarantay Sarä Sarica Sarikel 
-		Sati Savaçka Savkëlti Savtilek Savilay Sevilay Savintik Sevindik Shurkka Sibel Sirin Sirma Songul 
-		Tähtani Tekçe Tura Umay Usunbike Yasar Yeldem Yildiz Yartilek
-		# AVAR
-		Akgul Asli Ayasun Ayten Bozçin Dilek Esin Gulay Gulçiçäk Gulçiçek Gundes Gunduz Gunes Ikalay Ilkay 
-		Ipek Ipekel Irge Karacik Khatun Kätyarikka Këlnissa Këlyamal Lyukha Lärkka Mala Maturkka Mutlu Naça 
-		Parsbit Patiyer Paykëlti Peksen Puyantay Samur Sarantay Sarica Sarikel Sarä Sati Savaçka Savilay 
-		Sevilay Savintik Sevindik Savkëlti Savtilek Shurkka Sibel Sirin Sirma Songul Tekçe Tura Tähtani 
-		Umay Usunbike Yartilek Yasar Yeldem Yildiz Çeçeppi Çeçki Çeçtilet Çilen Çiltanesi Çiçäk Çiçek Özgul 
-		Özlem
+	female_names = {
+		Cicek Cilen Ciltanesi Ozgul Ozlem Akgul Asli Aslihan Ayasun Ayla Ayse Ayten Azize Bahar Banu Bozcin Canan Ceylan Dunya Dilber Dilek Emine
+		Esin Fatma Firuze Gulay Gulbahar Gulfem Gulsum Gumus Gunduz Gundes Gunes Hatice Hayat Huriye Ilkay Ilknur Ipek Ipekel Irge
+		Karacik Lale Leyla Mala Mansure Merve Mutlu Nagihan Nergis Neslihan Nilufer Nur Peksen Terkhen Samur Sarica Sati Sehnaz Serap Serife Sevilay
+		Sevindik Sibel Sirin Sirma Songul Sumru Tekce Tura Umay Usunbike Vahide Yasar Yeldem Yildiz Zehra Zuhal
 	}
 	dynasty_names = {
-		"Chagatay" "Edigüid" "Giray" "Borjigin" "Shaybanid" "Janid" "Mangit"
-		Kirghiz
-		# CKII - KHANTY
-		"Sibirid" "Narima" "Mansi" "Khantys"
+		"Arabshahid" "Qungrat" "Bayan Arslan" "Mongke Cheren" "Mongke Bayar" "Suren Chinua" "Oyugun Nasan"
+		"Bora Tolui" Qadancher Batulun Batutai Bokejin Arighqan Burilgiteni
+		Bayarnai Subegene Tegusdai Yekedei Tigin Arslan Bunduqdarid Kitbughai Karesili Altar Doganin Gokhan Ilhan Kagan Metehan Ozan Tarkan Utku Ozkan Tughluq Tughral Kyzylid Yesil Uzengi
 	}
 }
 	

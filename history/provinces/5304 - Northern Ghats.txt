@@ -1,0 +1,6 @@
+#5200 - Northern Ghats
+
+
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
