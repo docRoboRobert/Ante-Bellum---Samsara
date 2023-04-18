@@ -1320,3 +1320,137 @@ RDY_ideas = {
 		technology_cost = -0.05
 	}
 }
+
+#Tsurphu Ideas
+TSU_ideas = {
+	start = {
+		development_cost = -0.1
+		stability_cost_modifier = -0.1
+	}
+	
+	bonus = {
+		manpower_in_true_faith_provinces = 0.2
+	}
+	
+	trigger = {
+		tag = TSU
+	}
+	free = yes
+
+	TSU_spread_bon = {
+		global_heathen_missionary_strength = 0.02
+	}
+	TSU_terrain_adaptation = {
+		land_attrition = -0.1
+		hostile_attrition = 1
+	}
+	TSU_harmony_teachings = {
+		all_estate_loyalty_equilibrium = 0.025
+		yearly_karma_decay = 0.01
+		harmonization_speed = 0.15
+		monthly_church_power = 0.1
+		yearly_patriarch_authority = 0.01
+	}
+	TSU_monk_warriors = {
+		land_morale = 0.10
+	}
+	TSU_karampa_power = {
+		advisor_cost = -0.1
+		prestige_decay = -0.01
+	}
+	TSU_holy_state = {
+		devotion = 0.4
+		legitimacy = 0.5
+	}
+	TSU_monastic_revival = {
+		warscore_cost_vs_other_religion = -0.15
+		tolerance_own = 1
+	}
+}
+
+#Bon Ideas
+GUG_bon_ideas = {
+	start = {
+		development_cost = -0.1
+		advisor_cost = -0.1
+	}
+	
+	bonus = {
+		manpower_in_true_faith_provinces = 0.2
+	}
+	
+	trigger = {
+		religion = bon_religion
+		primary_culture = tibetan
+	}
+	free = yes
+
+	bon_harmony_land = {
+		prestige_decay = -0.01
+		yearly_karma_decay = 0.01
+	}
+	bon_elevate_monasteries = {
+		idea_cost = -0.1
+		global_tax_modifier = 0.1
+	}
+	bon_peace_with_heathens = {
+		tolerance_heathen = 1
+		religious_unity = 0.15
+	}
+	bon_pastorial_culture = {
+		global_prov_trade_power_modifier = 0.1
+	}
+	bon_zhangzhung_legacy = {
+		shock_damage_received = -0.05
+		discipline = 0.05
+	}
+	bon_climate_adaptation = {
+		defensiveness = 0.15
+	}
+	bon_worldview = {
+		advisor_cost = -0.125
+	}
+}
+
+#Lhasa Ideas
+LHA_ideas = {
+	start = {
+		development_cost = -0.15
+		defensiveness = 0.10
+	}
+	
+	bonus = {
+		technology_cost = -0.05
+	}
+	
+	trigger = {
+		tag = LHA
+	}
+	free = yes
+
+	LHA_city_rights = {
+		production_efficiency = 0.05
+		global_tax_modifier = 0.10
+	}
+	LHA_pacify_tensions = {
+		religious_unity = 0.15
+	}
+	LHA_develop_river_valley = {
+		build_cost = -0.1
+	}
+	LHA_end_religious_divisions = {
+		global_missionary_strength = 0.015
+		stability_cost_modifier = -0.1
+	}
+	LHA_monk_council = {
+		advisor_pool = 1
+		monthly_reform_progress_modifier = 0.1
+	}
+	LHA_songsten_legacy = {
+		infantry_power = 0.10
+		province_warscore_cost = -0.1
+	}
+	LHA_travelling_merchants = {
+		diplomatic_reputation = 1
+	}
+}
