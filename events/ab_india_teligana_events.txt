@@ -213,6 +213,8 @@ country_event = { #Starting ruler dies without heir, promise was made, Reddy rul
 	
 	is_triggered_only = yes
 	
+	fire_only_once = yes
+	
 	immediate = {
 		hidden_effect = {
 			remove_heir = { allow_new_heir = no }
@@ -247,6 +249,7 @@ country_event = { #Starting ruler dies without heir, promise was made, Reddy rul
 		}
 		remove_country_modifier = strong_reddy_influence
 		custom_tooltip = abindia_teligana_event.6.a.tooltip	#By this point, you can form Reddy
+		clr_country_flag = teligana_reddy_influence_2_flag
 	}
 	option = {	#Rebel against them
 		name = abindia_teligana_event.6.b
@@ -274,6 +277,7 @@ country_event = { #Starting ruler dies without heir, promise was made, Reddy rul
 			}
 		}
 		remove_country_modifier = strong_reddy_influence
+		clr_country_flag = teligana_reddy_influence_2_flag
 	}
 }
 
@@ -304,6 +308,9 @@ country_event = { #Curtail Reddy influence (if no agreement)
 			name = strong_reddy_influence
 			duration = 10950
 		}
+		clr_country_flag = teligana_reddy_influence_1_flag
+		clr_country_flag = teligana_reddy_influence_3_flag
+		clr_country_flag = teligana_reddy_influence_4_flag
 	}
 	option = {	#End it
 		name = abindia_teligana_event.7.b
@@ -313,5 +320,8 @@ country_event = { #Curtail Reddy influence (if no agreement)
 		add_dip_power = -50
 		add_mil_power = -50
 		remove_country_modifier = strong_reddy_influence
+		clr_country_flag = teligana_reddy_influence_1_flag
+		clr_country_flag = teligana_reddy_influence_3_flag
+		clr_country_flag = teligana_reddy_influence_4_flag
 	}
 }

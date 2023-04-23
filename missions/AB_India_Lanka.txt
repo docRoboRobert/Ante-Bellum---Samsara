@@ -289,7 +289,10 @@ abi_kotte_fifth = {
 			prestige = 25
 			army_size = 12
 			KND = { ai = yes }
-			KND = { is_subject_of = ROOT }
+			OR = {
+				KND = { is_subject_of = ROOT }
+				NOT = { exists = KND }
+			}
 			grown_by_development = 10
 			OR = {
 				NOT = { exists = KND }
