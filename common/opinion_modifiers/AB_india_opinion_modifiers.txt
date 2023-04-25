@@ -11,3 +11,8 @@ destroyed_villarvattom = {
 	opinion = -75
 	yearly_decay = 1.5
 }
+
+defeated_DGL_pirates = {
+	opinion = 50
+	yearly_decay = 1
+}

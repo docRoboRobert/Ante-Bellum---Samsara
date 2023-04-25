@@ -3,6 +3,7 @@
  #Opinion modifiers
  converted_to_malankara_1: "Converted do Malankara"
  destroyed_villarvattom: "Pillaged Villarvattom"
+ defeated_DGL_pirates: "Ended Maldives Piracy"
  
  
  #Malankara church aspects
@@ -176,3 +177,5 @@
  desc_JFN_pirates_at_service:0 "Some pirates have agreed to become loyal servants of our nation in exchange for protection and privileges. In exchange, we gain access to their skills and assets."
  JFN_state_funded_pirate_heaven:0 "State-funded Pirate Heaven"
  desc_JFN_state_funded_pirate_heaven:0 "Our state has formallized its relations with pirates of all kinds and allows them to base their operation within our borders as long as they follow the common agreement and promise to act in the benefit of the state."
+ crushed_DGL_pirates_mod:0 "Crushed Maldives Pirates"
+ desc_crushed_DGL_pirates_mod:0 "We have destroyed Muslim pirates from the Maldives. Waters around India will no longer suffer from their presence."

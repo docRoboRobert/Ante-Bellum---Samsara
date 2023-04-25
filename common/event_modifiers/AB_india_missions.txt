@@ -362,3 +362,9 @@ JFN_state_funded_pirate_heaven = {
 	all_estate_influence_modifier = 0.05
 	stability_cost_modifier = 0.1
 }
+
+crushed_DGL_pirates_mod = {
+	ship_power_propagation = 0.1
+	diplomatic_reputation = 1
+	naval_tradition_from_trade = 0.1
+}
