@@ -185,6 +185,7 @@
  JFN_piracy_question.tooltip:0 "Gain temporary claim on every coastal province with center of trade in Coromandel and Deccan region."
  JFN_crush_maldives_title:0 "Defeat Muslim Pirates"
  JFN_crush_maldives_desc:0 "On the island of Maldives lies potent pirate state. Muslim pirates from the Maldives have been causing many problems to our nation and hindering our trade. We must put an end to it. The heathen rivals that pillage and funnel riches away from us must no longer stay on our path to expansion."
+ JFN_crush_maldives.tooltip:0 "§MEvery Country with capital in India Superregion and access to the sea will gain§! §G+50§! §Mopinion of us due to being thankfull for eliminating the pirate threat.§!"
  JFN_land_of_pandyas_title:0 "The Land of Pandyas"
  JFN_land_of_pandyas_desc:0 "To establish our prominence over the Coromandel, we must strike and humiliate Pandyas or the lands they originally ruled. Such greate victory will grant us even more power and revenue from the region."
  JFN_northern_tamils_title:0 "Northern Tamil Frontier"
