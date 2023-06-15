@@ -27,7 +27,10 @@ country_decisions = {
 				tag = CEY
 				tag = KND
 				tag = VNN
-				tag = JFN
+				AND = {
+					tag = JFN
+					primary_culture = sinhala
+				}
 			}
 			NOT = { exists = LNK }
 			prestige = 0

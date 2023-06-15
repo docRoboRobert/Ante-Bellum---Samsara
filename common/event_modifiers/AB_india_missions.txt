@@ -368,3 +368,13 @@ crushed_DGL_pirates_mod = {
 	diplomatic_reputation = 1
 	naval_tradition_from_trade = 0.1
 }
+
+lanka_trade_island = {
+	global_own_trade_power = 0.1
+}
+
+lankan_trade_growth = {
+	merchants = 1
+	ship_power_propagation = 0.1
+	global_trade_goods_size_modifier = 0.05
+}

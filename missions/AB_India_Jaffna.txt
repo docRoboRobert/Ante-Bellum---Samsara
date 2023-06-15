@@ -365,7 +365,7 @@ JFN_first = {
 	}
 
 	JFN_land_of_pandyas = {
-		icon = mission_southern_frontier
+		icon = mission_southern_frontier_dharma
 		position = 7
 		required_missions = { JFN_rule_over_strait }
 		provinces_to_highlight = {
@@ -451,10 +451,6 @@ JFN_first = {
 			if = {
 				limit = {
 					2037 = {
-						has_great_project = {
-							type = bhuvangiri
-							tier = 0
-						}
 						NOT = {
 							has_great_project = {
 								type = bhuvangiri
@@ -478,11 +474,57 @@ JFN_first = {
 		icon = mission_vedic_education
 		position = 10
 		required_missions = { JFN_deal_with_vanni } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				area = lanka_area
+				area = south_lanka_area
+			}
+			NOT = { religion = hinduism }
+		}
 
-		trigger = {  } 
+		trigger = {
+			num_of_religion = {
+				religion = hinduism
+				value = 0.8
+			}
+			lanka_area = {
+				type = all
+				religion = hinduism
+				NOT = { unrest = 1 }
+			}
+			south_lanka_area = {
+				type = all
+				religion = hinduism
+				NOT = { unrest = 1 }
+			}
+			inquisitor = 2
+		}
 
-		effect = {  } 
+		effect = {
+			custom_tooltip = JFN_spread_the_hindu.tooltip
+			hidden_effect = {
+				random_owned_province = {
+					add_base_tax = 1
+				}
+				random_owned_province = {
+					add_base_tax = 1
+				}
+				random_owned_province = {
+					add_base_tax = 1
+				}
+				random_owned_province = {
+					add_base_tax = 1
+				}
+			}
+			add_stability = 1
+			define_advisor = {
+				type = theologian
+				skill = 2
+				culture = sinhala
+				religion = ROOT
+				cost_multiplier = 0.3
+			}
+		}
 	}
 
 	JFN_trade_advance = {
@@ -511,6 +553,14 @@ JFN_first = {
 
 		effect = {
 			add_years_of_income = 1
+			add_country_modifier = {
+				name = lanka_trade_island
+				duration = -1
+			}
+			add_country_modifier = {
+				name = lankan_trade_growth
+				duration = 7300
+			}
 		}
 	}
 }
@@ -554,22 +604,76 @@ JFN_second = {
 			JFN_sieze_company
 			JFN_conquer_coast
 		}
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2099
+				province_id = 2100
+			}
+		}
 
-		trigger = {  } 
+		trigger = {
+			2100 = {
+				owned_by = ROOT
+				NOT = { unrest = 1 }
+				NOT = { devastation = 1 }
+			}
+			2099 = {
+				owned_by = ROOT
+				NOT = { unrest = 1 }
+				NOT = { devastation = 1 }
+			}
+			NOT = { exists = KND }
+		}
 
-		effect = {  } 
+		effect = {
+			2099 = { add_core = ROOT }
+			2100 = { add_prosperity = 40 }
+			add_mil_power = 25
+		}
 	}
 
 	JFN_lanka_united = {
 		icon = mission_conquer_lanka
 		position = 3
 		required_missions = { JFN_pacify_the_inside } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				area = lanka_area
+				area = south_lanka_area
+			}
+			NOT = { owned_by = ROOT }
+		}
 
-		trigger = {  } 
+		trigger = {
+			lanka_area = {
+				type = all
+				owned_by = ROOT
+				NOT = { unrest = 1 }
+			}
+			south_lanka_area = {
+				type = all
+				owned_by = ROOT
+				NOT = { unrest = 1 }
+			}
+			grown_by_development = 60
+			army_size_percentage = 0.95
+		}
 
-		effect = {  } 
+		effect = {
+			add_stability = 1
+			add_prestige = 20
+			change_dip = 1
+			change_mil = 1
+			5278 = {
+				remove_core = KND
+				remove_core = CEY
+			}
+			4407 = { remove_core = CEY }
+			4408 = { remove_core = CEY }
+			4409 = { remove_core = HTC }
+			572 = { remove_core = HTC }
+			5284 = { add_permanent_claim = ROOT }
+		}
 	}
 
 	JFN_looking_beyond = {
