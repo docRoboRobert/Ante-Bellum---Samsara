@@ -1181,7 +1181,7 @@ SHS_ideas = {
 		core_creation = -0.15
 	}
 	SHS_hellenization = {
-		culture_conversion_cost = -0.15
+		culture_conversion_time = -0.15
 	}
 	SHS_reformed_hoplites = {
 		fire_damage_received = -0.05
@@ -1452,5 +1452,188 @@ LHA_ideas = {
 	}
 	LHA_travelling_merchants = {
 		diplomatic_reputation = 1
+	}
+}
+
+#Timurids Ideas
+TMD_ideas = {
+	start = {
+		envoy_travel_time = -0.2
+		cavalry_power = 0.20
+	}
+	
+	bonus = {
+		cb_on_religious_enemies = yes
+	}
+	
+	trigger = {
+		tag = TMD
+	}
+	free = yes
+
+	TMD_great_wanderers = {
+		recover_army_morale_speed = 0.10
+		move_capital_cost_modifier = -0.25
+	}
+	TMD_his_holiness = {
+		church_loyalty_modifier = 0.075
+		reverse_relation_with_same_religion = 10
+	}
+	TMD_legendary_bloodline = {
+		monthly_splendor = 1
+		prestige = 1
+	}
+	TMD_timur_legacy_religion = {
+		global_missionary_strength = 0.025
+	}
+	TMD_timur_legacy_power = {
+		land_morale = 0.15
+	}
+	TMD_wide_connections = {
+		diplomatic_reputation = 1
+	}
+	TMD_timur_holy_army = {
+		cavalry_shock = 1
+		morale_damage_received = -0.05
+	}
+}
+
+#Marwari Ideas
+MAW_ideas = {
+	start = {
+		hostile_attrition = 2
+		fort_maintenance_modifier = -0.15
+	}
+	
+	bonus = {
+		leader_siege = 1
+	}
+	
+	trigger = {
+		tag = MAW
+	}
+	free = yes
+
+	MAW_arid_adaptation = {
+		development_cost_in_primary_culture = -0.1
+	}
+	MAW_the_fortress = {
+		defensiveness = 0.15
+		great_project_upgrade_cost = -0.1
+	}
+	MAW_integrate_videsheani = {
+		manpower_in_culture_group_provinces = 0.15
+		stability_cost_modifier = -0.05
+	}
+	MAW_reform_rajput_army = {
+		allowed_rajput_fraction = 0.2
+		special_unit_manpower_cost_modifier = -0.1
+	}
+	MAW_heal_invasion_scars = {
+		culture_conversion_time = -0.2
+	}
+	MAW_marwari_horses = {
+		cavalry_power = 0.15
+		movement_speed = 0.1
+	}
+	MAW_restore_region_balance = {
+		global_heathen_missionary_strength = 0.02
+	}
+}
+
+#New Mamluks Ideas
+MAM_new_ideas = {
+	start = {
+		trade_steering = 0.25
+		cavalry_power = 0.10
+	}
+	
+	bonus = {
+		manpower_in_accepted_culture_provinces = 0.2
+	}
+	
+	trigger = {
+		tag = MAM
+	}
+	free = yes
+	
+	mam_indian_trade = {
+		global_trade_power = 0.05
+		global_institution_spread = 0.1
+	}
+	monuments_to_greatness = {
+		prestige = 1
+	}
+	purchase_new_mamelukes = {
+		manpower_recovery_speed = 0.15
+	}
+	mam_army_reform = {
+		discipline = 0.05
+	}
+	mam_reform_land_system = {
+		production_efficiency = 0.075
+		development_cost = -0.05
+	}
+	reformed_succession = {
+		stability_cost_modifier = -0.15
+	}
+	mam_slaves_no_more = {
+		province_warscore_cost = -0.15
+	}
+}
+
+#Nomadic Invader Ideas
+nomadic_indian_ideas = {
+	start = {
+		loot_amount = 0.2
+		cavalry_power = 0.2
+	}
+	
+	bonus = {
+		governing_capacity_modifier = 0.1
+	}
+	
+	trigger = {
+		NOT = { tag = PSW }
+		NOT = { tag = BKH }
+		OR = {
+			tag = BHN
+			AND = {
+				government = tribal
+				OR = {
+					culture_group = Mongolian
+					culture_group = altaic
+				}
+				capital_scope = {
+					superregion = india_superregion
+				}
+			}
+		}
+	}
+	free = yes
+	
+	nomadic_indian_yoke_over_locals = {
+		global_tax_modifier = 0.15
+	}
+	nomadic_indian_cavalry_ind = {
+		cavalry_shock = 1
+		cavalry_flanking = 0.25
+	}
+	nomadic_indian_local_rulers = {
+		all_estate_loyalty_equilibrium = 0.05
+		religious_unity = 0.15
+	}
+	nomadic_indian_draft_locals = {
+		global_manpower_modifier = 0.2
+	}
+	nomadic_indian_tribute_system = {
+		vassal_manpower_bonus = 0.1
+		vassal_income = 0.2
+	}
+	nomadic_indian_iron_fist = {
+		global_unrest = -1
+	}
+	nomadic_indian_gunpowder_state = {
+		artillery_power = 0.10
 	}
 }

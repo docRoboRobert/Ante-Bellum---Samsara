@@ -12,6 +12,8 @@
  india_IDS_rename_1_desc:0 "Changes the name of your country from Indus Satrapy to Greater Hind. The current name may suggest our subjugation to Persia and feel inappropriate for expansively growing nation. No new mechanics will be gained, it is only a cosmetic change."
  india_WHS_rename_1_title:0 "Alternate Country Name"
  india_WHS_rename_1_desc:0 "Changes the name of your country from Western Hind Satrapy to Hind Empire. The current name may suggest our subjugation to Persia and feel inappropriate for expansively growing nation. No new mechanics will be gained, it is only a cosmetic change."
+ india_TMD_rename_1_title:0 "@TMD Embrace Power of St. Timur @TMD"
+ india_TMD_rename_1_desc:0 "The glory of Saint Timur the Lame and glory of Timurid dynasty shall be brought upon. Heretics and non-believers shall all tremble before the might of Saint Timur and his devout followers. \n \nIt is in the hands of Timur's descendants to reclaim His holiness and reform the state ruled by the dynasty into a true empire of Timur's followers. The might and His blessing light must rise like the sun above all of Asia! \n \n(§YThis is semi-cosmetic rename. You will not change the tag§!)"
  
  #COUNTRY FORMATIONS
  abi_lanka_formation_title:0 "Unite Lanka"

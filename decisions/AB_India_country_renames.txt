@@ -96,4 +96,66 @@ country_decisions = {
 		}
 		ai_importance = 0
 	}
+	
+	india_TMD_rename_1 = {
+		major = yes
+		potential = {
+			tag = TMD
+			NOT = { has_country_flag = TMD_changed_name_flag }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 454
+				province_id = 445
+				province_id = 513
+				province_id = 522
+				province_id = 442
+				province_id = 441
+				province_id = 739
+				province_id = 446
+				province_id = 504
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			owns_core_province = 454
+			owns_core_province = 445
+			owns_core_province = 513
+			owns_core_province = 522
+			owns_core_province = 442
+			owns_core_province = 441
+			owns_core_province = 739
+			owns_core_province = 446
+			owns_core_province = 504
+			religion = nestorian
+			legitimacy_equivalent = 95
+			prestige = 50
+			total_development = 600
+			patriarch_authority = 0.95
+			is_great_power = yes
+			OR = {
+				power_projection = 80
+				NOT = { great_power_rank = 3 }
+			}
+		}
+		effect = {
+			override_country_name = TMD_RENAME_1
+			set_country_flag = TMD_changed_name_flag
+			set_government_rank = 3
+			add_splendor = 500
+			add_prestige_or_monarch_power = { amount = 25 }
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 50
+			}
+			add_power_projection = {	#Permanent one
+				type = zim_african_great_power
+				amount = 15
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 200
+	}
 }

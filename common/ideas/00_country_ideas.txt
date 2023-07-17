@@ -1489,6 +1489,7 @@ MAM_ideas = {
 	
 	trigger = {
 		tag = MAM
+		religion = shiite
 	}
 	free = yes
 	
