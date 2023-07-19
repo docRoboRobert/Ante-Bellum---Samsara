@@ -1637,3 +1637,87 @@ nomadic_indian_ideas = {
 		artillery_power = 0.10
 	}
 }
+
+#Delhi Ideas
+DLH_new_ideas = {
+	start = {
+		infantry_power = 0.15
+		diplomatic_reputation = 1
+	}
+	
+	bonus = {
+		num_accepted_cultures = 1
+	}
+	
+	trigger = {
+		tag = DLH
+	}
+	free = yes
+	
+	dlh_revenge_on_invaders = {
+		warscore_cost_vs_other_religion = -0.1
+		prestige_from_land = 0.2
+	}
+	dlh_rebuild_pillaged_cities = {
+		build_cost = -0.1
+	}
+	dlh_expansion = {
+		ae_impact = -0.1
+	}
+	dlh_textile_innovation = {
+		production_efficiency = 0.1
+	}
+	dlh_sisodiyan_reconquest = {
+		state_governing_cost = -0.075
+		advisor_pool = 1
+	}
+	dlh_grand_trunk = {
+		global_own_trade_power = 0.1
+	}
+	dlh_throne_of_india = {
+		legitimacy = 1
+	}
+}
+
+#Mertarids Ideas
+MTD_ideas = {
+	start = {
+		cavalry_cost = -0.15
+		same_religion_advisor_cost = -0.1
+	}
+	
+	bonus = {
+		discipline = 0.025
+	}
+	
+	trigger = {
+		tag = MTD
+	}
+	free = yes
+	
+	MTD_afghan_settlers = {
+		culture_conversion_cost = -0.15
+		prestige = 0.25
+	}
+	MTD_crush_infidels = {
+		shock_damage = 0.075
+	}
+	MTD_word_of_allah = {
+		global_heathen_missionary_strength = 0.015
+		monthly_piety = -0.001
+	}
+	MTD_afghan_tactics = {
+		hostile_attrition = 2
+	}
+	MTD_secure_trade = {
+		trade_efficiency = 0.1
+	}
+	MTD_tolerate_dhimmi = {
+		tolerance_of_heathens_capacity = 1
+		tolerance_heathen = 1
+	}
+	MTD_mertarid_mercs = {
+		merc_maintenance_modifier = -0.2
+		mercenary_cost = -0.1
+	}
+}

@@ -603,4 +603,48 @@ country_decisions = {
 		}
 		ai_importance = 0
 	}
+	
+	india_achievement_indian_raj = {
+		major = yes
+		potential = {
+			OR = {
+				religion = hinduism
+				religion = jainism
+			}
+			capital_scope = { superregion = india_superregion }
+			NOT = { has_country_flag = achiev_indian_raj }
+		}
+		provinces_to_highlight = {
+			region = british_isles_region
+			NOT = { owned_by = ROOT }
+			is_owned_by_trade_company = no
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = india_achievement_ironman_on
+				ironman = yes
+			}
+			OR = { 
+				religion = hinduism
+				religion = jainism
+			}
+			is_free_or_tributary_trigger = yes
+			capital_scope = { superregion = india_superregion }
+			owns_all_provinces = { region = british_isles_region }
+			british_isles_region = {
+				type = all
+				is_owned_by_trade_company = yes
+			}
+		}
+		effect = {
+			custom_tooltip = india_achievement_diff_5
+			custom_tooltip = achiev_indian_raj_desc
+			set_country_flag = achiev_indian_raj
+			add_treasury = 1
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
 }

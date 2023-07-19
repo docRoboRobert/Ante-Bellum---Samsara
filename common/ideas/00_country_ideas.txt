@@ -13263,6 +13263,7 @@ DLH_ideas = {
 	
 	trigger = {
 		tag = DLH
+		religion = shiite
 	}
 	free = yes
 	
