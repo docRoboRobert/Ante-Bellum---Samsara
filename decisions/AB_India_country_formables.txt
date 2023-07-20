@@ -1240,4 +1240,207 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
+	
+	abi_sar_kushan_formation = {
+		major = yes
+		potential = {
+			primary_culture = saraihizan
+			tag = ARH
+			NOT = { has_country_flag = formed_sar_kushan_flag }
+			NOT = { exists = KSU }
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = kabulistan_area
+				area = balkh_area
+				area = kashgaria_area
+				area = termez_area
+				area = sind_sagar_area
+				area = lahore_area
+				area = sirhind_area
+				area = upper_doab_area
+				area = northern_sindh_area
+				area = jaipur_area
+				area = merv_area
+				area = herat_area
+				area = ferghana_area
+				province_id = 524
+				province_id = 5235
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			OR = {
+				ferghana_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				herat_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			kabulistan_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			balkh_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			kashgaria_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			termez_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			sind_sagar_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			lahore_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			sirhind_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			upper_doab_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			northern_sindh_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			jaipur_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			merv_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			524 = {
+				is_core = ROOT
+				owned_by = ROOT
+				development = 20
+			}
+			5235 = {
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			578 = {
+				development = 20
+				religion = ROOT
+				culture = ROOT
+			}
+			2077 = {
+				development = 20
+			}
+			primary_culture = saraihizan
+			tag = ARH
+			OR = {
+				religion = zoroastrian
+				religion = mahayana
+			}
+			NOT = { exists = KSU }
+			NOT = { exists = KUS }
+			NOT = { exists = SLH }
+			prestige = 25
+			legitimacy_equivalent = 85
+		}
+		effect = {
+			change_tag = KSU
+			restore_country_name = yes
+			set_capital = 578
+			578 = {
+				change_province_name = "Purusapura"
+				rename_capital = "Purusapura"
+				add_prosperity = 100
+			}
+			set_government_rank = 3
+			add_prestige = 20
+			add_splendor = 200
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			hindusthan_region = {
+				add_permanent_claim = ROOT
+			}
+			khorasan_region = {
+				add_core = ROOT
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_sar_kushan_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			custom_tooltip = abi_sar_kushan_formation.tooltip
+			hidden_effect = {
+				524 = {
+					change_province_name = "Mathura"
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+				}
+				2077 = {
+					change_province_name = "Taxila"
+					rename_capital = "Taksasila"
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+				}
+				450 = {
+					change_province_name = "Bactra"
+					rename_capital = "Bactra"
+				}
+				2226 = {
+					change_province_name = "Nagarhara"
+					rename_capital = "Nagarhara"
+				}
+				452 = { change_province_name = "Badaxs" }
+				2227 = {
+					change_province_name = "Drapsaka"
+					rename_capital = "Aornos"
+				}
+				4343 = { rename_capital = "Alexandria on the Oxus" }	
+				1968 = {
+					change_province_name = "Khatlan"
+					rename_capital = "Khatlan"
+				}
+				4344 = {
+					change_province_name = "Kesh"
+					rename_capital = "Nautaca"
+				}
+				2078 = {
+					change_province_name = "Sattagydia"
+					rename_capital = "Sattagydia"
+				}
+				4511 = { rename_capital = "Jobnathnagar" }
+				5252 = { change_province_name = "Hydaspes" }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
 }

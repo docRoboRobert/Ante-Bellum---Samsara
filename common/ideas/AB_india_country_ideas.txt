@@ -1721,3 +1721,48 @@ MTD_ideas = {
 		mercenary_cost = -0.1
 	}
 }
+
+#Sar-Kushan Ideas
+KSU_ideas = {
+	start = {
+		num_accepted_cultures = 2
+		reinforce_cost_modifier = -0.15
+	}
+	
+	bonus = {
+		technology_cost = -0.075
+	}
+	
+	trigger = {
+		tag = KSU
+	}
+	free = yes
+	
+	ksu_first = {
+		prestige = 0.75
+		inflation_reduction = 0.05
+	}
+	ksu_second = {
+		cavalry_power = 0.175
+		movement_speed = 0.125
+	}
+	ksu_third = {
+		global_unrest = -1
+		min_autonomy_in_territories = -0.075
+	}
+	ksu_fourth = {
+		global_trade_power = 0.05
+		placed_merchant_power = 10
+	}
+	ksu_fifth = {
+		religious_unity = 0.25
+	}
+	ksu_sixth = {
+		monthly_splendor = 1
+		diplomatic_reputation = 1
+	}
+	ksu_seventh = {
+		land_morale = 0.10
+		fire_damage_received = -0.025
+	}
+}

@@ -717,3 +717,22 @@
  MTD_mertarid_mercs:0 "Mertarid Mercenaries"
  MTD_mertarid_mercs_desc:0 "Our history began as the Shia mercenaries seeking glory and riches during the times of Mongol hordes. We have become an experts of mercenary warfare ever since."
  
+ #Sar-Kush
+ KSU_ideas:0 "Sar-Kushan Ideas"
+ KSU_ideas_start:0 "Sar-Kush Ideas"
+ KSU_ideas_bonus:0 "Sar-Kush Ambition"
+ ksu_first:0 "Kushan Dinara"
+ ksu_first_desc:0 "The Kushan Empire's dinara is prized and intensely sought after by foreign antiquarians for its frequent depictions of deities and kings, but it holds a far greater materialistic value. The imperial coinage contains high quantities of gold and silver, far more than most other nations, and it is for this reason that the dinara is the envy of the world."
+ ksu_second:0 "Yuezhi Legacy"
+ ksu_second_desc:0 "The Yuezhi were fearsome and proud nomadic people, whose influence stretched across a large swathe of Asia. Alas, our ancestors would eventually be scattered by the Gupta Empire, and were driven into the Tarim Basin. With the rebirth of the Kushan Empire, however, we shall remind the world of who we once were, and who they will prostrate before."
+ ksu_third:0 "Re-establish the Kshatrapas"
+ ksu_third_desc:0 "Our great Kushan Empire is too vast in its land and diverse in its peoples for an efficient centralised bureaucracy. Looking back to the First Kushan Empire, it is clear that we must grant a degree of self-governance to the locals, and what better way is there to go about this than by appointing a loyal noble to govern their own people - in our name."
+ ksu_fourth:0 "Dominance of the Silk Road"
+ ksu_fourth_desc:0 "Euro-Asiatic Trade is heavily centred on the Silk Road, which spans the length of Anatolia to China. Much to our good fortune, all routes lead through Kushan territory, meaning that merchants must pay tolls to travel both ways. Should we increase policing of these trade networks, and establish toll booths near oases and cities, we can dominate the flow of commerce between East and West!"
+ ksu_fifth:0 "Syncretic Tolerance"
+ ksu_fifth_desc:0 "Much akin to the Kushan Empire of old, we find that securing the loyalty of our countless subjects can be attained readily through the state religion. By granting the various deities of our subjects an important status within the Imperial Cult, even if the official religion of the empire may differ from theirs, we will nonetheless pave the way to a more expedient integration process."
+ ksu_sixth:0 "Kushan Arts"
+ ksu_sixth_desc:0 "The old Kushan school of art was greatly influenced by pre-existing Greco-Bactrian, Iranic, and Indian schools, culminating in one of the most striking styles of its time. Alas, this revered style was lost to our disillusioned people until recently. Soon, Neo-Kushan relief sculptures shall be adorning the pediments of temples and the sprawling halls of extravagant palaces! Our art will surpass anything in the legendary cities of Constantinople and Alexandria, a thousand times over!"
+ ksu_seventh:0 "Devaputra Shaonanoshao"
+ ksu_seventh_desc:0 "Meaning 'Son of God, King of Kings' in the old Kushan tongue, these revered titles had been stolen from our forefathers by Samudragupta of the Gupta Empire, though in time even his line would be deprived of such honours. Our return to greatness necessitates the recognition of our sovereigns as the Devaputra Shaonanoshao, but they must prove themselves worthy of such splendour, lest we be stripped of our pride yet again..."
+ 
