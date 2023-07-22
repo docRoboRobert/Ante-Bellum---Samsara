@@ -467,6 +467,10 @@ JFN_first = {
 				}
 			}
 			add_prestige = 20
+			add_country_modifier = {
+				name = jaffna_tamil_dominant
+				duration = -1
+			}
 		}
 	}
 
@@ -680,33 +684,178 @@ JFN_second = {
 		icon = mission_retake_ceuta
 		position = 4
 		required_missions = { JFN_lanka_united } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5284
+				province_id = 4415
+				province_id = 5283
+			}
+		}
 
-		trigger = {  } 
+		trigger = {
+			owns_core_province = 5284
+			5284 = {
+				OR = {
+					has_great_project = {
+						type = any
+						tier = 1
+					}
+					AND = {
+						fort_level = 2
+						OR = {
+							has_building = shipyard
+							has_building = grand_shipyard
+						}
+					}
+				}
+				has_production_building_trigger = yes
+				has_trade_building_trigger = yes
+			}
+			OR = {
+				owns_or_non_sovereign_subject_of = 4415
+				owns_or_non_sovereign_subject_of = 5283
+			}
+			num_of_admirals = 2
+			navy_size_percentage = 0.90
+			OR = {
+				num_of_heavy_ship = 3
+				has_flagship = yes
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			custom_tooltip = JFN_looking_beyond.tooltip
+			hidden_effect = {
+				if = {
+					limit = { exists = CER }
+					add_casus_belli = {
+						target = CER
+						type = cb_vassalize_mission
+						months = 120
+					}
+				}
+				if = {
+					limit = { exists = PND }
+					add_casus_belli = {
+						target = PND
+						type = cb_vassalize_mission
+						months = 120
+					}
+				}
+			}
+			if = {
+				limit = {
+					5284 = { has_building = fort_15th }
+				}
+				5284 = {
+					remove_building = fort_15th
+					add_building = fort_16th
+				}
+			}
+			5284 = { add_base_manpower = 2 }
+			madura_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
 	}
 
 	JFN_rule_over_strait = {
 		icon = mission_cromandel_coast
 		position = 6
 		required_missions = { JFN_looking_beyond } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			NOT = { owned_by = ROOT }
+			OR = {
+				area = madura_area
+				area = tanjore_area
+			}
+		}
 
-		trigger = {  } 
+		trigger = {
+			owns_core_province = 4415
+			owns_core_province = 4416
+			owns_core_province = 5284
+			owns_core_province = 5283
+			owns_core_province = 2101
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 6
+				OR = {
+					area = madura_area
+					area = tanjore_area
+				}
+				base_production = 3
+				base_manpower = 3
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			add_mil_power = 50
+			5283 = { center_of_trade = 1 }
+			custom_tooltip = JFN_rule_over_strait.tooltip
+			hidden_effect = {
+				every_province = {
+					limit = { is_core = COA }
+					add_permanent_claim = ROOT
+				}
+				kongu_area = { add_permanent_claim = ROOT }
+			}
+			add_country_modifier = {
+				name = jaffna_claim_tamil_crown
+				duration = 10950
+			}
+		}
 	}
 
 	JFN_land_of_chola = {
 		icon = mission_coromandel_expansion
 		position = 7
 		required_missions = { JFN_rule_over_strait } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				all_province = {
+					owned_by = COA
+				}
+				area = tanjore_area
+				area = south_carnatic_area
+			}
+			NOT = { owned_by = ROOT }
+		}
 
-		trigger = {  } 
+		trigger = {
+			NOT = { exists = COA }
+			owns_core_province = 2026
+			tanjore_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_carnatic_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			add_country_modifier = {
+				name = jaffna_chola_crown
+				duration = 36500
+			}
+			north_carnatic_area = { add_permanent_claim = ROOT }
+			custom_tooltip = JFN_land_of_chola.tooltip
+			hidden_effect = {
+				every_province = {
+					limit = {
+						OR = {
+							is_core = COA
+							is_core = PLV
+							is_core = PND
+							is_core = PUL
+						}
+					}
+					add_core = ROOT
+				}
+			}
+		}
 	}
 
 	JFN_deal_with_vanni = {
@@ -736,11 +885,62 @@ JFN_second = {
 		icon = mission_conquer_malwa_bah
 		position = 10
 		required_missions = { JFN_deal_with_vanni } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			culture = sinhala
+			OR = {
+				area = lanka_area
+				area = south_lanka_area
+			}
+		}
 
-		trigger = {  } 
+		trigger = {
+			accepted_culture = sinhala
+			lanka_area = {
+				type = all
+				owned_by = ROOT
+				culture = ROOT
+				base_manpower = 3
+			}
+			south_lanka_area = {
+				type = all
+				owned_by = ROOT
+				culture = ROOT
+				base_manpower = 3
+			}
+			employed_advisor = {
+				category = ADM
+				religion = ROOT
+				culture = ROOT
+			}
+			employed_advisor = {
+				category = DIP
+				religion = ROOT
+				culture = ROOT
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			add_country_modifier = {
+				name = jaffna_tamil_settlement
+				duration = -1
+			}
+			2100 = { change_culture = eelami }
+			change_dip = 1
+			define_advisor = {
+				type = architect
+				skill = 3
+				culture = eelami
+				religion = ROOT
+				cost_multiplier = 0.33
+			}
+			define_advisor = {
+				type = trader
+				skill = 3
+				culture = eelami
+				religion = ROOT
+				cost_multiplier = 0.33
+			}
+		}
 	}
 
 	JFN_tamil_lanka = {
@@ -750,11 +950,67 @@ JFN_second = {
 			JFN_spread_the_hindu
 			JFN_settle_tamils
 		}
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				area = lanka_area
+				area = south_lanka_area
+			}
+		}
 
-		trigger = {  } 
+		trigger = {
+			grown_by_development = 200
+			OR = {
+				primary_culture = tamil
+				primary_culture = eelami
+			}
+			lanka_area = {
+				type = all
+				religion = ROOT
+				culture = ROOT
+				development = 12
+				has_production_building_trigger = yes
+				has_trade_building_trigger = yes
+				has_tax_building_trigger = yes
+			}
+			south_lanka_area = {
+				type = all
+				religion = ROOT
+				culture = ROOT
+				development = 12
+				has_production_building_trigger = yes
+				has_trade_building_trigger = yes
+				has_tax_building_trigger = yes
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			add_splendor = 200
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = lanka_area
+						area = south_lanka_area
+					}
+					culture = tamil
+				}
+				change_culture = eelami
+			}
+			change_primary_culture = eelami
+			set_ruler_culture = eelami
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = lanka_area
+						area = south_lanka_area
+					}
+				}
+				add_province_modifier = {
+					name = jaffna_eelam_peace
+					duration = -1
+					hidden = no
+				}
+			}
+		}
 	}
 
 	JFN_develop_goods = {
@@ -776,14 +1032,18 @@ JFN_second = {
 			lanka_area = {
 				type = all
 				num_of_times_improved = 5
-				development = 10
+				development = 15
 				num_of_buildings_in_province = 3
 			}
 			south_lanka_area = {
 				type = all
 				num_of_times_improved = 5
-				development = 10
+				development = 15
 				num_of_buildings_in_province = 3
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 4
+				has_manufactory_trigger = yes
 			}
 		}
 
@@ -791,6 +1051,13 @@ JFN_second = {
 			add_years_of_income = 1.5
 			add_adm_power = 75
 			add_dip_power = 75
+			capital_scope = {
+				add_province_modifier = {
+					name = jaffna_trade_spice_centre
+					duration = -1
+					hidden = no
+				}
+			}
 		}
 	}
 }

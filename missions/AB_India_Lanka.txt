@@ -783,9 +783,18 @@ ab_sri_lanka_second = {
 				}
 				4415 = { center_of_trade = 1 }
 			}
-			madura_area = { add_permanent_claim = ROOT }
-			south_carnatic_area = { add_permanent_claim = ROOT }
-			tanjore_area = { add_permanent_claim = ROOT }
+			madura_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			south_carnatic_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			tanjore_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 }
@@ -1162,7 +1171,7 @@ ab_sri_lanka_third = {
 				area = tanjore_area
 				area = kongu_area
 				area = south_carnatic_area
-				area = north_carantic_area
+				area = north_carnatic_area
 			}
 		}
 
@@ -1174,7 +1183,7 @@ ab_sri_lanka_third = {
 					area = tanjore_area
 					area = kongu_area
 					area = south_carnatic_area
-					area = north_carantic_area
+					area = north_carnatic_area
 				}
 			}
 			OR = {

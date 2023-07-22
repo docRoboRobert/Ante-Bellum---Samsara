@@ -204,10 +204,13 @@
  JFN_lanka_united_desc:0 "For centuries Tamil states tried to subdue the island with varying results. From a small Tamil state clinging to the northern parts of the island, we have grown as dominant occupant and ultimately siezed all of the Eelam. Tamil rule over the rich island shall be total. From now on, tt shall become an integral part of Dravidian cultural sphere."
  JFN_looking_beyond_title:0 "Looking Beyond"
  JFN_looking_beyond_desc:0 "With the whole island of Eelam under our undisputed tamil rule, we shall now turn our eyes outwards. With the strong power base and enough treasury, we are now in a position to challenge the mainland powers."
+ JFN_looking_beyond.tooltip:0 "If §YChera§! @CER or §YPandya§! @PND exist, we will gain §YVassalization§! casus belli on them."
  JFN_rule_over_strait_title:0 "Rule Over the Strait"
  JFN_rule_over_strait_desc:0 "Our first milestone on our outwards expansion must be expanding over the Palk Strait. Most of the naval trade between Spice Islands and Arabia flows through this narrow pass, thus its importance is immense. If we manage to land across it and sieze territory there, we will become the sole controller of this natural toll. Potential gains from it could be astounding after we secure a stable foothold on the mainland. It can also serve as a base of operation for any deeper incursions into India."
+ JFN_rule_over_strait.tooltip:0 "Gain permanent claim on every province that is a §Mcore§! of §YChola§! @COA. \nGain permanent claim on §YKongu Area§!."
  JFN_land_of_chola_title:0 "The Land of Cholas"
  JFN_land_of_chola_desc:0 "To further our prominence over the Coromandel, we must strike and humiliate Chola or the lands they originally ruled. The rich and developed lands of our former overlord shall become our source of income. Such great victory will grant us even more power and revenue from the region."
+ JFN_land_of_chola.tooltip:0 "With the collapse of the greatest Tamil Kingdom, we will righfully claim their realm. \nGain §Gcore§! on every province that is a core of either §YChola§! @COA §YPallava§! @PLV §YPandya§! @PND or §YPulicat§! @PUL
  JFN_deal_with_vanni_title:0 "Deal With the Vanni"
  JFN_deal_with_vanni_desc:0 "Vanni chiefs are Tamil rulers controlling the lands south of Jaffna. Their rebellious tendencies must be put to an end."
  JFN_settle_tamils_title:0 "Push Tamil Settlement"
