@@ -806,7 +806,7 @@ ab_sri_lanka_third = {
 	potential = { tag = LNK } 
 
 	LNK_restore_prosperity = {
-		icon = mission_southern_frontier
+		icon = mission_southern_frontier_dharma
 		position = 7
 		required_missions = { proclaim_lanka_unification }
 		
