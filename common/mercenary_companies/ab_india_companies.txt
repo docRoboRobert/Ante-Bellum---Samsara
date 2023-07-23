@@ -1,0 +1,57 @@
+abi_merc_malankara_special = {
+    regiments_per_development = 0.04
+    cavalry_weight = 0.4
+	artillery_weight = 0.1
+    home_province = 5286
+	cost_modifier = 0.1
+	sprites = { dlc024_vij_sprite_pack vij_base_sprite_pack }
+    trigger = {
+		religion = malankara
+		any_war_enemy_country = {
+			NOT = { religion = malankara }
+		}
+		has_church_aspect = fund_malankara_merc_aspect
+		dip_power = 25
+		mil_power = 25
+	}
+	modifier = {
+		land_morale = 0.05
+		fire_damage_received = -0.05
+		cavalry_power = 0.1
+		morale_damage_received = -0.025
+	}
+	min_size = 4
+	max_size = 20
+	manpower_pool = 10
+}
+
+abi_merc_malankara_default = {
+    regiments_per_development = 0.04
+    cavalry_weight = 0.33
+	artillery_weight = 0.2
+    home_province = 5286
+	cost_modifier = 0.8
+	sprites = { dlc024_vij_sprite_pack vij_base_sprite_pack }
+    trigger = {
+		religion = malankara
+	}
+	modifier = { morale_damage_received = -0.05 }
+	min_size = 4
+	max_size = 15
+	manpower_pool = 10
+}
+
+abi_merc_malankara_default_2 = {
+    regiments_per_development = 0.05
+    cavalry_weight = 0.33
+	artillery_weight = 0.1
+	cost_modifier = 0.5
+	sprites = { dlc024_vij_sprite_pack vij_base_sprite_pack }
+    trigger = {
+		religion = malankara
+	}
+	modifier = {  }
+	min_size = 4
+	max_size = 40
+	manpower_pool = 12
+}

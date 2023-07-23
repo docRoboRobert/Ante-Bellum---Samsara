@@ -76,6 +76,13 @@ vassal_charity_aspect_modifier = {
 	production_efficiency = -0.02
 }
 
+fund_malankara_merc_aspect_modifier = {
+	global_tax_modifier = -0.1
+	global_manpower_modifier = -0.10
+	general_cost = -0.15
+	prestige_from_land = 0.2
+}
+
 #Timers for jain school change
 jain_school_change_timer = {
 

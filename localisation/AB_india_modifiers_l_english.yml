@@ -34,7 +34,9 @@
  prime_production_rights_aspect_modifier:0 "Elusive Production Grants"
  desc_prime_production_rights_aspect_modifier:0 "Our loyal subjects are investing heavily in manufactories in their holdings."
  vassal_charity_aspect_modifier:0 "Charity for the Vassals"
- desc_vassal_charity_aspect_modifier:0 "Takking care for our subjects is worthwhile investment."
+ desc_vassal_charity_aspect_modifier:0 "Taking care for our subjects is worthwhile investment."
+ fund_malankara_merc_aspect_modifier:0 "Funds for Malankara Mercenaries"
+ desc_fund_malankara_merc_aspect_modifier:0 "We are funneling extra treasury and efforts to fund Malankara mercenery company that will protect all Christian states."
  
  #Jain schools
  digambara_scholar_modifier:0 "Digambara Scholars"

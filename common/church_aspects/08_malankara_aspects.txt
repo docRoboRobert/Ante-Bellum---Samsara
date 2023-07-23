@@ -370,7 +370,7 @@ defensive_monasteries_aspect = {
 				skill = 2
 				religion = ROOT
 				discount = yes
-				cost_multiplier = 0.75
+				cost_multiplier = 0.67
 			}
 		}
 	}
@@ -458,6 +458,41 @@ vassal_charity_aspect = {
 		modifier = {
 			factor = 0
 			is_subject = yes
+		}
+	}
+}
+
+fund_malankara_merc_aspect = {
+	cost = 100
+	effect = {
+		hidden_effect = { 
+			clr_malankara_aspects_buffs = yes
+			add_country_modifier = {
+				name = fund_malankara_merc_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = {
+		mercenary_cost = -0.15
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			NOT = { manpower_percentage = 0.4 }
+		}
+		modifier = {
+			factor = 4
+			NOT = { manpower_percentage = 0.1 }
+		}
+		modifier = {
+			factor = 0.1
+			manpower_percentage = 0.6
+		}
+		modifier = {
+			factor = 0
+			NOT = { current_income_balance = 1 }
 		}
 	}
 }

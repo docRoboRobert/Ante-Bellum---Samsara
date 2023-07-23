@@ -293,3 +293,19 @@ on_dependency_gained = {
 		}
 	}
 }
+
+# THIS = Province, FROM = Country, ROOT = Merc Unit
+on_mercenary_recruited = {
+	on_mercenary_recruited_effect = yes
+	
+	#Malankara additions
+	if = {
+		limit = {
+			ROOT = { mercenary_company = abi_merc_malankara_special }
+		}
+		FROM = {
+			add_dip_power = -25
+			add_mil_power = -25
+		}
+	}
+}

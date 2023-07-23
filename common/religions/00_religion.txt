@@ -1382,6 +1382,7 @@ christian = {
 			ties_with_old_world_aspect
 			prime_production_rights_aspect
 			vassal_charity_aspect
+			fund_malankara_merc_aspect
 		}
 		aspects_name = MALANKARA_ASPECTS
 		
