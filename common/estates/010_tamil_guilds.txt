@@ -1,0 +1,296 @@
+# For Government Reforms to identify properly influence and loyalty modifiers, remember to put disqualifying triggers before the has_reform
+
+estate_tamil_guilds = {
+	icon = 14
+
+	# If true, country will get estate
+	trigger = {
+		has_dlc = "Domination"
+		NOT = { has_country_flag = disables_estate_tamil_guilds_flag }
+		OR = {
+			tag = COA
+			tag = PND
+			tag = PLV
+			primary_culture = tamil
+			AND = {
+				capital_scope = { superregion = india_superregion }
+				any_state = {
+					OR = {
+						area = tanjore_area
+						area = madura_area
+						area = kongu_area
+						area = south_carnatic_area
+						area = north_carnatic_area
+					}
+				}
+			}
+			has_country_flag = enables_estate_tamil_guilds_flag
+		}
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		placed_merchant_power_modifier = 0.2
+		global_trade_goods_size_modifier = 0.1
+		global_ship_trade_power = 0.2
+	}
+	country_modifier_neutral = {
+		global_ship_trade_power = 0.1
+	}	
+	country_modifier_angry = {
+		ship_power_propagation = -0.2
+		placed_merchant_power_modifier = -0.4
+		yearly_corruption = 0.1
+		global_spy_defence = -0.3
+	}
+	land_ownership_modifier = {
+		tamil_guilds_loyalty_modifier = 0.2
+		global_institution_spread = 0.1
+	}
+	
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 1.25
+			development = 25
+		}	
+		modifier = {
+			factor = 1.15
+			trade_goods = dyes
+		}
+		modifier = {
+			factor = 1.2
+			trade_goods = cloth
+		}
+		modifier = {
+			factor = 1.2
+			trade_goods = silk
+		}
+		modifier = {
+			factor = 1.15
+			trade_goods = ivory
+		}
+		modifier = {
+			factor = 1.2
+			trade_goods = spices
+		}
+		modifier = {
+			factor = 1.1
+			base_production = 5
+		}
+		modifier = {
+			factor = 1.15
+			base_production = 8
+		}
+		modifier = {
+			factor = 1.25
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 1.4
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 1.5
+			province_has_center_of_trade_of_level = 3
+		}
+	}
+
+	# Influence modifiers
+	base_influence = 10
+	influence_modifier = {
+		desc = EST_VAL_HIGH_TRADE_INCOME_TAMIL
+		trigger = {
+			trade_income_percentage = 0.5
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_VAL_SUPER_TRADE_INCOME_TAMIL
+		trigger = {
+			trade_income_percentage = 0.75
+		}
+		influence = 10
+	}
+	influence_modifier = {
+		desc = EST_VAL_INCOMPETENT_RULER_TAMIL
+		trigger = {
+			NOT = { dip = 2 }
+			NOT = { adm = 2 }
+		}
+		influence = 10
+	}
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+				has_disaster = estate_nomadic_tribes_disaster
+			}
+		}
+		influence = -40
+	}
+	influence_modifier = {
+		desc = EST_INCAPABLE_DIP_RULER
+		trigger = { 
+			NOT = { dip = 1 } 
+		}
+		influence = 10 
+	}
+	influence_modifier = {
+		desc = EST_LOW_STABILITY
+		trigger = { 
+			NOT = { stability = 0 } 
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_MANY_LOANS_TAMIL
+		trigger = {
+			num_of_loans = 10
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_MANY_BIG_PROVINCES_TAMIL
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				development = 25
+				has_port = yes
+			}
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_MANY_MEGA_PROVINCES_TAMIL
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				development = 35
+				has_port = yes
+			}
+		}
+		influence = 10
+	}
+	influence_modifier = {
+		desc = EST_MANY_PORTS_TAMIL
+		trigger = {
+			num_of_ports = 20
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_MANY_COT_TAMIL
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 7
+				province_has_center_of_trade_of_level = 1
+			}
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_MANY_COT_2_TAMIL
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				province_has_center_of_trade_of_level = 2
+			}
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_MANY_COT_3_TAMIL
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 2
+				province_has_center_of_trade_of_level = 3
+			}
+		}
+		influence = 5
+	}
+	
+	#Loyalty Modifiers
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+				has_disaster = estate_nomadic_tribes_disaster
+			}
+		}
+		loyalty = -20
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_DEVELOPED_PROVINCES_TAMIL
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 3
+				province_has_center_of_trade_of_level = 1
+				has_production_building_trigger = yes
+				has_trade_building_trigger = yes
+				has_manufactory_trigger = yes
+				development = 20
+			}
+		}
+		loyalty = 10
+	}
+	#High Stability
+	loyalty_modifier = {
+		desc = EST_VAL_HIGH_STABILITY
+		trigger = { stability = 3 }
+		loyalty = 5
+	}
+	
+	loyalty_modifier = {
+		desc = EST_VAL_DIP_FOCUS_TAMIL
+		trigger = { 
+			national_focus = DIP
+		} 
+		loyalty = 5 
+	}
+	#High Power Projection
+	loyalty_modifier = {
+		desc = EST_VAL_HIGH_PP
+		trigger = { power_projection = 50 }
+		loyalty = 5
+	}
+	
+	privileges = {
+		estate_tamil_guilds_land_rights
+		estate_tamil_guilds_indebted_to_tamils
+		estate_tamil_guilds_free_enterprise
+	}
+
+	agendas = {
+		estate_eunuchs_develop_x_agenda
+		estate_eunuchs_gather_x_gov_reform_agenda
+		estate_eunuchs_have_x_decree_agenda
+		estate_eunuchs_monthly_adm_agenda
+		estate_eunuchs_recover_meritocracy_agenda
+		estate_eunuchs_improve_imperial_mandate_agenda
+		estate_eunuchs_hire_advisor_agenda
+		estate_eunuchs_fire_advisor_agenda
+		estate_eunuchs_harmonization_agenda
+		estate_eunuchs_four_privileges_agenda
+		estate_eunuchs_subject_gifts_agenda
+		estate_eunuchs_forbidden_city_agenda
+		estate_eunuchs_porcelain_tower_agenda
+		estate_eunuchs_subsidize_subjects_agenda
+	}
+
+	color = { 239 221 152 }
+	
+	influence_from_dev_modifier = 1.0
+}
