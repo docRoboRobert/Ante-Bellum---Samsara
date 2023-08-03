@@ -51,7 +51,7 @@ JFN_first = {
 				num_of_heavy_ship = 2
 			}
 			num_of_ports = 6
-			5180 = {
+			5284 = {
 				trade_share = {
 					country = ROOT
 					share = 10
@@ -83,7 +83,7 @@ JFN_first = {
 				name = abi_navy_reforms
 				duration = 3650
 			}
-			5180 = { add_permanent_claim = ROOT }
+			5284 = { add_permanent_claim = ROOT }
 			5283 = { add_permanent_claim = ROOT }
 			custom_tooltip = JFN_assert_control.tooltip
 			hidden_effect = {
@@ -120,7 +120,7 @@ JFN_first = {
 			OR = {
 				province_id = 4415
 				province_id = 2026
-				province_id = 5180
+				province_id = 5284
 				province_id = 5283
 				province_id = 2101
 				province_id = 4410
@@ -151,15 +151,15 @@ JFN_first = {
 				}
 			}
 			OR = {
-				5180 = {
+				5284 = {
 					owned_by = ROOT
 				}
-				5180 = {
+				5284 = {
 					controlled_by = ROOT
 					devastation = 10
 					is_looted = yes
 				}
-				5180 = { has_province_modifier = slaves_raided }
+				5284 = { has_province_modifier = slaves_raided }
 			}
 			OR = {
 				5283 = {

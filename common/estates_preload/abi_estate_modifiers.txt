@@ -1,0 +1,16 @@
+estate_tamil_guilds = {
+	modifier_definition = {
+		type = loyalty
+		key = tamil_guilds_loyalty_modifier
+		trigger = {
+			has_estate = estate_tamil_guilds
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = tamil_guilds_influence_modifier
+		trigger = {
+			has_estate = estate_tamil_guilds
+		}
+	}
+}
