@@ -91,6 +91,11 @@ jain_school_change_timer = {
 jain_school_change_timer_ai = {
 
 }
+
+malankara_banquet_timer = {
+
+}
+
 # # # # #
 
 #Harmonized

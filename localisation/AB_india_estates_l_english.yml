@@ -2,6 +2,24 @@
  estate_tamil_guilds:0 "Tamil Guilds"
  estate_tamil_guilds_desc:0 "Tamil Guilds are present throughout all of Tamil Nandu region but their influence streatches much further. For centuries, they have been a dominant merchant caste in all of Coromandel, amassing great wealth from commerce. Tamils have found many guilds, on the coast and in central lands, focused on exchanging and producting exotic goods that are then shipped west, towards the Middle East. Naval and economic strength the Tamil guilds hold over the region, allowed them to elevate themselves above lower merchants and establish themselves as commercial and political powerhouse that must be reckoned with."
  
+ estate_tamil_guilds_ownership:0 "Tamil Guilds Land Ownership"
+ 
+ tamil_guilds_loyalty_modifier:0 "Tamil Guilds Loyalty Equilibrium"
+ tamil_guilds_influence_modifier:0 "Tamil Guilds Influence"
+ 
+ EST_VAL_HIGH_TRADE_INCOME_TAMIL:0 "Over 50% of income coming from trade"
+ EST_VAL_SUPER_TRADE_INCOME_TAMIL:0 "Over 75% of income coming from trade"
+ EST_VAL_INCOMPETENT_RULER_TAMIL:0 "Incompetent diplomatic and administrative ruler"
+ EST_MANY_LOANS_TAMIL:0 "10 active loans"
+ EST_MANY_BIG_PROVINCES_TAMIL:0 "5 coastal provinces with 25+ development"
+ EST_MANY_MEGA_PROVINCES_TAMIL:0 "5 coastal provinces with 35+ development"
+ EST_MANY_PORTS_TAMIL:0 "Owns over 20 ports"
+ EST_MANY_COT_TAMIL:0 "7 small Centers of Trade"
+ EST_MANY_COT_2_TAMIL:0 "5 medium Centers of Trade"
+ EST_MANY_COT_3_TAMIL:0 "2 huge Centers of Trade"
+ EST_VAL_DEVELOPED_PROVINCES_TAMIL:0 "3 well-developed provinces"
+ EST_VAL_DIP_FOCUS_TAMIL:0 "Diplomatic Focus"
+ 
  estate_tamil_guilds_land_rights:0 "Tamil Land Rights"
  estate_tamil_guilds_land_rights_desc:0 "Being one of the pillars of our economy, Tamil Guilds deserve a share in the nation's resources. Granting them more real estate will buy their loyalty and they will ease the government by managing newly-given possessions by themselves."
  estate_tamil_guilds_indebted_to_tamils:0 "Take Tamil Loans"

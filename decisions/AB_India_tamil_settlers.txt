@@ -16,7 +16,7 @@ country_decisions = {
 			NOT = { has_ruler_modifier = tamil_settlement_encouraged }
 			adm_power = 50
 			dip_power = 75
-			cash = 50
+			treasury = 50
 		}
 		effect = {
 			add_ruler_modifier = {
