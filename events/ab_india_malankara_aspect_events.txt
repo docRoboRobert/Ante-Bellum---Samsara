@@ -1,0 +1,330 @@
+#Events about Malankara church aspects
+namespace = malankara_aspect_events
+
+country_event = {	#Grand Malankara Banquet in X
+	id = malankara_aspect_events.1
+	title = malankara_aspect_events.1.t
+	desc = malankara_aspect_events.1.d
+	picture = FEAST_eventPicture
+	
+	is_triggered_only = yes
+	
+	goto = event_target:malankara_banquet_origin
+	
+	option = {	#Send the invitations!
+		name = malankara_aspect_events.1.a
+		custom_tooltip = malankara_aspect_events.1.tooltip
+		hidden_effect = {
+			every_known_country = {
+				limit = {
+					religion = malankara
+					has_opinion = {
+						who = ROOT
+						value = -100
+					}
+					NOT = { is_enemy = ROOT }
+				}
+				country_event = {
+					id = malankara_aspect_events.2
+					days = 5
+				}
+			}
+			country_event = {
+				id = malankara_aspect_events.3
+				days = 30
+			}
+		}
+	}
+	
+}
+
+country_event = {	#Target on country if wants to join
+	id = malankara_aspect_events.2
+	title = malankara_aspect_events.2.t
+	desc = malankara_aspect_events.2.d
+	picture = indiangfx_COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	goto = event_target:malankara_banquet_origin
+	
+	option = {	#We will join
+		name = malankara_aspect_events.2.a
+		add_adm_power = -10
+		add_dip_power = -10
+		add_years_of_income = -0.25
+		reverse_add_opinion = {
+			who = event_target:malankara_banquet_origanizer
+			modifier = joined_malankara_banquet
+		}
+		add_opinion = {
+			who = event_target:malankara_banquet_origanizer
+			modifier = joined_malankara_banquet
+		}
+		add_country_modifier = {
+			name = joined_malankara_banquet_modifier
+			duration = 1825
+			hidden = no
+		}
+		
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {	#Not join
+		name = malankara_aspect_events.2.b
+		reverse_add_opinion = {
+			who = event_target:malankara_banquet_origanizer
+			modifier = rejected_malankara_banquet
+		}
+		add_country_modifier = {
+			name = refused_malankara_banquet_modifier
+			duration = 1825
+			hidden = no
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				OR = {
+					ruler_has_personality = well_connected_personality
+					ruler_has_personality = lawgiver_personality
+					ruler_has_personality = charismatic_negotiator_personality
+					ruler_has_personality = entrepreneur_personality
+					ruler_has_personality = silver_tongue_personality
+					ruler_has_personality = fierce_negotiator_personality
+				}
+			}
+			modifier = {
+				factor = 0
+				alliance_with = event_target:malankara_banquet_origanizer
+			}
+			modifier = {
+				factor = 1.5
+				is_at_war = yes
+			}
+			modifier = {
+				factor = 0.5
+				has_opinion = {
+					who = event_target:malankara_banquet_origanizer
+					value = 25
+				}
+			}
+			modifier = {
+				factor = 0.25
+				has_opinion = {
+					who = event_target:malankara_banquet_origanizer
+					value = 50
+				}
+			}
+			modifier = {
+				factor = 0.1
+				has_opinion = {
+					who = event_target:malankara_banquet_origanizer
+					value = 75
+				}
+			}
+			modifier = {
+				factor = 0
+				has_opinion = {
+					who = event_target:malankara_banquet_origanizer
+					value = 100
+				}
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { stability = -2 }
+			}
+			modifier = {
+				factor = 0.75
+				stability = 1
+			}
+			modifier = {
+				factor = 1.25
+				NOT = {
+					has_opinion = {
+						who = event_target:malankara_banquet_origanizer
+						value = -15
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				NOT = {
+					has_opinion = {
+						who = event_target:malankara_banquet_origanizer
+						value = -25
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					has_opinion = {
+						who = event_target:malankara_banquet_origanizer
+						value = -50
+					}
+				}
+			}
+			modifier = {
+				factor = 4
+				NOT = {
+					has_opinion = {
+						who = event_target:malankara_banquet_origanizer
+						value = -75
+					}
+				}
+			}
+			modifier = {
+				factor = 5
+				NOT = {
+					has_opinion = {
+						who = event_target:malankara_banquet_origanizer
+						value = -85
+					}
+				}
+			}
+		}
+	}
+	
+	option = {	#Explain why not join
+		name = malankara_aspect_events.2.c
+		highlight = yes
+		trigger = {
+			OR = {
+				ruler_has_personality = well_connected_personality
+				ruler_has_personality = lawgiver_personality
+				ruler_has_personality = charismatic_negotiator_personality
+				ruler_has_personality = entrepreneur_personality
+				ruler_has_personality = silver_tongue_personality
+				ruler_has_personality = fierce_negotiator_personality
+			}
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				alliance_with = event_target:malankara_banquet_origanizer
+			}
+			modifier = {
+				factor = 1.5
+				is_at_war = yes
+			}
+			modifier = {
+				factor = 0.5
+				has_opinion = {
+					who = event_target:malankara_banquet_origanizer
+					value = 25
+				}
+			}
+			modifier = {
+				factor = 0.25
+				has_opinion = {
+					who = event_target:malankara_banquet_origanizer
+					value = 50
+				}
+			}
+			modifier = {
+				factor = 0.1
+				has_opinion = {
+					who = event_target:malankara_banquet_origanizer
+					value = 75
+				}
+			}
+			modifier = {
+				factor = 0
+				has_opinion = {
+					who = event_target:malankara_banquet_origanizer
+					value = 100
+				}
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { stability = -2 }
+			}
+			modifier = {
+				factor = 0.75
+				stability = 1
+			}
+			modifier = {
+				factor = 1.25
+				NOT = {
+					has_opinion = {
+						who = event_target:malankara_banquet_origanizer
+						value = -15
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				NOT = {
+					has_opinion = {
+						who = event_target:malankara_banquet_origanizer
+						value = -25
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					has_opinion = {
+						who = event_target:malankara_banquet_origanizer
+						value = -50
+					}
+				}
+			}
+			modifier = {
+				factor = 4
+				NOT = {
+					has_opinion = {
+						who = event_target:malankara_banquet_origanizer
+						value = -75
+					}
+				}
+			}
+			modifier = {
+				factor = 5
+				NOT = {
+					has_opinion = {
+						who = event_target:malankara_banquet_origanizer
+						value = -85
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+country_event = {	#Grand Malankara Banquet is on
+	id = malankara_aspect_events.3
+	title = malankara_aspect_events.3.t
+	desc = malankara_aspect_events.3.d
+	picture = muslimgfx_FEAST_eventPicture
+	
+	is_triggered_only = yes
+	
+	goto = event_target:malankara_banquet_origin
+	
+	option = {	#Glory
+		name = malankara_aspect_events.3.a
+		add_splendor = 50
+		add_church_power = 15
+		add_prestige = 10
+		add_devotion = 10
+		add_country_modifier = {
+			name = held_malankara_banquet_modifier
+			duration = 1825
+			hidden = no
+		}
+		hidden_effect = {
+			clear_global_event_target = malankara_banquet_origin
+			clear_global_event_target = malankara_banquet_origanizer
+			clr_global_flag = malankara_banquet_active_flag
+		}
+	}
+	
+}

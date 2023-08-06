@@ -17,6 +17,20 @@
  abi_jain_picker.1.b:0 "Embrace Svetambara teachings"
  abi_jain_picker.1.c:0 "Embrace Yapaniya teachings"
  
+ #Malankara aspects events
+ malankara_aspect_events.1.t:0 "Grand Malankara Banquet in [malankara_banquet_origanizer.GetName]!"
+ malankara_aspect_events.1.d:0 "The time has come to organize a grandiose gathering for all of our faithful brothers all across the known world. Grand gathring that will be held in our capital - [malankara_banquet_origin.GetName] - shall be a reoccurring event for all followers of St. Thomas' teachings. Grand gathering will be a splendorous opportinity for all of the Christians to reconcile and celebrate together in a charitable spirit. The religious rites bind us to show kindness and care to our neighbors."
+ malankara_aspect_events.1.a:0 "Send the invitations to our brethren!"
+ malankara_aspect_events.1.tooltip:0 "We will send invitation letters to all Malankara nations that aren't our enemies or don't have below -100 opinion of us."
+ malankara_aspect_events.2.t:0 "Invitation to Grand Gathering in [malankara_banquet_origin.GetName]"
+ malankara_aspect_events.2.d:0 "The nation of [malankara_banquet_origanizer.GetName] is inviting us and our noble men to partake in Grand Malankara Banquet in [malankara_banquet_origin.GetName]. Banquet is a splendorous festival aimed bring more unity and kindness between different Malankara countries. Joining this charitable event will surely be a great opportunity to make important connections, gather new friends and display our piety. Whilst great image boost, sending our trusted men to be surrounded by all sorts of people in foreign territory is a risky action nonetheless."
+ malankara_aspect_events.2.a:0 "Of course we will take the effort to come"
+ malankara_aspect_events.2.b:0 "This is suspicious and we don't have time"
+ malankara_aspect_events.2.c:0 "You see, I would love to BUT....."
+ malankara_aspect_events.3.t:0 "Grand Gathering in [malankara_banquet_origin.GetName] begins"
+ malankara_aspect_events.3.d:0 "Grand Malankara Banquet organized in [malankara_banquet_origin.GetName] took place today. Followers of St. Thomas from all around gathered together to pray and celebrate this divine event. While not everyone was happy to come and the gathering had some hickups, the whole event turned out to be a great success and both a display of splendor and piety. The guests who took part in it are now leaving the capital happy, while we can make use of the in-put effort."
+ malankara_aspect_events.3.a:0 "Glory to us!"
+ 
  #Unique CN formation
  
  colonial_AUS_india.1.t:0 "Colony of Aljanubia"

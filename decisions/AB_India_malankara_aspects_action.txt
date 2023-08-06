@@ -4,13 +4,13 @@ country_decisions = {
 		potential = {
 			religion = malankara
 			has_church_aspect = vassal_charity_aspect
-			always = no
 		}
 		allow = {
 			has_church_aspect = vassal_charity_aspect
 			custom_trigger_tooltip = {
 				tooltip = india_malankara_banquet_cooldown_tooltip
 				NOT = { has_country_modifier = malankara_banquet_timer }
+				NOT = { has_global_flag = malankara_banquet_active_flag }
 			}
 			adm_power = 25
 			dip_power = 25
@@ -22,10 +22,11 @@ country_decisions = {
 		effect = {
 			custom_tooltip = organize_malankara_banquet.tooltip
 			add_treasury = -200
-			add_years_of_income = -1
+			add_years_of_income = -0.9
 			add_adm_power = -25
 			add_dip_power = -25
 			hidden_effect = {
+				set_global_flag = malankara_banquet_active_flag
 				if = {
 					limit = { ai = no }
 					add_country_modifier = {
@@ -42,6 +43,12 @@ country_decisions = {
 						hidden = yes
 					}
 				}
+				country_event = {
+					id = malankara_aspect_events.1
+					days = 1
+				}
+				save_global_event_target_as = malankara_banquet_origanizer
+				capital_scope = { save_global_event_target_as = malankara_banquet_origin }
 			}
 		}
 		ai_will_do = {

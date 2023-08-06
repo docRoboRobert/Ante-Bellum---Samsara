@@ -16,3 +16,13 @@ defeated_DGL_pirates = {
 	opinion = 50
 	yearly_decay = 1
 }
+
+joined_malankara_banquet = {
+	opinion = 25
+	yearly_decay = 5
+}
+
+rejected_malankara_banquet = {
+	opinion = -25
+	yearly_decay = 5
+}

@@ -4,6 +4,8 @@
  converted_to_malankara_1: "Converted do Malankara"
  destroyed_villarvattom: "Pillaged Villarvattom"
  defeated_DGL_pirates: "Ended Maldives Piracy"
+ joined_malankara_banquet:0 "Joined Grand Banquet"
+ rejected_malankara_banquet:0 "Rejected Banquet Invitation"
  
  
  #Malankara church aspects
@@ -195,3 +197,9 @@
  desc_jaffna_eelam_peace:0 "Old population of Lanka has been assimilated or expelled and now the province is dominated by our loyal subjects."
  jaffna_trade_spice_centre:0 "Main Lankan Spice Hub"
  desc_jaffna_trade_spice_centre:0 "This province in main hub for exporting precious spices and exotic goods produced on the island. It elevates the port to great significance."
+ joined_malankara_banquet_modifier:0 "Took part in Grand Malankara Banquet"
+ desc_joined_malankara_banquet_modifier:0 ""
+ refused_malankara_banquet_modifier:0 "Refused to join Grand Malankara Banquet"
+ desc_refused_malankara_banquet_modifier:0 ""
+ held_malankara_banquet_modifier:0 "Held Grand Malankara Banquet"
+ desc_held_malankara_banquet_modifier:0 "Our nation has recently organized a great gathering of Malankara Christians. Glory to us!"

@@ -60,6 +60,11 @@
  india_convert_to_malankara_desc:0 "Influence of Christianity within our country has grown high enough that it is worthy considering adopting Malankara as our state religion."
  india_convert_to_malankara.tooltip:0 "All known nations that also follow Malankara will be pleased with our decision"
  
+ organize_malankara_banquet_title:0 "Organize Great Christian Gathering"
+ organize_malankara_banquet_desc:0 "In the spirit of charity taught by St. Thomas, we shall organize a grand banquet for all our brothers in faith. A charitable event to display our generocity and faithfulness. Highest noblemen from all Malankara-following states ae invited."
+ india_malankara_banquet_cooldown_tooltip:0 "Hadn't organized a Grand Malankara Banquet in the last §Y10 years§! and there is no ongoing banquet anywhere else."
+ organize_malankara_banquet.tooltip:0 "§YWe will organize§! §GGrand Malankara Banquet§! §Yin our capital. All Malankara-following nations that§! §Oare not hostile or our enemy§! §Ywill be invited to partake in it.§!"
+ 
  #Jain school change
  
  india_pick_jain_school_title:0 "Change Jain school of thought"
