@@ -755,3 +755,22 @@
  KAT_salt_trade:0 "Salt Trade"
  KAT_salt_trade_desc:0 "Thanks to our experience with salt collecting and excellent location on the Indian Coast, we can become the local masters of salt trade."
  
+ #Guhilas
+ GUH_ideas:0 "Guhilas Ideas"
+ GUH_ideas_start:0 "Guhila Ideas"
+ GUH_ideas_bonus:0 "Guhila Ambition"
+ GUH_rightful_propaganda:0 "Our Rightful Cause"
+ GUH_rightful_propaganda_desc:0 "We are the rightful and most supreme rulers of Mewar and Rajputana. The false claimants of Gujarat and Mewar have no right to subjugate our lands and thanks to our excellent diplomacy, all the neighbors will know that."
+ GUH_bappa_raval_myth:0 "Bappa Raval Founding Myth"
+ GUH_bappa_raval_myth_desc:0 "Bappa Raval - great warrior and entrepreneur from legendary Maurya Dynasty - is our mighty founder, who in 728AD united and established the first Kingdom of Mewar, thus founding the Guhila Dynasty. We shall seek to claim his legacy and military glory of thos old days."
+ GUH_efficient_rajasthan_rule:0 "Line of Efficient Rule Over Rajasthan"
+ GUH_efficient_rajasthan_rule_desc:0 ""
+ GUH_convert_back_foreign_influence:0 "Post-invasion Reconciliation"
+ GUH_convert_back_foreign_influence_desc:0 ""
+ GUH_revive_forts:0 "Revitalization of Grand Forts"
+ GUH_revive_forts_desc:0 ""
+ GUH_develop_old_capitals:0 "Rise of Old Capitals"
+ GUH_develop_old_capitals_desc:0 ""
+ GUH_rajput_might:0 "Rajput Might"
+ GUH_rajput_might_desc:0 ""
+ 
