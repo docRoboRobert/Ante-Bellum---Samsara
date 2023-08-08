@@ -736,3 +736,22 @@
  ksu_seventh:0 "Devaputra Shaonanoshao"
  ksu_seventh_desc:0 "Meaning 'Son of God, King of Kings' in the old Kushan tongue, these revered titles had been stolen from our forefathers by Samudragupta of the Gupta Empire, though in time even his line would be deprived of such honours. Our return to greatness necessitates the recognition of our sovereigns as the Devaputra Shaonanoshao, but they must prove themselves worthy of such splendour, lest we be stripped of our pride yet again..."
  
+ #Kutch
+ KAT_ideas:0 "Kutch Ideas"
+ KAT_ideas_start:0 "Kutch Ideas"
+ KAT_ideas_bonus:0 "Kutch Ambition"
+ KAT_reform_host:0 "Reform Tribal Hosts"
+ KAT_reform_host_desc:0 "Our army used to be based primarily of tribal hosts and tribal-esque families that migrated with us and settled in Kutch. In times of war, they would raise and provide warriors which would fight in a wars for us. We shall now reform and formalize on this practise, to establish a proper popular draft. New reforms in this tribe-state relation will surely make it easier for our professional army to reinforce too."
+ KAT_white_rann_mining:0 "White Rann Salt Mining"
+ KAT_white_rann_mining_desc:0 "White Rann of Kutch is the largest salt marsh in India. Salty lagoon periodically floods and dries out, leaving vast swats of salty crust. By making use of it, we could effectively exploit the Rann to gather immense amounts of pure salt. We could then sell the precious crystals and flood the regional market with our produce."
+ KAT_centralize_tribes:0 "Centralize Kutch Tribes"
+ KAT_centralize_tribes_desc:0 "State of Kutch for centuries has been a loosely-centralize federation of various semi-nomadic entities, united under one overlord from Jadeja dynasty. Those previous structures, while providing more stability, are now obsolete and uneffective, especially as the state grows large in size. We must secure a more direct grip over our subjects to ensure the stability of Jadeja rule."
+ KAT_island_fortress:0 "Salt Marsh Fortress"
+ KAT_island_fortress_desc:0 "Semi-desert, harsh climate, uncertain ground and more importantly - periodically-flooding lagoon of salty mud and dangerous tides. \n \nAll of this combined, makes the almost-island of Kutch a perfect trap for advancing armies. We can learn a lot from it."
+ KAT_reform_tribal_structure:0 "Modernization of State"
+ KAT_reform_tribal_structure_desc:0 "We cannot stay a tribal society forever. The world is changing and we must adapt to technology and findings of our neighbors. Onwards to better society!"
+ KAT_religious_identity:0 "Religious Identity"
+ KAT_religious_identity_desc:0 "When we came from Sindh to this area, People of Kutch were all devout followers of Hinduism, while our ruling elite stuck to Jainism. Religiously divided, we are on our way to seek true religious identity, one that will allow both Hindu and Jain citizens to live together."
+ KAT_salt_trade:0 "Salt Trade"
+ KAT_salt_trade_desc:0 "Thanks to our experience with salt collecting and excellent location on the Indian Coast, we can become the local masters of salt trade."
+ 

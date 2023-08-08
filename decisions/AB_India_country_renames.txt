@@ -152,6 +152,12 @@ country_decisions = {
 				type = zim_african_great_power
 				amount = 15
 			}
+			persia_region = {
+				add_permanent_claim = ROOT
+			}
+			khorasan_region = {
+				add_permanent_claim = ROOT
+			}
 		}
 		ai_will_do = {
 			factor = 1
