@@ -774,3 +774,22 @@
  GUH_rajput_might:0 "Rajput Might"
  GUH_rajput_might_desc:0 "The Rajputs shall rule over united Rajputana once and for all. Mighty Guhila Dynasty shall be a spark that cements it!"
  
+ #Industan
+ IDU_ideas:0 "Indus Ideas"
+ IDU_ideas_start:0 "Industani Traditions"
+ IDU_ideas_bonus:0 "Industani Ambition"
+ secure_flanks:0 "Secure Flanks"
+ secure_flanks_desc:0 "Our vulnerable inner territory is under constant threat of invasions. We can only protect ourselves by investing in construction efforts and establishing a defensive lines on our key borders."
+ #
+ #
+ punjabi_textile_monopoly:0 "Textile Monopoly"
+ punjabi_textile_monopoly_desc:0 "Region of Western India is well-known for its intense efforts in cloth and pigments production. We must wait no longer to further invest in textile market, for the benefit of our economy."
+ IDU_united_army:0 "United Indus Army"
+ IDU_united_army_desc:0 "Being home to a large variety of cultures and religions, our army structured is in need of deep reform. Our expansive state can't rely on just the conscripts from the core territory. We seek to adapt our military to accomodate for all people within our borders and their beliefs. Only then we can experience large increase of fresh soldiers."
+ #
+ #
+ IDU_indus_development:0 "Indus Restructuring"
+ IDU_indus_development_desc:0 "Indus River - heart of our nation - has been giving us its fruits since the dawn of civilisation. Sadly, the mood of goddess nature is varied and the river is prone to periodic floods and storms. New advances in engineering technology finally allow our men to truly harness the power of the grand river. New digs and irrigation channels shall be erected all across the nation. Marvels of our enginuity are there to bring us prosperity. At last, all the engineering knowledge we amass in the process will further help us tame all sorts of lands."
+ IDU_new_city_location:0 "Intensive City Location"
+ IDU_new_city_location_desc:0 "With population steadily growing, we are in a frenzy of expansion and new city location to accomodate for the growing numbers of citizens. The land rights need to be reformed and prosperity shall be exploited to benefit current administration."
+ 
