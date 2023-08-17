@@ -40,10 +40,10 @@ on_monarch_death = {
 		limit = { tag = AYU }
 		country_event = { id = flavor_suk.1 }
 	}
-	if = {
-		limit = { tag = GOT }
-		country_event = { id = flavor_got.37 }
-	}
+	#if = {
+	#	limit = { tag = GOT }
+	#	country_event = { id = flavor_got.37 }
+	#}
 	if = {
 		limit = { has_government_attribute = no_stability_loss_on_monarch_death }
 		add_stability = 1
@@ -62,6 +62,7 @@ on_monarch_death = {
 		majapahit.8 # Majapahit pretenders
 		flavor_mal.11 # Mali pretenders
 		flavor_mal.47 # Pilgrimage ends prematurely
+		government_events.3	# Election of a new Ruler
 	}
 	#AB
 	if = {
@@ -95,6 +96,12 @@ on_monarch_death = {
 		}
 		country_event = { id = ab_ghorde.2 }
 	}
+	if = {
+		limit = {
+			tag = NAZ
+		}
+		country_event = { id = ab_abbasid.2 days = 5 }
+	}
 	#India
 	if = {
 		limit = {
@@ -110,13 +117,26 @@ on_dependency_gained = {
 	if = {
 		limit = {
 			FROM = {
-				has_reform = dutch_republic
+				has_government_attribute = has_dutch_election
 			}
 		}
 		ROOT = {
 			country_event = {
 				id = dutch_republic.31
 			}# States General falls under a PU
+		}
+	}
+	if = {
+		limit = {
+			FROM = {
+				tag = AVE
+				government_rank = 1
+			}
+		}
+		FROM = {
+			country_event = {
+				id = flavor_gbr.20
+			}
 		}
 	}
 	#AB
@@ -193,76 +213,6 @@ on_dependency_gained = {
 			subject = FROM
 		}
 		FROM = { add_government_reform = irish_ruirech }
-	}
-	FROM = {
-		# Using `days = 21` is extremely important for the AI
-		# without it the event will because the capital_scope
-		# triggers of the event will fail for some reason.
-		#
-		# Also if we fire on 1 day then it means that players
-		# that have select colonial nation unpaused will end up
-		# being forced to spend 1000 if they did not want crown
-		# colony
-		country_event = { id = colonial_england.1 days = 21 }
-		country_event = { id = colonial_england.2 days = 21 }
-		country_event = { id = colonial_england.3 days = 21 }
-		country_event = { id = colonial_england.4 days = 21 }
-		country_event = { id = colonial_england.5 days = 21 }
-		country_event = { id = colonial_england.6 days = 21 }
-		country_event = { id = colonial_england.7 days = 21 }
-		country_event = { id = colonial_england.8 days = 21 }
-		country_event = { id = colonial_england.9 days = 21 }
-		country_event = { id = colonial_england.10 days = 21 }
-		country_event = { id = colonial_england.11 days = 21 }
-		country_event = { id = colonial_england.12 days = 21 }
-		country_event = { id = colonial_andalusia.1 days = 21 }
-		country_event = { id = colonial_andalusia.2 days = 21 }
-		country_event = { id = colonial_andalusia.3 days = 21 }
-		country_event = { id = colonial_andalusia.4 days = 21 }
-		country_event = { id = colonial_andalusia.5 days = 21 }
-		country_event = { id = colonial_andalusia.6 days = 21 }
-		country_event = { id = colonial_andalusia.7 days = 21 }
-		country_event = { id = colonial_andalusia.8 days = 21 }
-		country_event = { id = colonial_andalusia.9 days = 21 }
-		country_event = { id = colonial_andalusia.10 days = 21 }
-		country_event = { id = colonial_andalusia.11 days = 21 }
-		country_event = { id = colonial_andalusia.12 days = 21 }
-		country_event = { id = colonial_nse.1 days = 21 }
-		country_event = { id = colonial_nse.2 days = 21 }
-		country_event = { id = colonial_nse.3 days = 21 }
-		country_event = { id = colonial_nse.4 days = 21 }
-		country_event = { id = colonial_nse.5 days = 21 }
-		country_event = { id = colonial_nse.6 days = 21 }
-		country_event = { id = colonial_nse.7 days = 21 }
-		country_event = { id = colonial_nse.8 days = 21 }
-		country_event = { id = colonial_nse.9 days = 21 }
-		country_event = { id = colonial_nse.10 days = 21 }
-		country_event = { id = colonial_nse.11 days = 21 }
-		country_event = { id = colonial_nse.12 days = 21 }
-		country_event = { id = colonial_francia.1 days = 21 }
-		country_event = { id = colonial_francia.2 days = 21 }
-		country_event = { id = colonial_francia.3 days = 21 }
-		country_event = { id = colonial_francia.4 days = 21 }
-		country_event = { id = colonial_francia.5 days = 21 }
-		country_event = { id = colonial_francia.6 days = 21 }
-		country_event = { id = colonial_francia.7 days = 21 }
-		country_event = { id = colonial_francia.8 days = 21 }
-		country_event = { id = colonial_francia.9 days = 21 }
-		country_event = { id = colonial_francia.10 days = 21 }
-		country_event = { id = colonial_francia.11 days = 21 }
-		country_event = { id = colonial_francia.12 days = 21 }
-		country_event = { id = colonial_iberia.1 days = 21 }
-		country_event = { id = colonial_iberia.2 days = 21 }
-		country_event = { id = colonial_iberia.3 days = 21 }
-		country_event = { id = colonial_iberia.4 days = 21 }
-		country_event = { id = colonial_iberia.5 days = 21 }
-		country_event = { id = colonial_iberia.6 days = 21 }
-		country_event = { id = colonial_iberia.7 days = 21 }
-		country_event = { id = colonial_iberia.8 days = 21 }
-		country_event = { id = colonial_iberia.9 days = 21 }
-		country_event = { id = colonial_iberia.10 days = 21 }
-		country_event = { id = colonial_iberia.11 days = 21 }
-		country_event = { id = colonial_iberia.12 days = 21 }
 	}
 	#India
 	FROM = {

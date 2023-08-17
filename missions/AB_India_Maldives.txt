@@ -475,12 +475,12 @@ abi_maldives_third = {
 		trigger = {
 			4410 = { has_province_modifier = slaves_raided }
 			537 = { has_province_modifier = slaves_raided }
-			5182 = { has_province_modifier = slaves_raided }
+			5286 = { has_province_modifier = slaves_raided }
 			535 = { has_province_modifier = slaves_raided }
 			534 = { has_province_modifier = slaves_raided }
 			4413 = { has_province_modifier = slaves_raided }
 			2029 = { has_province_modifier = slaves_raided }
-			5195 = { has_province_modifier = slaves_raided }
+			5299 = { has_province_modifier = slaves_raided }
 			531 = { has_province_modifier = slaves_raided }
 			4427 = { has_province_modifier = slaves_raided }
 			2030 = { has_province_modifier = slaves_raided }
@@ -503,7 +503,7 @@ abi_maldives_third = {
 					share = 0.2
 				}
 			}
-			5182 = {
+			5286 = {
 				controlled_by = ROOT
 				devastation = 15
 				is_looted = yes
@@ -519,7 +519,7 @@ abi_maldives_third = {
 				type = mission_rewards_power_projection
 				amount = 10
 			}
-			5182 = { add_permanent_claim = ROOT }
+			5286 = { add_permanent_claim = ROOT }
 			country_event = {
 				id = abindia_mission.3
 				days = 1
