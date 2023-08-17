@@ -5201,8 +5201,8 @@ province;red;green;blue;x;x
 5200;195;74;22;Dabusiyya;x
 5201;188;154;79;Hindukush;x
 5202;158;154;79;Paropamisus;x
-5203;233;218;131;Rajshahi;x
-5204;164;216;247;Ganges Estuary;x
+5203;158;241;255;Lower Don;x
+5204;211;236;255;Lower Volga;x
 5205;196;201;215;Bhojpur;x
 5206;183;151;40;East Champaran;x
 5207;58;165;120;Sonbhadra;x
@@ -5305,3 +5305,5 @@ province;red;green;blue;x;x
 5304;26;40;32;Northern Ghats;x
 5305;232;218;45;Upper Krishna;x
 5306;192;158;20;Guwahati;x
+5307;233;218;131;Rajshahi;x
+5308;164;216;247;Ganges Estuary;x

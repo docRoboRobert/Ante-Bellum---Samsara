@@ -104,7 +104,7 @@ trade_company_east_india = {
 		552 2038 2043 2049 4441 5213 #orissa_area
 		560 2096 4450 4470 4471 5214 5217 #jharkhand_area
 		562 2045 2046 4486 #north_bengal_area
-		563 2044 4479 5203 #gaur_area
+		563 2044 4479 5307 #gaur_area
 		568 579 2402 #arakan_area
 		558 4469 4472 4489 5205 #bihar_area
 		2047 4484 4487 4488 5206 #mithila_area

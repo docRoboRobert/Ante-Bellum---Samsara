@@ -44,6 +44,11 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2114;4671;sea;5092;-1;-1;-1;-1;Kuowotu-Yekedieliesun
 2114;723;sea;5092;-1;-1;-1;-1;Kuowotu-Alahumaqi
 2145;5115;sea;1372;-1;-1;-1;-1;Zhanjiang-Nantong
+96;4383;sea;1269;-1;-1;-1;-1;Zeeland-DenHaag
+911;1001;sea;1663;-1;-1;-1;-1;Baawitigon-Marameg
+2413;2414;sea;5203;-1;-1;-1;-1;Tyn-Azaraba
+288;2414;sea;5203;-1;-1;-1;-1;LowerDon-Azaraba
+288;468;sea;5203;-1;-1;-1;-1;LowerDon-Manych
 
 36;4999;sea;1926;-1;-1;-1;-1;Jutland-Jutland
 4999;35;sea;1926;-1;-1;-1;-1;Jutland-Jutland
@@ -52,6 +57,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 14;5011;sea;1258;-1;-1;-1;-1;Jutland-Jutland
 1983;5011;sea;1258;-1;-1;-1;-1;Jutland-Jutland
 1015;5122;sea;1392;-1;-1;-1;-1;Jutland-Jutland
+
+5203;5204;canal;1971;-1;-1;-1;-1;wolga_canal
 
 242;5166;sea;1284;-1;-1;-1;-1;Jutland-Jutland
 
@@ -87,7 +94,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4364;4363;sea;1283;2718;1654;2721;1655;Inner Hebrides-Argyll
 4110;369;sea;1282;2757;1705;2757;1710;Sutherland-Orkney
 97;100;sea;1269;2890;1581;2886;1576;Holland-Friesland
-96;1865;sea;1269;-1;-1;-1;-1;Zeeland-Gent
 1017;1818;sea;1390;4853;1213;4848;1208;Suo-Chikuzen
 1014;4186;sea;1390;4860;1202;4872;1202;Bungo-Iyo
 4186;1825;sea;1390;4881;1219;4880;1214;Aki-Iyo

@@ -12,11 +12,11 @@ eastern_mediterrenean_area = {
 }
 
 black_sea_area = {
-	1321 1322 1323 1324
+	1321 1322 1323 1324 5203
 }
 
 navigable_caspian_sea_area = {
-	5136 5137 5138 5139 5140
+	5136 5137 5138 5139 5140 5204
 }
 
 baltic_area = {
@@ -56,7 +56,7 @@ andaman_sea_area = {
 }
 
 bay_of_bengal_area = {
-	1341 1342 1343 1344 1346 1611 1612 1613 1614 5281 5204
+	1341 1342 1343 1344 1346 1611 1612 1613 1614 5281 5308
 }
 
 eastern_indian_ocean_area = {
@@ -2181,8 +2181,8 @@ upper_mahanadi_area = { #8
 	553 2082 4447 4451 4452 5215 5216 5219
 }
 
-gaur_area = { #3
-	563 2044 4479 5203
+gaur_area = { #4
+	563 2044 4479 5307
 }
 
 west_bengal_area = { #4
