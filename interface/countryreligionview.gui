@@ -2909,9 +2909,214 @@ guiTypes = {
 	}
 	
 	################################################################################################
-	################# Church aspect item (for selection) For Protestants - Malankara religion
+	################# Church aspect item (for selection) For Protestants
 	windowType = {
-		name = "countryreligionview_aspectitem_malankara"
+		name = "countryreligionview_aspectitem_gaelic_ab"
+		backGround =""
+		position = { x=10 y=-20 }	
+		size = { x=50 y=46 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		Orientation = "UPPER_LEFT"
+		
+		iconType =
+		{
+			name ="aspect_icon"
+			spriteType = "GFX_hindu_deities_strip"
+			position = { x= 45 y = -14 }
+		}
+		
+		instantTextBoxType = {
+			name = "aspect_name"
+			position = { x= -42 y = 6 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "AspectName"	
+			maxWidth = 102
+			maxHeight = 24
+			Orientation = "UPPER_LEFT"
+			format = left
+		}
+		
+		instantTextBoxType = {
+			name = "aspect_effect"
+			position = { x = 98 y = -2 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "AspectEffect"	
+			maxWidth = 206
+			maxHeight = 24
+			Orientation = "UPPER_LEFT"
+			format = left
+		}
+		
+		guiButtonType = {
+			name = "pick_aspect"
+			position = { x=301 y = 1}
+			quadTextureSprite ="GFX_standard_button_71"
+			buttonText = "SELECT"
+			buttonFont = "vic_18"
+			Orientation = "LEFT"
+		}
+	}
+	
+	windowType = {
+		name = "countryreligionview_aspectitem_reformed_norse"
+		backGround =""
+		position = { x=10 y=-20 }	
+		size = { x=50 y=46 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		Orientation = "UPPER_LEFT"
+		
+		iconType =
+		{
+			name ="aspect_icon"
+			spriteType = "GFX_hindu_deities_strip"
+			position = { x= 45 y = -14 }
+		}
+		
+		instantTextBoxType = {
+			name = "aspect_name"
+			position = { x= -42 y = 6 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "AspectName"	
+			maxWidth = 102
+			maxHeight = 24
+			Orientation = "UPPER_LEFT"
+			format = left
+		}
+		
+		instantTextBoxType = {
+			name = "aspect_effect"
+			position = { x = 98 y = -2 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "AspectEffect"	
+			maxWidth = 206
+			maxHeight = 24
+			Orientation = "UPPER_LEFT"
+			format = left
+		}
+		
+		guiButtonType = {
+			name = "pick_aspect"
+			position = { x=301 y = 1}
+			quadTextureSprite ="GFX_standard_button_71"
+			buttonText = "SELECT"
+			buttonFont = "vic_18"
+			Orientation = "LEFT"
+		}
+	}
+	
+	windowType = {
+		name = "countryreligionview_aspectitem_reformed_baltic"
+		backGround =""
+		position = { x=10 y=-20 }	
+		size = { x=50 y=46 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		Orientation = "UPPER_LEFT"
+		
+		iconType =
+		{
+			name ="aspect_icon"
+			spriteType = "GFX_hindu_deities_strip"
+			position = { x= 45 y = -14 }
+		}
+		
+		instantTextBoxType = {
+			name = "aspect_name"
+			position = { x= -42 y = 6 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "AspectName"	
+			maxWidth = 102
+			maxHeight = 24
+			Orientation = "UPPER_LEFT"
+			format = left
+		}
+		
+		instantTextBoxType = {
+			name = "aspect_effect"
+			position = { x = 98 y = -2 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "AspectEffect"	
+			maxWidth = 206
+			maxHeight = 24
+			Orientation = "UPPER_LEFT"
+			format = left
+		}
+		
+		guiButtonType = {
+			name = "pick_aspect"
+			position = { x=301 y = 1}
+			quadTextureSprite ="GFX_standard_button_71"
+			buttonText = "SELECT"
+			buttonFont = "vic_18"
+			Orientation = "LEFT"
+		}
+	}
+	
+	windowType = {
+		name = "countryreligionview_aspectitem_reformed_suomi"
+		backGround =""
+		position = { x=10 y=-20 }	
+		size = { x=50 y=46 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		Orientation = "UPPER_LEFT"
+		
+		iconType =
+		{
+			name ="aspect_icon"
+			spriteType = "GFX_hindu_deities_strip"
+			position = { x= 45 y = -14 }
+		}
+		
+		instantTextBoxType = {
+			name = "aspect_name"
+			position = { x= -42 y = 6 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "AspectName"	
+			maxWidth = 102
+			maxHeight = 24
+			Orientation = "UPPER_LEFT"
+			format = left
+		}
+		
+		instantTextBoxType = {
+			name = "aspect_effect"
+			position = { x = 98 y = -2 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "AspectEffect"	
+			maxWidth = 206
+			maxHeight = 24
+			Orientation = "UPPER_LEFT"
+			format = left
+		}
+		
+		guiButtonType = {
+			name = "pick_aspect"
+			position = { x=301 y = 1}
+			quadTextureSprite ="GFX_standard_button_71"
+			buttonText = "SELECT"
+			buttonFont = "vic_18"
+			Orientation = "LEFT"
+		}
+	}
+	
+	
+	windowType = {
+		name = "countryreligionview_aspectitem_zunist"
 		backGround =""
 		position = { x=10 y=-20 }	
 		size = { x=50 y=46 }
@@ -2964,7 +3169,7 @@ guiTypes = {
 	################################################################################################
 	################# Church aspect item (for selection) For Protestants
 	windowType = {
-		name = "countryreligionview_aspectitem_gaelic_ab"
+		name = "countryreligionview_aspectitem_reformed_hellenic"
 		backGround =""
 		position = { x=10 y=-20 }	
 		size = { x=50 y=46 }
@@ -3018,6 +3223,59 @@ guiTypes = {
 	################# Church aspect item (for selection) For Protestants
 	windowType = {
 		name = "countryreligionview_aspectitem_reformed_slavic"
+		backGround =""
+		position = { x=10 y=-20 }	
+		size = { x=50 y=46 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		Orientation = "UPPER_LEFT"
+		
+		iconType =
+		{
+			name ="aspect_icon"
+			spriteType = "GFX_hindu_deities_strip"
+			position = { x= 45 y = -14 }
+		}
+		
+		instantTextBoxType = {
+			name = "aspect_name"
+			position = { x= -42 y = 6 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "AspectName"	
+			maxWidth = 102
+			maxHeight = 24
+			Orientation = "UPPER_LEFT"
+			format = left
+		}
+		
+		instantTextBoxType = {
+			name = "aspect_effect"
+			position = { x = 98 y = -2 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "AspectEffect"	
+			maxWidth = 206
+			maxHeight = 24
+			Orientation = "UPPER_LEFT"
+			format = left
+		}
+		
+		guiButtonType = {
+			name = "pick_aspect"
+			position = { x=301 y = 1}
+			quadTextureSprite ="GFX_standard_button_71"
+			buttonText = "SELECT"
+			buttonFont = "vic_18"
+			Orientation = "LEFT"
+		}
+	}
+	
+	################################################################################################
+	################# Church aspect item (for selection) For Protestants - Malankara religion
+	windowType = {
+		name = "countryreligionview_aspectitem_malankara"
 		backGround =""
 		position = { x=10 y=-20 }	
 		size = { x=50 y=46 }
