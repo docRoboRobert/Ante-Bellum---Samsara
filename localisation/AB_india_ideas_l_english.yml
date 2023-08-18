@@ -793,3 +793,37 @@
  IDU_new_city_location:0 "Intensive City Location"
  IDU_new_city_location_desc:0 "With population steadily growing, we are in a frenzy of expansion and new city location to accomodate for the growing numbers of citizens. The land rights need to be reformed and prosperity shall be exploited to benefit current administration."
  
+ #Gujarat
+ GUJ_new_ideas:0 "Gujarat Ideas"
+ GUJ_new_ideas_start:0 "Gujarati Traditions"
+ GUJ_new_ideas_bonus:0 "Gujarati Ambition"
+ #
+ #
+ jain_routes_new:0 "Jain Connections"
+ jain_routes_new_desc:0 "Jainism is an ancient way of life, put into its current form by Mahavira (599 BCE – 527 BCE). For a thousand years, Gujarat has been the stronghold of the Jain community and faith, with many holy sites and temples. Royal dynasties have patronized the religion, forming a common community with Hindus. Jain majority and ruling Hindu elite co-existed for centuries. Mongol and Ilkhanate invasions from the northwest, in 13th and 14th century, oppressed the Jaina community, vandalizing temples or converting them into dens of decadence, as well as having burned Jaina libraries. However, the Jains of Gujarat have survived, adapted and prospered, using their connections with Jain communities across the world to serve as a hub for both the faith and commerce."
+ #
+ #
+ western_factors_new:0 "Foreign Merchants set up Factories"
+ western_factors_new_desc:0 "Following Arabs and Persians in the early exploration era, western powers are establishing factories in Gujarati land ever since 16th century. Many foreigners from the west are coming to our lands to purchase our goods wholesale in ever greater quantities... this can only have a good outcome! Right?"
+ #
+ #
+ 
+ #Ranthambore
+ RTB_merc_ideas:0 "Mercenary Host Ideas"
+ RTB_merc_ideas_start:0 "Merc Host Ideas"
+ RTB_merc_ideas_bonus:0 "Merc Host Ambition"
+ RTB_peace_with_religion:0 "Guaranteed Religious Indifference"
+ RTB_peace_with_religion_desc:0 ""
+ RTB_efficient_looting:0 "Efficient Looting Tactics"
+ RTB_efficient_looting_desc:0 ""
+ RTB_merc_reforms_basic:0 "Basic General Mercenery Training"
+ RTB_merc_reforms_basic_desc:0 ""
+ RTB_bombardment_tactics:0 "Relentless Artillery Doctrine"
+ RTB_bombardment_tactics_desc:0 ""
+ RTB_continue_arkenrash_reforms:0 "Continue Arkenrash' Reforms"
+ RTB_continue_arkenrash_reforms_desc:0 ""
+ RTB_merc_reforms_advanced:0 "Advanced General Mercenary Training"
+ RTB_merc_reforms_advanced_desc:0 ""
+ RTB_recruit_conquered_elites:0 "Meritocratic Acceptance"
+ RTB_recruit_conquered_elites_desc:0 ""
+ 

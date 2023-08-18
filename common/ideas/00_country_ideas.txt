@@ -13486,6 +13486,11 @@ GUJ_ideas = {
 	
 	trigger = {
 		tag = GUJ
+		OR = {
+			religion = sunni
+			religion = shiite
+			religion = ibadi
+		}
 	}
 	free = yes #will be added at load.
 	

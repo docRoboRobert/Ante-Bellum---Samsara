@@ -1889,3 +1889,91 @@ IDU_ideas = {
 		build_cost = -0.1
 	}
 }
+
+#Gujarat Ideas
+GUJ_new_ideas = {
+	start = {
+		global_trade_goods_size_modifier = 0.1
+		infantry_shock = 1
+	}
+	
+	bonus = {
+		global_trade_power = 0.2
+	}
+	
+	trigger = {
+		tag = GUJ
+	}
+	free = yes #will be added at load.
+	
+	garba = {
+		religious_unity = 0.5
+	}
+	jain_routes_new = {
+		trade_range_modifier = 0.20
+		technology_cost = -0.025
+	}
+	gujarati_lipi = {
+		stability_cost_modifier = -0.1
+		institution_spread_from_true_faith = 0.1
+	}
+	merchant_diaspora = {
+		light_ship_number_of_cannons_modifier = 0.1
+		light_ship_cost = -0.15
+	}
+	spice_trade = {
+		global_prov_trade_power_modifier = 0.20
+	}
+	western_factors_new = {
+		production_efficiency = 0.05
+	}
+	guj_africa = {
+		merchants = 1
+	}
+}
+
+#Mercenary Host Ideas
+RTB_merc_ideas = {
+	start = {
+		merc_maintenance_modifier = -0.15
+		siege_ability = 0.10
+	}
+	
+	bonus = {
+		placed_merchant_power_modifier = 0.25
+	}
+	
+	trigger = {
+		OR = {
+			tag = RTB
+			#has gov merc host reform
+		}
+	}
+	free = yes #will be added at load.
+	
+	RTB_peace_with_religion = {
+		may_not_convert_territories = yes
+		religious_unity = 0.75
+	}
+	RTB_efficient_looting = {
+		loot_amount = 0.25
+	}
+	RTB_merc_reforms_basic = {
+		leader_cost = -0.10
+		allow_mercenary_drill = yes
+	}
+	RTB_bombardment_tactics = {
+		artillery_level_modifier = 0.5
+	}
+	RTB_continue_arkenrash_reforms = {
+		mercenary_cost = -0.1
+	}
+	RTB_merc_reforms_advanced = {
+		mercenary_discipline = 0.075
+		leader_land_fire = 1
+	}
+	RTB_recruit_conquered_elites = {
+		advisor_pool = 1
+		advisor_cost = -0.1
+	}
+}
