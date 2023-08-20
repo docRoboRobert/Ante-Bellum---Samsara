@@ -53,6 +53,13 @@
  abi_sar_kushan_formation_title:0 "@KSU Rise of Sar-Kushan"
  abi_sar_kushan_formation_desc:0 "We had to face the fact that our nation is not of any Greek origin. Despite our questionable ancestry, Arachosia shall give birth to the new empire. Built on the ancient legends, we shall reclaim the glory of old Kushan Empire. A nation that once was a bridge between Hindu and Hellenic civilisation, fits perfectly within our ambition of reforging Indian identity with Bactrian legacy. \nThe Saraikian-Sarachosian Kushan must be established. The Sar-Kush shall rise!"
  abi_sar_kushan_formation.tooltip:0 "§YMany provinces' names and capitals in Bactria and Indus regions will be restored to their old names.§!"
+ abi_hindohosia_formation_title:0 "@HSH Rise of Hindohosia"
+ abi_hindohosia_formation_desc:0 "Arachosia shall turn its face into India and unify its many regions. To proclaim the rise of new Empire that will carry on the legacy of great conquerors, we must first unify and secure the Northwestern Plains. From there, reforged state of Hindohosia shall expand onto all of Hind!"
+ hindohosia_formation_trigger_tooltip:0 "§YCountry or its non-tributary subjects owns all of the highlighted provinces.§!"
+ hindohosia_formation_tooltip1:0 "§GGain core on every province within§! §MHindustan Region§! \n§YGain permanent claims on every province within§! §MWestern India Region§!"
+ abi_hellinarya_formation_title:0 "@HNE Unite Indo-Iranian People"
+ abi_hellinarya_formation_desc:0 "Something that could come out of the mind of truly deranged. The great 3 groups of people that throughout millenia spring up great, no, legendary conquerors and empires shall now come together under one flag. \nBlue banner of Hellas, \nWhite banner of Persians, \nPink banner of Hindu, \nAll united within trans-continental empire of Hellenic-Irano-Arya. An entity that could only be justified by the mentally unwell individuals."
+ hellinarya_formation_tooltip1:0 "§RI'm tired boss... please...§! \n \n§GGain core on every province within §! §MHindustan, Khorasan, Persia, Anatolia and Mashriq Regions§! \n§YGain permanent claims on every province within§! §MWestern India, Bengal and Egypt Regions§!"
  
  #Malankara decisions
  

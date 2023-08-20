@@ -810,7 +810,7 @@
  
  #Ranthambore
  RTB_merc_ideas:0 "Mercenary Host Ideas"
- RTB_merc_ideas_start:0 "Merc Host Ideas"
+ RTB_merc_ideas_start:0 "Merc Host Traditions"
  RTB_merc_ideas_bonus:0 "Merc Host Ambition"
  RTB_peace_with_religion:0 "Guaranteed Religious Indifference"
  RTB_peace_with_religion_desc:0 "Our nation is union of warriors, a conglomerate of all sorts of migrants, glory-seekers, adventurers and leaders. On the battlefield we are all brothers. Why should we cause division among our men over petty matters, common only to fanatics and low-living, low-seeking peasants. A host of fighters can only survive if we leave religious issues to our conquered locals."
@@ -826,4 +826,23 @@
  RTB_merc_reforms_advanced_desc:0 "General Mercenary Training Vol. 2"
  RTB_recruit_conquered_elites:0 "Meritocratic Acceptance"
  RTB_recruit_conquered_elites_desc:0 "To seek allies and great minds among the talented individuals of people you've conquered, is a path of self-perpetuated victory. \nGlory to those who can prove themselves worthy, the state will gladly invite them to its high ranks."
+ 
+ #Hindohosia
+ HSH_ideas:0 "Hindohosia Ideas"
+ HSH_ideas_start:0 "Hindohosian Traditions"
+ HSH_ideas_bonus:0 "Hindohosian Ambition"
+ HSH_legacy_persian_administration:0 "Legacy of Persian Administration"
+ HSH_legacy_persian_administration_desc:0 "Many of technological advancements in administrative matters have been incorporated to the nation of Hindohosia. Their structure of government and management of resources will prove extremely useful on our journey, especially when administrating such vast realm."
+ HSH_justified_india_conquest:0 "Justified Indian Conquest"
+ HSH_justified_india_conquest_desc:0 "Hindohosia shall unify and rule all of India. It is declared and everyone must acknowledge it."
+ HSH_loyal_subjects:0 "Loyal Subjects"
+ HSH_loyal_subjects_desc:0 "India is ridden with local dynasties, minority groups, strong castes and local estates. All struggling for their own interests. We must ensure they remain loyal to the high crown by placating and assigning local hindu rules to govern in our name."
+ HSH_aryan_unifier:0 "Unite Aryan Cultures"
+ HSH_aryan_unifier_desc:0 "In ancient times, Indo-Europeans entered Indian Subcontinent and spread across it, creating many distinct cultural and liguistic groups. If we ever want to dream about ruling over unified India, we must bring its people back together and create an uniform system of communication and administration. Our men will take the best effort to spread our unified identity over the land."
+ HSH_rajput_influence:0 "Rajput Influence"
+ HSH_rajput_influence_desc:0 "Rajputs are powerful clans of warriors from Central-West India. Their regiments are well known for their discipline and fearsome tactics. We must welcome them in our military, thus empowering it and its effectiveness."
+ HSH_doab_development:0 "Homeland Construction Efforts"
+ HSH_doab_development_desc:0 "Doabs of great rivers - Indus and Ganges - provide perfect land for settlement development. Our people within our culutral homeland have learned this throughout ages and their experiences made them masters of efficient land use."
+ HSH_hellenic_arts_influence:0 "Hellenic Arts Influence"
+ HSH_hellenic_arts_influence_desc:0 "Through old texts and Persian trade routes, we have learned properly the advancements of the ancient people of Mediterranean and the Middle East. Our artisans have successfully incorporated their discoveries and techniques into our own culture, allowing us to build splendorous works on our own. Old epics of the past inspire our men and Hindohosian literature spreads our fame."
  

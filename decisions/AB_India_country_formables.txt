@@ -1443,4 +1443,610 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
+	
+	abi_hindohosia_formation = {
+		major = yes
+		potential = {
+			primary_culture = saraihizan
+			tag = ARH
+			NOT = { has_country_flag = formed_hindohosia_flag }
+			NOT = { exists = HSH }
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = sind_sagar_area
+				area = lahore_area
+				area = sirhind_area
+				area = jaipur_area
+				area = upper_doab_area
+				area = kashmir_area
+				area = katehar_area
+				area = oudh_area
+				area = lower_doab_area
+				area = jangladesh_area
+				area = marwar_area
+				area = mewar_area
+				area = patan_area
+				area = sindh_area
+				area = northern_sindh_area
+				area = ahmedabad_area
+				area = saurashtra_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = hindohosia_formation_trigger_tooltip
+				
+				saurashtra_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				ahmedabad_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				sindh_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				patan_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				mewar_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				marwar_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				jangladesh_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				lower_doab_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				oudh_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				katehar_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				kashmir_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				upper_doab_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				jaipur_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				sirhind_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				lahore_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				sind_sagar_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			upper_doab_area = {
+				type = all
+				owned_by = ROOT
+			}
+			lower_doab_area = {
+				type = all
+				owned_by = ROOT
+			}
+			lahore_area = {
+				type = all
+				owned_by = ROOT
+			}
+			sirhind_area = {
+				type = all
+				owned_by = ROOT
+			}
+			northern_sindh_area = {
+				type = all
+				owned_by = ROOT
+			}
+			jaipur_area = {
+				type = all
+				owned_by = ROOT
+			}
+			5247 = {
+				is_core = ROOT
+				owned_by = ROOT
+				religion = ROOT
+				culture = ROOT
+				development = 25
+			}
+			507 = {
+				is_core = ROOT
+				owned_by = ROOT
+				religion = ROOT
+				culture = ROOT
+				development = 30
+			}
+			510 = {
+				is_core = ROOT
+				owned_by = ROOT
+				religion = ROOT
+				culture = ROOT
+				development = 30
+			}
+			522 = {
+				is_core = ROOT
+				owned_by = ROOT
+				religion = ROOT
+				culture = ROOT
+				development = 30
+			}
+			524 = {
+				is_core = ROOT
+				owned_by = ROOT
+				religion = ROOT
+				culture = ROOT
+				development = 25
+			}
+			504 = {
+				is_core = ROOT
+				owned_by = ROOT
+				religion = ROOT
+				culture = ROOT
+				development = 25
+			}
+			primary_culture = saraihizan
+			OR = {
+				religion = zoroastrian
+				religion = mahayana
+				religion = vajrayana
+				religion = manichaean
+			}
+			NOT = { exists = KSU }
+			prestige = 40
+			legitimacy_equivalent = 90
+		}
+		effect = {
+			change_tag = HSH
+			restore_country_name = yes
+			578 = {
+				change_province_name = "Purusapura"
+				rename_capital = "Purusapura"
+			}
+			set_government_rank = 3
+			add_prestige = 20
+			add_splendor = 200
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			custom_tooltip = hindohosia_formation_tooltip1
+			hidden_effect = {
+				hindusthan_region = {
+					add_core = ROOT
+				}
+				west_india_region = {
+					add_permanent_claim = ROOT
+				}
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_hindohosia_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			custom_tooltip = abi_sar_kushan_formation.tooltip
+			hidden_effect = {
+				524 = {
+					change_province_name = "Mathura"
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+				}
+				522 = {
+					change_province_name = "Dehlios"
+					rename_capital = "Indraprastha"
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+				2077 = {
+					change_province_name = "Taxila"
+					rename_capital = "Taksasila"
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+				}
+				450 = {
+					change_province_name = "Bactra"
+					rename_capital = "Bactra"
+				}
+				2226 = {
+					change_province_name = "Nagarhara"
+					rename_capital = "Nagarhara"
+				}
+				452 = { change_province_name = "Badaxs" }
+				2227 = {
+					change_province_name = "Drapsaka"
+					rename_capital = "Aornos"
+				}
+				4343 = { rename_capital = "Alexandria on the Oxus" }	
+				1968 = {
+					change_province_name = "Khatlan"
+					rename_capital = "Khatlan"
+				}
+				4344 = {
+					change_province_name = "Kesh"
+					rename_capital = "Nautaca"
+				}
+				2078 = {
+					change_province_name = "Sattagydia"
+					rename_capital = "Sattagydia"
+				}
+				4511 = {
+					change_province_name = "Hydaspes"
+					rename_capital = "Jobnathnagar"
+				}
+				5252 = {
+					change_province_name = "Hydaspes Bucefala"
+					rename_capital = "Bucephala"
+				}
+				2076 = {
+					change_province_name = "Sagala"
+					rename_capital = "Sagala"
+				}
+				2086 = {
+					change_province_name = "Alexandria Indus"
+					rename_capital = "Alexandria on the Indus"
+				}
+				2079 = {
+					change_province_name = "Sarachosia Magnos"
+					rename_capital = "Saraikhiz"
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+				}
+				2062 = {
+					change_province_name = "Delhi-Topra"
+					rename_capital = "Panip"
+				}
+				2060 = {
+					change_province_name = "Delhi-Meerut"
+					rename_capital = "Meerru"
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	abi_hellinarya_formation = {
+		major = yes
+		potential = {
+			primary_culture = saraihizan
+			tag = ARH
+			NOT = { has_country_flag = formed_hellinarya_flag }
+			NOT = { exists = HSH }
+			NOT = { exists = HNE }
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = khorasan_region
+				region = persia_region
+				region = mashriq_region
+				region = anatolia_region
+				area = multan_area
+				area = sind_sagar_area
+				area = lahore_area
+				area = sirhind_area
+				area = upper_doab_area
+				area = kashmir_area
+				area = katehar_area
+				area = lower_doab_area
+				area = marwar_area
+				area = patan_area
+				area = sindh_area
+				area = northern_sindh_area
+				area = ahmedabad_area
+				area = saurashtra_area
+				province_id = 358
+				province_id = 363
+				province_id = 151
+				province_id = 421
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = hindohosia_formation_trigger_tooltip
+				
+				persia_region = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				khorasan_region = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				mashriq_region = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				anatolia_region = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				
+				multan_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				saurashtra_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				ahmedabad_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				sindh_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				patan_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				marwar_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				lower_doab_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				katehar_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				kashmir_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				upper_doab_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				sirhind_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				lahore_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				sind_sagar_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			persia_region = {
+				type = all
+				owned_by = ROOT
+			}
+			khorasan_region = {
+				type = all
+				owned_by = ROOT
+			}
+			2218 = {
+				is_core = ROOT
+				owned_by = ROOT
+				religion = ROOT
+				culture = ROOT
+				development = 30
+			}
+			410 = {
+				is_core = ROOT
+				owned_by = ROOT
+				religion = ROOT
+				culture = ROOT
+				development = 30
+			}
+			377 = {
+				is_core = ROOT
+				owned_by = ROOT
+				religion = ROOT
+				culture = ROOT
+				development = 30
+			}
+			5247 = {
+				is_core = ROOT
+				owned_by = ROOT
+				religion = ROOT
+				culture = ROOT
+				development = 30
+			}
+			522 = {
+				is_core = ROOT
+				owned_by = ROOT
+				religion = ROOT
+				culture = ROOT
+				development = 30
+			}
+			owns_core_province = 151
+			owns_core_province = 358
+			owns_core_province = 363
+			owns_core_province = 421
+			OR = {
+				religion = zoroastrian
+				religion = mahayana
+				religion = manichaean
+				religion = hellenic
+				religion = reformed_hellenic
+			}
+			NOT = { exists = HNE }
+			prestige = 90
+			legitimacy_equivalent = 95
+		}
+		effect = {
+			change_tag = HNE
+			restore_country_name = yes
+			2218 = {
+				change_province_name = "Persepolis"
+				rename_capital = "Persepolis"
+			}
+			set_government_rank = 3
+			add_prestige = 20
+			add_splendor = 500
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			custom_tooltip = hellinarya_formation_tooltip1
+			hidden_effect = {
+				hindusthan_region = {
+					add_core = ROOT
+				}
+				khorasan_region = {
+					add_core = ROOT
+				}
+				persia_region = {
+					add_core = ROOT
+				}
+				anatolia_region = {
+					add_core = ROOT
+				}
+				mashriq_region = {
+					add_core = ROOT
+				}
+				west_india_region = {
+					add_permanent_claim = ROOT
+				}
+				bengal_region = {
+					add_permanent_claim = ROOT
+				}
+				egypt_region = {
+					add_permanent_claim = ROOT
+				}
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_hellinarya_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			custom_tooltip = abi_sar_kushan_formation.tooltip
+			hidden_effect = {
+				524 = {
+					change_province_name = "Mathura"
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+				}
+				522 = {
+					change_province_name = "Dehlios"
+					rename_capital = "Indraprastha"
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+				2077 = {
+					change_province_name = "Taxila"
+					rename_capital = "Taksasila"
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+				}
+				450 = {
+					change_province_name = "Bactra"
+					rename_capital = "Bactra"
+				}
+				2226 = {
+					change_province_name = "Nagarhara"
+					rename_capital = "Nagarhara"
+				}
+				452 = { change_province_name = "Badaxs" }
+				2227 = {
+					change_province_name = "Drapsaka"
+					rename_capital = "Aornos"
+				}
+				4343 = { rename_capital = "Alexandria on the Oxus" }	
+				1968 = {
+					change_province_name = "Khatlan"
+					rename_capital = "Khatlan"
+				}
+				4344 = {
+					change_province_name = "Kesh"
+					rename_capital = "Nautaca"
+				}
+				2078 = {
+					change_province_name = "Sattagydia"
+					rename_capital = "Sattagydia"
+				}
+				4511 = {
+					change_province_name = "Hydaspes"
+					rename_capital = "Jobnathnagar"
+				}
+				5252 = {
+					change_province_name = "Hydaspes Bucefala"
+					rename_capital = "Bucephala"
+				}
+				2076 = {
+					change_province_name = "Sagala"
+					rename_capital = "Sagala"
+				}
+				2086 = {
+					change_province_name = "Alexandria Indus"
+					rename_capital = "Alexandria on the Indus"
+				}
+				2079 = {
+					change_province_name = "Sarachosia Magnos"
+					rename_capital = "Saraikhiz"
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+				}
+				2062 = {
+					change_province_name = "Delhi-Topra"
+					rename_capital = "Panip"
+				}
+				2060 = {
+					change_province_name = "Delhi-Meerut"
+					rename_capital = "Meerru"
+				}
+				151 = { change_province_name = "Byzantium" }
+				409 = { change_province_name = "Kar Babel" }
+				358 = {
+					change_province_name = "Alexandia"
+					rename_capital = "Alexandria"
+				}
+				410 = {
+					change_province_name = "Babylon"
+					rename_capital = "Babylon"
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
 }

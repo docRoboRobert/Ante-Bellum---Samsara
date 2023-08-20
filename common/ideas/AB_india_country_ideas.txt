@@ -1977,3 +1977,47 @@ RTB_merc_ideas = {
 		advisor_cost = -0.1
 	}
 }
+
+#Hindohosia Ideas
+HSH_ideas = {
+	start = {
+		infantry_fire = 1
+		province_warscore_cost = -0.2
+	}
+	
+	bonus = {
+		cavalry_fire = 1
+	}
+	
+	trigger = {
+		tag = HSH
+	}
+	free = yes
+
+	HSH_legacy_persian_administration = {
+		country_admin_power = 1
+		reform_progress_growth = 0.05
+	}
+	HSH_justified_india_conquest = {
+		ae_impact = -0.1
+	}
+	HSH_loyal_subjects = {
+		stability_cost_modifier = -0.1
+	}
+	HSH_aryan_unifier = {
+		culture_conversion_time = -0.15
+		culture_conversion_cost = -0.15
+	}
+	HSH_rajput_influence = {
+		cavalry_power = 0.15
+		allowed_rajput_fraction = 0.1
+		can_recruit_rajputs = yes
+	}
+	HSH_doab_development = {
+		development_cost_in_primary_culture = -0.15
+	}
+	HSH_hellenic_arts_influence = {
+		prestige_decay = -0.01
+		advisor_cost = -0.1
+	}
+}
