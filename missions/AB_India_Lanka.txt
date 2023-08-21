@@ -843,11 +843,11 @@ ab_sri_lanka_third = {
 			south_lanka_area = { add_prosperity = 100 }
 			if = {
 				limit = {
-					5272 = {
+					5276 = {
 						NOT = { province_has_center_of_trade_of_level = 2 }
 					}
 				}
-				5272 = {
+				5276 = {
 					add_center_of_trade_level = 1
 				}
 			}
@@ -1056,7 +1056,7 @@ ab_sri_lanka_third = {
 				days = 1
 			}
 			572 = { add_center_of_trade_level = 1 }
-			5180 = { add_permanent_claim = ROOT }
+			5284 = { add_permanent_claim = ROOT }
 			4415 = { add_permanent_claim = ROOT }
 			5283 = { add_permanent_claim = ROOT }
 		}
@@ -1068,12 +1068,12 @@ ab_sri_lanka_third = {
 		required_missions = { LNK_anuradhapura_revived }
 		
 		provinces_to_highlight = {
-			province_id = 5180
+			province_id = 5284
 		}
 
 		trigger = {
-			owns_core_province = 5180
-			5180 = {
+			owns_core_province = 5284
+			5284 = {
 				has_great_project = {
 					type = ram_setu
 					tier = 2

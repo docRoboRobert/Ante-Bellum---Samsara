@@ -2049,4 +2049,92 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
+	
+	abi_rajasthan_formation = {
+		major = yes
+		potential = {
+			OR = {
+				primary_culture = rajput
+				tag = MAW
+				tag = GUH
+				tag = NGA
+				tag = JAN
+				tag = MER
+				tag = DHU
+				tag = HAD
+			}
+			NOT = { has_country_flag = formed_rajasthan_flag }
+			NOT = { exists = RJP }
+			NOT = { exists = RAJ }
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = jaipur_area
+				area = jangladesh_area
+				area = marwar_area
+				province_id = 4464
+				province_id = 5253
+				province_id = 2087
+				province_id = 4501
+				province_id = 2058
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			primary_culture = rajput
+			NOT = { exists = RJP }
+			prestige = 0
+			jaipur_area = {
+				type = all
+				owned_by = ROOT
+			}
+			jangladesh_area = {
+				type = all
+				owned_by = ROOT
+			}
+			marwar_area = {
+				type = all
+				owned_by = ROOT
+			}
+			owns_core_province = 4464
+			owns_core_province = 5253
+			owns_core_province = 2087
+			owns_core_province = 4501
+			owns_core_province = 2058
+			OR = {
+				religion = jainism
+				religion = hinduism
+			}
+		}
+		effect = {
+			change_tag = RAJ
+			restore_country_name = yes
+			add_prestige = 20
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_rajasthan_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			mewar_area = { add_permanent_claim = ROOT }
+			gird_area = { add_permanent_claim = ROOT }
+			patan_area = { add_permanent_claim = ROOT }
+			custom_tooltip = rajasthan_formation_tooltip
+			hidden_effect = {
+				every_province = {
+					limit = { culture = rajput }
+					add_core = ROOT
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
 }

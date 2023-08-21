@@ -846,3 +846,22 @@
  HSH_hellenic_arts_influence:0 "Hellenic Arts Influence"
  HSH_hellenic_arts_influence_desc:0 "Through old texts and Persian trade routes, we have learned properly the advancements of the ancient people of Mediterranean and the Middle East. Our artisans have successfully incorporated their discoveries and techniques into our own culture, allowing us to build splendorous works on our own. Old epics of the past inspire our men and Hindohosian literature spreads our fame."
  
+ #Hellinarya
+ HNE_ideas:0 "Hellinaryan Ideas"
+ HNE_ideas_start:0 "Hellinaryan Traditions"
+ HNE_ideas_bonus:0 "Hellinaryan Ambition"
+ HNE_blue_banner_hellas:0 "Blue Banner of Hellas"
+ HNE_blue_banner_hellas_desc:0 "Blue colours of our nation represent the Greek influence. Hellens spread their ideas across the nation."
+ HNE_white_banner_persia:0 "White Banner of Persis"
+ HNE_white_banner_persia_desc:0 "White colours of our nation represent the Iranian influence. Persans spread their ideas across the nation."
+ HNE_pink_banner_hindu:0 "Pink Banner of Hind"
+ HNE_pink_banner_hindu_desc:0 "Pink colours of our nation represent the Indic influence. Indo-Aryans from Hind spread their ideas across the nation."
+ HNE_lessons_of_tolerance:0 "Lessons in Tolerance"
+ HNE_lessons_of_tolerance_desc:0 "Such massively-spanning nation encorporating dozens of cultures and values must make peace with its population. The variety of our citizens shall be acknowledged and empowered, so that they cease to hate each other and work together for the greater benefit of our country."
+ HNE_women_role:0 "Role of Women in the Empire"
+ HNE_women_role_desc:0 "Look, I couldn't bother to write an elaborate description here. Just assume what the title says, it should be rather clear."
+ HNE_mixed_army:0 "Multinational Army"
+ HNE_mixed_army_desc:0 "Many culture don't like eachself. They fight and divide. \nWhat if not? \nThe accepted for, the uhh work along? \nThey culture instead come together but those that we give accept. Ideal. \nThey now in the army. Satisfactory, quite.. Big army with varied men and they unified. \nThat good! ...hah unless?"
+ HNE_tricolor_pride:0 "Tricolor Pride"
+ HNE_tricolor_pride_desc:0 "Our TRANS-Continental empire spanns from one end of the world to the other. Cradles of human civilization and its greatest ancient sites are withon our borders. Is it not truly great?"
+ 

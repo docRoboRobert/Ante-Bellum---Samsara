@@ -7,7 +7,58 @@ clr_malankara_aspects_buffs = {
 		limit = { NOT = { has_church_aspect = centralized_thoma_authority_aspect } }
 		remove_country_modifier = centralized_thoma_authority_aspect_modifier
 	}
-	# . . . . .
+	if = {
+		limit = { NOT = { has_church_aspect = tamil_cooperation_aspect } }
+		remove_country_modifier = tamil_cooperation_aspect_modifier
+	}
+	if = {
+		limit = { NOT = { has_church_aspect = continue_missions_aspect } }
+		remove_country_modifier = continue_missions_aspect_modifier
+	}
+	if = {
+		limit = { NOT = { has_church_aspect = organize_missionaries_aspect } }
+		remove_country_modifier = organize_missionaries_aspect_modifier
+	}
+	if = {
+		limit = { NOT = { has_church_aspect = footsteps_of_thomas_aspect } }
+		remove_country_modifier = footsteps_of_thomas_aspect_modifier
+	}
+	if = {
+		limit = { NOT = { has_church_aspect = order_protectors_of_christ_aspect } }
+		remove_country_modifier = order_protectors_of_christ_aspect_modifier
+	}
+	if = {
+		limit = { NOT = { has_church_aspect = translate_scripture_aspect } }
+		remove_country_modifier = translate_scripture_aspect_modifier
+	}
+	if = {
+		limit = { NOT = { has_church_aspect = church_education_aspect } }
+		remove_country_modifier = church_education_aspect_modifier
+	}
+	if = {
+		limit = { NOT = { has_church_aspect = study_world_aspect } }
+		remove_country_modifier = study_world_aspect_modifier
+	}
+	if = {
+		limit = { NOT = { has_church_aspect = defensive_monasteries_aspect } }
+		remove_country_modifier = defensive_monasteries_aspect_modifier
+	}
+	if = {
+		limit = { NOT = { has_church_aspect = ties_with_old_world_aspect } }
+		remove_country_modifier = ties_with_old_world_aspect_modifier
+	}
+	if = {
+		limit = { NOT = { has_church_aspect = prime_production_rights_aspect } }
+		remove_country_modifier = prime_production_rights_aspect_modifier
+	}
+	if = {
+		limit = { NOT = { has_church_aspect = vassal_charity_aspect } }
+		remove_country_modifier = vassal_charity_aspect_modifier
+	}
+	if = {
+		limit = { NOT = { has_church_aspect = fund_malankara_merc_aspect } }
+		remove_country_modifier = fund_malankara_merc_aspect_modifier
+	}
 }
 
 clear_jain_scholar_modifiers_effect = {

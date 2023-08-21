@@ -2021,3 +2021,44 @@ HSH_ideas = {
 		advisor_cost = -0.1
 	}
 }
+
+#Hellinaryan Ideas
+HNE_ideas = {
+	start = {
+		envoy_travel_time = -0.15
+		global_tax_modifier = 0.15
+	}
+	
+	bonus = {
+		administrative_efficiency = 0.05
+	}
+	
+	trigger = {
+		tag = HNE
+	}
+	free = yes
+
+	HNE_blue_banner_hellas = {
+		global_institution_spread = 0.1
+	}
+	HNE_white_banner_persia = {
+		land_attrition = -0.10
+	}
+	HNE_pink_banner_hindu = {
+		num_accepted_cultures = 1
+	}
+	HNE_lessons_of_tolerance = {
+		global_unrest = -1
+	}
+	HNE_women_role = {
+		female_advisor_chance = 0.2
+		may_recruit_female_generals = yes
+		stability_cost_modifier = -0.05
+	}
+	HNE_mixed_army = {
+		manpower_in_accepted_culture_provinces = 0.15
+	}
+	HNE_tricolor_pride = {
+		prestige_decay = -0.01
+	}
+}
