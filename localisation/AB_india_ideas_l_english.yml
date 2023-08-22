@@ -865,3 +865,41 @@
  HNE_tricolor_pride:0 "Tricolor Pride"
  HNE_tricolor_pride_desc:0 "Our TRANS-Continental empire spanns from one end of the world to the other. Cradles of human civilization and its greatest ancient sites are withon our borders. Is it not truly great?"
  
+ #Rajasthan
+ RAJ_ideas:0 "Rajasthan Ideas"
+ RAJ_ideas_start:0 "Rajasthani Traditions"
+ RAJ_ideas_bonus:0 "Rajasthani Ambition"
+ RAJ_imperial_legacy:0 "Imperial Legacy"
+ RAJ_imperial_legacy_desc:0 "We have revived the imperial Ambitions of the Rajputs and reclaimed Kannauj and Avanti, once again forming the empire that once ruled all of northern India. Now Rajput warriors from all over the region are flocking to our banners, ready to die for the common cause."
+ RAJ_land_of_petty_princes:0 "King of Petty Princes"
+ RAJ_land_of_petty_princes_desc:0 "For centuries the Rajput realms have been divided into a myriad of petty kingdoms, fighting each-other more than our common enemies. With the many princes of Rajputana now united under one banner, ready to serve one common ruler, we will be an unstoppable force."
+ #
+ #
+ RAJ_purbia_legacy:0 "Purbia Legacy"
+ RAJ_purbia_legacy_desc:0 "Rajput gunners have a reputation throughout India and have at times been incorporated in many of the armies of sultanates and kingdoms alike. Now that we have united the Rajput kingdoms the experience they have with firearms will allow us to build a new type of army centered around the use of muskets, rockets and cannons."
+ RAJ_protectors_of_the_dharma:0 "Protectors of the Dharma"
+ RAJ_protectors_of_the_dharma_desc:0 "Few resisted outside invasions of India as much as the Rajput kingdoms of old. We are now the new bulwark of our faith, ready to defend the subcontinent from those that would impose their rule and their faith upon our people."
+ RAJ_expanded_artillery_arm:0 "Expanded Artillery Arm"
+ RAJ_expanded_artillery_arm_desc:0 "Sieges are what wins wars. We must experiment with ways of creating bigger and better cannon to bring down the many forts of our enemies within India and outside it."
+ RAJ_monumental_architecture:0 "Monumental Architecture"
+ RAJ_monumental_architecture_desc:0 "A new empire requires a new style. We must build upon the classical monumental architecture of Rajputana and Imperial Kannauj to create a new style worthy of our growing empire."
+ 
+ #Neva Pala
+ NPA_ideas:0 "Neva Pala Ideas"
+ NPA_ideas_start:0 "Neva Pala Traditions"
+ NPA_ideas_bonus:0 "Neva Pala Ambition"
+ NPA_masters_of_diplomacy:0 "Masterful Diplomacy"
+ NPA_masters_of_diplomacy_desc:0 ""
+ NPA_struggle_for_freedom:0 "Noble Pala Cause"
+ NPA_struggle_for_freedom_desc:0 ""
+ NPA_guard_frontier:0 "Guardians of the Frontier"
+ NPA_guard_frontier_desc:0 ""
+ NPA_ganges_dev:0 "Ganges Fertile Plain"
+ NPA_ganges_dev_desc:0 ""
+ NPA_war_elephants:0 "Use of War Elephants"
+ NPA_war_elephants_desc:0 ""
+ NPA_ganges_trade_road:0 "Ganges Great Trade Route"
+ NPA_ganges_trade_road_desc:0 ""
+ NPA_buddhist_frontier:0 "Pushing Buddhist Frontier"
+ NPA_buddhist_frontier_desc:0 ""
+ 

@@ -171,7 +171,7 @@ BNG_ideas = {
 		}
 	}
 	
-        free = yes
+	free = yes
 	
 	BNG_buddha_teachings = {
 		tolerance_own = 3
@@ -2060,5 +2060,88 @@ HNE_ideas = {
 	}
 	HNE_tricolor_pride = {
 		prestige_decay = -0.01
+	}
+}
+
+#Rajasthan Ideas
+RAJ_ideas = {
+	start = {
+		core_creation = -0.1
+		land_morale = 0.1
+	}
+
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = RAJ
+	}
+	free = yes
+	
+	RAJ_imperial_legacy = {
+		same_culture_advisor_cost = -0.15
+	}
+	RAJ_land_of_petty_princes = {
+		manpower_in_own_culture_provinces = 0.2
+	}
+	marwari_horses = {
+		cavalry_power = 0.15
+		movement_speed = 0.1
+	}
+	RAJ_purbia_legacy = {
+		infantry_fire = 1
+	}
+	RAJ_protectors_of_the_dharma = {
+		global_heathen_missionary_strength = 0.015
+		tolerance_own = 1
+	}
+	RAJ_expanded_artillery_arm = {
+		artillery_cost = -0.1
+	}
+	RAJ_monumental_architecture = {
+		legitimacy = 1
+	}
+}
+
+#Neva Pala Ideas
+NPA_ideas = {
+	start = {
+		envoy_travel_time = -0.15
+		defensiveness = 0.15
+	}
+	
+	bonus = {
+		free_dip_policy = 1
+	}
+	
+	trigger = {
+		tag = NPA
+	}
+	free = yes
+
+	NPA_masters_of_diplomacy = {
+		diplomatic_reputation = 1
+	}
+	NPA_struggle_for_freedom = {
+		improve_relation_modifier = 0.15
+	}
+	NPA_guard_frontier = {
+		hostile_attrition = 1
+		morale_damage_received = -0.05
+	}
+	NPA_ganges_dev = {
+		development_cost = -0.075
+		global_trade_goods_size_modifier = 0.05
+	}
+	NPA_war_elephants = {
+		cavalry_shock = 1
+	}
+	NPA_ganges_trade_road = {
+		movement_speed = 0.10
+		trade_efficiency = 0.1
+	}
+	NPA_buddhist_frontier = {
+		global_heathen_missionary_strength = 0.02
 	}
 }
