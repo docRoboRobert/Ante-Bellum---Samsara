@@ -73,5 +73,183 @@ country_decisions = {
 		}
 		ai_importance = 150
 	}
+	
+	organize_malankara_missionaries = {
+		potential = {
+			capital_scope = { continent = asia }
+			
+			religion = malankara
+			has_church_aspect = continue_missions_aspect
+		}
+		
+		allow = {
+			custom_trigger_tooltip = { #Hasn't sent in the last 10 years
+				tooltip = india_malankara_mission_cooldown_tooltip
+				NOT = { has_country_modifier = malankara_missionaries_timer }
+			}
+			if = {
+				limit = { ai = no }
+				dip_power = 25
+				adm_power = 25
+			}
+			any_known_country = {
+				custom_trigger_tooltip = {
+					tooltip = malankara_mission_valid_religion_tooltip
+					OR = {
+						religion = hinduism
+						religion = jainism
+						religion = mahayana
+						religion = buddhism
+						religion = vajrayana
+					}
+				}
+				capital_scope = { superregion = india_superregion }
+				has_opinion = {
+					who = ROOT
+					value = 0
+				}
+				NOT = {
+					border_distance = {
+						who = ROOT
+						distance = 100
+					}
+					war_with = ROOT
+				}
+				custom_trigger_tooltip = {
+					tooltip = malankara_mission_enough_religion_tooltip
+					OR = {
+						num_of_religion = {
+							religion = hinduism
+							value = 1
+						}
+						num_of_religion = {
+							religion = jainism
+							value = 1
+						}
+						num_of_religion = {
+							religion = mahayana
+							value = 1
+						}
+						num_of_religion = {
+							religion = buddhism
+							value = 1
+						}
+						num_of_religion = {
+							religion = vajrayana
+							value = 1
+						}
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = malankara_mission_havent_received_recently_tooltip
+					NOT = { has_country_modifier = malankara_missionaries_timer_target }
+				}
+			}
+		}
 
+		effect = {
+			if = {
+				limit = { ai = no }
+				add_adm_power = -25
+				add_dip_power = -25
+				add_treasury = -50
+			}
+			custom_tooltip = malankara_mission_sent_them_tooltip
+			hidden_effect = {
+				add_country_modifier = {
+					name = malankara_missionaries_timer
+					duration = 3650
+					hidden = yes
+				}
+				random_country = {
+					limit = {
+						OR = {
+							religion = hinduism
+							religion = jainism
+							religion = mahayana
+							religion = buddhism
+							religion = vajrayana
+						}
+						capital_scope = { superregion = india_superregion }
+						NOT = {
+							border_distance = {
+								who = ROOT
+								distance = 200
+							}
+							war_with = ROOT
+						}
+						has_opinion = {
+							who = ROOT
+							value = 0
+						}
+						OR = {
+							num_of_religion = {
+								religion = hinduism
+								value = 1
+							}
+							num_of_religion = {
+								religion = jainism
+								value = 1
+							}
+							num_of_religion = {
+								religion = mahayana
+								value = 1
+							}
+							num_of_religion = {
+								religion = buddhism
+								value = 1
+							}
+							num_of_religion = {
+								religion = vajrayana
+								value = 1
+							}
+						}
+						NOT = { has_country_modifier = malankara_missionaries_timer_target }
+					}
+					add_country_modifier = {
+						name = malankara_missionaries_timer_target
+						duration = 1825
+						hidden = yes
+					}
+					#country_event = {
+					#	id = malankara_spread_event.1
+					#	days = 1
+					#}
+				}
+			}
+			custom_tooltip = malankara_mission_effects_desc_tooltip
+			#
+			# Decrease number of missionaries by 1
+			#
+		}
+
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { adm_power = 20 }
+					NOT = { dip_power = 20 }
+				}
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = zealot_personality
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					ruler_has_personality = expansionist_personality
+					ruler_has_personality = conqueror_personality
+				}
+			}
+			modifier = {
+				factor = 1.5
+				OR = {
+					ruler_has_personality = pious_personality
+					ruler_has_personality = entrepreneur_personality
+				}
+			}
+		}
+	}
 }

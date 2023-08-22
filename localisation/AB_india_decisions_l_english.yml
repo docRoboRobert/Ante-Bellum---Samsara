@@ -74,6 +74,14 @@
  organize_malankara_banquet_desc:0 "In the spirit of charity taught by St. Thomas, we shall organize a grand banquet for all our brothers in faith. A charitable event to display our generocity and faithfulness. Highest noblemen from all Malankara-following states ae invited."
  india_malankara_banquet_cooldown_tooltip:0 "Hadn't organized a Grand Malankara Banquet in the last §Y10 years§! and there is no ongoing banquet anywhere else."
  organize_malankara_banquet.tooltip:0 "§YWe will organize§! §GGrand Malankara Banquet§! §Yin our capital. All Malankara-following nations that§! §Oare not hostile or our enemy§! §Ywill be invited to partake in it.§!"
+ organize_malankara_missionaries_title:0 "£dip£ §lSend Malankara mission to other country§! £dip£"
+ organize_malankara_missionaries_desc:0 "Prepare and send organized Christian mission to one of the nearby heathen states in the Indian Subcontinent, in order to try to convert the local population (or even the rulers) to Malankara Christianity. If the missionaries succeed, Malankara faith will gain new devout followers and Christian church in India will be strengthen."
+ india_malankara_mission_cooldown_tooltip:0 "Hasn't organized any Malankara mission for the past §Y10§! years."
+ malankara_mission_valid_religion_tooltip:0 "Country follows either §MHindu, Jain, Mahayana, Theravada or Vajrayana§! religion."
+ malankara_mission_enough_religion_tooltip:0 "At least §Y1§! owned province within the country follows one of the valid religions."
+ malankara_mission_havent_received_recently_tooltip:0 "Country hasn't received Malankara missionaries from anyone for the past §Y5§! years."
+ malankara_mission_sent_them_tooltip:0 "§lRandom country within our reach that meets the requirements will become target for our organized missionary action. We will soon learn if the effort returns a success.§! \n"
+ malankara_mission_effects_desc_tooltip:0 "The matter of sending state-funded missionary group is significant enough, that during this whole operation, one of our active missionaries will be dispatched to lead it."
  
  #Jain school change
  

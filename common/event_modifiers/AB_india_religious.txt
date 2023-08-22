@@ -96,6 +96,14 @@ malankara_banquet_timer = {
 
 }
 
+malankara_missionaries_timer_target = {
+
+}
+
+malankara_missionaries_timer = {
+
+}
+
 # # # # #
 
 #Harmonized
