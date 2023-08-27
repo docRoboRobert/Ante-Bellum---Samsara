@@ -22,6 +22,7 @@ country_decisions = {
 			NOT = { owned_by = ROOT }
 		}
 		allow = {
+			is_subject = no
 			OR = {
 				primary_culture = sinhala
 				tag = CEY
@@ -2130,6 +2131,123 @@ country_decisions = {
 					limit = { culture = rajput }
 					add_core = ROOT
 				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	abi_pala_empire_formation = {
+		major = yes
+		potential = {
+			OR = {
+				tag = NPA
+				dynasty = "Pala"
+			}
+			NOT = { has_country_flag = formed_pala_empire_flag }
+			NOT = { exists = PAA }
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = bihar_area
+				area = mithila_area
+				area = gaur_area
+				area = north_bengal_area
+				area = east_bengal_area
+				area = west_bengal_area
+				province_id = 2096
+				province_id = 2038
+				province_id = 2043
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			OR = {
+				tag = NPA
+				dynasty = "Pala"
+			}
+			NOT = { exists = PAA }
+			OR = {
+				NOT = { exists = BNG }
+				prestige = BNG
+			}
+			culture_group = eastern_aryan
+			prestige = 0
+			custom_trigger_tooltip = {
+				tooltip = pala_empire_formation_trigger_tooltip
+				
+				bihar_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				mithila_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				gaur_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				north_bengal_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				east_bengal_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				west_bengal_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				owns_core_province = 2096
+				owns_core_province = 2038
+				owns_core_province = 2043
+			}
+			OR = {
+				religion = mahayana
+				religion = hinduism
+				religion = buddhism
+				religion = vajrayana
+			}
+		}
+		effect = {
+			change_tag = PAA
+			restore_country_name = yes
+			add_prestige = 20
+			set_capital = 563
+			set_government_rank = 3
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_pala_empire_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			custom_tooltip = pala_empire_formation_tooltip
+			hidden_effect = {
+				every_province = {
+					limit = { is_core = BNG }
+					add_core = ROOT
+				}
+				purvanchal_area = { add_permanent_claim = ROOT }
+				katehar_area = { add_permanent_claim = ROOT }
+				oudh_area = { add_permanent_claim = ROOT }
+				lower_doab_area = { add_permanent_claim = ROOT }
+				orissa_area = { add_permanent_claim = ROOT }
+				jharkhand_area = { add_permanent_claim = ROOT }
 			}
 		}
 		ai_will_do = {

@@ -63,6 +63,10 @@
  abi_rajasthan_formation_title:0 "@RAJ Unite Rajasthan Region"
  abi_rajasthan_formation_desc:0 "Unite shattered and conflicted lands of Rajasthan and bring back its people back together under one banner."
  rajasthan_formation_tooltip:0 "§GGain core on every province with§! §MRajasthani§! §Gculture§!"
+ abi_pala_empire_formation_title:0 "Reclaim Pala Empire"
+ abi_pala_empire_formation_desc:0 "Due to the years of bad management and internal struggle, once mighty Pala Dynasty that ruled over Ganges, has been reduced to a rump state, a buffer puppet of new Bengal dynsty. The other members of Pala dynasty have also scattered around. With a new hope on the horizon, lands of Bengal shall once again be unified under Pala rulers and once mighty empire shall be revived by its righful living ancestors."
+ pala_empire_formation_trigger_tooltip:0 "Country §Yowns as a core§! all of §Mhighlighted§! provinces."
+ pala_empire_formation_tooltip:0 "Whether @BNG Bengal still exists, we will gain §Gcore§! on every province that is also their §Ycore§!. \nGain §Ypermanent claims§! on §lKatehar, Oudh, Lower Doab, Purvanchal, Jharkhand and Orissa§! areas."
  
  #Malankara decisions
  
