@@ -2191,3 +2191,46 @@ PAA_ideas = {
 		shock_damage = 0.05
 	}
 }
+
+#Bhutanese Ideas
+BHU_ideas = {
+	start = {
+		defensiveness = 0.2
+		hostile_attrition = 2
+	}
+	
+	bonus = {
+		all_power_cost = -0.05
+	}
+	
+	trigger = {
+		tag = BHU
+	}
+	free = yes
+
+	BHU_monk_culture = {
+		monthly_karma_accelerator = 0.05
+		tolerance_own = 1
+	}
+	BHU_temple_building = {
+		build_cost = -0.1
+		global_tax_modifier = 0.15
+	}
+	BHU_leader_prestige = {
+		prestige = 1
+	}
+	BHU_fortress_high = {
+		garrison_damage = 0.5
+		morale_damage_received = -0.025
+	}
+	BHU_higher_ground = {
+		fire_damage_received = -0.075
+		shock_damage_received = -0.075
+	}
+	BHU_mountain_development = {
+		development_cost = -0.1
+	}
+	BHU_cloth_making = {
+		global_prov_trade_power_modifier = 0.1
+	}
+}

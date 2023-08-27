@@ -922,3 +922,22 @@
  PAA_war_elephants_bombard:0 "Elephant Landships"
  PAA_war_elephants_bombard_desc:0 "Times are changing and so is changing the battlefield. Our current war elephant technology may not be enough, thus we have reinforced it with the latest advancements in gunpowder warfare. War elephants, that were mainly used to breaking infantry lines, have been turned into mobile shooting towers and bombardment outposts. Those heavy beasts now carry a defended platform filled with gunners and ammunition to shoot at the enemy from the higher ground. Truly terrifying sight."
  
+ #Bhutan
+ BHU_ideas:0 "Bhutanese Ideas"
+ BHU_ideas_start:0 "Bhutanese Traditions"
+ BHU_ideas_bonus:0 "Bhutanese Ambition"
+ BHU_monk_culture:0 "Monastery Culture"
+ BHU_monk_culture_desc:0 ""
+ BHU_temple_building:0 "Land of Temples"
+ BHU_temple_building_desc:0 ""
+ BHU_leader_prestige:0 "Glory of Zangpo Dynasty"
+ BHU_leader_prestige_desc:0 ""
+ BHU_fortress_high:0 "Fortress Upon Himalayas"
+ BHU_fortress_high_desc:0 ""
+ BHU_higher_ground:0 "Higher Ground"
+ BHU_higher_ground_desc:0 ""
+ BHU_mountain_development:0 "Harsh Terrain Development"
+ BHU_mountain_development_desc:0 ""
+ BHU_cloth_making:0 "Bhutanese Colorful Textiles"
+ BHU_cloth_making_desc:0 ""
+ 
