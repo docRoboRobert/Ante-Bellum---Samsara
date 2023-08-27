@@ -77,7 +77,7 @@
  organize_malankara_missionaries_title:0 "£dip£ §lSend Malankara mission to other country§! £dip£"
  organize_malankara_missionaries_desc:0 "Prepare and send organized Christian mission to one of the nearby heathen states in the Indian Subcontinent, in order to try to convert the local population (or even the rulers) to Malankara Christianity. If the missionaries succeed, Malankara faith will gain new devout followers and Christian church in India will be strengthen."
  india_malankara_mission_cooldown_tooltip:0 "Hasn't organized any Malankara mission for the past §Y10§! years."
- malankara_mission_valid_religion_tooltip:0 "Country follows either §MHindu, Jain, Mahayana, Theravada or Vajrayana§! religion."
+ malankara_mission_valid_religion_tooltip:0 "Country follows either §MHindu, Jain, Mahayana, Theravada, Vajrayana or Sarnaism§! religion."
  malankara_mission_enough_religion_tooltip:0 "At least §Y1§! owned province within the country follows one of the valid religions."
  malankara_mission_havent_received_recently_tooltip:0 "Country hasn't received Malankara missionaries from anyone for the past §Y5§! years."
  malankara_mission_sent_them_tooltip:0 "§lRandom country within our reach that meets the requirements will become target for our organized missionary action. We will soon learn if the effort returns a success.§! \n"

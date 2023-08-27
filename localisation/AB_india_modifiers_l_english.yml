@@ -6,6 +6,7 @@
  defeated_DGL_pirates: "Ended Maldives Piracy"
  joined_malankara_banquet:0 "Joined Grand Banquet"
  rejected_malankara_banquet:0 "Rejected Banquet Invitation"
+ abi_accepted_malankara_missionaries:0 "Accepted Malankara Religion"
  
  
  #Malankara church aspects
@@ -203,3 +204,11 @@
  desc_refused_malankara_banquet_modifier:0 ""
  held_malankara_banquet_modifier:0 "Held Grand Malankara Banquet"
  desc_held_malankara_banquet_modifier:0 "Our nation has recently organized a great gathering of Malankara Christians. Glory to us!"
+ busy_malankara_missionaries_modifier:0 "Missionary on the Mission"
+ desc_busy_malankara_missionaries_modifier:0 "One of our missionaries have been dispatched to lead an elaborate conversion mission in a foreign territory, thus making him unavailable for the time being."
+ malankara_new_converts_from_missionaries:0 "New Malankara Converts"
+ desc_malankara_new_converts_from_missionaries:0 "People of this province have been recently converted to Malankara religion due to the work of foreign missionary actions. They will be distrustful to the central authority for some time and resist abandoning their new faith."
+ malankara_convert_fervor_modifier:0 "Conversion Fervor"
+ desc_malankara_convert_fervor_modifier:0 "Malankara religion has been recently made an official faith of our nation. We are in a frenzy to spread it across the countryside, whether locals like it or not."
+ malankara_religious_violence_modifier:0 "Religious Violence"
+ desc_malankara_religious_violence_modifier:0 "Going against the will of Malankara majority is tearing our nation."

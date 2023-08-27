@@ -101,6 +101,7 @@ country_decisions = {
 						religion = mahayana
 						religion = buddhism
 						religion = vajrayana
+						religion = sarnaism
 					}
 				}
 				capital_scope = { superregion = india_superregion }
@@ -111,7 +112,7 @@ country_decisions = {
 				NOT = {
 					border_distance = {
 						who = ROOT
-						distance = 100
+						distance = 150
 					}
 					war_with = ROOT
 				}
@@ -136,6 +137,10 @@ country_decisions = {
 						}
 						num_of_religion = {
 							religion = vajrayana
+							value = 1
+						}
+						num_of_religion = {
+							religion = sarnaism
 							value = 1
 						}
 					}
@@ -169,6 +174,7 @@ country_decisions = {
 							religion = mahayana
 							religion = buddhism
 							religion = vajrayana
+							religion = sarnaism
 						}
 						capital_scope = { superregion = india_superregion }
 						NOT = {
@@ -203,6 +209,10 @@ country_decisions = {
 								religion = vajrayana
 								value = 1
 							}
+							num_of_religion = {
+								religion = sarnaism
+								value = 1
+							}
 						}
 						NOT = { has_country_modifier = malankara_missionaries_timer_target }
 					}
@@ -211,16 +221,17 @@ country_decisions = {
 						duration = 1825
 						hidden = yes
 					}
-					#country_event = {
-					#	id = malankara_spread_event.1
-					#	days = 1
-					#}
+					country_event = {
+						id = malankara_mission_events.1
+						days = 1
+					}
 				}
 			}
 			custom_tooltip = malankara_mission_effects_desc_tooltip
-			#
-			# Decrease number of missionaries by 1
-			#
+			add_country_modifier = {
+				name = busy_malankara_missionaries_modifier
+				duration = 3650
+			}
 		}
 
 		ai_will_do = {

@@ -30,6 +30,20 @@
  malankara_aspect_events.3.t:0 "Grand Gathering in [malankara_banquet_origin.GetName] begins"
  malankara_aspect_events.3.d:0 "Grand Malankara Banquet organized in [malankara_banquet_origin.GetName] took place today. Followers of St. Thomas from all around gathered together to pray and celebrate this divine event. While not everyone was happy to come and the gathering had some hickups, the whole event turned out to be a great success and both a display of splendor and piety. The guests who took part in it are now leaving the capital happy, while we can make use of the in-put effort."
  malankara_aspect_events.3.a:0 "Glory to us!"
+ malankara_mission_events.1.t:0 "Missionaries arrive from [From.GetName]"
+ malankara_mission_events.1.d:0 "It appears that the ruler of [From.GetName] - [From.Monarch.GetName] - has decided to continue early Christian missions and sent a large amount St. Thomas' followers to our realm. The true goal of this action can only be guessed but it's clear they aren't here to conduct diplomacy with the court. They are here, to nobody's surprise, to ask for permission, so they may freely conduct their religous goal without the fear of being persecuted. They claim they do not mean any harm and are here only because of their god's will. They also claim that it is within our religion' teachings to tolerate them and if our population is truly faithful to our gods, they will simply ignore them. As much as it is concerning, they do appear to only be interested in establishing communities and spreading the message of their god. As such, it is now our only opportunity to decide whether we let them in or throw them out."
+ malankara_mission_events.1.a:0 "Followers of the Christ are welcome to stay"
+ malankara_mission_events.1.b:0 "Shrewd heathens will not sway our people"
+ malankara_mission_events.2.t:0 "Mission to [From.GetName] is a success"
+ malankara_mission_events.2.d:0 "Our missionaries have succeeded. They have been allowed to freely conduct their conversion mission within the [From.GetName]'s borders. We've gained trust and goodwill of their leaders, which allowed them to spread the word of God. In the outcome, so many people were baptised, that new bishopric had to be established, new churches erected and one of the provinces of that nation now follows the Malankara scripture. If he could see it, St. Thomas would be very proud of us!"
+ malankara_mission_events.2.a:0 "Glorious day for our church"
+ malankara_mission_events.3.t:0 "Mission to [From.GetName] is a failure"
+ malankara_mission_events.3.d:0 "Curse! Our missionaries sent to [From.GetName] were not allowed to enter and freely conduct their work. Leadership of the nation saw our efforts as dangerous and conspiratorial and thus the missionaries were thrown out of the country. They are now returning with empty hands and broken morale."
+ malankara_mission_events.3.a:0 "Shame, let's hope future attempts give better results"
+ malankara_mission_events.4.t:0 "Malankara pressure grows out of control"
+ malankara_mission_events.4.d:0 "Due to the work of Christian missionaries and their constant pursuit of new followers, Malankara religion has gradually grown to be the dominant faith practised within our nation. As Christian dominance grows substantially, many of our citizens and high-rank officials begin to question our old ways. They pressure our ruleship that it's high time to embrace the new God and add our realm to the organized world of Christendom. Malankara missionaries, which were sent here recently, claim that if the leader decided to convert to Christianity, they can take care of the details and ensure the change of beliefs is going to be peaceful and stable."
+ malankara_mission_events.4.a:0 "We accept Jesus as our saviour"
+ malankara_mission_events.4.b:0 "Nonsense! We will never abandon our gods"
  
  #Unique CN formation
  

@@ -26,3 +26,8 @@ rejected_malankara_banquet = {
 	opinion = -25
 	yearly_decay = 5
 }
+
+abi_accepted_malankara_missionaries = {
+	opinion = 50
+	yearly_decay = 2.5
+}

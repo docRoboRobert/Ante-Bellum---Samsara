@@ -73,3 +73,31 @@ held_malankara_banquet_modifier = {
 	advisor_cost = -0.05
 	church_loyalty_modifier = 0.075
 }
+
+busy_malankara_missionaries_modifier = {
+	missionaries = -1
+	global_tax_modifier = -0.05
+}
+
+malankara_new_converts_from_missionaries = {
+	local_missionary_strength = -0.1
+	local_missionary_maintenance_cost = 0.25
+	local_tax_modifier = -0.05
+	min_local_autonomy = 5
+}
+
+malankara_convert_fervor_modifier = {
+	global_missionary_strength = 0.02
+	missionary_maintenance_cost = -0.15
+	tolerance_own = 2
+	global_unrest = 1
+	stability_cost_modifier = 0.15
+	tolerance_of_heretics_capacity = -1
+	tolerance_of_heathens_capacity = -1
+}
+
+malankara_religious_violence_modifier = {
+	religious_unity = -0.1
+	stability_cost_modifier = 0.1
+	global_tax_modifier = -0.075
+}

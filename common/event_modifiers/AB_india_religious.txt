@@ -83,6 +83,7 @@ fund_malankara_merc_aspect_modifier = {
 	prestige_from_land = 0.2
 }
 
+
 #Timers for jain school change
 jain_school_change_timer = {
 
