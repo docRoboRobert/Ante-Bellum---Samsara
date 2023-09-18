@@ -2164,6 +2164,7 @@ country_decisions = {
 			NOT = { owned_by = ROOT }
 		}
 		allow = {
+			is_subject = no
 			OR = {
 				tag = NPA
 				dynasty = "Pala"
@@ -2248,6 +2249,135 @@ country_decisions = {
 				lower_doab_area = { add_permanent_claim = ROOT }
 				orissa_area = { add_permanent_claim = ROOT }
 				jharkhand_area = { add_permanent_claim = ROOT }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	abi_chalukyas_formation = {
+		major = yes
+		potential = {
+			OR = {
+				tag = ECL
+				tag = WCL
+				dynasty = "Chalukya"
+			}
+			NOT = { has_country_flag = formed_chalukyas_flag }
+			NOT = { exists = CLY }
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = telingana_area
+				area = golconda_area
+				area = maidan_area
+				area = ahmednagar_area
+				area = khandesh_area
+				area = desh_area
+				province_id = 2035
+				province_id = 4428
+				province_id = 543
+				province_id = 2083
+				province_id = 1949
+				province_id = 4421
+				province_id = 531
+				province_id = 5288
+				province_id = 546
+				province_id = 4458
+				province_id = 517
+				province_id = 5230
+				province_id = 2089
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			is_subject = no
+			OR = {
+				tag = ECL
+				tag = WCL
+				AND = {
+					dynasty = "Chalukya"
+					NOT = { exists = WCL }
+					NOT = { exists = ECL }
+				}
+			}
+			NOT = { exists = CLY }
+			legitimacy_equivalent = 90
+			prestige = 50
+			custom_trigger_tooltip = {
+				tooltip = chalukyas_formation_trigger_tooltip
+				
+				telingana_area_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				golconda_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				maidan_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				ahmednagar_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				khandesh_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				desh_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				owns_core_province = 2035
+				owns_core_province = 4428
+				owns_core_province = 543
+				owns_core_province = 2083
+				owns_core_province = 1949
+				owns_core_province = 4421
+				owns_core_province = 531
+				owns_core_province = 5288
+				owns_core_province = 546
+				owns_core_province = 4458
+				owns_core_province = 517
+				owns_core_province = 5230
+				owns_core_province = 2089
+			}
+			government_rank = 2
+		}
+		effect = {
+			change_tag = CLY
+			restore_country_name = yes
+			add_prestige = 20
+			set_capital = 2035
+			set_government_rank = 3
+			2035 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+				change_province_name = "Manyakheta"
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_chalukyas_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			custom_tooltip = chalukya_formation_tooltip
+			hidden_effect = {
+				deccan_region = { add_core = ROOT }
+				coromandel_region = { add_permanent_claim = ROOT }
+				west_india_region = { add_permanent_claim = ROOT }
 			}
 		}
 		ai_will_do = {

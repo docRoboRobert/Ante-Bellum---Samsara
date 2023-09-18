@@ -2234,3 +2234,48 @@ BHU_ideas = {
 		global_prov_trade_power_modifier = 0.1
 	}
 }
+
+#Chalukyan Ideas
+CLY_ideas = {
+	start = {
+		ae_impact = -0.15
+		build_cost = -0.1
+	}
+	
+	bonus = {
+		manpower_in_culture_group_provinces = 0.2
+	}
+	
+	trigger = {
+		tag = CLY
+	}
+	free = yes
+
+	CLY_army_organization = {
+		cavalry_power = 0.15
+		fire_damage_received = -0.05
+	}
+	CLY_legacy_of_pulakeshin = {
+		core_creation = -0.1
+		leader_siege = 1
+	}
+	CLY_land_governance = {
+		governing_cost = -0.15
+		global_tax_modifier = 0.1
+	}
+	CLY_coinage = {
+		inflation_reduction = 0.05
+	}
+	CLY_religion = {
+		tolerance_own = 2
+		tolerance_heathen = 1
+	}
+	CLY_society = {
+		stability_cost_modifier = -0.1
+		advisor_cost = -0.05
+		female_advisor_chance = 0.1
+	}
+	CLY_goa_trade = {
+		global_trade_power = 0.15
+	}
+}

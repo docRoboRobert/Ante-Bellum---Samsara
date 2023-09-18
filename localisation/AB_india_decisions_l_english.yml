@@ -67,6 +67,10 @@
  abi_pala_empire_formation_desc:0 "Due to the years of bad management and internal struggle, once mighty Pala Dynasty that ruled over Ganges, has been reduced to a rump state, a buffer puppet of new Bengal dynsty. The other members of Pala dynasty have also scattered around. With a new hope on the horizon, lands of Bengal shall once again be unified under Pala rulers and once mighty empire shall be revived by its righful living ancestors."
  pala_empire_formation_trigger_tooltip:0 "Country §Yowns as a core§! all of §Mhighlighted§! provinces."
  pala_empire_formation_tooltip:0 "Whether @BNG Bengal still exists, we will gain §Gcore§! on every province that is also their §Ycore§!. \nGain §Ypermanent claims§! on §lKatehar, Oudh, Lower Doab, Purvanchal, Jharkhand and Orissa§! areas."
+ abi_chalukyas_formation_title:0 "Revive Full Glory of Chalukya Dynasty @CLY"
+ abi_chalukyas_formation_desc:0 "Chalukya Dynasty has once ruled a vast empire, encompassing almost 3/4 of Deccan Plateau, before eventually fragmenting and being taken over by the Rashtrakutas. If descendants of Chalukyas desire to once again mend the great empire, we must manage to secure the core territories and all strategic cities the empire once owned. With that, Chalukyas will be brought back to their full might."
+ chalukyas_formation_trigger_tooltip:0 "Country §Yowns as a core§! all of §Mhighlighted§! provinces."
+ chalukya_formation_tooltip:0 "With the Chalukya Empire righteously restored, nobody shall contest that their old territory is rightfully ours. \nReceive §Gcore§! on every province within §YDeccan Region§!. \nWe shall also continue to further down expand their old claims and secure imperial borders! \nGain §Ypermanent claims§! on all provinces inside §YCoromandel Region§! and §YWest India Region§!."
  
  #Malankara decisions
  

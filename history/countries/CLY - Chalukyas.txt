@@ -4,4 +4,4 @@ government_rank = 3
 technology_group = indian
 religion = hinduism
 primary_culture = kannada
-capital = 1949
+capital = 2035
