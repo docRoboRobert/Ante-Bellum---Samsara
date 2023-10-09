@@ -2309,7 +2309,7 @@ country_decisions = {
 			custom_trigger_tooltip = {
 				tooltip = chalukyas_formation_trigger_tooltip
 				
-				telingana_area_area = {
+				telingana_area = {
 					type = all
 					owned_by = ROOT
 					is_core = ROOT
