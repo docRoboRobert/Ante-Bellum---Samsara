@@ -126,19 +126,21 @@ on_dependency_gained = {
 			}# States General falls under a PU
 		}
 	}
-	if = {
-		limit = {
-			FROM = {
-				tag = AVE
-				government_rank = 1
-			}
-		}
-		FROM = {
-			country_event = {
-				id = flavor_gbr.20
-			}
-		}
-	}
+	# AB [[[
+	#if = {
+	#	limit = {
+	#		FROM = {
+	#			tag = AVE
+	#			government_rank = 1
+	#		}
+	#	}
+	#	FROM = {
+	#		country_event = {
+	#			id = flavor_gbr.20
+	#		}
+	#	}
+	#}
+	# ]]]
 	#AB
 	if = {
 		limit = {
