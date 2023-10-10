@@ -2279,3 +2279,47 @@ CLY_ideas = {
 		global_trade_power = 0.15
 	}
 }
+
+#Kamarupa Ideas
+KMR_ideas = {
+	start = {
+		heir_chance = 0.25
+		morale_damage_received = -0.05
+	}
+	
+	bonus = {
+		province_warscore_cost = -0.15
+	}
+	
+	trigger = {
+		tag = KMR
+	}
+	free = yes
+
+	KMR_river_regulation = {
+		global_trade_goods_size_modifier = 0.075
+	}
+	KMR_kings_courts = {
+		prestige_decay = -0.01
+		same_culture_advisor_cost = -0.15
+	}
+	KMR_council_ministers = {
+		monthly_reform_progress_modifier = 0.1
+		advisor_pool = 1
+	}
+	KMR_land_revenue = {
+		global_tax_modifier = 0.15
+	}
+	KMR_grants = {
+		all_estate_loyalty_equilibrium = 0.05
+		state_governing_cost = -0.1
+	}
+	KMR_land_survey = {
+		development_cost = -0.075
+		build_cost = -0.1
+	}
+	KMR_administration = {
+		global_unrest = -1
+		administrative_efficiency = 0.05
+	}
+}

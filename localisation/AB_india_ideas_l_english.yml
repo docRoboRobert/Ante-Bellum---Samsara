@@ -960,3 +960,22 @@
  CLY_goa_trade:0 "Goa Trade"
  CLY_goa_trade_desc:0 "With access to the Western Coast and control of many ports, we are effectively in the control of any trade that flows between Lanka and Gujarat. By investing heavily in the trade posts, we can make a bank and spread our enterprise."
  
+ #Kamarupa
+ KMR_ideas:0 "Kamarupa Ideas"
+ KMR_ideas_start:0 "Kamarupan Traditions"
+ KMR_ideas_bonus:0 "Kamarupan Ambition"
+ KMR_river_regulation:0 "River Regulations"
+ KMR_river_regulation_desc:0 "Brahmaputra River and many of its tributaries has defined our nation. It's vast and expansive, flowing into the Ganges and then Bay of Bengal. By learning how to regulate its flow and develop its banks, we can use it to our advantage to achieve greater economic prosperity."
+ KMR_kings_courts:0 "Kings and Courts"
+ KMR_kings_courts_desc:0 "The king in Kaparupa is considered to be of divine origin. Succession is primogeniture, but few major breaks resulted in different dynasties ruling our nation in the past. In one of them, the high officials of the state elected a king, Brahmapala, after the previous king died without leaving an heir. The royal court consisted of a Rajaguru, poets, learned men and physicians. We shall never get rid of them."
+ KMR_council_ministers:0 "Council of Ministers"
+ KMR_council_ministers_desc:0 "The king is advised by a council of ministers (Mantriparisada). \nAccording to the Kamauli grant, these positions in Kamarupan council were filled by Brahmanas and were hereditary. State functions were specialised and there were different groups of officers looking after different departments."
+ KMR_land_revenue:0 "Land Revenue"
+ KMR_land_revenue_desc:0 "Land revenue (kara) is collected by special tax-collectors from cultivators. Cultivators who have no proprietary rights on the lands they tille, pay us uparikara. Duties (sulka) are collected by toll collectors (Kaibarta) from merchants who plie keeled boats. The state also maintains a monopoly on copper mines (kamalakara). On top, the state maintains its stores and treasury via officials: Bhandagaradhikrita and Koshthagarika."
+ KMR_grants:0 "Kamarupan Grants"
+ KMR_grants_desc:0 "Kamarupan kings occasionally gave Brahmanas grants (brahmadeya), which consisted generally of villages, water resources, wastelands etc. (agraharas). Such grants conferred on the grantee the right to collect revenue and the right to be free of any regular tax himself and immunity from other harassments. Sometimes, the Brahmanas were relocated from North India, with a view to establish varnashramdharma. Nevertheless, the existence of donees sparked the existence of a feudal class. Grants made to temples and religious institutions were called dharmottara and devottara respectively."
+ KMR_land_survey:0 "Land Surveys"
+ KMR_land_survey_desc:0 "Our land is surveyed and classified. Arable lands (kshetra) are held individually or by families, whereas wastelands (khila) and forests are held collectively. There are also lands called bhucchidranyaya that are left unsurveyed by the state on which no tax was levied. Those lands are used for special projects and investments."
+ KMR_administration:0 "Kamarupan Administration"
+ KMR_administration_desc:0 "The entire kingdom was divided into a hierarchy of administrative divisions. From the highest to the lowest, they were bhukti, mandala, vishaya, pura (towns), agrahara (collection of villages) and grama (village). These units were administered by headed by rajanya, rajavallabha, vishayapati and so on. Some other offices were nyayakaranika, vyavaharika, kayastha etc., led by the adhikara. They dispensed judicial duties too, though the ultimate authority lay with the king. Law enforcement and punishments were made by officers called dandika, (magistrate) and dandapashika (one who executed the orders of a dandika)."
+ 
