@@ -295,6 +295,8 @@ west_germanic = {
 			Westseaxe Godwin Hwicce Bamburgh Godhelming Beorming Eorling Ebbing Haesting Elling Eadricing Eadwulfing Leodwalding
 			Ethelfrithing Yffing Ingving Offing Oswalding Cerdicing Wiglafing Coenwalhing
 			Beorning Iceling Wuffing Wihtgilsing Ross Ciesla Rowe Borthwick
+			# Patreon
+			Ragendele
 		}
 		male_names = {
 			Arncytel Balthere Beorhtfrith Beorhthelm Beorhtmaer Beorhtnoth Beorhtric Beorhtsige Beorhtwine Beorn Beornraed Beornwulf
@@ -617,6 +619,103 @@ scandinavian = { #Nordic
 	#country = { land_forcelimit_modifier = 0.25}
 	#province = { local_build_cost = -0.10 }
 
+	scandinavian_culture = {
+		primary = SCA
+		
+		#country = { state_maintenance_modifier = -0.25	}
+		#province = {local_production_efficiency = 0.50	}
+		
+		
+		male_names = {
+			Christian Christoph Oskar Adolf August Göran Sigismund Alfred Axel Edvard Gottfrid 
+			Jakob Ludvig Mikael Olof Patrik Rangvald Rettil Sigvard Simon Sture Svante 
+			Tomas Ulrik
+			Albrikt Albert Alf Algot Anders Arne Arnfast Astrad 
+			Bengt Benedict Bertil Birger Björn Bo Borkvard Brage Bror
+			Dag Dan Dyre Egil Einar Erik Eskild Faste Fredrik Frederick Filip 
+			Folke Georg Greger Gregory Gunnar Gustav Halsten Hans Harald Harold
+			Helge Henrik Hjalmar Holmger Håkan Inge Ingemar Ingvar
+			Edward Johan John Karl Klas Knut Lars Magnus
+			Markus Marcus 
+			Mats Matthew Nils Nicholas Niklas Odd Olaf Peter Ragnar Rolf 
+			Ragnvald Sörkver Sigurd Starkad Sten Styrbjörn Sune Sven
+			Sverker Sölve Thomas Tjudmund Toke Torbjörn Tord Torbrand Torkel Torolf 
+			Thorolf Torsten Toste Totil Tyke Ulf Valdemar Åke Östen 
+			Anders Andrew Anund Asger Balder Benedikt Benedict Bjørn Beorn Bo Christopher Edvard Edward 
+			Einar Ernest Fredrik Frederick Frej Glum Gorm Gotfred Godfrey Gregers Gregory Grim Hårik 
+			Halfdan Halvor Harold Helge Hemming Henry Hjalmar Ingolf Jørn Jakob Jacob Jens Joakim Johann
+			John Charles Knut Kristian Leif Lennart Ludvig Louis Malthe Mads Matthew Mikkel Michael 
+			Mogens Nicholas Odd Olav Olaf Peder Pridbjørn Ragnar Ragnvald Rolf Rune Rørik Rurik Severin 
+			Sigfred Sigtryg Sigurd Sivard Steen Svend Sven Sämund Thorolf Thorvald Torben Torbjørn
+			Torbjörn Tord Torfinn Torgils Torkel Ture Ubbe Uffe Ulf Vladimir Valentin Yngvar Ingvar
+			Christian Frederik Erik Christoffer Adolf Niels Karl Magnus Maximilian Ulrik Abel Vilhelm 
+			Knud Valdemar Harald Oluf Alfred Anton Bent Emanuel Esben Fritjof Frode Gunnar Hans Henrik 
+			Holger Jørgen Kasper Peter Poul Rudolf Stefan Tobias Torbald Viktor Vilfred Joachim Ernst
+			Frans Gnupa
+			Ale Alfr Alf Alfgeir Anlaufr Anundr Anund Arnbjörn Arngrimr Arni Arne Arnfast 
+			Asbjörn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger Björn Beorn Bo Borkvard 
+			Botulfr Bragi Brage Buðli Dag Dan Dyre Eilif Egill Egil Emund Einarr Einar Eirikr Erik 
+			Eskild Falki Faste Frirek Frode Freyr Frej Folki Folke 
+			Gandalfr Geirr Gnupa Gorm Grimr Grim Guðmundr 
+			Gudmund Gudröd Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming 
+			Holmger Hrafn Hrolfr Rolf Hrane Hæsteinn Hjalmar Hysing 
+			Ingólfr Ingolf Ingemar Ingjald Ivar Jedvard Jon Kettil Kettilmund 
+			Kjartan Klas Knut Kol Kolbjörn Magnus Oddr 
+			Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr Rögnvaldr 
+			Ragnvald Skuli Skule Snorri Sigbjörn Sigtrygg Sigurðr Sigurd Starkad Steinn Sten 
+			Sturla Styrbjörn Styrkar Somerled Suni Sune Sveinn Sven Sverker Sæmundr Sämund 
+			Sölvi Sölve Sörkver Tjudmund Toke Tolir Þorbjörn Torbjörn Þorfinn Torfinn Þorbrandr Torbrand 
+			Þordr Tord Þorgil Torkel Þorsteinn Torsten Þorolfr Thorolf Toste Totil Tryggve Tyke Ulfr Ulf 
+			Vagn Åke Yngvar Ingvar Örvar Orvar Öysteinn Eysteinn Håkon Olav 
+			Harald Inge Aksel Ansgard Arvid Bernt Bjørn Eilert Elias Esben 
+			Kennet Knut Njåld Njord Oddmund Søren Tollak
+		}
+		female_names = {
+			Christina Ulrika Eleonora Hedwig
+			Anna Asta Astrid Beata Birgitta Brigid Bothild Cecilia Elin 
+			Elisabet Gunhild Helena Holmfrid Iliana Inga 
+			Ingeborg Ingegerd Ingfrid Ingrid Karin Katarina Kristina Linda 
+			Margareta Märta Martha Ragnhild Sara Sarah Sigrid Sofia 
+			Sophia Thordis Ulvhilde Åsa
+			Sophie Dorothe Margrete Sigrun
+			Agnethe Anna Asta Benedikte Benedicta Birgitta Brigid Bodil Cecilie Cecilia Christina Dagmar 
+			Dorothea Dorothy Elisabeth Ellinor Eleanor Emilie Emily Erika Ester Estrid Astrid Frederikke 
+			Frederique Freja Grethe Gudrun Gunhild Gyda Gytha Helena Helen Ida Ingeborg Ingegerd Ingrid 
+			Johanne Jutta Karin Karoline Katarina Katrine Catherine Kirsten Klara Lise Luitgard Lykke
+			Magdalene Magdalena Maren Margrethe Margaret Maria Martha Ragnfrid Ragnhild Rikissa Runa 
+			Sanna Signe Sigrid Silje Sofie Sophia Svanhild Thyra Tora Thora Thordis Åse Åsa
+			Torhild Aleta Alfhildr Alfhild Alfridh Alvör Asa Åsa Aslaug Asta Astrid 
+			Birgitta Brigid Björg Bodil Bothildr Bothild Edla Elin Freyja Freja 	
+			Grima Gunnhildr Gunhild Gurli Gudrun Gyla Gytha Hafrid Halla
+			Holmfrid Inga Ingfrid Ingibjörg Ingeborg Ingjerðr Ingegerd Ingrid 
+			Kraka Maer Malmfrið Malmfrid
+			Rikissa Rögnfrid Ragnfrid Rögnhildr Ragnhild Saga Sif Sigrid Skuld
+			Svanhildr Svanhild Ulfhildr Ulvhilde Vigdis Ylva Yrsa Þora Thora Þordis Thordis Þyra 
+			Thyra
+		}
+		dynasty_names = {
+			"Bonde" "Vasa" "Tre Rosor" "Oxenstierna" "Sparre" "Sture" "Tott" "Trolle" "Bielke" "Brahe"
+			"Horn" "Ribbing" "Skytte" "Banér" "Fleming" "Gyllenstierna" "de la Gardie" "Leijonhufvud" 
+			"Natt och Dag" "Grip" "Stenbock" "Bure" "Drake" "Hand" "Burensköld"
+			"Böllja" "Cruus" "Geete" "Grubbenhielm" "Soop" "Ekeblad" "Svinhufvud"
+			"Hård" "Forstena" "Kurck" "Eka" "Hjort" "Jägerhorn" "Lilliehöök"
+			"Porse" "Palme" Gumsehuvud
+			"Bååt" "Ulv" "Sjöblad" "Läma" "Posse" "Rosenstråle" "Thott" "Bagge"
+			"Bese" "Gädda" "Hatt" "Marsvin" "Oxhufvud" "Stake" "Tre Rutor" "Hästesko"
+			"Ulfsax" "Tre Sjöblad" "Bratt" "Munk" "Eketrä" "Gera"
+			"Gylta" "Lillie" "Puke" "Slatte"  "Stiernkors" "Fincke" "Dufva" "Cronstedt"
+			"Hårfagreætta" "Bielke" "Bildt" "Galte" "Paus" "Smør" "Benkestok" "Kane" "Bonde"
+			"Drake" "av Hafrsfjord" "Ytra" "av Askø" "Koss" "av Røra" "av Nordland" "Hylling"
+			"Alfr" "Herja" "Vansö" "Flod" "af Vendel" "av Alfheim" Vidfamne "Bille"
+			"Iuel" "Kaas" "Rosenkrantz" "Urne" "Adeler" "Blixenskiold" "Gyldenpalm" "Holberg"
+			"Rosenheim" "Schouboe" "Tordenskiold" "Wessel" "Westervick" "Falsen" "Knagenhjelm"
+			"Galtung" "Heubsch" "Kløcker" "Løvenskiold" "Rosenvinge" "Werenskiold" "Kruckow"
+			"Mowat" "Rømer" "Handingmann" "Skaktavl" "Tordenstierne" Roos 
+			# CKII
+			"Skanke" "Bolt" "Giske" "Brockenhuus" "Adelswärd" "Kane" "Blixen" "Løvendal" "Balke"
+			"Vedel" "Bjelke" "Galle" "Griis"
+		}
+	}
 
 	swedish = {
 		primary = SWE
@@ -1849,6 +1948,8 @@ latin = {
 iberian	= {
 	graphical_culture = westerngfx
 
+	country = { }
+	province = { local_has_tercio = yes }
 	Asturian = {
 		primary = ASU
 		dynasty_names = {
@@ -3490,25 +3591,7 @@ east_slavic = {
 			Demidov Lopukhin Tolstoy "Lobanov-Rostovsky" Menshikov Obolensky
 		}
 	}
-	karelian = {
-		primary = KRL
-		male_names = {
-			Mohkku Mokci Náhkol Náinnas Njulgu Oaván Orddot Rástos Riibma Ruigi Sárra Speaidna Viggu Kaarel Kaaren Kahus Kaido 
-			Kalev Kalju Kaljuvald Kalle Kaomeel Karuvald Kaugemeel Kaupo Pihl Piho Pikne Päevalemb Pärt Raak Raho Rahuleid Sulev 
-			Sutepelg Tambet Tarva Tarvet Dobrinya Dokya Dondy Gazheg Hulyen Inzhay Irter Lyneg Lysko Kezhapa Kezhay Kezhedey 
-			Setyamka Shindyay Shypicha Shyrpuzh Spira Syrka Tikshayka Tuhan Tyueykezhut Tyutyuk Tugan Kezhevat Kichay Koksha 
-			Kuaz Kudym-Osh Kya Kyldysin Malyaka Malyy Meltsayka Mosheg Nalka Turush Uchva Varaka Vechkas Velmayka Virdyan Viryas 
-			Viryay Vokan Yirkap Ylvan Zarny Tugan Parush Pivtsay Pokshayka Putyayka Setyamka Shindyay Shoksha Syrka Tikshayka 
-			Tyueykezhut Tylmache Tylze Tyushten Tyushtya Uzhara Varmanpaz
-		}
-		female_names = {
-			Nyayka Olota Ordava Oshama Parava Pekshayka Pemka Pokshava Poshayka Potekay Potyava Putyayka Ravzhava Ruzava 
-			Sanal'ka Sangasa Sernyava Serzhay Setyamka Seyamka Shonzhava Shukshtoroyka Sinyava Siyamka Slyugan'ka Sochava Styaka 
-			Syryava Tatka Tekay Tetyava Tikshayka Toyaksha Tundava Tundya Unzhutka Upurga Utyayka Valdava Vergava Vezhav Vidyava 
-			Virtyava Yalgava Litova Mastorava Noroava
-		}
-	}
-	
+
 	dynasty_names = {
 		Rurikovich Godunov Shuisky Romanov Sheremetev Golitsyn Naryshkin Khilkov Gorchakov
 		Belosselsky Chelyadnin Potyomkin Poloch Izbor Tversky Lukisky Pleskov Toropetsky Dukhovsky
@@ -3961,7 +4044,28 @@ byzantine = {
 			Shqipe Teuta Venera Vera Vesa Yllka
 		}
 		dynasty_names = { 
-			"Trpimirovic" "Svetoslavic" "Kosovic" "Kresimirovic" "Zrinski" "Domagojevic" "Hrvatinic" "Kotromanic" "Brankovic" "Lazarevic" "Ibrahimovic"
+			"Zogu" "Zenebishi" "Zaharia" "Vrioni" "Vorpsi" "Toptani" "Topia" "Taushani" "Skuraj" "Spani" "Progoni" "Pamalioti" "Muzaka" "Matranga"
+			"Mjeda" "Kyrias" "Kastrioti" "Kryethi" "Losha" "Jonima" "Humoj" "Gjika" "Gjini" "Gropa" "Bruni" "Bruti" "Dukagjini" "Dushmani" "Shpata"
+			"Blinishti" "Begolli" "Arianiti" "Alltuni" "Albani"
+		}
+	}
+	Illyrian = {
+		primary = ALB
+		male_names = {
+			Gjergj Lekë Gjon Kostandin Lulëzim Pal Tanush Aleksandër Karolus Filippo Adnan Agim Bashkim Besnik 
+			Dardan Dhurim Dritëro Elidon Erjon Fatmir Flamur Florin Hekuran Ilir Ismail Klodian Luigj Milaim 
+			Pashko Pëllumb Përparim Pjetër Rrok Shpëtim Tahir Viktor Xhevat Ylli Zenel Halil Ali Mustafa Qemal 
+			Mehmet Ramiz Edi Demaci Edon Dukagjin Haxhi Lishëndri Mensur Kreshnik Rahman Nxhiku Riza Rexhep 
+			Sulejman Selim Sadik Bujar Nikolla Enver Ramadan
+		}
+		female_names = {
+			Gjylo Afërdita Blerta Bora Dafina Dardana Era Fatmire Flutura Gentiana Jehona Lindita Lule Luljeta Pranvera Shpresa 
+			Shqipe Teuta Venera Vera Vesa Yllka
+		}
+		dynasty_names = { 
+			"Zogu" "Zenebishi" "Zaharia" "Vrioni" "Vorpsi" "Toptani" "Topia" "Taushani" "Skuraj" "Spani" "Progoni" "Pamalioti" "Muzaka" "Matranga"
+			"Mjeda" "Kyrias" "Kastrioti" "Kryethi" "Losha" "Jonima" "Humoj" "Gjika" "Gjini" "Gropa" "Bruni" "Bruti" "Dukagjini" "Dushmani" "Shpata"
+			"Blinishti" "Begolli" "Arianiti" "Alltuni" "Albani"
 		}
 	}
 	goths = {
@@ -4121,7 +4225,7 @@ turko_semitic = { #Levantine
 	graphical_culture = muslimgfx
 	
 	al_misr_arabic = { #Egyptian Arab
-		primary = MAM
+		primary = EGY
 		dynasty_names = {
 			"Burji" "Alawiyya" "Bahri"
 			Katkhuda Abaza Qasimiyya Qitas al-Qazdughli Yakubid Hassanid
@@ -5104,6 +5208,21 @@ altaic = {
 			Esin Fatma Firuze Gulay Gulbahar Gulfem Gulsum Gumus Gunduz Gundes Gunes Hatice Hayat Huriye Ilkay Ilknur Ipek Ipekel Irge
 			Karacik Lale Leyla Mala Mansure Merve Mutlu Nagihan Nergis Neslihan Nilufer Nur Peksen Terkhen Samur Sarica Sati Sehnaz Serap Serife Sevilay
 			Sevindik Sibel Sirin Sirma Songul Sumru Tekce Tura Umay Usunbike Vahide Yasar Yeldem Yildiz Zehra Zuhal
+		}
+	}
+	abazerbaijani = {
+		primary = ARL
+		dynasty_names = {
+			"Qara Qoyunlu" "Aq Qoyunlu" "Safavid" "Shirvanshah" Javanshir Chupanid Ziyadoghlu Chalabi
+			Talysh "Haji Chalabi"
+		}
+		male_names = {
+			Ibrahim Muhammad Ibrahim Farrukhsiyar Khalil Bahram Farrukhsiyar Ghazi Farrukhsiyar Mahmud Ghazi Eldar
+		}
+		female_names = {
+			Malahat Amsha Asiya Faghira Habiba Hanifa Jahaira Kamala Layla Maryam Nafisa Nyawela Parand 
+			Aaliyah Aamina Aamira Aaqila Aarifa Aazzi Adelah Adela Adiba Adilah Adilia Adiva Adjan Aeesha 
+			Adila Ikram            
 		}
 	}
 	uyghur = {
@@ -7575,7 +7694,10 @@ korean_g = {
 japanese_g = {
 	graphical_culture = asiangfx
 	
+	country = { has_samurai = yes }
+	province = { local_has_samurai = yes }								   
 	japanese_culture = { #Togoku / Eastern Japanese
+		province = { local_has_samurai = yes }								
 		primary = JAP
 		dynasty_names = { 
 			Yamato Arisugawa Asaka Fushimi "Kan'in" Katsura Kaya Kitashirakawa 
@@ -7602,6 +7724,7 @@ japanese_g = {
 		}
 	}
 	togoku = { #Togoku / Eastern Japanese
+		province = { local_has_samurai = yes }								
 		primary = JAP
 		dynasty_names = { 
 			Yamato Arisugawa Asaka Fushimi "Kan'in" Katsura Kaya Kitashirakawa 
@@ -7628,6 +7751,7 @@ japanese_g = {
 		}
 	}
 	japanese = { #Saigoku / Western Japanese
+		province = { local_has_samurai = yes }								
 		primary = MRI
 		dynasty_names = { 
 			Yamato Arisugawa Asaka Fushimi "Kan'in" Katsura Kaya Kitashirakawa 
@@ -7654,6 +7778,7 @@ japanese_g = {
 		}
 	}
 	kyushuan = { #Kyushu culture
+		province = { local_has_samurai = yes }								
 		primary = OTM
 		dynasty_names = { 
 			Yamato Arisugawa Asaka Fushimi "Kan'in" Katsura Kaya Kitashirakawa 
