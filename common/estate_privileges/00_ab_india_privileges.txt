@@ -235,3 +235,281 @@ estate_tamil_guilds_free_enterprise = {
 		}
 	}
 }
+
+estate_tamil_guilds_draft_merchant_ships = {
+	icon = light_ship
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = -0.05
+	influence = 0.05
+	is_valid = {
+		any_owned_province = { has_port = yes }
+	}
+	can_select = {
+	}
+	can_revoke = {
+		NOT = { has_country_modifier = tamil_guilds_drafted_ships_timer }
+	}
+	on_revoked = {
+		add_trasury = -150
+	}
+	on_invalid = { add_prestige = -5 }
+	on_granted = {
+		add_estate_loyalty = {
+			estate = estate_tamil_guilds
+			loyalty = -5
+		}
+		custom_tooltip = estate_tamil_guilds_draft_merchant_ships_tooltip
+		hidden_effect = {
+			random_owned_province = {
+				limit = { has_port = yes }
+				ROOT = {
+					light_ship = PREV
+					light_ship = PREV
+					light_ship = PREV
+					light_ship = PREV
+					light_ship = PREV
+				}
+			}
+			add_country_modifier = {
+				name = tamil_guilds_drafted_ships_timer
+				duration = 3650
+			}
+		}
+		add_sailors = -400
+	}
+	penalties = {
+		mercantilism_cost = 0.1
+	}
+	benefits = {
+		
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_tamil_guilds_draft_war_ships = {
+	icon = galley_war_time
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = -0.05
+	influence = 0.05
+	is_valid = {
+		any_owned_province = { has_port = yes }
+	}
+	can_select = {
+		is_at_war = yes
+	}
+	can_revoke = {
+		OR = {
+			NOT = { has_country_modifier = tamil_guilds_drafted_war_ships_timer }
+			NOT = { num_of_galley = 1 }
+		}
+		is_at_war = no
+	}
+	on_revoked = {
+		add_trasury = -125
+		remove_country_modifier = tamil_guilds_drafted_war_ships_timer
+	}
+	on_invalid = { add_prestige = -5 }
+	on_granted = {
+		add_estate_loyalty = {
+			estate = estate_tamil_guilds
+			loyalty = -5
+		}
+		custom_tooltip = estate_tamil_guilds_draft_war_ships_tooltip
+		hidden_effect = {
+			random_owned_province = {
+				limit = { has_port = yes }
+				ROOT = {
+					galley = PREV
+					galley = PREV
+					galley = PREV
+					transport = PREV
+					transport = PREV
+				}
+			}
+			add_country_modifier = {
+				name = tamil_guilds_drafted_war_ships_timer
+				duration = 3650
+			}
+		}
+		add_sailors = -400
+	}
+	penalties = {
+		sunk_ship_morale_hit_recieved = 0.05
+	}
+	benefits = {
+		blockade_efficiency = 0.1
+		naval_attrition = -0.1
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_tamil_guilds_allow_private_armies = {
+	icon = tamil_armies
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	loyalty = 0.075
+	influence = 0.1
+	is_valid = {
+	}
+	can_select = {
+	}
+	can_revoke = {
+		NOT = { num_of_mercenaries = 1 }
+		is_at_war = no
+	}
+	on_revoked = {
+		add_mil_power = -50
+		add_army_tradition = -5
+		add_stability = -1
+	}
+	on_invalid = {
+	}
+	on_granted = {
+		add_estate_loyalty = {
+			estate = estate_tamil_guilds
+			loyalty = 5
+		}
+	}
+	penalties = {
+		stability_cost_modifier = 0.1
+		land_forcelimit_modifier = -0.10
+	}
+	benefits = {
+		embargo_efficiency = 0.2
+		global_own_trade_power = 0.05
+		hostile_attrition = 1
+		max_hostile_attrition = 1
+	}
+	modifier_by_land_ownership = {
+		tamil_guilds_influence_modifier = 0.1
+		global_unrest = -2
+		global_rebel_suppression_efficiency = -0.2
+		manpower_recovery_speed = -0.10
+		global_manpower_modifier = -0.15
+		defensiveness = 0.10
+	}
+	cooldown_years = 5
+	on_cooldown_expires = {
+	}
+	ai_will_do = { #Above 10 grants, below 5 revokes
+		factor = 10
+		modifier = {
+			factor = 0.75
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 0
+			estate_influence = {
+				estate = estate_tamil_guilds
+				influence = 80
+			}
+		}
+		modifier = {
+			factor = 0.6
+			estate_influence = {
+				estate = estate_tamil_guilds
+				influence = 70
+			}
+		}
+		modifier = {
+			factor = 1.25
+			average_unrest = 2
+		}
+		modifier = {
+			factor = 1.5
+			average_unrest = 3
+		}
+		modifier = {
+			factor = 1.75
+			average_unrest = 4
+		}
+		modifier = {
+			factor = 2
+			average_unrest = 5
+		}
+		modifier = {
+			factor = 1.1
+			manpower_percentage = 0.9
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { manpower_percentage = 0.75 }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { manpower_percentage = 0.6 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { manpower_percentage = 0.4 }
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { manpower_percentage = 0.3 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { manpower_percentage = 0.1 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { max_manpower = 15 }
+		}
+		modifier = {
+			factor = 1.5
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.9
+			war_score = 50
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { war_score = -25 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { war_score = -50 }
+		}
+		modifier = {
+			factor = 1.1
+			num_of_cities = 12
+		}
+		modifier = {
+			factor = 1.1
+			num_of_cities = 20
+		}
+		modifier = {
+			factor = 0.85
+			NOT = { num_of_cities = 5 }
+		}
+		modifier = {
+			factor = 0.85
+			AND = {
+				is_absolutism_active = yes
+				NOT = { crown_land_share = 50 }
+			}
+		}
+		modifier = {
+			factor = 0.75
+			AND = {
+				is_absolutism_active = yes
+				NOT = { crown_land_share = 35 }
+			}
+		}
+	}
+}
+
+#Grant immunities
+#Accomodate guilds in cities
+#Finance local development
+#Temple contruction and projects contruction
+#Promote western trade routes
+#Establish colonial trade posts
+#Expand colonial trade

@@ -271,6 +271,9 @@ estate_tamil_guilds = {
 		estate_tamil_guilds_land_rights
 		estate_tamil_guilds_indebted_to_tamils
 		estate_tamil_guilds_free_enterprise
+		estate_tamil_guilds_draft_merchant_ships
+		estate_tamil_guilds_draft_war_ships
+		estate_tamil_guilds_allow_private_armies
 	}
 
 	agendas = {

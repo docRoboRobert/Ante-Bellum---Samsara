@@ -8,6 +8,11 @@
  rejected_malankara_banquet:0 "Rejected Banquet Invitation"
  abi_accepted_malankara_missionaries:0 "Accepted Malankara Religion"
  
+ #Timers
+ tamil_guilds_drafted_ships_timer:0 "Drafted trade ships in the past 10 years"
+ desc_tamil_guilds_drafted_ships_timer:0 "We have siezed some trade ships from Tamil Guilds in the last 10 years."
+ tamil_guilds_drafted_war_ships_timer:0 "Drafted war ships in the past 10 years"
+ desc_tamil_guilds_drafted_war_ships_timer:0 "We have siezed some light ships from Tamil Guilds in the last 10 years and appropriated them for war."
  
  #Malankara church aspects
  reconciliate_with_heathens_aspect_modifier:0 "Reconciliation of Hethens"

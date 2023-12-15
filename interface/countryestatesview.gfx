@@ -1015,4 +1015,18 @@ spriteTypes = {
 		name = "estate_burghers_monopoly_of_coffee"
 		texturefile = "gfx/interface/privileges/estate_burghers_monopoly_of_coffee.dds"
 	}
+	
+	#Samsara Privileges
+	spriteType = {
+		name = "light_ship"
+		texturefile = "gfx/interface/privileges/light_ship.dds"
+	}
+	spriteType = {
+		name = "galley_war_time"
+		texturefile = "gfx/interface/privileges/galley_war_time.dds"
+	}
+	spriteType = {
+		name = "tamil_armies"
+		texturefile = "gfx/interface/privileges/tamil_armies.dds"
+	}
 }

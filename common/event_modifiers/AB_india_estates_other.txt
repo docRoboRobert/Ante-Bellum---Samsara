@@ -1,0 +1,9 @@
+#Modifier from estates, disasters, mechanics and also timer
+
+tamil_guilds_drafted_ships_timer = {
+	picture = "envoy_travel_time"
+}
+
+tamil_guilds_drafted_war_ships_timer = {
+	picture = "envoy_travel_time"
+}

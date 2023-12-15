@@ -1526,6 +1526,7 @@ MAW_ideas = {
 		stability_cost_modifier = -0.05
 	}
 	MAW_reform_rajput_army = {
+		can_recruit_rajputs = yes
 		allowed_rajput_fraction = 0.2
 		special_unit_manpower_cost_modifier = -0.1
 	}
