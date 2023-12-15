@@ -7,7 +7,7 @@ technology_group = indian
 capital = 2066	# Nagaur
 fixed_capital = 2066
 
-1399.1.1 = {
+1399.1.10 = {
 	monarch = {
 		name = "Anajmer IV"
 		dynasty = "Bhati"
@@ -18,7 +18,7 @@ fixed_capital = 2066
 	}
 }
 
-1399.1.1 = {
+1417.4.10 = {
 	heir = {
 		name = "Bhatnapi"
 		monarch_name = "Bhatnapi II"

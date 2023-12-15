@@ -4,6 +4,6 @@ government_rank = 2
 technology_group = indian
 primary_culture = panjabi
 add_accepted_culture = saraiki
-add_accepted_culture = hindi
+add_accepted_culture = sashindi
 religion = zoroastrian
 capital = 506 #Multan

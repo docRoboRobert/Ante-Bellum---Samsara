@@ -8,5 +8,5 @@ add_accepted_culture = oriya
 add_accepted_culture = bengali
 capital = 2026 #Tanjore
 historical_rival = PLV
-historical_rival = TMS
+historical_rival = TMA
 historical_rival = TML

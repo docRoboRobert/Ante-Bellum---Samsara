@@ -889,7 +889,7 @@ ab_sri_lanka_third = {
 					has_building = dock
 				}
 				has_building = early_road
-				has_center_of_trade_of_level = 2
+				province_has_center_of_trade_of_level = 2
 				infantry_in_province = 15
 			}
 		}

@@ -453,7 +453,7 @@ JFN_first = {
 					2037 = {
 						NOT = {
 							has_great_project = {
-								type = bhuvangiri
+								type = bhuvanagiri
 								tier = 3
 							}
 						}
@@ -461,7 +461,7 @@ JFN_first = {
 				}
 				2037 = {
 					add_great_project_tier = {
-						type = bhuvangiri
+						type = bhuvanagiri
 						tier = 1
 					}
 				}

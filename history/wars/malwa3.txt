@@ -1,6 +1,6 @@
 name = "Malwan Religious Civil War"
 war_goal = {
-	type = take_capital_conquest
+	type = take_capital
 	casus_belli = cb_annex
 }
 

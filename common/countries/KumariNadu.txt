@@ -15,17 +15,6 @@ historical_idea_groups = {
 	aristocracy_ideas
 }
 
-historical_idea_groups = {
-	quantity_ideas
-	defensive_ideas
-	trade_ideas
-	innovativeness_ideas
-	diplomatic_ideas
-	spy_ideas
-	economic_ideas
-	aristocracy_ideas
-}
-
 historical_units = {
 	indian_footsoldier
 	rajput_hill_fighters
