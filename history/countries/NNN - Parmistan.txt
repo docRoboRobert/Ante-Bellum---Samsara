@@ -1,14 +1,13 @@
 technology_group = muslim
 primary_culture = khorasani
 add_accepted_culture = persian
-religion = sunni
+religion = zoroastrian
 government = monarchy
-add_government_reform = iqta
+add_government_reform = autocracy_reform
 government_rank = 2
 capital = 454 # Samarkand
 historical_rival = DLH
 historical_rival = MUL
-religious_school = hanafi_school
 
 change_estate_land_share = {
 	estate = estate_church
@@ -29,7 +28,7 @@ change_estate_land_share = {
 		dip = 3
 		mil = 3
 		culture = khorasani
-		religion = sunni
+		religion = zoroastrian
 		leader = {
 			name = "Anton Bellukh"
 			type = general
@@ -53,7 +52,6 @@ change_estate_land_share = {
 		dip = 5
 		mil = 3
 	}
-	add_piety = -0.4
 }
 
 1444.3.1 = {

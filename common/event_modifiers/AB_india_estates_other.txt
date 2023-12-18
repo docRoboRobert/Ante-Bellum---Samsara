@@ -7,3 +7,13 @@ tamil_guilds_drafted_ships_timer = {
 tamil_guilds_drafted_war_ships_timer = {
 	picture = "envoy_travel_time"
 }
+
+abi_tamil_guilds_town = {
+	province_trade_power_value = 0.5
+	trade_goods_size_modifier = 0.05
+	local_autonomy = 0.02
+	min_local_autonomy = 5
+	local_governing_cost = -0.05
+	local_ship_repair = 0.075
+	picture = "placed_merchant_power"
+}

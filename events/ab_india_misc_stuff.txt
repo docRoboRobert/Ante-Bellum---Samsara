@@ -38,3 +38,257 @@ country_event = {
 		swap_free_idea_group = yes
 	}
 }
+
+country_event = {
+	id = abindia_shitevent.2
+	title = abindia_shitevent.2.t
+	desc = abindia_shitevent.2.d
+	picture = ABINDIA_PARM_eventPicture
+	
+	fire_only_once = yes
+	
+	goto = 5186
+	
+	trigger = {
+		tag = SHP
+		ai = no
+	}
+	
+	option = {
+		name = abindia_shitevent.2.a #Yes, please
+		custom_tooltip = abindia_shitevent.2.tooltip1
+		hidden_effect = {
+			create_vassal = NNN
+			NNN = {
+				add_adm_power = 300
+				add_dip_power = 300
+				add_mil_power = 300
+				add_treasury = 200
+				define_ruler = {
+					name = "Anton Bellukh"
+					age = 52
+					dynasty = "Parmalionid"
+					adm = 3
+					dip = 3
+					mil = 3
+					fixed = yes
+					male = yes
+					culture = khorasani
+					religion = zoroastrian
+				}
+				clear_scripted_personalities = yes
+				add_ruler_personality = scholar_personality
+				add_ruler_personality = architectural_visionary_personality
+				add_ruler_personality = benevolent_personality
+				define_consort = {
+					name = "Parmina"
+					birth_date = 1399.8.12
+					dynasty = "Persanid"
+					culture = persian
+					adm = 4
+					dip = 5
+					mil = 3
+					fixed = yes
+					female = yes
+					religion = zoroastrian
+				}
+				define_heir = {
+					name = "Anton Bellukh II"
+					dynasty = "Parmalionid"
+					birth_date = 1420.3.1
+					adm = 3
+					dip = 3
+					mil = 3
+					fixed = yes
+					male = yes
+					culture = khorasani
+					religion = zoroastrian
+				}
+				define_ruler_to_general = {
+					fire = 3
+					shock = 3
+					manuever = 3
+					siege = 2
+				}
+			}
+			switch_tag = NNN
+		}
+	}
+	
+	option = { #It can exist
+		name = abindia_shitevent.2.b
+	}
+	
+	option = { #Remove it
+		name = abindia_shitevent.2.c
+		custom_tooltip = abindia_shitevent.2.tooltip2
+		hidden_effect = {
+			every_owned_province = {
+				limit = { is_core = NNN }
+				remove_core = NNN
+			}
+		}
+	}
+}
+
+country_event = {
+	id = abindia_shitevent.3
+	title = abindia_shitevent.3.t
+	desc = abindia_shitevent.3.d
+	picture = TEMPORAL_RIFT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = NNN
+		ai = no
+		has_country_flag = can_have_based_ideas_flag
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_country_modifier = { 
+				name = parmelion_invasion_enabled
+				duration = -1  
+			}
+		}
+	}
+	
+	option = {
+		name = abindia_shitevent.3.a
+		highlight = yes
+		custom_tooltip = abindia_shitevent.3.tooltip1
+		change_technology_group = iranian
+		add_adm_tech = 2
+		add_dip_tech = 2
+		add_mil_tech = 2
+		add_country_modifier = { 
+			name = parmistan_invasion_real
+			duration = -1  
+		}
+	}
+}
+
+country_event = {
+	id = abindia_shitevent.4
+	title = abindia_shitevent.4.t
+	desc = abindia_shitevent.4.d
+	picture = ABINDIA_PARM_MARCHING_eventPicture
+	
+	fire_only_once = yes
+	
+	goto = 446
+	
+	trigger = {
+		tag = NNN
+		ai = no
+		has_country_modifier = parmistan_invasion_real
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_manpower = 10
+			capital_scope = {
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				cavalry = ROOT
+				cavalry = ROOT
+				cavalry = ROOT
+				cavalry = ROOT
+				artillery = ROOT
+				artillery = ROOT
+			}
+		}
+	}
+	
+	option = {
+		name = abindia_shitevent.4.a
+		highlight = yes
+		custom_tooltip = abindia_shitevent.4.tooltip1
+		grant_independence = yes
+		446 = {
+			cede_province = ROOT
+			add_core = ROOT
+			add_base_manpower = 2
+		}
+		set_capital = 446
+		add_country_modifier = { 
+			name = parmistan_invasion_army
+			duration = -1  
+		}
+	}
+}
+
+country_event = {
+	id = abindia_shitevent.5
+	title = abindia_shitevent.5.t
+	desc = abindia_shitevent.5.d
+	picture = ABINDIA_PARM_MARCHING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = NNN
+		ai = no
+		has_country_modifier = parmistan_invasion_army
+	}
+	
+	immediate = {
+		hidden_effect = {
+			2224 = { add_core = ROOT }
+			4324 = { add_core = ROOT }
+		}
+	}
+	
+	option = {
+		name = abindia_shitevent.5.a
+		highlight = yes
+		custom_tooltip = abindia_shitevent.5.tooltip1
+		declare_war_with_cb = {
+			who = SHP
+			casus_belli = cb_annex
+		}
+		add_country_modifier = { 
+			name = parmistan_manifest_destiny
+			duration = -1  
+		}
+	}
+}
+
+country_event = {
+	id = abindia_shitevent.6
+	title = abindia_shitevent.6.t
+	desc = abindia_shitevent.6.d
+	picture = ABINDIA_PARM_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = NNN
+		ai = no
+		has_country_modifier = parmistan_manifest_destiny
+		num_of_owned_provinces_with = {
+			value = 20
+			is_state = yes
+		}
+	}
+	
+	option = {
+		name = abindia_shitevent.6.a
+		highlight = yes
+		custom_tooltip = abindia_shitevent.6.tooltip1
+		add_stability = 1
+		add_country_modifier = { 
+			name = parmistan_secured_base
+			duration = -1  
+		}
+	}
+}

@@ -506,8 +506,389 @@ estate_tamil_guilds_allow_private_armies = {
 	}
 }
 
-#Grant immunities
-#Accomodate guilds in cities
+estate_tamil_guilds_grant_immunities = {
+	icon = immunity_tamils
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	loyalty = 0.1
+	influence = 0.1
+	is_valid = {
+	}
+	can_select = {
+	}
+	can_revoke = {
+		stability = 2
+	}
+	on_revoked = {
+		add_adm_power = -25
+		add_dip_power = -25
+		add_stability = -1
+	}
+	on_invalid = {
+	}
+	on_granted = {
+		add_estate_loyalty = {
+			estate = estate_tamil_guilds
+			loyalty = 5
+		}
+	}
+	penalties = {
+		church_loyalty_modifier = -0.05
+		brahmins_loyalty_modifier = -0.05
+		maratha_loyalty_modifier = -0.05
+		jains_loyalty_modifier = -0.05
+		vaisyas_loyalty_modifier = -0.05
+		nobles_loyalty_modifier = -0.05
+		advisor_cost = 0.075
+	}
+	benefits = {
+		tamil_guilds_privilege_slots = 1
+		trade_company_governing_cost = -0.1
+	}
+	modifier_by_land_ownership = {
+		monthly_reform_progress_modifier = -0.1
+		global_tax_modifier = -0.2
+		global_prov_trade_power_modifier = 0.1
+	}
+	cooldown_years = 5
+	on_cooldown_expires = {
+	}
+	ai_will_do = { #Above 10 grants, below 5 revokes
+		factor = 10
+		modifier = {
+			factor = 0.75
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 0
+			estate_influence = {
+				estate = estate_tamil_guilds
+				influence = 80
+			}
+		}
+		modifier = {
+			factor = 0.75
+			estate_influence = {
+				estate = estate_tamil_guilds
+				influence = 70
+			}
+		}
+		modifier = {
+			factor = 1.1
+			num_of_cities = 12
+		}
+		modifier = {
+			factor = 1.1
+			num_of_cities = 16
+		}
+		modifier = {
+			factor = 1.1
+			num_of_cities = 20
+		}
+		modifier = {
+			factor = 0.85
+			AND = {
+				is_absolutism_active = yes
+				NOT = { crown_land_share = 50 }
+			}
+		}
+		modifier = {
+			factor = 0.75
+			AND = {
+				is_absolutism_active = yes
+				NOT = { crown_land_share = 30 }
+			}
+		}
+		modifier = {
+			factor = 0.3
+			NOT = { current_income_balance = -2 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { current_income_balance = 0 }
+		}
+		modifier = {
+			factor = 0.9
+			current_income_balance = 1
+		}
+		modifier = {
+			factor = 1.25
+			current_income_balance = 5
+		}
+		modifier = {
+			factor = 1.5
+			current_income_balance = 10
+		}
+		modifier = {
+			factor = 0.8
+			absolutism = 20
+		}
+		modifier = {
+			factor = 0.8
+			absolutism = 30
+		}
+		modifier = {
+			factor = 0.8
+			absolutism = 40
+		}
+		modifier = {
+			factor = 0.8
+			absolutism = 50
+		}
+		modifier = {
+			factor = 0.8
+			absolutism = 60
+		}
+	}
+}
+
+estate_tamil_guilds_accomodate_in_cities = {
+	icon = guilds_in_town
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = {
+		any_owned_province = {
+			OR = {
+				development = 15
+				has_port = yes
+				province_has_center_of_trade_of_level = 1
+			}
+		}
+	}
+	can_select = {
+		any_owned_province = {
+			development = 15
+		}
+	}
+	can_revoke = {
+	}
+	on_revoked = {
+		add_adm_power = -25
+		add_dip_power = -25
+		add_mil_power = -25
+		add_mercantilism = -2
+		hidden_effect = {
+			every_owned_province = {
+				remove_province_modifier = abi_tamil_guilds_town
+			}
+		}
+	}
+	on_invalid = {
+		add_prestige = -5
+		hidden_effect = {
+			every_owned_province = {
+				remove_province_modifier = abi_tamil_guilds_town
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_tamil_guilds_accomodate_in_cities_tooltip
+		random_owned_province = {
+			limit = {
+				development = 15
+			}
+			add_province_modifier = {
+				name = abi_tamil_guilds_town
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					development = 15
+				}
+				add_province_modifier = {
+					name = abi_tamil_guilds_town
+					duration = -1
+				}
+			}
+		}
+	}
+	penalties = {
+		autonomy_change_time = 0.1
+		vaisyas_loyalty_modifier = -0.05
+	}
+	benefits = {
+		center_of_trade_upgrade_cost = -0.1
+		vaisyas_influence_modifier = -0.05
+	}
+	modifier_by_land_ownership = {
+		
+	}
+	cooldown_years = 10
+	on_cooldown_expires = {
+	}
+	ai_will_do = { #Above 10 grants, below 5 revokes
+		factor = 10
+		modifier = {
+			factor = 0.75
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 0
+			estate_influence = {
+				estate = estate_tamil_guilds
+				influence = 90
+			}
+		}
+		modifier = {
+			factor = 0.8
+			estate_influence = {
+				estate = estate_tamil_guilds
+				influence = 75
+			}
+		}
+		modifier = {
+			factor = 1.1
+			num_of_cities = 10
+		}
+		modifier = {
+			factor = 1.1
+			num_of_cities = 20
+		}
+		modifier = {
+			factor = 1.1
+			num_of_cities = 30
+		}
+		modifier = {
+			factor = 1.05
+			num_of_cities = 40
+		}
+		modifier = {
+			factor = 1.05
+			num_of_cities = 50
+		}
+		modifier = {
+			factor = 1.2
+			num_of_owned_provinces_with = {
+				value = 10
+				development = 15
+				is_overseas = no
+			}
+		}
+		modifier = {
+			factor = 1.2
+			num_of_owned_provinces_with = {
+				value = 10
+				development = 20
+				is_overseas = no
+			}
+		}
+		modifier = {
+			factor = 1.15
+			num_of_owned_provinces_with = {
+				value = 10
+				development = 25
+				is_overseas = no
+			}
+		}
+		modifier = {
+			factor = 1.1
+			num_of_owned_provinces_with = {
+				value = 10
+				development = 30
+				is_overseas = no
+			}
+		}
+		modifier = {
+			factor = 1.25
+			num_of_owned_provinces_with = {
+				value = 10
+				development = 15
+				province_has_center_of_trade_of_level = 1
+				is_overseas = no
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				num_of_owned_provinces_with = {
+					value = 1
+					development = 10
+					province_has_center_of_trade_of_level = 1
+					is_overseas = no
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				num_of_owned_provinces_with = {
+					value = 3
+					development = 15
+					is_overseas = no
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				estate_loyalty = {
+					estate = estate_vaisyas
+					loyalty = 45
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				estate_loyalty = {
+					estate = estate_vaisyas
+					loyalty = 35
+				}
+			}
+		}
+		modifier = {
+			factor = 0.4
+			NOT = {
+				estate_loyalty = {
+					estate = estate_vaisyas
+					loyalty = 30
+				}
+			}
+		}
+		modifier = {
+			factor = 0.4
+			NOT = {
+				estate_loyalty = {
+					estate = estate_vaisyas
+					loyalty = 30
+				}
+			}
+		}
+		modifier = {
+			factor = 1.75
+			NOT = { current_income_balance = 0 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { current_income_balance = 2 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { current_income_balance = 5 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { current_income_balance = 10 }
+		}
+		modifier = {
+			factor = 0.9
+			absolutism = 25
+		}
+		modifier = {
+			factor = 0.8
+			absolutism = 50
+		}
+		modifier = {
+			factor = 0.7
+			absolutism = 75
+		}
+	}
+}
+
 #Finance local development
 #Temple contruction and projects contruction
 #Promote western trade routes

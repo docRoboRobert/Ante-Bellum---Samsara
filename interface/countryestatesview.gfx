@@ -1029,4 +1029,12 @@ spriteTypes = {
 		name = "tamil_armies"
 		texturefile = "gfx/interface/privileges/tamil_armies.dds"
 	}
+	spriteType = {
+		name = "immunity_tamils"
+		texturefile = "gfx/interface/privileges/immunity_tamils.dds"
+	}
+	spriteType = {
+		name = "guilds_in_town"
+		texturefile = "gfx/interface/privileges/guilds_in_town.dds"
+	}
 }

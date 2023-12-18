@@ -6,4 +6,15 @@ spriteTypes = {
 		allwaystransparent = yes
 	}
 	
+	spriteType = {
+		name = "ABINDIA_PARM_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/ABindia_parm_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "ABINDIA_PARM_MARCHING_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/ABindia_parm_marching_eventPicture.dds"
+		allwaystransparent = yes
+	}
 }

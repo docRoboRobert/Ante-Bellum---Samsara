@@ -57,3 +57,52 @@ on_mercenary_recruited = {
 		}
 	}
 }
+
+on_yearly_pulse = {
+	if = {
+		limit = {
+			has_estate_privilege = estate_tamil_guilds_accomodate_in_cities
+		}
+		every_owned_province = {
+			limit = { development = 15 }
+			add_province_modifier = {
+				name = abi_tamil_guilds_town
+				duration = -1
+			}
+		}
+		every_owned_province = {
+			limit = {
+				NOT = { development = 15 }
+				has_province_modifier = abi_tamil_guilds_town
+			}
+			remove_province_modifier = abi_tamil_guilds_town
+		}
+	}
+}
+
+# Country scope
+# ROOT - winner, FROM - location
+on_siege_won_country = {
+	if = {
+		limit = {
+			ROOT = { has_country_modifier = parmelion_invasion_enabled }
+			FROM = { is_core = ROOT }
+		}
+		FROM = {
+			cede_province = ROOT
+			add_devastation = 50
+			set_base_tax = 1
+			set_base_production = 1
+			set_base_manpower = 1
+		}
+	}
+	if = {
+		limit = {
+			ROOT = { has_country_modifier = parmelion_invasion_enabled }
+			FROM = { 
+				NOT = { is_core = ROOT }
+			}
+		}
+		FROM = { add_core = ROOT }
+	}
+}

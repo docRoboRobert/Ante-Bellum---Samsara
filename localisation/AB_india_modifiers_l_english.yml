@@ -68,6 +68,10 @@
  lakshadweep_island_modifier:0 "Tiny Island Archipelago"
  desc_lakshadweep_island_modifier:0 "This province is archipelago of extremely small islands that don't have much land to build on. Due to extremely limited space and resources, it's really hard to develop this province."
  
+ #Estates and estate mechanics
+ abi_tamil_guilds_town:0 "Tamil Guilds Accomodated"
+ desc_abi_tamil_guilds_town:0 "This province has over 15 development, so Tamil Guilds were granted free estate in the province' towns."
+ 
  #Mission & events rewards
  abi_consolidated_rule:0 "Consolidation of the State"
  desc_abi_consolidated_rule:0 "Recent events have made our nation more uniform in terms of religion and society. This helps us greatly with keeping the lands together."
@@ -217,3 +221,14 @@
  desc_malankara_convert_fervor_modifier:0 "Malankara religion has been recently made an official faith of our nation. We are in a frenzy to spread it across the countryside, whether locals like it or not."
  malankara_religious_violence_modifier:0 "Religious Violence"
  desc_malankara_religious_violence_modifier:0 "Going against the will of Malankara majority is tearing our nation."
+ parmelion_invasion_enabled:0 "The Godly Right to Conquest"
+ desc_parmelion_invasion_enabled:0 "§MBesieged enemy provinces that are§! §Rnot our cores§! §Mwill become§! §Gour cores.§! \n§MBesieged enemy provinces that are§! §Gour cores§! §Mwill be§! §Tautomatically transfered to our domain, gain§! §O50 devastation§! §Tand§! §Ohave their development flattened.§!"
+ parmistan_invasion_real:0 "Great Invasion"
+ desc_parmistan_invasion_real:0 "The Fearsome Lion of Parma has risen in its divine war against the world!"
+ parmistan_secured_base:0 "New Rule Established"
+ desc_parmistan_secured_base:0 "We have successfully established our HQ and can extort proper rule over our lands with the power of divine strength and technology!"
+ parmistan_invasion_army:0 "Grand Invasion Army"
+ desc_parmistan_invasion_army:0 "The Grand Army is led by §YThe Creator§! himself."
+ parmistan_manifest_destiny:0 "Manifesting Destiny"
+ desc_parmistan_manifest_destiny:0 "We have manifested our destiny and stated our goals to the world. Whether they like it or not, we will be coming to take it all!"
+ 
