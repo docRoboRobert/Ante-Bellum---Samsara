@@ -1266,3 +1266,339 @@ dambulla_caves = {
 		}
 	}
 }
+
+girnar_hill = {
+	
+	start = 515
+	
+	date = 100.01.01
+	
+	time = {
+		months = 12
+	}
+	
+	build_cost = 1000
+	
+	can_be_moved = no
+	
+	move_days_per_unit_distance = 10
+	
+	starting_tier = 1
+	
+	type = monument
+	
+	
+	build_trigger = {
+		OR = {
+			has_owner_religion = yes
+			religion = jainism
+		}
+		owner = {
+			OR = {
+				religion = jainism
+				secondary_religion = jainism
+			}
+		}
+	}
+	
+	on_built = {
+	}
+	
+	on_destroyed = {
+	}
+	
+	can_use_modifiers_trigger = {
+		OR = {
+			has_owner_religion = yes
+			religion = jainism
+		}
+		owner = {
+			OR = {
+				religion = jainism
+				secondary_religion = jainism
+			}
+		}
+	}
+	
+	can_upgrade_trigger = {
+		religion = jainism
+		owner = {
+			OR = {
+				religion = jainism
+				secondary_religion = jainism
+			}
+		}
+	}
+	
+	keep_trigger = {
+	}
+
+	#tier data
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_religious_unity_contribution = 0.25
+			local_tax_modifier = 0.1
+			local_defender_dice_roll_bonus = 1
+			local_defensiveness = 0.1
+			local_development_cost = -0.05
+		}
+		area_modifier = {
+			local_unrest = -1
+			local_governing_cost = -0.05
+		}
+		country_modifiers = {
+			reverse_relation_with_same_religion = 10
+			missionary_maintenance_cost = -0.1
+			monthly_karma_accelerator = 0.025
+			improve_relation_modifier = 0.1
+		}
+		on_upgraded = {
+			add_splendor = 100
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			local_religious_unity_contribution = 0.25
+			local_tax_modifier = 0.2
+			local_defender_dice_roll_bonus = 1
+			local_defensiveness = 0.15
+			local_development_cost = -0.1
+		}
+		area_modifier = {
+			local_unrest = -1
+			local_governing_cost = -0.1
+		}
+		country_modifiers = {
+			monthly_karma_accelerator = 0.05
+			reverse_relation_with_same_religion = 20
+			missionary_maintenance_cost = -0.125
+			improve_relation_modifier = 0.125
+			monthly_splendor = 0.5
+		}
+		on_upgraded = {
+			add_splendor = 200
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			local_religious_unity_contribution = 0.25
+			local_defender_dice_roll_bonus = 1
+			local_defensiveness = 0.15
+			local_governing_cost = -0.1
+		}
+		area_modifier = {
+			local_unrest = -2
+			local_tax_modifier = 0.15
+			local_defensiveness = 0.1
+			local_development_cost = -0.1
+			local_governing_cost = -0.15
+		}
+		country_modifiers = {
+			monthly_karma_accelerator = 0.075
+			tolerance_own = 1
+			reverse_relation_with_same_religion = 25
+			all_estate_loyalty_equilibrium = 0.05
+			missionary_maintenance_cost = -0.15
+			improve_relation_modifier = 0.15
+			monthly_splendor = 1
+		}
+		on_upgraded = {
+			add_splendor = 250
+		}
+	}
+}
+
+chittor_fort = {
+	
+	start = 518
+	
+	date = 775.01.01
+	
+	time = {
+		months = 12
+	}
+	
+	build_cost = 1000
+	
+	can_be_moved = no
+	
+	move_days_per_unit_distance = 10
+	
+	starting_tier = 1
+	
+	type = monument
+	
+	
+	build_trigger = {
+		is_state_core = owner
+	}
+	
+	on_built = {
+	}
+	
+	on_destroyed = {
+	}
+	
+	can_use_modifiers_trigger = {
+		is_state_core = owner
+	}
+	
+	can_upgrade_trigger = {
+		is_state_core = owner
+	}
+	
+	keep_trigger = {
+	}
+
+	#tier data
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			min_local_autonomy = -5
+			province_trade_power_value = 1
+			statewide_governing_cost = -0.15
+			supply_limit_modifier = 0.1
+			local_garrison_damage = 0.25
+			local_garrison_size = 0.2
+			local_defensiveness = 0.1
+			local_hostile_attrition = 1
+			max_attrition = 1
+		}
+		area_modifier = {
+			local_monthly_devastation = -0.5
+		}
+		country_modifiers = {
+			assault_fort_ability = 0.05
+			assault_fort_cost_modifier = -0.15
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			min_local_autonomy = -10
+			province_trade_power_value = 2
+			statewide_governing_cost = -0.25
+			supply_limit_modifier = 0.2
+			local_garrison_damage = 0.5
+			local_garrison_size = 0.4
+			local_defensiveness = 0.2
+			local_hostile_attrition = 2
+			max_attrition = 2
+		}
+		area_modifier = {
+			local_monthly_devastation = -0.75
+			local_manpower_modifier = 0.1
+		}
+		country_modifiers = {
+			assault_fort_ability = 0.1
+			assault_fort_cost_modifier = -0.2
+			max_absolutism = 5
+			mil_advisor_cost = -0.05
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			province_trade_power_value = 4
+			statewide_governing_cost = -0.33
+			supply_limit_modifier = 0.25
+			local_garrison_damage = 0.75
+			local_garrison_size = 0.4
+			local_defensiveness = 0.25
+			fort_level = 1
+		}
+		area_modifier = {
+			min_local_autonomy = -10
+			local_monthly_devastation = -0.75
+			local_manpower_modifier = 0.15
+			local_defensiveness = 0.1
+			local_hostile_attrition = 2
+			max_attrition = 2
+		}
+		country_modifiers = {
+			assault_fort_ability = 0.15
+			assault_fort_cost_modifier = -0.25
+			artillery_levels_available_vs_fort = 1
+			max_absolutism = 5
+			governing_capacity = 50
+			mil_advisor_cost = -0.1
+		}
+		on_upgraded = {
+		}
+	}
+}

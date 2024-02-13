@@ -40,5 +40,14 @@ spriteTypes = {
         texturefile = "gfx//interface//great_projects//great_project_dambulla_caves.dds"
     }
 	
+	spriteType = {
+        name = "GFX_great_project_chittor_fort"
+        texturefile = "gfx//interface//great_projects//great_project_chittor_fort.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_great_project_girnar_hill"
+        texturefile = "gfx//interface//great_projects//great_project_girnar_hill.dds"
+    }
 }
 	
