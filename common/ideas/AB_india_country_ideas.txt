@@ -2324,3 +2324,46 @@ KMR_ideas = {
 		administrative_efficiency = 0.05
 	}
 }
+
+#Eastern Chalukyan Ideas
+ECL_ideas = {
+	start = {
+		fabricate_claims_cost = -0.2
+		global_ship_trade_power = 0.15
+	}
+	
+	bonus = {
+		manpower_in_true_faith_provinces= 0.15
+	}
+	
+	trigger = {
+		tag = ECL
+	}
+	free = yes
+
+	ECL_surviving_army = {
+		land_morale = 0.075
+		shock_damage_received = -0.05
+	}
+	ECL_eastern_ports = {
+		transfer_trade_power_reasons = 10
+		placed_merchant_power_modifier = 0.2
+	}
+	ECL_relations_with_cholas = {
+		diplomatic_reputation = 1
+	}
+	ECL_hindu_monarchy = {
+		country_admin_power = 1
+	}
+	ECL_religion = {
+		tolerance_own = 1
+		same_religion_advisor_cost = -0.1
+	}
+	ECL_architecture_literature = {
+		stability_cost_modifier = -0.75
+		build_cost = -0.75
+	}
+	ECL_vengi_trade = {
+		trade_efficiency = 0.1
+	}
+}

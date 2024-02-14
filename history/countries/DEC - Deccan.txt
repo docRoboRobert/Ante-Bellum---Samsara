@@ -1,0 +1,31 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = kannada
+add_accepted_culture = marathi
+religion = hinduism
+technology_group = indian
+capital = 545
+
+1724.1.1 = {
+	monarch = {
+		name = "Asaf Jah I" #Qamar-ud-din Khan
+		dynasty = "Asaf Jahi"
+		DIP = 4
+		ADM = 3
+		MIL = 5
+	}
+}
+
+1724.1.1 = {
+	heir = {
+		name = "Muhammad Nasr Jang"
+		monarch_name = "Muhammad Nasr Jang"
+		dynasty = "Asaf Jahi"
+		birth_date = 1712.2.26
+		death_date = 1750.12.16
+		claim = 95
+		ADM = 2
+		DIP = 1
+		MIL = 2
+	}
+}

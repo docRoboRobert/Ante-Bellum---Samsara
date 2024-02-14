@@ -979,3 +979,22 @@
  KMR_administration:0 "Kamarupan Administration"
  KMR_administration_desc:0 "The entire kingdom was divided into a hierarchy of administrative divisions. From the highest to the lowest, they were bhukti, mandala, vishaya, pura (towns), agrahara (collection of villages) and grama (village). These units were administered by headed by rajanya, rajavallabha, vishayapati and so on. Some other offices were nyayakaranika, vyavaharika, kayastha etc., led by the adhikara. They dispensed judicial duties too, though the ultimate authority lay with the king. Law enforcement and punishments were made by officers called dandika, (magistrate) and dandapashika (one who executed the orders of a dandika)."
  
+ #Eastern Chalukyas
+ ECL_ideas:0 "Eastern Chalukyan Ideas"
+ ECL_ideas_start:0 "Eastern Chalukyan Traditions"
+ ECL_ideas_bonus:0 "Eastern Chalukyan Ambition"
+ ECL_surviving_army:0 "Enduring Chalukyan Army"
+ ECL_surviving_army_desc:0 "The army of Chalukya is well organised, which was the reason why we managed to prevail and re-establish ourselves on the Eastern Coast. It consists of an infantry, a cavalry, an elephant corps and a powerful navy for coastal support. We survived great turmoil, now we can turn and face the strange."
+ ECL_eastern_ports:0 "Eastern Ports"
+ ECL_eastern_ports_desc:0 "Being situated on the eastern side of the Indian Coast, we have siezed and established ourselves in the key ports of the region. This allows us to established an intertwined, and primarily, profitable web of trade routes that bring us goods from Burma and Malacca."
+ ECL_relations_with_cholas:0 "Relationship with the Tamils"
+ ECL_relations_with_cholas_desc:0 "In the past centuries, our dynasty has kept close relations with Tamil states. Namely, the Cholas. Both diplomatic and marital. Our experience in statecraft, allowed us to use their help in order to survive external threats. We could use the diplomatic tradition to our future benefit."
+ ECL_hindu_monarchy:0 "Chalukyan Hindu Monarchy"
+ ECL_hindu_monarchy_desc:0 "The Eastern Chalukyan government was a monarchy based on the Hindu philosophy. Its principles refer to the traditional seven components of the state (Saptanga), and the eighteen Tirthas (Offices). Its legacy still empowers us to this day."
+ ECL_religion:0 "Buddhist Virtues"
+ ECL_religion_desc:0 "Hinduism is the prominent religion of the Eastern Chalukya kingdom, with Shaivism being more popular than Vaishnavism. Dynasty has erected many temples, such as the one in The Mahasena temple at Chebrolu, which became famous for its annual Jatra, which involves a procession of the deity's idol from Chebrolu to Vijayawada and back. Some of the rulers even declared themselves as Parama Maheswaras (Emperors). The Buddhist religious centres eventually attained great celebrity as Siva pilgrim centres. Many rulers take active interest in the construction of temples. The temple establishments like dancers and musicians show off that they are not only a centre of religious worship but a fostering ground for fine arts."
+ ECL_architecture_literature:0 "Chalukyan Architecture and Arts"
+ ECL_architecture_literature_desc:0 "Due to the widely spread Shiva devotional practice in the kingdom, the Eastern Chalukyan kings undertake the construction of temples on a large scale. The state also heavily invests in literature, with many works of Telugu poetry and sanskrit scripts prtinted. The more important ones, even being engraved on copper plates."
+ ECL_vengi_trade:0 "Vengi Trade"
+ ECL_vengi_trade_desc:0 "Eastern Chalukyas built their power around Vengi (Andhra) region, which is being heavily developed due to that. The region is rich in arable land and thanks to the estuaries of Godavari and Krishna Rivers, it collects luxury goods from most of Deccan Region. By investing heavily in the trade posts, we can make a bank and spread our enterprise."
+ 
