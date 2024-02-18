@@ -74,6 +74,9 @@
  abi_deccan_formation_title:0 "Unite Deccan Plateau"
  abi_deccan_formation_desc:0 "The time has come to unite the scattered plateau and rule it all under the new state of greater Deccan."
  deccan_formation_tooltip:0 "With the new Deccan nation proclaimed, it becomes obvious what is our rightful domain. Receive §Ypermanent claims§! on every province within §YDeccan Region§!."
+ abi_united_maratha_formation_title:0 "@MAR Re-unite Marathas @MAR"
+ abi_united_maratha_formation_desc:0 "After the fall of first Maratha Confederacy, Marathi people have been left without clear state identity. We can revert that and revive unified Marathas state if we manage to once again secure key forts and areas of Maratho homeland. With that, the Maratha warriors will once again gather under our strong leadership and begin marching under one banner."
+ marathas_formation_tooltip:0 "Marathi state is once again united! Our brothers and sisters may be unified under one common banner. Maratho realm is now rightfully ours and people living within it will confirm it. Thus, we will gain §Gcore on every province with§! §MMarathi§! §Gor§! §MKonkan§! §Gculture§!."
  
  #Malankara decisions
  

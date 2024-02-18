@@ -2499,4 +2499,92 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
+	
+	abi_united_maratha_formation = {
+		major = yes
+		potential = {
+			NOT = { tag = MAR }
+			primary_culture = marathi
+			NOT = { has_country_flag = united_marathas_flag }
+			NOT = { exists = DEC }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4437
+				province_id = 4442
+				province_id = 545
+				province_id = 4433
+				province_id = 4432
+				province_id = 2034	#1
+				province_id = 4435	#1
+				province_id = 544	#1
+				province_id = 4438	#2
+				province_id = 5226	#2
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			is_subject = no
+			NOT = { tag = MAR }
+			NOT = { exists = MAR }
+			primary_culture = marathi
+			NOT = { exists = DEC }
+			owns_core_province = 4437
+			owns_core_province = 4442
+			owns_core_province = 545
+			owns_core_province = 4433
+			owns_core_province = 4432
+			OR = {
+				owns_core_province = 2034
+				owns_core_province = 4435
+				owns_core_province = 544
+			}
+			OR = {
+				owns_core_province = 4438
+				owns_core_province = 5226
+			}
+		}
+		effect = {
+			change_tag = MAR
+			restore_country_name = yes
+			add_prestige = 20
+			set_capital = 4437
+			set_government_rank = 2
+			4437 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = united_marathas_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			custom_tooltip = marathas_formation_tooltip
+			hidden_effect = {
+				every_province = {
+					limit = { 
+						OR = {
+							culture = marathi
+							culture = konkan
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 10
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
 }

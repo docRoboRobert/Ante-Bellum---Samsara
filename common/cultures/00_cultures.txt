@@ -9253,6 +9253,8 @@ western_aryan = {
 	}
 	marathi = {
 		primary = MAR
+		primary = BHI
+		primary = STR
 		dynasty_names = {
 			"Bhonsle" "Gaikwar" "Bhat" "Sindhia" "Koli" "Sinda" "Kamadeva" "Gaitonde" "Malviya" "Ruddha"
 		}
@@ -9565,6 +9567,9 @@ western_aryan = {
 		}
 	}
 	bhili = {
+		primary = LTP
+		primary = CMP
+		primary = SNT
 		dynasty_names = {
 			"Bhil" "Holkar" "Qadirid" "Shaja'atid" "Khalji"
 		}
@@ -9585,6 +9590,7 @@ western_aryan = {
 		}
 	}
 	saraiki = {
+		primary = MUL
 		dynasty_names = {
 			"Saurai" "Saraik" "Holkar" "Qadirid" "Shaja'atid" "Khalji"
 			"Kohkkar" "Gakhkhar" "Phulkian" "Bhullara" "Dhaliwala" "Sandhawalia" "Ahluwalia" "Langa" 
@@ -9612,6 +9618,7 @@ western_aryan = {
 		}
 	}
 	zorathi = {
+		primary = BRH
 		dynasty_names = {
 			"Bhonsle" "Gaikwar" "Bhat" "Sindhia" "Koli" "Sinda" "Kamadeva" "Gaitonde" "Malviya" "Ruddha"
 			"Zorkind" "Aurachasi" "Churha" "Churganai" "Mazdatki" "Gilwarh" "Jaaringid" "Keltan" "Vishizawan"
@@ -9653,6 +9660,7 @@ western_aryan = {
 		}
 	}
 	khandesh = {
+		primary = KHD
 		dynasty_names = {
 			"Thaldesh" "Laling" "Khand" "Khandeshan" "Tripari" "Holkar" "Qadirid" "Shaja'atid" "Khalji"
 		}
@@ -9769,6 +9777,7 @@ western_aryan = {
 		}
 	}
 	saraihizan = {
+		primary = SHS
 		dynasty_names = {
 			"Barchidios" "Dyrrykani" "Anegheli" "Aengelihi" "Saurai" "Saraik" "Holkar" "Shaja'atid" "Khalji"
 			"Geoledion" "Kohkkar" "Gakhkhar" "Phulkian" "Bhullara" "Dhaliwala" "Sandhawalia" "Ahluwalia" "Langa" 
@@ -9799,6 +9808,8 @@ western_aryan = {
 	}
 	panjabi = {
 		primary = PUN
+		primary = SRH
+		primary = LAH
 		dynasty_names = {
 			"Kohkkar" "Gakhkhar" "Phulkian" "Bhullara" "Dhaliwala" "Sandhawalia" "Ahluwalia" "Langa" 
 			"Mirrani" "Abbasi"
