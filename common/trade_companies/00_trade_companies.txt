@@ -106,8 +106,8 @@ trade_company_east_india = {
 		562 2045 2046 4486 #north_bengal_area
 		563 2044 4479 5307 #gaur_area
 		568 579 2402 #arakan_area
-		558 4469 4472 4489 5205 #bihar_area
-		2047 4484 4487 4488 5206 #mithila_area
+		558 4469 4472 4489 5311 #bihar_area
+		2047 4484 4487 4488 5312 #mithila_area
 	}
 	
 	# Specific
@@ -225,12 +225,12 @@ trade_company_north_india = {
 		2061 4498 4499 #katehar_area
 		519 520 2064 4500 #jaipur_area
 		523 2094 4494 4495 4497 5233 #oudh_area
-		555 2055 2095 4490 5207 5209 #purvanchal_area
+		555 2055 2095 4490 5313 5315 #purvanchal_area
 		524 556 2063 4496 5234 5235 #lower_doab_area
 		525 528 740 4464 4465 5232 5236 5253 #gird_area
 		559 2059 4459 4466 4467 #bundelkhand_area
 		2097 2098 4468 #baghelkhand_area
-		4491 4492 554 5210 5211 #baisi_rajya_area
+		4491 4492 554 5316 5211 #baisi_rajya_area
 		509 511 2069 4493 5260 5261 #himalayan_hills_area
 	}
 	
@@ -655,7 +655,7 @@ trade_company_genua = {
 		118 2976 4731 4732 # lazio-umbria
 		121 2983 4734 # campania
 		104 1862 2979 4728 4740 # Lombardy
-		4975
+		4975 5209 5210
 	}
 	
 	# Specific
@@ -1352,7 +1352,7 @@ trade_company_lhasa = {
 	color = { 106 112 138 }
 	
 	provinces = {
-		2129 2128 676 705 706 2134 4204 677 2130 4205 5208 5262 5263 5264 5265
+		2129 2128 676 705 706 2134 4204 677 2130 4205 5314 5262 5263 5264 5265
 		565 4481 4482 #bhutan_area
 		557 2070 2071 4483 4485 #nepal_area
 		4514 4515 4516 4517 4518 4519 4520 #new tibetan provinces

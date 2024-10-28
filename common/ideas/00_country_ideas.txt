@@ -481,6 +481,7 @@ NED_ideas = {
 			tag = FII
 			tag = UNN
 		}
+		NOT = { has_country_flag = ned_united_crowns_flag }
 	}
 	free = yes		#will be added at load.
 	
@@ -521,7 +522,10 @@ DAN_ideas = {
 	}
 	
 	trigger = {
-		tag = DAN
+		OR = {
+			tag = DAN
+			tag = DNK
+		}
 	}
 	free = yes		#will be added at load.
 
@@ -944,7 +948,10 @@ SIE_ideas = {
 	}
 	
 	trigger = {
-		tag = SIE
+		OR = {
+			tag = SIE
+			tag = GRS
+		}
 	}
 	free = yes		#will be added at load.
 	
@@ -1271,48 +1278,40 @@ POR_ideas = {
 HAB_ideas = {
 	start = {
 		land_morale = 0.10
-		improve_relation_modifier = 0.3
+		garrison_size = 0.2
 	}
 	
 	bonus = {
-		heir_chance = 0.50
+		discipline = 0.05
 	}
 	
 	trigger = {
-		OR = {
-			tag = HAB
-			AND = {
-				tag = STY
-				dynasty = "von Habsburg"
-			}
-		}
+		tag = HAB
 	}
 	free = yes		#will be added at load.
 
-	imperial_ambitions = {
-		imperial_authority = 0.1
-		diplomatic_annexation_cost = -0.15
+	hab_first = {
+		army_tradition = 1
+		morale_damage_received = -0.05
 	}
-	military_border = {
-		global_garrison_growth = 0.15
-		fort_maintenance_modifier = -0.10
+	hab_second = {
+		fort_maintenance_modifier = -0.25
+		defensiveness = 0.25
 	}
-	fugger_banks = {
-		inflation_reduction = 0.05
-		interest = -0.5
+	hab_third = {
+		land_forcelimit_modifier = 0.2
 	}
-	habsburg_dominance = {
+	hab_fourth = {
 		diplomatic_reputation = 2
 	}
-	edict_of_restitution = {
+	hab_fifth = {
 		global_missionary_strength = 0.02
 	}
-	austrian_court = {
-		diplomatic_upkeep = 1
+	hab_sixth = {
+		global_trade_goods_size_modifier = 0.1
 	}
-	hofkriegsrat = {
-		reinforce_speed = 0.3
-		discipline = 0.05
+	hab_seventh = {
+		shock_damage_received = -0.15
 	}
 }
 
@@ -1921,46 +1920,6 @@ BOH_ideas = {
 	}
 }
 
-
-ITA_ideas = {
-	start = {
-		global_trade_power = 0.20
-		improve_relation_modifier = 0.50
-	}
-	
-	bonus = {
-		defensiveness = 0.20
-	}
-	
-	trigger = {
-		tag = ITA
-	}
-	free = yes
-	
-	no_a_geographical_construct = {
-		stability_cost_modifier = -0.10
-	}
-	tradition_of_the_legion = {
-		infantry_power = 0.15
-	}
-	mare_nostrum = {
-		galley_cost = -0.15
-		galley_power = 0.20
-	}
-	office_of_censor = {
-		global_manpower_modifier = 0.33
-	}
-	italian_tax_reform = {
-		global_tax_modifier = 0.15
-	}
-	heir_to_the_empire = {
-		prestige = 1
-	}
-	path_to_citizenship = {
-		core_creation = -0.25
-	}
-}
-
 MJZ_ideas = {
 	start = {
 		land_morale = 0.1
@@ -2398,50 +2357,6 @@ SPI_ideas = {
 		ae_impact = -0.1
 	}
 }
-
-
-SAX_ideas = {
-	start = {
-	   	advisor_cost = -0.1
-		development_cost = -0.1
-	}
-	
-	bonus = {
-		prestige = 1.0
-	}
-	
-	trigger = {
-		tag = SAX
-	}
-	free = yes		#will be added at load.
-	
-	albertine_and_ernestine = {
-		diplomats = 1
-	}
-	meissner_porcelain = {
-		global_trade_goods_size_modifier = 0.1
-	}
-	the_zwinger = {
-		diplomatic_reputation = 1
-	}
-	wittenberg_university = {
-	 	tolerance_heretic = 3
-	}
-	corpus_evangelicorum = {
-		diplomatic_upkeep = 1
-		church_power_modifier = 0.10
-	}
-	sax_principal_line = {
-		global_tax_modifier = 0.10
-	}
-	the_saxon_circle = {
-		discipline = 0.05
-	}
-}
-
-
-
-
 MAR_ideas = {
 	start = {
 		manpower_recovery_speed = 0.15
@@ -2645,46 +2560,6 @@ PAP_ideas = {
 		ae_impact = -0.10
 	}
 }
-
-
-SER_ideas = {
-	start = {
-		manpower_recovery_speed = 0.15
-		reinforce_speed = 0.15
-	}
-	
-	bonus = {
-		infantry_power = 0.10
-	}
-	
-	trigger = {
-		tag = SER
-	}
-	free = yes
-	
-	code_of_laws = {
-		global_unrest = -1
-	}
-	bastion_of_orthodoxy = {
-		stability_cost_modifier = -0.1
-	}
-	home_of_hussars = {
-		cavalry_cost = -0.1
-	}	
-	alemannic_guard = {
-		cavalry_power = 0.15
-	}
-	gold_mines = {
-		production_efficiency = 0.1
-	}
-	mercenary_armies = {
-		merc_maintenance_modifier = -0.15
-	}	
-	balkan_hajduks = {
-		land_morale = 0.10
-	}
-}
-
 
 ORI_ideas = {
 	start = {
@@ -2904,6 +2779,7 @@ TUS_ideas = {
 			tag = TUS
 			tag = LAN #Florence
 		}
+		NOT = { has_country_flag = tus_evolved_ideas }
 	}
 	free = yes
 	
@@ -5018,45 +4894,6 @@ ATH_ideas = {
 	athenian_army_reform = {
 		infantry_power = 0.05
 		artillery_power = 0.05		
-	}
-}
-
-ALB_ideas = {
-	start = {
-		defensiveness = 0.2
-		manpower_recovery_speed = 0.10		
-	}
-	
-	bonus = {
-		army_tradition_decay = -0.01
-	}
-	
-	trigger = {
-		tag = ALB
-	}
-	free = yes
-	
-	all_lands_under_skanderbeg = {
-		land_forcelimit_modifier = 0.2
-	}
-	land_of_ambushers = {
-		leader_land_manuever = 1		
-	}
-	kingdom_of_albania = {
-		prestige = 1
-	}
-	hit_and_run = {
-		cavalry_flanking = 0.5
-	}
-	land_of_eagles = {
-		stability_cost_modifier = -0.1
-	}
-	albanian_tolerance = {
-		tolerance_heretic = 1
-		tolerance_heathen = 1		
-	}
-	break_the_princes = {
-		global_manpower_modifier = 0.15
 	}
 }
 
@@ -14608,54 +14445,6 @@ EPI_ideas = {
 	}
 }
 
-LAE_ideas = {
-	start = {
-        discipline = 0.05
-        global_heretic_missionary_strength = 0.03
-	}
-	
-	bonus = {
-		missionaries = 1
-	}
-	
-	trigger = {
-		tag = LAE
-	}
-	free = yes
-    
-    lae_emperor_constantinople = {
-		legitimacy = 1
-		devotion = 1
-		republican_tradition = 0.3
-		meritocracy = 1
-		horde_unity = 1
-        vassal_forcelimit_bonus = 1
-    }
-    lae_latin_patriarch = {
-        papal_influence = 2
-        curia_powers_cost = -0.1
-    }
-    lae_byzantine_bureaucracy = {
-        advisor_cost = -0.1
-        stability_cost_modifier = -0.1
-    }
-    lae_guilds_pera = {
-        global_trade_power = 0.1
-        galley_power = 0.1
-    }
-    epi_latin_knights = {
-        #cavalry_power = 0.15 same as Epirus
-    }
-    lae_partitio_graeci = {
-        warscore_cost_vs_other_religion = -0.1
-        unjustified_demands = -0.25
-    }
-    lae_frankokratia = {
-        diplomatic_reputation = 1
-        manpower_in_true_faith_provinces = 0.15
-    }
-}
-
 FKN_ideas = {
 	start = {
 		ae_impact = -0.1
@@ -16383,5 +16172,382 @@ FU2_ideas = {
 	}
 	regularised_contribution = {
 		global_prov_trade_power_modifier = 0.20
+	}
+}
+
+# UKR_ideas = {
+# 	start = {
+# 		manpower_recovery_speed = 0.2
+# 		morale_damage_received = -0.1
+# 	}
+
+# 	bonus = {
+# 		discipline = 0.05
+# 	}
+ 
+# 	trigger = {
+# 		tag = UKR
+# 	}
+# 	free = yes
+ 
+# 	mother_of_russian_cities = { #Mother of Russian States
+# 		legitimacy = 1
+# 		devotion = 1
+# 		republican_tradition = 0.3
+# 		meritocracy = 1
+# 		horde_unity = 1
+# 		prestige = 1
+# 	}
+# 	international_influences = {
+# 		num_accepted_cultures = 2
+# 		promote_culture_cost = -0.25
+# 	}
+# 	zaporizhian_cossacs = {
+# 		cavalry_power = 0.15
+# 		cossacks_privilege_slots = 1
+# 	}
+# 	east_and_west = {
+# 		global_trade_power = 0.1
+# 	}
+# 	legacy_of_ancient_rus = {
+# 		stability_cost_modifier = -0.1
+# 	}
+# 	reuniting_rus = {
+# 		core_creation = -0.1
+# 		years_of_nationalism = -5
+# 	}
+# 	birth_of_russian_orthodoxy = {
+# 		tolerance_own = 2
+# 		yearly_patriarch_authority = 0.005
+# 	}
+# }
+
+#1.36
+#(Great) Armenia
+
+ARM1_ideas = {
+	start = {
+		war_exhaustion = -0.05
+		recover_army_morale_speed = 0.10
+	}
+
+	bonus = {
+		hostile_attrition = 1
+	}
+	
+	trigger = {
+		OR = {
+			tag = ARM
+			tag = MLK
+		}
+		has_country_flag = arm_great_armenian_ideas
+	}
+	free = yes		#will be added at load.
+	
+	apostolic_church = {
+		global_missionary_strength = 0.02
+		prestige_per_development_from_conversion = 0.25
+	}
+	land_reclamation1 = {
+		development_cost = -0.15
+	}
+	border_nation = {
+		diplomatic_reputation = 1
+	}
+	melikdom_organization1 = {
+		global_tax_modifier = 0.2
+	}
+	sygnakhs = {
+		global_regiment_cost = -0.1
+	}
+	nakharar_titles1 = {
+		army_tradition = 1
+	}
+	end_of_armenian_diaspora1 = {
+		production_efficiency = 0.1
+		manpower_in_own_culture_provinces = 0.2
+	}
+}
+
+ARB_ideas = {
+	start = {
+		tolerance_own = 2
+		years_of_nationalism = -10
+	}
+
+	bonus = {
+		siege_ability = 0.15
+	}
+
+	trigger = {
+		tag = ARB
+	}
+	free = yes
+
+	ARB_arabian_pincers = {
+		cav_to_inf_ratio = 0.25
+		cavalry_power = 0.25
+	}
+	ARB_pact_of_umar = {
+		dhimmi_loyalty_modifier = 0.1
+		global_tax_modifier = 0.2
+	}
+	ARB_engage_in_indian_ocean_trade = {
+		trade_steering = 0.2	
+	}
+	ARB_conversion = {
+		global_missionary_strength = 0.03
+	}
+	ARB_jihad = {
+		warscore_cost_vs_other_religion = -0.1
+	}
+	ARB_new_caliphate_rising = {
+		missionaries = 2
+	}
+	ARB_mubarizun = {
+		army_tradition_decay = -0.01
+	}
+}
+
+EGY_ideas = {
+	start = {
+		trade_efficiency = 0.1
+		administrative_efficiency = 0.05
+	}
+
+	bonus = {
+		free_policy = 1
+	}
+	
+	trigger = {
+		tag = EGY
+	}
+	free = yes		#will be added at load.
+	
+	egy_centralization_works = {
+		development_cost = -0.1
+	}
+	training_missions_in_egypt = {
+		country_military_power = 1
+	}
+	legacy_of_the_karimis = {
+		burghers_loyalty_modifier = 0.1
+	}
+	nile_production = {
+		production_efficiency = 0.10
+	}
+	westernize_the_military = {
+		max_general_fire = 1
+		fire_damage = 0.1
+	}
+	mediterranean_shipwrights = {
+		sea_repair = yes
+	}
+	crossroads_between_europe_and_africa = {
+		global_trade_power = 0.1
+	}
+}
+
+AYB_ideas = {
+	start = {
+		shock_damage_received = -0.1
+		global_tax_modifier = 0.2
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	trigger = {
+		tag = HSN
+		has_country_flag = hsn_ayyubid_ideas
+	}
+	free = yes
+	
+	hsn2_citadels_and_fortesses = {
+		defensiveness = 0.2
+	}
+	hsn2_ayyubid_heritage = {
+		global_manpower_modifier = 0.25
+	}
+	hsn2_righteousness_of_the_faith = {
+		land_morale = 0.1
+	}
+	hsn2_elite_warriors = {
+		cavalry_power = 0.1
+		cav_to_inf_ratio = 0.25
+	}
+	hsn2_rise_of_the_eagle = {
+		core_creation = -0.25
+	}
+	hsn2_strenghten_central_authority = {
+		stability_cost_modifier = -0.1
+	}
+	hsn2_state_economics = {
+		global_trade_goods_size_modifier = 0.15
+	}
+}
+
+# UCN_ideas = {
+# 	start = {
+# 		trade_efficiency = 0.15
+# 		fire_damage = 0.1
+# 	}
+	
+# 	trigger = {
+# 		has_country_flag = ned_united_crowns_flag
+# 		tag = NED 
+# 	}
+# 	free = yes
+	
+# 	bonus = {
+# 		naval_morale = 0.15
+# 	}		
+	
+# 	reform_of_comission_buying = {
+		
+# 	}
+# 	british_industrialization = {
+		
+# 	}
+# 	instructie_voor_de_admiraliteiten = {
+		
+# 	}
+# 	dutch_trading_spirit = {
+		
+# 	}
+# 	army_sappers = {
+		
+# 	}
+# 	amsterdam_wisselbank = {
+		
+# 	}
+# 	city_upon_a_hill = {
+		
+# 	}
+# }
+
+AUH_ideas = {
+	start = {
+		land_morale = 0.1
+		diplomatic_reputation = 2
+	}
+	
+	bonus = {
+		no_religion_penalty = yes
+	}
+	
+	trigger = {
+		tag = AUH
+	}
+	free = yes		
+	
+	auh_first = {
+		discipline = 0.05
+	}
+	auh_second = {
+		manpower_in_accepted_culture_provinces = 0.3
+	}
+	auh_third = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	auh_fourth = {
+		global_unrest = -1
+	}
+	auh_fifth = {
+		state_governing_cost = -0.2
+	}
+	auh_sixth = {
+		global_prov_trade_power_modifier = 0.25
+	}
+	auh_seventh = {
+		artillery_power = 0.1
+		artillery_cost = -0.1
+	}
+}
+
+# GMA_ideas = {
+# 	start = {
+# 		global_manpower_modifier = 0.25
+# 		global_trade_goods_size_modifier = 0.1
+# 	}
+	
+# 	bonus = {
+# 		max_absolutism_effect = 0.15
+# 	}	
+
+# 	trigger = {
+# 		tag = GMA
+# 	}
+# 	free = yes
+	
+# 	gma_reforge_moravias_hegemony = {
+# 		overextension_impact_modifier = -0.25
+# 	}
+# 	gma_apostles_to_the_slavs = {
+# 		missionaries = 1
+# 	}
+# 	gma_princes_of_nitra_kings_of_moravia = {
+# 		monarch_admin_power = 1
+# 	}
+# 	gma_rebuild_veligrad = {
+# 		build_time = -0.1
+# 		development_cost = -0.05
+# 	}
+# 	gma_rex_sclavorum = {
+# 		legitimacy = 1
+# 		devotion = 1
+# 		republican_tradition = 0.3
+# 		meritocracy = 1
+# 		horde_unity = 1
+# 	}
+# 	gma_canonize_cyril_methodius = {
+# 		tolerance_own = 3
+# 	}
+# 	gma_svatopluks_legacy = {
+# 		discipline = 0.05
+# 		max_absolutism = 5
+# 	}
+# }
+
+voc_ideas = {
+	start = {
+		no_religion_penalty = yes
+		global_prov_trade_power_modifier = 0.1
+	}
+	
+	bonus = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	
+	trigger = {
+		tag = VOC
+	}
+	free = yes
+	
+	voc_1 = {
+		global_unrest = -2
+		global_autonomy = -0.05
+	}
+	voc_2 = {
+		years_of_nationalism = -5
+		core_creation = -0.1
+	}
+	voc_3 = {
+		development_cost = -0.05
+	}
+	voc_4 = {
+		governing_capacity_modifier = 0.15
+		merchants = 1
+	}
+	voc_5 = {
+		build_cost = -0.15
+		naval_forcelimit_modifier = 0.1
+	}
+	voc_6 = {
+		movement_speed = 0.1
+		land_attrition = -0.15
+	}
+	voc_7 = {
+		global_manpower_modifier = 0.15
+		land_forcelimit_modifier = 0.1
 	}
 }

@@ -402,6 +402,7 @@ gbr_emperor_of_india_overlord_bonus = {
 	trade_efficiency = 0.1
 	reduced_trade_penalty_on_non_main_tradenode = 0.25
 }
+
 same_culture_group = {
 	local_tax_modifier = -0.15				#10% penalty if same culture group but nothing else. Not applied if the controller is the Union Tag of the culture group, or has culture_group_union set.
 	local_manpower_modifier = -0.15
@@ -409,7 +410,7 @@ same_culture_group = {
 }
 
 non_accepted_culture = {
-	#monthly_persian_influence = -0.01							   
+	#monthly_persian_influence = -0.01
 	local_tax_modifier = -0.33
 	local_missionary_strength = -0.02
 	local_manpower_modifier = -0.33
@@ -486,7 +487,7 @@ intolerance = {
 unrest = {
 	regiment_recruit_speed = 0.1			#10% longer time to build troops for each rr
 	ship_recruit_speed = 0.1
-	local_tax_modifier = -0.02					   
+	local_tax_modifier = -0.02
 }
 
 nationalism = {
@@ -703,18 +704,18 @@ bank_loan = {
 }
 
 inflation = {
-	build_cost = 0.01						#1% for each inflation step.
-	infantry_cost = 0.01					#1% for each inflation step
-	cavalry_cost = 0.01						#1% for each inflation step
-	artillery_cost = 0.01					#1% for each inflation step
-	heavy_ship_cost = 0.01					#1% for each inflation step
-	light_ship_cost = 0.01					#1% for each inflation step
-	galley_cost = 0.01						#1% for each inflation step
-	transport_cost = 0.01					#1% for each inflation step
-	flagship_cost = 0.01					#1% for each inflation step
-	advisor_cost = 0.01						#1% for each inflation step
-	mercenary_cost = 0.01					#1% for each inflation step
-	fort_maintenance_modifier = 0.01		#1% for each inflation step
+	build_cost = 0.01									#1% for each inflation step.
+	infantry_cost = 0.01								#1% for each inflation step
+	cavalry_cost = 0.01									#1% for each inflation step
+	artillery_cost = 0.01								#1% for each inflation step
+	heavy_ship_cost = 0.01								#1% for each inflation step
+	light_ship_cost = 0.01								#1% for each inflation step
+	galley_cost = 0.01									#1% for each inflation step
+	transport_cost = 0.01								#1% for each inflation step
+	flagship_cost = 0.01								#1% for each inflation step
+	advisor_cost = 0.01									#1% for each inflation step
+	mercenary_cost = 0.01								#1% for each inflation step
+	fort_maintenance_modifier = 0.01					#1% for each inflation step
 	missionary_maintenance_cost = 0.01					#1% for each inflation step
 	colony_cost_modifier = 0.01							#1% for each inflation step
 	great_project_upgrade_cost = 0.01					#1% for each inflation step
@@ -724,7 +725,7 @@ inflation = {
 	center_of_trade_upgrade_cost = 0.01					#1% for each inflation step
 	trade_company_investment_cost = 0.01				#1% for each inflation step
 	state_maintenance_modifier = 0.01					#1% for each inflation step
-	monthly_russian_modernization = -0.01								  
+	monthly_russian_modernization = -0.01
 }
 
 bankruptcy = {
@@ -743,18 +744,18 @@ bankruptcy = {
 	monthly_militarized_society = -0.5
 	monthly_prussian_militarized_society_1 = 0.02
 	monthly_prussian_militarized_society_2 = 0.05
-	monthly_prussian_militarized_society_3 = 0.075										   
+	monthly_prussian_militarized_society_3 = 0.075
 	yearly_absolutism = -2.0
 	technology_cost = 0.5
 	idea_cost = 0.5
 	imperial_mandate = -0.1
 	great_project_upgrade_cost = 0.5
-	monthly_russian_modernization = -1							   
+	monthly_russian_modernization = -1
 }
 
 
 war = {
-	monthly_militarized_society = 0.1							  
+	monthly_militarized_society = 0.1
 	rr_girondists_influence = 0.15
 }
 
@@ -849,7 +850,7 @@ army_tradition = {
 	qizilbash_loyalty_modifier = 0.05
 	ghulams_loyalty_modifier = 0.05
 	allowed_tercio_fraction = 0.1
-	allowed_samurai_fraction = 0.1						   
+	allowed_samurai_fraction = 0.1
 }
 
 navy_tradition = {
@@ -864,7 +865,7 @@ navy_tradition = {
 	burghers_loyalty_modifier = 0.05
 	vaisyas_loyalty_modifier = 0.05
 	allowed_geobukseon_fraction = 0.5
-	allowed_galleass_fraction = 0.5							
+	allowed_galleass_fraction = 0.5
 }
 
 positive_piety = { #As of 1.23 Legalism
@@ -873,7 +874,7 @@ positive_piety = { #As of 1.23 Legalism
 	global_tax_modifier = 0.20
 	brahmins_muslim_loyalty_modifier = -0.1
 	church_loyalty_modifier = 0.1
-	dhimmi_loyalty_modifier = -0.1
+	piety_dhimmi_loyalty_modifier = -0.1
 }
 
 #For convenience, its multiplied by negative piety in code.
@@ -882,7 +883,7 @@ negative_piety = { #As of 1.23 Mysticism
 	global_missionary_strength = 0.03
 	idea_cost = -0.1
 	brahmins_muslim_loyalty_modifier = 0.1
-	church_loyalty_modifier = -0.1
+	piety_church_loyalty_modifier = -0.1
 	dhimmi_loyalty_modifier = 0.1
 }
 
@@ -898,7 +899,6 @@ defender_of_faith = {
 	missionaries = 1
 	devotion = 0.5
 	#monthly_asha_vahishta = 0.25
- 
 }
 
 defender_of_faith_refused_cta = {
@@ -1142,7 +1142,6 @@ prestige = {
 	monthly_fervor_increase = 1
 	ae_impact = -0.10
 	embracement_cost = -0.1
-	
 	monthly_heir_claim_increase = 0.05
 
 	#monthly_persian_influence = 0.25
@@ -1163,7 +1162,7 @@ prestige = {
 	janissaries_loyalty_modifier = 0.05
 	eunuchs_loyalty_modifier = 0.05
 	qizilbash_loyalty_modifier = 0.05
-	ghulams_loyalty_modifier = 0.05							
+	ghulams_loyalty_modifier = 0.05
 }
 
 no_debate_in_parliament = {
@@ -1199,7 +1198,7 @@ curia_controller = {
 	technology_cost = -0.05
 	church_loyalty_modifier = 0.1
 	diplomatic_reputation = 1
-	diplomatic_annexation_cost = -0.1							  
+	diplomatic_annexation_cost = -0.1
 }
 
 bought_indulgence = {
@@ -1301,6 +1300,17 @@ BYZ_army_trad = {
 BYZ_discipline = {
 	discipline = 0.05
 }
+
+soyurghal_base_overlord_modifiers = {
+	land_forcelimit_modifier = 0.05
+	soyurghals_amount_check_influence = 1 #used for exporting, invisible by default
+}
+
+soyurghal_base_modifiers = { #slightly weaker pronoia but without penalties
+	global_manpower = 5
+	global_manpower_modifier = 0.25
+	global_regiment_cost = -0.25
+}	
 
 tributary_state_behind_overlord_tech_adm = {
 	adm_tech_cost_modifier = -0.05
@@ -1430,7 +1440,7 @@ power_projection_25 = {
 #100 Land Forcelimit = 1
 land_forcelimit = {
     free_land_leader_pool = 1.25 #80 Army forcelimit -> +1 free leader
-	num_of_pronoiars = 1				 
+	num_of_pronoiars = 1
 }
 
 #100 Naval Forcelimit = 1
@@ -1561,6 +1571,7 @@ eyalet_modifier = {
 #scales to amount of up-to-date forts compared to total development
 maintained_forts = {
 	army_tradition = 1
+	nobles_loyalty_modifier_forts = 0.1 
 }
 
 gov_rank_1 = {
@@ -1714,18 +1725,15 @@ divert_trade = {
 ########################################
 
 karma_just_right = {
- 
 	diplomatic_reputation = 2
 	discipline = 0.05
 }
 
 karma_too_high = {
- 
 	diplomatic_reputation = 1
 }
 
 karma_too_low = {
- 
 	discipline = 0.025
 }
 
@@ -1839,12 +1847,10 @@ subject_expel_ronin = {
 
 overlord_sword_hunt = { # Unlike the others, this one counts per subject
 	global_regiment_cost = -0.15
-	
 }
 
 subject_sword_hunt = {
 	manpower_recovery_speed = -0.1
-	
 }
 
 supply_depot_area = {
@@ -1955,6 +1961,57 @@ expansion_focus_modifier = {
 ########################################
 # Religious Schools
 ########################################
+# AB [[[
+# Protestant/Reformed now have Religious Schools
+calvinist_scholar_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	religion = yes
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	monthly_fervor_increase = 0.5
+}
+
+puritan_scholar_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	religion = yes
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	tolerance_own = 2
+}
+
+lutheran_scholar_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	religion = yes
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	institution_spread_from_true_faith = 0.15
+}
+
+lollard_scholar_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	religion = yes
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	fire_damage_received = -0.05
+}
+
+waldensian_scholar_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	religion = yes
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	manpower_in_true_faith_provinces = 0.1
+}
+
+hussite_scholar_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	religion = yes
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	harsh_treatment_cost = -0.2
+}
+# ]]]
+
 hanafi_scholar_modifier = {
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
 	religion = yes
@@ -2056,7 +2113,7 @@ army_drill_modifier = { # Used by an entire army, is the average of all subunits
 }
 
 janissary_regiment = {
-	assault_fort_ability = 0.5					   
+	assault_fort_ability = 0.5
 	fire_damage_received = -0.1
 	shock_damage_received = -0.1
 	drill_gain_modifier = 0.5
@@ -2067,7 +2124,6 @@ cawa_regiment = {
 	shock_damage_received = -0.05
 	land_attrition = -0.5
 	reinforce_speed = 0.5
-	
 }
 
 hussars_regiment = {
@@ -2077,7 +2133,6 @@ hussars_regiment = {
 }
 
 marine_regiment = {
-	
     regiment_disembark_speed = 2
 	shock_damage_received = 0.1
 }
@@ -2099,7 +2154,12 @@ tercio_regiment = {
 }
 
 musketeer_regiment = {
-	fire_damage = 0.15
+	# AB [[[
+	# repurposed as Frankish Paladins
+	shock_damage_received = -0.25
+	fire_damage_received = -0.25
+	morale_damage_received = -0.25
+	# ]]]
 }
 
 samurai_regiment = {
@@ -2281,9 +2341,11 @@ guru_teaching = {
 }
 
 diplomatic_reputation = {
+	num_of_soyurghals = 0.5
 }
 
 tolerance_own = {
+	monthly_divine_authority = 0.03
 }
 
 tolerance_heretic = {
@@ -2449,4 +2511,9 @@ sailors_percentage = {
 
 reverse_sailors_percentage = {
 
+}
+
+may_dynastic_influence_modifier = {
+	legitimacy = 0.25 
+	land_forcelimit = 3
 }

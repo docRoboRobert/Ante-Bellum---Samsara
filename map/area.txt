@@ -480,7 +480,7 @@ piedmont_area = { #4
 }
 
 tuscany_area = { #5
-	115 116 117 2978 2980
+	115 116 117 2978 2980 5209 5210
 }
 
 liguria_area = { #3
@@ -1049,12 +1049,12 @@ holstein_area = { #3
 	13 1775 4141 5010
 }
 
-lower_saxony_area = { #4
-	44 53 1857 4772
+lower_saxony_area = { #5
+	44 53 1857 4772 45
 }
 
-mecklenburg_area = { #5
-	45 46 2996 4749 4786
+mecklenburg_area = { #4
+	46 2996 4749 4786
 }
 
 ########################################
@@ -2129,7 +2129,7 @@ katehar_area = { #3
 }
 
 purvanchal_area = { #6
-	555 2055 2095 4490 5207 5209
+	555 2055 2095 4490 5313 5315
 }
 
 upper_doab_area = { #3
@@ -2166,11 +2166,11 @@ tripura_area = { #3
 }
 
 bihar_area = { #4
-	558 4469 4472 4489 5205
+	558 4469 4472 4489 5311
 }
 
 mithila_area = { #4
-	2047 4484 4487 4488 5206
+	2047 4484 4487 4488 5312
 }
 
 jharkhand_area = { #7
@@ -2329,11 +2329,11 @@ himalayan_hills_area = { #6
 }
 
 nepal_area = { #6
-	557 2070 2071 4483 4485 5208
+	557 2070 2071 4483 4485 5314
 }
 
 baisi_rajya_area = { #5
-	4491 4492 554 5210 5211
+	4491 4492 554 5316 5211
 }
 
 bhutan_area = {
@@ -3870,14 +3870,6 @@ east_altishahr_area = {
 
 }
 
-amnok_area = {
-
-}
-
-north_korea_area = {
-
-}
-
 hejaz_area = {
 
 }
@@ -3887,10 +3879,6 @@ sarat_area = {
 }
 
 ad_dahna_area = {
-}
-
-najd_area = {
-
 }
 
 northern_england_area = {
@@ -3929,8 +3917,6 @@ gujarat_area = { }
 
 central_doab_area = {
 }
-
-nepalese_area = { }
 
 pomerelia_area = { }
 

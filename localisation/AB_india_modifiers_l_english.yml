@@ -222,7 +222,7 @@
  malankara_religious_violence_modifier:0 "Religious Violence"
  desc_malankara_religious_violence_modifier:0 "Going against the will of Malankara majority is tearing our nation."
  parmelion_invasion_enabled:0 "The Godly Right to Conquest"
- desc_parmelion_invasion_enabled:0 "§MBesieged enemy provinces that are§! §Rnot our cores§! §Mwill become§! §Gour cores.§! \n§MBesieged enemy provinces that are§! §Gour cores§! §Mwill be§! §Tautomatically transfered to our domain, gain§! §O50 devastation§! §Tand§! §Ohave their development flattened.§!"
+ desc_parmelion_invasion_enabled:0 "§MBesieged enemy provinces that are§! §Rnot our cores§! §Mwill become§! §Gour cores.§! \n§MBesieged enemy provinces that are§! §Gour cores§! §Mwill be§! §Tautomatically transfered to our domain, gain§! §O50 devastation§! §Tand§! §Ohave their development flattened. (Does not apply to enemy's capital due to game crash issues)§!"
  parmistan_invasion_real:0 "Great Invasion"
  desc_parmistan_invasion_real:0 "The Fearsome Lion of Parma has risen in its divine war against the world!"
  parmistan_secured_base:0 "New Rule Established"

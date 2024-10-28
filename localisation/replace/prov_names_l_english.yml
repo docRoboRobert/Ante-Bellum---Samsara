@@ -16,3 +16,10 @@
  PROV_ADJ4495:0 "Oudhi"
  PROV4521:0 "Baltistan"
  PROV_ADJ4521:0 "Baltistani"
+ 
+ #Reused wasteland provinces that were disabled in AB
+ PROV1796:0 "Northern Algeria"
+ PROV1797:0 "Libyan Desert"
+ PROV1798:0 "Western Desert"
+ PROV2251:0 "Syrian Desert"
+ PROV5206:0 "West Saharan Coast" #Used to be Southern Bohemian Mountains

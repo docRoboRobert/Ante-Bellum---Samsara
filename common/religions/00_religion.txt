@@ -13,7 +13,413 @@ christian = {
 	# Can be overridden per religion.
 	flags_with_emblem_percentage = 33 # default == 0
 	flag_emblem_index_range = { 1 57 }
+	
+	religious_schools = {
+		lutheran_school = {
+			potential_invite_scholar = {
+				OR = {
+					religion = protestant
+					has_country_flag = can_always_invite_lutheran_school
+					has_country_flag = privilege_can_always_invite_lutheran_school
+				}
+			}
 
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = can_always_invite_lutheran_school }
+						NOT = { has_country_flag = privilege_can_always_invite_lutheran_school }
+					}
+					reverse_has_opinion = { who = FROM value = 150 }
+					OR = {
+						alliance_with = FROM
+						is_subject_of = FROM
+						overlord_of = FROM
+					}
+					hidden_progressive_opinion_for_scholar_trigger = yes
+				}
+				if = {
+					limit = {
+						ai = yes
+					}
+					NOT = { has_country_modifier = has_invited_scholar_recently }
+				}
+				NOT = { has_country_modifier = lutheran_scholar_modifier }
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = lutheran_scholar_modifier duration = 7300 }
+				if = {	#Ensures that the AI doesn't waste all of their ADM power on inviting scholars should they be able to invite them baseline
+					limit = {
+						ai = yes
+					}
+					add_country_modifier = { name = has_invited_scholar_recently duration = 7300 hidden = yes }
+				}
+			}
+
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = lutheran_scholar_modifier
+
+			picture = "GFX_icon_christian_school_lutheran"
+
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			institution_spread_from_true_faith = 0.1
+		}
+			
+		lollard_school = {
+			potential_invite_scholar = {
+				OR = {
+					religion = protestant
+					has_country_flag = can_always_invite_lollard_school
+					has_country_flag = privilege_can_always_invite_lollard_school
+				}
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = can_always_invite_lollard_school }
+						NOT = { has_country_flag = privilege_can_always_invite_lollard_school }
+					}
+					reverse_has_opinion = { who = FROM value = 150 }
+					OR = {
+						alliance_with = FROM
+						is_subject_of = FROM
+						overlord_of = FROM
+					}
+					hidden_progressive_opinion_for_scholar_trigger = yes
+				}
+				if = {
+					limit = {
+						ai = yes
+					}
+					NOT = { has_country_modifier = has_invited_scholar_recently }
+				}
+				NOT = { has_country_modifier = lollard_scholar_modifier }
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = lollard_scholar_modifier duration = 7300 }
+				if = {	#Ensures that the AI doesn't waste all of their ADM power on inviting scholars should they be able to invite them baseline
+					limit = {
+						ai = yes
+					}
+					add_country_modifier = { name = has_invited_scholar_recently duration = 7300 hidden = yes }
+				}
+			}
+
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = lollard_scholar_modifier
+
+			picture = "GFX_icon_christian_school_lollard"
+
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			fire_damage_received = -0.05
+		}
+		
+		waldensian_school = {
+			potential_invite_scholar = {
+				OR = {
+					religion = protestant
+					has_country_flag = can_always_invite_waldensian_school
+					has_country_flag = privilege_can_always_invite_waldensian_school
+				}
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = can_always_invite_waldensian_school }
+						NOT = { has_country_flag = privilege_can_always_invite_waldensian_school }
+					}
+					reverse_has_opinion = { who = FROM value = 150 }
+					OR = {
+						alliance_with = FROM
+						is_subject_of = FROM
+						overlord_of = FROM
+					}
+					hidden_progressive_opinion_for_scholar_trigger = yes
+				}
+				if = {
+					limit = {
+						ai = yes
+					}
+					NOT = { has_country_modifier = has_invited_scholar_recently }
+				}
+				NOT = { has_country_modifier = waldensian_scholar_modifier }
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = waldensian_scholar_modifier duration = 7300 }
+				if = {	#Ensures that the AI doesn't waste all of their ADM power on inviting scholars should they be able to invite them baseline
+					limit = {
+						ai = yes
+					}
+					add_country_modifier = { name = has_invited_scholar_recently duration = 7300 hidden = yes }
+				}
+			}
+
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = waldensian_scholar_modifier
+
+			picture = "GFX_icon_christian_school_waldensian"
+
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			manpower_in_true_faith_provinces = 0.1
+		}
+		
+		hussite_school = {
+			potential_invite_scholar = {
+				OR = {
+					has_country_flag = can_always_invite_hussite_school
+					has_country_flag = privilege_can_always_invite_hussite_school
+				}
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				custom_trigger_tooltip = {
+					tooltip = ab_hussite_converted_protestant
+					has_country_flag = placeholder
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = can_always_invite_hussite_school }
+						NOT = { has_country_flag = privilege_can_always_invite_hussite_school }
+					}
+					reverse_has_opinion = { who = FROM value = 150 }
+					OR = {
+						alliance_with = FROM
+						is_subject_of = FROM
+						overlord_of = FROM
+					}
+					hidden_progressive_opinion_for_scholar_trigger = yes
+				}
+				if = {
+					limit = {
+						ai = yes
+					}
+					NOT = { has_country_modifier = has_invited_scholar_recently }
+				}
+				NOT = { has_country_modifier = hussite_scholar_modifier }
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = hussite_scholar_modifier duration = 7300 }
+				if = {	#Ensures that the AI doesn't waste all of their ADM power on inviting scholars should they be able to invite them baseline
+					limit = {
+						ai = yes
+					}
+					add_country_modifier = { name = has_invited_scholar_recently duration = 7300 hidden = yes }
+				}
+			}
+
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = hussite_scholar_modifier
+
+			picture = "GFX_icon_christian_school_hussite"
+
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			harsh_treatment_cost = -0.2
+		}
+		
+		calvinist_school = {
+			potential_invite_scholar = {
+				OR = {
+					religion = reformed
+					has_country_flag = can_always_invite_calvinist_school
+					has_country_flag = privilege_can_always_invite_calvinist_school
+				}
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = can_always_invite_calvinist_school }
+						NOT = { has_country_flag = privilege_can_always_invite_calvinist_school }
+					}
+					reverse_has_opinion = { who = FROM value = 150 }
+					OR = {
+						alliance_with = FROM
+						is_subject_of = FROM
+						overlord_of = FROM
+					}
+					hidden_progressive_opinion_for_scholar_trigger = yes
+				}
+				if = {
+					limit = {
+						ai = yes
+					}
+					NOT = { has_country_modifier = has_invited_scholar_recently }
+				}
+				NOT = { has_country_modifier = calvinist_scholar_modifier }
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = calvinist_scholar_modifier duration = 7300 }
+				if = {	#Ensures that the AI doesn't waste all of their ADM power on inviting scholars should they be able to invite them baseline
+					limit = {
+						ai = yes
+					}
+					add_country_modifier = { name = has_invited_scholar_recently duration = 7300 hidden = yes }
+				}
+			}
+
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = calvinist_scholar_modifier
+
+			picture = "GFX_icon_christian_school_calvinist"
+
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			monthly_fervor_increase = 0.5
+		}
+		
+		puritan_school = {
+			potential_invite_scholar = {
+				OR = {
+					religion = reformed
+					has_country_flag = can_always_invite_puritan_school
+					has_country_flag = privilege_can_always_invite_puritan_school
+				}
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = can_always_invite_puritan_school }
+						NOT = { has_country_flag = privilege_can_always_invite_puritan_school }
+					}
+					reverse_has_opinion = { who = FROM value = 150 }
+					OR = {
+						alliance_with = FROM
+						is_subject_of = FROM
+						overlord_of = FROM
+					}
+					hidden_progressive_opinion_for_scholar_trigger = yes
+				}
+				if = {
+					limit = {
+						ai = yes
+					}
+					NOT = { has_country_modifier = has_invited_scholar_recently }
+				}
+				NOT = { has_country_modifier = puritan_scholar_modifier }
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = no_scholar_adm_cost }
+					}
+					adm_power_cost = 50
+				}
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = puritan_scholar_modifier duration = 7300 }
+				if = {	#Ensures that the AI doesn't waste all of their ADM power on inviting scholars should they be able to invite them baseline
+					limit = {
+						ai = yes
+					}
+					add_country_modifier = { name = has_invited_scholar_recently duration = 7300 hidden = yes }
+				}
+			}
+
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = puritan_scholar_modifier
+
+			picture = "GFX_icon_christian_school_puritan"
+
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			tolerance_own = 2
+		}
+	}
 	
 	
 	catholic = {
@@ -347,6 +753,7 @@ christian = {
 			expel_heretics_aspect
 			diplomats_of_the_reformation_aspect
 			icons_of_the_church_aspect
+			spread_the_book_of_common_prayer
 		}
 		aspects_name = ANGLICAN_ASPECTS
 		
@@ -384,6 +791,7 @@ christian = {
 			taborite_resurgence_aspect
 			orphan_hetmans_aspect
 			freedom_to_preach_aspect
+			#rekindle_the_hussite_wars_aspect
 		}
 		aspects_name = PROTESTANT_ASPECTS
 		
@@ -428,6 +836,7 @@ christian = {
 			justified_religious_war_aspect
 			war_preaches_aspect
 			head_of_the_church_aspect
+			anglican_aspect
 		}
 		aspects_name = PROTESTANT_ASPECTS
 		
@@ -469,12 +878,32 @@ christian = {
 				hidden_effect = {
 					random_owned_province = {
 						limit = {
+							# AB [[[
+							# Do not spawn a Protestant CoR if we already spawned 2
+							REB = {
+								NOT = {
+									check_variable = {
+										which = ab_protestant_center_spawned_count_var
+										value = 1
+									}
+								}
+							}
+							# ]]]
 							can_have_center_of_reformation_trigger = {
 								RELIGION = protestant
 							}
 						}
 						change_religion = protestant
 						add_reform_center = protestant
+						# AB [[[
+						# Mark that we spawned a protestant center of reformation
+						REB = {
+							change_variable = {
+								which = ab_protestant_center_spawned_count_var
+								value = 1
+							}
+						}
+						# ]]]
 					}
 				}
 				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
@@ -496,12 +925,32 @@ christian = {
 				hidden_effect = {
 					random_owned_province = {
 						limit = {
+							# AB [[[
+							# Do not spawn a Protestant CoR if we already spawned 2
+							REB = {
+								NOT = {
+									check_variable = {
+										which = ab_protestant_center_spawned_count_var
+										value = 1
+									}
+								}
+							}
+							# ]]]
 							can_have_center_of_reformation_trigger = {
 								RELIGION = protestant
 							}
 						}
 						change_religion = protestant
 						add_reform_center = protestant
+						# AB [[[
+						# Mark that we spawned a protestant center of reformation
+						REB = {
+							change_variable = {
+								which = ab_protestant_center_spawned_count_var
+								value = 1
+							}
+						}
+						# ]]]
 					}
 				}
 				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
@@ -587,12 +1036,32 @@ christian = {
 				hidden_effect = {
 					random_owned_province = {
 						limit = {
+							# AB [[[
+							# Do not spawn a Reformed CoR if we already spawned 2
+							REB = {
+								NOT = {
+									check_variable = {
+										which = ab_reformed_center_spawned_count_var
+										value = 1
+									}
+								}
+							}
+							# ]]]
 							can_have_center_of_reformation_trigger = {
 								RELIGION = reformed
 							}
 						}
 						change_religion = reformed
 						add_reform_center = reformed
+						# AB [[[
+						# Mark that we spawned a reformed center of reformation
+						REB = {
+							change_variable = {
+								which = ab_reformed_center_spawned_count_var
+								value = 1
+							}
+						}
+						# ]]]
 					}
 				}
 				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
@@ -614,12 +1083,32 @@ christian = {
 				hidden_effect = {
 					random_owned_province = {
 						limit = {
+							# AB [[[
+							# Do not spawn a Reformed CoR if we already spawned 2
+							REB = {
+								NOT = {
+									check_variable = {
+										which = ab_reformed_center_spawned_count_var
+										value = 1
+									}
+								}
+							}
+							# ]]]
 							can_have_center_of_reformation_trigger = {
 								RELIGION = reformed
 							}
 						}
 						change_religion = reformed
 						add_reform_center = reformed
+						# AB [[[
+						# Mark that we spawned a reformed center of reformation
+						REB = {
+							change_variable = {
+								which = ab_reformed_center_spawned_count_var
+								value = 1
+							}
+						}
+						# ]]]
 					}
 				}
 				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
@@ -650,6 +1139,7 @@ christian = {
 		fervor = yes
 	}
 
+	# AB [[[
 	gaelic_ab = {
         color = { 87 205 58 }
         icon = 37
@@ -682,6 +1172,7 @@ christian = {
         
         heretic = { INSULAR }
     }
+	# ]]]
 
 	orthodox = {
 		color = { 178 127 0 }
@@ -690,6 +1181,7 @@ christian = {
 			stability_cost_modifier = -0.1
 			tolerance_own = 1
 		}
+		# AB [[[
 		allowed_center_conversion = {
 			catholic
 			protestant
@@ -698,8 +1190,9 @@ christian = {
 			reformed
 			nestorian
 		}
+	    # ]]]
 		country_as_secondary = {
-			stability_cost_modifier = -0.1
+			global_colonial_growth = 10
 			tolerance_own = 1
 		}
 		province = {
@@ -719,14 +1212,14 @@ christian = {
 				discipline = 0.05
 				manpower_recovery_speed = 0.1
 				
-				# AB {{{
+				# AB [[[
 				allow = {
 					religion = orthodox
 				}
 				visible = {
 					religion = orthodox
 				}
-				# }}}
+				# ]]]
 
 				ai_will_do = {
 					factor = 0.05
@@ -744,15 +1237,15 @@ christian = {
 			icon_eleusa = {
 				global_unrest = -3
 				harsh_treatment_cost = -0.25
-				
-				# AB {{{
+
+				# AB [[[
 				allow = {
 					religion = orthodox
 				}
 				visible = {
 					religion = orthodox
 				}
-				# }}}
+				# ]]]		
 
 				ai_will_do = {
 					factor = 0.02
@@ -783,15 +1276,15 @@ christian = {
 				development_cost = -0.10
 				build_cost = -0.1
 				
-				# AB {{{
+				# AB [[[
 				allow = {
 					religion = orthodox
 				}
 				visible = {
 					religion = orthodox
 				}
-				# }}}
-
+				# ]]]
+				
 				ai_will_do = {
 					factor = 0
 				}
@@ -801,15 +1294,14 @@ christian = {
 				improve_relation_modifier = 0.25
 				ae_impact = -0.1
 				
-				# AB {{{
+				# AB [[[
 				allow = {
 					religion = orthodox
 				}
 				visible = {
 					religion = orthodox
 				}
-				# }}}
-
+				# ]]]
 				ai_will_do = {
 					factor = 0.01
 				}
@@ -819,15 +1311,14 @@ christian = {
 				global_institution_spread = 0.25
 				embracement_cost = -0.2
 
-				# AB {{{
+				# AB [[[
 				allow = {
 					religion = orthodox
 				}
 				visible = {
 					religion = orthodox
 				}
-				# }}}
-
+				# ]]]
 				ai_will_do = {
 					factor = 0.02
 					modifier = {
@@ -854,8 +1345,7 @@ christian = {
 					}
 				}
 			}
-			
-			# AB {{{
+			# AB [[[
 			icon_rostislav = {
 				global_missionary_strength = 0.02
 				missionaries = 1
@@ -864,9 +1354,9 @@ christian = {
 					religion = orthodox
 					if = {
 						limit = {
-							has_country_flag = has_unlocked_rostislav_icon
+							has_mission = pol_orthodox_unite_with_moravia
 						}
-						has_country_flag = has_unlocked_rostislav_icon
+						mission_completed = pol_orthodox_unite_with_moravia
 					}
 					else_if = {
 						limit = {
@@ -880,9 +1370,15 @@ christian = {
 						}
 						mission_completed = bulgaria_revive_moravia
 					}
+					else_if = {
+						limit = {
+							has_country_flag = has_unlocked_rostislav_icon
+						}
+						has_country_flag = has_unlocked_rostislav_icon
+					}
 					else = {
 						custom_trigger_tooltip = {
-							tooltip = only_mva_and_bul_can_unlock
+							tooltip = only_mva_bul_and_led_can_unlock
 							always = no
 						}
 					}
@@ -1008,11 +1504,11 @@ christian = {
 					factor = 0
 				}
 			}
-			# }}}
+			# ]]]
 		}
 	}
 	
-	# AB {{{
+	# AB [[[
 	# TODO: add `heretic = { HERETIC_NAME_1 HERETIC_NAME_2 HERETIC_NAME_N... }`
 	nestorian = {
 	
@@ -1304,7 +1800,7 @@ christian = {
 			}
 		}
 	}
-	# }}}
+	# ]]]
 	
 	coptic = {
 	
@@ -1314,7 +1810,7 @@ christian = {
 		color = { 178 38 76 }
 		icon = 14
 		country = {
-			defensiveness = 0.1
+			defensiveness = 0.15
 			tolerance_own = 1
 		}
 		country_as_secondary = {
@@ -1323,6 +1819,12 @@ christian = {
 		}
 		province = {
 			local_missionary_strength = -0.02
+		}
+		allowed_center_conversion = {
+			orthodox
+			sunni
+			shiite
+			ibadi
 		}
 		
 		heretic = { ZAMIKAELITES STEPHANITES EUSTATHIANS }
@@ -1934,6 +2436,13 @@ muslim = {
 	sunni = {
 		color = { 0 153 0 }
 		icon = 5
+		allowed_center_conversion = {
+			ibadi
+			shiite
+			# AB [[[
+			zoroastrian
+			# ]]]
+        }
 		country = {
 			cav_to_inf_ratio = 0.10
 			heir_chance = 1.0
@@ -1941,9 +2450,6 @@ muslim = {
 		country_as_secondary = {
 			trade_efficiency = 0.1
 			heir_chance = 1.0
-		}
-		allowed_center_conversion = {
-			zoroastrian
 		}
 		province = {
 			local_missionary_strength = -0.02
@@ -1957,6 +2463,10 @@ muslim = {
 	shiite = {
 		color = { 0 204 0 }
 		icon = 6
+		allowed_center_conversion = {
+			sunni
+			ibadi
+		}					   
 		country = {
 			heir_chance = 1.0
 			land_morale = 0.05
@@ -1977,6 +2487,10 @@ muslim = {
 	ibadi = {
 		color = { 0 102 0 }
 		icon = 16
+		  allowed_center_conversion = {
+			sunni
+			shiite
+		}			   
 		country = {
 			heir_chance = 1.0
 			global_trade_goods_size_modifier = 0.1
@@ -2035,7 +2549,7 @@ eastern = {
 		uses_karma = yes
 	}
 	
-	# AB {{{
+	# AB [[[
 	maitreya = {
         color = { 222 0 43 }
         icon = 34
@@ -2067,7 +2581,7 @@ eastern = {
         
         uses_karma = yes
     }
-	# }}}
+	# ]]]
 	
 	vajrayana = {
 		color = { 204 76 76 }
@@ -2077,7 +2591,7 @@ eastern = {
 			buddhism #Theravada
 		}
 		country = {
-			tolerance_heretic = 1
+			tolerance_heretic = 2
 			land_morale = 0.05
 		}
 		country_as_secondary = {
@@ -2151,7 +2665,7 @@ eastern = {
 		icon = 10
 		country = {
 			land_morale = 0.1
-			tolerance_heathen = 1
+			tolerance_heretic = 2
 		}
 		province = {
 			local_missionary_strength = -0.02
@@ -2903,6 +3417,11 @@ reformed_pagan = {
 			hostile_attrition = 1
 			garrison_size = 0.1
 		}
+		allowed_center_conversion = {
+			zoroastrian
+			sunni
+			shiite
+		}
 		
 		uses_church_power = yes				# Uses church power/aspect mechanics
 		
@@ -3013,9 +3532,9 @@ reformed_pagan = {
 	}
 
 	crusade_name = CRUSADE
-	
+	harmonized_modifier = harmonized_reformed_pagan
 }
-# }}}
+# ]]]
 
 pagan = {
 
@@ -3081,12 +3600,12 @@ pagan = {
 		color = { 64 115 115 }
 		icon = 18
 		country = {
-			tolerance_own = 1
+			tolerance_own = 2
 			global_autonomy = -0.05
 		}
 
 		country_as_secondary = {
-			tolerance_own = 1
+			tolerance_own = 2
 			global_autonomy = -0.05
 		}
 		
@@ -3096,6 +3615,7 @@ pagan = {
 		
 		authority = yes
 		religious_reforms = yes
+		require_reformed_for_institution_development = yes											
 		reform_tooltip = INTI_REFORM_TOOLTIP
 		
 		heretic = { INTI_HERETIC }	
@@ -3120,6 +3640,7 @@ pagan = {
 		doom = yes
 		declare_war_in_regency = yes
 		religious_reforms = yes
+		require_reformed_for_institution_development = yes											
 		reform_tooltip = NAHUATL_REFORM_TOOLTIP
 		
 		heretic = { NAHUATL_HERETIC }	
@@ -3131,16 +3652,17 @@ pagan = {
 		icon = 19
 		country = {
 			tolerance_own = 1
-			advisor_pool = 1
+			same_religion_advisor_cost = -0.1
 		}
 		country_as_secondary = {
-			advisor_pool = 1
+			same_religion_advisor_cost = -0.1
 			stability_cost_modifier = -0.1
 		}
 		province = {
 			local_missionary_strength = 0.02
 		}
 		
+		require_reformed_for_institution_development = yes											
 		religious_reforms = yes
 		reform_tooltip = MESOAMERICAN_REFORM_TOOLTIP
 		
@@ -3151,9 +3673,10 @@ pagan = {
 		icon = 21
 		color = { 191 191 191 }
 		country = {
-			# AB {{[
+			# AB [[[
+			#land_forcelimit_modifier = 0.10
 			may_perform_slave_raid = yes
-			# }}}
+			# ]]]
 			naval_forcelimit_modifier = 0.10
 		}
 		country_as_secondary = {
@@ -3169,7 +3692,7 @@ pagan = {
 		heretic = { OLD_NORSE }	
 	}
 	
-	# AB {{{
+	# AB [[[
 	slavic_pagan = {
 		icon = 30
 		color = { 88 99 131 }
@@ -3212,6 +3735,11 @@ pagan = {
 		}
 		province = {
 			local_missionary_strength = 0.02
+		}
+		allowed_center_conversion = {
+			zoroastrian
+			sunni
+			shiite
 		}
 		
 		personal_deity = yes
@@ -3303,6 +3831,7 @@ jewish_group = {
 
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 106 107 }
+	defender_of_faith = yes					
 
 	jewish = {
 		icon = 20
@@ -3432,6 +3961,7 @@ jewish_group = {
 
 zoroastrian_group = {
 	flag_emblem_index_range = { 110 110 }
+	defender_of_faith = yes					
 	zoroastrian = {
 		icon = 26
 		color = { 127 178 51 }
@@ -3447,9 +3977,16 @@ zoroastrian_group = {
 			merchants = 1
 			tolerance_own = 1
 		}
+		allowed_center_conversion = {
+			sunni
+			shiite
+			orthodox
+			coptic
+			hinduism
+		}
 		# }}}
 
-		holy_sites = { 421 4430 2223 441 2235 }
+		holy_sites = { 2212 4430 2223 441 4336 }
 
 		blessings = {
 			blessing_yasna

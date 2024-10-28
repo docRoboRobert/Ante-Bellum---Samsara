@@ -11,7 +11,7 @@ tags={
 	"Religion"
 }
 name="AB - India Update"
-supported_version="1.36.*"
+supported_version="1.37.*"
 path="mod/AB_india_submod"
 dependencies={
 	"Ante Bellum"

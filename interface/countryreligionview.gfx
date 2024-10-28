@@ -335,7 +335,8 @@ spriteTypes = {
 		name = "GFX_country_religion_view_fervor_bg"
 		texturefile = "gfx//interface//country_religion_view_fervor_bg.dds"
 		loadType = "INGAME"
-	}		
+	}
+	
 	### New Fervor Container ###
 	spriteType = {
 		name = "GFX_fervor_container_bg"
@@ -728,7 +729,5 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_spread_the_book_of_common_prayer"
 		texturefile = "gfx/interface/church_aspects_anglicanism/spread_the_book_of_common_prayer_icon.dds"
+    }
 }	
-
-
-

@@ -26,8 +26,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2335;386;sea;1779;-1;-1;-1;-1;Dawasir-Bishah
 2335;391;sea;1779;-1;-1;-1;-1;Dawasir-Najran
 2335;4282;sea;1779;-1;-1;-1;-1;Dawasir-Sahda
-4477;561;sea;1343;-1;-1;-1;-1;Satgaon-BengalDelta
-4475;564;sea;5204;-1;-1;-1;-1;Fathabad-Dhaka
+4477;561;sea;5308;-1;-1;-1;-1;Satgaon-BengalDelta
+4475;564;sea;5308;-1;-1;-1;-1;Fathabad-Dhaka
 5275;1248;sea;1619;-1;-1;-1;-1;Maldives-SouthernMaldives
 4475;5307;sea;5308;-1;-1;-1;-1;Fathabad-Rajshahi
 503;4456;sea;5229;-1;-1;-1;-1;Kutch-Jhalavad
@@ -49,7 +49,9 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2413;2414;sea;5203;-1;-1;-1;-1;Tyn-Azaraba
 288;2414;sea;5203;-1;-1;-1;-1;LowerDon-Azaraba
 288;468;sea;5203;-1;-1;-1;-1;LowerDon-Manych
+2014;4884;sea;1507;-1;-1;-1;-1;Natchitoches-Houma
 
+5209;115;sea;1298;-1;-1;-1;-1;Jutland-Jutland
 36;4999;sea;1926;-1;-1;-1;-1;Jutland-Jutland
 4999;35;sea;1926;-1;-1;-1;-1;Jutland-Jutland
 35;39;sea;1256;-1;-1;-1;-1;Jutland-Jutland
@@ -94,7 +96,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4364;4363;sea;1283;2718;1654;2721;1655;Inner Hebrides-Argyll
 4110;369;sea;1282;2757;1705;2757;1710;Sutherland-Orkney
 97;100;sea;1269;2890;1581;2886;1576;Holland-Friesland
-1017;1818;sea;1390;4853;1213;4848;1208;Suo-Chikuzen
+96;1865;sea;1269;-1;-1;-1;-1;Zeeland-Gent
+1017;1818;sea;1390;4853;1213;4850;1208;Suo-Chikuzen
 1014;4186;sea;1390;4860;1202;4872;1202;Bungo-Iyo
 4186;1825;sea;1390;4881;1219;4880;1214;Aki-Iyo
 2159;666;sea;1370;-1;-1;-1;-1;Jiangmen-Hainan
@@ -110,8 +113,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 1215;387;sea;1330;3482;853;3488;875;Tajura-Mocha
 112;1774;sea;1308;-1;-1;-1;-1;Venice-Treviso
 54;4141;sea;1268;2945;1599;2943;1597;Stade-Dithmarschen
-1820;1021;sea;1391;4912;1219;4919;1223;Awa-Settsu
-4131;4193;sea;1387;4999;1357;5005;1351;Oshima-Mutsu
+1820;1021;sea;1391;4910;1219;4918;1223;Awa-Settsu
+4131;4193;sea;1387;-1;-1;-1;-1;Oshima-Mutsu
 1032;1852;sea;4225;5099;1408;5073;1386;Kurils-Tokachi
 1199;1201;sea;1448;-1;-1;-1;-1;Bagamoyo-Zanzibar
 1247;127;sea;1298;-1;-1;-1;-1;Corsica-Sardinia
@@ -134,6 +137,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2576;2578;sea;1490;-1;-1;-1;-1;Mingan-Anticosti
 249;4121;sea;1284;-1;-1;-1;-1;Ayrshire-Ulster
 5284;5276;sea;5281;4044;803;-1;-1;Ramanathapuram-Jaffna
+536;2100;sea;1340;4044;803;4054;793;Madurai-Vanni
 2803;502;sea;1522;-1;-1;-1;-1;Orinoco Delta-Trinidad
 500;499;sea;1522;-1;-1;-1;-1;St Vincent-St Lucia
 499;498;sea;1523;-1;-1;-1;-1;St Lucia-Martinique
@@ -145,7 +149,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2693;632;sea;1355;-1;-1;-1;-1;Lombok-Sumbawa
 632;633;sea;1355;4666;511;4675;512;Sumbawa-Flores
 
-2716;4796;sea;1357;4714;569;4712;575;Buton-Kendari
+2716;4796;sea;1357;4716;569;4712;575;Buton-Kendari
 2700;4351;sea;1397;-1;-1;-1;-1;Cebu-Panay
 4353;2702;sea;1402;-1;-1;-1;-1;Leyte-Butuan
 2700;4350;sea;1397;-1;-1;-1;-1;Panay-Mindoro
@@ -177,4 +181,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 1242;4938;sea;1431;-1;-1;-1;-1;Vitu Levu-Vanua Levu
 1087;4869;sea;1414;-1;-1;-1;-1;Wurundjeri-Peerapper
 631;627;sea;1354;-1;-1;-1;-1;Bali-Blambangan
+979;2611;sea;1680;-1;-1;-1;-1;Unangan-Kodiak
+496;497;sea;1523;-1;-1;-1;-1;Guadelupe-Dominica
 -1;-1;;-1;-1;-1;-1;-1;-1;

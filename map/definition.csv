@@ -5203,12 +5203,12 @@ province;red;green;blue;x;x
 5202;158;154;79;Paropamisus;x
 5203;158;241;255;Lower Don;x
 5204;211;236;255;Lower Volga;x
-5205;196;201;215;Bhojpur;x
-5206;183;151;40;East Champaran;x
-5207;58;165;120;Sonbhadra;x
-5208;169;203;193;Gandaki;x
-5209;176;125;87;Kushinagar;x
-5210;213;221;151;Humla;x
+5205;144;78;208;Apennines;x
+5206;137;78;208;Sumava;x
+5207;136;78;208;Krusne;x
+5208;135;78;208;Krkonose;x
+5209;240;21;172;Elba;x
+5210;151;124;213;Grosseto;x
 5211;98;236;181;Bajhang;x
 5212;67;152;46;Sukma;x
 5213;120;90;72;Baramba;x
@@ -5309,3 +5309,9 @@ province;red;green;blue;x;x
 5308;164;216;247;Ganges Estuary;x
 5309;232;220;87;Ordos Desert;x
 5310;122;86;59;Nubian Desert;x
+5311;196;201;215;Bhojpur;x
+5312;183;151;40;East Champaran;x
+5313;58;165;120;Sonbhadra;x
+5314;169;203;193;Gandaki;x
+5315;176;125;87;Kushinagar;x
+5316;213;221;151;Humla;x

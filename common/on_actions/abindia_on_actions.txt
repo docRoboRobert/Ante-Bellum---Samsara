@@ -86,7 +86,10 @@ on_siege_won_country = {
 	if = {
 		limit = {
 			ROOT = { has_country_modifier = parmelion_invasion_enabled }
-			FROM = { is_core = ROOT }
+			FROM = {
+				is_core = ROOT
+				is_capital = no
+			}
 		}
 		FROM = {
 			cede_province = ROOT
