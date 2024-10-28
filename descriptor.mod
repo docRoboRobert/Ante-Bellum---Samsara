@@ -12,6 +12,7 @@ tags={
 }
 name="AB - India Update"
 supported_version="1.37.*"
+picture="thumbnail.png"
 path="mod/AB_india_submod"
 dependencies={
 	"Ante Bellum"
