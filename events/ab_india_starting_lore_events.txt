@@ -1,0 +1,19 @@
+#Events that show up at the start of the game for different interesting countries
+namespace = abindia_starting_lore
+
+#Starting event for Hind
+country_event = {
+	id = abindia_starting_lore.1
+	title = abindia_starting_lore.1.t
+	desc = abindia_starting_lore.1.d
+	picture = muslimgfx_FORT_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = abindia_starting_lore.1.a
+		custom_tooltip = abindia_starting_lore.1.tooltip
+	}
+}

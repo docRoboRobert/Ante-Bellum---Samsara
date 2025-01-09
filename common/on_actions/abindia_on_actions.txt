@@ -109,3 +109,21 @@ on_siege_won_country = {
 		FROM = { add_core = ROOT }
 	}
 }
+
+on_startup = {
+	#Starting Lore events for various tags
+	if = {
+		limit = {
+			ai = no
+		}
+		
+		if = {
+			limit = { tag = HND }
+			ROOT = {
+				country_event = {
+					id = abindia_starting_lore.1
+				}
+			}
+		}
+	}
+}
