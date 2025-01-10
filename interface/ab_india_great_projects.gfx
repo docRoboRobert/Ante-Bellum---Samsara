@@ -49,5 +49,30 @@ spriteTypes = {
         name = "GFX_great_project_girnar_hill"
         texturefile = "gfx//interface//great_projects//great_project_girnar_hill.dds"
     }
+	
+	spriteType = {
+        name = "GFX_great_project_somapura"
+        texturefile = "gfx//interface//great_projects//great_project_somapura.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_great_project_mahabodhi_temple"
+        texturefile = "gfx//interface//great_projects//great_project_mahabodhi_temple.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_great_project_mlankara_patriarchate"
+        texturefile = "gfx//interface//great_projects//great_project_malankara_patriarchate.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_great_project_kanishka_tomb"
+        texturefile = "gfx//interface//great_projects//great_project_kanishka_tomb.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_great_project_samsara_zoro_temple"
+        texturefile = "gfx//interface//great_projects//great_project_samsara_zoro_temple.dds"
+    }
 }
 	

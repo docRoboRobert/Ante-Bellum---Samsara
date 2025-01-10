@@ -34,5 +34,9 @@ spriteTypes = {
 		name = "government_reform_samsara_zoro_hindu_union"
 		texturefile = "gfx//interface//government_reform_icons//samsara_zoro_hindu_union.dds"
 	}
+	spriteType = {
+		name = "government_reform_exiled_persian_prince"
+		texturefile = "gfx//interface//government_reform_icons//exiled_persian_prince.dds"
+	}
 	
 }
