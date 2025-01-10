@@ -1,0 +1,38 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "government_reform_hind_decayed_admin"
+		texturefile = "gfx//interface//ideas_EU4//hind_decayed_admin.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_hind_empower_hindu"
+		texturefile = "gfx//interface//ideas_EU4//hind_empower_hindu.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_hind_empower_persians"
+		texturefile = "gfx//interface//government_reform_icons//hind_empower_persians.dds"
+	}
+	spriteType = {
+		name = "government_reform_hind_establish_immortals"
+		texturefile = "gfx//interface//government_reform_icons//hind_establish_immortals.dds"
+	}
+	spriteType = {
+		name = "government_reform_hind_restored_admin"
+		texturefile = "gfx//interface//government_reform_icons//hind_restored_admin.dds"
+	}
+	spriteType = {
+		name = "government_reform_hind_zoro_priest"
+		texturefile = "gfx//interface//government_reform_icons//hind_zoro_priest.dds"
+	}
+	spriteType = {
+		name = "government_reform_samsara_empower_zoro_priests"
+		texturefile = "gfx//interface//government_reform_icons//samsara_empower_zoro_priests.dds"
+	}
+	spriteType = {
+		name = "government_reform_samsara_zoro_hindu_union"
+		texturefile = "gfx//interface//government_reform_icons//samsara_zoro_hindu_union.dds"
+	}
+	
+}
