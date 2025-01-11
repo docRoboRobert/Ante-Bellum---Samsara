@@ -74,5 +74,20 @@ spriteTypes = {
         name = "GFX_great_project_samsara_zoro_temple"
         texturefile = "gfx//interface//great_projects//great_project_samsara_zoro_temple.dds"
     }
+	
+	spriteType = {
+        name = "GFX_great_project_quetta_fortress"
+        texturefile = "gfx//interface//great_projects//great_project_quetta_fortress.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_great_project_peshawar_wall"
+        texturefile = "gfx//interface//great_projects//great_project_peshawar_wall.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_great_project_baluchi_fortress"
+        texturefile = "gfx//interface//great_projects//great_project_baluchi_fortress.dds"
+    }
 }
 	
