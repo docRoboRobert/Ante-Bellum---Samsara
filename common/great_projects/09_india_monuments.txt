@@ -1100,6 +1100,7 @@ dambulla_caves = {
 			religion = buddhism
 			religion = mahayana
 			religion = vajrayana
+			religion = maitreya
 			religion = shinto
 		}
 		owner = {
@@ -1110,6 +1111,7 @@ dambulla_caves = {
 				religion = buddhism
 				religion = mahayana
 				religion = vajrayana
+				religion = maitreya
 				religion = shinto
 			}
 		}
@@ -1134,6 +1136,7 @@ dambulla_caves = {
 			religion = buddhism
 			religion = mahayana
 			religion = vajrayana
+			religion = maitreya
 			religion = shinto
 		}
 		owner = {
@@ -1144,6 +1147,7 @@ dambulla_caves = {
 				religion = buddhism
 				religion = mahayana
 				religion = vajrayana
+				religion = maitreya
 				religion = shinto
 			}
 		}
@@ -1162,6 +1166,7 @@ dambulla_caves = {
 			religion = buddhism
 			religion = mahayana
 			religion = vajrayana
+			religion = maitreya
 			religion = shinto
 		}
 		owner = {
@@ -1172,6 +1177,7 @@ dambulla_caves = {
 				religion = buddhism
 				religion = mahayana
 				religion = vajrayana
+				religion = maitreya
 				religion = shinto
 			}
 		}
@@ -1626,7 +1632,23 @@ somapura = {
 	
 	build_trigger = {
 		is_state_core = owner
-		has_owner_religion = yes
+		OR = {
+			has_owner_religion = yes
+			owner = {
+				custom_trigger_tooltip = {
+					tooltip = completed_mission_persia_architecture
+					OR = {
+						mission_completed = per_architecture
+						mission_completed = perc_architecture
+						mission_completed = perm_architecture
+						mission_completed = mper_architecture
+					}
+				}
+			}
+			owner = {
+				mission_completed = zun_integrate
+			}
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -1635,12 +1657,14 @@ somapura = {
 			religion = buddhism
 			religion = mahayana
 			religion = vajrayana
+			religion = maitreya
 		}
 		owner = {
 			OR = {
 				religion = buddhism
 				religion = mahayana
 				religion = vajrayana
+				religion = maitreya
 				tag = BNG
 			}
 		}
@@ -1654,7 +1678,23 @@ somapura = {
 	
 	can_use_modifiers_trigger = {
 		is_state_core = owner
-		has_owner_religion = yes
+		OR = {
+			has_owner_religion = yes
+			owner = {
+				custom_trigger_tooltip = {
+					tooltip = completed_mission_persia_architecture
+					OR = {
+						mission_completed = per_architecture
+						mission_completed = perc_architecture
+						mission_completed = perm_architecture
+						mission_completed = mper_architecture
+					}
+				}
+			}
+			owner = {
+				mission_completed = zun_integrate
+			}
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -1663,12 +1703,14 @@ somapura = {
 			religion = buddhism
 			religion = mahayana
 			religion = vajrayana
+			religion = maitreya
 		}
 		owner = {
 			OR = {
 				religion = buddhism
 				religion = mahayana
 				religion = vajrayana
+				religion = maitreya
 				tag = BNG
 			}
 		}
@@ -1676,7 +1718,23 @@ somapura = {
 	
 	can_upgrade_trigger = {
 		is_state_core = owner
-		has_owner_religion = yes
+		OR = {
+			has_owner_religion = yes
+			owner = {
+				custom_trigger_tooltip = {
+					tooltip = completed_mission_persia_architecture
+					OR = {
+						mission_completed = per_architecture
+						mission_completed = perc_architecture
+						mission_completed = perm_architecture
+						mission_completed = mper_architecture
+					}
+				}
+			}
+			owner = {
+				mission_completed = zun_integrate
+			}
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -1685,12 +1743,14 @@ somapura = {
 			religion = buddhism
 			religion = mahayana
 			religion = vajrayana
+			religion = maitreya
 		}
 		owner = {
 			OR = {
 				religion = buddhism
 				religion = mahayana
 				religion = vajrayana
+				religion = maitreya
 				tag = BNG
 			}
 		}
@@ -1802,6 +1862,478 @@ somapura = {
 			relation_with_same_religion = 15
 		}
 		on_upgraded = {
+		}
+	}
+}
+
+mahabodhi_temple = {
+	
+	start = 558
+	
+	date = 550.01.01
+	
+	time = {
+		months = 12
+	}
+	
+	build_cost = 1000
+	
+	can_be_moved = no
+	
+	move_days_per_unit_distance = 10
+	
+	starting_tier = 1
+	
+	type = monument
+	
+	
+	build_trigger = {
+		is_state_core = owner
+		OR = {
+			has_owner_religion = yes
+			owner = {
+				custom_trigger_tooltip = {
+					tooltip = completed_mission_persia_architecture
+					OR = {
+						mission_completed = per_architecture
+						mission_completed = perc_architecture
+						mission_completed = perm_architecture
+						mission_completed = mper_architecture
+					}
+				}
+			}
+			owner = {
+				has_reform = shhdharmic
+			}
+			owner = {
+				mission_completed = zun_integrate
+			}
+		}
+		OR = {
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
+		}
+		OR = {
+			religion = buddhism
+			religion = mahayana
+			religion = vajrayana
+			religion = maitreya
+		}
+	}
+	
+	on_built = {
+	}
+	
+	on_destroyed = {
+	}
+	
+	can_use_modifiers_trigger = {
+		is_state_core = owner
+		OR = {
+			has_owner_religion = yes
+			owner = {
+				custom_trigger_tooltip = {
+					tooltip = completed_mission_persia_architecture
+					OR = {
+						mission_completed = per_architecture
+						mission_completed = perc_architecture
+						mission_completed = perm_architecture
+						mission_completed = mper_architecture
+					}
+				}
+			}
+			owner = {
+				has_reform = shhdharmic
+			}
+			owner = {
+				mission_completed = zun_integrate
+			}
+		}
+		OR = {
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
+		}
+		OR = {
+			religion = buddhism
+			religion = mahayana
+			religion = vajrayana
+			religion = maitreya
+		}
+	}
+	
+	can_upgrade_trigger = {
+		is_state_core = owner
+		OR = {
+			has_owner_religion = yes
+			owner = {
+				custom_trigger_tooltip = {
+					tooltip = completed_mission_persia_architecture
+					OR = {
+						mission_completed = per_architecture
+						mission_completed = perc_architecture
+						mission_completed = perm_architecture
+						mission_completed = mper_architecture
+					}
+				}
+			}
+			owner = {
+				has_reform = shhdharmic
+			}
+			owner = {
+				mission_completed = zun_integrate
+			}
+		}
+		OR = {
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
+		}
+		OR = {
+			religion = buddhism
+			religion = mahayana
+			religion = vajrayana
+			religion = maitreya
+		}
+	}
+	
+	keep_trigger = {
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_prosperity_growth = 0.1
+			tax_income = 12
+			local_institution_spread = 0.15
+			local_unrest = -1
+			local_religious_unity_contribution = 0.15
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			monthly_splendor = 1
+			reverse_relation_with_same_religion = 5
+			reverse_relation_with_heretic_religion = 5
+			yearly_karma_decay = 0.01
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			local_prosperity_growth = 0.15
+			tax_income = 24
+			local_institution_spread = 0.25
+			local_unrest = -2
+			local_religious_unity_contribution = 0.15
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			monthly_splendor = 1
+			reverse_relation_with_same_religion = 10
+			reverse_relation_with_heretic_religion = 10
+			yearly_karma_decay = 0.02
+		}
+		on_upgraded = {
+			if = {
+				limit = {
+					558 = {
+						OR = {
+							has_tax_building_trigger = no
+							has_building = temple
+						}
+					}
+				}
+				558 = {
+					remove_building = temple
+					add_building = cathedral
+				}
+			}
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			tax_income = 36
+			allowed_num_of_buildings = 1
+			local_religious_unity_contribution = 0.25
+		}
+		area_modifier = {
+			local_prosperity_growth = 0.15
+			local_institution_spread = 0.15
+			local_unrest = -2
+		}
+		country_modifiers = {
+			monthly_splendor = 1
+			reverse_relation_with_same_religion = 15
+			reverse_relation_with_heretic_religion = 15
+			yearly_karma_decay = 0.04
+		}
+		on_upgraded = {
+		}
+	}
+}
+
+mlankara_patriarchate = {
+	
+	start = 5243
+	
+	date = 1444.01.01
+	
+	time = {
+		months = 24
+	}
+	
+	build_cost = 1000
+	
+	can_be_moved = yes
+	
+	move_days_per_unit_distance = 10
+	
+	starting_tier = 0
+	
+	type = monument
+	
+	
+	build_trigger = {
+		is_state_core = owner
+		development = 25
+		OR = {
+			religion = malankara
+			religion = nestorian
+		}
+		has_tax_building_trigger = yes
+		has_owner_religion = yes
+		owner = {
+			OR = {
+				church_power = 100
+				patriarch_authority = 0.95
+			}
+		}
+		owner = {
+			custom_trigger_tooltip = {
+				tooltip = mlankara_patriarchate.tooltip
+				calc_true_if = {
+					all_province = {
+						OR = {
+							religion = malankara
+							religion = nestorian
+						}
+						superregion = india_superregion
+					}
+					amount = 80
+				}
+			}
+		}
+	}
+	
+	on_built = {
+	}
+	
+	on_destroyed = {
+	}
+	
+	can_use_modifiers_trigger = {
+		is_state_core = owner
+		development = 25
+		OR = {
+			religion = malankara
+			religion = nestorian
+		}
+		has_tax_building_trigger = yes
+		has_owner_religion = yes
+	}
+	
+	can_upgrade_trigger = {
+		is_state_core = owner
+		development = 25
+		OR = {
+			religion = malankara
+			religion = nestorian
+		}
+		has_tax_building_trigger = yes
+		has_owner_religion = yes
+		owner = {
+			OR = {
+				church_power = 100
+				patriarch_authority = 0.95
+			}
+		}
+		owner = {
+			custom_trigger_tooltip = {
+				tooltip = mlankara_patriarchate.tooltip
+				calc_true_if = {
+					all_province = {
+						OR = {
+							religion = malankara
+							religion = nestorian
+						}
+						superregion = india_superregion
+					}
+					amount = 80
+				}
+			}
+		}
+	}
+	
+	keep_trigger = {
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_prosperity_growth = 0.1
+			local_institution_spread = 0.1
+			local_governing_cost = -0.15
+			local_unrest = -1
+			local_religious_unity_contribution = 0.5
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			devotion = 1
+			church_loyalty_modifier = 0.05
+			global_missionary_strength = 0.01
+			tolerance_own = 1
+			church_power_modifier = 0.1
+			yearly_patriarch_authority = 0.1
+			relation_with_same_religion = 10
+		}
+		on_upgraded = {
+			add_church_power = 50
+			add_splendor = 50
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			local_prosperity_growth = 0.15
+			local_institution_spread = 0.15
+			local_governing_cost = -0.25
+			local_unrest = -2
+			local_religious_unity_contribution = 0.5
+			trade_value = 0.5
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			improve_relation_modifier = 0.1
+			institution_spread_from_true_faith = 0.05
+			devotion = 1
+			church_loyalty_modifier = 0.05
+			global_missionary_strength = 0.01
+			tolerance_own = 2
+			church_power_modifier = 0.2
+			yearly_patriarch_authority = 0.2
+			relation_with_same_religion = 10
+		}
+		on_upgraded = {
+			add_church_power = 50
+			add_splendor = 100
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			local_governing_cost = -0.1
+			local_unrest = -4
+			local_religious_unity_contribution = 0.5
+			trade_value = 1
+		}
+		area_modifier = {
+			local_prosperity_growth = 0.1
+			local_institution_spread = 0.15
+			local_governing_cost = -0.15
+		}
+		country_modifiers = {
+			morale_damage_received = -0.025
+			improve_relation_modifier = 0.15
+			institution_spread_from_true_faith = 0.1
+			devotion = 1
+			church_loyalty_modifier = 0.05
+			global_missionary_strength = 0.015
+			tolerance_own = 2
+			church_power_modifier = 0.25
+			yearly_patriarch_authority = 0.3
+			relation_with_same_religion = 15
+			warscore_cost_vs_other_religion = -0.1
+		}
+		on_upgraded = {
+			add_church_power = 50
+			add_splendor = 200
 		}
 	}
 }
