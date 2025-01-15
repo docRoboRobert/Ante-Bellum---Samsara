@@ -1,7 +1,8 @@
 government = monarchy
 add_government_reform = autocracy_reform
 government_rank = 3
-primary_culture = bihari
+primary_culture = bengali
+add_accepted_culture = bihari
 religion = mahayana
 technology_group = indian
 capital = 4489
