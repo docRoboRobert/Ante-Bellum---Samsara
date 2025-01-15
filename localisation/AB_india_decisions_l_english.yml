@@ -106,3 +106,7 @@
  #Settle Tamils on Lanka
  encourage_tamil_settlement_title:0 "Encourage Tamil Settlement"
  encourage_tamil_settlement_desc:0 "Spend extra time and resources to lure eager Tamil settlers which will gladly populate Lanka Island and spread Tamil culture there."
+ 
+ #Build monuments decisions
+ build_kanishka_tomb_title:0 "Build Mausoleum to Kanishka the Great"
+ build_kanishka_tomb_desc:0 "Our might and glory has risen to match that of ancient Kushan Empire. To celebrate and further propagate our might, we shall erect a marvelous monument dedicated to the founder of mighty Empire."

@@ -2337,3 +2337,195 @@ mlankara_patriarchate = {
 		}
 	}
 }
+
+kanishka_tomb = {
+	
+	start = 4511
+	
+	date = 1450.01.01	#Buildable, not visible from the start
+	
+	time = {
+		months = 24
+	}
+	
+	build_cost = 1000
+	
+	can_be_moved = no
+	
+	move_days_per_unit_distance = 10
+	
+	starting_tier = 0
+	
+	type = monument
+	
+	
+	build_trigger = {
+		is_state_core = owner
+		development = 25
+		owner = {
+			OR = {
+				tag = KSU
+				tag = KUS
+				tag = HNE
+				tag = SLH
+				tag = KUC
+				tag = KRR
+				tag = TCR
+			}
+			total_development = 400
+			prestige = 50
+		}
+		has_tax_building_trigger = yes
+	}
+	
+	on_built = {
+	}
+	
+	on_destroyed = {
+	}
+	
+	can_use_modifiers_trigger = {
+		is_state_core = owner
+		development = 25
+		owner = {
+			OR = {
+				tag = KSU
+				tag = KUS
+				tag = HNE
+				tag = SLH
+				tag = KUC
+				tag = KRR
+				tag = TCR
+			}
+		}
+		has_tax_building_trigger = yes
+	}
+	
+	can_upgrade_trigger = {
+		is_state_core = owner
+		development = 25
+		owner = {
+			OR = {
+				tag = KSU
+				tag = KUS
+				tag = HNE
+				tag = SLH
+				tag = KUC
+				tag = KRR
+				tag = TCR
+			}
+		}
+		has_tax_building_trigger = yes
+	}
+	
+	keep_trigger = {
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_defensiveness = 0.1
+			local_garrison_size = 0.25
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			land_morale_constant = 0.1
+			culture_conversion_time = -0.05
+			num_accepted_cultures = 1
+			core_creation = -0.025
+			manpower_in_accepted_culture_provinces = 0.05
+			recover_army_morale_speed = 0.05
+		}
+		on_upgraded = {
+			add_army_tradition = 10
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			local_defensiveness = 0.15
+			local_garrison_size = 0.5
+			trade_value = 0.5
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			land_morale_constant = 0.2
+			culture_conversion_time = -0.1
+			num_accepted_cultures = 1
+			core_creation = -0.05
+			centralize_state_cost = -0.05
+			manpower_in_accepted_culture_provinces = 0.1
+			recover_army_morale_speed = 0.05
+		}
+		on_upgraded = {
+			add_army_tradition = 10
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			local_defensiveness = 0.2
+			local_garrison_size = 0.75
+			trade_value = 1
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			land_morale_constant = 0.25
+			culture_conversion_time = -0.1
+			num_accepted_cultures = 2
+			monthly_splendor = 1
+			core_creation = -0.075
+			centralize_state_cost = -0.1
+			manpower_in_accepted_culture_provinces = 0.15
+			recover_army_morale_speed = 0.05
+		}
+		on_upgraded = {
+			add_army_tradition = 10
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+	}
+}
