@@ -2529,3 +2529,339 @@ kanishka_tomb = {
 		}
 	}
 }
+
+samsara_zoro_temple = {
+	
+	start = 5247
+	
+	date = 1226.01.01
+	
+	time = {
+		months = 24
+	}
+	
+	build_cost = 1000
+	
+	can_be_moved = no
+	
+	move_days_per_unit_distance = 10
+	
+	starting_tier = 1
+	
+	type = monument
+	
+	
+	build_trigger = {
+		province_is_or_accepts_culture = yes
+		OR = {
+			has_owner_secondary_religion = yes
+			has_owner_religion = yes
+		}
+		religion_group = zoroastrian_group
+	}
+	
+	on_built = {
+	}
+	
+	on_destroyed = {
+	}
+	
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_culture = yes
+		OR = {
+			has_owner_secondary_religion = yes
+			has_owner_religion = yes
+		}
+		religion_group = zoroastrian_group
+	}
+	
+	can_upgrade_trigger = {
+		province_is_or_accepts_culture = yes
+		OR = {
+			has_owner_secondary_religion = yes
+			has_owner_religion = yes
+		}
+		religion_group = zoroastrian_group
+	}
+	
+	keep_trigger = {
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_missionary_strength = -0.02
+			local_state_maintenance_modifier = -0.15
+			local_unrest = -2
+		}
+		area_modifier = {
+			local_development_cost_modifier = -0.025
+			supply_limit_modifier = 0.1
+		}
+		country_modifiers = {
+			reinforce_cost_modifier = -0.05
+			recover_army_morale_speed = 0.025
+			manpower_in_true_faith_provinces= 0.1
+			promote_culture_cost = -0.15
+		}
+		on_upgraded = {
+			if = {
+				limit = {
+					5247 = {
+						OR = {
+							has_tax_building_trigger = no
+							NOT = { has_building = cathedral }
+						}
+					}
+				}
+				5247 = {
+					add_building = temple
+				}
+			}
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			local_missionary_strength = -0.02
+			local_state_maintenance_modifier = -0.2
+		}
+		area_modifier = {
+			local_development_cost_modifier = -0.05
+			supply_limit_modifier = 0.2
+			local_unrest = -2
+		}
+		country_modifiers = {
+			reinforce_cost_modifier = -0.1
+			recover_army_morale_speed = 0.05
+			manpower_in_true_faith_provinces= 0.10
+			promote_culture_cost = -0.2
+		}
+		on_upgraded = {
+			if = {
+				limit = {
+					5247 = {
+						OR = {
+							has_tax_building_trigger = no
+							has_building = temple
+						}
+					}
+				}
+				5247 = {
+					remove_building = temple
+					add_building = cathedral
+				}
+			}
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			local_missionary_strength = -0.02
+			local_state_maintenance_modifier = -0.25
+			local_defender_dice_roll_bonus = 1
+		}
+		area_modifier = {
+			local_development_cost_modifier = -0.075
+			supply_limit_modifier = 0.25
+			local_unrest = -3
+		}
+		country_modifiers = {
+			reinforce_cost_modifier = -0.15
+			recover_army_morale_speed = 0.10
+			manpower_in_true_faith_provinces= 0.15
+			promote_culture_cost = -0.3
+			max_general_shock = 1
+		}
+		on_upgraded = {
+			add_splendor = 100
+		}
+	}
+}
+
+peshawar_wall = {
+	
+	start = 578
+	
+	date = 1358.01.01
+	
+	time = {
+		months = 24
+	}
+	
+	build_cost = 1000
+	
+	can_be_moved = no
+	
+	move_days_per_unit_distance = 10
+	
+	starting_tier = 1
+	
+	type = monument
+	
+	
+	build_trigger = {
+		fort_level = 2
+	}
+	
+	on_built = {
+	}
+	
+	on_destroyed = {
+	}
+	
+	can_use_modifiers_trigger = {
+		fort_level = 1
+	}
+	
+	can_upgrade_trigger = {
+		fort_level = 2
+	}
+	
+	keep_trigger = {
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {	#This valley is strategical defensive choke point by default
+			local_defensiveness = 0.05
+			local_hostile_attrition = 1
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_defensiveness = 0.15
+			max_attrition = 2
+			local_hostile_attrition = 2
+			local_garrison_size = 0.25
+			local_hostile_movement_speed = -0.15
+			supply_limit_modifier = 0.15
+			local_state_maintenance_modifier = 0.15
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			
+		}
+		on_upgraded = {
+			
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+			local_defensiveness = 0.25
+			max_attrition = 3
+			local_hostile_attrition = 3
+			local_garrison_size = 0.4
+			local_hostile_movement_speed = -0.2
+			supply_limit_modifier = 0.2
+			statewide_governing_cost = -0.15
+			local_state_maintenance_modifier = 0.25
+		}
+		area_modifier = {
+			local_defensiveness = 0.05
+			local_garrison_size = 0.1
+		}
+		country_modifiers = {
+			
+		}
+		on_upgraded = {
+			
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+			fort_level = 1
+			local_defender_dice_roll_bonus = 1
+			local_defensiveness = 0.4
+			max_attrition = 3
+			local_hostile_attrition = 3
+			local_garrison_size = 0.5
+			local_hostile_movement_speed = -0.25
+			supply_limit_modifier = 0.25
+			statewide_governing_cost = -0.25
+			local_state_maintenance_modifier = 0.5
+		}
+		area_modifier = {
+			local_defensiveness = 0.1
+			max_attrition = 1
+			local_hostile_attrition = 1
+			local_garrison_size = 0.25
+			local_hostile_movement_speed = -0.1
+			supply_limit_modifier = 0.1
+		}
+		country_modifiers = {
+			garrison_damage = 0.1
+		}
+		on_upgraded = {
+			
+		}
+	}
+}
