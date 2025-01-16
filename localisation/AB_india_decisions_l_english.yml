@@ -110,3 +110,7 @@
  #Build monuments decisions
  build_kanishka_tomb_title:0 "Build Mausoleum to Kanishka the Great"
  build_kanishka_tomb_desc:0 "Our might and glory has risen to match that of ancient Kushan Empire. To celebrate and further propagate our might, we shall erect a marvelous monument dedicated to the founder of mighty Empire."
+ build_quetta_fortress_title:0 "Build Fortress of Quetta"
+ build_quetta_fortress_desc:0 "Build complex of strategic fortresses around Quetta province in order to secure the vital mountainous pass from enemy invasions. Numerous fortifications in the area not only will show off our military capabilities, we will finally find a remedy for centuries old issue of foreign powers invading India from the west."
+ build_baluchi_fortress_title:0 "Build Great Coastal Wall in Uthal"
+ build_baluchi_fortress_desc:0 "Funnel great efforts to construct robust defensive structure at the Mani Hor gulf that will prevent enemy armies from marching into India and vice-versa by walking along the Makran coast. Great defensive wall will consist of new defensive canal, fortified naval bases at Uthal and Damb, and continous wall-like frontier to connect all of it with nearby mountain range. All this to display our nation's military might and bring security to our posessions further down."

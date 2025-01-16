@@ -2342,7 +2342,7 @@ kanishka_tomb = {
 	
 	start = 4511
 	
-	date = 1450.01.01	#Buildable, not visible from the start
+	date = 1445.01.01	#Buildable, not visible from the start
 	
 	time = {
 		months = 24
@@ -2745,7 +2745,7 @@ peshawar_wall = {
 	}
 	
 	can_use_modifiers_trigger = {
-		fort_level = 1
+		
 	}
 	
 	can_upgrade_trigger = {
@@ -2817,10 +2817,10 @@ peshawar_wall = {
 			supply_limit_modifier = 0.2
 			statewide_governing_cost = -0.15
 			local_state_maintenance_modifier = 0.25
+			local_assault_fort_cost_modifier = 0.4
 		}
 		area_modifier = {
 			local_defensiveness = 0.05
-			local_garrison_size = 0.1
 		}
 		country_modifiers = {
 			
@@ -2844,21 +2844,379 @@ peshawar_wall = {
 			max_attrition = 3
 			local_hostile_attrition = 3
 			local_garrison_size = 0.5
-			local_hostile_movement_speed = -0.25
-			supply_limit_modifier = 0.25
 			statewide_governing_cost = -0.25
 			local_state_maintenance_modifier = 0.5
 		}
 		area_modifier = {
-			local_defensiveness = 0.1
 			max_attrition = 1
 			local_hostile_attrition = 1
-			local_garrison_size = 0.25
-			local_hostile_movement_speed = -0.1
-			supply_limit_modifier = 0.1
+			local_hostile_movement_speed = -0.25
+			supply_limit_modifier = 0.2
+			local_assault_fort_cost_modifier = 0.5
+			local_defensiveness = 0.1
 		}
 		country_modifiers = {
 			garrison_damage = 0.1
+		}
+		on_upgraded = {
+			2073 = {
+				add_permanent_province_modifier = {
+					name = peshawar_wall_north_modifier
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+quetta_fortress = {
+	
+	start = 577
+	
+	date = 1445.01.01
+	
+	time = {
+		months = 24
+	}
+	
+	build_cost = 1000
+	
+	can_be_moved = no
+	
+	move_days_per_unit_distance = 10
+	
+	starting_tier = 0
+	
+	type = monument
+	
+	
+	build_trigger = {
+		fort_level = 2
+		owner = {
+			owns_core_province = 2068
+			owns_core_province = 2072
+			owns_core_province = 504
+			owns_core_province = 576
+			owns_core_province = 5274
+			total_development = 250
+			prestige = 50
+		}
+	}
+	
+	on_built = {
+	}
+	
+	on_destroyed = {
+	}
+	
+	can_use_modifiers_trigger = {
+		
+	}
+	
+	can_upgrade_trigger = {
+		fort_level = 2
+		owner = {
+			owns_core_province = 2068
+			owns_core_province = 2072
+			owns_core_province = 504
+			owns_core_province = 576
+			owns_core_province = 5274
+		}
+	}
+	
+	keep_trigger = {
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {	#This pass is strategical defensive choke point by default
+			local_defensiveness = 0.05
+			local_hostile_attrition = 1
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_defensiveness = 0.15
+			max_attrition = 2
+			local_hostile_attrition = 2
+			local_garrison_size = 0.25
+			local_garrison_damage = 0.2
+			local_hostile_movement_speed = -0.15
+			supply_limit_modifier = 0.15
+			local_state_maintenance_modifier = 0.15
+			local_assault_fort_cost_modifier = 0.5
+			local_manpower_modifier = -0.2
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			
+		}
+		on_upgraded = {
+			
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+			local_defensiveness = 0.25
+			max_attrition = 3
+			local_hostile_attrition = 3
+			local_garrison_size = 0.4
+			local_hostile_movement_speed = -0.2
+			supply_limit_modifier = 0.2
+			statewide_governing_cost = -0.1
+			local_state_maintenance_modifier = 0.25
+			local_assault_fort_cost_modifier = 0.6
+			local_manpower_modifier = -0.25
+		}
+		area_modifier = {
+			local_friendly_movement_speed = 0.1
+		}
+		country_modifiers = {
+			
+		}
+		on_upgraded = {
+			
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 3500
+		}
+		province_modifiers = {
+			local_defender_dice_roll_bonus = 1
+			local_defensiveness = 0.5
+			max_attrition = 4
+			local_hostile_attrition = 4
+			local_garrison_size = 0.5
+			statewide_governing_cost = -0.2
+			local_state_maintenance_modifier = 0.5
+			local_assault_fort_cost_modifier = 0.75
+			local_manpower_modifier = -0.5
+		}
+		area_modifier = {
+			max_attrition = 1
+			local_hostile_attrition = 1
+			local_hostile_movement_speed = -0.25
+			supply_limit_modifier = 0.2
+			local_friendly_movement_speed = 0.15
+		}
+		country_modifiers = {
+			morale_damage_received = -0.05
+		}
+		on_upgraded = {
+			
+		}
+	}
+}
+
+baluchi_fortress = {
+	
+	start = 5273
+	
+	date = 1445.01.01
+	
+	time = {
+		months = 24
+	}
+	
+	build_cost = 1000
+	
+	can_be_moved = no
+	
+	move_days_per_unit_distance = 10
+	
+	starting_tier = 0
+	
+	type = monument
+	
+	
+	build_trigger = {
+		fort_level = 2
+		owner = {
+			owns_core_province = 2231
+			owns_core_province = 5274
+			owns_core_province = 5246
+			owns_core_province = 504
+			owns_core_province = 505
+			total_development = 250
+			prestige = 50
+		}
+	}
+	
+	on_built = {
+	}
+	
+	on_destroyed = {
+	}
+	
+	can_use_modifiers_trigger = {
+		
+	}
+	
+	can_upgrade_trigger = {
+		fort_level = 2
+		owner = {
+			owns_core_province = 2231
+			owns_core_province = 5274
+			owns_core_province = 5246
+			owns_core_province = 504
+			owns_core_province = 505
+		}
+	}
+	
+	keep_trigger = {
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {	#This pass is strategical defensive choke point by default
+			local_defensiveness = 0.05
+			local_hostile_attrition = 1
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_defensiveness = 0.15
+			max_attrition = 2
+			local_hostile_attrition = 2
+			local_garrison_size = 0.25
+			local_garrison_damage = 0.2
+			local_hostile_movement_speed = -0.15
+			supply_limit_modifier = 0.15
+			local_state_maintenance_modifier = 0.15
+			local_assault_fort_cost_modifier = 0.5
+			local_manpower_modifier = -0.2
+			province_trade_power_value = 1
+			local_ship_repair = 0.1
+			blockade_force_required = 0.5
+			hostile_disembark_speed = 0.25
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			
+		}
+		on_upgraded = {
+			
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+			local_defensiveness = 0.25
+			max_attrition = 3
+			local_hostile_attrition = 3
+			local_garrison_size = 0.4
+			local_hostile_movement_speed = -0.2
+			supply_limit_modifier = 0.2
+			statewide_governing_cost = -0.1
+			local_state_maintenance_modifier = 0.25
+			local_assault_fort_cost_modifier = 0.6
+			local_manpower_modifier = -0.25
+			province_trade_power_value = 1.5
+			local_ship_repair = 0.15
+			blockade_force_required = 0.75
+		}
+		area_modifier = {
+			local_friendly_movement_speed = 0.1
+			hostile_disembark_speed = 0.35
+		}
+		country_modifiers = {
+			
+		}
+		on_upgraded = {
+			
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 3500
+		}
+		province_modifiers = {
+			local_defender_dice_roll_bonus = 1
+			local_defensiveness = 0.5
+			max_attrition = 4
+			local_hostile_attrition = 4
+			local_garrison_size = 0.5
+			statewide_governing_cost = -0.2
+			local_state_maintenance_modifier = 0.5
+			local_assault_fort_cost_modifier = 0.75
+			local_manpower_modifier = -0.5
+			province_trade_power_value = 2
+			local_ship_repair = 0.2
+			blockade_force_required = 1
+			local_own_coast_naval_combat_bonus = 1
+		}
+		area_modifier = {
+			max_attrition = 1
+			local_hostile_attrition = 1
+			local_hostile_movement_speed = -0.25
+			supply_limit_modifier = 0.2
+			local_friendly_movement_speed = 0.15
+			hostile_disembark_speed = 0.5
+		}
+		country_modifiers = {
+			artillery_barrage_cost = -0.1
 		}
 		on_upgraded = {
 			

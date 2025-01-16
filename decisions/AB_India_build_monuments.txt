@@ -28,6 +28,9 @@ country_decisions = {
 				tag = TCR
 			}
 			owns_core_province = 4511
+			4511 = {
+				development = 25
+			}
 			treasury = 1000
 			total_development = 400
 			prestige = 50
@@ -36,11 +39,89 @@ country_decisions = {
 			4511 = {
 				add_great_project = {
 					type = kanishka_tomb
-					instant = no 
+					instant = no
 				}
 			}
 			add_treasury = -1000
 			set_global_flag = abi_built_kanishka_tomb
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	build_quetta_fortress = {
+		potential = {
+			NOT = { has_global_flag = abi_built_quetta_fortress }
+			owns_core_province = 577
+		}
+		provinces_to_highlight = {
+			province_id = 577
+		}
+		major = yes
+		allow = {
+			owns_core_province = 577
+			owns_core_province = 2068
+			owns_core_province = 2072
+			owns_core_province = 504
+			owns_core_province = 576
+			owns_core_province = 5274
+			treasury = 1000
+			total_development = 250
+			prestige = 50
+			577 = {
+				fort_level = 2
+			}
+		}
+		effect = {
+			577 = {
+				add_great_project = {
+					type = quetta_fortress
+					instant = no
+				}
+			}
+			add_treasury = -1000
+			set_global_flag = abi_built_quetta_fortress
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	build_baluchi_fortress = {
+		potential = {
+			NOT = { has_global_flag = abi_built_baluchi_fortress }
+			owns_core_province = 5273
+		}
+		provinces_to_highlight = {
+			province_id = 5273
+		}
+		major = yes
+		allow = {
+			owns_core_province = 5273
+			owns_core_province = 2231
+			owns_core_province = 5274
+			owns_core_province = 5246
+			owns_core_province = 504
+			owns_core_province = 505
+			treasury = 1000
+			total_development = 250
+			prestige = 50
+			5273 = {
+				fort_level = 2
+			}
+		}
+		effect = {
+			5273 = {
+				add_great_project = {
+					type = quetta_fortress
+					instant = no
+				}
+			}
+			add_treasury = -1000
+			set_global_flag = abi_built_baluchi_fortress
 		}
 		ai_will_do = {
 			factor = 1
