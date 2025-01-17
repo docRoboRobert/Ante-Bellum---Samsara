@@ -89,5 +89,35 @@ spriteTypes = {
         name = "GFX_great_project_baluchi_fortress"
         texturefile = "gfx//interface//great_projects//great_project_baluchi_fortress.dds"
     }
+	
+	spriteType = {
+        name = "GFX_great_project_bhaktapur_durbar"
+        texturefile = "gfx//interface//great_projects//great_project_bhaktapur_durbar.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_great_project_gyantse_dzong"
+        texturefile = "gfx//interface//great_projects//great_project_gyantse_dzong.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_great_project_himalaya_fort_1"
+        texturefile = "gfx//interface//great_projects//great_project_himalaya_fort_1.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_great_project_himalaya_fort_2"
+        texturefile = "gfx//interface//great_projects//great_project_himalaya_fort_2.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_great_project_himalaya_fort_3"
+        texturefile = "gfx//interface//great_projects//great_project_himalaya_fort_3.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_great_project_himalaya_fort_4"
+        texturefile = "gfx//interface//great_projects//great_project_himalaya_fort_4.dds"
+    }
 }
 	
