@@ -2,12 +2,12 @@ spriteTypes = {
 
 	spriteType = {
 		name = "government_reform_hind_decayed_admin"
-		texturefile = "gfx//interface//ideas_EU4//hind_decayed_admin.dds"
+		texturefile = "gfx//interface//government_reform_icons//hind_decayed_admin.dds"
 	}
 	
 	spriteType = {
 		name = "government_reform_hind_empower_hindu"
-		texturefile = "gfx//interface//ideas_EU4//hind_empower_hindu.dds"
+		texturefile = "gfx//interface//government_reform_icons//hind_empower_hindu.dds"
 	}
 
 	spriteType = {

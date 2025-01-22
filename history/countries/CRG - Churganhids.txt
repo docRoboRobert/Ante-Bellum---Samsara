@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = exiled_persian_prince
 government_rank = 1
 technology_group = muslim
 primary_culture = khorasani

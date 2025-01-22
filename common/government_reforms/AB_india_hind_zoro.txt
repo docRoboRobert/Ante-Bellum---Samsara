@@ -1,0 +1,29 @@
+hind_decayed_admin = {
+	icon = "hind_decayed_admin"
+	allow_convert = no
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_equivalent = feudal_monarchy
+	potential = {
+		OR = {
+			tag = HND
+			tag = IDS
+			primary_culture = sashindi
+		}
+	}
+	trigger = {
+		OR = {
+			tag = HND
+			tag = IDS
+			primary_culture = sashindi
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = -10
+	modifiers = {
+		province_warscore_cost = -0.05
+		prestige_decay = 0.02
+		yearly_corruption = 0.075
+		core_creation = -0.075
+	}
+}
