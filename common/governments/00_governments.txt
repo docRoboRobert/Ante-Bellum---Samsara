@@ -200,6 +200,7 @@ monarchy = {
 				#Samsara
 				exiled_persian_prince
 				hind_decayed_admin
+				hind_restored_admin
 			}
 		}
 		hereditary_vs_nobility = {

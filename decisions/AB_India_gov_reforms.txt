@@ -1,0 +1,47 @@
+country_decisions = {
+
+	restore_hind_administration = {
+		potential = {
+			has_reform = hind_decayed_admin
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4504
+				province_id = 5247
+				province_id = 2079
+				province_id = 506
+			}
+			NOT = { owned_by = ROOT }
+		}
+		major = yes
+		allow = {
+			has_reform = hind_decayed_admin
+			OR = {
+				AND = {
+					owns_core_province = 4504
+					owns_core_province = 5247
+					owns_core_province = 2079
+					owns_core_province = 506
+					NOT = { exists = SND }
+				}
+				AND = {
+					monthly_adm = 9
+					monthly_dip = 9
+					monthly_mil = 9
+					NOT = { exists = SHS }
+				}
+			}
+			total_development = 150
+			prestige = 25
+		}
+		effect = {
+			add_government_reform = hind_restored_admin
+			add_splendor = 50
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+
+}

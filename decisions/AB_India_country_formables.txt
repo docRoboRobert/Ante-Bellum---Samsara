@@ -887,6 +887,12 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
+			if = {
+				limit = {
+					NOT = { has_reform = hind_restored_admin }
+				}
+				add_government_reform = hind_restored_admin
+			}
 			set_country_flag = formed_indus_satrapy_flag
 			if = {
 				limit = { has_custom_ideas = no }
