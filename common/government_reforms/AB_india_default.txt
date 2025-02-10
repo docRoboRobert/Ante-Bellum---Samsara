@@ -38,3 +38,36 @@ exiled_persian_prince = {
 		legitimacy = -0.1
 	}
 }
+
+parmistan_emperor_man = {
+	icon = "parmistan_emperor_man"
+	allow_convert = no
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	legacy_equivalent = feudal_monarchy
+	maintain_dynasty = yes
+	militarised_society = yes
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	fixed_rank = 3
+	potential = {
+		tag = NNN
+	}
+	trigger = {
+		total_development = 150
+		OR = {
+			tag = NNN
+			is_playing_custom_nation = yes
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 25
+	modifiers = {
+		monarch_lifespan = 0.80
+		max_absolutism_effect = 0.1
+		land_morale_constant = 0.25
+		monarch_military_power = 1
+		siege_ability = 0.1
+		max_flagships = 1
+	}
+}

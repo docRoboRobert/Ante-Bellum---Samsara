@@ -38,5 +38,9 @@ spriteTypes = {
 		name = "government_reform_exiled_persian_prince"
 		texturefile = "gfx//interface//government_reform_icons//exiled_persian_prince.dds"
 	}
+	spriteType = {
+		name = "government_reform_parmistan_emperor_man"
+		texturefile = "gfx//interface//government_reform_icons//parmistan_emperor_man.dds"
+	}
 	
 }

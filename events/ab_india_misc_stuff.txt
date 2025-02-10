@@ -292,3 +292,30 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = abindia_shitevent.7
+	title = abindia_shitevent.7.t
+	desc = abindia_shitevent.7.d
+	picture = INVASION_ALLIES_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = NNN
+		has_country_modifier = parmistan_manifest_destiny
+		total_development = 150
+		num_of_owned_provinces_with = {
+			value = 40
+			is_state = yes
+		}
+	}
+	
+	option = {
+		name = abindia_shitevent.7.a
+		highlight = yes
+		custom_tooltip = abindia_shitevent.7.tooltip1
+		add_government_reform = parmistan_emperor_man
+		change_government_reform_progress = 250
+	}
+}

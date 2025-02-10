@@ -198,6 +198,7 @@ monarchy = {
 				MIN_celestial_empire
 				# ]]]
 				#Samsara
+				parmistan_emperor_man
 				exiled_persian_prince
 				hind_decayed_admin
 				hind_restored_admin

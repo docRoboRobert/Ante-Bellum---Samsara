@@ -30,7 +30,11 @@
  abindia_shitevent.6.t:0 "Strong Base Secured"
  abindia_shitevent.6.d:0 "Parmistan has successfully consolidated its starting region and secured a decent base of operation for further missions. New government has been properly established and new order is being brought to the conquered lands. With our domain large enough, proper administrative structures can take care of the realm while the army and leadership will focus on continiuing our expansion."
  abindia_shitevent.6.a:0 "Soon the world will be purged of all mission trees."
- abindia_shitevent.6.tooltip1:0 "§VThis is the last scripted event for this obscure tag. From now on, you are free to write your own story. Just don't expect any more unique events.§!"
+ abindia_shitevent.6.tooltip1:0 "§YGreat leader of Parmistan has proven his might, planting fear in the minds of the weak neighbors. Once we secure more development and exploitable terrain, the new form of government will be firmly established.§!"
+ abindia_shitevent.7.t:0 "Centralized Government Established"
+ abindia_shitevent.7.d:0 "With enough time having passed and enough land conquered under our glorious rule, Parmistan can finally declare itself as highly-functional entity. The successful conquests of Anton Bellukh and his successors have elevated him to the rank of god-like figure. Now no man has any doubt whose power is all-reaching and undisputed. The Emperor of Parm now sits on the throne and plots future moves with the trusted war cabinet."
+ abindia_shitevent.7.a:0 "Increase production of thighs and ban event previews!"
+ abindia_shitevent.7.tooltip1:0 "§VThis is the last scripted event for this obscure tag. From now on, you are free to write your own story. Just don't expect any more unique events.§!"
  
  #Country-specific lore dump events on start
  abindia_starting_lore.1.t:0 "Remnants of Persian Hind"
