@@ -1,5 +1,5 @@
 government = theocracy
-add_government_reform = leading_clergy_reform
+add_government_reform = lhasa_theocratic_state
 government_rank = 2
 primary_culture = tibetan
 religion = vajrayana

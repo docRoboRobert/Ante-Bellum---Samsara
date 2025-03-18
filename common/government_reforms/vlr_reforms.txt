@@ -1,0 +1,34 @@
+vlr_st_thomas_apostle = {
+	icon = "st_thomas_apostle"
+	allow_convert = no
+	allow_normal_conversion = yes
+	lock_level_when_selected = no
+	legacy_equivalent = theocratic_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 15
+
+	potential = {
+		religion = malankara
+	}
+	
+	trigger = {
+		religion = malankara
+		NOT = { tag = VLR }		#Special form of government for them
+	}
+	
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	monastic = yes
+	custom_attributes = {
+		monastic_order = yes
+	}
+	modifiers = {
+		tolerance_own = 1
+		tolerance_heathen = 1
+		global_monthly_devastation = -0.1
+		shock_damage_received = -0.05
+		morale_damage_received = -0.05
+		defensiveness = 0.10
+		church_power_modifier = 0.075
+    }
+}

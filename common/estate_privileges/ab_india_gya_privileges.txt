@@ -1,0 +1,720 @@
+estate_gya_land_rights = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		governing_capacity = 100
+	}
+	# ]]]
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 1.4
+			num_of_territories = 5
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 10
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 15
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = {
+					crown_land_share = 25
+				}
+				estate_influence = {
+					estate = estate_gya
+					influence = 75
+				}
+			}
+			NOT = {
+				has_estate_privilege = estate_gya_land_rights
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				AND = {
+					governing_capacity_percentage = 0.9
+					NOT = {
+						has_estate_privilege = estate_gya_land_rights
+					}
+				}
+				#The trigger below should make sure that the AI actually keeps this privilege when enacting it early game
+				AND = {
+					governing_capacity_percentage = 0.6
+					has_estate_privilege = estate_gya_land_rights
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				governing_capacity_percentage = 0.5
+			}
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = {
+					crown_land_share = 40
+				}
+				AND = {
+					is_absolutism_active = yes
+					NOT = {
+						crown_land_share = 60
+					}
+				}
+			}
+			NOT = {
+				has_estate_privilege = estate_gya_land_rights
+			}
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = {
+					crown_land_share = 30
+				}
+				AND = {
+					is_absolutism_active = yes
+					NOT = {
+						crown_land_share = 50
+					}
+				}
+			}
+			NOT = {
+				has_estate_privilege = estate_gya_land_rights
+			}
+		}
+		modifier = {
+			factor = 0.8
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 2
+			governing_capacity_percentage = 0.9
+		}
+		modifier = {
+			factor = 3
+			governing_capacity_percentage = 1
+		}
+		modifier = {
+			factor = 10
+			governing_capacity_percentage = 1.2
+		}
+		modifier = {
+			factor = 8
+			NOT = {
+				adm_tech = 12
+			}
+			governing_capacity_percentage = 0.8
+		}
+		modifier = {
+			factor = 5
+			NOT = {
+				adm_tech = 12
+			}
+			NOT = {
+				government_rank = 1
+			}
+			governing_capacity_percentage = 0.65
+		}
+		#Tag specific convincement - after tech 17 (+250 governing capacity) it should not play a role anymore
+		modifier = {
+			factor = 1.25
+			tag = MOS
+			NOT = {
+				adm_tech = 17
+			}
+		}
+		modifier = {
+			factor = 1.25
+			tag = RUS
+			NOT = {
+				adm_tech = 17
+			}
+		}
+		modifier = {
+			factor = 1.25
+			tag = TUR
+			NOT = {
+				adm_tech = 17
+			}
+		}
+		modifier = {
+			factor = 1.25
+			tag = MNG
+			NOT = {
+				adm_tech = 17
+			}
+		}
+		modifier = {
+			factor = 1.25
+			tag = FRA
+			NOT = {
+				adm_tech = 17
+			}
+		}
+		modifier = {
+			factor = 1.25
+			tag = SPA
+			NOT = {
+				adm_tech = 17
+			}
+		}
+		modifier = {
+			factor = 1.25
+			tag = PLC
+			NOT = {
+				adm_tech = 17
+			}
+		}
+		#Has already a similar privilege active
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_brahmins_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_nobles_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_church_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_maratha_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_vaisyas_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_cossacks_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_nomadic_tribes_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_dhimmi_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_jains_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_rajput_land_rights
+		}
+	}
+}
+
+estate_gya_social_mobility = {
+	icon = estate_eunuchs_imperial_council_privilege
+	max_absolutism = -10
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 2
+		}
+	}
+	loyalty = 0.1
+	influence = 0.1
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+
+estate_gya_civil_administration = {
+	icon = privilege_government
+	land_share = 10
+	max_absolutism = -15
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 3
+		}
+	}
+	loyalty = 0.05
+	influence = 0.15
+	can_select = {
+		NOT = {
+			has_estate_privilege = estate_gya_civil_administration
+		}
+	}
+	can_revoke = {
+		is_at_war = no
+	}
+	modifier_by_land_ownership = {
+		core_creation = -0.2
+		state_maintenance_modifier = -0.2
+	}
+	penalties = {
+		yearly_absolutism = -2
+	}
+	benefits = {
+		free_adm_policy = 1
+	}
+	mechanics = {
+		exempt_from_seize_land
+	}
+	cooldown_years = 25
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+
+estate_gya_autonymous_guild_cities = {
+	icon = GFX_text_trade_value_modifier
+	max_absolutism = -10
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 2
+		}
+	}
+	loyalty = 0.1
+	influence = 0.1
+	is_valid = {
+		mission_completed = lha_revive_the_guilds
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = unavailable_during_revolution_disaster
+			NOT = {
+				has_disaster = revolution
+			}
+			NOT = {
+				has_disaster_progress = {
+					disaster = revolution
+					value = 1
+				}
+			}
+			NOT = {
+				has_disaster = french_revolution
+			}
+			NOT = {
+				has_disaster_progress = {
+					disaster = french_revolution
+					value = 1
+				}
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_gya_autonymous_guild_cities_on_granted_tooltip
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = gya_upgraded_guild_modifiers
+				}
+			}
+			hidden_effect = {
+				gya_upgrade_guild_modifier_effect = yes
+			}
+		}
+		hidden_effect = {
+			gya_autonymous_guild_privilege_effect = yes
+		}
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				superregion = china_superregion
+				OR = {
+					has_province_modifier = estate_gya_thriving_guild_city
+					has_province_modifier = lha_thriving_local_maritime_guild
+				}
+			}
+			if = {
+				limit = {
+					has_province_modifier = estate_gya_autonomy_granted_to_guild_city
+				}
+				remove_province_modifier = estate_gya_autonomy_granted_to_guild_city
+			}
+			add_province_modifier = {
+				name = estate_gya_autonomy_granted_to_guild_city
+				duration = -1
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_gya_autonymous_guild_cities_on_revoke_tooltip
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_gya_autonomy_granted_to_guild_city
+			}
+			remove_province_modifier = estate_gya_autonomy_granted_to_guild_city
+			add_province_modifier = {
+				name = estate_gya_autonomy_granted_to_guild_city
+				duration = 5475
+			}
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_gya_autonymous_guild_cities_on_revoke_tooltip
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_gya_autonomy_granted_to_guild_city
+			}
+			remove_province_modifier = estate_gya_autonomy_granted_to_guild_city
+			add_province_modifier = {
+				name = estate_gya_autonomy_granted_to_guild_city
+				duration = 5475
+			}
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	cooldown_years = 12
+	on_cooldown_expires = {
+		country_event = {
+			id = gya_events.1
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_gya_monastic_administrators = {
+	icon = gfx_estate_gya_monastic_administrators
+	loyalty = 0.05
+	influence = 0.05
+	max_absolutism = -5
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	is_valid = {
+		mission_completed = lha_qufu_vihara
+	}
+	on_granted = {
+		custom_tooltip = estate_gya_monastic_administrators_temple_tooltip
+		tooltip = {
+			add_province_modifier = {
+				name = estate_gya_monastic_administration_temple
+				duration = -1
+			}
+		}
+		custom_tooltip = estate_gya_monastic_administrators_gtemple_tooltip
+		tooltip = {
+			add_province_modifier = {
+				name = estate_gya_monastic_administration_great_temple
+				duration = -1
+			}
+		}
+		custom_tooltip = estate_gya_monastic_administrators_destroy_tooltip
+		tooltip = {
+			add_estate_loyalty = {
+				estate = estate_gya
+				loyalty = -5
+			}
+			add_province_modifier = {
+				name = estate_gya_transitioning_provincial_governance
+				duration = 3650
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_gya_monastic_administrators_revoke_tooltip
+		tooltip = {
+			add_province_modifier = {
+				name = estate_gya_transitioning_provincial_governance
+				duration = 3650
+			}
+		}
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				superregion = china_superregion
+				has_owner_religion = yes
+				has_tax_building_trigger = yes
+			}
+			if = {
+				limit = {
+					has_building = temple
+				}
+				add_province_modifier = {
+					name = estate_gya_monastic_administration_temple
+					duration = -1
+				}
+			}
+			else = {
+				add_province_modifier = {
+					name = estate_gya_monastic_administration_great_temple
+					duration = -1
+				}
+			}
+		}
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_gya_monastic_administration_temple
+			}
+			remove_province_modifier = estate_gya_monastic_administration_temple
+			add_province_modifier = {
+				name = estate_gya_transitioning_provincial_governance
+				duration = 3650
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_gya_monastic_administration_great_temple
+			}
+			remove_province_modifier = estate_gya_monastic_administration_great_temple
+			add_province_modifier = {
+				name = estate_gya_transitioning_provincial_governance
+				duration = 3650
+			}
+		}
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_gya_monastic_administration_temple
+			}
+			remove_province_modifier = estate_gya_monastic_administration_temple
+			add_province_modifier = {
+				name = estate_gya_transitioning_provincial_governance
+				duration = 3650
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_gya_monastic_administration_great_temple
+			}
+			remove_province_modifier = estate_gya_monastic_administration_great_temple
+			add_province_modifier = {
+				name = estate_gya_transitioning_provincial_governance
+				duration = 3650
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_gya_harmonized_grain_routes = {
+	icon = gfx_estate_gya_harmonized_grain_routes
+	max_absolutism = -10
+	is_valid = {
+		mission_completed = lha_granaries_of_china
+	}
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 2
+		}
+	}
+	loyalty = 0.05
+	influence = 0.1
+	land_share = 5
+	penalties = {
+	}
+	benefits = {
+		land_maintenance_modifier = -0.15
+		caravan_power = 0.1
+		global_supply_limit_modifier = 0.1
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+
+estate_gya_levy_of_the_middle_kingdom = {
+	icon = privilege_demand_more_troops
+	loyalty = -0.05
+	influence = 0.1
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	is_valid = {
+		any_owned_province = {
+			OR = {
+				culture = gya
+				culture_group = east_asian
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_gya_levy_of_the_middle_kingdom_gya_granted_tooltip
+		tooltip = {
+			add_province_modifier = {
+				name = estate_gya_levy_of_the_middle_kingdom_gya
+				duration = -1
+			}
+		}
+		custom_tooltip = estate_gya_levy_of_the_middle_kingdom_regular_chinese_granted_tooltip
+		tooltip = {
+			add_province_modifier = {
+				name = estate_gya_levy_of_the_middle_kingdom_chinese_culture_group
+				duration = -1
+			}
+		}
+		custom_tooltip = estate_gya_levy_of_the_middle_kingdom_tax_penalty_tooltip
+		tooltip = {
+			add_province_modifier = {
+				name = estate_gya_levy_of_the_middle_kingdom_penalty
+				duration = -1
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_gya_levy_of_the_middle_kingdom_revoked_tooltip
+		tooltip = {
+			add_province_modifier = {
+				name = estate_gya_levy_of_the_middle_kingdom_penalty
+				duration = 3650
+			}
+		}
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				culture = gya
+			}
+			add_province_modifier = {
+				name = estate_gya_levy_of_the_middle_kingdom_gya
+				duration = -1
+			}
+			add_province_modifier = {
+				name = estate_gya_levy_of_the_middle_kingdom_penalty
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				culture_group = east_asian
+			}
+			add_province_modifier = {
+				name = estate_gya_levy_of_the_middle_kingdom_chinese_culture_group
+				duration = -1
+			}
+			add_province_modifier = {
+				name = estate_gya_levy_of_the_middle_kingdom_penalty
+				duration = -1
+			}
+		}
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_gya_levy_of_the_middle_kingdom_gya
+			}
+			remove_province_modifier = estate_gya_levy_of_the_middle_kingdom_gya
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_gya_levy_of_the_middle_kingdom_chinese_culture_group
+			}
+			remove_province_modifier = estate_gya_levy_of_the_middle_kingdom_chinese_culture_group
+		}
+		if = {
+			limit = {
+				has_province_modifier = estate_gya_levy_of_the_middle_kingdom_penalty
+			}
+			remove_province_modifier = estate_gya_levy_of_the_middle_kingdom_penalty
+			add_province_modifier = {
+				name = estate_gya_levy_of_the_middle_kingdom_penalty
+				duration = 3650
+			}
+		}
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_gya_levy_of_the_middle_kingdom_gya
+			}
+			remove_province_modifier = estate_gya_levy_of_the_middle_kingdom_gya
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_gya_levy_of_the_middle_kingdom_chinese_culture_group
+			}
+			remove_province_modifier = estate_gya_levy_of_the_middle_kingdom_chinese_culture_group
+		}
+		if = {
+			limit = {
+				has_province_modifier = estate_gya_levy_of_the_middle_kingdom_penalty
+			}
+			remove_province_modifier = estate_gya_levy_of_the_middle_kingdom_penalty
+			add_province_modifier = {
+				name = estate_gya_levy_of_the_middle_kingdom_penalty
+				duration = 3650
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}

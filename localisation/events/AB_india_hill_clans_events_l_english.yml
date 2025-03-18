@@ -1,0 +1,8 @@
+﻿l_english:
+ hill_clans_events.1.t:0 "Cashmere Monopoly Expires"
+ hill_clans_events.1.d.burghers:0 "For the last decade, the Hill Clans of Kashmir have controlled the production of fine cashmere wool and silk in the region. Their monopoly has now reached its term.\n\nThrough their traditional expertise and connections, they have improved both the quantity and quality of textiles produced, resulting in Kashmir's growing reputation for luxurious fabrics. While we have sacrificed direct production income during this period, the increased trade activity has benefited our wider economy.\n\nThe clan chieftains have sent representatives to request a renewal of their exclusive rights. Their envoys remind us of the upfront payment they provided initially, along with the continued development of the region's textile industry under their management."
+
+ hill_clans_events.1.a:0 "Renew their monopoly for another ten years."
+ hill_clans_events.1.b:0 "We shall resume direct control of production."
+ hill_clans_events.1.b.tooltip:0 "Cancel the Cashmere Monopoly and regain production income from wool, cloth, and silk in Kashmir. The production bonuses from the monopoly will be lost."
+ estate_privileges_and_agendas_events.7.q:0 "Seize it from the Hill Clans."

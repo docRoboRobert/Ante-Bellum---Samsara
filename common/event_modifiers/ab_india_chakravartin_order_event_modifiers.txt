@@ -1,0 +1,14 @@
+chakravartin_order_pious_leader = {
+	missionaries = 1
+	global_missionary_strength = 0.03
+}
+
+chakravartin_order_expansionist_leader = {
+	colonists = 1
+	colony_cost_modifier = -0.1
+}
+
+chakravartin_order_military_genius = {
+	fire_damage_received = -0.05
+	shock_damage_received = -0.05
+}

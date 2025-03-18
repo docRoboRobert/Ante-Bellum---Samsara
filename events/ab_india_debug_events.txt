@@ -1,0 +1,64 @@
+namespace = ab_india_debug_events
+
+#Defensive war test
+country_event = {
+	id = ab_india_debug_events.1
+	title = ab_india_dalai_lama_events.1.t
+	desc = ab_india_dalai_lama_events.1.d
+	picture = GFX_ab_india_dalai_lama_events.1
+	is_triggered_only = yes
+	trigger = {
+		tag = GPH
+	}
+	option = {
+		name = ab_india_debug_events.1.a
+		PLB = {
+			declare_war = GPH
+		}
+	}
+}
+
+#Dishonor alliance test
+country_event = {
+	id = ab_india_debug_events.2
+	title = ab_india_dalai_lama_events.1.t
+	desc = ab_india_dalai_lama_events.1.d
+	picture = GFX_ab_india_dalai_lama_events.1
+	is_triggered_only = yes
+	trigger = {
+		tag = GPH
+	}
+	option = {
+		name = ab_india_debug_events.2.a
+		create_alliance = YUA
+		YUA = {
+			add_favors = {
+				who = GPH
+				amount = 100
+			}
+		}
+		SNG = {
+			declare_war = YUA
+		}
+	}
+}
+
+#Lha_oirat friend test
+country_event = {
+	id = ab_india_debug_events.3
+	title = ab_india_dalai_lama_events.1.t
+	desc = ab_india_dalai_lama_events.1.d
+	picture = GFX_ab_india_dalai_lama_events.1
+	is_triggered_only = yes
+	trigger = {
+		tag = GPH
+		tag = LHA
+	}
+	option = {
+		name = ab_india_debug_events.3.a
+		event_target:lha_oirat_friend = {
+			add_prestige = 100
+		}
+	}
+}
+

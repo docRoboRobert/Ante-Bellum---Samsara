@@ -1,0 +1,278 @@
+spriteTypes = {
+	spriteType = {
+		name = "gfx_lha_sword_and_dharma"
+		texturefile = "gfx/interface/missions/LHA/lha_sword_and_dharma.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_unite_the_faithful"
+		texturefile = "gfx/interface/missions/LHA/lha_unite_the_faithful.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_pacify_the_old_faith"
+		texturefile = "gfx/interface/missions/LHA/lha_pacify_the_old_faith.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_purify_the_holy_city"
+		texturefile = "gfx/interface/missions/LHA/lha_purify_the_holy_city.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_tibet_unified"
+		texturefile = "gfx/interface/missions/LHA/lha_tibet_unified.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_legacy_of_trisong_detsen"
+		texturefile = "gfx/interface/missions/LHA/lha_legacy_of_trisong_detsen.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_forge_alliances"
+		texturefile = "gfx/interface/missions/LHA/lha_forge_alliances.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_the_nepalese_threat"
+		texturefile = "gfx/interface/missions/LHA/lha_the_nepalese_threat.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_take_refuge_under_yuan"
+		texturefile = "gfx/interface/missions/LHA/lha_take_refuge_under_yuan.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_develop_the_holy_city"
+		texturefile = "gfx/interface/missions/LHA/lha_develop_the_holy_city.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_support_the_gelug_school"
+		texturefile = "gfx/interface/missions/LHA/lha_support_the_gelug_school.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_crown_of_the_plateau"
+		texturefile = "gfx/interface/missions/LHA/lha_crown_of_the_plateau.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_find_the_dalai_lama"
+		texturefile = "gfx/interface/missions/LHA/lha_find_the_dalai_lama.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_ascension_of_the_sacred_one"
+		texturefile = "gfx/interface/missions/LHA/lha_ascension_of_the_sacred_one.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_the_great_monastic_awakening"
+		texturefile = "gfx/interface/missions/LHA/lha_the_great_monastic_awakening.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_jewel_of_the_dharma"
+		texturefile = "gfx/interface/missions/LHA/lha_jewel_of_the_dharma.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_moving_through_kashmir"
+		texturefile = "gfx/interface/missions/LHA/lha_moving_through_kashmir.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_conquer_the_pahari"
+		texturefile = "gfx/interface/missions/LHA/lha_conquer_the_pahari.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_break_nepal"
+		texturefile = "gfx/interface/missions/LHA/lha_break_nepal.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_the_lost_bretheren"
+		texturefile = "gfx/interface/missions/LHA/lha_the_lost_bretheren.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_the_sands_of_tarim"
+		texturefile = "gfx/interface/missions/LHA/lha_sands_of_tarim.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_unite_the_hill_clans"
+		texturefile = "gfx/interface/missions/LHA/lha_unite_the_hill_clans.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_subjugate_assam"
+		texturefile = "gfx/interface/missions/LHA/lha_subjugate_assam.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_the_indus_barrier"
+		texturefile = "gfx/interface/missions/LHA/lha_the_indus_barrier.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_cull_the_horde"
+		texturefile = "gfx/interface/missions/LHA/lha_cull_the_horde.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_confront_bengal"
+		texturefile = "gfx/interface/missions/LHA/lha_confront_bengal.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_protect_the_afghans"
+		texturefile = "gfx/interface/missions/LHA/lha_protect_the_afghans.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_buddhas_of_bamyan"
+		texturefile = "gfx/interface/missions/LHA/lha_buddhas_of_bamyan.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_the_charkravartis_triumph"
+		texturefile = "gfx/interface/missions/LHA/lha_the_charkravartis_triumph.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_the_dharma_raj"
+		texturefile = "gfx/interface/missions/LHA/lha_the_dharma_raj.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_pacify_kachin"
+		texturefile = "gfx/interface/missions/LHA/lha_pacify_kachin.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_skewer_the_peacock"
+		texturefile = "gfx/interface/missions/LHA/lha_skewer_the_peacock.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_topple_the_elephant"
+		texturefile = "gfx/interface/missions/LHA/lha_topple_the_elephant.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_skin_the_naga"
+		texturefile = "gfx/interface/missions/LHA/lha_skin_the_naga.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_break_the_kouprey"
+		texturefile = "gfx/interface/missions/LHA/lha_break_the_kouprey.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_tame_the_buffalo"
+		texturefile = "gfx/interface/missions/LHA/lha_tame_the_buffalo.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_rule_indochina"
+		texturefile = "gfx/interface/missions/LHA/lha_rule_indochina.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_restore_angkor_wat"
+		texturefile = "gfx/interface/missions/LHA/lha_restore_angkor_wat.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_illuminate_indochina"
+		texturefile = "gfx/interface/missions/LHA/lha_illuminate_indochina.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_buddhist_hegemon"
+		texturefile = "gfx/interface/missions/LHA/lha_buddhist_hegemon.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_on_to_sumatra"
+		texturefile = "gfx/interface/missions/LHA/lha_on_to_sumatra.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_convert_the_mosque"
+		texturefile = "gfx/interface/missions/LHA/lha_convert_the_mosque.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_dominate_malaccan_trade"
+		texturefile = "gfx/interface/missions/LHA/lha_dominate_malaccan_trade.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_besakih_vihara"
+		texturefile = "gfx/interface/missions/LHA/lha_besakih_vihara.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_prambanan_vihara"
+		texturefile = "gfx/interface/missions/LHA/lha_prambanan_vihara.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_moluccan_trade"
+		texturefile = "gfx/interface/missions/LHA/lha_moluccan_trade.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_cross_the_sulu_sea"
+		texturefile = "gfx/interface/missions/LHA/lha_cross_the_sulu_sea.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_unify_nusantara"
+		texturefile = "gfx/interface/missions/LHA/lha_unify_nusantara.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_secure_canton"
+		texturefile = "gfx/interface/missions/LHA/lha_secure_canton.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_the_eastern_gate"
+		texturefile = "gfx/interface/missions/LHA/lha_the_eastern_gate.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_the_heartland_beckons"
+		texturefile = "gfx/interface/missions/LHA/lha_the_heartland_beckons.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_secure_the_south"
+		texturefile = "gfx/interface/missions/LHA/lha_secure_the_south.dds"
+	}
+
+	spriteType = {
+		name = "gfx_lha_the_western_marches"
+		texturefile = "gfx/interface/missions/LHA/lha_the_western_marches.dds"
+	}
+	
+	spriteType = {
+		name = "gfx_lha_break_the_yuan"
+		texturefile = "gfx/interface/missions/LHA/lha_break_the_yuan.dds"
+	}
+
+	spriteType = {
+		name = "gfx_lha_secure_china"
+		texturefile = "gfx/interface/missions/LHA/lha_secure_china.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_slay_the_dragon"
+		texturefile = "gfx/interface/missions/LHA/lha_slay_the_dragon.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_purify_china"
+		texturefile = "gfx/interface/missions/LHA/lha_purify_china.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_chakravartin_ascendant"
+		texturefile = "gfx/interface/missions/LHA/lha_chakravartin_ascendant.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_revive_the_guilds"
+		texturefile = "gfx/interface/missions/LHA/lha_revive_the_guilds.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_qufu_vihara"
+		texturefile = "gfx/interface/missions/LHA/lha_qufu_vihara.dds"
+	}
+
+	spriteType = {
+		name = "gfx_lha_granaries_of_china"
+		texturefile = "gfx/interface/missions/LHA/lha_granaries_of_china.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_end_the_touyoji_rule"
+		texturefile = "gfx/interface/missions/LHA/lha_end_the_touyoji_rule.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_shield_the_holy_city"
+		texturefile = "gfx/interface/missions/LHA/lha_shield_the_holy_city.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_the_great_monastic_colleges"
+		texturefile = "gfx/interface/missions/LHA/lha_the_great_monastic_colleges.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_fortress_tibet"
+		texturefile = "gfx/interface/missions/LHA/lha_fortress_tibet.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_reinforce_the_gyantse_dzong"
+		texturefile = "gfx/interface/missions/LHA/lha_reinforce_the_gyantse_dzong.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_gates_of_the_himalayas"
+		texturefile = "gfx/interface/missions/LHA/lha_gates_of_the_himalayas.dds"
+	}
+	spriteType = {
+		name = "gfx_lha_himalayan_strongholds"
+		texturefile = "gfx/interface/missions/LHA/lha_himalayan_strongholds.dds"
+	}
+}

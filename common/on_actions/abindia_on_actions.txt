@@ -125,5 +125,13 @@ on_startup = {
 				}
 			}
 		}
+		if = {
+			limit = { tag = LHA }
+			ROOT = {
+				country_event = {
+					id = abindia_starting_lore.2
+				}
+			}
+		}
 	}
 }

@@ -1,0 +1,1114 @@
+estate_hill_clans_insult = {
+	can_select = {
+		any_rival_country = {
+			NOT = {
+				has_estate = estate_hill_clans
+			}
+			army_balance = {
+				who = root
+				value = 1.25
+			}
+			NOT = {
+				custom_trigger_tooltip = {
+					tooltip = has_been_insulted_by_root
+					OR = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = insulted
+						}
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = scornfully_insulted
+						}
+					}
+				}
+			}
+		}
+		NOT = {
+			has_country_modifier = recent_estate_hill_clans_insult_timer
+		}
+	}
+	selection_weight = {
+		factor = 1.5
+	}
+	pre_effect = {
+		random_rival_country = {
+			limit = {
+				NOT = {
+					has_estate = estate_hill_clans
+				}
+				army_balance = {
+					who = root
+					value = 1.25
+				}
+				NOT = {
+					custom_trigger_tooltip = {
+						tooltip = has_been_insulted_by_root
+						OR = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = insulted
+							}
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = scornfully_insulted
+							}
+						}
+					}
+				}
+			}
+			save_event_target_as = agenda_country
+		}
+	}
+	immediate_effect = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = recent_estate_hill_clans_insult_timer
+				duration = 9125
+				hidden = yes
+			}
+		}
+	}
+	provinces_to_highlight = {
+		is_capital_of = event_target:agenda_country
+	}
+	task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_hill_clans
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_hill_clans
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					event_target:agenda_country = {
+						num_of_cities = 1
+					}
+				}
+				event_target:agenda_country = {
+					custom_trigger_tooltip = {
+						tooltip = has_been_insulted_by_root
+						OR = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = insulted
+							}
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = scornfully_insulted
+							}
+						}
+					}
+				}
+			}
+			else = {
+				always = yes
+			}
+		}
+	}
+	task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_hill_clans
+		}
+		add_estate_loyalty = {
+			estate = estate_hill_clans
+			loyalty = 10
+		}
+		add_army_tradition = 3
+	}
+	failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
+		add_estate_loyalty_modifier = {
+			estate = estate_hill_clans
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+		}
+	}
+}
+
+estate_hill_clans_construct_roadway_in_y = {
+	can_select = {
+		any_owned_province = {
+			is_state_core = root
+			NOT = {
+				has_building = rail_road
+			}
+			OR = {
+				region = tibet_region
+				area = nepal_area
+				area = baisi_rajya_area
+				area = himalayan_hills_area
+				area = kashmir_area
+			}
+			OR = {
+				AND = {
+					NOT = {
+						has_building = macadam_road
+					}
+					NOT = {
+						has_building = royal_road
+					}
+					NOT = {
+						has_building = gravel_road
+					}
+					NOT = {
+						has_building = early_road
+					}
+					num_free_building_slots = 1
+				}
+				AND = {
+					ROOT = {
+						adm_tech = 10
+					}
+					NOT = {
+						has_building = gravel_road
+					}
+					OR = {
+						num_free_building_slots = 1
+						has_building = early_road
+					}
+				}
+				AND = {
+					ROOT = {
+						adm_tech = 18
+					}
+					NOT = {
+						has_building = royal_road
+					}
+					OR = {
+						num_free_building_slots = 1
+						has_building = gravel_road
+					}
+				}
+				AND = {
+					ROOT = {
+						adm_tech = 23
+					}
+					NOT = {
+						has_building = macadam_road
+					}
+					OR = {
+						num_free_building_slots = 1
+						has_building = royal_road
+					}
+				}
+				AND = {
+					# Check if we have the required level to build it
+					ROOT = {
+						adm_tech = 30
+					}
+					# Check if we do not have it
+					NOT = {
+						has_building = rail_road
+					}
+					# Check if we have a free slot, or any of the previous
+					# buildings we can upgrade to
+					OR = {
+						num_free_building_slots = 1
+						has_building = macadam_road
+					}
+				}
+			}
+			# ]]]
+		}
+	}
+	selection_weight = {
+		factor = 1
+	}
+	pre_effect = {
+		set_variable = {
+			which = estate_hill_clans_construct_roadway_in_y_var
+			value = 0
+		}
+		random_owned_province = {
+			limit = {
+				is_state_core = root
+				NOT = {
+					has_building = rail_road
+				}
+				OR = {
+					region = tibet_region
+					area = nepal_area
+					area = baisi_rajya_area
+					area = himalayan_hills_area
+					area = kashmir_area
+				}
+				OR = {
+					AND = {
+						NOT = {
+							has_building = macadam_road
+						}
+						NOT = {
+							has_building = royal_road
+						}
+						NOT = {
+							has_building = gravel_road
+						}
+						NOT = {
+							has_building = early_road
+						}
+						num_free_building_slots = 1
+					}
+					AND = {
+						ROOT = {
+							adm_tech = 10
+						}
+						NOT = {
+							has_building = gravel_road
+						}
+						OR = {
+							num_free_building_slots = 1
+							has_building = early_road
+						}
+					}
+					AND = {
+						ROOT = {
+							adm_tech = 18
+						}
+						NOT = {
+							has_building = royal_road
+						}
+						OR = {
+							num_free_building_slots = 1
+							has_building = gravel_road
+						}
+					}
+					AND = {
+						ROOT = {
+							adm_tech = 23
+						}
+						NOT = {
+							has_building = macadam_road
+						}
+						OR = {
+							num_free_building_slots = 1
+							has_building = royal_road
+						}
+					}
+					AND = {
+						# Check if we have the required level to build it
+						ROOT = {
+							adm_tech = 30
+						}
+						# Check if we do not have it
+						NOT = {
+							has_building = rail_road
+						}
+						# Check if we have a free slot, or any of the previous
+						# buildings we can upgrade to
+						OR = {
+							num_free_building_slots = 1
+							has_building = macadam_road
+						}
+					}
+				}
+				# ]]]
+			}
+			save_event_target_as = agenda_province
+		}
+		event_target:agenda_province = {
+			if = {
+				limit = {
+					has_building = macadam_road
+				}
+				ROOT = {
+					set_variable = {
+						which = estate_hill_clans_construct_roadway_in_y_var
+						value = 5
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_building = royal_road
+				}
+				ROOT = {
+					set_variable = {
+						which = estate_hill_clans_construct_roadway_in_y_var
+						value = 4
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_building = gravel_road
+				}
+				ROOT = {
+					set_variable = {
+						which = estate_hill_clans_construct_roadway_in_y_var
+						value = 3
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_building = early_road
+				}
+				ROOT = {
+					set_variable = {
+						which = estate_hill_clans_construct_roadway_in_y_var
+						value = 2
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						ROOT = {
+							adm_tech = 30
+						}
+					}
+					ROOT = {
+						set_variable = {
+							which = estate_hill_clans_construct_roadway_in_y_var
+							value = 5
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							adm_tech = 23
+						}
+					}
+					ROOT = {
+						set_variable = {
+							which = estate_hill_clans_construct_roadway_in_y_var
+							value = 4
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							adm_tech = 18
+						}
+					}
+					ROOT = {
+						set_variable = {
+							which = estate_hill_clans_construct_roadway_in_y_var
+							value = 3
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							adm_tech = 10
+						}
+					}
+					ROOT = {
+						set_variable = {
+							which = estate_hill_clans_construct_roadway_in_y_var
+							value = 2
+						}
+					}
+				}
+				else = {
+					ROOT = {
+						set_variable = {
+							which = estate_hill_clans_construct_roadway_in_y_var
+							value = 1
+						}
+					}
+				}
+			}
+		}
+	}
+	provinces_to_highlight = {
+		province_id = event_target:agenda_province
+	}
+	fail_if = {
+		event_target:agenda_province = {
+			NOT = {
+				owned_by = root
+			}
+		}
+	}
+	task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_hill_clans
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_hill_clans
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					check_variable = {
+						which = estate_hill_clans_construct_roadway_in_y_var
+						value = 5
+					}
+				}
+				event_target:agenda_province = {
+					has_building = rail_road
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = estate_hill_clans_construct_roadway_in_y_var
+						value = 4
+					}
+				}
+				event_target:agenda_province = {
+					has_building = macadam_road
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = estate_hill_clans_construct_roadway_in_y_var
+						value = 3
+					}
+				}
+				event_target:agenda_province = {
+					has_building = royal_road
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = estate_hill_clans_construct_roadway_in_y_var
+						value = 2
+					}
+				}
+				event_target:agenda_province = {
+					has_building = gravel_road
+				}
+			}
+			else = {
+				event_target:agenda_province = {
+					has_building = early_road
+				}
+			}
+		}
+	}
+	task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_hill_clans
+		}
+		add_estate_loyalty = {
+			estate = estate_hill_clans
+			loyalty = 10
+		}
+		if = {
+			limit = {
+				NOT = {
+					crown_land_share = 15
+				}
+				estate_territory = {
+					estate = estate_hill_clans
+					territory = 10
+				}
+				estate_not_has_exempt_from_seize_land_privilege = {
+					estate = estate_hill_clans
+				}
+			}
+			take_estate_land_share_small = {
+				estate = estate_hill_clans
+			}
+		}
+		else = {
+			event_target:agenda_province = {
+				add_province_modifier = {
+					name = estate_hill_clans_build_roadway_reward
+					duration = 3650
+				}
+			}
+		}
+	}
+	failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
+		event_target:agenda_province = {
+			if = {
+				limit = {
+					owned_by = root
+				}
+				add_named_unrest = {
+					name = local_hill_clans_displeased
+					value = 5
+				}
+			}
+		}
+		add_estate_loyalty_modifier = {
+			estate = estate_hill_clans
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+		}
+	}
+}
+
+estate_hill_clans_develop_adm_in_y = {
+	selection_weight = {
+		factor = 1
+	}
+	can_select = {
+		ROOT = {
+			any_owned_province = {
+				is_state_core = ROOT
+				OR = {
+					region = tibet_region
+					area = nepal_area
+					area = baisi_rajya_area
+					area = himalayan_hills_area
+					area = kashmir_area
+				}
+			}
+		}
+	}
+	pre_effect = {
+		random_list = {
+			1 = {
+				random_owned_province = {
+					limit = {
+						is_state_core = root
+						area_for_scope_province = {
+							OR = {
+								region = tibet_region
+								area = nepal_area
+								area = baisi_rajya_area
+								area = himalayan_hills_area
+								area = kashmir_area
+							}
+						}
+					}
+					save_event_target_as = agenda_province
+				}
+			}
+			2 = {
+				trigger = {
+					any_owned_province = {
+						is_state_core = root
+						OR = {
+							AND = {
+								religion = root
+								OR = {
+									culture = root
+									has_owner_accepted_culture = yes
+								}
+								OR = {
+									region = tibet_region
+									area = nepal_area
+									area = baisi_rajya_area
+									area = himalayan_hills_area
+									area = kashmir_area
+								}
+							}
+						}
+						region_for_scope_province = {
+							is_capital_of = root
+						}
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_state_core = root
+						OR = {
+							AND = {
+								religion = root
+								OR = {
+									culture = root
+									has_owner_accepted_culture = yes
+								}
+								OR = {
+									region = tibet_region
+									area = nepal_area
+									area = baisi_rajya_area
+									area = himalayan_hills_area
+									area = kashmir_area
+								}
+							}
+						}
+						region_for_scope_province = {
+							is_capital_of = root
+						}
+					}
+					save_event_target_as = agenda_province
+				}
+			}
+			1 = {
+				random_owned_province = {
+					limit = {
+						is_state_core = root
+						OR = {
+							region = tibet_region
+							area = nepal_area
+							area = baisi_rajya_area
+							area = himalayan_hills_area
+							area = kashmir_area
+						}
+					}
+					save_event_target_as = agenda_province
+				}
+			}
+		}
+		event_target:agenda_province = {
+			if = {
+				limit = {
+					check_variable = {
+						which = province_adm_var
+						value = 1
+					}
+				}
+				set_variable = {
+					which = province_adm_var
+					value = 0
+				}
+			}
+			export_to_variable = {
+				which = province_adm_var
+				value = trigger_value:base_tax
+			}
+			change_variable = {
+				which = province_adm_var
+				value = 2
+			}
+		}
+	}
+	provinces_to_highlight = {
+		province_id = event_target:agenda_province
+	}
+	fail_if = {
+		event_target:agenda_province = {
+			NOT = {
+				owned_by = root
+			}
+		}
+	}
+	task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_hill_clans
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_hill_clans
+			}
+		}
+		else = {
+			event_target:agenda_province = {
+				base_tax = "province_adm_var"
+			}
+		}
+	}
+	task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_hill_clans
+		}
+		add_estate_loyalty = {
+			estate = estate_hill_clans
+			loyalty = 10
+		}
+		add_prestige = 10
+	}
+	failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
+		event_target:agenda_province = {
+			if = {
+				limit = {
+					owned_by = root
+				}
+				add_named_unrest = {
+					name = local_hill_clans_displeased
+					value = 5
+				}
+			}
+		}
+		add_estate_loyalty_modifier = {
+			estate = estate_hill_clans
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+		}
+	}
+}
+
+estate_hill_clans_develop_dip_in_y = {
+	selection_weight = {
+		factor = 1
+	}
+	can_select = {
+		ROOT = {
+			any_owned_province = {
+				is_state_core = ROOT
+				OR = {
+					region = tibet_region
+					area = nepal_area
+					area = baisi_rajya_area
+					area = himalayan_hills_area
+					area = kashmir_area
+				}
+			}
+		}
+	}
+	pre_effect = {
+		random_list = {
+			1 = {
+				random_owned_province = {
+					limit = {
+						is_state_core = root
+						area_for_scope_province = {
+							OR = {
+								region = tibet_region
+								area = nepal_area
+								area = baisi_rajya_area
+								area = himalayan_hills_area
+								area = kashmir_area
+							}
+						}
+					}
+					save_event_target_as = agenda_province
+				}
+			}
+			2 = {
+				trigger = {
+					any_owned_province = {
+						is_state_core = root
+						OR = {
+							AND = {
+								religion = root
+								OR = {
+									culture = root
+									has_owner_accepted_culture = yes
+								}
+								OR = {
+									region = tibet_region
+									area = nepal_area
+									area = baisi_rajya_area
+									area = himalayan_hills_area
+									area = kashmir_area
+								}
+							}
+						}
+						region_for_scope_province = {
+							is_capital_of = root
+						}
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_state_core = root
+						OR = {
+							AND = {
+								religion = root
+								OR = {
+									culture = root
+									has_owner_accepted_culture = yes
+								}
+								OR = {
+									region = tibet_region
+									area = nepal_area
+									area = baisi_rajya_area
+									area = himalayan_hills_area
+									area = kashmir_area
+								}
+							}
+						}
+						region_for_scope_province = {
+							is_capital_of = root
+						}
+					}
+					save_event_target_as = agenda_province
+				}
+			}
+			1 = {
+				random_owned_province = {
+					limit = {
+						is_state_core = root
+						OR = {
+							region = tibet_region
+							area = nepal_area
+							area = baisi_rajya_area
+							area = himalayan_hills_area
+							area = kashmir_area
+						}
+					}
+					save_event_target_as = agenda_province
+				}
+			}
+		}
+		event_target:agenda_province = {
+			if = {
+				limit = {
+					check_variable = {
+						which = province_dip_var
+						value = 1
+					}
+				}
+				set_variable = {
+					which = province_dip_var
+					value = 0
+				}
+			}
+			export_to_variable = {
+				which = province_dip_var
+				value = trigger_value:base_production
+			}
+			change_variable = {
+				which = province_dip_var
+				value = 2
+			}
+		}
+	}
+	provinces_to_highlight = {
+		province_id = event_target:agenda_province
+	}
+	fail_if = {
+		event_target:agenda_province = {
+			NOT = {
+				owned_by = root
+			}
+		}
+	}
+	task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_hill_clans
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_hill_clans
+			}
+		}
+		else = {
+			event_target:agenda_province = {
+				base_production = "province_dip_var"
+			}
+		}
+	}
+	task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_hill_clans
+		}
+		add_estate_loyalty = {
+			estate = estate_hill_clans
+			loyalty = 10
+		}
+		add_years_of_income = 0.3
+	}
+	failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
+		event_target:agenda_province = {
+			if = {
+				limit = {
+					owned_by = root
+				}
+				add_named_unrest = {
+					name = local_hill_clans_displeased
+					value = 5
+				}
+			}
+		}
+		add_estate_loyalty_modifier = {
+			estate = estate_hill_clans
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+		}
+	}
+}
+
+estate_hill_clans_develop_mil_in_y = {
+	selection_weight = {
+		factor = 1
+	}
+	can_select = {
+		ROOT = {
+			any_owned_province = {
+				is_state_core = ROOT
+				OR = {
+					region = tibet_region
+					area = nepal_area
+					area = baisi_rajya_area
+					area = himalayan_hills_area
+					area = kashmir_area
+				}
+			}
+		}
+	}
+	pre_effect = {
+		random_list = {
+			1 = {
+				random_owned_province = {
+					limit = {
+						is_state_core = root
+						area_for_scope_province = {
+							OR = {
+								region = tibet_region
+								area = nepal_area
+								area = baisi_rajya_area
+								area = himalayan_hills_area
+								area = kashmir_area
+							}
+						}
+					}
+					save_event_target_as = agenda_province
+				}
+			}
+			2 = {
+				trigger = {
+					any_owned_province = {
+						is_state_core = root
+						OR = {
+							AND = {
+								religion = root
+								OR = {
+									culture = root
+									has_owner_accepted_culture = yes
+								}
+								OR = {
+									region = tibet_region
+									area = nepal_area
+									area = baisi_rajya_area
+									area = himalayan_hills_area
+									area = kashmir_area
+								}
+							}
+						}
+						region_for_scope_province = {
+							is_capital_of = root
+						}
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_state_core = root
+						OR = {
+							AND = {
+								religion = root
+								OR = {
+									culture = root
+									has_owner_accepted_culture = yes
+								}
+								OR = {
+									region = tibet_region
+									area = nepal_area
+									area = baisi_rajya_area
+									area = himalayan_hills_area
+									area = kashmir_area
+								}
+							}
+						}
+						region_for_scope_province = {
+							is_capital_of = root
+						}
+					}
+					save_event_target_as = agenda_province
+				}
+			}
+			1 = {
+				random_owned_province = {
+					limit = {
+						is_state_core = root
+						OR = {
+							region = tibet_region
+							area = nepal_area
+							area = baisi_rajya_area
+							area = himalayan_hills_area
+							area = kashmir_area
+						}
+					}
+					save_event_target_as = agenda_province
+				}
+			}
+		}
+		event_target:agenda_province = {
+			if = {
+				limit = {
+					check_variable = {
+						which = province_mil_var
+						value = 1
+					}
+				}
+				set_variable = {
+					which = province_mil_var
+					value = 0
+				}
+			}
+			export_to_variable = {
+				which = province_mil_var
+				value = trigger_value:base_manpower
+			}
+			change_variable = {
+				which = province_mil_var
+				value = 2
+			}
+		}
+	}
+	provinces_to_highlight = {
+		province_id = event_target:agenda_province
+	}
+	fail_if = {
+		event_target:agenda_province = {
+			NOT = {
+				owned_by = root
+			}
+		}
+	}
+	task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_hill_clans
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_hill_clans
+			}
+		}
+		else = {
+			event_target:agenda_province = {
+				base_manpower = "province_mil_var"
+			}
+		}
+	}
+	task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_hill_clans
+		}
+		add_estate_loyalty = {
+			estate = estate_hill_clans
+			loyalty = 10
+		}
+		add_yearly_manpower = 0.3
+	}
+	failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
+		event_target:agenda_province = {
+			if = {
+				limit = {
+					owned_by = root
+				}
+				add_named_unrest = {
+					name = local_hill_clans_displeased
+					value = 5
+				}
+			}
+		}
+		add_estate_loyalty_modifier = {
+			estate = estate_hill_clans
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+		}
+	}
+}

@@ -17,3 +17,20 @@ country_event = {
 		custom_tooltip = abindia_starting_lore.1.tooltip
 	}
 }
+
+#Starting event for Lhasa
+country_event = {
+	id = abindia_starting_lore.2
+	title = abindia_starting_lore.2.t
+	desc = abindia_starting_lore.2.d
+	picture = BUDDHISM_MONASTERY_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = abindia_starting_lore.2.a
+		custom_tooltip = abindia_starting_lore.2.tooltip
+	}
+}

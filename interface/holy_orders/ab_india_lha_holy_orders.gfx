@@ -1,0 +1,32 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_gelug_school"
+		texturefile = "gfx/interface/holy_orders/gelug_school.dds"
+		noOfFrames = 4
+	}
+	spriteType = {
+		name = "GFX_nyingma_school"
+		texturefile = "gfx/interface/holy_orders/nyingma_school.dds"
+		noOfFrames = 4
+	}
+	spriteType = {
+		name = "GFX_sakya_school"
+		texturefile = "gfx/interface/holy_orders/sakya_school.dds"
+		noOfFrames = 4
+	}
+	spriteType = {
+		name = "GFX_kagyu_school"
+		texturefile = "gfx/interface/holy_orders/kagyu_school.dds"
+		noOfFrames = 4
+	}
+	spriteType = {
+		name = "GFX_jonang_school"
+		texturefile = "gfx/interface/holy_orders/jonang_school.dds"
+		noOfFrames = 4
+	}
+	spriteType = {
+		name = "GFX_tendai_school"
+		texturefile = "gfx/interface/holy_orders/tendai_school.dds"
+		noOfFrames = 4
+	}
+}

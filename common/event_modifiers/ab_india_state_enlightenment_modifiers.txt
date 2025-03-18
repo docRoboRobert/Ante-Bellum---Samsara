@@ -1,0 +1,26 @@
+state_enlightenment_well_funded_communities = {
+	local_development_cost = -0.1
+	local_monthly_devastation = -0.25
+	local_unrest = -1
+}
+
+state_enlightenment_practice_non_violence = {
+	can_not_declare_war = yes
+	manpower_recovery_speed = -0.8
+	global_manpower_modifier = -0.5
+	sailors_recovery_speed = -0.8
+	development_cost = -0.05
+	improve_relation_modifier = 0.25
+	production_efficiency = 0.1
+}
+
+state_enlightenment_host_great_dharma_debate = {
+	global_unrest = 2
+	tolerance_own = -2
+	tolerance_heretic = -2
+	reverse_relation_with_same_religion = -25
+	reverse_relation_with_heretic_religion = -25
+	num_of_parliament_issues = -2
+	reform_progress_growth = 0.3
+	idea_cost = -0.05
+}

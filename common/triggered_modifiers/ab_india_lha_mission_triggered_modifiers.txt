@@ -1,0 +1,58 @@
+lha_oirat_friend = {
+	potential = {
+		mission_completed = lha_oirat_ties
+	}
+	trigger = {
+		if = {
+			limit = {
+				has_country_flag = lha_kht_friend
+			}
+			alliance_with = KHT
+		}
+		else_if = {
+			limit = {
+				has_country_flag = lha_drb_friend
+			}
+			alliance_with = DRB
+		}
+		else_if = {
+			limit = {
+				has_country_flag = lha_trg_friend
+			}
+			alliance_with = TRG
+		}
+		else_if = {
+			limit = {
+				has_country_flag = lha_oir_friend
+			}
+			alliance_with = OIR
+		}
+	}
+	diplomatic_upkeep = 1
+	cavalry_power = 0.1
+}
+
+lha_united_the_hill_clans_bonus = {
+	potential = {
+		has_country_flag = lha_united_the_hill_clans_bonus_enabled
+	}
+	trigger = {
+		AND = {
+			accepted_culture = nepali
+			accepted_culture = pahari
+			accepted_culture = kashmiri
+		}
+	}
+	num_accepted_cultures = 3
+}
+
+lha_gratitude_of_the_khmer = {
+	potential = {
+		has_country_flag = lha_gratitude_of_the_khmer_enabled
+	}
+	trigger = {
+		accepted_culture = khmer
+	}
+	
+	num_accepted_cultures = 1
+}

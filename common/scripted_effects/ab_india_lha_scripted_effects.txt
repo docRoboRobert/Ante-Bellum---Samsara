@@ -1,0 +1,966 @@
+lha_upgrade_idea_set = {
+	if = {
+		limit = {
+			NOT = {
+				OR = {
+					tag = LHA
+					tag = GPH
+				}
+			}
+		}
+		#Guard clause
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = lha_idea_level
+				value = 0
+			}
+			NOT = {
+				check_variable = {
+					which = lha_idea_level
+					value = 1
+				}
+			}
+		}
+		#Increment idea improvement level
+		hidden_effect = {
+			change_variable = {
+				which = lha_idea_level
+				value = 1
+			}
+		}
+		custom_tooltip = lha_upgrade_idea_set_tooltip_1
+		hidden_effect = {
+			swap_free_idea_group = yes
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = lha_idea_level
+				value = 1
+			}
+			NOT = {
+				check_variable = {
+					which = lha_idea_level
+					value = 2
+				}
+			}
+		}
+		#Increment idea improvement level
+		hidden_effect = {
+			change_variable = {
+				which = lha_idea_level
+				value = 1
+			}
+		}
+		custom_tooltip = lha_upgrade_idea_set_tooltip_2
+		hidden_effect = {
+			swap_free_idea_group = yes
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = lha_idea_level
+				value = 2
+			}
+			NOT = {
+				check_variable = {
+					which = lha_idea_level
+					value = 3
+				}
+			}
+		}
+		#Increment idea improvement level
+		hidden_effect = {
+			change_variable = {
+				which = lha_idea_level
+				value = 1
+			}
+		}
+		custom_tooltip = lha_upgrade_idea_set_tooltip_3
+		hidden_effect = {
+			swap_free_idea_group = yes
+		}
+	}
+	else = {
+		custom_tooltip = lha_upgrade_idea_set_tooltip_max
+	}
+}
+
+lha_rule_indochina_upgrade_effect = {
+	random_owned_province = {
+		limit = {
+			OR = {
+				region = indo_china_region
+				region = burma_region
+				area = north_tenasserim_area
+				area = tenasserim_area
+			}
+			has_production_building_trigger = yes
+			NOT = {
+				has_province_flag = lha_rule_indochina_upgraded
+			}
+		}
+		set_province_flag = lha_rule_indochina_upgraded
+		add_province_modifier = {
+			name = lha_indochinese_economic_expansion
+			duration = -1
+		}
+		add_or_upgrade_production_building = yes
+	}
+}
+
+lha_cross_the_sulu_sea_reward = {
+	every_province = {
+		limit = {
+			OR = {
+				area = west_mindanao_area
+				area = mindanao_area
+				area = visayas_area
+				area = palawan_area
+				area = southern_luzon_area
+				area = luzon_area
+			}
+			is_empty = yes
+		}
+		random_variable = {
+			which = rand_var
+			value = 20
+		}
+		add_siberian_construction = 0
+		change_religion = ROOT
+		if = {
+			limit = {
+				check_variable = {
+					which = rand_var
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = rand_var
+						value = 1
+					}
+				}
+			}
+			change_trade_goods = cloves
+		}
+		else = {
+			change_trade_goods = spices
+		}
+	}
+}
+
+lha_the_eastern_gate_reward = {
+	random_owned_province = {
+		limit = {
+			OR = {
+				area = fujian_area
+				area = zhejiang_area
+				area = south_anhui_area
+				area = south_jiangsu_area
+			}
+			has_trade_building_trigger = yes
+			NOT = {
+				has_province_flag = lha_the_eastern_gate_upgraded
+			}
+		}
+		add_or_upgrade_trade_building = yes
+		set_province_flag = lha_the_eastern_gate_upgraded
+	}
+}
+
+lha_consolidate_gujarat_reward = {
+	random_owned_province = {
+		limit = {
+			region = west_india_region
+			has_trade_building_trigger = yes
+			NOT = {
+				has_province_flag = lha_consolidate_gujarat_upgraded
+			}
+		}
+		add_province_modifier = {
+			name = lha_riches_of_gujarat
+			duration = -1
+		}
+		set_province_flag = lha_consolidate_gujarat_upgraded
+		add_or_upgrade_trade_building = yes
+	}
+}
+
+lha_tibetanize_china = {
+	if = {
+		limit = {
+			culture_group = thai_group
+		}
+		change_culture = bai
+	}
+	else_if = {
+		limit = {
+			culture_group = chinese_culture
+		}
+		change_culture = gya
+	}
+}
+
+lha_change_to_gph_subject_color = {
+	change_country_color = {
+		color = {
+			62
+			33
+			167
+		}
+	}
+}
+
+lha_subjugate_oirat = {
+	create_subject = {
+		subject_type = mongol_brother_realm
+		subject = $oirat_tag$
+	}
+	$oirat_tag$ = {
+		change_religion = vajrayana
+		add_country_modifier = {
+			name = lha_reveres_the_dalai_lama
+			duration = -1
+		}
+		hidden_effect = {
+			lha_change_to_gph_subject_color = yes
+		}
+	}
+}
+
+lha_subjugate_oirat_friend = {
+	if = {
+		limit = {
+			still_buddies_with_drb = yes
+		}
+		lha_subjugate_oirat = {
+			oirat_tag = DRB
+		}
+	}
+	else_if = {
+		limit = {
+			still_buddies_with_kht = yes
+		}
+		lha_subjugate_oirat = {
+			oirat_tag = KHT
+		}
+	}
+	else_if = {
+		limit = {
+			still_buddies_with_trg = yes
+		}
+		lha_subjugate_oirat = {
+			oirat_tag = TRG
+		}
+	}
+	else_if = {
+		limit = {
+			still_buddies_with_oir = yes
+		}
+		lha_subjugate_oirat = {
+			oirat_tag = OIR
+		}
+	}
+}
+
+lha_maritime_guild_effect = {
+	$province_id$ = {
+		if = {
+			limit = {
+				NOT = {
+					province_has_center_of_trade_of_level = 1
+				}
+			}
+			center_of_trade = 1
+		}
+		upgrade_center_of_trade = {
+			province = $province_id$
+		}
+	}
+	$province_id$ = {
+		upgrade_trade_building = yes
+		if = {
+			limit = {
+				has_dock_building_trigger = yes
+			}
+			upgrade_dock_building = yes
+		}
+		else_if = {
+			limit = {
+				has_shipyard_building_trigger = yes
+			}
+			upgrade_shipyard_building = yes
+		}
+		add_province_modifier = {
+			name = lha_thriving_local_maritime_guild
+			duration = -1
+		}
+	}
+}
+
+gya_autonymous_guild_privilege_effect = {
+	every_province = {
+		limit = {
+			superregion = china_superregion
+			has_port = yes
+			owned_by = ROOT
+			NOT = {
+				has_province_modifier = lha_thriving_local_maritime_guild
+			}
+			NOT = {
+				has_province_modifier = estate_gya_thriving_guild_city				#Boosted modifier
+			}
+		}
+		set_variable = {
+			which = currentTradePower
+			value = 0
+		}
+		export_to_variable = {
+			which = provinceTradePower
+			value = modifier:province_trade_power_value
+		}
+		change_variable = {
+			which = currentTradePower
+			which = provinceTradePower
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_saved_event_target = highest_trade_province
+				}
+			}
+			save_event_target_as = highest_trade_province
+		}
+		else = {
+			if = {
+				limit = {
+					check_variable = {
+						which = currentTradePower
+						which = event_target:highest_trade_province
+					}
+				}
+				save_event_target_as = highest_trade_province
+			}
+		}
+	}
+	event_target:highest_trade_province = {
+		add_province_modifier = {
+			name = estate_gya_thriving_guild_city
+			duration = -1
+		}
+		if = {
+			limit = {
+				NOT = {
+					province_has_center_of_trade_of_level = 1
+				}
+			}
+			center_of_trade = 1
+		}
+		upgrade_center_of_trade = {
+			province = event_target:highest_trade_province
+		}
+	}
+}
+
+gya_upgrade_guild_modifier_effect = {
+	every_owned_province = {
+		limit = {
+			superregion = china_superregion
+			has_port = yes
+			has_province_modifier = lha_thriving_local_maritime_guild
+		}
+		remove_province_modifier = lha_thriving_local_maritime_guild
+		add_province_modifier = {
+			name = estate_gya_thriving_guild_city
+			duration = -1
+		}
+	}
+	set_country_flag = gya_upgraded_guild_modifiers
+}
+
+lha_granaries_of_china_upgrade_effect = {
+	random_owned_province = {
+		limit = {
+			superregion = china_superregion
+			trade_goods = grain
+			development = 12
+			has_production_building_trigger = yes
+			NOT = {
+				has_province_flag = lha_granaries_of_china_upgrade_effect_upgraded
+			}
+		}
+		upgrade_production_building = yes
+		set_province_flag = lha_granaries_of_china_upgrade_effect_upgraded
+	}
+}
+
+#Pain
+lha_create_dalai_lama_effect = {
+	#Get age between 0 and 13, we want the heir to be between 2 and 15
+	random_variable = {
+		which = dl_age
+		value = 13
+	}
+	round_variable = {
+		which = dl_age
+		value = -1		#round down
+	}
+	change_variable = {
+		#Min age must be 2
+		which = dl_age
+		value = 2
+	}
+	while = {
+		#There was no better way to do this shit
+		#I apologize for the eye cancer
+		limit = {
+			OR = {
+				AND = {
+					#Don't want to generate a number > 2 if he didn't die 3 years ago
+					NOT = {
+						had_country_flag = {
+							# 3 years since Dalai Lama death
+							flag = dalai_lama_died
+							days = 1095
+						}
+					}
+					check_variable = {
+						which = dl_age
+						value = 3
+					}
+				}
+				AND = {
+					#Don't want to generate a number > 3 if he didn't die 4 years ago
+					NOT = {
+						had_country_flag = {
+							# 4 years since Dalai Lama death
+							flag = dalai_lama_died
+							days = 1460
+						}
+					}
+					check_variable = {
+						which = dl_age
+						value = 4
+					}
+				}
+				AND = {
+					#Don't want to generate a number > 4 if he didn't die 5 years ago
+					NOT = {
+						had_country_flag = {
+							# 5 years since Dalai Lama death
+							flag = dalai_lama_died
+							days = 1825
+						}
+					}
+					check_variable = {
+						which = dl_age
+						value = 5
+					}
+				}
+				AND = {
+					#Don't want to generate a number > 5 if he didn't die 6 years ago
+					NOT = {
+						had_country_flag = {
+							# 6 years since Dalai Lama death
+							flag = dalai_lama_died
+							days = 2190
+						}
+					}
+					check_variable = {
+						which = dl_age
+						value = 5
+					}
+				}
+				AND = {
+					#Don't want to generate a number > 6 if he didn't die 7 years ago
+					NOT = {
+						had_country_flag = {
+							# 7 years since Dalai Lama death
+							flag = dalai_lama_died
+							days = 2555
+						}
+					}
+					check_variable = {
+						which = dl_age
+						value = 6
+					}
+				}
+				AND = {
+					#Don't want to generate a number > 7 if he didn't die 8 years ago
+					NOT = {
+						had_country_flag = {
+							# 8 years since Dalai Lama death
+							flag = dalai_lama_died
+							days = 2920
+						}
+					}
+					check_variable = {
+						which = dl_age
+						value = 7
+					}
+				}
+				AND = {
+					#Don't want to generate a number > 8 if he didn't die 9 years ago
+					NOT = {
+						had_country_flag = {
+							# 9 years since Dalai Lama death
+							flag = dalai_lama_died
+							days = 3285
+						}
+					}
+					check_variable = {
+						which = dl_age
+						value = 8
+					}
+				}
+				AND = {
+					#Don't want to generate a number > 9 if he didn't die 10 years ago
+					NOT = {
+						had_country_flag = {
+							# 10 years since Dalai Lama death
+							flag = dalai_lama_died
+							days = 3650
+						}
+					}
+					check_variable = {
+						which = dl_age
+						value = 9
+					}
+				}
+				AND = {
+					#Don't want to generate a number > 10 if he didn't die 11 years ago
+					NOT = {
+						had_country_flag = {
+							# 11 years since Dalai Lama death
+							flag = dalai_lama_died
+							days = 4015
+						}
+					}
+					check_variable = {
+						which = dl_age
+						value = 10
+					}
+				}
+				AND = {
+					#Don't want to generate a number > 11 if he didn't die 12 years ago
+					NOT = {
+						had_country_flag = {
+							# 12 years since Dalai Lama death
+							flag = dalai_lama_died
+							days = 4380
+						}
+					}
+					check_variable = {
+						which = dl_age
+						value = 11
+					}
+				}
+				AND = {
+					#Don't want to generate a number > 12 if he didn't die 13 years ago
+					NOT = {
+						had_country_flag = {
+							# 13 years since Dalai Lama death
+							flag = dalai_lama_died
+							days = 4745
+						}
+					}
+					check_variable = {
+						which = dl_age
+						value = 12
+					}
+				}
+				AND = {
+					#Don't want to generate a number > 13 if he didn't die 14 years ago
+					NOT = {
+						had_country_flag = {
+							# 14 years since Dalai Lama death
+							flag = dalai_lama_died
+							days = 5110
+						}
+					}
+					check_variable = {
+						which = dl_age
+						value = 13
+					}
+				}
+				AND = {
+					#Don't want to generate a number > 14 if he didn't die 15 years ago
+					NOT = {
+						had_country_flag = {
+							# 15 years since Dalai Lama death
+							flag = dalai_lama_died
+							days = 5475
+						}
+					}
+					check_variable = {
+						which = dl_age
+						value = 14
+					}
+				}
+				AND = {
+					#Don't want to generate a number > 15 if he didn't die 16 years ago
+					NOT = {
+						had_country_flag = {
+							# 16 years since Dalai Lama death
+							flag = dalai_lama_died
+							days = 5840
+						}
+					}
+					check_variable = {
+						which = dl_age
+						value = 15
+					}
+				}
+			}
+		}
+		#Get age between 0 and 13, we want the heir to be between 2 and 15
+		random_variable = {
+			which = dl_age
+			value = 13
+		}
+		round_variable = {
+			which = dl_age
+			value = -1			#round down
+		}
+		change_variable = {
+			#Min age must be 2
+			which = dl_age
+			value = 2
+		}
+	}
+	#Create a new heir based on the random variable value
+	#There was no better way to do this shit
+	#I apologize for the eye cancer
+	if = {
+		limit = {
+			check_variable = {
+				which = dl_age
+				value = 2
+			}
+			NOT = {
+				check_variable = {
+					which = dl_age
+					value = 3
+				}
+			}
+		}
+		lha_define_dalai_lama_effect = {
+			dalai_lama_age = 2
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = dl_age
+				value = 3
+			}
+			NOT = {
+				check_variable = {
+					which = dl_age
+					value = 4
+				}
+			}
+		}
+		lha_define_dalai_lama_effect = {
+			dalai_lama_age = 3
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = dl_age
+				value = 4
+			}
+			NOT = {
+				check_variable = {
+					which = dl_age
+					value = 5
+				}
+			}
+		}
+		lha_define_dalai_lama_effect = {
+			dalai_lama_age = 4
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = dl_age
+				value = 5
+			}
+			NOT = {
+				check_variable = {
+					which = dl_age
+					value = 6
+				}
+			}
+		}
+		lha_define_dalai_lama_effect = {
+			dalai_lama_age = 5
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = dl_age
+				value = 6
+			}
+			NOT = {
+				check_variable = {
+					which = dl_age
+					value = 7
+				}
+			}
+		}
+		lha_define_dalai_lama_effect = {
+			dalai_lama_age = 6
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = dl_age
+				value = 7
+			}
+			NOT = {
+				check_variable = {
+					which = dl_age
+					value = 8
+				}
+			}
+		}
+		lha_define_dalai_lama_effect = {
+			dalai_lama_age = 7
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = dl_age
+				value = 8
+			}
+			NOT = {
+				check_variable = {
+					which = dl_age
+					value = 9
+				}
+			}
+		}
+		lha_define_dalai_lama_effect = {
+			dalai_lama_age = 8
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = dl_age
+				value = 9
+			}
+			NOT = {
+				check_variable = {
+					which = dl_age
+					value = 10
+				}
+			}
+		}
+		lha_define_dalai_lama_effect = {
+			dalai_lama_age = 9
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = dl_age
+				value = 10
+			}
+			NOT = {
+				check_variable = {
+					which = dl_age
+					value = 11
+				}
+			}
+		}
+		lha_define_dalai_lama_effect = {
+			dalai_lama_age = 10
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = dl_age
+				value = 11
+			}
+			NOT = {
+				check_variable = {
+					which = dl_age
+					value = 12
+				}
+			}
+		}
+		lha_define_dalai_lama_effect = {
+			dalai_lama_age = 11
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = dl_age
+				value = 12
+			}
+			NOT = {
+				check_variable = {
+					which = dl_age
+					value = 13
+				}
+			}
+		}
+		lha_define_dalai_lama_effect = {
+			dalai_lama_age = 12
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = dl_age
+				value = 13
+			}
+			NOT = {
+				check_variable = {
+					which = dl_age
+					value = 14
+				}
+			}
+		}
+		lha_define_dalai_lama_effect = {
+			dalai_lama_age = 13
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = dl_age
+				value = 14
+			}
+			NOT = {
+				check_variable = {
+					which = dl_age
+					value = 15
+				}
+			}
+		}
+		lha_define_dalai_lama_effect = {
+			dalai_lama_age = 14
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = dl_age
+				value = 15
+			}
+			NOT = {
+				check_variable = {
+					which = dl_age
+					value = 16
+				}
+			}
+		}
+		lha_define_dalai_lama_effect = {
+			dalai_lama_age = 15
+		}
+	}
+}
+
+lha_define_dalai_lama_effect = {
+	define_heir = {
+		culture = ROOT
+		religion = ROOT
+		age = $dalai_lama_age$
+	}
+}
+
+lha_settlement_of_siberia_effect = {
+	random_province = {
+		limit = {
+			is_empty = yes
+			OR = {
+				region = east_siberia_region
+				region = west_siberia_region
+			}
+			calc_true_if = {
+				all_neighbor_province = {
+					NOT = {
+						is_sea = yes
+					}
+					NOT = {
+						is_wasteland = yes
+					}
+					NOT = {
+						is_empty = yes
+					}
+					NOT = {
+						is_colony = yes
+					}
+					owned_by = ROOT
+				}
+				amount = 1
+			}
+		}
+		add_siberian_construction = 0
+		if = {
+			limit = {
+				region = east_siberia_region
+			}
+			change_culture = manju
+		}
+		else_if = {
+			limit = {
+				region = west_siberia_region
+			}
+			change_culture = sogpo
+		}
+		change_religion = ROOT
+	}
+}
+
+lha_settlement_of_siberia_parliament_effect = {
+	for = {
+		amount = $iterations$
+		custom_tooltip = lha_settlement_of_siberia_effect_4_tooltip
+		effect = "lha_settlement_of_siberia_effect = yes"
+	}
+}
+
+fund_pilgrimage_pay_cost_effect = {
+	export_to_variable = {
+		variable_name = capital_distance_from_target
+		value = capital_distance
+		who = $target$
+	}
+	multiply_variable = {
+		which = capital_distance_from_target
+		value = -2
+	}
+	variable_use_in_effect_effect = {
+		effect = add_treasury
+		variable = capital_distance_from_target
+	}
+}
+
+add_himalayan_great_project_reward_effect = {
+	$province$ = {
+		if = {
+			limit = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		add_province_modifier = {
+			name = lha_develop_the_dzongs
+			duration = -1
+		}
+	}
+}

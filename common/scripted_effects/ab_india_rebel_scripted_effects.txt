@@ -1,0 +1,65 @@
+spawn_islamic_rebels_in_location_type = {
+	every_owned_province = {
+		limit = {
+			$location_type$ = $location$
+		}
+		if = {
+			limit = {
+				religion = ibadi
+			}
+			ibadi_rebels = 1
+		}
+		if = {
+			limit = {
+				religion = shiite
+			}
+			shiite_rebels = 1
+		}
+		if = {
+			limit = {
+				religion = sunni
+			}
+			sunni_rebels = 1
+		}
+	}
+}
+
+spawn_dharmic_rebels_in_location_type = {
+	every_owned_province = {
+		limit = {
+			$location_type$ = $location$
+		}
+		if = {
+			limit = {
+				religion = hinduism
+			}
+			hinduism_rebels = 1
+		}
+		if = {
+			limit = {
+				religion = zunist
+			}
+			zunist_rebels = 1
+		}
+		if = {
+			limit = {
+				religion = sikhism
+			}
+			sikhism_rebels = 1
+		}
+	}
+}
+
+spawn_confucian_rebels_in_location_type = {
+	every_owned_province = {
+		limit = {
+			$location_type$ = $location$
+		}
+		if = {
+			limit = {
+				religion = confucianism
+			}
+			confucianism_rebels = 1
+		}
+	}
+}

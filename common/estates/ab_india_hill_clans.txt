@@ -1,0 +1,72 @@
+estate_hill_clans = {
+	icon = 19
+	color = {
+		204
+		102
+		0
+	}
+	# If true, country will get estate
+	trigger = {
+		has_country_flag = unlocked_hill_clans_estate
+	}
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		movement_speed = 0.1
+		caravan_power = 0.1
+	}
+	country_modifier_neutral = {
+		movement_speed = 0.05
+		caravan_power = 0.05
+	}
+	country_modifier_angry = {
+		global_unrest = 2
+		caravan_power = -0.2
+		build_cost = 0.1
+	}
+	land_ownership_modifier = {
+		hill_clans_loyalty_modifier = 0.2
+	}
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			culture_group = northern_aryan
+		}
+		modifier = {
+			factor = 0.75
+			has_terrain = hills
+		}
+		modifier = {
+			factor = 0.5
+			has_terrain = mountain
+		}
+		modifier = {
+			factor = 0.25
+			has_terrain = glacier
+		}
+	}
+	# Influence modifiers
+	base_influence = 10
+
+	privileges = {
+		estate_hill_clans_himalayan_guerrillas
+		estate_hill_clans_land_rights
+		estate_hill_clans_enlist_the_sherpas 
+		estate_hill_clans_expand_the_yak_herds
+		estate_hill_clans_seat_at_the_kashag
+		estate_hill_clans_enlist_the_gurkhas
+		estate_hill_clans_train_gurkha_officers
+		estate_hill_clans_sages_of_the_high_passes
+		estate_hill_clans_prioritize_yak_hair_industry
+		estate_hill_clans_pahari_mercenary_traditions
+		estate_hill_clans_monopoly_of_cashmere
+	}
+	agendas = {
+		estate_hill_clans_insult
+		estate_hill_clans_construct_roadway_in_y
+		estate_hill_clans_develop_adm_in_y
+		estate_hill_clans_develop_dip_in_y
+		estate_hill_clans_develop_mil_in_y
+	}
+	influence_from_dev_modifier = 1	#Determines percent influence from development
+}

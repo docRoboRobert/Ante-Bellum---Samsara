@@ -1,0 +1,31 @@
+on_monarch_death = {
+	if = {
+		limit = {
+			OR = {
+				overlord = {
+					has_country_flag = waiting_for_chakravartin_overlord_to_select
+				}
+				is_subject_of_type = chakravartin_order
+			}
+			NOT = {
+				has_country_flag = subject_picking_new_ruler
+			}
+		}
+		set_country_flag = subject_picking_new_ruler
+		define_ruler = {
+			regency = yes
+			name = "The Monastic Council"
+			dip = 2
+			adm = 2
+			mil = 2
+		}
+		add_ruler_personality = immortal_personality
+		save_global_event_target_as = leaderless_chakravartin_subject
+		overlord = {
+			set_country_flag = waiting_for_chakravartin_overlord_to_select
+			country_event = {
+				id = ab_india_chakravartin_order_events.1
+			}
+		}
+	}
+}

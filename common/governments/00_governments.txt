@@ -672,6 +672,8 @@ monarchy = {
 				fkn_improved_blitzkrieg
 				rhl_imperial_guards
 				# ]]]
+				#Samsara
+				dzong_system
 			}
 		}
 		state_and_religion = {
@@ -1541,6 +1543,8 @@ republic = {
 				ab_condottiero_reform
 				rhl_imperial_guards
 				# ]]]
+				#Samsara
+				dzong_system
 			}
 		}
 		republic_and_religion = {
@@ -2107,6 +2111,12 @@ theocracy = {
 				bav_south_german_confederation
 				fkn_holy_knights
 				rhl_confederation_reform
+				# Samsara
+				lhasa_theocratic_state
+				vlr_st_thomas_apostle
+				gph_realm_of_the_bodhisattva
+				gph_eternal_throne_of_the_chakravartin
+				chakravartin_order_reform
 				# ]]]
 			}
 		}
@@ -2343,6 +2353,8 @@ theocracy = {
 				fkn_improved_blitzkrieg
 				rhl_imperial_guards
 				# ]]]
+				#Samsara
+				dzong_system
 			}
 		}
 		# secularization = {

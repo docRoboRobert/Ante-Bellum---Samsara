@@ -1,0 +1,8 @@
+﻿l_english:
+ fund_pilgrimage_to_lhasa:0 "Fund Pilgrimage to Lhasa"
+ fund_pilgrimage_to_lhasa_title:0 "Fund Pilgrimage to Lhasa"
+ fund_pilgrimage_diplo_rep_ai_acceptance:0 "Diplomatic Reputation"
+ fund_pilgrimage_num_rebels_ai_acceptance:0 "Active Revolts Endangering Pilgrims"
+ fund_pilgrimage_to_lhasa_tooltip:0 "Fund a pilgrimage to §YLhasa§! for them, which will give both of us benefits."
+ went_on_recent_pilgrimage:0 "They haven't gone on a pilgrimage in the last §Y20 years§!"
+ fund_pilgrimage_to_lhasa_desc:0 "We will receive:\n§G+5 §!devotion\n§G+5§! loyalty with the §YMonastic Orders§!\n§G+5§! trust with each other\n§G+50§! opinion with each other\n§G+1§! §YEnlightenment§!\nThe §YFunded a Pilgrimage§! modifier for §Y10 years§!\n\n§YLhasa§! will receive:\nThe §YPilgrimage Hub of the Dharma§! modifier for §Y5 years§!"

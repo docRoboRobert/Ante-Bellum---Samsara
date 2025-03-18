@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "gfx_ab_india_mission_timed"
+		texturefile = "gfx//interface//missions//mission_timed.dds"
+	}
+}

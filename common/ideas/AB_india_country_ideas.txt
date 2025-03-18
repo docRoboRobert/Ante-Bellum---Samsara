@@ -248,6 +248,247 @@ COA_ideas = {
 	}
 }
 
+GPH_ideas_0 = {
+	start = {
+		stability_cost_modifier = -0.25
+		religious_unity = 0.2
+		yearly_karma_decay = 0.05
+	}
+	bonus = {
+		same_religion_advisor_cost = -0.25
+	}
+	trigger = {
+		tag = GPH
+		check_variable = {
+			lha_idea_level = 0
+		}
+		NOT = {
+			check_variable = {
+				lha_idea_level = 1
+			}
+		}
+	}
+	free = yes
+	GPH_highland_ingenuity = {
+		development_cost = -0.15
+		build_cost = -0.05
+	}
+	GPH_mandate_of_the_bodhisattva = {
+		core_creation = -0.1
+	}
+	GPH_warrions_of_the_high_plains = {
+		infantry_power = 0.1
+		movement_speed = 0.05
+	}
+	GPH_mandate_of_the_dharma = {
+		warscore_cost_vs_other_religion = -0.1
+		global_missionary_strength = 0.02
+	}
+	GPH_harmonious_governance = {
+		reform_progress_growth = 0.1
+		idea_cost = -0.05
+	}
+	GPH_bastions_of_the_roof = {
+		fort_maintenance_modifier = -0.2
+		defensiveness = 0.25
+	}
+	GPH_enlist_the_gurkhas = {
+		discipline = 0.05
+		hill_clans_loyalty_modifier = 0.05
+	}
+}
+
+GPH_ideas_1 = {
+	start = {
+		stability_cost_modifier = -0.25
+		religious_unity = 0.2
+		yearly_karma_decay = 0.05
+	}
+	bonus = {
+		same_religion_advisor_cost = -0.25
+	}
+	trigger = {
+		tag = GPH
+		check_variable = {
+			lha_idea_level = 1
+		}
+		NOT = {
+			check_variable = {
+				lha_idea_level = 2
+			}
+		}
+	}
+	free = yes
+	GPH_highland_ingenuity = {
+		development_cost = -0.15
+		build_cost = -0.05
+	}
+	GPH_mandate_of_the_bodhisattva = {
+		core_creation = -0.1
+	}
+	GPH_warrions_of_the_high_plains = {
+		infantry_power = 0.1
+		movement_speed = 0.05
+	}
+	GPH_mandate_of_the_dharma_improved = {
+		warscore_cost_vs_other_religion = -0.15
+		global_missionary_strength = 0.03
+	}
+	GPH_harmonious_governance = {
+		reform_progress_growth = 0.1
+		idea_cost = -0.05
+	}
+	GPH_bastions_of_the_roof = {
+		fort_maintenance_modifier = -0.2
+		defensiveness = 0.25
+	}
+	GPH_enlist_the_gurkhas = {
+		discipline = 0.05
+		hill_clans_loyalty_modifier = 0.05
+	}
+}
+
+GPH_ideas_2 = {
+	start = {
+		stability_cost_modifier = -0.25
+		religious_unity = 0.2
+		yearly_karma_decay = 0.05
+	}
+	bonus = {
+		same_religion_advisor_cost = -0.25
+	}
+	trigger = {
+		tag = GPH
+		check_variable = {
+			lha_idea_level = 2
+		}
+		NOT = {
+			check_variable = {
+				lha_idea_level = 3
+			}
+		}
+	}
+	free = yes
+	GPH_highland_ingenuity = {
+		development_cost = -0.15
+		build_cost = -0.05
+	}
+	GPH_mandate_of_the_bodhisattva_improved = {
+		core_creation = -0.15
+	}
+	GPH_warrions_of_the_high_plains = {
+		infantry_power = 0.1
+		movement_speed = 0.05
+	}
+	GPH_mandate_of_the_dharma_improved = {
+		warscore_cost_vs_other_religion = -0.15
+		global_missionary_strength = 0.03
+	}
+	GPH_harmonious_governance = {
+		reform_progress_growth = 0.1
+		idea_cost = -0.05
+	}
+	GPH_bastions_of_the_roof = {
+		fort_maintenance_modifier = -0.2
+		defensiveness = 0.25
+	}
+	GPH_enlist_the_gurkhas = {
+		discipline = 0.05
+		hill_clans_loyalty_modifier = 0.05
+	}
+}
+
+GPH_ideas_3 = {
+	start = {
+		stability_cost_modifier = -0.25
+		religious_unity = 0.2
+		yearly_karma_decay = 0.05
+	}
+	bonus = {
+		same_religion_advisor_cost = -0.25
+	}
+	trigger = {
+		tag = GPH
+		check_variable = {
+			lha_idea_level = 3
+		}
+		NOT = {
+			check_variable = {
+				lha_idea_level = 4
+			}
+		}
+	}
+	free = yes
+	GPH_highland_ingenuity = {
+		development_cost = -0.15
+		build_cost = -0.05
+	}
+	GPH_mandate_of_the_bodhisattva_improved = {
+		core_creation = -0.15
+	}
+	GPH_warrions_of_the_high_plains = {
+		infantry_power = 0.1
+		movement_speed = 0.05
+	}
+	GPH_mandate_of_the_dharma_improved = {
+		warscore_cost_vs_other_religion = -0.15
+		global_missionary_strength = 0.03
+	}
+	GPH_harmonious_governance_improved = {
+		reform_progress_growth = 0.1
+		idea_cost = -0.05
+		governing_capacity_modifier = 0.1
+	}
+	GPH_bastions_of_the_roof = {
+		fort_maintenance_modifier = -0.2
+		defensiveness = 0.25
+	}
+	GPH_enlist_the_gurkhas = {
+		discipline = 0.05
+		hill_clans_loyalty_modifier = 0.05
+	}
+}
+
+ORS_ideas = {
+	start = {
+		discipline = 0.05
+		allowed_samurai_fraction = 0.2
+	}
+	bonus = {
+		mil_advisor_cost = -0.25
+	}
+	trigger = {
+		tag = ORS
+	}
+	free = yes
+	ORS_warrior_monks_of_the_sun = {
+		infantry_cost = -0.10
+		global_ship_cost = -0.10
+	}
+	ORS_guardians_of_the_dharma = {
+		manpower_recovery_speed = 0.15
+		manpower_in_true_faith_provinces = 0.1
+	}
+	ORS_swords_of_enlightenment = {
+		global_missionary_strength = 0.02
+		yearly_karma_decay = 0.2
+	}
+	ORS_pioneers_of_the_outer_isles = {
+		global_colonial_growth = 20
+		global_trade_power = 0.1
+	}
+	ORS_harmonious_rule_of_law = {
+		development_cost_in_primary_culture = -0.1
+		global_tax_modifier = 0.1
+	}
+	ORS_fortresses_of_the_eternal_watch = {
+		general_cost = -0.1
+	}
+	ORS_warriors_of_the_way = {
+		warscore_cost_vs_other_religion = -0.1
+		core_creation = -0.05
+	}
+}
 #Kakatiya ideas
 KAK_ideas = {
 	start = {

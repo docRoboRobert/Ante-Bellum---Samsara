@@ -1,0 +1,135 @@
+enlightenment_mechanics_balanced_karma = {
+	potential = {
+		has_government_mechanic = state_enlightenment_mechanic
+	}
+	trigger = {
+		AND = {
+			karma = -33
+			NOT = {
+				karma = 33
+			}
+		}
+	}
+	monthly_enlightenment_power = 0.01
+}
+
+enlightenment_mechanics_defender_in_war = {
+	potential = {
+		has_government_mechanic = state_enlightenment_mechanic
+	}
+	trigger = {
+		is_in_war = {
+			defenders = ROOT
+		}
+	}
+	monthly_enlightenment_power = 0.08
+}
+
+enlightenment_mechanics_attacker_in_war = {
+	potential = {
+		has_government_mechanic = state_enlightenment_mechanic
+	}
+	trigger = {
+		is_in_war = {
+			attackers = ROOT
+		}
+	}
+	monthly_enlightenment_power = -0.08
+}
+
+enlightenment_mechanics_attacker_in_crusade = {
+	potential = {
+		has_government_mechanic = state_enlightenment_mechanic
+	}
+	trigger = {
+		OR = {
+			is_in_war = {
+				attacker_leader = ROOT
+			}
+			is_in_war = {
+				defender_leader = ROOT
+			}
+		}
+		OR = {
+			is_in_war = {
+				casus_belli = cb_crusade
+			}
+			is_in_war = {
+				casus_belli = cb_heretic
+			}
+		}
+	}
+	monthly_enlightenment_power = 0.06
+}
+
+enlightenment_mechanics_dishonored_alliance = {
+	potential = {
+		has_government_mechanic = state_enlightenment_mechanic
+	}
+	trigger = {
+		has_country_modifier = dishonoured_alliance
+	}
+	monthly_enlightenment_power = -0.333
+}
+
+enlightenment_mechanics_ahead_of_time_on_tech = {
+	potential = {
+		has_government_mechanic = state_enlightenment_mechanic
+	}
+	trigger = {
+		OR = {
+			is_ahead_of_time_in_technology = {
+				tech = adm
+			}
+			is_ahead_of_time_in_technology = {
+				tech = dip
+			}
+			is_ahead_of_time_in_technology = {
+				tech = mil
+			}
+		}
+	}
+	monthly_enlightenment_power = 0.01
+}
+
+enlightenment_mechanics_corrupt = {
+	potential = {
+		has_government_mechanic = state_enlightenment_mechanic
+	}
+	trigger = {
+		corruption = 1
+	}
+	monthly_enlightenment_power = -0.08
+}
+
+enlightenment_mechanics_bankruptcy = {
+	potential = {
+		has_government_mechanic = state_enlightenment_mechanic
+	}
+	trigger = {
+		is_bankrupt = yes
+	}
+	monthly_enlightenment_power = -100
+}
+
+enlightenment_mechanics_stability = {
+	potential = {
+		has_government_mechanic = state_enlightenment_mechanic
+	}
+	trigger = {
+		stability = 1
+	}
+	monthly_enlightenment_power = 0.01
+}
+
+enlightenment_mechanics_instability = {
+	potential = {
+		has_government_mechanic = state_enlightenment_mechanic
+	}
+	trigger = {
+		NOT = {
+			stability = 0
+		}
+	}
+	monthly_enlightenment_power = -0.02
+}

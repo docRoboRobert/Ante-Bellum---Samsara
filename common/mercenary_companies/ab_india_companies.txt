@@ -55,3 +55,23 @@ abi_merc_malankara_default_2 = {
 	max_size = 40
 	manpower_pool = 12
 }
+
+# Gurkhas
+merc_gurkhas = {
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+    regiments_per_development = 0.06
+	artillery_weight = 0.35
+    home_province = 557
+    cost_modifier = 0.5
+	sprites = { dlc091_npl_sprite_pack indiangfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		has_estate_privilege = estate_hill_clans_enlist_the_gurkhas
+		mil_tech = 7
+	}
+	modifier = {
+		discipline = 0.025
+        infantry_power = 0.1
+        shock_damage = 0.1
+	}
+}

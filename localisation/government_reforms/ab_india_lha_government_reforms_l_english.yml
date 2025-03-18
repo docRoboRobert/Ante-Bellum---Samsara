@@ -1,0 +1,6 @@
+﻿l_english:
+ dzong_system:0 "The Dzong System"
+ dzong_system_desc:0 "In the unforgiving terrain of our realm, governance and defense must go hand in hand. The ancient tradition of dzongs—fortified monasteries—ensures that the Dharma remains safeguarded even in times of war. By formalizing this system, we integrate these strongholds into our administration, reinforcing both spiritual and strategic resilience."
+
+ dzong_system_temple_effect_tooltip:0 "Every province that has a §YTemple§! on a §YMountain§!, §YHills§!, §YGlacier§!, or §YHighlands§! province will receive:"
+ dzong_system_great_temple_effect_tooltip:0 "Every province that has a §YGreat Temple§! on a §YMountain§!, §YHills§!, §YGlacier§!, or §YHighlands§! province will receive:"

@@ -1,0 +1,38 @@
+namespace = gya_events
+country_event = {
+	id = gya_events.1
+	title = gya_events.1.t
+    desc = gya_events.1.d
+	picture = asiangfx_COURT_eventPicture
+
+	trigger = {
+		has_estate_privilege = estate_gya_autonymous_guild_cities
+	}
+	picture = TRADEGOODS_eventPicture
+	is_triggered_only = yes
+	immediate = {
+		remove_estate_monopoly_modifier = {
+			privilege = estate_gya_autonymous_guild_cities
+		}
+	}
+	option = {
+		name = gya_events.1.a
+		reapply_estate_privilege = {
+			privilege = estate_gya_autonymous_guild_cities
+		}
+	}
+	option = {
+		name = gya_events.1.b
+		custom_tooltip = gya_events.1.b.tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = estate_gya_autonomy_granted_to_guild_city
+				}
+				apply_estate_monopoly_modifier = {
+					privilege = estate_gya_autonymous_guild_cities
+				}
+			}
+		}
+	}
+}

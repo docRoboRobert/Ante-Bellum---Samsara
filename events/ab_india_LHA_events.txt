@@ -1,0 +1,927 @@
+namespace = ab_india_lha_events
+#Starting Bad Event
+province_event = {
+	id = ab_india_lha_events.1
+	title = ab_india_lha_events.1.t
+	desc = ab_india_lha_events.1.d
+	picture = GFX_ab_india_lha_events.1
+	fire_only_once = yes
+	trigger = {
+		has_active_triggered_province_modifier = lha_unorthodox_population_of_lhasa
+	}
+	option = {
+		name = ab_india_lha_events.1_acknowledge
+		custom_tooltip = ab_india_lha_events.1_acknowledge_tooltip
+		owner = {
+			add_prestige = -20
+		}
+	}
+}
+
+#Timed Mission Unlock
+country_event = {
+	id = ab_india_lha_events.2
+	title = ab_india_lha_events.2.t
+	desc = ab_india_lha_events.2.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = ab_india_lha_events.2.a
+		set_country_flag = lha_mission_unlocked
+		hidden_effect = {
+			swap_non_generic_missions = yes
+		}
+	}
+}
+
+#Timed Mission Fail
+country_event = {
+	id = ab_india_lha_events.3
+	title = ab_india_lha_events.3.t
+	desc = ab_india_lha_events.3.d
+	picture = BAD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+	trigger = {
+		is_year = 1460
+		OR = {
+			tag = LHA
+			was_tag = LHA
+		}
+		has_country_flag = lha_mission_unlocked
+		NOT = {
+			mission_completed = lha_legacy_of_trisong_detsen
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = lha_mission_unlocked
+			set_country_flag = lha_mission_failed
+			swap_non_generic_missions = yes
+		}
+	}
+	option = {
+		name = ab_india_lha_events.3.a
+		add_prestige = -1
+	}
+}
+
+##Find the Dalai Lama Event Chain
+#First Event
+#How fast do you want the Dalai Lama?
+country_event = {
+	id = ab_india_lha_events.4
+	title = ab_india_lha_events.4.t
+	desc = ab_india_lha_events.4.d
+	picture = GFX_ab_india_lha_events.4
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = begin_search_for_dalai_lama
+	}
+	option = {
+		name = ab_india_lha_events.4.a
+		custom_tooltip = ab_india_lha_events.4.tooltip
+		add_country_modifier = {
+			name = lha_searching_for_the_dalai_lama_fastest
+			duration = -1
+		}
+		clr_country_flag = begin_search_for_dalai_lama
+		set_country_flag = lha_searching_for_dalai_lama_fastest
+	}
+	option = {
+		name = ab_india_lha_events.4.b
+		custom_tooltip = ab_india_lha_events.4.tooltip
+		add_country_modifier = {
+			name = lha_searching_for_the_dalai_lama_faster
+			duration = -1
+		}
+		clr_country_flag = begin_search_for_dalai_lama
+		set_country_flag = lha_searching_for_dalai_lama_fast
+	}
+	option = {
+		name = ab_india_lha_events.4.c
+		custom_tooltip = ab_india_lha_events.4.c.tooltip
+		clr_country_flag = begin_search_for_dalai_lama
+		set_country_flag = lha_searching_for_dalai_lama
+	}
+}
+
+##Find the Dalai Lama Event Chain
+#Dalai Lama Found Fastest
+country_event = {
+	id = ab_india_lha_events.5
+	title = ab_india_lha_events.5.t
+	desc = ab_india_lha_events.5.d
+	picture = GFX_ab_india_lha_events.5
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		has_country_flag = lha_searching_for_dalai_lama_fastest
+	}
+	mean_time_to_happen = {
+		months = 9
+	}
+	immediate = {
+		clr_country_flag = lha_searching_for_dalai_lama_fastest
+		remove_country_modifier = lha_searching_for_the_dalai_lama_fastest
+		set_country_flag = lha_dalai_lama_found
+	}
+	option = {
+		name = ab_india_lha_events.5.a
+		add_prestige_or_monarch_power = {
+			amount = 25
+		}
+		add_devotion = 10
+		country_event = {
+			id = ab_india_lha_events.11
+		}
+	}
+}
+
+##Find the Dalai Lama Event Chain
+#Dalai Lama Found Fast
+country_event = {
+	id = ab_india_lha_events.6
+	title = ab_india_lha_events.5.t
+	desc = ab_india_lha_events.5.d
+	picture = GFX_ab_india_lha_events.5
+	fire_only_once = yes
+	trigger = {
+		has_country_flag = lha_searching_for_dalai_lama_fast
+	}
+	mean_time_to_happen = {
+		months = 18
+	}
+	immediate = {
+		clr_country_flag = lha_searching_for_dalai_lama_fast
+		remove_country_modifier = lha_searching_for_the_dalai_lama_faster
+		set_country_flag = lha_dalai_lama_found
+	}
+	option = {
+		name = ab_india_lha_events.6.a
+		add_prestige_or_monarch_power = {
+			amount = 25
+		}
+		add_devotion = 10
+		country_event = {
+			id = ab_india_lha_events.11
+		}
+	}
+}
+
+##Find the Dalai Lama Event Chain
+#Dalai Lama Found Regular Speed
+country_event = {
+	id = ab_india_lha_events.7
+	title = ab_india_lha_events.5.t
+	desc = ab_india_lha_events.5.d
+	picture = GFX_ab_india_lha_events.5
+	fire_only_once = yes
+	trigger = {
+		has_country_flag = lha_searching_for_dalai_lama
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	immediate = {
+		clr_country_flag = lha_searching_for_dalai_lama
+		set_country_flag = lha_dalai_lama_found
+	}
+	option = {
+		name = ab_india_lha_events.7.a
+		add_prestige_or_monarch_power = {
+			amount = 25
+		}
+		add_devotion = 10
+		country_event = {
+			id = ab_india_lha_events.11
+		}
+	}
+}
+
+##Find the Dalai Lama Event Chain
+#Nobles Resist
+country_event = {
+	id = ab_india_lha_events.8
+	title = ab_india_lha_events.8.t
+	desc = ab_india_lha_events.8.d
+	picture = GFX_ab_india_lha_events.8
+	trigger = {
+		OR = {
+			has_country_flag = lha_searching_for_dalai_lama
+			has_country_flag = lha_searching_for_dalai_lama_fast
+			has_country_flag = lha_searching_for_dalai_lama_fastest
+		}
+	}
+	mean_time_to_happen = {
+		months = 14
+	}
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				set_saved_name = {
+					key = noble_reactionary
+					type = advisor
+					scope = ROOT
+				}
+				spawn_rebels = {
+					size = 1
+					leader = noble_reactionary
+					type = noble_rebels
+				}
+			}
+		}
+	}
+	option = {
+		name = ab_india_lha_events.8.a
+	}
+}
+
+##Find the Dalai Lama Event Chain
+#Violence Between Schools
+country_event = {
+	id = ab_india_lha_events.9
+	title = ab_india_lha_events.9.t
+	desc = ab_india_lha_events.9.d
+	picture = GFX_ab_india_lha_events.9
+	trigger = {
+		OR = {
+			has_country_flag = lha_searching_for_dalai_lama
+			has_country_flag = lha_searching_for_dalai_lama_fast
+			has_country_flag = lha_searching_for_dalai_lama_fastest
+		}
+	}
+	mean_time_to_happen = {
+		months = 14
+	}
+	option = {
+		name = ab_india_lha_events.9.a
+		random_owned_province = {
+			add_unrest = 10
+			add_devastation = 20
+		}
+		add_devotion = -5
+		add_prestige = -5
+	}
+}
+
+##Find the Dalai Lama Event Chain
+#Landowners Take Advantage
+country_event = {
+	id = ab_india_lha_events.10
+	title = ab_india_lha_events.10.t
+	desc = ab_india_lha_events.10.d
+	picture = GFX_ab_india_lha_events.10
+	trigger = {
+		OR = {
+			has_country_flag = lha_searching_for_dalai_lama
+			has_country_flag = lha_searching_for_dalai_lama_fast
+			has_country_flag = lha_searching_for_dalai_lama_fastest
+		}
+	}
+	mean_time_to_happen = {
+		months = 14
+	}
+	option = {
+		name = ab_india_lha_events.10.a
+		random_owned_province = {
+			add_province_modifier = {
+				name = lha_landowners_take_advantage
+				duration = 1825
+			}
+			add_local_autonomy = 10
+		}
+		add_devotion = -5
+	}
+}
+
+##Find the Dalai Lama Event Chain
+#Dalai Lama set as heir, monastic council takes control
+country_event = {
+	id = ab_india_lha_events.11
+	title = ab_india_lha_events.11.t
+	desc = ab_india_lha_events.11.d
+	picture = GFX_ab_india_lha_events.11
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = lha_dalai_lama_found
+	}
+	immediate = {
+		set_country_flag = dalai_lama_mechanics
+		clr_country_flag = lha_dalai_lama_found
+		hidden_effect = {
+			kill_heir = {
+				allow_new_heir = no
+			}
+			kill_ruler = yes
+			define_ruler = {
+				regency = yes
+				name = "The Monastic Council"
+				dip = 3
+				adm = 3
+				mil = 3
+			}
+			add_ruler_personality = immortal_personality
+			define_heir = {
+				religion = vajrayana
+				culture = tibetan
+				age = 10
+				change_adm = 2
+				change_dip = 2
+				change_mil = 2
+			}
+			add_heir_personality = enlightened_personality
+		}
+	}
+	option = {
+		name = ab_india_lha_events.11.a
+		change_heir_adm = 1
+		set_country_flag = lha_waiting_for_dalai_lama_to_come_of_age
+		add_country_modifier = {
+			name = lha_sudden_shift_in_power_dynamics
+			duration = -1
+		}
+		custom_tooltip = ab_india_lha_events.11.tooltip
+	}
+	option = {
+		name = ab_india_lha_events.11.b
+		change_heir_dip = 1
+		set_country_flag = lha_waiting_for_dalai_lama_to_come_of_age
+		add_country_modifier = {
+			name = lha_sudden_shift_in_power_dynamics
+			duration = -1
+		}
+		custom_tooltip = ab_india_lha_events.11.tooltip
+	}
+	option = {
+		name = ab_india_lha_events.11.c
+		change_heir_mil = 1
+		set_country_flag = lha_waiting_for_dalai_lama_to_come_of_age
+		add_country_modifier = {
+			name = lha_sudden_shift_in_power_dynamics
+			duration = -1
+		}
+		custom_tooltip = ab_india_lha_events.11.tooltip
+	}
+}
+
+##Find the Dalai Lama Event Chain
+#Dalai Lama takes power, establish Ganden Phodrang
+country_event = {
+	id = ab_india_lha_events.12
+	title = ab_india_lha_events.12.t
+	desc = ab_india_lha_events.12.d
+	picture = GFX_ab_india_lha_events.12
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = lha_dalai_lama_is_of_age
+	}
+	immediate = {
+		clr_country_flag = lha_dalai_lama_is_of_age
+	}
+	option = {
+		name = ab_india_lha_events.12.a
+		change_tag = GPH
+		hidden_effect = {
+			export_to_variable = {
+				which = dalai_lamas_found
+				value = 1
+				who = ROOT
+			}
+		}
+		add_prestige_or_monarch_power = {
+			amount = 25
+		}
+		if = {
+			limit = {
+				has_custom_ideas = no
+			}
+			country_event = {
+				id = ideagroups.1
+			}
+			#Swap Ideas
+		}
+		remove_country_modifier = lha_sudden_shift_in_power_dynamics
+		add_government_reform = gph_realm_of_the_bodhisattva
+		hidden_effect = {
+			#Just in case some bullshit happened
+			kill_heir = {
+				allow_new_heir = no
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ab_india_lha_events.13
+	title = ab_india_lha_events.13.t
+	desc = ab_india_lha_events.13.desc
+	picture = GFX_ab_india_lha_events.13
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = lha_oirat_ties_complete
+	}
+	immediate = {
+		clr_country_flag = lha_oirat_ties_complete
+	}
+	option = {
+		name = ab_india_lha_events.13.a
+		trigger = {
+			KHT = {
+				OR = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+					alliance_with = ROOT
+				}
+			}
+		}
+		add_historical_friend = KHT
+		KHT = {
+			add_historical_friend = ROOT
+			if = {
+				limit = {
+					NOT = {
+						alliance_with = ROOT
+					}
+				}
+				create_alliance = ROOT
+			}
+			add_trust = {
+				who = ROOT
+				value = 5
+			}
+		}
+		set_country_flag = lha_kht_friend
+		custom_tooltip = ab_india_lha_events.13_tooltip
+	}
+	option = {
+		name = ab_india_lha_events.13.b
+		trigger = {
+			DRB = {
+				OR = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+					alliance_with = ROOT
+				}
+			}
+		}
+		add_historical_friend = DRB
+		DRB = {
+			add_historical_friend = ROOT
+			if = {
+				limit = {
+					NOT = {
+						alliance_with = ROOT
+					}
+				}
+				create_alliance = ROOT
+			}
+			add_trust = {
+				who = ROOT
+				value = 5
+			}
+		}
+		set_country_flag = lha_drb_friend
+		custom_tooltip = ab_india_lha_events.13_tooltip
+	}
+	option = {
+		name = ab_india_lha_events.13.c
+		trigger = {
+			TRG = {
+				OR = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+					alliance_with = ROOT
+				}
+			}
+		}
+		add_historical_friend = TRG
+		TRG = {
+			add_historical_friend = ROOT
+			if = {
+				limit = {
+					NOT = {
+						alliance_with = ROOT
+					}
+				}
+				create_alliance = ROOT
+			}
+			add_trust = {
+				who = ROOT
+				value = 5
+			}
+		}
+		set_country_flag = lha_trg_friend
+		custom_tooltip = ab_india_lha_events.13_tooltip
+	}
+	option = {
+		name = ab_india_lha_events.13.d
+		trigger = {
+			OIR = {
+				OR = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+					alliance_with = ROOT
+				}
+			}
+		}
+		add_historical_friend = OIR
+		OIR = {
+			add_historical_friend = ROOT
+			if = {
+				limit = {
+					NOT = {
+						alliance_with = ROOT
+					}
+				}
+				create_alliance = ROOT
+			}
+			add_trust = {
+				who = ROOT
+				value = 5
+			}
+			set_country_flag = lha_oir_friend
+		}
+	}
+	option = {
+		name = ab_india_lha_events.13.e
+	}
+}
+
+# Avert your gaze if Chinese
+province_event = {
+	id = ab_india_lha_events.14
+	title = ab_india_lha_events.14.t
+	desc = ab_india_lha_events.14.d
+	picture = FARMING_eventPicture
+	hidden = yes
+	trigger = {
+		owner = {
+			tag = GPH
+			has_country_flag = lha_tibetanization_of_china
+		}
+		NOT = {
+			culture_group = tibetan_group
+		}
+		any_neighbor_province = {
+			owner = {
+				tag = ROOT
+			}
+			culture_group = tibetan_group
+		}
+		owner = {
+			OR = {
+				NOT = {
+					has_country_flag = lha_tibetanized_recently
+				}
+				OR = {
+					had_country_flag = {
+						flag = lha_tibetanized_recently
+						days = 730
+					}
+					AND = {
+						has_country_flag = lha_faster_culture_spread
+						had_country_flag = {
+							flag = lha_tibetanized_recently
+							days = 365
+						}
+					}
+				}
+			}
+		}
+		OR = {
+			area = liaoning_area
+			superregion = china_superregion
+		}
+		religion = owner
+	}
+	goto = ROOT
+	hidden = yes
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.33
+			has_port = yes
+		}
+		modifier = {
+			factor = 0.33
+			num_of_times_improved_by_owner = 3
+		}
+		modifier = {
+			factor = 0.33
+			has_courthouse_building_trigger = yes
+		}
+		modifier = {
+			factor = 0.33
+			has_tax_building_trigger = yes
+		}
+	}
+	option = {
+		name = ab_india_lha_events.14.a
+		ai_chance = {
+			factor = 1
+		}
+		owner = {
+			clr_country_flag = lha_tibetanized_recently
+			set_country_flag = lha_tibetanized_recently
+		}
+		lha_tibetanize_china = yes
+	}
+}
+
+country_event = {
+	id = ab_india_lha_events.15
+	title = ab_india_lha_events.15.t
+	desc = ab_india_lha_events.15.d
+	picture = GFX_ab_india_lha_events.15
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = lha_tibetanization_explain
+	}
+	immediate = {
+		clr_country_flag = lha_tibetanization_explain
+	}
+	option = {
+		name = ab_india_lha_events.15.a
+		set_country_flag = lha_tibetanization_of_china
+	}
+}
+
+country_event = {
+	id = ab_india_lha_events.16
+	title = ab_india_lha_events.16.t
+	desc = ab_india_lha_events.16.d
+	picture = GFX_ab_india_lha_events.16
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = lha_move_capital_event
+	}
+	immediate = {
+		clr_country_flag = lha_move_capital_event
+	}
+	option = {
+		name = ab_india_lha_events.16.a
+		677 = {
+			add_province_modifier = {
+				name = lha_sacred_seat_of_the_dharma
+				duration = -1
+			}
+			add_base_tax = 3
+			add_base_production = 3
+			add_base_manpower = 3
+		}
+		1816 = {
+			add_province_modifier = {
+				name = lha_pecing_winter_palace
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = ab_india_lha_events.16.b
+		set_country_flag = lha_tibetanization_of_china
+		set_capital = 1816
+		1816 = {
+			add_core = ROOT
+			add_province_modifier = {
+				name = lha_sacred_seat_of_the_middle_kingdom
+				duration = -1
+			}
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		add_estate_loyalty = {
+			estate = estate_gya
+			loyalty = 20
+		}
+		677 = {
+			add_province_modifier = {
+				name = lha_lhasa_summer_palace
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ab_india_lha_events.17
+	title = ab_india_lha_events.17.t
+	desc = ab_india_lha_events.17.d
+	picture = GFX_ab_india_lha_events.17
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = lha_oirat_submits_event
+	}
+	immediate = {
+		clr_country_flag = lha_oirat_submits_event
+	}
+	option = {
+		name = ab_india_lha_events.17.a
+		set_country_flag = lha_oirat_submits_event_contd
+		hidden_effect = {
+			country_event = {
+				id = ab_india_lha_events.18
+			}
+		}
+	}
+	option = {
+		name = ab_india_lha_events.17.b
+		highlight = yes
+		lha_subjugate_oirat_friend = yes
+	}
+}
+
+country_event = {
+	id = ab_india_lha_events.18
+	title = ab_india_lha_events.18.t
+	desc = ab_india_lha_events.18.d
+	picture = GFX_ab_india_lha_events.17
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = lha_oirat_submits_event_contd
+	}
+	immediate = {
+		clr_country_flag = lha_oirat_submits_event_contd
+	}
+	option = {
+		name = ab_india_lha_events.18.a
+		set_country_flag = lha_oirat_submits_event
+		hidden_effect = {
+			country_event = {
+				id = ab_india_lha_events.17
+			}
+		}
+	}
+	option = {
+		name = ab_india_lha_events.18.b
+		highlight = yes
+		lha_subjugate_oirat_friend = yes
+		add_ruler_modifier = {
+			name = lha_avid_reader
+		}
+	}
+}
+
+# Avert your gaze if Korean
+province_event = {
+	id = ab_india_lha_events.19
+	title = ab_india_lha_events.19.t
+	desc = ab_india_lha_events.19.d
+	picture = FARMING_eventPicture
+	hidden = yes
+	trigger = {
+		owner = {
+			tag = GPH
+			has_country_flag = lha_tibetanization_of_korea
+		}
+		NOT = {
+			culture_group = tibetan_group
+		}
+		owner = {
+			OR = {
+				NOT = {
+					has_country_flag = lha_tibetanized_korea_recently
+				}
+				OR = {
+					had_country_flag = {
+						flag = lha_tibetanized_korea_recently
+						days = 730
+					}
+				}
+			}
+		}
+		region = korea_region
+		religion = owner
+	}
+	goto = ROOT
+	hidden = yes
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.33
+			has_port = yes
+		}
+		modifier = {
+			factor = 0.33
+			num_of_times_improved_by_owner = 3
+		}
+		modifier = {
+			factor = 0.33
+			has_courthouse_building_trigger = yes
+		}
+		modifier = {
+			factor = 0.33
+			has_tax_building_trigger = yes
+		}
+	}
+	option = {
+		name = ab_india_lha_events.19.a
+		ai_chance = {
+			factor = 1
+		}
+		owner = {
+			clr_country_flag = lha_tibetanized_korea_recently
+			set_country_flag = lha_tibetanized_korea_recently
+		}
+		if = {
+			limit = {
+				culture_group = korean_g
+			}
+			change_culture = koriya
+		}
+	}
+}
+
+# Avert your gaze if you're Manchurian
+province_event = {
+	id = ab_india_lha_events.20
+	title = ab_india_lha_events.20.t
+	desc = ab_india_lha_events.20.d
+	picture = FARMING_eventPicture
+	hidden = yes
+	trigger = {
+		owner = {
+			tag = GPH
+			has_country_flag = lha_tibetanization_of_the_steppes
+		}
+		NOT = {
+			culture_group = tibetan_group
+		}
+		any_neighbor_province = {
+			owner = {
+				tag = ROOT
+			}
+			culture_group = tibetan_group
+		}
+		owner = {
+			OR = {
+				NOT = {
+					has_country_flag = lha_tibetanized_steppe_recently
+				}
+				OR = {
+					had_country_flag = {
+						flag = lha_tibetanized_steppe_recently
+						days = 730
+					}
+				}
+			}
+		}
+		OR = {
+			superregion = tartary_superregion
+			superregion = far_east_superregion
+		}
+		religion = owner
+	}
+	goto = ROOT
+	hidden = yes
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.33
+			has_port = yes
+		}
+		modifier = {
+			factor = 0.33
+			num_of_times_improved_by_owner = 3
+		}
+		modifier = {
+			factor = 0.33
+			has_courthouse_building_trigger = yes
+		}
+		modifier = {
+			factor = 0.33
+			has_tax_building_trigger = yes
+		}
+	}
+	option = {
+		name = ab_india_lha_events.20.a
+		ai_chance = {
+			factor = 1
+		}
+		owner = {
+			clr_country_flag = lha_tibetanized_steppe_recently
+			set_country_flag = lha_tibetanized_steppe_recently
+		}
+		if = {
+			limit = {
+				culture_group = evenks
+			}
+			change_culture = manju
+		}
+		else_if = {
+			limit = {
+				culture_group = Mongolian
+			}
+			change_culture = sogpo
+		}
+	}
+}

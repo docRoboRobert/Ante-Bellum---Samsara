@@ -1,0 +1,5 @@
+﻿l_english:
+ establish_japanese_monastic_order_act:0 "The Japanese Monastic Orders Act"
+ establish_japanese_monastic_order_act_tooltip:0 "Every owned province in the §YJapan§! region will be given to our new subject, §Y[ORS.GetName]§!.\nWe will lose our cores on all provinces given to §Y[ORS.GetName]§!.\n§Y[ORS.GetName]§! will be our §YChakravartin Order§!, a powerful militaristic subject type that can declare its own wars.\nWe will be directly responsible for selecting the rulers of our subject."
+ settlement_of_siberia_act:0 "The Settlement of Siberia Act"
+ lha_settlement_of_siberia_effect_4_tooltip:0 "Up to §Y4§! to §Y8§! provinces bordering us in §YSiberia§! will have a §YSiberian Frontier§! established, depending on the influence of the §YMerchant Guilds§!."

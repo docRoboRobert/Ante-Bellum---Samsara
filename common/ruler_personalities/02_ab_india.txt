@@ -1,0 +1,12 @@
+enlightened_personality = {
+	allow = {
+		always = no
+	}
+	nation_designer_cost = 100
+	all_power_cost = -0.05
+	yearly_karma_decay = 0.1
+	monthly_enlightenment_power = 0.04
+	monarch_lifespan = 0.1
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+}

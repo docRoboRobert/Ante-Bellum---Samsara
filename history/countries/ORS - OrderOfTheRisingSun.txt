@@ -1,0 +1,7 @@
+government = theocracy
+add_government_reform = chakravartin_order_reform
+government_rank = 2
+primary_culture = japanese
+religion = vajrayana
+technology_group = chinese
+capital = 1020	# Kyoto

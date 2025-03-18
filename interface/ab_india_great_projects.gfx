@@ -119,5 +119,31 @@ spriteTypes = {
         name = "GFX_great_project_himalaya_fort_4"
         texturefile = "gfx//interface//great_projects//great_project_himalaya_fort_4.dds"
     }
+	
+	spriteType = {
+		name = "GFX_great_project_rahmana_vihara"
+		texturefile = "gfx//interface//great_projects//great_project_rahmana_vihara.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_great_project_prambanan_temple_converted"
+		texturefile = "gfx//interface//great_projects//great_project_prambanan_temple_converted.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_great_project_pura_besakih_converted"
+		texturefile = "gfx//interface//great_projects//great_project_pura_besakih_converted.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_great_project_pecing_potala"
+		texturefile = "gfx//interface//great_projects//great_project_pecing_potala.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_great_project_qufu_vihara"
+		texturefile = "gfx//interface//great_projects//great_project_qufu_vihara.dds"
+	}
+	
 }
 	

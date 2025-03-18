@@ -1,0 +1,15 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_chakravartin_order_icon"
+		texturefile = "gfx/interface/subject_types/chakravartin_order/chakravartin_order_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_chakravartin_order_overlord_icon"
+		texturefile = "gfx/interface/subject_types/chakravartin_order/chakravartin_order_overlord_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_chakravartin_order_subject_icon"
+		texturefile = "gfx/interface/subject_types/chakravartin_order/chakravartin_order_subject_icon.dds"
+	}
+}

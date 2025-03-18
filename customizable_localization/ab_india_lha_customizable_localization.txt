@@ -1,0 +1,56 @@
+defined_text = {
+    name = GetOiratBuddyLeaderName
+
+	text = {
+        localisation_key = string_KHT_ruler_name
+        trigger = {
+            still_buddies_with_kht = yes
+        }
+    }
+    text = {
+        localisation_key = string_DRB_ruler_name
+        trigger = {
+            still_buddies_with_drb = yes
+        }
+    }
+	text = {
+        localisation_key = string_OIR_ruler_name
+        trigger = {
+            still_buddies_with_oir = yes
+        }
+    }
+	text = {
+        localisation_key = string_TRG_ruler_name
+        trigger = {
+            still_buddies_with_trg = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetOiratBuddyTagName
+    text = {
+        localisation_key = string_KHT_country_name
+        trigger = {
+            still_buddies_with_kht = yes
+        }
+    }
+    text = {
+        localisation_key = string_DRB_country_name
+        trigger = {
+            still_buddies_with_drb = yes
+        }
+    }
+	text = {
+        localisation_key = string_OIR_country_name
+        trigger = {
+            still_buddies_with_oir = yes
+        }
+    }
+	text = {
+        localisation_key = string_TRG_country_name
+        trigger = {
+            still_buddies_with_trg = yes
+        }
+    }
+}

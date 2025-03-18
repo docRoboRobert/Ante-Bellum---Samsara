@@ -1,0 +1,148 @@
+state_enlightenment_mechanic = {
+	alert_icon_gfx = GFX_state_enlightenment_alert_icon
+	alert_icon_index = 1
+	available = {
+		has_dlc = "Domination"
+		tag = GPH
+	}
+	powers = {
+		enlightenment_power = {
+			gui = state_enlightenment_gov_mech
+			show_before_interactions = yes
+			max = 100
+			base_monthly_growth = 0
+			scaled_modifier = {
+				modifier = {
+					all_power_cost = -0.05
+					state_governing_cost = -0.1
+					yearly_karma_decay = 0.1
+					tolerance_own = 2
+					morale_damage_received = -0.2
+					monthly_enlightenment_power = -0.1
+				}
+			}
+		}
+	}
+	interactions = {
+		distribute_surplus = {
+			gui = state_enlightenment_gov_interaction
+			icon = GFX_state_enlightenment_distribute_surplus_button
+			cost_type = enlightenment_power
+			trigger = {
+				years_of_income = 1
+				NOT = {
+					num_of_loans = 1
+				}
+				NOT = {
+					has_government_power = {
+						mechanic_type = state_enlightenment_mechanic
+						power_type = enlightenment_power
+						value = 100
+					}
+				}
+			}
+			effect = {
+				add_government_power = {
+					mechanic_type = state_enlightenment_mechanic
+					power_type = enlightenment_power
+					value = 2
+				}
+				add_years_of_income = -1
+				add_inflation = 0.5
+				random_owned_province = {
+					limit = {
+						NOT = {
+							has_province_modifier = state_enlightenment_well_funded_communities
+						}
+					}
+					add_devastation = -20
+					add_province_modifier = {
+						name = state_enlightenment_well_funded_communities
+						duration = 1825
+					}
+				}
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 0
+				modifier = {
+					factor = 10
+					years_of_income = 3
+				}
+			}
+		}
+		practice_non_violence = {
+			gui = state_enlightenment_gov_interaction
+			icon = GFX_state_enlightenment_practice_non_violence_button
+			cost_type = enlightenment_power
+			trigger = {
+				NOT = {
+					has_country_modifier = state_enlightenment_practice_non_violence
+				}
+				NOT = {
+					has_government_power = {
+						mechanic_type = state_enlightenment_mechanic
+						power_type = enlightenment_power
+						value = 100
+					}
+				}
+			}
+			effect = {
+				add_government_power = {
+					mechanic_type = state_enlightenment_mechanic
+					power_type = enlightenment_power
+					value = 16
+				}
+				add_country_modifier = {
+					name = state_enlightenment_practice_non_violence
+					duration = 1825
+				}
+			}
+			cooldown_years = 5
+			ai_chance = {
+				factor = 0
+				modifier = {
+					factor = 10
+					years_of_income = 3
+				}
+			}
+		}
+		host_great_dharma_debate = {
+			gui = state_enlightenment_gov_interaction
+			icon = GFX_state_enlightenment_host_great_dharma_debate_button
+			trigger = {
+				NOT = {
+					has_country_modifier = state_enlightenment_host_great_dharma_debate
+				}
+				NOT = {
+					has_government_power = {
+						mechanic_type = state_enlightenment_mechanic
+						power_type = enlightenment_power
+						value = 100
+					}
+				}
+			}
+			effect = {
+				add_government_power = {
+					mechanic_type = state_enlightenment_mechanic
+					power_type = enlightenment_power
+					value = 8
+				}
+				add_stability = -1
+				add_prestige = -20
+				add_country_modifier = {
+					name = state_enlightenment_host_great_dharma_debate
+					duration = 1825
+				}
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 0
+				modifier = {
+					factor = 10
+					years_of_income = 3
+				}
+			}
+		}
+	}
+}

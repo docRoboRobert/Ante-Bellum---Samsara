@@ -42,5 +42,28 @@ spriteTypes = {
 		name = "government_reform_parmistan_emperor_man"
 		texturefile = "gfx//interface//government_reform_icons//parmistan_emperor_man.dds"
 	}
-	
+	spriteType = {
+		name = "government_reform_lhasa_theocratic_state"
+		texturefile = "gfx//interface//government_reform_icons//lhasa_theocratic_state.dds"
+	}
+	spriteType = {
+		name = "government_reform_st_thomas_apostle"
+		texturefile = "gfx//interface//government_reform_icons//st_thomas_apostle.dds"
+	}
+	spriteType = {
+		name = "government_reform_realm_of_the_bodhisattva"
+		texturefile = "gfx/interface/government_reform_icons/realm_of_the_bodhisattva.dds"
+	}
+	spriteType = {
+		name = "government_reform_eternal_throne_of_the_chakravartin"
+		texturefile = "gfx/interface/government_reform_icons/eternal_throne_of_the_chakravartin.dds"
+	}
+	spriteType = {
+		name = "government_reform_chakravartin_order_reform"
+		texturefile = "gfx/interface/government_reform_icons/chakravartin_order_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_dzong_system"
+		texturefile = "gfx/interface/government_reform_icons/dzong_system.dds"
+	}
 }

@@ -1,0 +1,8 @@
+﻿l_english:
+ lha_spread_cloves_title:0 "Introduce Clove Cultivation"
+ lha_spread_cloves_desc:0 "A random §YSpice§! producing province will have its trade good replaced with §YCloves§!.\nThis will §Rpermanently§! decrease the price of §YCloves§! by §R-1.0%§!.\nWe can only take this decision every §Y7 years§!."
+ lha_spread_cloves_key:0 "Global Supply Increase"
+ lha_spread_cloves_cooldown_tooltip:0 "It has been at least §Y7 years§! since we have last taken this decision."
+ debate_establish_japanese_monastic_order_act_issue_title:0 "[Root.GetParliamentOrFallbackName]: The Japanese Monastic Orders Act"
+  debate_establish_japanese_monastic_order_act_issue_desc:0 "Start the debate in the §Y[Root.GetParliamentOrFallbackName]§! for §YThe Japanese Monastic Orders Act§!.\nWhen passed, this will create a powerful militaristic subject that can §Gdeclare its own wars§!.\nThis subject will also get a §Gglobal casus belli on all non-Buddhist countries§!. We will be able to join these wars through the diplomacy interface.\nOur subject will have its rulers selected by us. We can chose from §G3 candidates§!, each giving a bonus to either colonization, army quality, or religious conversion to our subject.\nOur subject gets §G+1 minimum to all general pips when recruiting a general§!. We can conscript these generals through the subject interface.\n§RWe cannot annex this subject without converting it into a vassal, which will give our subject 100 liberty desire, -100 trust, and -100 opinion of us.§!"
+

@@ -1,0 +1,5479 @@
+lha_slot_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = LHA
+			tag = GPH
+		}
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	lha_purify_the_holy_city = {
+		icon = gfx_lha_purify_the_holy_city
+		position = 1
+		required_missions = {
+		}
+		provinces_to_highlight = {
+			province_id = 677
+		}
+		trigger = {
+			677 = {
+				religion = vajrayana
+			}
+		}
+		effect = {
+			677 = {
+				remove_province_triggered_modifier = lha_unorthodox_population_of_lhasa
+			}
+			add_devotion = 5
+			add_country_modifier = {
+				name = lha_vajrayana_legitimized
+				duration = 10950
+			}
+		}
+	}
+	lha_construct_temples = {
+		icon = mission_mnd_dai_temples
+		position = 2
+		required_missions = {
+			lha_purify_the_holy_city
+		}
+		provinces_to_highlight = {
+		}
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					has_tax_building_trigger = yes
+				}
+				amount = 3
+			}
+		}
+		effect = {
+			custom_tooltip = lha_construct_temples_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_building = temple
+					}
+					add_province_modifier = {
+						name = lha_faithful_flock_to_our_monestaries
+						duration = 3650
+					}
+				}
+			}
+			define_advisor = {
+				type = theologian
+				skill = 1
+				religion = ROOT
+				culture = ROOT
+				cost_multiplier = 0.5
+			}
+		}
+	}
+	lha_develop_the_holy_city = {
+		icon = gfx_lha_develop_the_holy_city
+		position = 3
+		required_missions = {
+			lha_construct_temples
+		}
+		trigger = {
+			677 = {
+				development = 20
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 677
+		}
+		effect = {
+			custom_tooltip = lha_develop_the_holy_city_tooltip
+			677 = {
+				if = {
+					limit = {
+						has_building = temple
+					}
+					upgrade_tax_building = yes
+				}
+				else = {
+					add_building = temple
+				}
+			}
+		}
+	}
+	lha_the_great_monastic_awakening = {
+		icon = gfx_lha_the_great_monastic_awakening
+		position = 4
+		required_missions = {
+			lha_develop_the_holy_city
+		}
+		trigger = {
+			677 = {
+				renaissance = 100
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 677
+		}
+		effect = {
+			custom_tooltip = lha_the_great_monastic_awakening_tooltip
+			if = {
+				limit = {
+					NOT = {
+						any_province = {
+							continent = asia
+							renaissance = 100
+							NOT = {
+								owned_by = ROOT
+							}
+						}
+					}
+				}
+				custom_tooltip = lha_the_great_monastic_awakening_tooltip_yes
+				hidden_effect = {
+					add_country_modifier = {
+						name = lha_the_great_monastic_awakening_mod_perm
+						duration = -1
+					}
+				}
+			}
+			else = {
+				custom_tooltip = lha_the_great_monastic_awakening_tooltip_no
+				hidden_effect = {
+					add_country_modifier = {
+						name = lha_the_great_monastic_awakening_mod
+						duration = 3650
+					}
+				}
+			}
+		}
+	}
+	lha_the_great_monastic_colleges = {
+		icon = gfx_lha_the_great_monastic_colleges
+		position = 5
+		required_missions = {
+			lha_the_great_monastic_awakening
+		}
+		provinces_to_highlight = {
+			province_id = 677
+			NOT = {
+				has_building = university
+			}
+		}
+		trigger = {
+			677 = {
+				has_building = university
+				owned_by = ROOT
+			}
+			calc_true_if = {
+				amount = 5
+				all_owned_province = {
+					has_building = university
+				}
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+			677 = {
+				add_province_modifier = {
+					name = lha_center_of_buddhist_studies
+					duration = -1
+				}
+			}
+			set_country_flag = enlightened_academies_university_buff
+			custom_tooltip = lha_the_great_monastic_colleges_uni_buff_tooltip
+			tooltip = {
+				add_province_modifier = {
+					name = lha_enlightened_academies
+					duration = -1
+				}
+			}
+			custom_tooltip = lha_the_great_monastic_colleges_enlightenment_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_building = university
+					}
+					add_province_modifier = {
+						name = lha_enlightened_academies
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	lha_moving_through_kashmir = {
+		icon = gfx_lha_moving_through_kashmir
+		position = 6
+		required_missions = {
+			lha_ascension_of_the_sacred_one
+		}
+		provinces_to_highlight = {
+			area = kashmir_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			kashmir_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige_or_monarch_power = {
+				amount = 10
+			}
+			add_country_modifier = {
+				name = lha_control_the_cashmere_trade
+				duration = 7300
+			}
+			kashmir_area = {
+				add_province_modifier = {
+					name = lha_integrating_the_hill_clans
+					duration = 5475
+				}
+			}
+			sind_sagar_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			multan_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			lahore_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			sirhind_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lha_the_indus_corridor = {
+		icon = mission_onward_to_lahore
+		position = 7
+		required_missions = {
+			lha_moving_through_kashmir
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = sind_sagar_area
+				area = multan_area
+				area = lahore_area
+				area = sirhind_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			sind_sagar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			multan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lahore_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sirhind_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mercantilism = 2
+			add_years_of_income = 0.5
+			define_advisor = {
+				type = trader
+				skill = 3
+				religion = ROOT
+				culture = ROOT
+				cost_multiplier = 0.5
+			}
+			506 = {
+				add_province_modifier = {
+					name = lha_secured_punjab_trade
+					duration = 7300
+				}
+			}
+			507 = {
+				add_province_modifier = {
+					name = lha_secured_punjab_trade
+					duration = 7300
+				}
+			}
+			510 = {
+				add_province_modifier = {
+					name = lha_secured_punjab_trade
+					duration = 7300
+				}
+			}
+			northern_sindh_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			sindh_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			kalat_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				discover_country = ROOT
+				add_permanent_claim = ROOT
+			}
+			2231 = {
+				discover_country = ROOT
+				add_permanent_claim = ROOT
+			}
+			5273 = {
+				discover_country = ROOT
+				add_permanent_claim = ROOT
+			}
+			5274 = {
+				discover_country = ROOT
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lha_the_indus_barrier = {
+		icon = gfx_lha_the_indus_barrier
+		position = 8
+		required_missions = {
+			lha_the_indus_corridor
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = northern_sindh_area
+				area = sindh_area
+				area = kalat_area
+				province_id = 2231
+				province_id = 5273
+				province_id = 5274
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			northern_sindh_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sindh_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kalat_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2231 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			5273 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			5274 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			577 = {
+				add_or_upgrade_fort_building = yes
+				add_province_modifier = {
+					name = lha_gates_of_india
+					duration = -1
+				}
+			}
+			5274 = {
+				add_or_upgrade_fort_building = yes
+				add_province_modifier = {
+					name = lha_gates_of_india
+					duration = -1
+				}
+			}
+			5273 = {
+				add_or_upgrade_fort_building = yes
+				add_province_modifier = {
+					name = lha_gates_of_india
+					duration = -1
+				}
+			}
+			add_country_modifier = {
+				name = lha_gujarati_campaign
+				duration = 7300
+			}
+			west_india_region = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lha_consolidate_gujarat = {
+		icon = mission_conquer_gujarat_dlh
+		position = 9
+		required_missions = {
+			lha_the_indus_barrier
+		}
+		provinces_to_highlight = {
+			region = west_india_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			west_india_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			custom_tooltip = lha_consolidate_gujarat_upgrade_tooltip
+			hidden_effect = {
+				for = {
+					amount = 6
+					effect = "lha_consolidate_gujarat_reward = yes"
+				}
+			}
+			add_prestige_or_monarch_power = {
+				amount = 15
+			}
+			define_advisor = {
+				type = trader
+				skill = 3
+				religion = ROOT
+				culture = ROOT
+				cost_multiplier = 0.4
+			}
+		}
+	}
+}
+
+lha_slot_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = LHA
+			tag = GPH
+		}
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	lha_pacify_the_old_faith = {
+		icon = gfx_lha_pacify_the_old_faith
+		position = 2
+		required_missions = {
+			lha_sword_and_dharma
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = ngari_area
+				area = utsang_area
+				province_id = 4515
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			ngari_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			utsang_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige_or_monarch_power = {
+				amount = 10
+			}
+			add_country_modifier = {
+				name = lha_subdue_the_unorthodox
+				duration = 5475
+			}
+		}
+	}
+	lha_support_the_gelug_school = {
+		icon = gfx_lha_support_the_gelug_school
+		position = 3
+		required_missions = {
+			lha_construct_temples
+		}
+		trigger = {
+			theologian = 1
+			calc_true_if = {
+				all_owned_province = {
+					has_tax_building_trigger = yes
+					development = 10
+				}
+				amount = 4
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = lha_supporting_the_gelug_school
+				duration = -1
+			}
+		}
+	}
+	lha_crown_of_the_plateau = {
+		icon = gfx_lha_crown_of_the_plateau
+		position = 4
+		required_missions = {
+			lha_develop_the_holy_city
+		}
+		trigger = {
+			677 = {
+				development = 30
+				has_tax_building_trigger = yes
+				has_trade_building_trigger = yes
+				has_manpower_building_trigger = yes
+				has_production_building_trigger = yes
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 677
+		}
+		effect = {
+			677 = {
+				add_province_modifier = {
+					name = lha_crown_of_the_plateau
+					duration = -1
+				}
+				if = {
+					limit = {
+						NOT = {
+							province_has_center_of_trade_of_level = 1
+						}
+					}
+					center_of_trade = 1
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							province_has_center_of_trade_of_level = 3
+						}
+					}
+					add_center_of_trade_level = 1
+				}
+			}
+		}
+	}
+	lha_jewel_of_the_dharma = {
+		icon = gfx_lha_jewel_of_the_dharma
+		position = 5
+		required_missions = {
+			lha_crown_of_the_plateau
+		}
+		provinces_to_highlight = {
+			province_id = 677
+		}
+		trigger = {
+			677 = {
+				has_great_project = {
+					type = jokhang_temple
+					tier = 2
+				}
+			}
+		}
+		effect = {
+			677 = {
+				add_great_project_tier = {
+					type = jokhang_temple
+					tier = 1
+				}
+				add_province_modifier = {
+					name = lha_faithful_flock_to_jokhang
+					duration = 5475
+				}
+			}
+			custom_tooltip = lha_jewel_of_the_dharma_tooltip
+			set_country_flag = pilgramage_mechanics_unlocked			# todo
+		}
+	}
+	lha_conquer_the_pahari = {
+		icon = gfx_lha_conquer_the_pahari
+		position = 6
+		required_missions = {
+			lha_ascension_of_the_sacred_one
+		}
+		provinces_to_highlight = {
+			area = himalayan_hills_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			himalayan_hills_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = lha_pahari_mercenaries
+				duration = 7300
+			}
+			himalayan_hills_area = {
+				add_province_modifier = {
+					name = lha_integrating_the_hill_clans
+					duration = 5475
+				}
+			}
+		}
+	}
+	lha_unite_the_hill_clans = {
+		icon = gfx_lha_unite_the_hill_clans
+		position = 7
+		required_missions = {
+			lha_conquer_the_pahari
+			lha_break_nepal
+			lha_moving_through_kashmir
+		}
+		provinces_to_highlight = {
+			area = himalayan_hills_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+		}
+		effect = {
+			set_country_flag = unlocked_hill_clans_estate
+			custom_tooltip = lha_unite_the_hill_clans_tooltip_bkh_claims
+			hidden_effect = {
+				every_province = {
+					limit = {
+						owned_by = BKH
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			custom_tooltip = lha_unite_the_hill_clans_tooltip
+			hidden_effect = {
+				add_country_modifier = {
+					name = lha_united_the_hill_clans_regular
+					duration = 3650
+				}
+			}
+			if = {
+				limit = {
+					nepal_area = {
+						type = all
+						religion = vajrayana
+					}
+					baisi_rajya_area = {
+						type = all
+						religion = vajrayana
+					}
+					himalayan_hills_area = {
+						type = all
+						religion = vajrayana
+					}
+					kashmir_area = {
+						type = all
+						religion = vajrayana
+					}
+				}
+				custom_tooltip = lha_unite_the_hill_clans_tooltip_yes
+				hidden_effect = {
+					#This is so if the user doesn't have 3 available accepted culture slots,
+					#they will still gain these accepted cultures. After the next month tic,
+					#they will gain the triggered modifier, and this will expire.
+					add_country_modifier = {
+						name = lha_temp_cultures_boost_hill_clans
+						duration = 32
+						hidden = yes
+					}
+					add_accepted_culture_or_dip_power = {
+						culture = nepali
+						dip_reward = yes
+					}
+					add_accepted_culture_or_dip_power = {
+						culture = pahari
+						dip_reward = yes
+					}
+					add_accepted_culture_or_dip_power = {
+						culture = kashmiri
+						dip_reward = yes
+					}
+					set_country_flag = lha_united_the_hill_clans_bonus_enabled
+				}
+			}
+			else = {
+				custom_tooltip = lha_unite_the_hill_clans_tooltip_no
+			}
+		}
+	}
+	lha_cull_the_horde = {
+		icon = gfx_lha_cull_the_horde
+		position = 8
+		required_missions = {
+			lha_unite_the_hill_clans
+		}
+		provinces_to_highlight = {
+			OR = {
+				owned_by = BKH
+				area = oudh_area
+				area = lower_doab_area
+				area = purvanchal_area
+				area = katehar_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			oudh_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_doab_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			purvanchal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			purvanchal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			katehar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			NOT = {
+				exists = BKH
+			}
+		}
+		effect = {
+			custom_tooltip = lha_remove_bkh_core
+			add_ruler_modifier = {
+				name = "aln_bane"
+				duration = -1
+			}
+			hidden_effect = {
+				every_province = {
+					limit = {
+						is_core = BKH
+					}
+					remove_core = BKH
+				}
+			}
+			add_country_modifier = {
+				name = lha_hindustan_campaign
+				duration = 5475
+			}
+			add_power_projection = {
+				type = lha_bane_of_the_khan_pp
+				amount = 25
+			}
+			hindusthan_region = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lha_consolidate_hindustan = {
+		icon = mission_the_grand_trunk_road_dlh
+		position = 9
+		required_missions = {
+			lha_cull_the_horde
+		}
+		provinces_to_highlight = {
+			region = hindusthan_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			hindusthan_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = lha_breadbasket_of_india
+				duration = -1
+			}
+			add_prestige_or_monarch_power = {
+				amount = 20
+			}
+			custom_tooltip = lha_consolidate_hindustan_tooltip
+			hidden_effect = {
+				for = {
+					amount = 10
+					effect = "random_owned_province = {
+				limit = {
+					region = hindusthan_region
+					has_manpower_building_trigger = yes
+					NOT = {
+						has_province_flag = lha_consolidate_hindustan_upgraded
+					}
+				}
+				add_province_modifier = {
+					name = lha_recruit_the_hindustanis
+					duration = -1
+				}
+				set_province_flag = lha_consolidate_hindustan_upgraded
+				add_or_upgrade_manpower_building = yes
+			}"
+				}
+			}
+			deccan_region = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lha_conquer_deccan = {
+		icon = mission_city_of_victory_vij
+		position = 10
+		required_missions = {
+			lha_consolidate_hindustan
+		}
+		provinces_to_highlight = {
+			region = deccan_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			deccan_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			custom_tooltip = lha_conquer_deccan_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						region = deccan_region
+					}
+					add_province_modifier = {
+						name = lha_prosperity_of_the_deccan
+						duration = -1
+					}
+				}
+			}
+			add_country_modifier = {
+				name = lha_recruiting_the_marathis
+				duration = -1
+			}
+			add_prestige_or_monarch_power = {
+				amount = 25
+			}
+		}
+	}
+	lha_besakih_vihara = {
+		icon = gfx_lha_besakih_vihara
+		position = 15
+		required_missions = {
+			lha_dominate_malaccan_trade
+		}
+		provinces_to_highlight = {
+			province_id = 2690
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			631 = {
+				AND = {
+					country_or_non_sovereign_subject_holds = ROOT
+					religion = vajrayana
+				}
+			}
+			treasury = 1500
+		}
+		effect = {
+			add_treasury = -1500
+			custom_tooltip = lha_besakih_vihara_tooltip
+			hidden_effect = {
+				every_known_country = {
+					limit = {
+						is_dharmic = yes
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = lha_converted_religious_monuments
+					}
+				}
+				destroy_great_project = {
+					type = pura_besakih
+				}
+				631 = {
+					set_province_flag = converted_pura_besakih
+					add_great_project = {
+						type = pura_besakih_converted
+						instant = no
+					}
+				}
+				spawn_dharmic_rebels_in_location_type = {
+					location_type = superregion
+					location = east_indies_superregion
+				}
+			}
+			add_devotion = 10
+			add_prestige_or_monarch_power = {
+				amount = 10
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 15
+			}
+		}
+	}
+}
+
+lha_slot_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = LHA
+			tag = GPH
+		}
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	lha_sword_and_dharma = {
+		icon = gfx_lha_sword_and_dharma
+		position = 1
+		required_missions = {
+		}
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = lha_struggle_for_tibet
+				duration = 7300
+			}
+			create_general = {
+				tradition = 40
+				add_siege = 1
+			}
+			tibet_region = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					NOT = {
+						is_year = 1460
+					}
+				}
+				custom_tooltip = LHA_TIMED_UNLOCK
+			}
+			else = {
+				custom_tooltip = LHA_TIMED_UNLOCK_NO
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							is_year = 1460
+						}
+					}
+					country_event = {
+						id = ab_india_lha_events.2
+					}
+				}
+			}
+		}
+	}
+}
+
+lha_locked = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = LHA
+			was_tag = LHA
+		}
+		NOT = {
+			has_country_flag = lha_mission_unlocked
+		}
+		NOT = {
+			has_country_flag = lha_mission_failed
+		}
+	}
+	lha_timed_1 = {
+		icon = gfx_ab_india_mission_timed
+		position = 2
+		required_missions = {
+			lha_sword_and_dharma
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = LHA_UNLOCKABLE
+				has_country_flag = crn_you_cant_get_this
+			}
+		}
+		effect = {
+			custom_tooltip = LHA_UNLOCKABLE
+		}
+	}
+}
+
+lha_unlocked = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = LHA
+			was_tag = LHA
+		}
+		has_country_flag = lha_mission_unlocked
+		NOT = {
+			has_country_flag = lha_mission_failed
+		}
+	}
+	lha_legacy_of_trisong_detsen = {
+		icon = gfx_lha_legacy_of_trisong_detsen
+		position = 2
+		required_missions = {
+			lha_sword_and_dharma
+		}
+		trigger = {
+			mission_completed = lha_tibet_unified
+			NOT = {
+				is_year = 1460
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = lha_legacy_of_trisong_detsen_effect
+				duration = -1
+			}
+		}
+	}
+}
+
+lha_slot_3_continued = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = LHA
+			was_tag = LHA
+		}
+	}
+	lha_tibet_unified = {
+		icon = gfx_lha_tibet_unified
+		position = 3
+		required_missions = {
+			lha_pacify_the_old_faith
+			lha_unite_the_faithful
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = tibet_region
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			tibet_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 75
+			add_power_projection = {
+				type = lha_unified_tibet_pp
+				amount = 25
+			}
+			add_country_modifier = {
+				name = lha_tibet_unified
+				duration = 3650
+			}
+		}
+	}
+	lha_find_the_dalai_lama = {
+		icon = gfx_lha_find_the_dalai_lama
+		position = 4
+		required_missions = {
+			lha_support_the_gelug_school
+			lha_tibet_unified
+		}
+		trigger = {
+			tibet_region = {
+				type = all
+				country_or_subject_holds = ROOT
+				religion = vajrayana
+			}
+		}
+		effect = {
+			set_country_flag = begin_search_for_dalai_lama
+			country_event = {
+				id = ab_india_lha_events.4
+			}
+		}
+	}
+	lha_ascension_of_the_sacred_one = {
+		icon = gfx_lha_ascension_of_the_sacred_one
+		position = 5
+		required_missions = {
+			lha_find_the_dalai_lama
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = lha_dalai_lama_found_tooltip
+				has_country_flag = dalai_lama_mechanics
+				tag = GPH
+			}
+		}
+		effect = {
+			add_prestige_or_monarch_power = {
+				amount = 25
+			}
+			custom_tooltip = lha_ascension_of_the_sacred_one_all_tibetan_provinces_claim_tooltip
+			every_province = {
+				limit = {
+					NOT = {
+						AND = {
+							is_core = ROOT
+							owned_by = ROOT
+						}
+					}
+					continent = asia
+					culture_group = tibetan_group
+				}
+				hidden_effect = {
+					add_permanent_claim = ROOT
+				}
+			}
+			nepal_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			baisi_rajya_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			himalayan_hills_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			kashmir_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			shanshan_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			kashgaria_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			tarim_basin_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			kachin_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lha_break_nepal = {
+		icon = gfx_lha_break_nepal
+		position = 6
+		required_missions = {
+			lha_ascension_of_the_sacred_one
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = nepal_area
+				area = baisi_rajya_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			nepal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			baisi_rajya_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 100
+			nepal_area = {
+				add_province_modifier = {
+					name = lha_integrating_the_hill_clans
+					duration = 5475
+				}
+			}
+			baisi_rajya_area = {
+				add_province_modifier = {
+					name = lha_integrating_the_hill_clans
+					duration = 5475
+				}
+			}
+			assam_area = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+					}
+					NOT = {
+						is_core = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lha_subjugate_assam = {
+		icon = gfx_lha_subjugate_assam
+		position = 7
+		required_missions = {
+			lha_break_nepal
+		}
+		provinces_to_highlight = {
+			area = assam_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			assam_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige_or_monarch_power = {
+				amount = 10
+			}
+			custom_tooltip = lha_subjugate_assam_tooltip_claims
+			hidden_effect = {
+				every_province = {
+					limit = {
+						owned_by = BNG
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			add_country_modifier = {
+				name = lha_prepare_to_confront_bengal
+				duration = 5475
+			}
+		}
+	}
+	lha_confront_bengal = {
+		icon = gfx_lha_confront_bengal
+		position = 8
+		required_missions = {
+			lha_subjugate_assam
+		}
+		provinces_to_highlight = {
+			OR = {
+				owned_by = BNG
+				area = north_bengal_area
+				area = gaur_area
+				area = west_bengal_area
+				area = east_bengal_area
+				area = tripura_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			north_bengal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			gaur_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_bengal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_bengal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tripura_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			NOT = {
+				exists = BNG
+			}
+		}
+		effect = {
+			set_country_flag = ab_trader_advisor_gives_trade_steering
+			add_country_modifier = {
+				name = lha_dharma_protector_of_india
+				duration = -1
+			}
+			add_dip_power = 100
+			custom_tooltip = PER_TRADER_SCALING
+			bengal_region = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lha_consolidate_bengal = {
+		icon = mission_unite_bengal
+		position = 9
+		required_missions = {
+			lha_confront_bengal
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = bengal_region
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			bengal_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			bengal_region = {
+				limit = {
+					has_port = yes
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = lha_shipyards_of_bengal
+					duration = -1
+				}
+			}
+			add_country_modifier = {
+				name = lha_merchants_of_bengal
+				duration = -1
+			}
+			add_prestige_or_monarch_power = {
+				amount = 30
+			}
+			indian_ocean_islands_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			coromandel_region = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lha_the_southern_coast = {
+		icon = mission_coromandel_expansion
+		position = 10
+		required_missions = {
+			lha_consolidate_bengal
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = coromandel_region
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			coromandel_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige_or_monarch_power = {
+				amount = 20
+			}
+			add_country_modifier = {
+				name = lha_cholan_shipbuilders
+				duration = -1
+			}
+			add_country_modifier = {
+				name = lha_hire_malankaran_explorers
+				duration = 18250
+			}
+			custom_tooltip = lha_the_southern_coast_tooltip
+			hidden_effect = {
+				for = {
+					amount = 10
+					effect = "random_owned_province = {
+				limit = {
+					region = coromandel_region
+					has_shipyard_building_trigger = yes
+					NOT = {
+						has_province_flag = lha_coromandel_upgraded
+					}
+				}
+				add_province_modifier = {
+					name = lha_ports_of_coromandel
+					duration = -1
+				}
+				add_or_upgrade_shipyard_building = yes
+				set_province_flag = lha_coromandel_upgraded
+			}"
+				}
+			}
+			indian_ocean_islands_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lha_the_charkravartis_triumph = {
+		icon = gfx_lha_the_charkravartis_triumph
+		position = 11
+		required_missions = {
+			lha_conquer_deccan
+			lha_the_southern_coast
+		}
+		provinces_to_highlight = {
+			superregion = india_superregion
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			india_superregion = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_ruler_personality = legendary_conqueror_personality
+			add_prestige_or_monarch_power = {
+				amount = 30
+			}
+			custom_tooltip = lha_the_charkravartis_triumph_pp_tooltip
+			hidden_effect = {
+				add_power_projection = {
+					type = lha_the_charkravartis_triumph_pp
+					amount = 25
+				}
+			}
+			add_country_modifier = {
+				name = lha_the_charkravartis_triumph_mod
+				duration = -1
+			}
+		}
+	}
+	lha_the_dharma_raj = {
+		icon = gfx_lha_the_dharma_raj
+		position = 12
+		required_missions = {
+			lha_the_charkravartis_triumph
+		}
+		provinces_to_highlight = {
+			superregion = india_superregion
+			NOT = {
+				AND = {
+					country_or_non_sovereign_subject_holds = ROOT
+					religion = vajrayana
+				}
+			}
+		}
+		trigger = {
+			india_superregion = {
+				type = all
+				religion = vajrayana
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					mission_completed = lha_the_dharma_raj
+				}
+				custom_tooltip = lha_your_ideas_have_been_upgraded_tooltip
+			}
+			else = {
+				lha_upgrade_idea_set = yes
+			}
+			custom_tooltip = lha_the_dharma_raj_upgrade_modifier_tooltip
+			hidden_effect = {
+				remove_country_modifier = lha_dharma_protector_of_india
+				add_country_modifier = {
+					name = lha_dharma_protector_of_india_enhanced
+					duration = -1
+				}
+			}
+			custom_tooltip = lha_the_dharma_raj_bonus_enlightenment_on_convert_tooltip
+			set_country_flag = bonus_enlightenment_on_convert
+			add_devotion = 20
+			set_karma = 0
+		}
+	}
+	lha_buddhist_hegemon = {
+		icon = gfx_lha_buddhist_hegemon
+		position = 13
+		required_missions = {
+			lha_the_dharma_raj
+			lha_illuminate_indochina
+		}
+		trigger = {
+			india_superregion = {
+				type = all
+				religion = vajrayana
+			}
+			indo_china_region = {
+				type = all
+				religion = vajrayana
+			}
+			burma_region = {
+				type = all
+				religion = vajrayana
+			}
+			north_tenasserim_area = {
+				type = all
+				religion = vajrayana
+			}
+			tenasserim_area = {
+				type = all
+				religion = vajrayana
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = lha_buddhist_hegemon_mod
+				duration = -1
+			}
+			add_prestige_or_monarch_power = {
+				amount = 100
+			}
+		}
+	}
+	lha_cross_the_sulu_sea = {
+		icon = gfx_lha_cross_the_sulu_sea
+		position = 15
+		required_missions = {
+			lha_dominate_malaccan_trade
+		}
+		provinces_to_highlight = {
+			AND = {
+				OR = {
+					area = west_mindanao_area
+					area = mindanao_area
+					area = visayas_area
+					area = palawan_area
+					area = southern_luzon_area
+					area = luzon_area
+				}
+				is_empty = no
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			west_mindanao_area = {
+				type = all
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					is_empty = yes
+				}
+			}
+			mindanao_area = {
+				type = all
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					is_empty = yes
+				}
+			}
+			visayas_area = {
+				type = all
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					is_empty = yes
+				}
+			}
+			palawan_area = {
+				type = all
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					is_empty = yes
+				}
+			}
+			southern_luzon_area = {
+				type = all
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					is_empty = yes
+				}
+			}
+			luzon_area = {
+				type = all
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					is_empty = yes
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = lha_cross_the_sulu_sea_privilege_tooltip
+			custom_tooltip = lha_cross_the_sulu_sea_colony_reward_tooltip
+			custom_tooltip = lha_cross_the_sulu_sea_spicy_reward_tooltip
+			hidden_effect = {
+				lha_cross_the_sulu_sea_reward = yes
+				every_province = {
+					limit = {
+						OR = {
+							area = west_mindanao_area
+							area = mindanao_area
+							area = visayas_area
+							area = palawan_area
+							area = southern_luzon_area
+							area = luzon_area
+						}
+						OR = {
+							trade_goods = spices
+							trade_goods = cloves
+						}
+					}
+					add_province_modifier = {
+						name = lha_efficient_spice_plantations
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+}
+
+lha_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = LHA
+			tag = GPH
+		}
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	lha_take_refuge_under_yuan = {
+		icon = gfx_lha_take_refuge_under_yuan
+		position = 1
+		required_missions = {
+		}
+		provinces_to_highlight = {
+			if = {
+				limit = {
+					empire_of_china_dismantled = yes
+				}
+				always = no
+			}
+			else = {
+				is_capital = yes
+				owner = {
+					is_emperor_of_china = yes
+				}
+			}
+		}
+		trigger = {
+			if = {
+				#Avoid issues where game references event_target that no longer exists after eoc dies. Also better performance
+				limit = {
+					empire_of_china_dismantled = yes
+				}
+				empire_of_china_dismantled = yes
+			}
+			else = {
+				OR = {
+					empire_of_china_dismantled = yes
+					alliance_with = event_target:EmperorOfChina
+					AND = {
+						NOT = {
+							grown_by_development = 250
+						}
+						event_target:EmperorOfChina = {
+							has_opinion = {
+								who = ROOT
+								value = 100
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					empire_of_china_dismantled = yes
+				}
+				add_prestige_or_monarch_power = {
+					amount = 10
+				}
+			}
+			else_if = {
+				limit = {
+					alliance_with = event_target:EmperorOfChina
+				}
+				event_target:EmperorOfChina = {
+					add_trust = {
+						who = ROOT
+						value = 10
+						mutual = yes
+					}
+				}
+			}
+			else = {
+				add_prestige = -10
+				event_target:EmperorOfChina = {
+					create_subject = {
+						subject_type = tributary_state
+						subject = ROOT
+					}
+				}
+			}
+		}
+	}
+	lha_unite_the_faithful = {
+		icon = gfx_lha_unite_the_faithful
+		position = 2
+		required_missions = {
+			lha_sword_and_dharma
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = amdo_area
+				area = tsang_area
+				area = bhutan_area
+				area = kham_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			amdo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tsang_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bhutan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kham_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige_or_monarch_power = {
+				amount = 10
+			}
+			add_country_modifier = {
+				name = lha_faithful_united
+				duration = 5475
+			}
+		}
+	}
+	lha_shield_the_holy_city = {
+		icon = gfx_lha_shield_the_holy_city
+		position = 3
+		provinces_to_highlight = {
+			province_id = 677
+			NOT = {
+				AND = {
+					has_fort_building_trigger = yes
+					owned_by = ROOT
+				}
+			}
+		}
+		trigger = {
+			677 = {
+				has_fort_building_trigger = yes
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			677 = {
+				add_province_modifier = {
+					name = lha_fortress_of_the_dharma
+					duration = -1
+				}
+			}
+			define_advisor = {
+				type = fortification_expert
+				age = 30
+				cost_multiplier = 0.4
+				religion = ROOT
+				culture = ROOT
+				skill = 1
+			}
+		}
+	}
+	lha_fortress_tibet = {
+		icon = gfx_lha_fortress_tibet
+		position = 4
+		required_missions = {
+			lha_shield_the_holy_city
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5262
+				province_id = 4516
+				province_id = 676
+				province_id = 678
+				province_id = 2134
+				province_id = 677
+			}
+			NOT = {
+				AND = {
+					country_or_non_sovereign_subject_holds = ROOT
+					has_fort_building_trigger = yes
+				}
+			}
+		}
+		trigger = {
+			677 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_fort_building_trigger = yes
+			}
+			5262 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_fort_building_trigger = yes
+			}
+			4516 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_fort_building_trigger = yes
+			}
+			676 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_fort_building_trigger = yes
+			}
+			678 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_fort_building_trigger = yes
+			}
+			2134 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_fort_building_trigger = yes
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+			custom_tooltip = lha_fortress_tibet_dzong_system_enabled_tooltip
+			custom_tooltip = lha_fortress_tibet_mod_tooltip
+			tooltip = {
+				add_province_modifier = {
+					name = lha_gates_of_tibet
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						region = tibet_region
+						has_fort_building_trigger = yes
+					}
+					add_province_modifier = {
+						name = lha_gates_of_tibet
+						duration = -1
+					}
+				}
+			}
+			676 = {
+				add_province_modifier = {
+					name = lha_develop_the_dzongs
+					duration = -1
+				}
+			}
+			define_advisor = {
+				type = fortification_expert
+				age = 30
+				cost_multiplier = 0.25
+				religion = ROOT
+				culture = ROOT
+				skill = 2
+			}
+		}
+	}
+	lha_reinforce_the_gyantse_dzong = {
+		icon = gfx_lha_reinforce_the_gyantse_dzong
+		position = 5
+		required_missions = {
+			lha_fortress_tibet
+		}
+		provinces_to_highlight = {
+			province_id = 676
+			NOT = {
+				AND = {
+					country_or_non_sovereign_subject_holds = ROOT
+					has_great_project = {
+						type = gyantse_dzong
+						tier = 1
+					}
+				}
+			}
+		}
+		trigger = {
+			676 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_great_project = {
+					type = gyantse_dzong
+					tier = 1
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					676 = {
+						has_great_project = {
+							type = gyantse_dzong
+							tier = 3
+						}
+					}
+				}
+				add_treasury = 1000
+			}
+			else = {
+				676 = {
+					add_great_project_tier = {
+						type = gyantse_dzong
+						tier = 1
+					}
+				}
+			}
+			676 = {
+				add_or_upgrade_fort_building = yes
+			}
+			custom_tooltip = lha_reinforce_the_gyantse_dzong_gp_mod_tooltip
+			tooltip = {
+				add_province_modifier = {
+					name = lha_develop_the_dzongs
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				add_himalayan_great_project_reward_effect = {
+					province = 557
+				}
+				add_himalayan_great_project_reward_effect = {
+					province = 5314
+				}
+				add_himalayan_great_project_reward_effect = {
+					province = 5316
+				}
+				add_himalayan_great_project_reward_effect = {
+					province = 5261
+				}
+			}
+		}
+	}
+	lha_the_lost_bretheren = {
+		icon = gfx_lha_the_lost_bretheren
+		position = 6
+		required_missions = {
+			lha_ascension_of_the_sacred_one
+		}
+		provinces_to_highlight = {
+			superregion = china_superregion
+			culture_group = tibetan_group
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = lha_the_lost_bretheren_trigger_tooltip
+				china_superregion = {
+					type = all
+					OR = {
+						NOT = {
+							culture_group = tibetan_group
+						}
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = lha_the_lost_bretheren_unlock_eoc_tooltip
+			custom_tooltip = lha_the_lost_bretheren_tooltip
+			if = {
+				limit = {
+					china_superregion = {
+						type = all
+						OR = {
+							NOT = {
+								culture_group = tibetan_group
+							}
+							AND = {
+								religion = ROOT
+								country_or_non_sovereign_subject_holds = ROOT
+							}
+						}
+					}
+				}
+				custom_tooltip = lha_the_lost_bretheren_tooltip_yes
+				hidden_effect = {
+					add_country_modifier = {
+						name = lha_tibetan_cultural_union
+						duration = -1
+					}
+				}
+			}
+			else = {
+				custom_tooltip = lha_the_lost_bretheren_tooltip_no
+				hidden_effect = {
+					add_country_modifier = {
+						name = lha_tibetan_cultural_union
+						duration = 7300
+					}
+				}
+			}
+			set_country_flag = lha_china_missions_unlocked
+			hidden_effect = {
+				swap_non_generic_missions = yes
+			}
+			custom_tooltip = lha_the_lost_bretheren_ae_tooltip
+			hidden_effect = {
+				every_country = {
+					limit = {
+						capital_scope = {
+							superregion = china_superregion
+						}
+					}
+					add_aggressive_expansion = {
+						who = ROOT
+						value = -10
+						apply_calc = no
+					}
+				}
+			}
+			add_prestige_or_monarch_power = {
+				amount = 10
+			}
+			add_power_projection = {
+				type = lha_reclaimed_tibetan_china_pp
+				amount = 10
+			}
+			guangxi_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			west_guangdong_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			guangdong_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lha_pacify_kachin = {
+		icon = gfx_lha_pacify_kachin
+		position = 7
+		required_missions = {
+			lha_break_nepal
+		}
+		provinces_to_highlight = {
+			area = kachin_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			kachin_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = lha_push_into_burma
+				duration = 3650
+			}
+			burma_region = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lha_skewer_the_peacock = {
+		icon = gfx_lha_skewer_the_peacock
+		position = 8
+		required_missions = {
+			lha_pacify_kachin
+		}
+		provinces_to_highlight = {
+			region = burma_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			burma_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige_or_monarch_power = {
+				amount = 20
+			}
+			add_country_modifier = {
+				name = lha_adopt_the_mandala_system
+				duration = -1
+			}
+			north_tenasserim_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			sukhothai_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			central_thai_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			northern_thai_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			north_laos_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			vientiane_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			champasak_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			khorat_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			tenasserim_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lha_topple_the_elephant = {
+		icon = gfx_lha_topple_the_elephant
+		position = 9
+		required_missions = {
+			lha_skewer_the_peacock
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = northern_thai_area
+				area = central_thai_area
+				area = sukhothai_area
+				area = north_tenasserim_area
+				area = tenasserim_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			northern_thai_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			central_thai_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sukhothai_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_tenasserim_area = {
+			}
+			tenasserim_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			custom_tooltip = lha_topple_the_elephant_enhance_modifier_tooltip
+			hidden_effect = {
+				remove_country_modifier = lha_adopt_the_mandala_system
+				add_country_modifier = {
+					name = lha_adopt_the_mandala_system_enhanced
+					duration = -1
+				}
+			}
+			add_adm_power = 100
+			cambodia_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			angkor_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			mekong_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lha_break_the_kouprey = {
+		icon = gfx_lha_break_the_kouprey
+		position = 10
+		required_missions = {
+			lha_topple_the_elephant
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = angkor_area
+				area = cambodia_area
+				area = mekong_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			angkor_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			cambodia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			mekong_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 100
+			angkor_area = {
+				add_province_modifier = {
+					name = lha_khmer_hydrolic_engineering
+					duration = -1
+				}
+			}
+			cambodia_area = {
+				add_province_modifier = {
+					name = lha_khmer_hydrolic_engineering
+					duration = -1
+				}
+			}
+			mekong_area = {
+				add_province_modifier = {
+					name = lha_khmer_hydrolic_engineering
+					duration = -1
+				}
+			}
+			add_country_modifier = {
+				name = lha_great_works_of_cambodia
+				duration = -1
+			}
+			609 = {
+				add_province_modifier = {
+					name = lha_restore_angkor_wat_mod
+					duration = -1
+				}
+			}
+		}
+	}
+	lha_restore_angkor_wat = {
+		icon = gfx_lha_restore_angkor_wat
+		position = 11
+		required_missions = {
+			lha_break_the_kouprey
+		}
+		provinces_to_highlight = {
+			province_id = 609
+		}
+		trigger = {
+			609 = {
+				has_great_project = {
+					type = angkor_wat
+					tier = 2
+				}
+			}
+		}
+		effect = {
+			609 = {
+				add_great_project_tier = {
+					type = angkor_wat
+					tier = 1
+				}
+			}
+			custom_tooltip = lha_restore_angkor_wat_separatism_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture = khmer
+					}
+					add_nationalism = -20
+				}
+			}
+			custom_tooltip = lha_restore_angkor_wat_khmer_culture_tooltip
+			hidden_effect = {
+				set_country_flag = lha_gratitude_of_the_khmer_enabled
+				#This is so if the user doesn't have 1 available accepted culture slot,
+				#they will still gain this accepted cultures. After the next month tic,
+				#they will gain the triggered modifier, and this will expire.
+				add_country_modifier = {
+					name = lha_temp_cultures_boost_khmer
+					duration = 32
+					hidden = yes
+				}
+				add_accepted_culture_or_dip_power = {
+					culture = khmer
+					dip_reward = yes
+				}
+			}
+			add_country_modifier = {
+				name = lha_stewards_of_the_buddhist_world
+				duration = 7300
+			}
+		}
+	}
+	lha_illuminate_indochina = {
+		icon = gfx_lha_illuminate_indochina
+		position = 12
+		required_missions = {
+			lha_rule_indochina
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = indo_china_region
+				region = burma_region
+				area = north_tenasserim_area
+				area = tenasserim_area
+			}
+			NOT = {
+				AND = {
+					country_or_non_sovereign_subject_holds = ROOT
+					religion = vajrayana
+				}
+			}
+		}
+		trigger = {
+			indo_china_region = {
+				type = all
+				religion = vajrayana
+			}
+			burma_region = {
+				type = all
+				religion = vajrayana
+			}
+			north_tenasserim_area = {
+				type = all
+				religion = vajrayana
+			}
+			tenasserim_area = {
+				type = all
+				religion = vajrayana
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					mission_completed = lha_illuminate_indochina
+				}
+				custom_tooltip = lha_your_ideas_have_been_upgraded_tooltip
+			}
+			else = {
+				lha_upgrade_idea_set = yes
+			}
+			add_country_modifier = {
+				name = lha_victory_over_heresy
+				duration = -1
+			}
+			add_devotion = 20
+			set_karma = 0
+		}
+	}
+	lha_secure_borneo = {
+		icon = mission_mnd_maj_rein_in_brunei
+		position = 13
+		required_missions = {
+			lha_conquer_malacca
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = kalimantan_area
+				area = brunei_area
+				area = sabah_area
+				area = kutai_area
+				area = banjar_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns_inhabited_provinces_of_borneo = yes
+		}
+		effect = {
+			custom_tooltip = lha_on_secure_borneo_spice_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						AND = {
+							OR = {
+								area = kalimantan_area
+								area = brunei_area
+								area = sabah_area
+								area = kutai_area
+								area = banjar_area
+							}
+							trade_goods = spices
+						}
+					}
+					add_province_modifier = {
+						name = lha_develop_the_spice_plantations
+						duration = 10950
+					}
+				}
+			}
+			add_mercantilism = 4
+			add_prestige_or_monarch_power = {
+				amount = 10
+			}
+		}
+	}
+	lha_dominate_malaccan_trade = {
+		icon = gfx_lha_dominate_malaccan_trade
+		position = 14
+		required_missions = {
+			lha_on_to_sumatra
+			lha_secure_borneo
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = kalimantan_area
+				area = brunei_area
+				area = sabah_area
+				area = kutai_area
+				area = banjar_area
+				area = south_sumatra_area
+				area = jambi_area
+				area = central_sumatra_area
+				area = north_sumatra_area
+				area = batak_area
+				area = minangkabau_area
+				area = north_malaya_area
+				area = malacca_area
+				area = malaya_area
+				area = johor_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns_inhabited_provinces_of_borneo = yes
+			owns_inhabited_provinces_of_sumatra = yes
+			north_malaya_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			malacca_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			malaya_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			johor_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			custom_tooltip = lha_dominate_malaccan_trade_perm_mod_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						superregion = east_indies_superregion
+					}
+					if = {
+						limit = {
+							AND = {
+								has_province_modifier = lha_develop_the_spice_plantations
+								development = 15
+							}
+						}
+						remove_province_modifier = lha_develop_the_spice_plantations
+						add_province_modifier = {
+							name = lha_develop_the_spice_plantations
+							duration = -1
+						}
+					}
+				}
+			}
+			add_country_modifier = {
+				name = lha_dominating_malaccan_trade
+				duration = -1
+			}
+			add_mercantilism = 2
+			add_prestige_or_monarch_power = {
+				amount = 10
+			}
+			custom_tooltip = lha_dominate_malaccan_trade_claims_tooltip
+			hidden_effect = {
+				indonesia_region = {
+					limit = {
+						NOT = {
+							is_core = ROOT
+						}
+						NOT = {
+							owned_by = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+				moluccas_region = {
+					limit = {
+						NOT = {
+							is_core = ROOT
+						}
+						NOT = {
+							owned_by = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	lha_prambanan_vihara = {
+		icon = gfx_lha_prambanan_vihara
+		position = 15
+		required_missions = {
+			lha_dominate_malaccan_trade
+		}
+		provinces_to_highlight = {
+			province_id = 2690
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			2690 = {
+				AND = {
+					country_or_non_sovereign_subject_holds = ROOT
+					religion = vajrayana
+				}
+			}
+			treasury = 1500
+		}
+		effect = {
+			add_treasury = -1500
+			custom_tooltip = lha_prambanan_vihara_tooltip
+			hidden_effect = {
+				every_known_country = {
+					limit = {
+						is_dharmic = yes
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = lha_converted_religious_monuments
+					}
+				}
+				destroy_great_project = {
+					type = prambanan_temple
+				}
+				2690 = {
+					set_province_flag = converted_prambanan_temple
+					add_great_project = {
+						type = prambanan_temple_converted
+						instant = no
+					}
+				}
+				spawn_dharmic_rebels_in_location_type = {
+					location_type = superregion
+					location = east_indies_superregion
+				}
+			}
+			add_devotion = 10
+			add_prestige_or_monarch_power = {
+				amount = 10
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 15
+			}
+		}
+	}
+	lha_unify_nusantara = {
+		icon = gfx_lha_unify_nusantara
+		position = 16
+		required_missions = {
+			lha_moluccan_trade
+			lha_cross_the_sulu_sea
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = malaya_region
+				region = indonesia_region
+				region = moluccas_region
+			}
+			AND = {
+				NOT = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				NOT = {
+					is_empty = yes
+				}
+				NOT = {
+					area = indian_ocean_islands_area					# Paradox geography lmao
+				}
+			}
+		}
+		trigger = {
+			malaya_region = {
+				type = all
+				OR = {
+					is_empty = yes
+					country_or_non_sovereign_subject_holds = ROOT
+					area = indian_ocean_islands_area					# Paradox geography lmao
+				}
+			}
+			indonesia_region = {
+				type = all
+				OR = {
+					is_empty = yes
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			moluccas_region = {
+				type = all
+				OR = {
+					is_empty = yes
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = lha_nusantara_trade_dominance
+				duration = -1
+			}
+			custom_tooltip = lha_1yr_trade_income_tooltip
+			add_years_of_trade_income = {
+				years = 1
+			}
+			add_prestige_or_monarch_power = {
+				amount = 50
+			}
+			add_mercantilism = 5
+			if = {
+				limit = {
+					malaya_region = {
+						type = all
+						OR = {
+							AND = {
+								country_or_non_sovereign_subject_holds = ROOT
+								religion = ROOT
+							}
+							is_empty = yes
+							area = indian_ocean_islands_area							# paradox geography lmao
+						}
+					}
+					indonesia_region = {
+						type = all
+						OR = {
+							AND = {
+								country_or_non_sovereign_subject_holds = ROOT
+								religion = ROOT
+							}
+							is_empty = yes
+						}
+					}
+					moluccas_region = {
+						type = all
+						OR = {
+							AND = {
+								country_or_non_sovereign_subject_holds = ROOT
+								religion = ROOT
+							}
+							is_empty = yes
+						}
+					}
+				}
+				custom_tooltip = lha_unify_nusantara_propagate_reward_tooltip_yes
+				set_country_flag = can_use_propagate_religion
+			}
+			else = {
+				custom_tooltip = lha_unify_nusantara_propagate_reward_tooltip_no
+			}
+		}
+	}
+}
+
+lha_slot_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = LHA
+			tag = GPH
+		}
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	lha_forge_alliances = {
+		icon = gfx_lha_forge_alliances
+		position = 1
+		required_missions = {
+		}
+		trigger = {
+			num_of_allies = 2
+		}
+		effect = {
+			define_advisor = {
+				type = diplomat
+				skill = 1
+				religion = ROOT
+				culture = ROOT
+				cost_multiplier = 0.5
+			}
+			add_country_modifier = {
+				name = lha_strengthening_alliances
+				duration = 5475
+			}
+		}
+	}
+	lha_oirat_ties = {
+		icon = mission_oirat
+		position = 2
+		required_missions = {
+			lha_forge_alliances
+		}
+		provinces_to_highlight = {
+			OR = {
+				owned_by = OIR
+				owned_by = KHT
+				owned_by = DRB
+				owned_by = TRG
+			}
+		}
+		trigger = {
+			OR = {
+				AND = {
+					NOT = {
+						exists = OIR
+					}
+					NOT = {
+						exists = KHT
+					}
+					NOT = {
+						exists = DRB
+					}
+					NOT = {
+						exists = TRG
+					}
+				}
+				KHT = {
+					religion = tengri_pagan_reformed
+					OR = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+						alliance_with = ROOT
+					}
+				}
+				DRB = {
+					religion = tengri_pagan_reformed
+					OR = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+						alliance_with = ROOT
+					}
+				}
+				TRG = {
+					religion = tengri_pagan_reformed
+					OR = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+						alliance_with = ROOT
+					}
+				}
+				OIR = {
+					religion = tengri_pagan_reformed
+					OR = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+						alliance_with = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			set_country_flag = lha_oirat_ties_complete
+			if = {
+				limit = {
+					AND = {
+						NOT = {
+							exists = OIR
+						}
+						NOT = {
+							exists = KHT
+						}
+						NOT = {
+							exists = DRB
+						}
+						NOT = {
+							exists = TRG
+						}
+					}
+				}
+				add_prestige_or_monarch_power = {
+					amount = 20
+				}
+			}
+			else = {
+				custom_tooltip = lha_oirat_ties_tooltip
+				hidden_effect = {
+					country_event = {
+						id = ab_india_lha_events.13
+					}
+				}
+			}
+		}
+	}
+	lha_the_nepalese_threat = {
+		icon = gfx_lha_the_nepalese_threat
+		position = 3
+		required_missions = {
+			lha_oirat_ties
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = lha_the_nepalese_threat_trigger_tooltip
+				OR = {
+					AND = {
+						NOT = {
+							exists = NPL
+						}
+						NOT = {
+							exists = ENP
+						}
+					}
+					any_country = {
+						is_enemy = NPL
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+					}
+					any_country = {
+						is_enemy = ENP
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					exists = NPL
+				}
+				add_country_modifier = {
+					name = lha_anti_nepalese_coalition
+					duration = 5475
+				}
+				custom_tooltip = lha_the_nepalese_threat_reward_tooltip
+				hidden_effect = {
+					every_country = {
+						limit = {
+							is_enemy = NPL
+							has_opinion = {
+								who = ROOT
+								value = 100
+							}
+						}
+						add_trust = {
+							who = ROOT
+							value = 10
+						}
+						add_opinion = {
+							who = ROOT
+							modifier = lha_united_against_the_nepalese
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					exists = ENP
+				}
+				add_country_modifier = {
+					name = lha_anti_nepalese_coalition
+					duration = 5475
+				}
+				custom_tooltip = lha_the_nepalese_threat_reward_tooltip
+				hidden_effect = {
+					every_country = {
+						limit = {
+							is_enemy = ENP
+							has_opinion = {
+								who = ROOT
+								value = 100
+							}
+						}
+						add_trust = {
+							who = ROOT
+							value = 10
+						}
+						add_opinion = {
+							who = ROOT
+							modifier = lha_united_against_the_nepalese
+						}
+					}
+				}
+			}
+			else = {
+				add_prestige_or_monarch_power = {
+					amount = 20
+				}
+			}
+		}
+	}
+	lha_gates_of_the_himalayas = {
+		icon = gfx_lha_gates_of_the_himalayas
+		position = 4
+		required_missions = {
+			lha_shield_the_holy_city
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 565
+				province_id = 4483
+				province_id = 557
+				province_id = 5314
+				province_id = 4491
+				province_id = 5316
+				province_id = 5261
+				province_id = 4449
+				province_id = 2073
+			}
+			NOT = {
+				AND = {
+					country_or_non_sovereign_subject_holds = ROOT
+					has_fort_building_trigger = yes
+				}
+			}
+		}
+		trigger = {
+			565 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_fort_building_trigger = yes
+			}
+			4483 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_fort_building_trigger = yes
+			}
+			557 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_fort_building_trigger = yes
+			}
+			5314 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_fort_building_trigger = yes
+			}
+			4491 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_fort_building_trigger = yes
+			}
+			5316 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_fort_building_trigger = yes
+			}
+			5261 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_fort_building_trigger = yes
+			}
+			4449 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_fort_building_trigger = yes
+			}
+			2073 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_fort_building_trigger = yes
+			}
+		}
+		effect = {
+			custom_tooltip = lha_gates_of_the_himalayas_mod_tooltip
+			tooltip = {
+				add_province_modifier = {
+					name = lha_gates_of_the_himalayas_mod
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							area = bhutan_area
+							area = nepal_area
+							area = baisi_rajya_area
+							area = himalayan_hills_area
+							area = kashmir_area
+						}
+						has_fort_building_trigger = yes
+					}
+					add_province_modifier = {
+						name = lha_gates_of_the_himalayas_mod
+						duration = -1
+					}
+				}
+			}
+			define_advisor = {
+				type = architect
+				age = 30
+				skill = 3
+				cost_multiplier = 0.4
+				religion = ROOT
+				culture = ROOT
+			}
+			add_estate_loyalty = {
+				estate = estate_hill_clans
+				loyalty = 15
+			}
+			set_country_flag = himalayan_guerrillas_enabled
+			custom_tooltip = lha_gates_of_the_himalayas_guerrillas_tooltip
+		}
+	}
+	lha_himalayan_strongholds = {
+		icon = gfx_lha_himalayan_strongholds
+		position = 5
+		required_missions = {
+			lha_gates_of_the_himalayas
+		}
+		trigger = {
+			5261 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_great_project = {
+					type = himalaya_fort_3
+					tier = 3
+				}
+			}
+			5316 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_great_project = {
+					type = himalaya_fort_2
+					tier = 3
+				}
+			}
+			5314 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_great_project = {
+					type = himalaya_fort_4
+					tier = 3
+				}
+			}
+			557 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_great_project = {
+					type = himalaya_fort_1
+					tier = 3
+				}
+			}
+		}
+		effect = {
+			5261 = {
+				add_or_upgrade_fort_building = yes
+			}
+			5316 = {
+				add_or_upgrade_fort_building = yes
+			}
+			5314 = {
+				add_or_upgrade_fort_building = yes
+			}
+			557 = {
+				add_or_upgrade_fort_building = yes
+			}
+			custom_tooltip = lha_himalayan_strongholds_advisor_buff_tooltip
+			set_country_flag = ned_military_engineer_siege_ability_scaled_modifier_flag
+			custom_tooltip = lha_himalayan_strongholds_fort_buff_tooltip
+			tooltip = {
+				add_province_modifier = {
+					name = ned_low_countries_fort_buff
+					duration = -1
+				}
+			}
+			custom_tooltip = lha_himalayan_strongholds_fort_def_ideas_buff_tooltip
+			tooltip = {
+				add_province_modifier = {
+					name = ned_low_countries_fort_buff_buffed
+					duration = -1
+				}
+			}
+			set_country_flag = lha_mountain_fort_experts
+			set_country_flag = fort_rebate_enabled
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							has_terrain = mountain
+							has_terrain = hills
+							has_terrain = highlands
+							has_terrain = glacier
+						}
+					}
+					if = {
+						limit = {
+							owner = {
+								full_idea_group = defensive_ideas
+							}
+						}
+						add_province_modifier = {
+							name = ned_low_countries_fort_buff_buffed
+							duration = -1
+						}
+					}
+					else = {
+						add_province_modifier = {
+							name = ned_low_countries_fort_buff
+							duration = -1
+						}
+					}
+				}
+			}
+		}
+	}
+	lha_the_sands_of_tarim = {
+		icon = gfx_lha_the_sands_of_tarim
+		position = 6
+		required_missions = {
+			lha_ascension_of_the_sacred_one
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = shanshan_area
+				area = kashgaria_area
+				area = tarim_basin_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			shanshan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kashgaria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tarim_basin_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			ghor_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				discover_country = ROOT
+				add_permanent_claim = ROOT
+			}
+			balkh_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				discover_country = ROOT
+				add_permanent_claim = ROOT
+			}
+			kabulistan_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				discover_country = ROOT
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = lha_oases_of_the_silk_road
+				duration = 7300
+			}
+			custom_tooltip = lha_the_sands_of_tarim_tooltip
+			hidden_effect = {
+				if = {
+					limit = {
+						739 = {
+							has_trade_building_trigger = yes
+						}
+					}
+					739 = {
+						upgrade_trade_building = yes
+						if = {
+							limit = {
+								NOT = {
+									province_has_center_of_trade_of_level = 1
+								}
+							}
+							center_of_trade = 1
+						}
+						else_if = {
+							limit = {
+								NOT = {
+									province_has_center_of_trade_of_level = 3
+								}
+							}
+							add_center_of_trade_level = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						2124 = {
+							has_trade_building_trigger = yes
+						}
+					}
+					2124 = {
+						upgrade_trade_building = yes
+						if = {
+							limit = {
+								NOT = {
+									province_has_center_of_trade_of_level = 1
+								}
+							}
+							center_of_trade = 1
+						}
+						else_if = {
+							limit = {
+								NOT = {
+									province_has_center_of_trade_of_level = 3
+								}
+							}
+							add_center_of_trade_level = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						710 = {
+							has_trade_building_trigger = yes
+						}
+					}
+					710 = {
+						upgrade_trade_building = yes
+						if = {
+							limit = {
+								NOT = {
+									province_has_center_of_trade_of_level = 1
+								}
+							}
+							center_of_trade = 1
+						}
+						else_if = {
+							limit = {
+								NOT = {
+									province_has_center_of_trade_of_level = 3
+								}
+							}
+							add_center_of_trade_level = 1
+						}
+					}
+				}
+			}
+		}
+	}
+	lha_protect_the_afghans = {
+		icon = gfx_lha_protect_the_afghans
+		position = 7
+		required_missions = {
+			lha_the_sands_of_tarim
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = balkh_area
+				area = kabulistan_area
+				area = ghor_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			balkh_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kabulistan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ghor_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			2225 = {
+				add_or_upgrade_fort_building = yes
+				add_province_modifier = {
+					name = lha_gates_of_india
+					duration = -1
+				}
+			}
+			2226 = {
+				add_or_upgrade_fort_building = yes
+				add_province_modifier = {
+					name = lha_gates_of_india
+					duration = -1
+				}
+			}
+			define_advisor = {
+				type = fortification_expert
+				skill = 3
+				religion = ROOT
+				culture = afghani
+				cost_multiplier = 0.35
+			}
+			add_prestige_or_monarch_power = {
+				amount = 20
+			}
+			add_mil_power = 50
+		}
+	}
+	lha_buddhas_of_bamyan = {
+		icon = gfx_lha_buddhas_of_bamyan
+		position = 8
+		required_missions = {
+			lha_protect_the_afghans
+		}
+		provinces_to_highlight = {
+			if = {
+				limit = {
+					677 = {
+						has_great_project = {
+							type = buddha_statues
+						}
+					}
+				}
+				province_id = 677
+			}
+			else = {
+				province_id = 2225
+			}
+		}
+		trigger = {
+			OR = {
+				2225 = {
+					has_great_project = {
+						type = buddha_statues
+						tier = 1
+					}
+				}
+				677 = {
+					has_great_project = {
+						type = buddha_statues
+						tier = 1
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					677 = {
+						has_great_project = {
+							type = buddha_statues
+						}
+					}
+				}
+				677 = {
+					add_great_project_tier = {
+						type = buddha_statues
+						tier = 1
+					}
+				}
+			}
+			else = {
+				2225 = {
+					add_great_project_tier = {
+						type = buddha_statues
+						tier = 1
+					}
+				}
+			}
+			custom_tooltip = lha_buddhas_of_bamyan_tooltip
+			set_country_flag = ned_artist_is_architect_flag
+			add_prestige_or_monarch_power = {
+				amount = 20
+			}
+		}
+	}
+	lha_skin_the_naga = {
+		icon = gfx_lha_skin_the_naga
+		position = 9
+		required_missions = {
+			lha_skewer_the_peacock
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = north_laos_area
+				area = vientiane_area
+				area = champasak_area
+				area = khorat_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			north_laos_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			vientiane_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			champasak_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			khorat_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = lha_lao_mountain_warfare
+				duration = -1
+			}
+			615 = {
+				add_province_modifier = {
+					name = lha_mekong_river_trade_outposts
+					duration = -1
+				}
+			}
+			2384 = {
+				add_province_modifier = {
+					name = lha_mekong_river_trade_outposts
+					duration = -1
+				}
+			}
+			4839 = {
+				add_province_modifier = {
+					name = lha_mekong_river_trade_outposts
+					duration = -1
+				}
+			}
+			4836 = {
+				add_province_modifier = {
+					name = lha_mekong_river_trade_outposts
+					duration = -1
+				}
+			}
+			red_river_delta_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			vietnam_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			champa_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			tay_nguyen_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lha_tame_the_buffalo = {
+		icon = gfx_lha_tame_the_buffalo
+		position = 10
+		required_missions = {
+			lha_skin_the_naga
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = red_river_delta_area
+				area = vietnam_area
+				area = champa_area
+				area = tay_nguyen_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			red_river_delta_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			vietnam_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			champa_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tay_nguyen_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = lha_viet_guerrilla_tactics
+				duration = -1
+			}
+			custom_tooltip = lha_tame_the_buffalo_ricebasket_tooltip
+			hidden_effect = {
+				red_river_delta_area = {
+					limit = {
+						trade_goods = grain
+					}
+					add_province_modifier = {
+						name = lha_ricebasket_of_indochina
+						duration = -1
+					}
+				}
+				vietnam_area = {
+					limit = {
+						trade_goods = grain
+					}
+					add_province_modifier = {
+						name = lha_ricebasket_of_indochina
+						duration = -1
+					}
+				}
+			}
+			add_prestige_or_monarch_power = {
+				amount = 10
+			}
+		}
+	}
+	lha_rule_indochina = {
+		icon = gfx_lha_rule_indochina
+		position = 11
+		required_missions = {
+			lha_tame_the_buffalo
+			lha_break_the_kouprey
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = indo_china_region
+				region = burma_region
+				area = north_tenasserim_area
+				area = tenasserim_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			indo_china_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			burma_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_tenasserim_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tenasserim_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			custom_tooltip = lha_rule_indochina_less_separatism_tooltip
+			hidden_effect = {
+				indo_china_region = {
+					add_nationalism = -10
+				}
+				burma_region = {
+					add_nationalism = -10
+				}
+				north_tenasserim_area = {
+					add_nationalism = -10
+				}
+				tenasserim_area = {
+					add_nationalism = -10
+				}
+			}
+			custom_tooltip = lha_rule_indochina_economic_tooltip
+			hidden_effect = {
+				for = {
+					amount = 6
+					effect = "lha_rule_indochina_upgrade_effect = yes"
+				}
+			}
+			custom_tooltip = lha_rule_indochina_advisor_tooltip
+			set_country_flag = ven_offensive_reward_flag
+			add_prestige_or_monarch_power = {
+				amount = 50
+			}
+			north_malaya_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			malacca_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			malaya_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			johor_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lha_conquer_malacca = {
+		icon = mission_portuguese_malacca
+		position = 12
+		required_missions = {
+			lha_rule_indochina
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = north_malaya_area
+				area = malacca_area
+				area = malaya_area
+				area = johor_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			north_malaya_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			malacca_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			malaya_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			johor_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = lha_conquer_the_islands
+				duration = 7300
+			}
+			define_advisor = {
+				type = naval_reformer
+				skill = 3
+				cost_multiplier = 0.5
+				religion = ROOT
+				culture = malayan
+			}
+			malaya_region = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			kalimantan_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			brunei_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			sabah_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			kutai_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			banjar_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lha_on_to_sumatra = {
+		icon = gfx_lha_on_to_sumatra
+		position = 13
+		required_missions = {
+			lha_conquer_malacca
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = south_sumatra_area
+				area = jambi_area
+				area = central_sumatra_area
+				area = north_sumatra_area
+				area = batak_area
+				area = minangkabau_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns_inhabited_provinces_of_sumatra = yes
+		}
+		effect = {
+			custom_tooltip = lha_on_to_sumatra_spice_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						AND = {
+							OR = {
+								area = south_sumatra_area
+								area = jambi_area
+								area = central_sumatra_area
+								area = north_sumatra_area
+								area = batak_area
+								area = minangkabau_area
+							}
+							trade_goods = spices
+						}
+					}
+					add_province_modifier = {
+						name = lha_develop_the_spice_plantations
+						duration = 10950
+					}
+				}
+			}
+			custom_tooltip = lha_1yr_trade_income_tooltip
+			add_years_of_trade_income = {
+				years = 1
+			}
+			add_prestige_or_monarch_power = {
+				amount = 10
+			}
+		}
+	}
+	lha_convert_the_mosque = {
+		icon = gfx_lha_convert_the_mosque
+		position = 14
+		required_missions = {
+			lha_on_to_sumatra
+		}
+		provinces_to_highlight = {
+			province_id = 617
+		}
+		trigger = {
+			617 = {
+				AND = {
+					owned_by = ROOT
+					is_core = ROOT
+					religion = vajrayana
+				}
+			}
+			religion = vajrayana
+			treasury = 1500
+		}
+		effect = {
+			add_treasury = -1500
+			custom_tooltip = lha_convert_the_mosque_tooltip
+			hidden_effect = {
+				every_known_country = {
+					limit = {
+						is_islamic = yes
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = lha_converted_religious_monuments
+					}
+				}
+				destroy_great_project = {
+					type = baiturrahman_grand_mosque
+				}
+				617 = {
+					set_province_flag = converted_baiturrahman_grand_mosque
+					add_great_project = {
+						type = rahmana_vihara
+						instant = no
+					}
+				}
+				spawn_islamic_rebels_in_location_type = {
+					location_type = superregion
+					location = east_indies_superregion
+				}
+			}
+			add_devotion = 10
+			add_prestige_or_monarch_power = {
+				amount = 10
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 15
+			}
+		}
+	}
+	lha_moluccan_trade = {
+		icon = gfx_lha_moluccan_trade
+		position = 15
+		required_missions = {
+			lha_dominate_malaccan_trade
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = banten_area
+				area = west_java_area
+				area = central_java_area
+				area = surabaya_area
+				area = east_java_area
+				area = lesser_sunda_islands_area
+				area = timor_area
+				area = makassar_area
+				area = sulawesi_area
+				area = south_sulawesi_area
+				area = molluca_area
+				area = spice_islands_area
+				area = vogelkop_area
+				area = papua_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns_inhabited_provinces_of_moluccan_trade_node = yes
+		}
+		effect = {
+			custom_tooltip = lha_moluccan_trade_decision_tooltip
+			if = {
+				limit = {
+					molluca_area = {
+						type = all
+						AND = {
+							is_empty = no
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+					}
+					spice_islands_area = {
+						type = all
+						AND = {
+							is_empty = no
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+					}
+				}
+				custom_tooltip = lha_moluccan_trade_cloves_bonus_yes
+				hidden_effect = {
+					every_owned_province = {
+						limit = {
+							OR = {
+								area = molluca_area
+								area = spice_islands_area
+							}
+						}
+						change_trade_goods = cloves
+					}
+				}
+			}
+			else = {
+				custom_tooltip = lha_moluccan_trade_cloves_bonus_no
+			}
+			custom_tooltip = lha_moluccan_trade_dev_bonus
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						same_trade_node_as = 1357
+						OR = {
+							trade_goods = spices
+							trade_goods = cloves
+						}
+						development = 12
+					}
+					add_province_modifier = {
+						name = lha_efficient_spice_plantations
+						duration = -1
+					}
+				}
+			}
+			custom_tooltip = lha_1yr_trade_income_tooltip
+			add_years_of_trade_income = {
+				years = 1
+			}
+			add_prestige_or_monarch_power = {
+				amount = 20
+			}
+		}
+	}
+}
+
+lha_china_slot_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		AND = {
+			tag = GPH
+			has_country_flag = lha_china_missions_unlocked
+		}
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+}
+
+lha_china_slot_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		AND = {
+			tag = GPH
+			has_country_flag = lha_china_missions_unlocked
+		}
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	lha_the_heartland_beckons = {
+		icon = gfx_lha_the_heartland_beckons
+		position = 19
+		required_missions = {
+			lha_secure_canton
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = hunan_area
+				area = jiangxi_area
+				area = huguang_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			hunan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			jiangxi_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			huguang_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = lha_granaries_of_hunan
+				duration = 7300
+			}
+			custom_tooltip = lha_the_heartland_beckons_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							area = hunan_area
+							area = jiangxi_area
+							area = huguang_area
+						}
+						trade_goods = grain
+					}
+					add_or_upgrade_manpower_building = yes
+				}
+			}
+			define_advisor = {
+				type = recruitmaster
+				age = 30
+				cost_multiplier = 0.5
+				skill = 3
+				culture = xiang
+				religion = confucianism
+			}
+			add_manpower = 5
+			add_mil_power = 50
+		}
+	}
+	lha_the_western_marches = {
+		icon = gfx_lha_the_western_marches
+		position = 21
+		required_missions = {
+			lha_secure_the_south
+		}
+		provinces_to_highlight = {
+			region = xinan_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			xinan_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			custom_tooltip = lha_tame_the_western_marches_province_bonus_tooltip
+			hidden_effect = {
+				2169 = {
+					add_or_upgrade_fort_building = yes
+					add_province_modifier = {
+						name = lha_fortresses_of_the_mountain_lords
+						duration = -1
+					}
+				}
+				5090 = {
+					add_or_upgrade_fort_building = yes
+					add_province_modifier = {
+						name = lha_fortresses_of_the_mountain_lords
+						duration = -1
+					}
+				}
+				673 = {
+					add_or_upgrade_fort_building = yes
+					add_province_modifier = {
+						name = lha_fortresses_of_the_mountain_lords
+						duration = -1
+					}
+				}
+				663 = {
+					add_or_upgrade_fort_building = yes
+					add_province_modifier = {
+						name = lha_fortresses_of_the_mountain_lords
+						duration = -1
+					}
+				}
+				661 = {
+					add_or_upgrade_fort_building = yes
+					add_province_modifier = {
+						name = lha_fortresses_of_the_mountain_lords
+						duration = -1
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						num_of_estate_agendas_completed = {
+							estate = estate_hill_clans
+							value = 2
+						}
+						court_ideas = 7
+					}
+				}
+				custom_tooltip = lha_the_western_marches_sherpas_bonus_tooltip_yes
+				set_country_flag = lha_sherpas_in_xinan
+			}
+			else = {
+				custom_tooltip = lha_the_western_marches_sherpas_bonus_tooltip_no
+			}
+			add_prestige_or_monarch_power = {
+				amount = 20
+			}
+			add_mil_power = 100
+		}
+	}
+	lha_slay_the_dragon = {
+		icon = gfx_lha_slay_the_dragon
+		position = 23
+		required_missions = {
+			lha_secure_china
+		}
+		provinces_to_highlight = {
+			if = {
+				limit = {
+					empire_of_china_dismantled = yes
+				}
+				always = no
+			}
+			else = {
+				owned_by = event_target:EmperorOfChina
+				NOT = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		trigger = {
+			empire_of_china_dismantled = yes
+		}
+		effect = {
+			custom_tooltip = lha_slay_the_dragon_pp_tooltip
+			hidden_effect = {
+				add_power_projection = {
+					type = lha_dragon_slayed_pp
+					amount = 25
+				}
+			}
+			add_ruler_modifier = {
+				name = lha_dragon_slayer
+				duration = -1
+			}
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			add_prestige_or_monarch_power = {
+				amount = 30
+			}
+		}
+	}
+	lha_the_hermit_kingdom = {
+		icon = mjz_into_korea
+		position = 25
+		required_missions = {
+			lha_chakravartin_ascendant
+		}
+		provinces_to_highlight = {
+			region = korea_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			korea_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			custom_tooltip = lha_the_hermit_kingdom_tibetanization_tooltip
+			set_country_flag = lha_tibetanization_of_korea
+			custom_tooltip = lha_the_hermit_kingdom_scientist_tooltip
+			set_country_flag = frn_unlock_adm_advisor_bonus
+			add_prestige_or_monarch_power = {
+				amount = 15
+			}
+		}
+	}
+}
+
+lha_china_slot_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		AND = {
+			tag = GPH
+			has_country_flag = lha_china_missions_unlocked
+		}
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	lha_secure_canton = {
+		icon = gfx_lha_secure_canton
+		position = 18
+		provinces_to_highlight = {
+			OR = {
+				area = guangxi_area
+				area = guangdong_area
+				area = west_guangdong_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			guangxi_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			guangdong_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_guangdong_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = lha_push_into_the_south
+				duration = 7300
+			}
+			custom_tooltip = lha_construct_the_pacfic_fleet_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							area = guangdong_area
+							area = west_guangdong_area
+						}
+						has_port = yes
+					}
+					add_province_modifier = {
+						name = lha_construct_the_pacific_fleet
+						duration = 7300
+					}
+				}
+			}
+			667 = {
+				add_unit_construction = {
+					type = heavy_ship
+					amount = 2
+					speed = 0.5
+					cost = 0
+				}
+			}
+			5106 = {
+				add_unit_construction = {
+					type = light_ship
+					amount = 5
+					speed = 0.5
+					cost = 0
+				}
+			}
+			add_adm_power = 50
+			add_prestige_or_monarch_power = {
+				amount = 10
+			}
+			add_permanent_claim_multi_provinces = {
+				target = south_china_region
+			}
+		}
+	}
+	lha_revive_the_guilds = {
+		icon = gfx_lha_revive_the_guilds
+		position = 19
+		required_missions = {
+			lha_secure_canton
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = guangdong_area
+				area = west_guangdong_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = lha_revive_the_guilds_trigger_tooltip
+				guangdong_area = {
+					type = all
+					OR = {
+						has_port = no
+						AND = {
+							development = 10
+							OR = {
+								has_shipyard_building_trigger = yes
+								has_dock_building_trigger = yes
+							}
+							has_trade_building_trigger = yes
+						}
+					}
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				west_guangdong_area = {
+					type = all
+					OR = {
+						has_port = no
+						AND = {
+							development = 10
+							OR = {
+								has_shipyard_building_trigger = yes
+								has_dock_building_trigger = yes
+							}
+							has_trade_building_trigger = yes
+						}
+					}
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				fujian_area = {
+					type = all
+					OR = {
+						has_port = no
+						AND = {
+							development = 10
+							OR = {
+								has_shipyard_building_trigger = yes
+								has_dock_building_trigger = yes
+							}
+							has_trade_building_trigger = yes
+						}
+					}
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				zhejiang_area = {
+					type = all
+					OR = {
+						has_port = no
+						AND = {
+							development = 10
+							OR = {
+								has_shipyard_building_trigger = yes
+								has_dock_building_trigger = yes
+							}
+							has_trade_building_trigger = yes
+						}
+					}
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				south_jiangsu_area = {
+					type = all
+					OR = {
+						has_port = no
+						AND = {
+							development = 10
+							OR = {
+								has_shipyard_building_trigger = yes
+								has_dock_building_trigger = yes
+							}
+							has_trade_building_trigger = yes
+						}
+					}
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = lha_revive_the_guilds_taiwan_frontier_tooltip
+			hidden_effect = {
+				every_province = {
+					limit = {
+						area = taiwan_area
+					}
+					add_siberian_construction = 0
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = unlocked_gya_estate
+				}
+				custom_tooltip = lha_revive_the_guilds_taiwan_gya_culture_tooltip_yes
+				every_province = {
+					limit = {
+						area = taiwan_area
+					}
+					hidden_effect = {
+						change_culture = gya
+					}
+				}
+			}
+			else = {
+				custom_tooltip = lha_revive_the_guilds_taiwan_gya_culture_tooltip_no
+				every_province = {
+					limit = {
+						area = taiwan_area
+					}
+					hidden_effect = {
+						change_culture = chimin
+					}
+				}
+			}
+			if = {
+				limit = {
+					mission_completed = lha_moluccan_trade
+				}
+				custom_tooltip = lha_revive_the_guilds_yes
+				hidden_effect = {
+					738 = {
+						change_trade_goods = cloves
+					}
+				}
+			}
+			else = {
+				custom_tooltip = lha_revive_the_guilds_no
+			}
+			custom_tooltip = lha_revive_the_guilds_upgrade_tooltip
+			tooltip = {
+				add_province_modifier = {
+					name = lha_thriving_local_maritime_guild
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				lha_maritime_guild_effect = {
+					province_id = 667
+				}
+				lha_maritime_guild_effect = {
+					province_id = 668
+				}
+				lha_maritime_guild_effect = {
+					province_id = 669
+				}
+				lha_maritime_guild_effect = {
+					province_id = 2149
+				}
+				lha_maritime_guild_effect = {
+					province_id = 684
+				}
+				lha_maritime_guild_effect = {
+					province_id = 1821
+				}
+				lha_maritime_guild_effect = {
+					province_id = 1822
+				}
+				lha_maritime_guild_effect = {
+					province_id = 5106
+				}
+				lha_maritime_guild_effect = {
+					province_id = 5106
+				}
+				lha_maritime_guild_effect = {
+					province_id = 2159
+				}
+			}
+			custom_tooltip = lha_revive_the_guilds_estate_tooltip
+		}
+	}
+	lha_secure_the_south = {
+		icon = gfx_lha_secure_the_south
+		position = 20
+		required_missions = {
+			lha_the_eastern_gate
+			lha_the_heartland_beckons
+		}
+		provinces_to_highlight = {
+			AND = {
+				is_empty = no
+				region = south_china_region
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			south_china_region = {
+				type = all
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					is_empty = yes
+				}
+			}
+		}
+		effect = {
+			set_country_flag = lha_tibetanization_explain
+			custom_tooltip = lha_secure_the_south_province_bonus_tooltip
+			custom_tooltip = lha_unlocked_the_gya_tooltip
+			set_country_flag = unlocked_gya_estate
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						superregion = china_superregion
+					}
+					add_province_modifier = {
+						name = lha_consolidate_gains_in_china
+						duration = 5475
+					}
+				}
+			}
+			country_event = {
+				id = ab_india_lha_events.15
+			}
+			add_power_projection = {
+				type = lha_victory_in_the_south_pp
+				amount = 10
+			}
+			add_prestige_or_monarch_power = {
+				amount = 20
+			}
+			add_permanent_claim_multi_provinces = {
+				target = china_superregion
+			}
+		}
+	}
+	lha_qufu_vihara = {
+		icon = gfx_lha_qufu_vihara
+		position = 20
+		required_missions = {
+			lha_secure_the_south
+		}
+		provinces_to_highlight = {
+			province_id = 2140
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			NOT = {
+				religion = vajrayana
+			}
+		}
+		trigger = {
+			treasury = 1500
+			2140 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = vajrayana
+			}
+		}
+		effect = {
+			add_treasury = -1500
+			custom_tooltip = lha_qufu_vihara_tooltip
+			hidden_effect = {
+				every_known_country = {
+					limit = {
+						religion = confucianism
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = lha_converted_religious_monuments
+					}
+				}
+				destroy_great_project = {
+					type = temple_of_confucius
+				}
+				2140 = {
+					set_province_flag = converted_temple_of_confucius
+					add_great_project = {
+						type = qufu_vihara
+						instant = no
+					}
+				}
+				spawn_confucian_rebels_in_location_type = {
+					location_type = superregion
+					location = china_superregion
+				}
+			}
+			add_devotion = 10
+			add_prestige_or_monarch_power = {
+				amount = 10
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 15
+			}
+			add_estate_loyalty = {
+				estate = estate_gya
+				loyalty = 15
+			}
+			custom_tooltip = lha_qufu_vihara_privilege_tooltip
+			tooltip = {
+				set_estate_privilege = estate_gya_monastic_administrators
+			}
+		}
+	}
+	lha_secure_china = {
+		icon = gfx_lha_secure_china
+		position = 22
+		required_missions = {
+			lha_the_western_marches
+			lha_break_the_yuan
+		}
+		provinces_to_highlight = {
+			AND = {
+				is_empty = no
+				superregion = china_superregion
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			china_superregion = {
+				type = all
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					is_empty = yes
+				}
+			}
+		}
+		effect = {
+			set_country_flag = lha_faster_culture_spread
+			custom_tooltip = lha_faster_culture_spread_tooltip
+			custom_tooltip = lha_secure_the_south_province_bonus_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						superregion = china_superregion
+					}
+					if = {
+						limit = {
+							has_province_modifier = lha_consolidate_gains_in_china
+						}
+						remove_province_modifier = lha_consolidate_gains_in_china
+					}
+					add_province_modifier = {
+						name = lha_consolidate_gains_in_china
+						duration = 5475
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						still_buddies_with_drb = yes
+						still_buddies_with_kht = yes
+						still_buddies_with_trg = yes
+						still_buddies_with_oir = yes
+					}
+				}
+				custom_tooltip = lha_secure_china_oirat_tooltip_yes
+				set_country_flag = lha_oirat_submits_event
+				hidden_effect = {
+					country_event = {
+						id = ab_india_lha_events.17
+					}
+				}
+			}
+			else = {
+				custom_tooltip = lha_secure_china_oirat_tooltip_no
+			}
+			add_country_modifier = {
+				name = lha_gya_administrators
+				duration = -1
+			}
+			add_ruler_personality = legendary_conqueror_personality
+			add_prestige_or_monarch_power = {
+				amount = 40
+			}
+			add_permanent_claim_multi_provinces = {
+				target = mongolia_region
+			}
+		}
+	}
+	lha_granaries_of_china = {
+		icon = gfx_lha_granaries_of_china
+		position = 23
+		required_missions = {
+			lha_secure_china
+		}
+		provinces_to_highlight = {
+			superregion = china_superregion
+			owned_by = ROOT
+			trade_goods = grain
+			NOT = {
+				AND = {
+					development = 12
+					has_production_building_trigger = yes
+				}
+			}
+		}
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					superregion = china_superregion
+					trade_goods = grain
+					development = 12
+					has_production_building_trigger = yes
+				}
+				amount = 15
+			}
+		}
+		effect = {
+			custom_tooltip = lha_granaries_of_china_upgrade_tooltip
+			tooltip = {
+				random_owned_province = {
+					limit = {
+						superregion = china_superregion
+						trade_goods = grain
+					}
+					upgrade_production_building = yes
+				}
+			}
+			hidden_effect = {
+				for = {
+					amount = 6
+					effect = "lha_granaries_of_china_upgrade_effect = yes"
+				}
+			}
+			custom_tooltip = lha_granaries_of_china_province_bonus_tooltip
+			tooltip = {
+				add_province_modifier = {
+					name = lha_ricebasket_of_asia
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						superregion = china_superregion
+						trade_goods = grain
+						development = 12
+						has_production_building_trigger = yes
+					}
+					add_province_modifier = {
+						name = lha_ricebasket_of_asia
+						duration = -1
+					}
+				}
+			}
+			custom_tooltip = lha_granaries_of_china_privilege_tooltip
+		}
+	}
+	lha_chakravartin_ascendant = {
+		icon = gfx_lha_chakravartin_ascendant
+		position = 24
+		required_missions = {
+			lha_slay_the_dragon
+			lha_purify_china
+		}
+		provinces_to_highlight = {
+			AND = {
+				superregion = china_superregion
+				NOT = {
+					AND = {
+						country_or_non_sovereign_subject_holds = ROOT
+						religion = vajrayana
+					}
+				}
+			}
+		}
+		trigger = {
+			china_superregion = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = vajrayana
+			}
+		}
+		effect = {
+			set_country_flag = lha_chakravartin_gov_enabled
+			add_government_reform = gph_eternal_throne_of_the_chakravartin
+			add_country_modifier = {
+				name = lha_reign_of_the_chakravartin
+				duration = -1
+			}
+			add_permanent_claim_multi_provinces = {
+				target = far_east_superregion
+			}
+			hidden_effect = {
+				# Makes tooltip look cleaner :)
+				add_permanent_claim_multi_provinces = {
+					target = buryatia_area
+				}
+			}
+		}
+	}
+	lha_end_the_toyouji_rule = {
+		icon = gfx_lha_end_the_touyoji_rule
+		position = 25
+		required_missions = {
+			lha_chakravartin_ascendant
+		}
+		provinces_to_highlight = {
+			region = japan_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			AND = {
+				NOT = {
+					exists = TJJ
+				}
+				NOT = {
+					exists = JAP
+				}
+			}
+			calc_true_if = {
+				all_province = {
+					region = japan_region
+					owned_by = ROOT
+				}
+				amount = 50
+			}
+		}
+		effect = {
+			custom_tooltip = lha_end_the_toyouji_rule_parliament_tooltip
+			unlock_parliament_issue = {
+				issue = establish_japanese_monastic_order_act
+			}
+			add_country_modifier = {
+				name = lha_vanquishers_of_the_sun
+				duration = -1
+			}
+			add_prestige_or_monarch_power = {
+				amount = 25
+			}
+		}
+	}
+}
+
+lha_china_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		AND = {
+			tag = GPH
+			has_country_flag = lha_china_missions_unlocked
+		}
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+	lha_the_eastern_gate = {
+		icon = gfx_lha_the_eastern_gate
+		position = 19
+		required_missions = {
+			lha_secure_canton
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = fujian_area
+				area = zhejiang_area
+				area = south_anhui_area
+				area = south_jiangsu_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			fujian_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zhejiang_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_anhui_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_jiangsu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			custom_tooltip = lha_the_eastern_gate_upgrade_tooltip
+			hidden_effect = {
+				for = {
+					amount = 5
+					effect = "lha_the_eastern_gate_reward = yes"
+				}
+			}
+			add_mercantilism = 2
+			define_advisor = {
+				type = trader
+				cost_multiplier = 0.5
+				skill = 3
+				religion = confucianism
+				culture = wu
+			}
+			upgrade_center_of_trade = {
+				province = 684
+			}
+			upgrade_center_of_trade = {
+				province = 1821
+			}
+			upgrade_center_of_trade = {
+				province = 2149
+			}
+			add_dip_power = 50
+			add_prestige_or_monarch_power = {
+				amount = 10
+			}
+		}
+	}
+	lha_break_the_yuan = {
+		icon = gfx_lha_break_the_yuan
+		position = 21
+		required_missions = {
+			lha_secure_the_south
+		}
+		provinces_to_highlight = {
+			region = north_china_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			north_china_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			1816 = {
+				change_religion = ROOT
+				change_culture = ROOT
+				change_province_name = "Pecing"
+				rename_capital = "Pecing Grong Khyer"
+				set_province_flag = build_pecing_potala
+				custom_tooltip = lha_break_the_yuan_renovate_forbidden_city_tooltip
+				hidden_effect = {
+					destroy_great_project = {
+						type = forbidden_city
+					}
+					add_great_project = {
+						type = pecing_potala
+						instant = no
+					}
+				}
+			}
+			add_power_projection = {
+				type = lha_crippled_the_emperor_pp
+				amount = 15
+			}
+			add_prestige_or_monarch_power = {
+				amount = 30
+			}
+			set_country_flag = lha_move_capital_event
+			country_event = {
+				id = ab_india_lha_events.16
+			}
+		}
+	}
+	lha_purify_china = {
+		icon = gfx_lha_break_the_yuan
+		position = 23
+		required_missions = {
+			lha_secure_china
+		}
+		provinces_to_highlight = {
+			superregion = china_superregion
+			NOT = {
+				AND = {
+					country_or_non_sovereign_subject_holds = ROOT
+					religion = vajrayana
+				}
+			}
+		}
+		trigger = {
+			china_superregion = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = vajrayana
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					mission_completed = lha_purify_china
+				}
+				custom_tooltip = lha_your_ideas_have_been_upgraded_tooltip
+			}
+			else = {
+				lha_upgrade_idea_set = yes
+			}
+			add_country_modifier = {
+				name = lha_purified_china
+				duration = -1
+			}
+			add_devotion = 20
+			set_karma = 0
+		}
+	}
+	lha_the_northern_frontier = {
+		icon = mng_nomadic_frontier
+		position = 25
+		required_missions = {
+			lha_chakravartin_ascendant
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = manchuria_region
+				area = buryatia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			manchuria_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			buryatia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			custom_tooltip = lha_the_northern_frontier_tibetanization_tooltip
+			set_country_flag = lha_tibetanization_of_the_steppes
+			custom_tooltip = lha_the_northern_frontier_discover_siberia_tooltip
+			hidden_effect = {
+				every_province = {
+					limit = {
+						is_empty = yes
+						is_neighbor_of = ROOT
+						superregion = tartary_superregion
+						NOT = {
+							has_discovered = ROOT
+						}
+					}
+					discover_country = ROOT
+				}
+			}
+			custom_tooltip = lha_the_northern_frontier_parliament_issue_tooltip
+			add_mil_power = 100
+			add_prestige_or_monarch_power = {
+				amount = 10
+			}
+		}
+	}
+}
+
+lha_china_slot_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		AND = {
+			tag = GPH
+			has_country_flag = lha_china_missions_unlocked
+		}
+		NOT = {
+			map_setup = map_setup_random
+		}
+	}
+}

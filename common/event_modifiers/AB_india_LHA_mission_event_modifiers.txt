@@ -1,0 +1,562 @@
+lha_struggle_for_tibet = {
+	land_morale = 0.05
+	ae_impact = -0.1
+}
+
+lha_strengthening_alliances = {
+	improve_relation_modifier = 0.15
+	monthly_favor_modifier = 0.25
+}
+
+lha_faithful_united = {
+	core_creation = -0.15
+	years_of_nationalism = -5
+}
+
+lha_subdue_the_unorthodox = {
+	global_missionary_strength = 0.03
+	missionary_maintenance_cost = -0.5
+	harsh_treatment_cost = -0.5
+}
+
+lha_vajrayana_legitimized = {
+	global_heathen_missionary_strength = 0.01
+	devotion = 0.5
+}
+
+lha_legacy_of_trisong_detsen_effect = {
+	monarch_military_power = 1
+	province_warscore_cost = -0.1
+}
+
+lha_tibet_unified = {
+	global_autonomy = -0.05
+	development_cost = -0.1
+}
+
+lha_faithful_flock_to_our_monestaries = {
+	tax_income = 9.5
+	local_development_cost = -0.05
+}
+
+lha_crown_of_the_plateau = {
+	local_tax_modifier = 0.5
+	province_trade_power_modifier = 0.5
+	local_production_efficiency = 0.5
+	local_manpower_modifier = 0.5
+	local_development_cost_modifier = -0.15
+	local_institution_spread = 0.5
+}
+
+lha_supporting_the_gelug_school = {
+	yearly_karma_decay = 0.1
+	global_missionary_strength = 0.01
+	church_loyalty_modifier = 0.1
+	tolerance_own = 1
+	global_tax_modifier = -0.1
+}
+
+lha_searching_for_the_dalai_lama_faster = {
+	country_admin_power = -2
+	country_diplomatic_power = -2
+	country_military_power = -2
+	global_tax_income = -24
+	global_manpower_modifier = -0.2
+	administrative_efficiency = -0.02
+	core_creation = 0.2
+	technology_cost = 0.2
+	development_cost = 0.2
+}
+
+lha_searching_for_the_dalai_lama_fastest = {
+	country_admin_power = -3
+	country_diplomatic_power = -3
+	country_military_power = -3
+	global_tax_income = -48
+	global_manpower_modifier = -0.3
+	administrative_efficiency = -0.03
+	core_creation = 0.3
+	technology_cost = 0.3
+	development_cost = 0.3
+}
+
+lha_landowners_take_advantage = {
+	local_tax_modifier = -0.3
+	local_autonomy = 0.05
+}
+
+lha_sudden_shift_in_power_dynamics = {
+	global_unrest = 2
+	administrative_efficiency = -0.01
+	global_autonomy = 0.05
+}
+
+lha_anti_nepalese_coalition = {
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.1
+}
+
+lha_the_great_monastic_awakening_mod_perm = {
+	embracement_cost = -0.2
+	reform_progress_growth = 0.1
+	prestige_decay = -0.01
+}
+
+lha_the_great_monastic_awakening_mod = {
+	embracement_cost = -0.2
+	reform_progress_growth = 0.1
+}
+
+lha_faithful_flock_to_jokhang = {
+	local_tax_modifier = 0.3
+}
+
+lha_integrating_the_hill_clans = {
+	local_autonomy = -0.05
+	local_missionary_strength = 0.01
+}
+
+lha_pahari_mercenaries = {
+	mercenary_cost = -0.1
+	merc_maintenance_modifier = -0.1
+	mercenary_manpower = 0.1
+}
+
+lha_control_the_cashmere_trade = {
+	trade_efficiency = 0.1
+	global_trade_power = 0.05
+}
+
+lha_tibetan_cultural_union = {
+	manpower_in_culture_group_provinces = 0.2
+	land_morale = 0.05
+}
+
+lha_oases_of_the_silk_road = {
+	trade_efficiency = 0.15
+	caravan_power = 0.15
+}
+
+lha_united_the_hill_clans_regular = {
+	hill_clans_loyalty_modifier = 0.1
+}
+
+lha_prepare_to_confront_bengal = {
+	ae_impact = -0.15
+	siege_ability = 0.1
+}
+
+lha_secured_punjab_trade = {
+	province_trade_power_modifier = 0.3
+	local_center_of_trade_upgrade_cost = -0.5
+}
+
+lha_gates_of_india = {
+	local_defensiveness = 0.25
+	local_fort_maintenance_modifier = -0.25
+	local_garrison_size = 0.25
+}
+
+lha_gujarati_campaign = {
+	ae_impact = -0.1
+	global_missionary_strength = 0.02
+	morale_damage = 0.1
+}
+
+lha_hindustan_campaign = {
+	core_creation = -0.1
+	global_heathen_missionary_strength = 0.02
+	manpower_recovery_speed = 0.1
+}
+
+lha_dharma_protector_of_india = {
+	tolerance_own = 2
+	yearly_karma_decay = 0.1
+	global_missionary_strength = 0.02
+}
+
+lha_dharma_protector_of_india_enhanced = {
+	tolerance_own = 3
+	yearly_karma_decay = 0.15
+	global_missionary_strength = 0.03
+}
+
+lha_shipyards_of_bengal = {
+	ship_recruit_speed = -0.25
+	local_ship_cost = -0.25
+	local_sailors_modifier = 0.25
+	local_ship_repair = 0.25
+}
+
+lha_merchants_of_bengal = {
+	merchants = 1
+	trade_company_investment_cost = -0.1
+	trade_efficiency = 0.1
+}
+
+lha_breadbasket_of_india = {
+	global_manpower_modifier = 0.1
+	manpower_recovery_speed = 0.05
+	global_supply_limit_modifier = 0.1
+}
+
+lha_recruit_the_hindustanis = {
+	local_manpower_modifier = 0.5
+}
+
+lha_riches_of_gujarat = {
+	province_trade_power_modifier = 1
+	province_trade_power_value = 5
+}
+
+lha_prosperity_of_the_deccan = {
+	local_production_efficiency = 0.1
+	local_state_maintenance_modifier = -0.2
+	trade_goods_size_modifier = 0.1
+}
+
+lha_recruiting_the_marathis = {
+	army_tradition = 0.3
+	drill_gain_modifier = 0.25
+	drill_decay_modifier = -0.25
+}
+
+lha_cholan_shipbuilders = {
+	global_ship_cost = -0.1
+	naval_forcelimit_modifier = 0.15
+	ship_durability = 0.1
+}
+
+lha_hire_malankaran_explorers = {
+	colonists = 1
+	may_explore = yes
+}
+
+lha_ports_of_coromandel = {
+	local_ship_cost = -0.25
+	local_sailors_modifier = 0.25
+	province_trade_power_modifier = 0.75
+}
+
+lha_the_charkravartis_triumph_mod = {
+	administrative_efficiency = 0.05
+}
+
+lha_push_into_burma = {
+	ae_impact = -0.1
+	siege_ability = 0.1
+}
+
+lha_adopt_the_mandala_system = {
+	vassal_forcelimit_bonus = 0.75
+	vassal_naval_forcelimit_bonus = 0.75
+	vassal_income = 0.1
+}
+
+lha_adopt_the_mandala_system_enhanced = {
+	vassal_forcelimit_bonus = 0.75
+	vassal_naval_forcelimit_bonus = 0.75
+	vassal_income = 0.1
+	diplomatic_annexation_cost = -0.1
+	liberty_desire_from_subject_development = -0.2
+}
+
+lha_lao_mountain_warfare = {
+	land_attrition = -0.1
+	infantry_power = 0.05
+}
+
+lha_mekong_river_trade_outposts = {
+	province_trade_power_modifier = 0.5
+	province_trade_power_value = 2.5
+}
+
+lha_khmer_hydrolic_engineering = {
+	local_development_cost = -0.1
+	trade_goods_size_modifier = 0.1
+}
+
+lha_great_works_of_cambodia = {
+	great_project_upgrade_cost = -0.05
+	great_project_upgrade_time = -0.05
+}
+
+lha_restore_angkor_wat_mod = {
+	local_great_project_upgrade_cost = -0.33
+	local_great_project_upgrade_time = -0.33
+}
+
+lha_viet_guerrilla_tactics = {
+	hostile_attrition = 1
+	max_hostile_attrition = 1
+}
+
+lha_ricebasket_of_indochina = {
+	local_manpower_modifier = 1
+	local_production_efficiency = 0.1
+	trade_goods_size = 1
+	local_development_cost_modifier = -0.1
+}
+
+lha_indochinese_economic_expansion = {
+	province_trade_power_modifier = 0.5
+	local_production_efficiency = 0.25
+	trade_goods_size = 0.25
+}
+
+lha_stewards_of_the_buddhist_world = {
+	prestige = 1
+	tolerance_own = 1
+}
+
+lha_victory_over_heresy = {
+	global_heretic_missionary_strength = 0.02
+	yearly_karma_decay = 0.2
+	tolerance_own = 1
+}
+
+lha_buddhist_hegemon_mod = {
+	cb_on_religious_enemies = yes
+	missionaries = 1
+	global_missionary_strength = 0.02
+	tolerance_own = 2
+}
+
+lha_conquer_the_islands = {
+	ae_impact = -0.1
+	siege_ability = 0.1
+	naval_morale = 0.1
+	regiment_disembark_speed = 0.5
+}
+
+lha_develop_the_spice_plantations = {
+	local_development_cost = -0.1
+	local_build_cost = -0.1
+	local_production_efficiency = 0.1
+}
+
+lha_dominating_malaccan_trade = {
+	trade_steering = 0.1
+	global_own_trade_power = 0.1
+	trade_company_investment_cost = -0.05
+}
+
+lha_introduce_clove_cultivation_cooldown = {
+	#Just used a cooldown, not meant to have any effects...
+}
+
+lha_efficient_spice_plantations = {
+	local_development_cost_modifier = -0.1
+	local_build_cost = -0.1
+	local_production_efficiency = 0.1
+	trade_goods_size_modifier = 0.1
+}
+
+lha_nusantara_trade_dominance = {
+	trade_company_governing_cost = -0.1
+	ship_power_propagation = 0.2
+	naval_tradition_from_trade = 0.5
+}
+
+lha_temp_cultures_boost_hill_clans = {
+	num_accepted_cultures = 3
+}
+
+lha_temp_cultures_boost_khmer = {
+	num_accepted_cultures = 1
+}
+
+lha_push_into_the_south = {
+	ae_impact = -0.1
+	land_morale = 0.1
+}
+
+lha_construct_the_pacific_fleet = {
+	local_ship_cost = -0.15
+	local_sailors_modifier = 0.1
+}
+
+lha_granaries_of_hunan = {
+	manpower_recovery_speed = 0.1
+	global_manpower_modifier = 0.1
+}
+
+lha_consolidate_gains_in_china = {
+	local_autonomy = -0.05
+	local_core_creation = -0.05
+	local_missionary_strength = 0.01
+	local_unrest = -1
+}
+
+lha_fortresses_of_the_mountain_lords = {
+	local_fort_maintenance_modifier = -0.9
+	local_defensiveness = 0.2
+	local_garrison_size = 0.2
+	min_local_autonomy = 30
+	province_trade_power_modifier = 0.5
+	local_unrest = -2
+}
+
+lha_sacred_seat_of_the_dharma = {
+	church_loyalty_modifier = 0.1
+	missionaries = 1
+	global_missionary_strength = 0.01
+	local_development_cost = -0.2
+	local_build_cost = -0.2
+}
+
+lha_sacred_seat_of_the_middle_kingdom = {
+	local_development_cost = -0.2
+	local_build_cost = -0.2
+	statewide_governing_cost = -1
+	advisor_cost = -0.1
+	advisor_pool = 1
+	local_great_project_upgrade_cost = -0.1
+	local_great_project_upgrade_time = -0.1
+	gya_loyalty_modifier = 0.1
+}
+
+lha_pecing_winter_palace = {
+	local_development_cost = -0.1
+	local_build_cost = -0.1
+	local_governing_cost = -0.5
+	statewide_governing_cost = -0.25
+}
+
+lha_lhasa_summer_palace = {
+	local_development_cost = -0.1
+	local_build_cost = -0.1
+	local_governing_cost = -0.5
+	statewide_governing_cost = -0.25
+}
+
+lha_reveres_the_dalai_lama = {
+	liberty_desire = -100
+	tolerance_own = 2
+	global_missionary_strength = 0.02
+}
+
+lha_avid_reader = {
+	innovativeness_gain = 0.01
+}
+
+lha_gya_administrators = {
+	core_creation = -0.1
+	governing_capacity_modifier = 0.05
+}
+
+lha_dragon_slayer = {
+	army_tradition_from_battle = 0.5
+	discipline = 0.05
+}
+
+lha_purified_china = {
+	manpower_in_true_faith_provinces = 0.2
+	yearly_karma_decay = 0.2
+}
+
+lha_reign_of_the_chakravartin = {
+	administrative_efficiency = 0.05
+}
+
+lha_thriving_local_maritime_guild = {
+	local_sailors_modifier = 1
+	local_ship_cost = -0.25
+	local_ship_repair = 0.5
+	ship_recruit_speed = -0.25
+	province_trade_power_modifier = 0.5
+}
+
+lha_ricebasket_of_asia = {
+	trade_goods_size = 0.3
+	local_production_efficiency = 0.1
+	local_manpower_modifier = 0.5
+}
+
+lha_vanquishers_of_the_sun = {
+	prestige_from_land = 0.5
+	prestige_from_naval = 0.5
+}
+
+lha_funded_pilgrimage_for_someone = {
+	yearly_karma_decay = 0.1
+	prestige = 0.25
+	monthly_enlightenment_power = 0.01
+}
+
+#Hidden modifier, used as flag
+lha_recent_pilgrimage = {
+}
+
+lha_went_on_pilgrimage = {
+	global_unrest = -2
+	yearly_karma_decay = 0.1
+	legitimacy = 0.5
+	republican_tradition = 0.2
+	devotion = 0.5
+	horde_unity = 0.5
+}
+
+lha_pilgrimage_hub = {
+	prestige = 0.1
+	local_tax_modifier = 0.5
+	local_prosperity_growth = 0.25
+	local_development_cost = -0.1
+	build_cost = -0.1
+}
+
+lha_fortress_of_the_dharma = {
+	local_defensiveness = 0.5
+	local_fort_maintenance_modifier = -0.5
+	local_garrison_size = 0.25
+	local_hostile_attrition = 1
+}
+
+lha_center_of_buddhist_studies = {
+	local_institution_spread = 0.5
+	prestige_decay = -0.01
+}
+
+lha_enlightened_academies = {
+	local_missionary_strength = 0.01
+	local_unrest = -0.5
+}
+
+lha_gates_of_tibet = {
+	local_defensiveness = 0.25
+	local_fort_maintenance_modifier = -0.25
+	local_garrison_size = 0.25
+	local_hostile_attrition = 1
+}
+
+lha_develop_the_dzongs = {
+	local_great_project_upgrade_cost = -0.33
+	local_great_project_upgrade_time = -0.33
+}
+
+lha_local_dzong = {
+	local_defensiveness = 0.25
+	local_governing_cost = -0.1
+	local_fort_maintenance_modifier = -0.1
+	local_garrison_size = 0.3
+	local_garrison_damage = 0.25
+	local_tax_modifier = 0.25
+	allowed_num_of_buildings = 1
+}
+
+lha_local_great_dzong = {
+	local_defensiveness = 0.50
+	local_governing_cost = -0.25
+	local_fort_maintenance_modifier = -0.25
+	local_garrison_size = 0.6
+	local_garrison_damage = 0.5
+	local_tax_modifier = 0.50
+	allowed_num_of_buildings = 1
+}
+
+lha_gates_of_the_himalayas_mod = {
+	local_defensiveness = 0.25
+	local_fort_maintenance_modifier = -0.25
+	local_garrison_size = 0.25
+	local_hostile_attrition = 1
+}

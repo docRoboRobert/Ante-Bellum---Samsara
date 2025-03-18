@@ -166,7 +166,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2587;1001;sea;1661;1511;1656;1510;1660;Odawa-Soto
 2576;2578;sea;1490;-1;-1;-1;-1;Mingan-Anticosti
 249;4121;sea;1284;-1;-1;-1;-1;Ayrshire-Ulster
-5284;5276;sea;5281;4044;803;-1;-1;Ramanathapuram-Jaffna
+5284;5276;sea;5281;-1;-1;-1;-1;Ramanathapuram-Jaffna
 536;2100;sea;1340;4044;803;4054;793;Madurai-Vanni
 2803;502;sea;1522;-1;-1;-1;-1;Orinoco Delta-Trinidad
 500;499;sea;1522;-1;-1;-1;-1;St Vincent-St Lucia

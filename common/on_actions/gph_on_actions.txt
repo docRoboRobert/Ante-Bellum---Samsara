@@ -1,0 +1,59 @@
+on_monarch_death = {
+	if = {
+		limit = {
+			tag = GPH
+			has_country_flag = dalai_lama_mechanics
+			NOT = {
+				has_country_flag = gph_monastic_council_in_charge
+			}
+		}
+		set_country_flag = gph_monastic_council_in_charge
+		add_stability = -1
+		#Will be 3-3-3 if GPH reform is enabled
+		define_ruler = {
+			regency = yes
+			name = "The Monastic Council"
+			dip = 1
+			adm = 1
+			mil = 1
+			max_age = 20
+		}
+		add_ruler_personality = immortal_personality
+		country_event = {
+			id = ab_india_dalai_lama_events.1
+		}
+	}
+}
+
+on_new_monarch = {
+	if = {
+		limit = {
+			tag = GPH
+			has_country_flag = dalai_lama_mechanics
+			has_country_flag = waiting_for_dalai_lama_to_come_of_age
+		}
+		clr_country_flag = waiting_for_dalai_lama_to_come_of_age
+		clr_country_flag = gph_monastic_council_in_charge
+	}
+	else_if = {
+		limit = {
+			tag = GPH
+			has_country_flag = dalai_lama_mechanics
+			OR = {
+				has_country_flag = searching_for_dalai_lama
+				has_country_flag = searching_for_dalai_lama_fast
+				has_country_flag = searching_for_dalai_lama_fastest
+			}
+			has_regency = no
+		}
+		define_ruler = {
+			regency = yes
+			name = "The Monastic Council"
+			dip = 1
+			adm = 1
+			mil = 1
+			max_age = 20
+		}
+		add_ruler_personality = immortal_personality
+	}
+}

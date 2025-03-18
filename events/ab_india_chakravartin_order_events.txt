@@ -1,0 +1,71 @@
+namespace = ab_india_chakravartin_order_events
+country_event = {
+	id = ab_india_chakravartin_order_events.1
+	title = ab_india_chakravartin_order_events.1.t
+	desc = ab_india_chakravartin_order_events.1.d
+	picture = MERITOCRACY_eventPicture
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = waiting_for_chakravartin_overlord_to_select
+	}
+	option = {
+		name = ab_india_chakravartin_order_events.1.a
+		clr_country_flag = waiting_for_chakravartin_overlord_to_select
+		event_target:leaderless_chakravartin_subject = {
+			define_ruler = {
+				culture = event_target:leaderless_chakravartin_subject
+				religion = ROOT
+				change_adm = 1
+			}
+			custom_tooltip = ab_india_chakravartin_order_events.1.a_tooltip
+			hidden_effect = {
+				add_ruler_personality = zealot_personality
+			}
+			clr_country_flag = subject_picking_new_ruler
+			add_ruler_modifier = {
+				name = chakravartin_order_pious_leader
+			}
+		}
+		clear_global_event_target = leaderless_chakravartin_subject
+	}
+	option = {
+		name = ab_india_chakravartin_order_events.1.b
+		clr_country_flag = waiting_for_chakravartin_overlord_to_select
+		event_target:leaderless_chakravartin_subject = {
+			define_ruler = {
+				culture = event_target:leaderless_chakravartin_subject
+				religion = ROOT
+				change_dip = 1
+			}
+			custom_tooltip = ab_india_chakravartin_order_events.1.b_tooltip
+			hidden_effect = {
+				add_ruler_personality = expansionist_personality
+			}
+			clr_country_flag = subject_picking_new_ruler
+			add_ruler_modifier = {
+				name = chakravartin_order_expansionist_leader
+			}
+		}
+		clear_global_event_target = leaderless_chakravartin_subject
+	}
+	option = {
+		name = ab_india_chakravartin_order_events.1.c
+		clr_country_flag = waiting_for_chakravartin_overlord_to_select
+		event_target:leaderless_chakravartin_subject = {
+			define_ruler = {
+				culture = event_target:leaderless_chakravartin_subject
+				religion = ROOT
+				change_mil = 1
+			}
+			custom_tooltip = ab_india_chakravartin_order_events.1.c_tooltip
+			hidden_effect = {
+				add_ruler_personality = strict_personality
+			}
+			add_ruler_modifier = {
+				name = chakravartin_order_military_genius
+			}
+			clr_country_flag = subject_picking_new_ruler
+		}
+		clear_global_event_target = leaderless_chakravartin_subject
+	}
+}

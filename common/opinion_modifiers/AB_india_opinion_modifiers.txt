@@ -31,3 +31,28 @@ abi_accepted_malankara_missionaries = {
 	opinion = 50
 	yearly_decay = 2.5
 }
+
+lha_united_against_the_nepalese = {
+	opinion = 45
+	yearly_decay = 3
+}
+
+lha_converted_religious_monuments = {
+	opinion = -50
+	yearly_decay = 1
+}
+
+lha_revoked_chakravartin_order = {
+	opinion = -100
+	yearly_decay = 1
+}
+
+lha_funded_pilgrimage = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+lha_accepted_pilgrimage = {
+	opinion = 50
+	yearly_decay = 2
+}

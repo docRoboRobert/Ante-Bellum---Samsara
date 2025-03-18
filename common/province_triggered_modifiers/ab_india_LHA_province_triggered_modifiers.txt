@@ -1,0 +1,17 @@
+lha_unorthodox_population_of_lhasa = {
+	potential = {
+		owner = {
+			religion = vajrayana
+		}
+		OR = {
+			owned_by = LHA
+			owned_by = GPH
+		}
+	}
+	trigger = {
+		province_is_buddhist_or_accepts_buddhism = no
+	}
+	church_loyalty_modifier = -0.1	
+	diplomatic_reputation = -2
+	devotion = -1
+}

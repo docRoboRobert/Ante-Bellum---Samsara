@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ab_india_dalai_lama_events.1"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/dalai_lama/dalai_lama_events_1.dds"
+		alwaystransparent = yes
+	}
+}

@@ -1,0 +1,41 @@
+lha_unified_tibet_pp = {
+	min = 0
+	power = 25
+	yearly_decay = 1
+}
+
+lha_reclaimed_tibetan_china_pp = {
+	min = 0
+	power = 10
+	yearly_decay = 1
+}
+
+lha_bane_of_the_khan_pp = {
+	max = 25
+	power = 1
+	yearly_decay = 0.5
+}
+
+lha_the_charkravartis_triumph_pp = {
+	min = 25
+	power = 1
+	yearly_decay = 0.001
+}
+
+lha_victory_in_the_south_pp = {
+	min = 10
+	power = 1
+	yearly_decay = 1
+}
+
+lha_crippled_the_emperor_pp = {
+	min = 15
+	power = 1
+	yearly_decay = 1
+}
+
+lha_dragon_slayed_pp = {
+	min = 25
+	power = 1
+	yearly_decay = 0.001
+}

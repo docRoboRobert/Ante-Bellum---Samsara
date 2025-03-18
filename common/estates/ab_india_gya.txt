@@ -1,0 +1,55 @@
+estate_gya = {
+	icon = 20
+	color = {
+		214
+		229
+		140
+	}
+	# If true, country will get estate
+	trigger = {
+		OR = {
+			has_country_flag = unlocked_gya_estate
+			any_owned_province = {
+				culture = gya
+			}
+		}
+	}
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		advisor_cost = -0.1
+		governing_capacity_modifier = 0.05
+	}
+	country_modifier_neutral = {
+		advisor_cost = -0.05
+		governing_capacity_modifier = 0.025
+	}
+	country_modifier_angry = {
+		global_unrest = 2
+		advisor_cost = 0.2
+		governing_capacity_modifier = -0.15
+	}
+	land_ownership_modifier = {
+		gya_loyalty_modifier = 0.2
+	}
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 2
+			culture = gya
+		}
+	}
+	# Influence modifiers
+	base_influence = 10
+	privileges = {
+		estate_gya_land_rights
+		estate_gya_social_mobility
+		estate_gya_civil_administration
+		estate_gya_autonymous_guild_cities
+		estate_gya_monastic_administrators
+		estate_gya_harmonized_grain_routes
+		estate_gya_levy_of_the_middle_kingdom
+	}
+	agendas = {
+	}
+	influence_from_dev_modifier = 1	#Determines percent influence from development
+}

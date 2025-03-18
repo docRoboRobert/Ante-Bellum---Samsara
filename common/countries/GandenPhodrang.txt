@@ -1,0 +1,157 @@
+#Country Name: See the Name of this File.
+
+graphical_culture = asiangfx
+
+color = { 41 22 111 }
+
+revolutionary_colors = {15 0 8}
+
+historical_idea_groups = {
+	theocracy_gov_ideas
+	infrastructure_ideas
+	diplomatic_ideas
+	defensive_ideas
+	religious_ideas
+	trade_ideas
+	quality_ideas
+	administrative_ideas
+}
+
+historical_units = {
+	chinese_longspear
+	eastern_bow
+	chinese_footsoldier
+	chinese_steppe
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	manchu_banner
+	han_banner
+	asian_musketeer
+	chinese_dragoon
+	reformed_asian_musketeer
+	reformed_asian_cavalry
+	reformed_manchu_rifle
+}
+
+monarch_names = {
+	"Ngawang Lobsang Gyatso #0" = 20
+	"Sonam Gyatso #0" = 20
+	"Kelsang Gyatso #0" = 20
+	"Trinley Gyatso #0" = 20
+	"Phagpa Lodro Gyaltsen #0" = 20
+	"Jamyang Wangchuk #0" = 20
+	"Ngawang Tenzin #0" = 20
+	"Lobsang Trinley #0" = 20
+	"Tsongkhapa Wangpo #0" = 20
+	"Shakya Rinchen #0" = 20
+	"Shakya Gyaltsen #0" = 20
+	"Tri Namgyal Dragpa #0" = 20
+	"Tri Tenzing Wangpo #0" = 20
+	"Tri Dragpa Wangchuk #0" = 20
+	"Tri Nyima Wangchuk #0" = 20
+	"Tri Ralpachen #0" = 20
+	"Tri Yeshe Wangchuk #0" = 20
+	"Namkha Wangpo Phuntsog #0" = 20
+	"Namri Sanggye De #0" = 20
+	"Ngagi Wangchuk #0" = 20
+	"Namkha Wangchuk #0" = 20
+	"Jigten Wangchuk Pekar De #0" = 20
+	"Drolma Wangmo #0" = -1
+	"Pema Choden #0" = -1
+	"Jangchub Deki #0" = -1
+	"Tsering Lhamo #0" = -1
+}
+
+leader_names = {
+	Gampo
+	Srong
+	Sregs
+	Thekchen
+	Sonam
+	Tashi
+	Tsewang
+	Wangdue
+	Wangdak
+	Phuntsok
+	Jamyang
+	Ngawang
+	Trinley
+	Pema
+	Yeshe
+	Lobsang
+	Dorje
+	Rinchen
+	Drakpa
+	Tenzin
+	Gyaltsen
+	Kunga
+}
+
+ship_names = {
+    Barkam
+    Dartsendo
+    Gyantse
+    Gartse
+    Lhasa
+    Lhotse
+    Makalu
+    Nagqu
+    Nyingchi
+    Nedong
+    Pelbar
+    Qamdo
+    Shigatse
+    Sakya
+    Tinggri
+    Tashi Gyatso    
+    Ganden Drakkar
+    Dorje Phurba 
+    Tsenpo's Might
+    Chomolungma
+    Kailash Avenger
+    Potala’s Wrath
+    Gyalpo's Fury
+    Mahakala 
+    Samye Guardian
+    Snow Lion 
+    Mandala Storm
+    Druk Thunder
+    Golden Dharma
+    Bodhisattva’s Grace
+    Sera Avenger
+    Gyeltsen’s Resolve
+}
+
+army_names = {
+    "Dmag of the Snowlands" 
+    "Dmag of the Lotus Throne" 
+    "Dmag of the White Conch" 
+    "Druk Dmag"  
+    "Dmag of the Red Hat"
+    "Dmag of the Yellow Hat"
+    "Gyalpo Dmag"   
+    "Dmag of the Snow Lion"   
+    "Dmag of the Vajra"    
+    "Dmag of the Potala"
+    "Kakyong of the Three Jewels"
+    "Kakyong of the Mandala"
+    "Magchen of the Holy Land"
+    "Dmag of the Sacred Yak"   
+    "Kakyong of the Dharma Wheel"
+    "Dmag of the $PROVINCE$"
+}
+
+fleet_names = {
+    "Drutsok of the Snowlands"  
+    "Drutsok of the Dharma"    
+    "Drutsok of the Potala"     
+    "Dru Vajra"                
+    "Dru Mandala"        
+    "Drutsok of the White Yak"
+    "Drutsok of the Thunder Dragon"
+    "Drumig of the Conquering Dharma"
+    "Drutsok of the Sacred River"
+    "Drutsok of the Dalai Lama"
+    "Drutsok of the $PROVINCE$"
+}

@@ -1,0 +1,125 @@
+establish_japanese_monastic_order_act = {
+	category = 4
+	allow = {
+		OR = {
+			has_reform = gph_realm_of_the_bodhisattva
+			has_reform = gph_eternal_throne_of_the_chakravartin
+		}
+		has_not_enacted_parliament_action = {
+			parliament_action = establish_japanese_monastic_order_act
+		}
+		has_issue_unlocked = {
+			issue = establish_japanese_monastic_order_act
+		}
+		mission_completed = lha_end_the_toyouji_rule
+		calc_true_if = {
+			all_owned_province = {
+				region = japan_region
+			}
+			amount = 50
+		}
+		NOT = {
+			exists = ORS
+		}
+	}
+	effect = {
+		set_parliament_action_flag = {
+			parliament_action = establish_japanese_monastic_order_act
+		}
+		custom_tooltip = establish_japanese_monastic_order_act_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					region = japan_region
+				}
+				add_core = ORS
+				remove_core = ROOT
+			}
+			release = ORS
+			create_subject = {
+				subject_type = chakravartin_order
+				subject = ORS
+			}
+			ORS = {
+				add_government_reform = chakravartin_order_reform
+			}
+			ORS = {
+				kill_ruler = yes
+			}
+		}
+	}
+	modifier = {
+		liberty_desire_from_subject_development = -0.1
+		diplomatic_reputation = 1
+	}
+	chance = {
+		factor = 0
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+settlement_of_siberia_act = {
+	category = 2
+	allow = {
+		mission_completed = lha_the_northern_frontier
+		any_province = {
+			is_empty = yes
+			OR = {
+				region = east_siberia_region
+				region = west_siberia_region
+			}
+			calc_true_if = {
+				all_neighbor_province = {
+					NOT = {
+						is_sea = yes
+					}
+					NOT = {
+						is_wasteland = yes
+					}
+					NOT = {
+						is_empty = yes
+					}
+					NOT = {
+						is_colony = yes
+					}
+					owned_by = ROOT
+				}
+				amount = 1
+			}
+		}
+	}
+	effect = {
+		issue_effect_scaling_with_estate_influence = {
+			estate = estate_church
+			effect1 = "lha_settlement_of_siberia_parliament_effect ={
+		iterations = 4
+	}"
+			effect2 = "lha_settlement_of_siberia_parliament_effect ={
+		iterations = 5
+	}"
+			effect3 = "lha_settlement_of_siberia_parliament_effect ={
+		iterations = 6
+	}"
+			effect4 = "lha_settlement_of_siberia_parliament_effect ={
+		iterations = 7
+	}"
+			effect5 = "lha_settlement_of_siberia_parliament_effect ={
+		iterations = 8
+	}"
+			fallback_effect = "lha_settlement_of_siberia_parliament_effect ={
+		iterations = 5
+	}"
+		}
+	}
+	modifier = {
+		global_colonial_growth = 10
+	}
+	chance = {
+		factor = 9
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}

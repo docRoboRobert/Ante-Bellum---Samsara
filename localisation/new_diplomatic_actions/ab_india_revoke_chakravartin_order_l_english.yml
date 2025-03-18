@@ -1,0 +1,9 @@
+﻿l_english:
+ revoke_chakravartin_order:0 "Revoke Chakravartin Order"
+ revoke_chakravartin_order_title:0 "Revoke Chakravartin Order"
+ revoke_chakravartin_order_desc:0 "Our subject will feel a deep sense of betrayal having their ranks, titles and autonomy stripped from them. This will have the following effect:\nOur subject will gain §R+100.0%§! Liberty Desire.\nOur subject will gain §R-100§! opinion of us.\nWe will lose §R100§! trust with our subject.\nOur subject will lose §R3§! stability.\nOur subject will lose §R50§! Devotion.\nOur subject will §Rlose the government reform§! §YChakravartin Order§! and become a §YMonastic Order§! instead.\n\nHowever, we will be able to §Gannex§! them.\n\n§RYou will not be able to make them a §YChakravartin Order§! again.§!"
+ revoke_chakravartin_order_tooltip:0 "Revoke their status as a §YChakravartin Order§! and turn them into a §YVassal§! instead.\nThis will §Rgreatly§! upset them."
+ support_chakravartin_order:0 "Support Chakravartin Order"
+ support_chakravartin_order_title:0 "Support Chakravartin Order"
+ support_chakravartin_order_desc:0 "We will join all the §YWheel-Turning Wars§! and defensive wars of our subject. Our subject will lose §G5§! Liberty Desire."
+ support_chakravartin_order_tooltip:0 "We will join all §YWheel-Turning Wars§! and defensive wars of our subject."

@@ -1,0 +1,562 @@
+is_islamic = {
+	OR = {
+		religion = ibadi
+		religion = sunni
+		religion = shiite
+	}
+}
+
+is_dharmic = {
+	OR = {
+		religion = hinduism
+		religion = sikhism
+		religion = zunist
+	}
+}
+
+is_buddhist = {
+	custom_trigger_tooltip = {
+		tooltip = is_buddhist
+		OR = {
+			religion = buddhism
+			religion = mahayana
+			religion = vajrayana
+			religion = maitreya
+		}
+	}
+}
+
+# All the provinces except the uncolonized ones at the start of the game
+owns_inhabited_provinces_of_sumatra = {
+	custom_trigger_tooltip = {
+		tooltip = owns_inhabited_provinces_of_sumatra_tooltip
+		south_sumatra_area = {
+			type = all
+			OR = {
+				country_or_non_sovereign_subject_holds = ROOT
+				is_empty = yes
+			}
+		}
+		jambi_area = {
+			country_or_non_sovereign_subject_holds = ROOT
+			type = all
+		}
+		central_sumatra_area = {
+			country_or_non_sovereign_subject_holds = ROOT
+			type = all
+		}
+		north_sumatra_area = {
+			country_or_non_sovereign_subject_holds = ROOT
+			type = all
+		}
+		batak_area = {
+			type = all
+			OR = {
+				country_or_non_sovereign_subject_holds = ROOT
+				is_empty = yes
+			}
+		}
+		minangkabau_area = {
+			type = all
+			OR = {
+				country_or_non_sovereign_subject_holds = ROOT
+				is_empty = yes
+			}
+		}
+	}
+}
+
+# All the provinces except the uncolonized ones at the start of the game
+owns_inhabited_provinces_of_borneo = {
+	custom_trigger_tooltip = {
+		tooltip = owns_inhabited_provinces_of_borneo_tooltip
+		kalimantan_area = {
+			type = all
+			OR = {
+				country_or_non_sovereign_subject_holds = ROOT
+				is_empty = yes
+			}
+		}
+		brunei_area = {
+			type = all
+		}
+		sabah_area = {
+			type = all
+		}
+		kutai_area = {
+			type = all
+		}
+		banjar_area = {
+			type = all
+			OR = {
+				country_or_non_sovereign_subject_holds = ROOT
+				is_empty = yes
+			}
+		}
+	}
+}
+
+owns_inhabited_provinces_of_moluccan_trade_node = {
+	custom_trigger_tooltip = {
+		tooltip = owns_inhabited_provinces_of_moluccan_trade_node_tooltip
+		banten_area = {
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		west_java_area = {
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		central_java_area = {
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		surabaya_area = {
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		east_java_area = {
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		lesser_sunda_islands_area = {
+			type = all
+			OR = {
+				country_or_non_sovereign_subject_holds = ROOT
+				is_empty = yes
+			}
+		}
+		timor_area = {
+			type = all
+			OR = {
+				country_or_non_sovereign_subject_holds = ROOT
+				is_empty = yes
+			}
+		}
+		makassar_area = {
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		sulawesi_area = {
+			type = all
+			OR = {
+				country_or_non_sovereign_subject_holds = ROOT
+				is_empty = yes
+			}
+		}
+		south_sulawesi_area = {
+			type = all
+			OR = {
+				country_or_non_sovereign_subject_holds = ROOT
+				is_empty = yes
+			}
+		}
+		molluca_area = {
+			type = all
+			OR = {
+				country_or_non_sovereign_subject_holds = ROOT
+				is_empty = yes
+			}
+		}
+		spice_islands_area = {
+			type = all
+			OR = {
+				country_or_non_sovereign_subject_holds = ROOT
+				is_empty = yes
+			}
+		}
+		vogelkop_area = {
+			type = all
+			OR = {
+				country_or_non_sovereign_subject_holds = ROOT
+				is_empty = yes
+			}
+		}
+		papua_area = {
+			type = all
+			OR = {
+				country_or_non_sovereign_subject_holds = ROOT
+				is_empty = yes
+			}
+		}
+	}
+}
+
+has_exempt_from_seize_land_for_estate_hill_clans = {
+	OR = {
+		has_estate_privilege = estate_hill_clans_train_gurkha_officers
+	}
+}
+
+has_exempt_from_seize_land_for_estate_gya = {
+	OR = {
+		has_estate_privilege = estate_gya_civil_administration
+	}
+}
+
+still_buddies_with_kht = {
+	has_country_flag = lha_kht_friend
+	AND = {
+		exists = KHT
+		OR = {
+			alliance_with = KHT
+			overlord_of = KHT
+		}
+	}
+}
+
+still_buddies_with_drb = {
+	has_country_flag = lha_drb_friend
+	AND = {
+		exists = DRB
+		OR = {
+			alliance_with = DRB
+			overlord_of = DRB
+		}
+	}
+}
+
+still_buddies_with_trg = {
+	has_country_flag = lha_trg_friend
+	AND = {
+		exists = TRG
+		OR = {
+			alliance_with = TRG
+			overlord_of = TRG
+		}
+	}
+}
+
+still_buddies_with_oir = {
+	has_country_flag = lha_oir_friend
+	AND = {
+		exists = OIR
+		OR = {
+			alliance_with = OIR
+			overlord_of = OIR
+		}
+	}
+}
+
+fund_pilgrimage_cost_trigger = {
+	if = {
+		limit = {
+			capital_distance = {
+				who = $target$
+				distance = 0
+			}
+			NOT = {
+				capital_distance = {
+					who = $target$
+					distance = 101
+				}
+			}
+		}
+		treasury = 200
+	}
+	else_if = {
+		limit = {
+			capital_distance = {
+				who = $target$
+				distance = 101
+			}
+			NOT = {
+				capital_distance = {
+					who = $target$
+					distance = 201
+				}
+			}
+		}
+		treasury = 400
+	}
+	else_if = {
+		limit = {
+			capital_distance = {
+				who = $target$
+				distance = 201
+			}
+			NOT = {
+				capital_distance = {
+					who = $target$
+					distance = 301
+				}
+			}
+		}
+		treasury = 600
+	}
+	else_if = {
+		limit = {
+			capital_distance = {
+				who = $target$
+				distance = 301
+			}
+			NOT = {
+				capital_distance = {
+					who = $target$
+					distance = 401
+				}
+			}
+		}
+		treasury = 800
+	}
+	else_if = {
+		limit = {
+			capital_distance = {
+				who = $target$
+				distance = 401
+			}
+			NOT = {
+				capital_distance = {
+					who = $target$
+					distance = 501
+				}
+			}
+		}
+		treasury = 1000
+	}
+	else_if = {
+		limit = {
+			capital_distance = {
+				who = $target$
+				distance = 501
+			}
+			NOT = {
+				capital_distance = {
+					who = $target$
+					distance = 601
+				}
+			}
+		}
+		treasury = 1200
+	}
+	else_if = {
+		limit = {
+			capital_distance = {
+				who = $target$
+				distance = 601
+			}
+			NOT = {
+				capital_distance = {
+					who = $target$
+					distance = 701
+				}
+			}
+		}
+		treasury = 1400
+	}
+	else_if = {
+		limit = {
+			capital_distance = {
+				who = $target$
+				distance = 701
+			}
+			NOT = {
+				capital_distance = {
+					who = $target$
+					distance = 801
+				}
+			}
+		}
+		treasury = 1600
+	}
+	else_if = {
+		limit = {
+			capital_distance = {
+				who = $target$
+				distance = 801
+			}
+			NOT = {
+				capital_distance = {
+					who = $target$
+					distance = 901
+				}
+			}
+		}
+		treasury = 1800
+	}
+	else_if = {
+		limit = {
+			capital_distance = {
+				who = $target$
+				distance = 901
+			}
+			NOT = {
+				capital_distance = {
+					who = $target$
+					distance = 1001
+				}
+			}
+		}
+		treasury = 2000
+	}
+	else_if = {
+		limit = {
+			capital_distance = {
+				who = $target$
+				distance = 1001
+			}
+			NOT = {
+				capital_distance = {
+					who = $target$
+					distance = 1101
+				}
+			}
+		}
+		treasury = 2200
+	}
+	else_if = {
+		limit = {
+			capital_distance = {
+				who = $target$
+				distance = 1101
+			}
+			NOT = {
+				capital_distance = {
+					who = $target$
+					distance = 1201
+				}
+			}
+		}
+		treasury = 2400
+	}
+	else_if = {
+		limit = {
+			capital_distance = {
+				who = $target$
+				distance = 1201
+			}
+			NOT = {
+				capital_distance = {
+					who = $target$
+					distance = 1301
+				}
+			}
+		}
+		treasury = 2600
+	}
+	else_if = {
+		limit = {
+			capital_distance = {
+				who = $target$
+				distance = 1301
+			}
+			NOT = {
+				capital_distance = {
+					who = $target$
+					distance = 1401
+				}
+			}
+		}
+		treasury = 2800
+	}
+	else_if = {
+		limit = {
+			capital_distance = {
+				who = $target$
+				distance = 1401
+			}
+			NOT = {
+				capital_distance = {
+					who = $target$
+					distance = 1501
+				}
+			}
+		}
+		treasury = 3000
+	}
+	else_if = {
+		limit = {
+			capital_distance = {
+				who = $target$
+				distance = 1501
+			}
+			NOT = {
+				capital_distance = {
+					who = $target$
+					distance = 1601
+				}
+			}
+		}
+		treasury = 3200
+	}
+	else_if = {
+		limit = {
+			capital_distance = {
+				who = $target$
+				distance = 1600
+			}
+			NOT = {
+				capital_distance = {
+					who = $target$
+					distance = 1701
+				}
+			}
+		}
+		treasury = 3400
+	}
+	else_if = {
+		limit = {
+			capital_distance = {
+				who = $target$
+				distance = 1701
+			}
+			NOT = {
+				capital_distance = {
+					who = $target$
+					distance = 1801
+				}
+			}
+		}
+		treasury = 3600
+	}
+	else_if = {
+		limit = {
+			capital_distance = {
+				who = $target$
+				distance = 1801
+			}
+			NOT = {
+				capital_distance = {
+					who = $target$
+					distance = 1901
+				}
+			}
+		}
+		treasury = 3800
+	}
+	else_if = {
+		limit = {
+			capital_distance = {
+				who = $target$
+				distance = 1901
+			}
+			NOT = {
+				capital_distance = {
+					who = $target$
+					distance = 2001
+				}
+			}
+		}
+		treasury = 4000
+	}
+	else = {
+		custom_trigger_tooltip = {
+			tooltip = too_far_for_pilgrimage
+			always = no
+		}
+	}
+}
+
+empire_of_china_dismantled= {
+	custom_trigger_tooltip = {
+		tooltip = empire_of_china_dismantled_tooltip
+		OR = {
+			has_global_flag = empire_of_china_dismantled
+			NOT = {
+				any_country = {
+					is_emperor_of_china = yes
+				}
+			}
+		}
+	}
+}

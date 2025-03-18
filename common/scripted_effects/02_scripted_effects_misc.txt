@@ -66,3 +66,243 @@ clear_jain_scholar_modifiers_effect = {
 	remove_country_modifier = svetambara_scholar_modifier
 	remove_country_modifier = yapaniya_scholar_modifier
 }
+
+upgrade_center_of_trade = {
+	if = {
+		limit = {
+			NOT = {
+				$province$ = {
+					province_has_center_of_trade_of_level = 3
+				}
+			}
+		}
+		$province$ = {
+			add_center_of_trade_level = 1
+		}
+	}
+	else = {
+		custom_tooltip = ME_add_1_years_of_trade_income
+		hidden_effect = {
+			add_years_of_trade_income = {
+				years = 1
+			}
+		}
+	}
+}
+
+unlock_parliament_issue = {
+	set_country_flag = unlocked_issue_$issue$
+}
+
+variable_use_in_effect_effect = { #effect #variable
+	hidden_effect = { set_variable = { which = temp which = $variable$ } }
+	if = {
+		limit = {
+			check_variable = { which = temp value = 0 }
+		}
+		var_effect_h = { effect = $effect$ sign = + num = 83886.08 }
+		var_effect_h = { effect = $effect$ sign = + num = 41943.04 }
+		var_effect_h = { effect = $effect$ sign = + num = 20971.52 }
+		var_effect_h = { effect = $effect$ sign = + num = 10485.76 }
+		var_effect_h = { effect = $effect$ sign = + num = 5242.88 }
+		var_effect_h = { effect = $effect$ sign = + num = 2621.44 }
+		var_effect_h = { effect = $effect$ sign = + num = 1310.72 }
+		var_effect_h = { effect = $effect$ sign = + num = 655.36 }
+		var_effect_h = { effect = $effect$ sign = + num = 327.68 }
+		var_effect_h = { effect = $effect$ sign = + num = 163.84 }
+		var_effect_h = { effect = $effect$ sign = + num = 81.92 }
+		var_effect_h = { effect = $effect$ sign = + num = 40.96 }
+		var_effect_h = { effect = $effect$ sign = + num = 20.48 }
+		var_effect_h = { effect = $effect$ sign = + num = 10.24 }
+		var_effect_h = { effect = $effect$ sign = + num = 5.12 }
+		var_effect_h = { effect = $effect$ sign = + num = 2.56 }
+		var_effect_h = { effect = $effect$ sign = + num = 1.28 }
+		var_effect_h = { effect = $effect$ sign = + num = 0.64 }
+		var_effect_h = { effect = $effect$ sign = + num = 0.32 }
+		var_effect_h = { effect = $effect$ sign = + num = 0.16 }
+		var_effect_h = { effect = $effect$ sign = + num = 0.08 }
+		var_effect_h = { effect = $effect$ sign = + num = 0.04 }
+		var_effect_h = { effect = $effect$ sign = + num = 0.02 }
+		var_effect_h = { effect = $effect$ sign = + num = 0.01 }
+	}
+	else = {
+		hidden_effect = { multiply_variable = { which = temp value = -1 } }
+		var_effect_h = { effect = $effect$ sign = - num = 83886.08 }
+		var_effect_h = { effect = $effect$ sign = - num = 41943.04 }
+		var_effect_h = { effect = $effect$ sign = - num = 20971.52 }
+		var_effect_h = { effect = $effect$ sign = - num = 10485.76 }
+		var_effect_h = { effect = $effect$ sign = - num = 5242.88 }
+		var_effect_h = { effect = $effect$ sign = - num = 2621.44 }
+		var_effect_h = { effect = $effect$ sign = - num = 1310.72 }
+		var_effect_h = { effect = $effect$ sign = - num = 655.36 }
+		var_effect_h = { effect = $effect$ sign = - num = 327.68 }
+		var_effect_h = { effect = $effect$ sign = - num = 163.84 }
+		var_effect_h = { effect = $effect$ sign = - num = 81.92 }
+		var_effect_h = { effect = $effect$ sign = - num = 40.96 }
+		var_effect_h = { effect = $effect$ sign = - num = 20.48 }
+		var_effect_h = { effect = $effect$ sign = - num = 10.24 }
+		var_effect_h = { effect = $effect$ sign = - num = 5.12 }
+		var_effect_h = { effect = $effect$ sign = - num = 2.56 }
+		var_effect_h = { effect = $effect$ sign = - num = 1.28 }
+		var_effect_h = { effect = $effect$ sign = - num = 0.64 }
+		var_effect_h = { effect = $effect$ sign = - num = 0.32 }
+		var_effect_h = { effect = $effect$ sign = - num = 0.16 }
+		var_effect_h = { effect = $effect$ sign = - num = 0.08 }
+		var_effect_h = { effect = $effect$ sign = - num = 0.04 }
+		var_effect_h = { effect = $effect$ sign = - num = 0.02 }
+		var_effect_h = { effect = $effect$ sign = - num = 0.01 }
+	}
+}
+var_effect_h = {
+	if = {
+		limit = {
+			check_variable = { which = temp value = $num$ }
+		}
+		hidden_effect = { subtract_variable = { which = temp value = $num$ } }
+		$effect$ = $sign$$num$
+	}
+}
+
+###Usage name: modifier to add or renew
+###Usage duration: how long in days you want it to last
+add_or_renew_country_modifier ={
+	if = {
+		limit = {
+			has_country_modifier = $name$
+		}
+		remove_country_modifier = $name$
+	}
+	add_country_modifier = {
+		name = $name$
+		duration = $duration$
+	}
+}
+###Usage name: modifier to add or renew
+###Usage duration: how long in days you want it to last
+add_or_renew_province_modifier ={
+	if = {
+		limit = {
+			has_province_modifier = $name$
+		}
+		remove_province_modifier = $name$
+	}
+	add_province_modifier = {
+		name = $name$
+		duration = $duration$
+	}
+}
+
+safe_remove_country_modifier ={
+	if = {
+		limit = {
+			has_country_modifier = $mod$
+		}
+		remove_country_modifier = $mod$
+	}
+}
+
+safe_remove_province_modifier ={
+	if = {
+		limit = {
+			has_province_modifier = $mod$
+		}
+		remove_province_modifier = $mod$
+	}
+}
+
+clear_all_fort_building_flags_for_province = {
+	clr_province_flag = prev_fort_tier_1
+	clr_province_flag = prev_fort_tier_2
+	clr_province_flag = prev_fort_tier_3
+	clr_province_flag = prev_fort_tier_4
+	clr_province_flag = prev_fort_tier_5
+}
+
+set_prev_fort_building_tier_for_provence = {
+	clear_all_fort_building_flags_for_province = yes
+	if = {
+		limit = {
+			has_building = fort_15th
+		}
+		set_province_flag = prev_fort_tier_1
+	}
+	else_if = {
+		limit = {
+			has_building = fort_16th
+		}
+		set_province_flag = prev_fort_tier_2
+	}
+	else_if = {
+		limit = {
+			has_building = fort_17th
+		}
+		set_province_flag = prev_fort_tier_3
+	}
+	else_if = {
+		limit = {
+			has_building = fort_18th
+		}
+		set_province_flag = prev_fort_tier_4
+	}
+	else_if = {
+		limit = {
+			has_building = fort_19th
+		}
+		set_province_flag = prev_fort_tier_5
+	}
+}
+
+fort_build_rebate_effect = {
+	set_variable = {
+		which = tier
+		value = $tier_to_build$
+	}
+	while = {
+		limit = {
+			check_variable = {
+				which = tier
+				value = 1
+			}
+		}
+		owner = {
+			add_treasury = 20
+		}
+		subtract_variable = {
+			which = tier
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			has_province_flag = prev_fort_tier_1
+		}
+		owner = {
+			add_treasury = -20
+		}
+	}
+	else_if = {
+		limit = {
+			has_province_flag = prev_fort_tier_2
+		}
+		owner = {
+			add_treasury = -40
+		}
+	}
+	else_if = {
+		limit = {
+			has_province_flag = prev_fort_tier_3
+		}
+		owner = {
+			add_treasury = -60
+		}
+	}
+	else_if = {
+		limit = {
+			has_province_flag = prev_fort_tier_4
+		}
+		owner = {
+			add_treasury = -80
+		}
+	}
+	set_prev_fort_building_tier_for_provence = yes
+}

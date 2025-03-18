@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "gfx_hill_clans_events.1"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/hill_clans/hill_clans_events_1.dds"
+		alwaystransparent = yes
+	}
+}

@@ -9114,6 +9114,107 @@ tibetan_group = {
 			Heying Chunmei Tianhui Kon Mao
 		}
 	}
+	gya = {
+		primary = CSH
+		dynasty_names = {
+			"Fang" "Hang" "Hue" "Khang" "Kong" "Soung" "Kue" "Lo" "Lor" "Li" "Moua" "Pha" "Tang" "Thao" "Chang" "Cheng" 
+			"Chu" "Vang" "Vue" "Xiong" "Yang"
+		}
+		male_names = {
+			Zhanji Zhanjun Zhanyong Zhanyin Zhanshan Zhangang Zhan'ao Zhankai Zhanyan Jianrui Jianlin Jianti Jianchun 
+			Jianze Jianjun Jianzhi Jianpei Jianji Youji Youtang Youwan Youlun Youbing Youyun Youheng You'kai Houzhao 
+			Houwei Houxi Houcong Zaiji Zairui Zaihou Yiling Yijun Yiliu Changluo Changxu Changxun Changzhi Changhao 
+			Changrun Changyin Changbo Youxiao Youxue Youmo Youjian Youyi Youshan Ciran Ciyu Cijiong Cilang Ciheng 
+			Cizhao Cihuan Cican Shangbing Shanglie Shangyi Shanghong Zhijun Zhibao Gongxi Gongjian Gongtang Gongming 
+			Jixi Jiye Jihuang Jihuan Jixuan Meigui Meiyuan Zhongxuan Zhongduo Qiyuan Qiying Qirong Youdun Zishi Linmei 
+			Cijue Ciwei Cikai Youhua Linyuan Qisheng Biao Shuang Gang Su Zhen Bo Zi Chun Bo Gui Xuntan Xunquan Ying 
+			Zhanyan Zhi Quan Chenhao Bian Hui Song Mo Yin Jing Dong Nan Shouqian Xiongying Yuntong Yunjian Wengui 
+			Wenkui Gaoxu Gaosui Houyu ZhanYong Zhanshan Yousi Jianchun Jianshu Jianzhi Yourong Houjue Zailun Zaiji 
+			Changfang Changxu Changxun Changzhi Changrun Cilang Cihuan Guan Keqin Fu Dounan Chengzu Zixiang Bingyi Guan 
+			Zongren Yuan Fu Xingui Zonglian Ji Xiang Yu Quan Zhong Ji Xizheng Jian Shao'en Jiusi Song Chun Youxue Zugan 
+			Yingfang Kekuan Mo Juren Qing Qinshun Duan Zhencheng Bao Li Xiao Xian Tang Boyuan Chunyao Xianzhang Liang 
+			Ruoshui Shouyi De Ti Hongxian Shihuai Shixi Yizan Huali Zhide Yuanxi Xixue Weizhen Han Boheng Mian Zongyi 
+			Kai Meng Hong Du Danian Tai Minzheng Mengyang Jingming Zhenqing Gong Shanfu Shen Zhengming Zuo Weiqi 
+			Shenzhong Panlong Youguang Weizhen Shisheng Qichang Hongdao Nanying Shaozong Peng Wenshi Liangxiang Wannian 
+			Zongyan Tingkui Bangzuo Ruxiu Guochang Huanchun Xianming Shengdou Zhaochen Shimei Guoxi Shangzhen Daoxing 
+			Tingbiao Yunrang Wan Jin Ding Wuchang Chengzhang Jiefu Wenyong Shiming Chonghua Sanfeng Wanyan Dayong 
+			Zhongwen Kexue Yuanjie Rucai Kexi Zhongming Jinxing Yan Yingxiang Zongmin
+		}
+		female_names = {
+			Heying Chunmei Tianhui Kon Mao Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen 
+			Xiao'e Xiaoying Xiaoyuan Xiaoji Xiaolou
+		}
+	}
+	koriya = {
+		primary = KOR
+		dynasty_names = { 
+			Yi Wang Kim Pak Shin Song Chae Gang Jeong Jang Yun Han Hong Yu Ki Choi Ga Gye Go Na Noh Woo Do Du Ban Ma Min Mun
+			Seo Son Sim An Yang O Jeon Cho Jin Ha Hong Heo Kwak Lim Won Kwon Hwang Bae Seok Bang Dae Gyeong Nam Sung Baek
+
+
+		}
+		male_names = {
+			Hongwi Yu Gwang Hyeol Yung Yeok Ho Hwan Yeon Hon Jong Sun Yun Geum San Gong Byeon Myeongbok Ha-eung Un Gu Seon Hyeon
+			Cho Yeong Bu Haeng Hwon Kang Ji Rip Jae-u Seong-ryong Yakyong Jongmu Se-young Hong-rip Deokgi Munsu Hee-woon Busik
+			Jiwon Gwangjo Sukju Hongdo Yong-bok Jong-un Chung-hee Yeong-sil Yun-ui Myung-shin Chae-ho Chwa-jin Honghi Byong-hi
+			Hwang Jae-sang Yu-sin Wonjong Jong-seo Jangchun Museon Sung-gyeom Seungman Sun-sin Chang-ho Dae-seung Jae-suk
+			Dae-yong Eok-gi Si-min Gam-chan Chung-heon U Tong-jeon In-seon Gwanghyeon Gyun Yul Wi Im Geon Jun Mok Il Tak
+ 
+		}
+		female_names = {
+			Ae-jung Areum Bit-na Bo-young Bora Chae-won Chae-young Cho-hee Chun-hwa Chun-ja Da-hee Da-hyun Do-hee Eun-ah 
+			Eun-bi Eun-byul Eun-chae Eun-ha Eun-hee Eun-hye Eun-ji Eun-jin Eun-ju Eun-jung Eun-kyung Eun-mi Eun-sook Eun-suh 
+			Eun-young Ga-in Ga-young Gyuri Ha-eun Hana Hye-bin Hye-in Hye-ja Hye-jin Hye-jung Hye-kyung Hye-mi Hye-rim 
+			Hye-su Hye-won Hyo-joo Hyo-rin Hyun-a Hyun-kyung Hyun-mi Hyun-sook In-hye In-sook In-sun Ja-kyung Jae-eun 
+			Jang-geum Jang-mi Jeong-ja Ji-ae Ji-eun Ji-hye Ji-yeon Ji-young Jina Jin-yi Jung-ah Jung-sook Jung-soon Kyung-ah Kyung-hee 
+			Kyung-hwa Kyung-ja Kyung-ok Kyung-sook Mi-hee Mi-ja Mi-jung Mi-kyung Mi-ran Mi-sook Mi-yeon Mi-young Min-hee 
+			Min-ji Min-jung Min-seo Mina Myung-hwa Myung-ok Myung-sook Myung-soon Na-young Nana Nari Noo-ri Sang-mi  
+			Se-bin Seo-hyeon Seo-yeon Seo-yun Seol-hee Seon-ok Seong-ja Seung-ah Shin-hye Si-yeon So-hee So-hyun So-won So-yi 
+			So-young Soo-ah Soo-hee Sook-ja Soon-hee Soon-ja Sora Su-mi Sun-hee Sun-hwa Sun-mi Sun-ok Sung-mi Sung-sook 
+			Ye-eun Ye-ji Ye-jin Ye-rin Ye-seo Ye-won Yeo-jin Yeon-hee Yi-kyung Yoo-kyung Yoo-na Yoon-hee Yoon-sook Young-ae 
+			Young-hee Young-ja Young-mi Young-sook Yu-ri Yumi
+		}
+	}
+	manju = {
+		country = { has_banners = yes }
+		province = { local_has_banners = yes }
+		primary = MCH
+		dynasty_names = {
+			"Aisin Gioro" Wanyan "Yehe Nara" "Ula Nara" "Magiya Hala" Niohuru
+			Heseri Guwalgiya Tunggiya Hata Hoifa Yeren Udige
+		}
+		male_names = {
+			"Bukuri Yongson" "Sibeoci Fiyanggu" "Dudu Mengtemu" "Huang Taiji" "Hiowan Yei" "In Jen" "Hung Li" "Yong Yan"
+			"Min Ning" Cungsan Tolo Fuman Giocangga Taksi Nurhachi Dorgon Hooge Fulin Fanca Hoogle Yinzhi Yinreng 
+			Yinti Daisan Abatai Ajige Dodo Yinxiang Yinsi Yintang Hongshi Hongzhou Yongqi Akjan Ayan Baohu Chengjun 
+			Dorgide Eje Encehen Fisin Fulu Ganyong Ganzhan Hurong Jabsan Jakdan Leli Liyi Lung Mergen Muduri Mujin Oori 
+			Radi Talman Wehe Yelu Yongyi Zhanhung Zhenghu Zhengrong Zhongcheng Zhongchun Zhongho Zhonghu Zhonghung 
+			Zongqian Zhongxian Zhongyong Zhongyu
+		}
+		female_names = {
+			Fen Jian Wen Hejing Hejia Hexiao Zhuangjing 
+		}
+	}
+	sogpo = {
+		primary = OIR
+		male_names = {
+			Agbarjin Adai Altan Arigaba Arugtai Ayurparibhadra Bodi Bek Bahamu Bars Buyan Biligtü Dayan 
+			Delbeg Ejei Elbeg Engke Güyük Gün Gulichi Irinchibal Jorightu Kublai Köke Ligdan Markörgis Möngke 
+			Manduulun Öljei Örüg Oyiradai Ögödei Qayshan Qoshila Sayn Suddhipala Tayisung Temujin Temür Toghun 
+			Tolui Toq Uskhal Yesün Ariq Batu Eljigidei Joichi Darayisung Tümen
+		}
+		female_names = {
+			Temülen Börte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Ho'elun 
+			Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene 
+		}
+		dynasty_names = {
+			"Onggirat" "Naiman" "Kereyid" "Sartaq" "Mengu-Timur" "Uriankhai" "Bujakhin" "Besud" "Noyan" 
+			"Jochid" "Chagatayid" "Borjigin" "Chupanid" "Injuid" "Toluid" "Ganbold" "Bolormaa" "Batbayar" 
+			"Bat-Erdene" "Otgonbayar" "Enkhtuyaa" "Gantulga" "Nergüi" "Lkhagvasüren" "Enkhjargal" 
+			"Ganzorig" "Narantsetseg" "Pürevsüren" "Ganbaatar" "Mönkhtsetseg" "Mönkhbat" "Mönkh-Erdene" 
+			"Jalair" "Sartuul" "Olkhunut" "Khatagin" "Iljigin" "Tsookhor" "Qarakhanid"
+		}
+	}
 }
 
 

@@ -1,0 +1,211 @@
+fund_pilgrimage_to_lhasa = {
+	category = influence
+	require_acceptance = yes
+	# Determines when the action is visible
+	is_visible = {
+		is_buddhist = yes
+		FROM = {
+			is_buddhist = yes
+		}
+		has_country_flag = pilgramage_mechanics_unlocked
+	}
+	# Determines when the action can be taken
+	is_allowed = {
+		fund_pilgrimage_cost_trigger = {
+			target = FROM
+		}
+		FROM = {
+			is_buddhist = yes
+		}
+		FROM = {
+			custom_trigger_tooltip = {
+				tooltip = went_on_recent_pilgrimage
+				NOT = {
+					has_country_modifier = lha_recent_pilgrimage
+				}
+			}
+		}
+		ROOT = {
+			is_at_war = no
+		}
+		677 = {
+			is_capital_of = ROOT
+		}
+		677 = {
+			controlled_by = ROOT
+		}
+		677 = {
+			religion = vajrayana
+		}
+		is_bankrupt = no
+	}
+	# Which effects to execute on acceptance
+	on_accept = {
+		fund_pilgrimage_pay_cost_effect = {
+			target = FROM
+		}
+		add_devotion = 5
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 5
+		}
+		add_opinion = {
+			who = FROM
+			modifier = lha_accepted_pilgrimage
+		}
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = lha_funded_pilgrimage
+			}
+		}
+		add_trust = {
+			who = FROM
+			value = 5
+			mutual = yes
+		}
+		add_or_renew_country_modifier = {
+			name = lha_funded_pilgrimage_for_someone
+			duration = 3650
+		}
+		677 = {
+			add_or_renew_province_modifier = {
+				name = lha_pilgrimage_hub
+				duration = 1825
+			}
+		}
+		add_government_power = {
+			mechanic_type = state_enlightenment_mechanic
+			power_type = enlightenment_power
+			value = 1
+		}
+		FROM = {
+			add_or_renew_country_modifier = {
+				name = lha_went_on_pilgrimage
+				duration = 7300
+			}
+			add_country_modifier = {
+				name = lha_recent_pilgrimage
+				duration = 7300
+				hidden = yes
+			}
+		}
+	}
+	# Controls the AI's acceptance of the action, if acceptable. Optional.
+	ai_acceptance = {
+		add_entry = {
+			name = fund_pilgrimage_diplo_rep_ai_acceptance
+			export_to_variable = {
+				variable_name = ai_value
+				value = modifier:diplomatic_reputation
+				who = ROOT				# Who to export the value from
+				with = FROM				# Who the ai_value is for
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 2
+			}
+		}
+		add_entry = {
+			name = fund_pilgrimage_num_rebels_ai_acceptance
+			export_to_variable = {
+				variable_name = ai_value
+				value = num_of_rebel_armies
+				who = ROOT
+				with = FROM
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -15
+			}
+		}
+		add_entry = {
+			name = fund_pilgrimage_opinion_ai_acceptance
+			export_to_variable = {
+				variable_name = ai_value
+				value = num_of_rebel_armies
+				who = ROOT
+				with = FROM
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -15
+			}
+		}
+		add_entry = {
+			name = TRUST
+			export_to_variable = {
+				variable_name = ai_value
+				value = trust
+				who = FROM
+				with = ROOT
+			}
+			subtract_variable = {
+				which = ai_value
+				value = 50
+			}
+			#1 trust = +4 ai points
+			multiply_variable = {
+				which = ai_value
+				value = 0.4
+			}
+		}
+		add_entry = {
+			name = OPINION
+			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 0.2
+			}
+		}
+		add_entry = {
+			name = DIPLO_IS_RIVAL
+			limit = {
+				FROM = {
+					ai_attitude = {
+						who = ROOT
+						attitude = attitude_rivalry
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 1
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1000
+			}
+		}
+	}
+	# Controls the AI's usage of the action
+	ai_will_do = {
+		if = {
+			limit = {
+				OR = {
+					num_of_loans = 1
+					is_rival = FROM
+					is_enemy = FROM
+					has_government_power = {
+						mechanic_type = state_enlightenment_mechanic
+						power_type = enlightenment_power
+						value = 100
+					}
+					has_opinion = {
+						who = FROM
+						value = -100
+					}
+				}
+			}
+			always = no
+		}
+		else = {
+			always = yes
+		}
+	}
+}

@@ -1,0 +1,9 @@
+﻿l_english:
+ owns_inhabited_provinces_of_sumatra_tooltip:0 "All provinces, ignoring the uncolonized ones, on the island of Sumatra are owned by or our non tributary subjects."
+ owns_inhabited_provinces_of_borneo_tooltip:0 "All provinces, ignoring the uncolonized ones, on the island of Borneo are owned by or our non tributary subjects."
+ owns_inhabited_provinces_of_moluccan_trade_node_tooltip:0 "All provinces, ignoring the uncolonized ones, in the Moluccan trade node are owned by you or your non tributary subjects."
+ is_islamic:0 "Is Islamic."
+ is_dharmic:0 "Is of a Dharmic religion."
+ is_buddhist:0 "Is Buddhist"
+ too_far_for_pilgrimage:0 "Their capital is too far away from our own."
+ empire_of_china_dismantled_tooltip:0 "The §YEmpire of China§! has been dismantled."

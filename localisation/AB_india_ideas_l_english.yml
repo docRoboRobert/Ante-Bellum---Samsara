@@ -998,3 +998,71 @@
  ECL_vengi_trade:0 "Vengi Trade"
  ECL_vengi_trade_desc:0 "Eastern Chalukyas built their power around Vengi (Andhra) region, which is being heavily developed due to that. The region is rich in arable land and thanks to the estuaries of Godavari and Krishna Rivers, it collects luxury goods from most of Deccan Region. By investing heavily in the trade posts, we can make a bank and spread our enterprise."
  
+ #Ganded Phodrang
+ GPH_ideas_0:0 "Phodrangian Ideas"
+ GPH_ideas_0_start:0 "Phodrangian Traditions"
+ GPH_ideas_0_bonus:0 "Phodrangian Ambition"
+ GPH_ideas_1:0 "§YPhodrangian Ideas§!"
+ GPH_ideas_1_start:0 "Phodrangian Traditions"
+ GPH_ideas_1_bonus:0 "Phodrangian Ambition"
+ GPH_ideas_2:0 "§YPhodrangian Ideas§!"
+ GPH_ideas_2_start:0 "Phodrangian Traditions"
+ GPH_ideas_2_bonus:0 "Phodrangian Ambition"
+ GPH_ideas_3:0 "§YPhodrangian Ideas§!"
+ GPH_ideas_3_start:0 "Phodrangian Traditions"
+ GPH_ideas_3_bonus:0 "Phodrangian Ambition"
+ 
+ GPH_highland_ingenuity:0 "Highland Ingenuity"
+ GPH_highland_ingenuity_desc:0 "Building and developing in the Himalayas is no easy feat, but our people have long adapted to these harsh conditions. Through innovative engineering and efficient construction techniques, we have mastered the art of thriving where others would falter."
+ 
+ GPH_mandate_of_the_bodhisattva:0 "Mandate of the Bodhisattva"
+ GPH_mandate_of_the_bodhisattva_desc:0 "The Dalai Lama’s authority extends beyond mere earthly rule; it is a divine responsibility to guide and protect the faithful. Those who resist our enlightened governance will find that their lands, once claimed, are quickly and justly incorporated into our growing spiritual empire."
+ GPH_mandate_of_the_bodhisattva_improved:0 "Mandate of the Bodhisattva"
+ GPH_mandate_of_the_bodhisattva_improved_desc:0 "§YThe Dalai Lama’s authority extends beyond mere earthly rule; it is a divine responsibility to guide and protect the faithful. Those who resist our enlightened governance will find that their lands, once claimed, are quickly and justly incorporated into our growing spiritual empire.§!"
+
+ GPH_warrions_of_the_high_plains:0 "Warriors of the High Plains"
+ GPH_warrions_of_the_high_plains_desc:0 "Enduring the unforgiving climate of the Tibetan plateau, our warriors are molded into resilient and swift fighters. Their familiarity with rugged terrain gives them an edge in battle, allowing them to strike hard and move fast, outmaneuvering their foes."
+
+ GPH_mandate_of_the_dharma:0 "Mandate of the Dharma"
+ GPH_mandate_of_the_dharma_desc:0 "It is our sacred duty to spread the Dharma and enlighten those lost in ignorance. Our resolve in this holy mission grants us the strength to bring even the most distant lands into our fold, ensuring the faith flourishes under our watch."
+ GPH_mandate_of_the_dharma_improved:0 "Mandate of the Dharma"
+ GPH_mandate_of_the_dharma_improved_desc:0 "§YIt is our sacred duty to spread the Dharma and enlighten those lost in ignorance. Our resolve in this holy mission grants us the strength to bring even the most distant lands into our fold, ensuring the faith flourishes under our watch.§!"
+
+ GPH_harmonious_governance:0 "Harmonious Governance"
+ GPH_harmonious_governance_desc:0 "Guided by the wisdom of the Dharma, our administration blends spiritual harmony with pragmatic governance. Through careful reform and deliberate policy, we ensure a stable and enlightened rule that fosters prosperity and progress."
+ GPH_harmonious_governance_improved:0 "Harmonious Governance"
+ GPH_harmonious_governance_improved_desc:0 "§YGuided by the wisdom of the Dharma, our administration blends spiritual harmony with pragmatic governance. Through careful reform and deliberate policy, we ensure a stable and enlightened rule that fosters prosperity and progress.§!"
+
+ GPH_bastions_of_the_roof:0 "Bastions of the Roof"
+ GPH_bastions_of_the_roof_desc:0 "Nestled among the peaks of the world, our fortresses stand as unshakable strongholds against invaders. Built to withstand sieges and fortified with the blessings of our monks, they are not mere defenses but sacred bastions of our faith."
+
+ GPH_enlist_the_gurkhas:0 "Enlist the Gurkhas"
+ GPH_enlist_the_gurkhas_desc:0 "Among the fiercest warriors of the Himalayas, the Gurkhas are unmatched in courage and discipline. By integrating them into our ranks, we forge an elite force capable of standing against even the mightiest of enemies."
+
+ #Monastic Japanese
+ ORS_ideas:0 "Monastic Japanese Ideas"
+ ORS_ideas_start:0 "Monastic Japanese Traditions"
+ ORS_ideas_bonus:0 "Monastic Japanese Ambition"
+
+ ORS_warrior_monks_of_the_sun:0 "Warrior Monks of the Sun"
+ ORS_warrior_monks_of_the_sun_desc:0 "The Order of the Rising Sun blends the martial traditions of the samurai with the wisdom of the Dharma. By land and sea, our warrior-monks defend the faith and carry its light across the waves."
+
+ ORS_guardians_of_the_dharma:0 "Guardians of the Dharma"
+ ORS_guardians_of_the_dharma_desc:0 "As the Chakravartin's chosen order, our warriors fight not for plunder, but for the eternal truth of the Buddha's teachings. Their devotion strengthens their resolve, ensuring our armies never falter."
+
+ ORS_swords_of_enlightenment:0 "Swords of Enlightenment"
+ ORS_swords_of_enlightenment_desc:0 "True strength comes not from conquest alone, but from spreading wisdom. Our warriors carry the Dharma to distant lands, ensuring all people may find their way to the truth."
+
+ ORS_pioneers_of_the_outer_isles:0 "Pioneers of the Outer Isles"
+ ORS_pioneers_of_the_outer_isles_desc:0 "The Dharma knows no boundaries. As we expand beyond the shores of Japan, we establish new footholds for trade and faith, bringing enlightenment to those beyond the horizon."
+
+ ORS_harmonious_rule_of_law:0 "Harmonious Rule of Law"
+ ORS_harmonious_rule_of_law_desc:0 "Through just governance, we unify our subjects under the Chakravartin's guidance. Efficient taxation and careful development ensure prosperity for those who submit to the Dharma."
+
+ ORS_fortresses_of_the_eternal_watch:0 "Fortresses of the Eternal Watch"
+ ORS_fortresses_of_the_eternal_watch_desc:0 "From the mountain temples to the coastal citadels, our defenses stand as bastions of faith. With fortified positions and experienced commanders, no enemy shall breach our lands unchallenged."
+
+ ORS_warriors_of_the_way:0 "Warriors of the Way"
+ ORS_warriors_of_the_way_desc:0 "To resist the Dharma is to resist the natural order. Our warriors are relentless in their mission"
+
+ 

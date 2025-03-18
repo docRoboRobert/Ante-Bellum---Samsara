@@ -1,0 +1,7 @@
+﻿l_english:
+ estate_privileges_and_agendas_events.7.r:0 "Seize it from the Gya."
+ gya_events.1.t:0 "A New City Seeks Autonomy"
+ gya_events.1.d:0 "The success of the autonomous guild cities has not gone unnoticed. The merchants of a neighboring city, inspired by the prosperity and independence granted to their peers, have petitioned for the same privileges. They argue that with full control over their trade and governance, they can transform their city into another thriving hub of commerce, further enriching the realm. Granting their request would extend guild autonomy to another coastal center, strengthening our naval and economic power but further loosening central authority. Alternatively, we may begin preparing to reclaim control, though the existing guild cities will retain their privileges for years to come. The choice before us is clear—expand the system, or begin the long process of reining it in."
+ gya_events.1.a:0 "The guilds have done well. Let them expand."
+ gya_events.1.b:0 "We can't let them get too powerful. Rein them in."
+ gya_events.1.b.tooltip:0 "We will be able to remove the privilege §YAutonymous Guild Cities§!"

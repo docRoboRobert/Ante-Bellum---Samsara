@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "gfx_estate_gya_monastic_administrators"
+		texturefile = "gfx/interface/privileges/gya/estate_gya_monastic_administrators.dds"
+	}
+	spriteType = {
+		name = "gfx_estate_gya_harmonized_grain_routes"
+		texturefile = "gfx/interface/privileges/gya/estate_gya_harmonized_grain_routes.dds"
+	}
+}

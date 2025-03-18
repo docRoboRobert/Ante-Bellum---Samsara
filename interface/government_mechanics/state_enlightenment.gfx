@@ -1,0 +1,47 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_state_enlightenment_frame"
+		texturefile = "gfx/interface/government_mechanics/state_enlightenment/state_enlightenment_frame.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	
+	progressbartype = {
+		name = "GFX_state_enlightenment_progress_bar"
+		color = { 1.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/government_mechanics/state_enlightenment/state_enlightenment_progress_bar.dds"
+		textureFile2 = "gfx/interface/government_mechanics/state_enlightenment/state_enlightenment_progress_bar_empty.dds"
+		size = { x = 261 y = 20 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_state_enlightenment_distribute_surplus_button"
+		texturefile = "gfx/interface/government_mechanics/state_enlightenment/state_enlightenment_distribute_surplus.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_state_enlightenment_practice_non_violence_button"
+		texturefile = "gfx/interface/government_mechanics/state_enlightenment/state_enlightenment_practice_non_violence.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_state_enlightenment_host_great_dharma_debate_button"
+		texturefile = "gfx/interface/government_mechanics/state_enlightenment/state_enlightenment_host_great_dharma_debate.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_state_enlightenment_alert_icon"
+		texturefile = "gfx/interface/alert_icons/enlightenment_alert_icon.dds"
+		noOfFrames = 1
+		loadType = "INGAME"
+		alwaystransparent = yes
+}
+}

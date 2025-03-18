@@ -1,0 +1,1057 @@
+estate_hill_clans_land_rights = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		governing_capacity = 100
+	}
+	# ]]]
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 1.4
+			num_of_territories = 5
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 10
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 15
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = {
+					crown_land_share = 25
+				}
+				estate_influence = {
+					estate = estate_hill_clans
+					influence = 75
+				}
+			}
+			NOT = {
+				has_estate_privilege = estate_hill_clans_land_rights
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				AND = {
+					governing_capacity_percentage = 0.9
+					NOT = {
+						has_estate_privilege = estate_hill_clans_land_rights
+					}
+				}
+				#The trigger below should make sure that the AI actually keeps this privilege when enacting it early game
+				AND = {
+					governing_capacity_percentage = 0.6
+					has_estate_privilege = estate_hill_clans_land_rights
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				governing_capacity_percentage = 0.5
+			}
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = {
+					crown_land_share = 40
+				}
+				AND = {
+					is_absolutism_active = yes
+					NOT = {
+						crown_land_share = 60
+					}
+				}
+			}
+			NOT = {
+				has_estate_privilege = estate_hill_clans_land_rights
+			}
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = {
+					crown_land_share = 30
+				}
+				AND = {
+					is_absolutism_active = yes
+					NOT = {
+						crown_land_share = 50
+					}
+				}
+			}
+			NOT = {
+				has_estate_privilege = estate_hill_clans_land_rights
+			}
+		}
+		modifier = {
+			factor = 0.8
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 2
+			governing_capacity_percentage = 0.9
+		}
+		modifier = {
+			factor = 3
+			governing_capacity_percentage = 1
+		}
+		modifier = {
+			factor = 10
+			governing_capacity_percentage = 1.2
+		}
+		modifier = {
+			factor = 8
+			NOT = {
+				adm_tech = 12
+			}
+			governing_capacity_percentage = 0.8
+		}
+		modifier = {
+			factor = 5
+			NOT = {
+				adm_tech = 12
+			}
+			NOT = {
+				government_rank = 1
+			}
+			governing_capacity_percentage = 0.65
+		}
+		#Tag specific convincement - after tech 17 (+250 governing capacity) it should not play a role anymore
+		modifier = {
+			factor = 1.25
+			tag = MOS
+			NOT = {
+				adm_tech = 17
+			}
+		}
+		modifier = {
+			factor = 1.25
+			tag = RUS
+			NOT = {
+				adm_tech = 17
+			}
+		}
+		modifier = {
+			factor = 1.25
+			tag = TUR
+			NOT = {
+				adm_tech = 17
+			}
+		}
+		modifier = {
+			factor = 1.25
+			tag = MNG
+			NOT = {
+				adm_tech = 17
+			}
+		}
+		modifier = {
+			factor = 1.25
+			tag = FRA
+			NOT = {
+				adm_tech = 17
+			}
+		}
+		modifier = {
+			factor = 1.25
+			tag = SPA
+			NOT = {
+				adm_tech = 17
+			}
+		}
+		modifier = {
+			factor = 1.25
+			tag = PLC
+			NOT = {
+				adm_tech = 17
+			}
+		}
+		#Has already a similar privilege active
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_brahmins_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_nobles_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_church_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_maratha_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_vaisyas_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_cossacks_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_nomadic_tribes_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_dhimmi_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_jains_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_rajput_land_rights
+		}
+	}
+}
+
+estate_hill_clans_enlist_the_sherpas = {
+	icon = gfx_enlist_the_sherpas
+	land_share = 5
+	max_absolutism = -10
+	loyalty = 0.05
+	influence = 0.05
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 2
+		}
+	}
+	is_valid = {
+	}
+	can_select = {
+		any_owned_province = {
+			OR = {
+				has_terrain = mountain
+				has_terrain = highlands
+				has_terrain = hills
+				has_terrain = glacier
+			}
+			OR = {
+				AND = {
+					OR = {
+						culture_group = tibetan_group
+						culture_group = northern_aryan
+					}
+					OR = {
+						region = tibet_region
+						area = nepal_area
+						area = baisi_rajya_area
+						area = himalayan_hills_area
+						area = kashmir_area
+					}
+				}
+				AND = {
+					owner = {
+						has_country_flag = lha_sherpas_in_xinan
+					}
+					region = xinan_region
+				}
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_hill_clans_enlist_the_sherpas_tt
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				has_terrain = mountain
+				OR = {
+					AND = {
+						OR = {
+							culture_group = tibetan_group
+							culture_group = northern_aryan
+						}
+						OR = {
+							region = tibet_region
+							area = nepal_area
+							area = baisi_rajya_area
+							area = himalayan_hills_area
+							area = kashmir_area
+						}
+					}
+					AND = {
+						owner = {
+							has_country_flag = lha_sherpas_in_xinan
+						}
+						region = xinan_region
+					}
+				}
+			}
+			add_province_modifier = {
+				name = enlist_the_sherpas_mountains
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				has_terrain = highlands
+				OR = {
+					AND = {
+						OR = {
+							culture_group = tibetan_group
+							culture_group = northern_aryan
+						}
+						OR = {
+							region = tibet_region
+							area = nepal_area
+							area = baisi_rajya_area
+							area = himalayan_hills_area
+							area = kashmir_area
+						}
+					}
+					AND = {
+						owner = {
+							has_country_flag = lha_sherpas_in_xinan
+						}
+						region = xinan_region
+					}
+				}
+			}
+			add_province_modifier = {
+				name = enlist_the_sherpas_highlands
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				has_terrain = glacier
+				OR = {
+					AND = {
+						OR = {
+							culture_group = tibetan_group
+							culture_group = northern_aryan
+						}
+						OR = {
+							region = tibet_region
+							area = nepal_area
+							area = baisi_rajya_area
+							area = himalayan_hills_area
+							area = kashmir_area
+						}
+					}
+					AND = {
+						owner = {
+							has_country_flag = lha_sherpas_in_xinan
+						}
+						region = xinan_region
+					}
+				}
+			}
+			add_province_modifier = {
+				name = enlist_the_sherpas_glacial
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				has_terrain = hills
+				OR = {
+					AND = {
+						OR = {
+							culture_group = tibetan_group
+							culture_group = northern_aryan
+						}
+						OR = {
+							region = tibet_region
+							area = nepal_area
+							area = baisi_rajya_area
+							area = himalayan_hills_area
+							area = kashmir_area
+						}
+					}
+					AND = {
+						owner = {
+							has_country_flag = lha_sherpas_in_xinan
+						}
+						region = xinan_region
+					}
+				}
+			}
+			add_province_modifier = {
+				name = enlist_the_sherpas_hills
+				duration = -1
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_hill_clans_enlist_the_sherpas_revoke_tt
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = enlist_the_sherpas_glacial
+			}
+			remove_province_modifier = enlist_the_sherpas_glacial
+		}
+		if = {
+			limit = {
+				has_province_modifier = enlist_the_sherpas_highlands
+			}
+			remove_province_modifier = enlist_the_sherpas_highlands
+		}
+		if = {
+			limit = {
+				has_province_modifier = enlist_the_sherpas_hills
+			}
+			remove_province_modifier = enlist_the_sherpas_hills
+		}
+		if = {
+			limit = {
+				has_province_modifier = enlist_the_sherpas_mountains
+			}
+			remove_province_modifier = enlist_the_sherpas_mountains
+		}
+	}
+	on_invalid = {
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = enlist_the_sherpas_glacial
+			}
+			remove_province_modifier = enlist_the_sherpas_glacial
+		}
+		if = {
+			limit = {
+				has_province_modifier = enlist_the_sherpas_highlands
+			}
+			remove_province_modifier = enlist_the_sherpas_highlands
+		}
+		if = {
+			limit = {
+				has_province_modifier = enlist_the_sherpas_hills
+			}
+			remove_province_modifier = enlist_the_sherpas_hills
+		}
+		if = {
+			limit = {
+				has_province_modifier = enlist_the_sherpas_mountains
+			}
+			remove_province_modifier = enlist_the_sherpas_mountains
+		}
+	}
+	mechanics = {
+		no_estate_crownland_loss_from_developing
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_hill_clans_expand_the_yak_herds = {
+	icon = gfx_expand_the_yak_herds
+	land_share = 0
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	is_valid = {
+	}
+	can_select = {
+		any_owned_province = {
+			OR = {
+				has_terrain = mountain
+				has_terrain = highlands
+				has_terrain = hills
+				has_terrain = glacier
+				has_climate = arctic
+			}
+			OR = {
+				culture_group = tibetan_group
+				culture_group = northern_aryan
+			}
+			OR = {
+				region = tibet_region
+				area = nepal_area
+				area = baisi_rajya_area
+				area = himalayan_hills_area
+				area = kashmir_area
+			}
+		}
+	}
+	benefits = {
+		caravan_power = 0.2
+	}
+	penalties = {
+		global_tax_modifier = -0.3
+	}
+	on_granted = {
+		custom_tooltip = estate_hill_clans_expand_the_yak_herds_granted_tt
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				OR = {
+					culture_group = tibetan_group
+					culture_group = northern_aryan
+				}
+				OR = {
+					region = tibet_region
+					area = nepal_area
+					area = baisi_rajya_area
+					area = himalayan_hills_area
+					area = kashmir_area
+				}
+			}
+			if = {
+				limit = {
+					has_climate = arctic
+				}
+				add_province_modifier = {
+					name = expand_the_yak_herds_arctic
+					duration = -1
+				}
+			}
+			else = {
+				add_province_modifier = {
+					name = expand_the_yak_herds_regular
+					duration = -1
+				}
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_hill_clans_expand_the_yak_herds_revoke_tt
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = expand_the_yak_herds_arctic
+			}
+			remove_province_modifier = expand_the_yak_herds_arctic
+		}
+		if = {
+			limit = {
+				has_province_modifier = expand_the_yak_herds_regular
+			}
+			remove_province_modifier = expand_the_yak_herds_regular
+		}
+	}
+	on_invalid = {
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = expand_the_yak_herds_arctic
+			}
+			remove_province_modifier = expand_the_yak_herds_arctic
+		}
+		if = {
+			limit = {
+				has_province_modifier = expand_the_yak_herds_regular
+			}
+			remove_province_modifier = expand_the_yak_herds_regular
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_hill_clans_seat_at_the_kashag = {
+	icon = gfx_seat_at_the_kashag
+	max_absolutism = -10
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 2
+		}
+	}
+	loyalty = 0.1
+	influence = 0.1
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+
+estate_hill_clans_enlist_the_gurkhas = {
+	icon = gfx_enlist_the_gurkhas
+	max_absolutism = -5
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	loyalty = -0.05
+	influence = 0.1
+	penalties = {
+	}
+	benefits = {
+		shock_damage = 0.05
+		infantry_power = 0.05
+	}
+	on_granted = {
+		custom_tooltip = estate_hill_clans_enlist_the_gurkhas_granted_tt
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+
+estate_hill_clans_train_gurkha_officers = {
+	icon = gfx_train_gurkha_officers
+	max_absolutism = -5
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	influence = 0.1
+	penalties = {
+	}
+	benefits = {
+		army_tradition = 0.5
+		yearly_army_professionalism = 0.001
+	}
+	mechanics = {
+		exempt_from_seize_land
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+
+estate_hill_clans_sages_of_the_high_passes = {
+	icon = privilege_empty_throne
+	max_absolutism = -5
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	influence = 0.05
+	loyalty = 0.05
+	penalties = {
+		stability_cost_modifier = 0.2
+	}
+	benefits = {
+		advisor_cost = -0.1
+	}
+	ai_will_do = {
+		factor = 9
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 3
+			uses_meritocracy = yes
+		}
+	}
+}
+
+estate_hill_clans_prioritize_yak_hair_industry = {
+	icon = gfx_prioritize_yak_hair_industry
+	land_share = 0
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	is_valid = {
+	}
+	can_select = {
+		any_owned_province = {
+			OR = {
+				trade_goods = wool
+			}
+			OR = {
+				region = tibet_region
+				area = nepal_area
+				area = baisi_rajya_area
+				area = himalayan_hills_area
+				area = kashmir_area
+			}
+		}
+	}
+	penalties = {
+		cavalry_cost = 0.2
+		cavalry_power = -0.2
+		cavalry_flanking = -0.1
+		movement_speed = -0.02
+	}
+	on_granted = {
+		custom_tooltip = estate_hill_clans_prioritize_yak_hair_industry_granted_tt
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				OR = {
+					trade_goods = wool
+				}
+				OR = {
+					region = tibet_region
+					area = nepal_area
+					area = baisi_rajya_area
+					area = himalayan_hills_area
+					area = kashmir_area
+				}
+			}
+			add_province_modifier = {
+				name = prioritize_yak_hair_industry
+				duration = -1
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_hill_clans_prioritize_yak_hair_industry_revoked_tt
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = prioritize_yak_hair_industry
+			}
+			remove_province_modifier = prioritize_yak_hair_industry
+		}
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = prioritize_yak_hair_industry
+			}
+			remove_province_modifier = prioritize_yak_hair_industry
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_hill_clans_pahari_mercenary_traditions = {
+	icon = GFX_mercenary_cost
+	max_absolutism = -5
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	influence = 0.15
+	loyalty = 0.05
+	penalties = {
+		yearly_army_professionalism = -0.01
+		general_cost = 1
+		army_tradition_decay = 0.15
+	}
+	benefits = {
+		mercenary_manpower = 0.25
+		merc_maintenance_modifier = -0.25
+		mercenary_discipline = 0.05
+		merc_leader_army_tradition = 0.5
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_hill_clans_monopoly_of_cashmere = {
+	icon = gfx_monopoly_of_cashmere
+	max_absolutism = -5
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	loyalty = 0.05
+	is_valid = {
+		OR = {
+			has_dlc = "Emperor"
+			has_country_flag = buffed_monopolies
+		}
+		any_owned_province = {
+			OR = {
+				trade_goods = cloth
+				trade_goods = silk
+				trade_goods = wool
+			}
+			area = kashmir_area
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = unavailable_during_revolution_disaster
+			NOT = {
+				has_disaster = revolution
+			}
+			NOT = {
+				has_disaster_progress = {
+					disaster = revolution
+					value = 1
+				}
+			}
+			NOT = {
+				has_disaster = french_revolution
+			}
+			NOT = {
+				has_disaster_progress = {
+					disaster = french_revolution
+					value = 1
+				}
+			}
+		}
+	}
+	on_granted = {
+		if = {
+			limit = {
+				any_owned_province = {
+					area = kashmir_area
+				}
+				OR = {
+					cloth = 1
+					silk = 1
+					wool = 1
+				}
+			}
+			add_mercantilism = 2
+		}
+		add_years_of_owned_provinces_production_income = {
+			years = 8
+			trigger = {
+				area = kashmir_area
+				OR = {
+					trade_goods = cloth
+					trade_goods = silk
+					trade_goods = wool
+				}
+			}
+			custom_tooltip = monthly_income_cashmere_desc
+		}
+		custom_tooltip = monopoly_of_cashmere_effect_tooltip
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				area = kashmir_area
+				OR = {
+					trade_goods = cloth
+					trade_goods = silk
+					trade_goods = wool
+				}
+			}
+			add_province_modifier = {
+				name = estate_hill_clans_monopoly_of_cashmere_mod
+				duration = -1
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_burghers_monopoly_of_textiles_revoke_tooltip
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_hill_clans_monopoly_of_cashmere_mod
+			}
+			remove_province_modifier = estate_hill_clans_monopoly_of_cashmere_mod
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_burghers_monopoly_of_textiles_revoke_tooltip
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_hill_clans_monopoly_of_cashmere_mod
+			}
+			remove_province_modifier = estate_hill_clans_monopoly_of_cashmere_mod
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	cooldown_years = 10
+	on_cooldown_expires = {
+		country_event = {
+			id = hill_clans_events.1
+		}
+	}
+	ai_will_do = {
+		#having the AI use these could lead to an unstoppable downwards spiral if it can't work out how to get rid of them
+		factor = 0
+	}
+}
+
+estate_hill_clans_himalayan_guerrillas = {
+	icon = gfx_himalayan_guerrillas
+	land_share = 2
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	is_valid = {
+		has_country_flag = himalayan_guerrillas_enabled
+		is_at_war = yes
+	}
+	can_select = {
+		crown_land_share = 2
+	}
+	benefits = {
+		hill_clans_privilege_slots = 1
+	}
+	on_granted = {
+		custom_tooltip = estate_hill_clans_himalayan_guerrillas_granted_tooltip
+		tooltip = {
+			add_province_modifier = {
+				name = estate_hill_clans_guerrillas_mod
+				duration = -1
+			}
+		}
+		custom_tooltip = estate_hill_clans_himalayan_guerrillas_granted_postwar_tooltip
+		if = {
+			limit = {
+				full_idea_group = court_ideas
+			}
+			add_estate_influence_modifier = {
+				estate = estate_hill_clans
+				desc = estate_hill_clans_guerrillas_influence
+				influence = 5
+				duration = 3650
+			}
+		}
+		else = {
+			add_estate_influence_modifier = {
+				estate = estate_hill_clans
+				desc = estate_hill_clans_guerrillas_influence
+				influence = 10
+				duration = 7300
+			}
+		}
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				OR = {
+					region = tibet_region
+					area = nepal_area
+					area = baisi_rajya_area
+					area = himalayan_hills_area
+					area = kashmir_area
+				}
+			}
+			add_province_modifier = {
+				name = estate_hill_clans_guerrillas_mod
+				duration = -1
+			}
+		}
+	}
+	on_revoked = {
+	}
+	on_revoked_province = {
+		safe_remove_province_modifier = {
+			mod = estate_hill_clans_guerrillas_mod
+		}
+	}
+	on_invalid = {
+	}
+	on_invalid_province = {
+		safe_remove_province_modifier = {
+			mod = estate_hill_clans_guerrillas_mod
+		}
+	}
+	#All of this assumes that the AI is at war
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 1000
+			NOT = {
+				war_score = -5
+			}
+		}
+		modifier = {
+			factor = -10
+			NOT = {
+				crown_land_share = 32
+			}
+		}
+		modifier = {
+			factor = 1000
+			is_bankrupt = yes
+		}
+	}
+}

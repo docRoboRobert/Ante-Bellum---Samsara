@@ -1,0 +1,67 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ab_india_lha_events.1"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/LHA/lha_events_1.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ab_india_lha_events.4"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/LHA/lha_events_4.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ab_india_lha_events.5"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/LHA/lha_events_5.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ab_india_lha_events.8"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/LHA/lha_events_8.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ab_india_lha_events.9"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/LHA/lha_events_9.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ab_india_lha_events.10"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/LHA/lha_events_10.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ab_india_lha_events.11"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/LHA/lha_events_11.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ab_india_lha_events.12"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/LHA/lha_events_12.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ab_india_lha_events.13"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/LHA/lha_events_13.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ab_india_lha_events.15"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/LHA/lha_events_15.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ab_india_lha_events.16"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/LHA/lha_events_16.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ab_india_lha_events.17"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/LHA/lha_events_17.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ab_india_lha_events.18"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/LHA/lha_events_18.dds"
+		alwaystransparent = yes
+	}
+}

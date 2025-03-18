@@ -17,3 +17,102 @@ abi_tamil_guilds_town = {
 	local_ship_repair = 0.075
 	picture = "placed_merchant_power"
 }
+
+enlist_the_sherpas_mountains = {
+	local_development_cost = -0.25
+	local_friendly_movement_speed = 0.05
+}
+
+enlist_the_sherpas_highlands = {
+	local_development_cost = -0.1
+	local_friendly_movement_speed = 0.05
+}
+
+enlist_the_sherpas_hills = {
+	local_development_cost = -0.15
+	local_friendly_movement_speed = 0.05
+}
+
+enlist_the_sherpas_glacial = {
+	local_development_cost = -0.4
+	local_friendly_movement_speed = 0.05
+}
+
+expand_the_yak_herds_arctic = {
+	local_development_cost = -0.4
+	local_friendly_movement_speed = 0.1
+}
+
+expand_the_yak_herds_regular = {
+	local_friendly_movement_speed = 0.1
+}
+
+prioritize_yak_hair_industry = {
+	local_production_efficiency = 0.1
+	trade_goods_size = 0.5
+}
+
+estate_hill_clans_monopoly_of_cashmere_mod = {
+	local_production_efficiency = -10
+	trade_goods_size = 1
+	province_trade_power_modifier = 0.5
+}
+
+# Hidden modifier
+recent_estate_hill_clans_insult_timer = {
+}
+
+estate_hill_clans_build_roadway_reward = {
+	local_development_cost = -0.1
+	local_build_cost = -0.1
+}
+
+estate_hill_clans_guerrillas_mod ={
+	local_hostile_movement_speed = -0.2
+	local_hostile_attrition = 3
+	max_attrition = 3
+	local_defensiveness = 0.1
+	local_warscore_cost_modifier = 0.25
+}
+
+estate_gya_thriving_guild_city = {
+	local_sailors_modifier = 1
+	local_ship_cost = -0.25
+	local_ship_repair = 0.5
+	ship_recruit_speed = -0.25
+	province_trade_power_modifier = 0.5
+	trade_goods_size = 0.3
+	trade_goods_size_modifier = 0.1
+}
+
+estate_gya_autonomy_granted_to_guild_city = {
+	min_local_autonomy = 90
+}
+
+estate_gya_monastic_administration_temple = {
+	local_governing_cost = -0.1
+	local_state_maintenance_modifier = -0.05
+}
+
+estate_gya_monastic_administration_great_temple = {
+	local_governing_cost = -0.15
+	local_state_maintenance_modifier = -0.1
+}
+
+estate_gya_transitioning_provincial_governance = {
+	local_governing_cost = 0.3
+	local_unrest = 5
+	local_state_maintenance_modifier = 0.2
+}
+
+estate_gya_levy_of_the_middle_kingdom_gya = {
+	local_manpower_modifier = 0.3
+}
+
+estate_gya_levy_of_the_middle_kingdom_chinese_culture_group = {
+	local_manpower_modifier = 0.2
+}
+
+estate_gya_levy_of_the_middle_kingdom_penalty ={
+	local_tax_modifier = -0.4
+}

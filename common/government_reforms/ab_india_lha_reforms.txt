@@ -1,0 +1,137 @@
+#Applies to both LHA and GPH
+lhasa_theocratic_state = {
+	icon = lhasa_theocratic_state
+	allow_convert = no
+	allow_normal_conversion = yes
+	lock_level_when_selected = no
+	legacy_equivalent = theocratic_government
+	potential = {
+		OR = {
+			tag = LHA
+			is_playing_custom_nation = yes
+		}
+	}
+
+	trigger = {
+		religion = vajrayana
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	monastic = yes
+	custom_attributes = {
+		monastic_order = yes
+	}
+	modifiers = {
+		religious_unity = 0.25
+		tolerance_own = 1
+		tolerance_heathen = -1
+		land_attrition = -0.10
+		stability_cost_modifier = 0.15
+		governing_capacity_modifier = -0.5
+		same_religion_advisor_cost = -0.15
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		custom_attributes = {
+			gain_devotion_from_conversions = yes
+		}
+	}
+}
+
+dzong_system = {
+	icon = dzong_system
+	potential = {
+		OR ={
+			tag = GPH
+			tag = LHA
+		}
+	}
+
+	trigger = {
+		mission_completed = lha_fortress_tibet
+	}
+	modifiers = {
+		defensiveness = 0.25
+		fort_maintenance_modifier = -0.15
+		governing_capacity_modifier = 0.1
+	}
+	effect = {
+		custom_tooltip = dzong_system_temple_effect_tooltip
+		tooltip = {
+			add_province_modifier = {
+				name = lha_local_dzong
+				duration = -1
+			}
+		}
+		custom_tooltip = dzong_system_great_temple_effect_tooltip
+		tooltip = {
+			add_province_modifier = {
+				name = lha_local_great_dzong
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_terrain = mountain
+						has_terrain = hills
+						has_terrain = glacier
+						has_terrain = highlands
+					}
+					has_tax_building_trigger = yes
+				}
+				if = {
+					limit = {
+						has_building = temple
+					}
+					add_province_modifier = {
+						name = lha_local_dzong
+						duration = -1
+					}
+				}
+				else_if = {
+					limit = {
+						has_building = cathedral
+					}
+					add_province_modifier = {
+						name = lha_local_great_dzong
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_terrain = mountain
+						has_terrain = hills
+						has_terrain = glacier
+						has_terrain = highlands
+					}
+					has_tax_building_trigger = yes
+				}
+				if = {
+					limit = {
+						has_province_modifier = lha_local_dzong
+					}
+					remove_province_modifier = lha_local_dzong
+				}
+				else_if = {
+					limit = {
+						has_province_modifier = lha_local_great_dzong
+					}
+					remove_province_modifier = lha_local_great_dzong
+				}
+			}
+		}
+	}
+}

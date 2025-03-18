@@ -1,0 +1,7 @@
+government = theocracy
+add_government_reform = gph_realm_of_the_bodhisattva
+government_rank = 2
+primary_culture = tibetan
+technology_group = chinese
+religion = vajrayana
+capital = 677

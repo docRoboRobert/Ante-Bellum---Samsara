@@ -1,0 +1,43 @@
+namespace = hill_clans_events
+country_event = {
+	id = hill_clans_events.1
+	title = hill_clans_events.1.t
+    desc = hill_clans_events.1.d.burghers
+	picture = gfx_hill_clans_events.1
+
+	trigger = {
+		has_estate_privilege = estate_hill_clans_monopoly_of_cashmere
+	}
+	picture = TRADEGOODS_eventPicture
+	is_triggered_only = yes
+	immediate = {
+		remove_estate_monopoly_modifier = {
+			privilege = estate_hill_clans_monopoly_of_cashmere
+		}
+	}
+	option = {
+		name = hill_clans_events.1.a
+		reapply_estate_privilege = {
+			privilege = estate_hill_clans_monopoly_of_cashmere
+		}
+	}
+	option = {
+		name = hill_clans_events.1.b
+		custom_tooltip = hill_clans_events.1.b.tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					area = kashmir_area
+					OR = {
+						trade_goods = cloth
+						trade_goods = silk
+						trade_goods = wool
+					}
+				}
+				apply_estate_monopoly_modifier = {
+					privilege = estate_hill_clans_monopoly_of_cashmere
+				}
+			}
+		}
+	}
+}

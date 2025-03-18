@@ -1,0 +1,19 @@
+cb_chakravartin_order_crusade = {
+	valid_for_subject = yes
+	holy_war = yes
+
+	prerequisites_self = {
+		is_subject_of_type = chakravartin_order
+		is_buddhist = yes
+	}
+
+	prerequisites = {
+		NOT ={
+			FROM = {
+				is_buddhist = yes
+			}
+		}
+	}
+
+	war_goal = superiority_grand_crusade
+}

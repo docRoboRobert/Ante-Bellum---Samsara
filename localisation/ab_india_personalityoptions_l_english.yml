@@ -1,0 +1,4 @@
+﻿l_english:
+ enlightened_personality:0 "Enlightened"
+ desc_enlightened_personality:0 "This ruler has attained a profound understanding of spiritual truths and guides the nation with wisdom, compassion, and clarity. Their enlightened leadership brings harmony to the land and inspires the devotion of their subjects."
+ enlightened_personality_die_desc:0 "[Root.Monarch.GetSheHeCap] led [Root.GetName] with spiritual insight, leaving a legacy of wisdom and compassion."

@@ -1,0 +1,9 @@
+﻿l_english:
+ ab_india_chakravartin_order_events.1.t:0 "New Dharma Lord Required In [leaderless_chakravartin_subject.GetName]"
+ ab_india_chakravartin_order_events.1.d:0 "With the passing of their former ruler, [leaderless_chakravartin_subject.GetName] now stands at a crossroads, awaiting a new hand to guide them on their sacred mission. As a Chakravartin Order, their leaders are not chosen by blood, but by merit—monks, warriors, and visionaries who dedicate their lives to the Dharma and the will of the Chakravartin.\n\nThe council of elder monks has gathered, presenting three worthy candidates, each embodying a different path forward. One is a deeply pious devotee, devoted to scripture, meditation, and strengthening the faith. Another is an ambitious seeker, eager to expand the Order's reach to distant lands. The last is a master tactician, whose understanding of war rivals the greatest generals in history.\n\nThe choice is ours to make. Who shall lead [leaderless_chakravartin_subject.GetName] into the future?"
+ ab_india_chakravartin_order_events.1.a:0 "I like the pious one from the monestary."
+ ab_india_chakravartin_order_events.1.b:0 "I like the candidate who has a grand vision for [leaderless_chakravartin_subject.GetName]"
+ ab_india_chakravartin_order_events.1.c:0 "It's only natural that we go with the military genius."
+ ab_india_chakravartin_order_events.1.a_tooltip:0 "The candidate will be a §YZealot§!"
+ ab_india_chakravartin_order_events.1.b_tooltip:0 "The candidate will be an §YExpansionist§!"
+ ab_india_chakravartin_order_events.1.c_tooltip:0 "The candidate will be §YStrict§!"
