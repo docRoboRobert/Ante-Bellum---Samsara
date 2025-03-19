@@ -13,6 +13,13 @@ estate_tamil_guilds = {
 			has_estate = estate_tamil_guilds
 		}
 	}
+	modifier_definition = {
+		type = privileges
+		key = tamil_guilds_privilege_slots
+		trigger = {
+			has_estate = estate_tamil_guilds
+		}
+	}
 }
 
 estate_hill_clans = {

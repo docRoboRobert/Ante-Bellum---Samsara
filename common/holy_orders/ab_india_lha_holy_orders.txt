@@ -1,0 +1,174 @@
+gelug_school = {
+	icon = GFX_gelug_school
+	color = {
+		173
+		77
+		210
+	}
+	trigger = {
+		tag = GPH
+		religion = vajrayana
+	}
+	cost = 50
+	cost_type = adm_power
+	per_province_effect = {
+		add_base_tax = 1
+	}
+	per_province_abandon_effect = {
+		add_base_tax = -1
+	}
+	modifier = {
+		local_development_cost_modifier = -0.05
+		local_institution_spread = 0.1
+	}
+	ai_priority = {
+		factor = 2
+	}
+	localization = buddhist_school
+}
+
+sakya_school = {
+	icon = GFX_sakya_school
+	color = {
+		255
+		168
+		111
+	}
+	trigger = {
+		tag = GPH
+		religion = vajrayana
+	}
+	cost = 50
+	cost_type = adm_power
+	per_province_effect = {
+		add_base_tax = 1
+	}
+	per_province_abandon_effect = {
+		add_base_tax = -1
+	}
+	modifier = {
+		local_governing_cost = -0.1
+		local_tax_modifier = 0.05
+	}
+	ai_priority = {
+		factor = 2
+	}
+	localization = buddhist_school
+}
+
+nyingma_school = {
+	icon = GFX_nyingma_school
+	color = {
+		212
+		21
+		21
+	}
+	trigger = {
+		tag = GPH
+		religion = vajrayana
+	}
+	cost = 50
+	cost_type = dip_power
+	per_province_effect = {
+		add_base_production = 1
+	}
+	per_province_abandon_effect = {
+		add_base_production = -1
+	}
+	modifier = {
+		trade_goods_size_modifier = 0.05
+		production_efficiency = 0.1
+	}
+	ai_priority = {
+		factor = 2
+	}
+	localization = buddhist_school
+}
+
+jonang_school = {
+	icon = GFX_jonang_school
+	color = {
+		12
+		52
+		255
+	}
+	trigger = {
+		tag = GPH
+		religion = vajrayana
+	}
+	cost = 50
+	cost_type = dip_power
+	per_province_effect = {
+		add_base_production = 1
+	}
+	per_province_abandon_effect = {
+		add_base_production = -1
+	}
+	modifier = {
+		local_missionary_strength = 0.01
+		province_trade_power_modifier = 0.15
+	}
+	ai_priority = {
+		factor = 2
+	}
+	localization = buddhist_school
+}
+
+kagyu_school = {
+	icon = GFX_kagyu_school
+	color = {
+		255
+		255
+		255
+	}
+	trigger = {
+		tag = GPH
+		religion = vajrayana
+	}
+	cost = 50
+	cost_type = mil_power
+	per_province_effect = {
+		add_base_manpower = 1
+	}
+	per_province_abandon_effect = {
+		add_base_manpower = -1
+	}
+	modifier = {
+		local_defender_dice_roll_bonus = 1
+		local_fort_maintenance_modifier = -0.1
+	}
+	ai_priority = {
+		factor = 2
+	}
+	localization = buddhist_school
+}
+
+tendai_school = {
+	icon = GFX_tendai_school
+	color = {
+		72
+		154
+		93
+	}
+	trigger = {
+		tag = GPH
+		religion = vajrayana
+	}
+	cost = 50
+	cost_type = mil_power
+	per_province_effect = {
+		add_base_manpower = 1
+	}
+	per_province_abandon_effect = {
+		add_base_manpower = -1
+	}
+	modifier = {
+		local_manpower_modifier = 0.1
+		local_build_cost = -0.1
+	}
+	ai_priority = {
+		factor = 2
+	}
+	localization = buddhist_school
+}
+

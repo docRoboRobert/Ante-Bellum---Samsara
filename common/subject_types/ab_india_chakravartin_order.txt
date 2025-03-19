@@ -1,0 +1,87 @@
+chakravartin_order = {
+	copy_from = march
+	can_have_great_projects_moved_by_overlord = yes
+	sprite = GFX_chakravartin_order_icon
+	diplomacy_overlord_sprite = GFX_chakravartin_order_overlord_icon
+	diplomacy_subject_sprite = GFX_chakravartin_order_subject_icon
+	pays_overlord = 0
+	joins_overlords_wars = yes
+	is_march = yes
+	can_fight_independence_war = yes
+	can_be_annexed = no
+	takes_diplo_slot = no
+	relative_power_class = 1
+	uses_military_focus = yes
+	can_release_in_peace = no
+	overlord_protects_external = yes
+	counts_for_borders = yes
+	can_use_claims = no
+	gets_help_with_rebels = yes
+	trust_on_start = 20
+	base_liberty_desire = -60
+	liberty_desire_development_ratio = 0.01
+	liberty_desire_revolution = 0
+	forcelimit_to_overlord = 0.3
+	naval_forcelimit_to_overlord = 0.3
+	military_focus = 1.5
+	share_rebel_popup = yes
+	can_set_mil_focus = yes
+	can_send_missionary_to_subject = yes
+	can_fight = {
+		independent_nations = yes
+	}
+	can_rival = {
+	}
+	can_ally = {
+	}
+	can_marry = {
+	}
+	# Subject Interactions:
+	placate_rulers = no
+	enforce_culture = yes
+	support_loyalists = yes
+	subsidize_armies = yes
+	fortify_march = yes
+	conscript_general = yes
+	send_additional_troops = yes
+	place_relative_on_throne = no
+	knowledge_sharing = yes
+	# (continuous)
+	embargo_rivals = yes
+	# Modifiers:
+	modifier_overlord = clear	#We don't want to duplicate the ones inherited from vassal
+	modifier_subject = clear	#Ditto
+	modifier_subject = {
+		modifier = same_religion_subject_bonus_mod
+	}
+	modifier_overlord = {
+		modifier = march_subject
+	}
+	modifier_subject = {
+		modifier = march_bonus
+		trigger = {
+			NOT = {
+				development_of_overlord_fraction = 0.25
+			}
+		}
+		expiration_message_overlord = MARCHTOOLARGE
+		expiration_message_subject = MARCHTOOLARGEUS
+	}
+	modifier_subject = {
+		modifier = subject_tax_modifier
+		trigger = {
+			overlord = {
+				has_government_attribute = subject_tax_modifier_25
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = same_religion_subject_bonus_mod
+		trigger = {
+			overlord = {
+				has_government_attribute = same_religion_subject_bonus
+				religion = PREV
+			}
+		}
+	}
+}
