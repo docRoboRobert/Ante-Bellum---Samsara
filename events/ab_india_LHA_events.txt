@@ -1,20 +1,26 @@
 namespace = ab_india_lha_events
 #Starting Bad Event
-province_event = {
+country_event = {
 	id = ab_india_lha_events.1
 	title = ab_india_lha_events.1.t
 	desc = ab_india_lha_events.1.d
 	picture = GFX_ab_india_lha_events.1
 	fire_only_once = yes
 	trigger = {
-		has_active_triggered_province_modifier = lha_unorthodox_population_of_lhasa
+		677 = {
+			NOT = { religion = vajrayana }
+		}
 	}
 	option = {
 		name = ab_india_lha_events.1_acknowledge
 		custom_tooltip = ab_india_lha_events.1_acknowledge_tooltip
-		owner = {
-			add_prestige = -20
-		}
+		add_prestige = -20
+	}
+	option = {
+		name = ab_india_lha_events.1_acknowledge2
+		custom_tooltip = ab_india_lha_events.1_acknowledge_tooltip
+		add_stability = -1
+		add_mil_power = 50
 	}
 }
 
@@ -923,5 +929,148 @@ province_event = {
 			}
 			change_culture = sogpo
 		}
+	}
+}
+
+#Religious skirmishes in Lhasa
+country_event = {
+	id = ab_india_lha_events.21
+	title = ab_india_lha_events.21.t
+	desc = ab_india_lha_events.21.d
+	picture = asiangfx_RELIGIOUS_TURMOIL_eventPicture
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 10
+	}
+	trigger = {
+		677 = {
+			NOT = { religion = vajrayana }
+		}
+		has_country_modifier = lha_unorthodox_population_of_lhasa
+	}
+	option = {
+		name = ab_india_lha_events.21.a
+		add_stability = -1
+	}
+	option = {
+		name = ab_india_lha_events.21.b
+		add_mil_power = -75
+		add_manpower = -2
+		add_army_tradition = -5
+	}
+}
+
+#Bon followers demand rights
+country_event = {
+	id = ab_india_lha_events.22
+	title = ab_india_lha_events.22.t
+	desc = ab_india_lha_events.22.d
+	picture = asiangfx_DIPLOMACY_eventPicture
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 12
+	}
+	trigger = {
+		677 = {
+			NOT = { religion = vajrayana }
+		}
+		has_country_modifier = lha_unorthodox_population_of_lhasa
+		is_year = 1445
+	}
+	option = {
+		name = ab_india_lha_events.22.a
+		add_stability = -1
+		add_prestige = 10
+		add_dip_power = 10
+		add_adm_power = 25
+	}
+	option = {
+		name = ab_india_lha_events.22.b
+		add_adm_power = -50
+		add_dip_power = -50
+		add_devotion = -20
+	}
+}
+
+#Bon people rise up
+country_event = {
+	id = ab_india_lha_events.23
+	title = ab_india_lha_events.23.t
+	desc = ab_india_lha_events.23.d
+	picture = east_asian_ANGRY_MOB_eventPicture
+	fire_only_once = yes
+	trigger = {
+		677 = {
+			NOT = { religion = vajrayana }
+		}
+		has_country_modifier = lha_unorthodox_population_of_lhasa
+		NOT = { stability = 1 }
+	}
+	option = {
+		name = ab_india_lha_events.23.a
+		custom_tooltip = ab_india_lha_events.23.a.tooltip
+		add_stability = -1
+		add_manpower = -2
+		capital_scope = {
+			spawn_rebels = {
+				type = bon_religion
+				size = 1
+			}
+		}
+		remove_country_modifier = lha_unorthodox_population_of_lhasa
+	}
+	option = {
+		name = ab_india_lha_events.23.b
+		custom_tooltip = ab_india_lha_events.23.a.tooltip
+		highlight = yes
+		change_religion = bon_religion
+		add_prestige = -20
+		add_stability = 1
+		capital_scope = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 0.2
+			}
+		}
+		remove_country_modifier = lha_unorthodox_population_of_lhasa
+		country_event = {
+			id = ab_india_lha_events.24
+			days = 30
+		}
+	}
+}
+
+#Tsurphu radicals move on
+country_event = {
+	id = ab_india_lha_events.24
+	title = ab_india_lha_events.24.t
+	desc = ab_india_lha_events.24.d
+	picture = altaic_MILITARY_CAMP_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = ab_india_lha_events.24.a
+		add_manpower = 3
+		add_war_exhaustion = 2
+		677 = { add_devastation = 10 }
+		TSU = {
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_annex
+			}
+		}
+	}
+	option = {
+		name = ab_india_lha_events.24.b
+		change_tag = TSU
+		TSU = {
+			add_prestige = 20
+			add_mil_power = 25
+			add_dip_power = 25
+			add_mil_power = 25
+			add_devotion = 20
+		}
+		677 = { add_devastation = 25 }
+		TSU = { vassalize = LHA }
 	}
 }

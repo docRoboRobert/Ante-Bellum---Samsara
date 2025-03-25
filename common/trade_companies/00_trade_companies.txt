@@ -1073,7 +1073,7 @@ trade_company_aleppo = {
 	color = { 202 150 172 }
 	
 	provinces = {
-		418 2306 2307 4295 4296 #north_kurdistan_area
+		418 2306 2307 4295 4296 5191 #north_kurdistan_area
 		377 1849 2313 4298 #aleppo_area
 		378 382 1855 4297 #syria_area
 		407 411 2309 2314 4292 #al_jazira_area
@@ -1148,7 +1148,7 @@ trade_company_basra = {
 		408 2311 2312 4288 #basra_area
 		406 409 410 2310 4291 #iraq_arabi_area
 		413 414 2209 2210 #luristan_area
-		415 2211 4293 4294 #shahrizor_area
+		415 2211 4293 4294 5192 5194 #shahrizor_area
 	}
 	
 	# Specific
@@ -1174,7 +1174,7 @@ trade_company_persia = {
 		429 433 2222 4335 4171 #isfahan_area
 		419 420 2202 2205 4302 #armenia_area
 		421 424 4299 4305 4340 #shirvan_area
-		416 2206 2207 4304 #tabriz_area
+		416 2206 2207 4304 5193 #tabriz_area
 		2212 2215 4300 4338 #azerbaijan_area
 		5190 5186
 	}

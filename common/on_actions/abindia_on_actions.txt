@@ -134,4 +134,15 @@ on_startup = {
 			}
 		}
 	}
+	
+	#Lhasa starting unrest
+	if = {
+		limit = { tag = LHA }
+		ROOT = {
+			add_country_modifier = {
+				name = lha_unorthodox_population_of_lhasa
+				duration = -1
+			}
+		}
+	}
 }

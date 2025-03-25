@@ -560,3 +560,9 @@ lha_gates_of_the_himalayas_mod = {
 	local_garrison_size = 0.25
 	local_hostile_attrition = 1
 }
+
+lha_unorthodox_population_of_lhasa = {
+	church_loyalty_modifier = -0.1	
+	diplomatic_reputation = -2
+	devotion = -1
+}

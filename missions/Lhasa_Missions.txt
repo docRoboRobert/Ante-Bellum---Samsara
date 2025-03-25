@@ -26,9 +26,7 @@ lha_slot_1 = {
 			}
 		}
 		effect = {
-			677 = {
-				remove_province_triggered_modifier = lha_unorthodox_population_of_lhasa
-			}
+			remove_country_modifier = lha_unorthodox_population_of_lhasa
 			add_devotion = 5
 			add_country_modifier = {
 				name = lha_vajrayana_legitimized

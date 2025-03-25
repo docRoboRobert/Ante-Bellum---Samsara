@@ -32,5 +32,8 @@ country_event = {
 	option = {
 		name = abindia_starting_lore.2.a
 		custom_tooltip = abindia_starting_lore.2.tooltip
+		hidden_effect = {
+			add_stability = 1
+		}
 	}
 }
