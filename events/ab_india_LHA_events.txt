@@ -1013,8 +1013,9 @@ country_event = {
 		add_manpower = -2
 		capital_scope = {
 			spawn_rebels = {
-				type = bon_religion
-				size = 1
+				type = bon_religion_rebels
+				religion = bon_religion
+				size = 0.5
 			}
 		}
 		remove_country_modifier = lha_unorthodox_population_of_lhasa
@@ -1029,7 +1030,7 @@ country_event = {
 		capital_scope = {
 			spawn_rebels = {
 				type = noble_rebels
-				size = 0.2
+				size = 0.1
 			}
 		}
 		remove_country_modifier = lha_unorthodox_population_of_lhasa
@@ -1062,7 +1063,7 @@ country_event = {
 	}
 	option = {
 		name = ab_india_lha_events.24.b
-		change_tag = TSU
+		switch_tag = TSU
 		TSU = {
 			add_prestige = 20
 			add_mil_power = 25
