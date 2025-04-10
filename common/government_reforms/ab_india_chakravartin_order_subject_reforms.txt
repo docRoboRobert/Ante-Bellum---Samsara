@@ -1,0 +1,32 @@
+chakravartin_order_reform = {
+	icon = "chakravartin_order_reform"
+	allow_convert = no
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	fixed_rank = 2
+	potential = {
+		is_subject_of_type = chakravartin_order
+		OR = {
+			religion = vajrayana
+			religion = mahayana
+			religion = maitreya
+			religion = buddhism
+		}
+	}
+	modifiers = {
+		monarch_military_power = 2
+		land_morale = 0.1
+		naval_morale = 0.1
+		army_tradition = 0.5
+		leader_land_shock = 1
+		leader_land_fire = 1
+		leader_land_manuever = 1
+		leader_siege = 1
+	}
+	conditional = {
+		heir = no
+		allow = {
+		}
+	}
+	rulers_can_be_generals = yes
+}
