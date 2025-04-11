@@ -7,25 +7,59 @@ lha_oirat_friend = {
 			limit = {
 				has_country_flag = lha_kht_friend
 			}
-			alliance_with = KHT
+			any_country = {
+				is_or_was_tag = {
+					tag = KHT
+				}
+				OR = {
+					alliance_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
 		}
 		else_if = {
 			limit = {
 				has_country_flag = lha_drb_friend
 			}
-			alliance_with = DRB
+			any_country = {
+				is_or_was_tag = {
+					tag = DRB
+				}
+				OR = {
+					alliance_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
 		}
 		else_if = {
 			limit = {
 				has_country_flag = lha_trg_friend
 			}
-			alliance_with = TRG
+			any_country = {
+				is_or_was_tag = {
+					tag = TRG
+				}
+				OR = {
+					alliance_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
 		}
 		else_if = {
 			limit = {
 				has_country_flag = lha_oir_friend
 			}
-			alliance_with = OIR
+			OIR = {
+				any_country = {
+					is_or_was_tag = {
+						tag = OIR
+					}
+					OR = {
+						alliance_with = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
 		}
 	}
 	diplomatic_upkeep = 1
@@ -53,6 +87,5 @@ lha_gratitude_of_the_khmer = {
 	trigger = {
 		accepted_culture = khmer
 	}
-	
 	num_accepted_cultures = 1
 }
