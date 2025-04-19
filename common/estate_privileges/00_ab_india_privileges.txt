@@ -251,7 +251,7 @@ estate_tamil_guilds_draft_merchant_ships = {
 		NOT = { has_country_modifier = tamil_guilds_drafted_ships_timer }
 	}
 	on_revoked = {
-		add_trasury = -150
+		add_treasury = -150
 	}
 	on_invalid = { add_prestige = -5 }
 	on_granted = {
@@ -309,7 +309,7 @@ estate_tamil_guilds_draft_war_ships = {
 		is_at_war = no
 	}
 	on_revoked = {
-		add_trasury = -125
+		add_treasury = -125
 		remove_country_modifier = tamil_guilds_drafted_war_ships_timer
 	}
 	on_invalid = { add_prestige = -5 }

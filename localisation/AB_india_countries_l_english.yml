@@ -93,7 +93,9 @@
  STR_ADJ:0 "Sataran"
  BHI:0 "Bhingar"
  BHI_ADJ:0 "Bhingari"
- YAD:0 "Seuna" #Yadava
+ YAD:0 "Seuna"
+ GPH:0 "Ganden Phodrang"
+ GPH_ADJ:0 "Phodrangian"
  YAD_ADJ:0 "Seuna"
  NVS:0 "Navsari"
  NVS_ADJ:0 "Navsarian"
@@ -276,3 +278,7 @@
  ANURADHAPURA_RENAME_ADJ:0 "Anuradhapuran"
  JFN_CONFEDERACY_OF_EELAM:0 "Confederacy of Eelam"
  JFN_CONFEDERACY_OF_EELAM_ADJ:0 "Eelami"
+
+ ORS:0 "Order of the Rising Sun"
+ ORS_ADJ:0 "Japanese"
+ ORS_ADJ2:0 "Japanese"

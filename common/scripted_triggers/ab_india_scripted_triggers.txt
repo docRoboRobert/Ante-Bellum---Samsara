@@ -196,11 +196,13 @@ has_exempt_from_seize_land_for_estate_gya = {
 
 still_buddies_with_kht = {
 	has_country_flag = lha_kht_friend
-	AND = {
-		exists = KHT
+	any_country = {
+		is_or_was_tag = {
+			tag = KHT
+		}
 		OR = {
-			alliance_with = KHT
-			overlord_of = KHT
+			alliance_with = ROOT
+			is_subject_of = ROOT
 		}
 	}
 }
@@ -547,7 +549,7 @@ fund_pilgrimage_cost_trigger = {
 	}
 }
 
-empire_of_china_dismantled= {
+empire_of_china_dismantled = {
 	custom_trigger_tooltip = {
 		tooltip = empire_of_china_dismantled_tooltip
 		OR = {

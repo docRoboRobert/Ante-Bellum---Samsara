@@ -554,8 +554,8 @@ country_event = {
 				who = ROOT
 				value = 5
 			}
-			set_country_flag = lha_oir_friend
 		}
+		set_country_flag = lha_oir_friend
 	}
 	option = {
 		name = ab_india_lha_events.13.e

@@ -237,34 +237,58 @@ lha_subjugate_oirat_friend = {
 		limit = {
 			still_buddies_with_drb = yes
 		}
-		lha_subjugate_oirat = {
-			oirat_tag = DRB
+		every_country = {
+			limit = {
+				is_or_was_tag = {
+					tag = DRB
+				}
+			}
+			save_global_event_target_as = oirat_friend
 		}
 	}
 	else_if = {
 		limit = {
 			still_buddies_with_kht = yes
 		}
-		lha_subjugate_oirat = {
-			oirat_tag = KHT
+		every_country = {
+			limit = {
+				is_or_was_tag = {
+					tag = KHT
+				}
+			}
+			save_global_event_target_as = oirat_friend
 		}
 	}
 	else_if = {
 		limit = {
 			still_buddies_with_trg = yes
 		}
-		lha_subjugate_oirat = {
-			oirat_tag = TRG
+		every_country = {
+			limit = {
+				is_or_was_tag = {
+					tag = TRG
+				}
+			}
+			save_global_event_target_as = oirat_friend
 		}
 	}
 	else_if = {
 		limit = {
 			still_buddies_with_oir = yes
 		}
-		lha_subjugate_oirat = {
-			oirat_tag = OIR
+		every_country = {
+			limit = {
+				is_or_was_tag = {
+					tag = OIR
+				}
+			}
+			save_global_event_target_as = oirat_friend
 		}
 	}
+	lha_subjugate_oirat = {
+		oirat_tag = event_target:oirat_friend
+	}
+	clear_global_event_target = oirat_friend
 }
 
 lha_maritime_guild_effect = {
