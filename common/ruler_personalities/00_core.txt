@@ -112,6 +112,12 @@ just_personality = {
 
 	easy_war_chance_multiplier = 0.5
 	fair_fights = yes
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	global_unrest = -2
 	nation_designer_cost = 2
@@ -156,7 +162,10 @@ righteous_personality = {
 			government = republic
 			government = monarchy
 		}
-		NOT = { has_reform = celestial_empire }
+		NOT = { OR = {
+			has_reform = MIN_celestial_empire
+			has_reform = celestial_empire
+		} }
 		NOT = { government = tribal }
 		NOT = { government = native }
 	}
@@ -172,6 +181,12 @@ righteous_personality = {
 	
 	legitimacy = 1
 	republican_tradition = 0.5
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 
 	wants_ecumenical_council = yes
 
@@ -235,6 +250,12 @@ tolerant_personality = {
 	
 	heretic_ally_acceptance = 10
 	heathen_ally_acceptance = 20
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	tolerance_heretic = 1
 	tolerance_heathen = 1
@@ -278,6 +299,12 @@ kind_hearted_personality = {
 	gift_chance = 65
 	alliance_acceptance = 10
 	
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
+
 	war_exhaustion = -0.05
 	nation_designer_cost = 5
 } # 1 better
@@ -361,9 +388,20 @@ free_thinker_personality = {
 			factor = 2 
 			has_country_flag = egypt_better_traits_flag
 		}
+		# AB [[[
+		modifier = {
+			factor = 3
+			mission_completed = emp_mlo_university_rules
+		}
+		# ]]]
 	}
 	
 	knowledge_sharing = yes
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	idea_cost = -0.05
 	nation_designer_cost = 2
@@ -386,6 +424,12 @@ well_connected_personality = {
 				factor = 3
 				has_country_flag = turkoman_triple_trait_chance
 			}
+			# AB [[[
+			modifier = {
+				factor = 3
+				mission_completed = zun_court
+			}
+			# ]]]
 		}
 	}
 	heir_allow = {
@@ -425,7 +469,16 @@ well_connected_personality = {
 			factor = 2 
 			has_country_flag = egypt_better_traits_flag
 		}
+		modifier = {
+			factor = 3
+			has_country_flag = hab_triple_chance_well_connected_flag
+		}
 	}
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	other_ai_help_us_multiplier = 2
 	
@@ -474,6 +527,12 @@ calm_personality = {
 			has_country_flag = egypt_better_traits_flag
 		}
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	war_chance_multiplier = 0.5
 	easy_war_chance_multiplier = 0.75
@@ -536,6 +595,10 @@ careful_personality = {
 			factor = 2 
 			has_country_flag = egypt_better_traits_flag
 		}
+		modifier = {
+			factor = 3
+			has_country_flag = hab_triple_chance_of_careful_flag
+		}
 	}
 	
 	war_chance_multiplier = 0.4
@@ -594,6 +657,12 @@ secretive_personality = {
 			has_country_flag = egypt_better_traits_flag
 		}
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	wants_condottieri = yes
 	
@@ -662,6 +731,12 @@ intricate_web_weaver_personality = {
 		}
 	}
 	
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
+	
 	wants_condottieri = yes
 	
 	spy_offence = 0.3
@@ -725,6 +800,12 @@ fertile_personality = {
 		}
 	}
 	
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
+
 	royal_marriage_acceptance = 20
 	
 	heir_chance = 0.5
@@ -770,6 +851,12 @@ well_advised_personality = {
 		}
 	}
 	
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
+
 	war_chance_multiplier = 0.6
 	
 	advisor_pool = 1
@@ -834,6 +921,12 @@ benevolent_personality = {
 			has_country_flag = egypt_better_traits_flag
 		}
 	}
+	
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	gift_chance = 25
 	
@@ -908,6 +1001,12 @@ zealot_personality = {
 			has_country_flag = egypt_better_traits_flag
 		}
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	different_religion_war_multiplier = 2
 	heretic_ally_acceptance = -1000
@@ -950,6 +1049,12 @@ pious_personality = {
 			has_country_flag = egypt_better_traits_flag
 		}
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	different_religion_war_multiplier = 1.5
 	wants_excommunicate = yes
@@ -1013,6 +1118,12 @@ lawgiver_personality = {
 			has_country_flag = egypt_better_traits_flag
 		}
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	custom_ai_explanation = "AI_RULER_PICK_IDEA_GROUPS"
 	
@@ -1085,6 +1196,12 @@ midas_touched_personality = {
 			has_country_flag = egypt_better_traits_flag
 		}
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	wants_gold = yes
 	custom_ai_explanation = "AI_RULER_PICK_IDEA_GROUPS"
@@ -1148,6 +1265,12 @@ incorruptible_personality = {
 			has_country_flag = egypt_better_traits_flag
 		}
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	gift_chance = -50
 	wants_avoid_debase = yes
@@ -1172,6 +1295,12 @@ architectural_visionary_personality = {
 				factor = 3
 				has_country_flag = geo_visionary_flag
 			}
+			# AB {{{
+			modifier = {
+				factor = 3
+				mission_completed = ghu_architecture
+			}
+			# }}}
 		}
 	}
 
@@ -1189,6 +1318,12 @@ architectural_visionary_personality = {
 				factor = 3
 				has_country_flag = geo_visionary_flag
 			}
+			# AB {{{
+			modifier = {
+				factor = 3
+				mission_completed = ghu_architecture
+			}
+			# }}}
 		}
 	}
 	
@@ -1214,6 +1349,11 @@ architectural_visionary_personality = {
 			has_country_flag = egypt_better_traits_flag
 		}
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	# }}}
 	
 	building_budget_multiplier = 1.8
 	
@@ -1237,6 +1377,20 @@ scholar_personality = {
 				factor = 3
 				has_country_flag = hsn_scholar_trait
 			}
+			# AB {{{
+			modifier = {
+				factor = 3
+				mission_completed = byzantium_university
+			}
+			modifier = {
+				factor = 3
+				has_country_flag = koj_scholar_chance
+			}
+			modifier = {
+				factor = 3
+				mission_completed = ghu_nalanda
+			}
+			# }}}
 		}
 	}
 
@@ -1254,6 +1408,20 @@ scholar_personality = {
 				factor = 3
 				has_country_flag = hsn_scholar_trait
 			}
+			# AB {{{
+			modifier = {
+				factor = 3
+				mission_completed = byzantium_university
+			}
+			modifier = {
+				factor = 3
+				mission_completed = ghu_nalanda
+			}
+			modifier = {
+				factor = 3
+				has_country_flag = koj_scholar_chance
+			}
+			# }}}
 		}
 	}
 	
@@ -1265,6 +1433,11 @@ scholar_personality = {
 			}
 		}
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	allow = { }
 	
@@ -1281,7 +1454,13 @@ scholar_personality = {
 			factor = 1
 			has_country_flag = SUN_increase_chance_for_scholar_trait_flag
 		}
-	}
+		# AB [[[
+		modifier = {
+			factor = 3
+			mission_completed = emp_mlo_university_rules
+		}
+		# ]]]
+	 }
 	
 	custom_ai_explanation = "AI_RULER_SPEND_UNLOCK_INSTIT"
 	
@@ -1302,6 +1481,36 @@ entrepreneur_personality = {
 				factor = 1
 				DIP = 6
 			}
+			# AB [[[
+			modifier = {
+				factor = 3
+				mission_completed = ab_nov_bogdanov
+			}
+			modifier = {
+				factor = 3
+				mission_completed = per_terminus
+			}
+			modifier = {
+				factor = 3
+				mission_completed = perm_terminus
+			}
+			modifier = {
+				factor = 3
+				mission_completed = perc_terminus
+			}
+			modifier = {
+				factor = 3
+				mission_completed = mper_terminus
+			}
+			modifier = {
+				factor = 3
+				mission_completed = rum_terminus
+			}
+			modifier = {
+				factor = 3
+				mission_completed = msn_coromandel
+			}
+			# ]]]
 		}
 	}
 
@@ -1315,6 +1524,36 @@ entrepreneur_personality = {
 				factor = 1
 				heir_DIP = 6
 			}
+			# AB [[[
+			modifier = {
+				factor = 3
+				mission_completed = ab_nov_bogdanov
+			}
+			modifier = {
+				factor = 3
+				mission_completed = per_terminus
+			}
+			modifier = {
+				factor = 3
+				mission_completed = perm_terminus
+			}
+			modifier = {
+				factor = 3
+				mission_completed = perc_terminus
+			}
+			modifier = {
+				factor = 3
+				mission_completed = mper_terminus
+			}
+			modifier = {
+				factor = 3
+				mission_completed = rum_terminus
+			}
+			modifier = {
+				factor = 3
+				mission_completed = msn_coromandel
+			}
+			# ]]]
 		}
 	}
 	
@@ -1349,6 +1588,11 @@ entrepreneur_personality = {
 			has_country_flag = egypt_better_traits_flag
 		}
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	# }}}
 	
 	building_budget_multiplier = 1.5
 	
@@ -1400,7 +1644,18 @@ industrious_personality = {
 			factor = 1
 			has_country_flag = MUG_higher_industrious_chance
 		}
+		# AB {{{
+		modifier = {
+			factor = 3
+			has_country_flag = ab_industrious_trait_triple
+		}
+		# }}}
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	# }}}
 	
 	building_budget_multiplier = 1.2
 	custom_ai_explanation = "AI_RULER_PICK_IDEA_GROUPS"
@@ -1488,6 +1743,12 @@ expansionist_personality = {
 			primitives = yes
 		}
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	wants_colonies = yes
 	
@@ -1565,6 +1826,12 @@ charismatic_negotiator_personality = {
 			has_country_flag = hab_higher_charismatic_negotiator_chance
 		}
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	other_ai_peace_term_bonus = 10
 	
@@ -1635,6 +1902,12 @@ silver_tongue_personality = {
 			has_country_flag = egypt_better_traits_flag
 		}
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	other_ai_war_chance_multiplier = 0.5
 	
@@ -1707,13 +1980,21 @@ conqueror_personality = {
 	}
 
 	allow = {
+		
 	}
+
 	years_of_nationalism = -5
 	nation_designer_cost = 2
 	
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	underestimate_ae = yes
+	building_budget_multiplier = 0.2
 	easy_war_chance_multiplier = 2
 	war_chance_multiplier = 1.75
-	building_budget_multiplier = 0.2
+	# }}}
+
 	gift_chance = -50
 	wants_land = yes
 	
@@ -1783,6 +2064,12 @@ tactical_genius_personality = {
 			has_country_flag = egypt_better_traits_flag
 		}
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	easy_war_chance_multiplier = 1.4
 	
@@ -1845,6 +2132,12 @@ bold_fighter_personality = {
 			has_country_flag = egypt_better_traits_flag
 		}
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	enemy_strength_multiplier = 0.85
 	
@@ -1862,6 +2155,12 @@ strict_personality = {
 				factor = 1
 				MIL = 6
 			}
+			# AB {{{
+			modifier = {
+				factor = 3
+				mission_completed = nicene_education
+			}
+			# }}}
 		}
 	}
 
@@ -1895,6 +2194,12 @@ strict_personality = {
 			has_country_flag = egypt_better_traits_flag
 		}
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	wants_avoid_debase = yes
 	wants_avoid_loans = yes
@@ -1921,6 +2226,12 @@ inspiring_leader_personality = {
 				factor = 1
 				MIL = 6
 			}
+			# AB {{{
+			modifier = {
+				factor = 3
+				mission_completed = nicene_education
+			}
+			# }}}
 		}
 	}
 
@@ -1965,6 +2276,12 @@ inspiring_leader_personality = {
 			has_country_flag = egypt_better_traits_flag
 		}
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	land_morale = 0.05
 	nation_designer_cost = 5
@@ -2022,6 +2339,12 @@ martial_educator_personality = {
 			has_country_flag = azt_more_martial_educators_flag
 		}
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	easy_war_chance_multiplier = 1.2
 	custom_ai_explanation = "AI_RULER_PICK_IDEA_GROUPS"
@@ -2085,6 +2408,12 @@ navigator_personality = {
 			has_country_flag = egypt_better_traits_flag
 		}
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	custom_ai_explanation = "AI_RULER_PICK_IDEA_GROUPS"
 	wants_explorers = yes
@@ -2143,6 +2472,12 @@ fierce_negotiator_personality = {
 			has_country_flag = egypt_better_traits_flag
 		}
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	peace_desire = -10
 	
@@ -2157,11 +2492,14 @@ fierce_negotiator_personality = {
 babbling_buffoon_personality = {
 	ruler_allow = {
 		allow = {
-			NOT = {ruler_has_personality = enlightened_personality}
+			NOT = {ruler_has_personality = enlightened_personality}											  
 			NOT = { ruler_has_personality = charismatic_negotiator_personality }
 			NOT = { ruler_has_personality = silver_tongue_personality }
 			NOT = { has_country_flag = boh_prevent_negative_traits }
 			NOT = { dip = 5 }
+			# AB {{{
+			NOT = { mission_completed = byzantium_nomos }
+			# }}}
 		}
 	
 		chance = {
@@ -2191,6 +2529,9 @@ babbling_buffoon_personality = {
 			NOT = { heir_has_personality = silver_tongue_personality }
 			NOT = { has_country_flag = boh_prevent_negative_traits }
 			NOT = { heir_dip = 5 }
+			# AB {{{
+			NOT = { mission_completed = byzantium_nomos }
+			# }}}
 		}
 	
 		chance = {
@@ -2245,6 +2586,13 @@ babbling_buffoon_personality = {
 	allow = {
 		
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
+
 	diplomatic_reputation = -1
 	nation_designer_cost = -2
 	
@@ -2259,8 +2607,11 @@ babbling_buffoon_personality = {
 embezzler_personality = {
 	ruler_allow = {
 		allow = {
-			NOT = {ruler_has_personality = enlightened_personality}
+			NOT = {ruler_has_personality = enlightened_personality}											  
 			NOT = { ruler_has_personality = incorruptible_personality }
+			# AB {{{
+			NOT = { mission_completed = byzantium_nomos }
+			# }}}
 		}
 	
 		chance = {
@@ -2287,6 +2638,9 @@ embezzler_personality = {
 	heir_allow = {
 		allow = {
 			NOT = { heir_has_personality = incorruptible_personality }
+			# AB {{{
+			NOT = { mission_completed = byzantium_nomos }
+			# }}}
 		}
 	
 		chance = {
@@ -2342,6 +2696,12 @@ embezzler_personality = {
 	
 	chance = {
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	wants_debase = yes
 	wants_to_appoint_cardinals_in_his_own_land = yes
@@ -2355,6 +2715,9 @@ infertile_personality = {
 	ruler_allow = {
 		allow = {
 			NOT = { ruler_has_personality = fertile_personality }
+			# AB {{{
+			NOT = { mission_completed = byzantium_nomos }
+			# }}}
 		}
 	
 		chance = {
@@ -2385,6 +2748,9 @@ infertile_personality = {
 	heir_allow = {
 		allow = {
 			NOT = { heir_has_personality = fertile_personality }
+			# AB {{{
+			NOT = { mission_completed = byzantium_nomos }
+			# }}}
 		}
 	
 		chance = {
@@ -2452,6 +2818,12 @@ infertile_personality = {
 	chance = {
 		
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	royal_marriage_acceptance = -20
 	
@@ -2461,10 +2833,13 @@ infertile_personality = {
 drunkard_personality = {
 	ruler_allow = {
 		allow = {
-			NOT = {ruler_has_personality = enlightened_personality}
+			NOT = {ruler_has_personality = enlightened_personality}											  
 			NOT = { ruler_has_personality = pious_personality }
 			NOT = { ruler_has_personality = entrepreneur_personality }
 			NOT = { ruler_has_personality = zealot_personality }
+			# AB {{{
+			NOT = { mission_completed = byzantium_nomos }
+			# }}}
 		}
 	
 		chance = {
@@ -2493,6 +2868,9 @@ drunkard_personality = {
 			NOT = { heir_has_personality = pious_personality }
 			NOT = { heir_has_personality = entrepreneur_personality }
 			NOT = { heir_has_personality = zealot_personality }
+			# AB {{{
+			NOT = { mission_completed = byzantium_nomos }
+			# }}}
 		}
 	
 		chance = {
@@ -2550,6 +2928,12 @@ drunkard_personality = {
 	
 	chance = {
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	#random_troop_moves = yes Commenting out since often indistinguishable from a bug.
 	wants_loans = yes
@@ -2558,12 +2942,15 @@ drunkard_personality = {
 	nation_designer_cost = -2
 } #Scandal at court more likely
 sinner_personality = {
+
 	ruler_allow = {
 		allow = {
-			NOT = {ruler_has_personality = enlightened_personality}
+			NOT = {ruler_has_personality = enlightened_personality}											  
 			NOT = { ruler_has_personality = pious_personality }
 			NOT = { ruler_has_personality = zealot_personality }
+			NOT = { mission_completed = byzantium_nomos }
 		}
+	
 		chance = {
 			modifier = {
 				factor = -0.5
@@ -2584,11 +2971,16 @@ sinner_personality = {
 			}
 		}
 	}
+
 	heir_allow = {
 		allow = {
 			NOT = { heir_has_personality = pious_personality }
 			NOT = { heir_has_personality = zealot_personality }
+			# AB {{{
+			NOT = { mission_completed = byzantium_nomos }
+			# }}}
 		}
+	
 		chance = {
 			modifier = {
 				factor = -0.5
@@ -2609,11 +3001,13 @@ sinner_personality = {
 			}
 		}
 	}
+	
 	consort_allow = {
 		allow = {
 			NOT = { consort_has_personality = pious_personality }
 			NOT = { consort_has_personality = zealot_personality }
 		}
+
 		chance = {
 			modifier = {
 				factor = -0.5
@@ -2634,30 +3028,41 @@ sinner_personality = {
 			}
 		}
 	}
+	
 	allow = {
 		OR = {
 			religion_group = christian
 			religion_group = muslim
 			religion_group = jewish_group
 		}
-		NOT = { has_country_flag = MUG_disable_sinner_flag }
+		NOT = { has_country_flag = MUG_disable_sinner_flag }											  
 	}
+	
 	chance = {
 	}
 
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
+	
 	different_religion_war_multiplier = 0.8
 	razing = yes
 	wants_to_appoint_cardinals_in_his_own_land = yes
-
+	
 	tolerance_own = -2
 	monthly_blood = -0.5
 	nation_designer_cost = -2
-} #1 better 
+} #1 better
 greedy_personality = {
 	ruler_allow = {
 		allow = {
-			NOT = {ruler_has_personality = enlightened_personality}
+			NOT = {ruler_has_personality = enlightened_personality}											  
 			NOT = { ruler_has_personality = midas_touched_personality }
+			# AB {{{
+			NOT = { mission_completed = byzantium_nomos }
+			# }}}
 		}
 	
 		chance = {
@@ -2684,6 +3089,9 @@ greedy_personality = {
 	heir_allow = {
 		allow = {
 			NOT = { heir_has_personality = midas_touched_personality }
+			# AB {{{
+			NOT = { mission_completed = byzantium_nomos }
+			# }}}
 		}
 	
 		chance = {
@@ -2738,6 +3146,12 @@ greedy_personality = {
 	
 	chance = {
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	wants_gold = yes
 	wants_to_appoint_cardinals_in_his_own_land = yes
@@ -2782,10 +3196,13 @@ cruel_personality = {
 
 	ruler_allow = {
 		allow = {
-			NOT = {ruler_has_personality = enlightened_personality}
+			NOT = {ruler_has_personality = enlightened_personality}											  
 			NOT = { ruler_has_personality = just_personality }
 			NOT = { ruler_has_personality = kind_hearted_personality }
 			NOT = { has_country_flag = hsn_prevent_leader_trait }
+			# AB {{{
+			NOT = { mission_completed = byzantium_nomos }
+			# }}}
 		}
 	
 		chance = {
@@ -2814,6 +3231,9 @@ cruel_personality = {
 			NOT = { heir_has_personality = just_personality }
 			NOT = { heir_has_personality = kind_hearted_personality }
 			NOT = { has_country_flag = hsn_prevent_leader_trait }
+			# AB {{{
+			NOT = { mission_completed = byzantium_nomos }
+			# }}}
 		}
 	
 		chance = {
@@ -2863,6 +3283,12 @@ cruel_personality = {
 			}
 		}
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	wants_betray_allies = yes
 
@@ -2875,10 +3301,13 @@ cruel_personality = {
 naive_personality = {
 	ruler_allow = {
 		allow = {
-			NOT = {ruler_has_personality = enlightened_personality}
+			NOT = {ruler_has_personality = enlightened_personality}											  
 			NOT = { ruler_has_personality = silver_tongue_personality }
 			NOT = { ruler_has_personality = careful_personality }
 			NOT = { has_country_flag = boh_prevent_negative_traits }
+			# AB {{{
+			NOT = { mission_completed = byzantium_nomos }
+			# }}}
 		}
 	
 		chance = {
@@ -2911,6 +3340,9 @@ naive_personality = {
 			NOT = { heir_has_personality = silver_tongue_personality }
 			NOT = { heir_has_personality = careful_personality }
 			NOT = { has_country_flag = boh_prevent_negative_traits }
+			# AB {{{
+			NOT = { mission_completed = byzantium_nomos }
+			# }}}
 		}
 	
 		chance = {
@@ -2975,6 +3407,12 @@ naive_personality = {
 	
 	chance = {
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	underestimate_ae = yes
 	fair_fights = yes
@@ -2987,10 +3425,13 @@ naive_personality = {
 craven_personality = {
 	ruler_allow = {
 		allow = {
-			NOT = {ruler_has_personality = enlightened_personality}
+			NOT = {ruler_has_personality = enlightened_personality}											  
 			NOT = { ruler_has_personality = inspiring_leader_personality }
 			NOT = { ruler_has_personality = bold_fighter_personality }
 			NOT = { has_country_flag = hsn_prevent_leader_trait }
+			# AB {{{
+			NOT = { mission_completed = byzantium_nomos }
+			# }}}
 		}
 	
 		chance = {
@@ -2998,6 +3439,12 @@ craven_personality = {
 				factor = -0.5
 				is_monarch_leader = no
 			}
+			# AB {{{
+			modifier = {
+				factor = 0
+				mission_completed = nicene_education
+			}
+			# }}}
 			modifier = {
 				factor = -0.5
 				OR = {
@@ -3023,6 +3470,9 @@ craven_personality = {
 			NOT = { heir_has_personality = inspiring_leader_personality }
 			NOT = { heir_has_personality = bold_fighter_personality }
 			NOT = { has_country_flag = hsn_prevent_leader_trait }
+			# AB {{{
+			NOT = { mission_completed = byzantium_nomos }
+			# }}}
 		}
 	
 		chance = {
@@ -3030,6 +3480,12 @@ craven_personality = {
 				factor = -0.5
 				is_heir_leader = no
 			}
+			# AB {{{
+			modifier = {
+				factor = 0
+				mission_completed = nicene_education
+			}
+			# }}}
 			modifier = {
 				factor = -0.5
 				OR = {
@@ -3083,6 +3539,13 @@ craven_personality = {
 	chance = {
 		
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
+
 	enemy_strength_multiplier = 1.25
 	
 	land_morale = -0.05
@@ -3091,9 +3554,12 @@ craven_personality = {
 loose_lips_personality = {
 	ruler_allow = {
 		allow = {
-			NOT = {ruler_has_personality = enlightened_personality}
+			NOT = {ruler_has_personality = enlightened_personality}											  
 			NOT = { ruler_has_personality = intricate_web_weaver_personality }
 			NOT = { ruler_has_personality = secretive_personality }
+			# AB {{{
+			NOT = { mission_completed = byzantium_nomos }
+			# }}}
 		}
 	
 		chance = {
@@ -3121,6 +3587,9 @@ loose_lips_personality = {
 		allow = {
 			NOT = { heir_has_personality = intricate_web_weaver_personality }
 			NOT = { heir_has_personality = secretive_personality }
+			# AB {{{
+			NOT = { mission_completed = byzantium_nomos }
+			# }}}
 		}
 	
 		chance = {
@@ -3176,6 +3645,12 @@ loose_lips_personality = {
 	
 	chance = {
 	}
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	wants_disclose_attack = yes
 	
@@ -3186,10 +3661,13 @@ obsessive_perfectionist_personality = {
 	ruler_allow = {
 		allow = {
 			OR = {
-				NOT = {ruler_has_personality = enlightened_personality}
+				NOT = {ruler_has_personality = enlightened_personality}										   
 				NOT = { ruler_has_personality = patron_of_arts_personality }
 				NOT = { ruler_has_personality = architectural_visionary_personality }
 			}
+			# AB {{{
+			NOT = { mission_completed = byzantium_nomos }
+			# }}}
 		}
 	
 		chance = {
@@ -3216,6 +3694,9 @@ obsessive_perfectionist_personality = {
 	heir_allow = {
 		allow = {
 			NOT = { heir_has_personality = architectural_visionary_personality }
+			# AB {{{
+			NOT = { mission_completed = byzantium_nomos }
+			# }}}
 		}
 	
 		chance = {
@@ -3270,6 +3751,11 @@ obsessive_perfectionist_personality = {
 	
 	chance = {
 	}
+
+	# AB {{{
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	wants_avoid_ugly_borders = yes
 	
@@ -3279,9 +3765,12 @@ obsessive_perfectionist_personality = {
 malevolent_personality = {
 	ruler_allow = {
 		allow = {
-			NOT = {ruler_has_personality = enlightened_personality}
+			NOT = {ruler_has_personality = enlightened_personality}											  
 			NOT = { ruler_has_personality = benevolent_personality }
 			NOT = { ruler_has_personality = kind_hearted_personality }
+			# AB {{{
+			NOT = { mission_completed = byzantium_nomos }
+			# }}}
 		}
 	
 		chance = {
@@ -3309,6 +3798,9 @@ malevolent_personality = {
 		allow = {
 			NOT = { heir_has_personality = benevolent_personality }
 			NOT = { heir_has_personality = kind_hearted_personality }
+			# AB {{{
+			NOT = { mission_completed = byzantium_nomos }
+			# }}}
 		}
 	
 		chance = {
@@ -3387,6 +3879,12 @@ immortal_personality = {
 		}
 	}
 
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
+
 	immortal = 1 # dummy modifier only used to get the right icon
 	nation_designer_cost = 800
 	static = yes # Makes nation_designer_cost not scale with age etc. 
@@ -3394,7 +3892,7 @@ immortal_personality = {
 
 legendary_pirate_personality = {
 	allow = {
-		NOT = {ruler_has_personality = enlightened_personality}
+		NOT = {ruler_has_personality = enlightened_personality}												 
 		has_government_attribute = is_pirate_republic_reform
 	}
 	
@@ -3482,7 +3980,10 @@ humane_personality = {
 
 	allow = {
 		has_dlc = "Mandate of Heaven"
-		has_reform = celestial_empire
+		OR = {
+			has_reform = MIN_celestial_empire
+			has_reform = celestial_empire
+		}
 	}
 
 	chance = {
@@ -3498,6 +3999,12 @@ humane_personality = {
 		}
 	}
 
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
+
 	fair_fights = yes
 	gift_chance = 30
 	alliance_acceptance = 5
@@ -3510,8 +4017,9 @@ humane_personality = {
 petty_personality = {
 	ruler_allow = {
 		allow = {
-			NOT = {ruler_has_personality = enlightened_personality}
+			NOT = {ruler_has_personality = enlightened_personality}											  
 			NOT = { ruler_has_personality = humane_personality }
+			NOT = { mission_completed = byzantium_nomos }
 		}
 	
 		chance = {
@@ -3589,7 +4097,10 @@ petty_personality = {
 
 	allow = {
 		has_dlc = "Mandate of Heaven"
-		has_reform = celestial_empire
+		OR = {
+			has_reform = celestial_empire
+			has_reform = MIN_celestial_empire
+		}
 	}
 
 	chance = {
@@ -3605,6 +4116,12 @@ petty_personality = {
 		}
 	}
 
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
+	
 	random_insults = yes
 	wants_betray_allies = yes
 	razing = yes
@@ -3656,6 +4173,12 @@ reformist_personality = {
 	allow = { }
 	
 	chance = { }
+
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
 	
 	custom_ai_explanation = "AI_RULER_PICK_IDEA_GROUPS"
 	
@@ -3765,6 +4288,12 @@ patron_of_arts_personality = {
 	
 	custom_ai_explanation = "AI_RULER_SPEND_UNLOCK_INSTIT"
 	
+	# AB {{{
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# }}}
+	
 	knowledge_sharing = yes
 	technology_cost = -0.05
 	idea_cost = -0.05
@@ -3777,6 +4306,12 @@ papal_puppetmaster_personality = {
 	prestige = 1 
 	unrest_catholic_provinces = -2
 	nation_designer_cost = 5
+	
+	# AB [[[
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# ]]]
 }
 
 iron_crowned_personality = {
@@ -3792,6 +4327,12 @@ iron_crowned_personality = {
 	gift_chance = -50
 	wants_land = yes
 	
+	# AB [[[
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# ]]]
+
 	chance = {	
 	}
 }
@@ -3807,6 +4348,12 @@ peasant_revolt_leader_personality = {
 	war_chance_multiplier = 2.5
 	wants_land = yes
 	
+	# AB [[[
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# ]]]
+
 	chance = {	
 	}
 }
@@ -3826,6 +4373,12 @@ merchant_basileus_personality = {
 	global_trade_goods_size_modifier = 0.1
 	
 	nation_designer_cost = 15
+	
+	# AB [[[
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# ]]]
 }
 
 orangist_stadholder_personality = {
@@ -3835,13 +4388,19 @@ orangist_stadholder_personality = {
 	nation_designer_cost = 40
 	yearly_absolutism = 0.5
 	global_unrest = -2
+	
+	# AB [[[
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# ]]]
 }
 
 reaver_personality = {
 	ruler_allow = {
 		allow = {
 			MIL = 3
-			NOT = {ruler_has_personality = enlightened_personality}
+			NOT = {ruler_has_personality = enlightened_personality}											  
 		}
 	
 		chance = {
@@ -3895,6 +4454,12 @@ reaver_personality = {
 	
 	gift_chance = -50
 	wants_land = yes
+	
+	# AB [[[
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# ]]]
 }
 
 last_knight_personality = {
@@ -3905,4 +4470,10 @@ last_knight_personality = {
 	
 	cavalry_power = 0.1
 	army_tradition_from_battle = 0.5
+	
+	# AB [[[
+	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	building_budget_multiplier = 1.3
+	# ]]]
 }

@@ -196,6 +196,10 @@ monarchy = {
 				bav_south_german_confederation
 				rhl_confederation_reform
 				MIN_celestial_empire
+				# Baltic
+				prr_pruthenian_warchiefdom
+				est_council_of_chiefs
+				krz_tsardom_of_krievzeme		
 				# ]]]
 				#Samsara
 				parmistan_emperor_man
@@ -671,6 +675,9 @@ monarchy = {
 				fkn_blitzkrieg
 				fkn_improved_blitzkrieg
 				rhl_imperial_guards
+				# Baltic
+				blt_forest_warfare
+				blt_pulka_system
 				# ]]]
 				#Samsara
 				dzong_system
@@ -731,6 +738,8 @@ monarchy = {
 				polorganizefaith
 				# Blood and Iron
 				rhl_atheist_ideas
+				# Baltic
+				est_harmony	 
 				# ]]]
 			}
 		}
@@ -925,6 +934,8 @@ monarchy = {
 				croat_talian_reforms
 				# pol
 				poljews
+				# Baltic
+				blt_amber_trade_charter 
 				# ]]]
 			}
 		}

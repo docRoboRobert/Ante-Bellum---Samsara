@@ -1161,6 +1161,7 @@ estate_burghers_monopoly_of_textiles = {
 					value = 1
 				}
 			}
+			NOT = { has_disaster = french_revolution }								 
 			NOT = {
 				has_disaster = french_revolution
 			}
@@ -1294,6 +1295,7 @@ estate_burghers_monopoly_of_dyes = {
 					value = 1
 				}
 			}
+			NOT = { has_disaster = french_revolution }								 
 			NOT = {
 				has_disaster = french_revolution
 			}
@@ -1549,6 +1551,7 @@ estate_burghers_monopoly_of_paper = {
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
+			NOT = { has_disaster = revolution }						  
 			NOT = {
 				has_disaster = revolution
 			}
@@ -1948,7 +1951,9 @@ estate_burghers_private_trade_fleets = {
 	}
 	conditional_modifier = {
 		trigger = {
-			mission_completed = gen_merchant_fleet
+				mission_completed = gen_merchant_fleet
+				has_country_flag = ab_upgrade_private_fleets
+			}
 		}
 		modifier = {
 			light_ship_cost = -0.1
@@ -1957,6 +1962,7 @@ estate_burghers_private_trade_fleets = {
 	}
 	conditional_modifier = {
 		trigger = {
+			NOT = { has_country_flag = BYZ_private_trade_fleet_buff }												
 			NOT = {
 				has_country_flag = BYZ_private_trade_fleet_buff
 			}
@@ -3914,6 +3920,7 @@ estate_burghers_monopoly_of_coffee = {
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = unavailable_during_revolution_disaster
+			NOT = { has_disaster = revolution }						  
 			NOT = {
 				has_disaster = revolution
 			}

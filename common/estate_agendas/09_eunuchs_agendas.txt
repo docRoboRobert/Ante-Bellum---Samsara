@@ -167,6 +167,7 @@ estate_eunuchs_gather_x_gov_reform_agenda = {
 		OR = {
 			has_reform = confucian_bureaucracy
 			has_reform = celestial_empire
+			has_reform = MIN_celestial_empire						
 			has_reform = chinawarlord
 			has_reform = korean_monarchy
 		}
@@ -848,6 +849,7 @@ estate_eunuchs_forbidden_city_agenda = {
 				tag = MNG
 				tag = QNG
 				has_reform = celestial_empire
+				has_reform = MIN_celestial_empire					 
 			}
 			normal_or_historical_nations = yes
 			NOT = { has_country_modifier = the_forbidden_city } 
@@ -1047,6 +1049,10 @@ estate_eunuchs_porcelain_tower_agenda = {
 		if = { 
 			limit = { 
 				NOT = { has_country_flag = mng_glory_of_porcelain_tower_flag }
+				# AB [[[
+				# To avoid failure on auto-completion
+				is_at_war = no
+				# ]]]
 			}
 			country_event = { id = flavor_mng.41 }
 		}
@@ -1059,7 +1065,7 @@ estate_eunuchs_porcelain_tower_agenda = {
 			add_dip_power = 50
 			add_mil_power = 50
 			change_ruler_stat = {
-				stat = adm
+				type = adm
 				amount = 1
 			}
 		}
