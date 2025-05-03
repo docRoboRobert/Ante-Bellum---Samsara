@@ -40,4 +40,14 @@ country_event = {
 		add_adm_power = -10
 		add_dip_power = -10
 	}
+	
+	option = {
+		name = abi_jain_picker.1.e
+		set_religious_school = {
+			group = jain_group
+			school = bhumivastra_school
+		}
+		add_adm_power = -10
+		add_dip_power = -10
+	}
 }

@@ -4,7 +4,7 @@ technology_group = indian
 primary_culture = sindhi
 religion = jainism
 capital = 4504
-religious_school = digambara_school
+religious_school = bhumivastra_school
 
 change_estate_land_share = {
 	estate = estate_nobles

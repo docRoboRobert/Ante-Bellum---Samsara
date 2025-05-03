@@ -53,6 +53,7 @@
  abi_jain_picker.1.a:0 "Embrace Digambara teachings"
  abi_jain_picker.1.b:0 "Embrace Svetambara teachings"
  abi_jain_picker.1.c:0 "Embrace Yapaniya teachings"
+ abi_jain_picker.1.e:0 "Embrace Bhumivastra teachings"
  
  #Malankara aspects events
  malankara_aspect_events.1.t:0 "Grand Malankara Banquet in [malankara_banquet_origanizer.GetName]!"

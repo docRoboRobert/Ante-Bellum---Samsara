@@ -65,6 +65,7 @@ clear_jain_scholar_modifiers_effect = {
 	remove_country_modifier = digambara_scholar_modifier
 	remove_country_modifier = svetambara_scholar_modifier
 	remove_country_modifier = yapaniya_scholar_modifier
+	remove_country_modifier = bhumivastra_scholar_modifier
 }
 
 upgrade_center_of_trade = {

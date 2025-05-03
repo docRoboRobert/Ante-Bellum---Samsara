@@ -3,7 +3,7 @@ government_rank = 1
 add_government_reform = autocracy_reform
 primary_culture = rajput
 religion = jainism
-religious_school = digambara_school
+religious_school = bhumivastra_school
 technology_group = indian
 capital = 514	# Jodphur
 

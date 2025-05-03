@@ -4242,6 +4242,40 @@ jain_group = {
 			tolerance_own = 1
 			production_efficiency = -0.05
 		}
+		bhumivastra_school = {
+			potential_invite_scholar = {
+				always = yes
+			}
+
+			can_invite_scholar = {
+				adm_power_cost = 50
+				NOT = { has_country_modifier = bhumivastra_scholar_modifier }
+			}
+
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_jain_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = bhumivastra_scholar_modifier duration = 7300 }
+				if = {	#Ensures that the AI doesn't waste all of their ADM power on inviting scholars should they be able to invite them baseline
+					limit = {
+						ai = yes
+					}
+					add_country_modifier = { name = has_invited_scholar_recently duration = 7300 hidden = yes }
+				}
+			}
+
+			invite_scholar_modifier_display = bhumivastra_scholar_modifier
+
+			picture = "GFX_icon_muslim_school_bhumivastra"
+
+			stability_cost_to_declare_war = -1
+			female_advisor_chance = 0.1
+			capped_by_forcelimit = yes
+			land_forcelimit_modifier = 0.15
+			may_recruit_female_generals = yes
+			improve_relation_modifier = -0.1
+		}
 	}
 	
 	jainism = {
@@ -4267,7 +4301,7 @@ jain_group = {
 			local_religious_unity_contribution = -0.1
 		}
 		
-		heretic = { DIGAMBARA SVETAMBARA YAPANIYAS }
+		heretic = { DIGAMBARA SVETAMBARA YAPANIYAS BHUMIVASTRAS }
 		
 		uses_karma = yes
 		

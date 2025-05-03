@@ -2130,6 +2130,15 @@ yapaniya_scholar_modifier = {
 	free_policy = 1
 }
 
+bhumivastra_scholar_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	religion = yes
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	global_defender_dice_roll_bonus = 1
+	fort_maintenance_modifier = -0.15
+}
+
 ########################################
 # Regiment Types Modifiers
 ########################################

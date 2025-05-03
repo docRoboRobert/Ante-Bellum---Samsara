@@ -15,4 +15,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/religious_schools/icon_muslim_school_yapaniya.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_icon_muslim_school_bhumivastra"
+		texturefile = "gfx/interface/religious_schools/icon_muslim_school_bhumivastra.dds"
+	}
+	
 }
