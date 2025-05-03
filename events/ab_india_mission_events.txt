@@ -566,3 +566,166 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = abindia_mission.11
+	title = abindia_mission.11.t
+	desc = abindia_mission.11.d
+	picture = EYALET_REBELLION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	#Leave it be
+		name = abindia_mission.11.a
+		2999 = {
+			add_devastation = -20
+		}
+		change_government_reform_progress = 50
+		add_manpower = 5
+		add_faction_influence = {
+			faction = pr_smugglers
+			influence = 25
+		}
+	}
+	
+	option = {
+		name = abindia_mission.11.b #Sack it all
+		2999 = {
+			set_base_tax = 1
+			set_base_production = 1
+			set_base_manpower = 1
+			add_devastation = 100
+			cancel_construction = yes
+			remove_building = marketplace
+			remove_building = workshop
+			remove_building = temple
+			remove_building = dock
+			remove_building = shipyard
+			remove_building = barracks
+		}
+		add_adm_power = 50
+		add_dip_power = 50
+		add_mil_power = 50
+		add_splendor = 100
+		add_treasury = 1000
+		add_years_of_income = 1
+		add_faction_influence = {
+			faction = pr_buccaneers
+			influence = 25
+		}
+	}
+}
+
+country_event = {	#Mahe
+	id = abindia_mission.12
+	title = abindia_mission.12.t
+	desc = abindia_mission.12.d
+	picture = muslimgfx_COLONIZATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	goto = 1100
+	
+	option = {	#Leave it be
+		name = abindia_mission.12.a
+		1100 = { add_base_production = 2 }
+	}
+	
+	option = {	#Make it slaves
+		name = abindia_mission.12.b
+		1100 = {
+			change_trade_goods = slaves
+			add_province_modifier = {
+				name = DGL_mahe_slaves
+				duration = -1
+			}
+		}
+	}
+	option = {	#Make it ivory
+		name = abindia_mission.12.c
+		1100 = {
+			change_trade_goods = ivory
+			add_province_modifier = {
+				name = DGL_mahe_ivory
+				duration = -1
+			}
+		}
+	}
+	option = {	#Make it incense
+		name = abindia_mission.12.e
+		1100 = {
+			change_trade_goods = incense
+			add_province_modifier = {
+				name = DGL_mahe_incense
+				duration = -1
+			}
+		}
+	}
+	option = {	#Make it coffee
+		name = abindia_mission.12.f
+		1100 = {
+			change_trade_goods = coffee
+			add_province_modifier = {
+				name = DGL_mahe_coffee
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {	#Comoros
+	id = abindia_mission.13
+	title = abindia_mission.13.t
+	desc = abindia_mission.13.d
+	picture = muslimgfx_COLONIZATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	goto = 4020
+	
+	option = {	#Leave it be
+		name = abindia_mission.13.a
+		4020 = { add_base_production = 2 }
+	}
+	
+	option = {	#Make it slaves
+		name = abindia_mission.13.b
+		4020 = {
+			change_trade_goods = slaves
+			add_province_modifier = {
+				name = DGL_mahe_slaves
+				duration = -1
+			}
+		}
+	}
+	option = {	#Make it ivory
+		name = abindia_mission.13.c
+		4020 = {
+			change_trade_goods = ivory
+			add_province_modifier = {
+				name = DGL_mahe_ivory
+				duration = -1
+			}
+		}
+	}
+	option = {	#Make it incense
+		name = abindia_mission.13.e
+		4020 = {
+			change_trade_goods = incense
+			add_province_modifier = {
+				name = DGL_mahe_incense
+				duration = -1
+			}
+		}
+	}
+	option = {	#Make it coffee
+		name = abindia_mission.13.f
+		4020 = {
+			change_trade_goods = coffee
+			add_province_modifier = {
+				name = DGL_mahe_coffee
+				duration = -1
+			}
+		}
+	}
+}

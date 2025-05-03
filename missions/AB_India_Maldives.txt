@@ -2,28 +2,23 @@ abi_maldives_first = {
 	slot = 1
 	generic = no
 	ai = yes
-	potential = {
-		tag = DGL
-	}
 	has_country_shield = yes
-	
+	potential = { tag = DGL } 
+
 	DGL_destroy_HTC = {
 		icon = mission_end_arakan_piracy
 		position = 5
-		required_missions = { maldives_mainland_bases }
-		
-		provinces_to_highlight = {
-			province_id = 572
-		}
-		
+		required_missions = { maldives_mainland_bases } 
+		provinces_to_highlight = { province_id = 572 } 
+
 		trigger = {
-			572 = { is_core = ROOT }
+			572 = { is_core = ROOT } 
 			OR = {
 				has_won_war_against = {
 					who = HTC
 					max_years_since = 10
 				}
-				NOT = { exists = HTC }
+				NOT = { exists = HTC } 
 			}
 			army_strength = {
 				who = HTC
@@ -35,101 +30,243 @@ abi_maldives_first = {
 				value = 1.5
 			}
 			navy_size = ORM
-			OR = {
-				prestige = HTC
-			}
+			OR = { prestige = HTC } 
 			OR = {
 				army_tradition = HTC
 				navy_tradition = HTC
 				power_projection = 50
 			}
 		}
-		
+
 		effect = {
 			add_prestige = 5
+			2999 = { add_permanent_claim = ROOT }
 			add_power_projection = {
 				type = mission_rewards_power_projection
 				amount = 10
 			}
 			ORM = {
-				add_prestige = -10 
+				add_prestige = -10
 				add_historical_rival = ROOT
 			}
 			HTC = {
-				add_prestige = -20 
+				add_prestige = -20
 				add_historical_rival = ROOT
 			}
 			custom_tooltip = DGL_destroy_HTC.tooltip
 			hidden_effect = {
 				every_province = {
-					limit = { owned_by = HTC }
+					limit = { owned_by = HTC } 
 					add_core = ROOT
 				}
 				if = {
-					limit = { NOT = { exists = HTC } }
+					limit = { NOT = { exists = HTC }  } 
 					every_province = {
-						limit = { is_core = HTC }
+						limit = { is_core = HTC } 
 						add_permanent_claim = ROOT
 					}
 				}
 			}
 		}
 	}
-}
 
+	DGL_end_hormuz = {
+		icon = mam_hormuz_straits
+		position = 6
+		required_missions = { DGL_destroy_HTC } 
+		provinces_to_highlight = {
+			province_id = 2999
+		}
+
+		trigger = {
+			2999 = { owned_by = ROOT }
+			ORM = {
+				NOT = {
+					num_of_owned_provinces_with = {
+						value = 5
+						is_core = ORM
+					}
+				}
+			}
+		}
+
+		effect = {
+			custom_tooltip = DGL_end_hormuz.tooltip
+			hidden_effect = {
+				every_province = {
+					limit = { is_core = ORM }
+					add_core = ROOT
+				}
+			}
+			if = {
+				limit = { exists = ORM }
+				ORM = {
+					add_prestige = -50
+					add_splendor = -500
+					add_stability = -2
+				}
+			}
+			add_splendor = 100
+			country_event = {
+				id = abindia_mission.11
+				days = 1
+			}
+			bahrain_area = { add_permanent_claim = ROOT }
+			pirate_coast_area = { add_permanent_claim = ROOT }
+			mascat_area = { add_permanent_claim = ROOT }
+		}
+	}
+
+	DGL_develop_mahe = {
+		icon = dutch_formosa
+		position = 8
+		required_missions = { DGL_colonial_ambitions } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1100
+				province_id = 4020
+			}
+		}
+
+		trigger = {
+			1100 = {
+				is_state_core = ROOT
+				owned_by = ROOT
+				development = 15
+				base_production = 5
+				has_production_building_trigger = yes
+				has_trade_building_trigger = yes
+				has_tax_building_trigger = yes
+				has_road_building_trigger = yes
+				OR = {
+					has_building = dock
+					has_building = drydock
+				}
+				NOT = { unrest = 1 }
+				infantry_in_province = 2
+			}
+			4020 = {
+				is_state_core = ROOT
+				owned_by = ROOT
+				development = 15
+				base_production = 5
+				has_production_building_trigger = yes
+				has_trade_building_trigger = yes
+				has_tax_building_trigger = yes
+				has_road_building_trigger = yes
+				OR = {
+					has_building = dock
+					has_building = drydock
+				}
+				NOT = { unrest = 1 }
+				infantry_in_province = 2
+			}
+		}
+
+		effect = {
+			4020 = { add_prosperity = 50 }
+			1100 = { add_prosperity = 50 }
+			country_event = {
+				id = abindia_mission.12
+				days = 1
+			}
+			country_event = {
+				id = abindia_mission.13
+				days = 1
+			}
+		}
+	}
+
+	DGL_zulu_coastline = {
+		icon = mission_kon_greatest_power_kongo
+		position = 9
+		required_missions = { DGL_develop_mauritius } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	DGL_cape_stronghold = {
+		icon = colonize_the_cape
+		position = 10
+		required_missions = { DGL_zulu_coastline } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	DGL_explore_far_south = {
+		icon = mission_invade_island
+		position = 11
+		required_missions = { DGL_cape_stronghold } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	DGL_antarctic_circle = {
+		icon = mission_protect_white_sea_trade
+		position = 12
+		required_missions = { DGL_explore_far_south } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
 abi_maldives_second = {
 	slot = 2
 	generic = no
 	ai = yes
-	potential = {
-		tag = DGL
-	}
 	has_country_shield = yes
-	
+	potential = { tag = DGL } 
+
 	consolidate_southern_mald = {
 		icon = mission_claim_the_canaries
 		position = 1
-		required_missions = { }
-		
-		provinces_to_highlight = {
-			province_id = 5275
-		}
-		
+		provinces_to_highlight = { province_id = 5275 } 
+
 		trigger = {
 			5275 = {
 				owned_by = ROOT
 				religion = ROOT
-				NOT = { unrest = 0.5 }
-				NOT = { local_autonomy = 2.5 }
+				NOT = { unrest = 0.5 } 
+				NOT = { local_autonomy = 2.5 } 
 			}
 		}
-		
+
 		effect = {
 			add_dip_power = 20
 			add_country_modifier = {
-				name = abi_consolidated_rule
+				name = "abi_consolidated_rule"
 				duration = 3650
 			}
 		}
 	}
-	
+
 	develop_maldives_islands = {
 		icon = mission_claim_the_canaries
 		position = 2
-		required_missions = { consolidate_southern_mald }
-		
+		required_missions = { consolidate_southern_mald } 
 		provinces_to_highlight = {
 			OR = {
 				province_id = 5275
 				province_id = 1248
 			}
 		}
-		
+
 		trigger = {
 			grown_by_development = 13
 			5275 = {
 				owned_by = ROOT
-				NOT = { local_autonomy_above_min = 1 }
+				NOT = { local_autonomy_above_min = 1 } 
 				num_of_times_improved_by_owner = 6
 				OR = {
 					has_building = marketplace
@@ -138,12 +275,12 @@ abi_maldives_second = {
 			}
 			1248 = {
 				owned_by = ROOT
-				NOT = { local_autonomy_above_min = 1 }
+				NOT = { local_autonomy_above_min = 1 } 
 				num_of_times_improved_by_owner = 7
 				has_building = marketplace
 			}
 		}
-		
+
 		effect = {
 			1248 = {
 				add_building_construction = {
@@ -153,27 +290,24 @@ abi_maldives_second = {
 				}
 			}
 			add_country_modifier = {
-				name = abi_developing_islands
+				name = "abi_developing_islands"
 				duration = 3650
 			}
 		}
 	}
-	
+
 	dominate_coromandel_cape = {
 		icon = mission_junk_boat
 		position = 3
-		required_missions = { develop_maldives_islands }
-		
-		provinces_to_highlight = {
-			province_id = 1340
-		}
-		
+		required_missions = { develop_maldives_islands } 
+		provinces_to_highlight = { province_id = 1340 } 
+
 		trigger = {
 			OR = {
 				advisor = trader
 				dip = 4
 			}
-			4410 = { has_merchant = PREV }
+			4410 = { has_merchant = PREV } 
 			OR = {
 				4410 = {
 					has_privateer_share_in_trade_node = {
@@ -197,17 +331,17 @@ abi_maldives_second = {
 				num_of_light_ship = 28
 			}
 		}
-		
+
 		effect = {
 			add_mercantilism = 4
-			537 = { add_claim = ROOT }
-			4410 = { add_claim = ROOT }
-			5283 = { add_claim = ROOT }
-			4407 = { add_claim = ROOT }
-			572 = { add_claim = ROOT }
-			4408 = { add_claim = ROOT }
+			537 = { add_claim = ROOT } 
+			4410 = { add_claim = ROOT } 
+			5283 = { add_claim = ROOT } 
+			4407 = { add_claim = ROOT } 
+			572 = { add_claim = ROOT } 
+			4408 = { add_claim = ROOT } 
 			if = {
-				limit = { exists = HTC }
+				limit = { exists = HTC } 
 				add_casus_belli = {
 					target = HTC
 					type = cb_trade_conflict
@@ -220,7 +354,7 @@ abi_maldives_second = {
 				}
 			}
 			random_owned_province = {
-				limit = { has_port = yes }
+				limit = { has_port = yes } 
 				add_unit_construction = {
 					type = heavy_ship
 					amount = 2
@@ -230,12 +364,11 @@ abi_maldives_second = {
 			}
 		}
 	}
-	
+
 	maldives_mainland_bases = {
 		icon = mission_secure_hajj_ports
 		position = 4
-		required_missions = { dominate_coromandel_cape }
-		
+		required_missions = { dominate_coromandel_cape } 
 		provinces_to_highlight = {
 			OR = {
 				region = deccan_region
@@ -243,15 +376,15 @@ abi_maldives_second = {
 			}
 			has_port = yes
 		}
-		
+
 		trigger = {
 			OR = {
 				has_won_war_against = {
 					who = ORM
 					max_years_since = 15
 				}
-				NOT = { exists = ORM }
-				NOT = { exists = HTC }
+				NOT = { exists = ORM } 
+				NOT = { exists = HTC } 
 			}
 			num_of_provinces_owned_or_owned_by_subjects_with = {
 				value = 5
@@ -274,20 +407,20 @@ abi_maldives_second = {
 					value = 8
 				}
 			}
-			if = { 
-				limit = { exists = ORM }
+			if = {
+				limit = { exists = ORM } 
 				navy_size = ORM
 			}
 		}
-		
+
 		effect = {
 			add_navy_tradition = 10
 			if = {
-				limit = { exists = ORM }
-				ORM = { add_prestige = -15 }
+				limit = { exists = ORM } 
+				ORM = { add_prestige = -15 } 
 			}
-			lanka_area = { add_permanent_claim = ROOT }
-			south_lanka_area = { add_permanent_claim = ROOT }
+			lanka_area = { add_permanent_claim = ROOT } 
+			south_lanka_area = { add_permanent_claim = ROOT } 
 			custom_tooltip = maldives_mainland_bases.tooltip
 			hidden_effect = {
 				random_owned_province = {
@@ -297,39 +430,38 @@ abi_maldives_second = {
 							region = coromandel_region
 							region = deccan_region
 						}
-						NOT = { fort_level = 2 }
+						NOT = { fort_level = 2 } 
 					}
 					if = {
-						limit = { NOT = { has_building = dock } }
+						limit = { NOT = { has_building = dock }  } 
 						add_building = dock
 					}
 					if = {
-						limit = { NOT = { has_building = marketplace } }
+						limit = { NOT = { has_building = marketplace }  } 
 						add_building = marketplace
 					}
 					add_base_tax = 1
 					add_building_construction = {
 						building = fort_15th
 						speed = 0.5
-    						cost = 0
+						cost = 0
 					}
 				}
 			}
 		}
 	}
-	
+
 	DGL_invade_srilanka = {
 		icon = mission_conquer_lanka
 		position = 5
-		required_missions = { maldives_mainland_bases }
-		
+		required_missions = { maldives_mainland_bases } 
 		provinces_to_highlight = {
 			OR = {
 				area = lanka_area
 				area = south_lanka_area
 			}
 		}
-		
+
 		trigger = {
 			lanka_area = {
 				type = all
@@ -339,36 +471,35 @@ abi_maldives_second = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			5276 = { is_core = ROOT }
+			5276 = { is_core = ROOT } 
 		}
-		
+
 		effect = {
 			add_prestige = 10
-			madura_area = { add_permanent_claim = ROOT }
-			malabar_area = { add_permanent_claim = ROOT }
+			madura_area = { add_permanent_claim = ROOT } 
+			malabar_area = { add_permanent_claim = ROOT } 
 			country_event = {
 				id = abindia_mission.2
 				days = 1
 			}
 		}
 	}
-	
+
 	palk_strait_toll = {
 		icon = mission_integrate_jaffna
 		position = 6
-		required_missions = { DGL_invade_srilanka }
-		
+		required_missions = { DGL_invade_srilanka } 
 		provinces_to_highlight = {
 			OR = {
 				province_id = 4415
 				province_id = 5276
 				province_id = 5283
-				province_id = 5180
+				province_id = 5284
 			}
 		}
-		
+
 		trigger = {
-			5180 = {
+			5284 = {
 				is_core = ROOT
 				fort_level = 2
 				development = 12
@@ -386,7 +517,7 @@ abi_maldives_second = {
 				owns_or_non_sovereign_subject_of = 5283
 				owns_or_non_sovereign_subject_of = 4415
 			}
-			4410 = { has_merchant = PREV }
+			4410 = { has_merchant = PREV } 
 			OR = {
 				4410 = {
 					has_privateer_share_in_trade_node = {
@@ -402,20 +533,18 @@ abi_maldives_second = {
 				}
 			}
 		}
-		
+
 		effect = {
 			add_years_of_income = 1
 			add_power_projection = {
 				type = mission_rewards_power_projection
 				amount = 10
 			}
-			4416 = { add_permanent_claim = ROOT }
-			540 = { add_permanent_claim = ROOT }
-			2026 = { add_permanent_claim = ROOT }
+			4416 = { add_permanent_claim = ROOT } 
+			540 = { add_permanent_claim = ROOT } 
+			2026 = { add_permanent_claim = ROOT } 
 			if = {
-				limit = {
-					exists = PUL
-				}
+				limit = { exists = PUL } 
 				add_casus_belli = {
 					target = PUL
 					type = cb_vassalize_mission
@@ -423,47 +552,150 @@ abi_maldives_second = {
 				}
 			}
 			if = {
-				limit = {
-					exists = NEL
-				}
+				limit = { exists = NEL } 
 				add_casus_belli = {
 					target = NEL
 					type = cb_vassalize_mission
 					months = 120
 				}
 			}
-			5180 = {
-				add_permanent_province_modifier = { 
-					name = abi_palk_strait_toll
+			5284 = {
+				add_permanent_province_modifier = {
+					name = "abi_palk_strait_toll"
 					duration = -1
 					hidden = no
 				}
 			}
 			5276 = {
-				add_permanent_province_modifier = { 
-					name = abi_palk_strait_toll
+				add_permanent_province_modifier = {
+					name = "abi_palk_strait_toll"
 					duration = -1
 					hidden = no
 				}
 			}
 		}
 	}
-}
 
+	DGL_colonial_ambitions = {
+		icon = mission_explore_the_world
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				area = mascarenes_area
+				province_id = 4020
+			}
+		}
+
+		trigger = {
+			has_discovered = 4020
+			has_discovered = 1100
+			has_discovered = 1102
+			has_discovered = 1103
+			1101 = {
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			num_of_heavy_ship = 3
+			exploration_ideas = 1
+		}
+
+		effect = { add_dip_power = 25
+			1100 = {
+				add_permanent_province_modifier = {
+					name = DGL_colonize_indian_ocean_rush
+					duration = 10950
+					hidden = no
+				}
+			}
+			1102 = {
+				add_permanent_province_modifier = {
+					name = DGL_colonize_indian_ocean_rush
+					duration = 10950
+					hidden = no
+				}
+			}
+			1103 = {
+				add_permanent_province_modifier = {
+					name = DGL_colonize_indian_ocean_rush
+					duration = 10950
+					hidden = no
+				}
+			}
+			4020 = {
+				add_permanent_province_modifier = {
+					name = DGL_colonize_indian_ocean_rush
+					duration = 10950
+					hidden = no
+				}
+			}
+		} 
+	}
+
+	DGL_develop_mauritius = {
+		icon = mission_potosi_silver
+		position = 8
+		required_missions = { DGL_colonial_ambitions } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	DGL_develop_cocos = {
+		icon = mission_indian_ocean_supremacy
+		position = 9
+		required_missions = { DGL_develop_mauritius } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	DGL_reach_australia = {
+		icon = settle_austrialasia
+		position = 10
+		required_missions = { DGL_develop_cocos } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	DGL_exotic_trade = {
+		icon = colonize_australia
+		position = 11
+		required_missions = { DGL_reach_australia } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	DGL_colonize_australia = {
+		icon = mission_lit_harness_steppes
+		position = 12
+		required_missions = { DGL_exotic_trade } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
 abi_maldives_third = {
 	slot = 3
 	generic = no
 	ai = yes
-	potential = {
-		tag = DGL
-	}
 	has_country_shield = yes
-	
+	potential = { tag = DGL } 
+
 	raid_malabar_coast = {
 		icon = mission_combat_barbary_piracy
 		position = 6
-		required_missions = {  }
-		
 		provinces_to_highlight = {
 			OR = {
 				area = malabar_area
@@ -471,19 +703,19 @@ abi_maldives_third = {
 			}
 			has_port = yes
 		}
-		
+
 		trigger = {
-			4410 = { has_province_modifier = slaves_raided }
-			537 = { has_province_modifier = slaves_raided }
-			5286 = { has_province_modifier = slaves_raided }
-			535 = { has_province_modifier = slaves_raided }
-			534 = { has_province_modifier = slaves_raided }
-			4413 = { has_province_modifier = slaves_raided }
-			2029 = { has_province_modifier = slaves_raided }
-			5299 = { has_province_modifier = slaves_raided }
-			531 = { has_province_modifier = slaves_raided }
-			4427 = { has_province_modifier = slaves_raided }
-			2030 = { has_province_modifier = slaves_raided }
+			4410 = { has_province_modifier = slaves_raided } 
+			537 = { has_province_modifier = slaves_raided } 
+			5286 = { has_province_modifier = slaves_raided } 
+			535 = { has_province_modifier = slaves_raided } 
+			534 = { has_province_modifier = slaves_raided } 
+			4413 = { has_province_modifier = slaves_raided } 
+			2029 = { has_province_modifier = slaves_raided } 
+			5299 = { has_province_modifier = slaves_raided } 
+			531 = { has_province_modifier = slaves_raided } 
+			4427 = { has_province_modifier = slaves_raided } 
+			2030 = { has_province_modifier = slaves_raided } 
 			calc_true_if = {
 				all_province = {
 					has_port = yes
@@ -509,7 +741,7 @@ abi_maldives_third = {
 				is_looted = yes
 			}
 		}
-		
+
 		effect = {
 			add_years_of_income = 1
 			add_adm_power = 75
@@ -519,29 +751,74 @@ abi_maldives_third = {
 				type = mission_rewards_power_projection
 				amount = 10
 			}
-			5286 = { add_permanent_claim = ROOT }
+			5286 = { add_permanent_claim = ROOT } 
 			country_event = {
 				id = abindia_mission.3
 				days = 1
 			}
 		}
 	}
-}
 
+	DGL_own_western_ports = {
+		icon = mission_unite_coromandel
+		position = 8
+		required_missions = { raid_malabar_coast } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	DGL_raid_gujarat = {
+		icon = mission_conquer_gujarat_dlh
+		position = 10
+		required_missions = { DGL_own_western_ports } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	DGL_sack_indus_river = {
+		icon = mission_advance_to_the_arabian_sea
+		position = 12
+		required_missions = { DGL_raid_gujarat } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	maldives_pirate_empire = {
+		icon = mission_arabian_thalassocracy
+		position = 13
+		required_missions = {
+			DGL_colonize_australia
+			DGL_dominate_moluccas
+			DGL_sack_indus_river
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
 abi_maldives_fourth = {
 	slot = 4
 	generic = no
 	ai = yes
-	potential = {
-		tag = DGL
-	}
 	has_country_shield = yes
-	
+	potential = { tag = DGL } 
+
 	DGL_prepare_expansion = {
 		icon = mission_arabian_ports
 		position = 1
-		required_missions = { }
-		
+		provinces_to_highlight = {  } 
+
 		trigger = {
 			OR = {
 				advisor = navigator
@@ -558,9 +835,9 @@ abi_maldives_fourth = {
 			adm_power = 300
 			dip_power = 300
 		}
-		
+
 		effect = {
-			hidden_effect = { kill_leader = { type = admiral } }
+			hidden_effect = { kill_leader = { type = admiral }  } 
 			custom_tooltip = DGL_prepare_expansion.tooltip
 			define_explorer = {
 				shock = 1
@@ -574,16 +851,13 @@ abi_maldives_fourth = {
 			}
 		}
 	}
-	
+
 	land_on_hollhavai = {
 		icon = mission_invade_island
 		position = 2
-		required_missions = { DGL_prepare_expansion }
-		
-		provinces_to_highlight = {
-			province_id = 1101
-		}
-		
+		required_missions = { DGL_prepare_expansion } 
+		provinces_to_highlight = { province_id = 1101 } 
+
 		trigger = {
 			1101 = {
 				is_core = ROOT
@@ -598,10 +872,10 @@ abi_maldives_fourth = {
 			has_discovered = 1620
 			has_discovered = 5280
 		}
-		
+
 		effect = {
 			add_country_modifier = {
-				name = abi_exploring_indian_ocean
+				name = "abi_exploring_indian_ocean"
 				duration = 7300
 			}
 			custom_tooltip = land_on_hollhavai.tooltip
@@ -622,12 +896,11 @@ abi_maldives_fourth = {
 			}
 		}
 	}
-	
+
 	second_route_to_kilwa = {
 		icon = mission_grand_trunk_road_mug
 		position = 3
-		required_missions = { land_on_hollhavai }
-		
+		required_missions = { land_on_hollhavai } 
 		provinces_to_highlight = {
 			OR = {
 				province_id = 1617
@@ -648,7 +921,7 @@ abi_maldives_fourth = {
 				province_id = 1194
 			}
 		}
-		
+
 		trigger = {
 			1201 = {
 				owner = {
@@ -678,19 +951,19 @@ abi_maldives_fourth = {
 			has_discovered = 4022
 			has_discovered = 1194
 			OR = {
-				1100 = { owned_by = ROOT }
-				1102 = { owned_by = ROOT }
-				1103 = { owned_by = ROOT }
+				1100 = { owned_by = ROOT } 
+				1102 = { owned_by = ROOT } 
+				1103 = { owned_by = ROOT } 
 			}
 		}
-		
+
 		effect = {
-			4021 = { add_permanent_claim = ROOT }
-			4025 = { add_permanent_claim = ROOT }
-			4020 = { add_permanent_claim = ROOT }
-			1099 = { add_permanent_claim = ROOT }
+			4021 = { add_permanent_claim = ROOT } 
+			4025 = { add_permanent_claim = ROOT } 
+			4020 = { add_permanent_claim = ROOT } 
+			1099 = { add_permanent_claim = ROOT } 
 			add_country_modifier = {
-				name = abi_new_route_to_zanzibar
+				name = "abi_new_route_to_zanzibar"
 				duration = 7300
 			}
 			add_mercantilism = 4
@@ -704,12 +977,11 @@ abi_maldives_fourth = {
 			}
 		}
 	}
-	
+
 	DGL_madagascar_charter = {
 		icon = mission_african_gold
 		position = 4
-		required_missions = { second_route_to_kilwa }
-		
+		required_missions = { second_route_to_kilwa } 
 		provinces_to_highlight = {
 			OR = {
 				province_id = 1100
@@ -721,14 +993,14 @@ abi_maldives_fourth = {
 				area = southern_madagascar
 			}
 		}
-		
+
 		trigger = {
 			OR = {
-				4020 = { is_core = ROOT }
-				1100 = { is_core = ROOT }
+				4020 = { is_core = ROOT } 
+				1100 = { is_core = ROOT } 
 			}
-			1102 = { is_core = ROOT }
-			1103 = { is_core = ROOT }
+			1102 = { is_core = ROOT } 
+			1103 = { is_core = ROOT } 
 			num_of_owned_provinces_with = {
 				value = 10
 				OR = {
@@ -766,16 +1038,16 @@ abi_maldives_fourth = {
 				}
 			}
 		}
-		
+
 		effect = {
-			1192 = { add_permanent_claim = ROOT }
-			1186 = { add_permanent_claim = ROOT }
-			1183 = { add_permanent_claim = ROOT }
-			madagascar_highlands_area = { add_permanent_claim = ROOT }
+			1192 = { add_permanent_claim = ROOT } 
+			1186 = { add_permanent_claim = ROOT } 
+			1183 = { add_permanent_claim = ROOT } 
+			madagascar_highlands_area = { add_permanent_claim = ROOT } 
 			random_owned_province = {
 				limit = {
 					province_has_center_of_trade_of_level = 1
-					NOT = { province_has_center_of_trade_of_level = 2 }
+					NOT = { province_has_center_of_trade_of_level = 2 } 
 					OR = {
 						area = sakalava_area
 						area = betsimasaraka_area
@@ -787,14 +1059,14 @@ abi_maldives_fourth = {
 				add_base_production = 1
 				add_base_manpower = 1
 			}
+			add_years_of_income = 1
 		}
 	}
-	
+
 	explore_eastern_ocean = {
 		icon = mission_look_west
 		position = 5
-		required_missions = { DGL_madagascar_charter }
-		
+		required_missions = { DGL_madagascar_charter } 
 		provinces_to_highlight = {
 			OR = {
 				province_id = 1998
@@ -807,7 +1079,7 @@ abi_maldives_fourth = {
 				province_id = 2683
 			}
 		}
-		
+
 		trigger = {
 			has_discovered = 1998
 			has_discovered = 1999
@@ -815,13 +1087,13 @@ abi_maldives_fourth = {
 			has_discovered = 1645
 			has_discovered = 1632
 			OR = {
-				1998 = { is_core = ROOT }
-				1999 = { is_core = ROOT }
+				1998 = { is_core = ROOT } 
+				1999 = { is_core = ROOT } 
 			}
 			OR = {
-				574 = { owned_by = ROOT }
-				2684 = { owned_by = ROOT }
-				2683 = { owned_by = ROOT }
+				574 = { owned_by = ROOT } 
+				2684 = { owned_by = ROOT } 
+				2683 = { owned_by = ROOT } 
 			}
 			num_of_admirals = 2
 			OR = {
@@ -839,10 +1111,10 @@ abi_maldives_fourth = {
 				}
 			}
 		}
-		
+
 		effect = {
 			add_country_modifier = {
-				name = abi_indian_ocean_colonial_emp
+				name = "abi_indian_ocean_colonial_emp"
 				duration = 10950
 			}
 			custom_tooltip = explore_eastern_ocean.tooltip
@@ -858,12 +1130,11 @@ abi_maldives_fourth = {
 			}
 		}
 	}
-	
+
 	pirate_sumatran_puppets = {
 		icon = mission_conquer_lower_burma_ori
 		position = 6
-		required_missions = { explore_eastern_ocean }
-		
+		required_missions = { explore_eastern_ocean } 
 		provinces_to_highlight = {
 			OR = {
 				area = north_sumatra_area
@@ -874,7 +1145,7 @@ abi_maldives_fourth = {
 				area = central_sumatra_area
 			}
 		}
-		
+
 		trigger = {
 			num_of_owned_provinces_with = {
 				value = 2
@@ -906,7 +1177,7 @@ abi_maldives_fourth = {
 			calc_true_if = {
 				all_country = {
 					is_subject_of = ROOT
-					capital_scope = { 
+					capital_scope = {
 						OR = {
 							area = north_sumatra_area
 							area = batak_area
@@ -920,18 +1191,18 @@ abi_maldives_fourth = {
 				amount = 2
 			}
 		}
-		
+
 		effect = {
 			add_mercantilism = 4
 			add_navy_tradition = 10
 			add_republican_tradition = 10
 			add_country_modifier = {
-				name = abi_sumatran_pirate_puppets
+				name = "abi_sumatran_pirate_puppets"
 				duration = -1
 			}
 			every_province = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { owned_by = ROOT } 
 					OR = {
 						area = north_sumatra_area
 						area = batak_area
@@ -945,26 +1216,92 @@ abi_maldives_fourth = {
 			}
 		}
 	}
-}
 
+	DGL_around_bengal_bay = {
+		icon = mission_end_arakan_piracy
+		position = 7
+		required_missions = {
+			pirate_sumatran_puppets
+			palk_strait_toll
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	DGL_sailing_the_delta = {
+		icon = mission_unite_bengal
+		position = 8
+		required_missions = { DGL_around_bengal_bay } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	DGL_vassalize_east_india = {
+		icon = mission_conquer_andhra_vij
+		position = 9
+		required_missions = { DGL_sailing_the_delta } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	DGL_follow_chola = {
+		icon = mission_the_chola_conquests
+		position = 10
+		required_missions = {
+			DGL_vassalize_east_india
+			DGL_develop_cocos
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	DGL_malacca_piracy = {
+		icon = mission_sail_to_the_east_indies
+		position = 11
+		required_missions = { DGL_follow_chola } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	DGL_dominate_moluccas = {
+		icon = mission_mnd_maj_cloves
+		position = 12
+		required_missions = { DGL_malacca_piracy } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
 abi_maldives_fifth = {
 	slot = 5
 	generic = no
 	ai = yes
-	potential = {
-		tag = DGL
-	}
 	has_country_shield = yes
-	
+	potential = { tag = DGL } 
+
 	sieze_socotra_outpost = {
 		icon = mission_portuguese_oman
 		position = 5
-		required_missions = { DGL_madagascar_charter }
-		
-		provinces_to_highlight = {
-			province_id = 1099
-		}
-		
+		required_missions = { DGL_madagascar_charter } 
+		provinces_to_highlight = { province_id = 1099 } 
+
 		trigger = {
 			1099 = {
 				is_core = ROOT
@@ -978,10 +1315,10 @@ abi_maldives_fifth = {
 					has_building = barracks
 				}
 				has_building = fort_15th
-				NOT = { local_autonomy_above_min = 5 }
+				NOT = { local_autonomy_above_min = 5 } 
 				development = 10
 				OR = {
-					NOT = { unrest = 0.5 }
+					NOT = { unrest = 0.5 } 
 					is_owned_by_trade_company = yes
 				}
 			}
@@ -1004,11 +1341,11 @@ abi_maldives_fifth = {
 					OR = {
 						alliance_with = ROOT
 						AND = {
-							NOT = { monthly_income = ROOT }
+							NOT = { monthly_income = ROOT } 
 							is_enemy = ROOT
 						}
 					}
-					capital_scope = { 
+					capital_scope = {
 						OR = {
 							region = horn_of_africa_region
 							region = arabia_region
@@ -1018,26 +1355,22 @@ abi_maldives_fifth = {
 				amount = 2
 			}
 		}
-		
+
 		effect = {
 			add_country_modifier = {
-				name = abi_influence_in_aden_gulf
+				name = "abi_influence_in_aden_gulf"
 				duration = 3650
 			}
-			1099 = { center_of_trade = 1 }
+			1099 = { center_of_trade = 1 } 
 			add_power_projection = {
 				type = mission_rewards_power_projection
 				amount = 10
 			}
 			custom_tooltip = sieze_socotra_outpost.tooltip
-			4283 = { 
+			4283 = {
 				add_permanent_claim = ROOT
 				if = {
-					limit = {
-						owner = {
-							NOT = { total_own_and_non_tributary_subject_development = ROOT }
-						}
-					}
+					limit = { owner = { NOT = { total_own_and_non_tributary_subject_development = ROOT }  }  } 
 					owner = {
 						reverse_add_casus_belli = {
 							target = ROOT
@@ -1047,14 +1380,10 @@ abi_maldives_fifth = {
 					}
 				}
 			}
-			388 = { 
+			388 = {
 				add_permanent_claim = ROOT
 				if = {
-					limit = {
-						owner = {
-							NOT = { total_own_and_non_tributary_subject_development = ROOT }
-						}
-					}
+					limit = { owner = { NOT = { total_own_and_non_tributary_subject_development = ROOT }  }  } 
 					owner = {
 						reverse_add_casus_belli = {
 							target = ROOT
@@ -1064,14 +1393,10 @@ abi_maldives_fifth = {
 					}
 				}
 			}
-			1212 = { 
+			1212 = {
 				add_permanent_claim = ROOT
 				if = {
-					limit = {
-						owner = {
-							NOT = { total_own_and_non_tributary_subject_development = ROOT }
-						}
-					}
+					limit = { owner = { NOT = { total_own_and_non_tributary_subject_development = ROOT }  }  } 
 					owner = {
 						reverse_add_casus_belli = {
 							target = ROOT
@@ -1081,14 +1406,10 @@ abi_maldives_fifth = {
 					}
 				}
 			}
-			2786 = { 
+			2786 = {
 				add_permanent_claim = ROOT
 				if = {
-					limit = {
-						owner = {
-							NOT = { total_own_and_non_tributary_subject_development = ROOT }
-						}
-					}
+					limit = { owner = { NOT = { total_own_and_non_tributary_subject_development = ROOT }  }  } 
 					owner = {
 						reverse_add_casus_belli = {
 							target = ROOT
@@ -1099,5 +1420,63 @@ abi_maldives_fifth = {
 				}
 			}
 		}
+	}
+
+	DGL_land_in_arabia = {
+		icon = mission_dominate_trade_in_aden
+		position = 6
+		required_missions = { sieze_socotra_outpost } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	DGL_oman_and_turical_states = {
+		icon = qara_qoyunlu_dominate_the_gulf
+		position = 7
+		required_missions = {
+			DGL_land_in_arabia
+			DGL_end_hormuz
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	DGL_arabian_mission = {
+		icon = geo_crade_of_civilization
+		position = 8
+		required_missions = { DGL_oman_and_turical_states } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	DGL_vassalize_burma = {
+		icon = mission_conquer_lower_burma_tau
+		position = 11
+		required_missions = { DGL_follow_chola } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	DGL_indochina_expansion = {
+		icon = mission_rule_indochina
+		position = 12
+		required_missions = { DGL_vassalize_burma } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
 }
