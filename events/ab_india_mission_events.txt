@@ -729,3 +729,279 @@ country_event = {	#Comoros
 		}
 	}
 }
+
+country_event = {	#Ile Burbon
+	id = abindia_mission.14
+	title = abindia_mission.14.t
+	desc = abindia_mission.14.d
+	#picture = muslimgfx_EXPLORERS_eventPicture
+	picture = muslimgfx_FARMING_eventPicture
+	
+	is_triggered_only = yes
+	
+	goto = 1103
+	
+	option = {	#Leave it be
+		name = abindia_mission.14.a
+		1103 = { add_base_production = 2 }
+	}
+	
+	option = {	#Make it slaves
+		name = abindia_mission.14.b
+		1103 = {
+			change_trade_goods = slaves
+			add_province_modifier = {
+				name = DGL_mahe_slaves
+				duration = -1
+			}
+		}
+	}
+	option = {	#Grow sugarcane
+		name = abindia_mission.14.c
+		1103 = {
+			change_trade_goods = sugar
+			add_province_modifier = {
+				name = DGL_mahe_sugar
+				duration = -1
+			}
+		}
+	}
+	option = {	#Make it tropical wood
+		name = abindia_mission.14.e
+		1103 = {
+			change_trade_goods = tropical_wood
+			add_province_modifier = {
+				name = DGL_mahe_tropical_wood
+				duration = -1
+			}
+		}
+	}
+	option = {	#Make it coffee
+		name = abindia_mission.14.f
+		1103 = {
+			change_trade_goods = coffee
+			add_province_modifier = {
+				name = DGL_mahe_coffee
+				duration = -1
+			}
+		}
+	}
+	option = {	#Make it tea
+		name = abindia_mission.14.g
+		1103 = {
+			change_trade_goods = tea
+			add_province_modifier = {
+				name = DGL_mahe_tea
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {	#Mauritius
+	id = abindia_mission.15
+	title = abindia_mission.15.t
+	desc = abindia_mission.15.d
+	picture = muslimgfx_EXPLORERS_eventPicture
+	
+	is_triggered_only = yes
+	
+	goto = 1102
+	
+	option = {	#Leave it be
+		name = abindia_mission.15.a
+		1102 = { add_base_production = 2 }
+	}
+	
+	option = {	#Make it slaves
+		name = abindia_mission.15.b
+		1102 = {
+			change_trade_goods = slaves
+			add_province_modifier = {
+				name = DGL_mahe_slaves
+				duration = -1
+			}
+		}
+	}
+	option = {	#Grow sugarcane
+		name = abindia_mission.15.c
+		1102 = {
+			change_trade_goods = sugar
+			add_province_modifier = {
+				name = DGL_mahe_sugar
+				duration = -1
+			}
+		}
+	}
+	option = {	#Make it spices
+		name = abindia_mission.15.e
+		1102 = {
+			change_trade_goods = spices
+			add_province_modifier = {
+				name = DGL_mahe_spices
+				duration = -1
+			}
+		}
+	}
+	option = {	#Make it coffee
+		name = abindia_mission.15.f
+		1102 = {
+			change_trade_goods = coffee
+			add_province_modifier = {
+				name = DGL_mahe_coffee
+				duration = -1
+			}
+		}
+	}
+	option = {	#Make it tea
+		name = abindia_mission.15.g
+		1102 = {
+			change_trade_goods = tea
+			add_province_modifier = {
+				name = DGL_mahe_tea
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {	#Amsterdam and Saint Paul
+	id = abindia_mission.16
+	title = abindia_mission.16.t
+	desc = abindia_mission.16.d
+	picture = EP_ISLAND_eventPicture
+	
+	is_triggered_only = yes
+	
+	goto = 5317
+	
+	option = {
+		name = abindia_mission.16.a
+		change_innovativeness = 1
+		add_prestige = 10
+		add_splendor = 50
+		if = {
+			limit = {
+				5317 = { is_city = no }
+			}
+			5317 = {
+				add_siberian_construction = 500
+				change_culture = ROOT
+				change_religion = ROOT
+				change_province_name = "Dangal and Puthiyakotte"
+				rename_capital = "Barid Janub"
+			}
+		}
+		if = {
+			limit = {
+				5317 = { is_city = yes }
+				owned_by = ROOT
+			}
+			5317 = {
+				change_trade_goods = ivory
+				change_culture = ROOT
+				change_religion = ROOT
+				add_base_production = 1
+				change_province_name = "Dangal and Puthiyakotte"
+				rename_capital = "Barid Janub"
+			}
+		}
+		if = {
+			limit = {
+				5317 = { is_city = yes }
+				NOT = { owned_by = ROOT }
+			}
+			5317 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+country_event = {	#Marion
+	id = abindia_mission.17
+	title = abindia_mission.17.t
+	desc = abindia_mission.17.d
+	picture = EP_ISLAND_eventPicture
+	
+	is_triggered_only = yes
+	
+	goto = 1625
+	
+	major = yes
+	
+	option = {
+		name = abindia_mission.17.a
+		change_innovativeness = 2.5
+		add_prestige = 10
+		add_splendor = 50
+		add_navy_tradition = 10
+		1625 = { change_province_name = "Mekhaavruthamaaya and Kaattulla Islands" }
+	}
+}
+
+country_event = {	#Corzet
+	id = abindia_mission.18
+	title = abindia_mission.18.t
+	desc = abindia_mission.18.d
+	picture = EP_ISLAND_eventPicture
+	
+	is_triggered_only = yes
+	
+	goto = 1628
+	
+	major = yes
+	
+	option = {
+		name = abindia_mission.18.a
+		change_innovativeness = 2.5
+		add_prestige = 5
+		add_splendor = 50
+		add_navy_tradition = 10
+		1628 = { change_province_name = "Albatariq Islands" }
+	}
+}
+
+country_event = {	#Kerguelen
+	id = abindia_mission.19
+	title = abindia_mission.19.t
+	desc = abindia_mission.19.d
+	picture = DHOW_AT_SEA_eventPicture
+	
+	is_triggered_only = yes
+	
+	goto = 1631
+	
+	major = yes
+	
+	option = {
+		name = abindia_mission.19.a
+		change_innovativeness = 5
+		add_prestige = 10
+		add_splendor = 100
+		add_navy_tradition = 10
+		1631 = { change_province_name = "Vijanamaayadveepa" }
+	}
+}
+
+country_event = {	#Heard and McDonald
+	id = abindia_mission.20
+	title = abindia_mission.20.t
+	desc = abindia_mission.20.d
+	picture = SIERRA_DE_LA_PLATA_eventPicture
+	
+	is_triggered_only = yes
+	
+	goto = 1632
+	
+	major = yes
+	
+	option = {
+		name = abindia_mission.20.a
+		change_innovativeness = 5
+		add_prestige = 10
+		add_splendor = 100
+		add_navy_tradition = 10
+		1632 = { change_province_name = "Veluthadveepa And Paara Islands" }
+	}
+}

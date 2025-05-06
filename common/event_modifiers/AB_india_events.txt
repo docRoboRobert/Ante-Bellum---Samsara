@@ -209,3 +209,14 @@ parmistan_manifest_destiny = {
 	development_cost = 0.2
 	development_cost_in_primary_culture = -0.25
 }
+
+protected_dodo_sanctuary = {
+	local_development_cost = 0.1
+	local_institution_spread = 0.1
+	allowed_num_of_buildings = -1
+	local_tax_modifier = -0.1
+	trade_value = 0.5
+	
+	idea_cost = -0.01
+	innovativeness_gain = 0.02
+}

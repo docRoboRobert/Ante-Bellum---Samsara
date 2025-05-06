@@ -17,4 +17,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/event_pictures_indiasub/ABindia_parm_marching_eventPicture.dds"
 		allwaystransparent = yes
 	}
+	
+	spriteType = {
+		name = "ABINDIA_DODO_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/ABindia_dodo_eventPicture.dds"
+		allwaystransparent = yes
+	}
 }

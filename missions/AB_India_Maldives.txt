@@ -181,44 +181,188 @@ abi_maldives_first = {
 		icon = mission_kon_greatest_power_kongo
 		position = 9
 		required_missions = { DGL_develop_mauritius } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1183
+				area = limpopo_area
+			}
+		}
+	
+		trigger = {
+			1183 = {
+				owned_by = ROOT
+				development = 18
+				base_production = 6
+				has_production_building_trigger = yes
+				has_trade_building_trigger = yes
+				has_road_building_trigger = yes
+				OR = {
+					has_building = dock
+					has_building = drydock
+				}
+				fort_level = 2
+			}
+			num_of_owned_provinces_with = {
+				value = 3
+				area = limpopo_area
+				has_production_building_trigger = yes
+				has_road_building_trigger = yes
+				base_production = 5
+			}
+		}
 
-		trigger = {  } 
-
-		effect = {  } 
+		effect = {
+			add_country_modifier = {
+				name = DGL_quest_for_africa
+				duration = 18250
+			}
+			1183 = { change_trade_goods = glass }
+			1182 = { change_trade_goods = gems }
+			1177 = { add_permanent_claim = ROOT }
+			1186 = { add_permanent_claim = ROOT }
+			1192 = { add_permanent_claim = ROOT }
+		}
 	}
 
 	DGL_cape_stronghold = {
 		icon = colonize_the_cape
 		position = 10
 		required_missions = { DGL_zulu_coastline } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			province_id = 1177
+		}
 
-		trigger = {  } 
+		trigger = {
+			1177 = {
+				owned_by = ROOT
+				is_state_core = ROOT
+				development = 25
+				base_production = 8
+				base_manpower = 8
+				province_has_center_of_trade_of_level = 2
+				has_production_building_trigger = yes
+				has_trade_building_trigger = yes
+				has_tax_building_trigger = yes
+				has_road_building_trigger = yes
+				OR = {
+					has_building = dock
+					has_building = drydock
+				}
+				has_building = ramparts
+				OR = {
+					has_building = coastal_defence
+					has_building = naval_battery
+				}
+				fort_level = 2
+				infantry_in_province = 10
+				artillery_in_province = 4
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			1177 = {
+				change_province_name = "Cappubhoomi"	# "Cape Land"
+				rename_capital = "Swathanthrakotta"		# "Free Fort"
+				add_center_of_trade_level = 1
+				add_permanent_province_modifier = {
+					name = cape_town_pirate_stronghold
+					duration = -1
+				}
+				change_trade_goods = wine
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			south_africa_region = { add_permanent_claim = ROOT }
+		}
 	}
 
 	DGL_explore_far_south = {
 		icon = mission_invade_island
 		position = 11
 		required_missions = { DGL_cape_stronghold } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1625
+				province_id = 1628
+				province_id = 1632
+			}
+		}
 
-		trigger = {  } 
+		trigger = {
+			has_discovered = 1625
+			has_discovered = 1628
+			has_discovered = 1632
+			dip_tech = 11
+			1625 = {
+				heavy_ships_in_province = 3
+				heavy_ships_in_province = ROOT
+			}
+			1628 = {
+				heavy_ships_in_province = 3
+				heavy_ships_in_province = ROOT
+			}
+			1632 = {
+				heavy_ships_in_province = 3
+				heavy_ships_in_province = ROOT
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			custom_tooltip = DGL_explore_far_south.tooltip
+			1637 = { change_province_name = "Puthiyakotte and Dangal Islands" }
+			hidden_effect = {
+				#Events about discovering Marion, Corzet and Amsterdam Islands
+				country_event = {
+					id = abindia_mission.16
+					days = 30
+				}
+				country_event = { #Marion
+					id = abindia_mission.17
+					days = 75
+				}
+				country_event = { #Corzet
+					id = abindia_mission.18
+					days = 90
+				}
+			}
+		}
 	}
 
 	DGL_antarctic_circle = {
 		icon = mission_protect_white_sea_trade
 		position = 12
 		required_missions = { DGL_explore_far_south } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			province_id = 1631
+		}
 
-		trigger = {  } 
+		trigger = {
+			has_discovered = 1631
+			dip_tech = 15
+			5317 = { owned_by = ROOT }
+			1631 = {
+				heavy_ships_in_province = 10
+				heavy_ships_in_province = ROOT
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			custom_tooltip = DGL_antarctic_circle.tooltip
+			hidden_effect = {
+				#Events about discovering Kerguelen, Heard and McDonald Islands
+				country_event = { #Kerguelen
+					id = abindia_mission.19
+					days = 60
+				}
+				country_event = { #H & McD
+					id = abindia_mission.20
+					days = 120
+				}
+			}
+		}
 	}
 }
 abi_maldives_second = {
@@ -583,6 +727,7 @@ abi_maldives_second = {
 			OR = {
 				area = mascarenes_area
 				province_id = 4020
+				province_id = 1101
 			}
 		}
 
@@ -635,11 +780,68 @@ abi_maldives_second = {
 		icon = mission_potosi_silver
 		position = 8
 		required_missions = { DGL_colonial_ambitions } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1102
+				province_id = 1103
+			}
+		}
 
-		trigger = {  } 
-
-		effect = {  } 
+		trigger = {
+			1102 = {
+				is_state_core = ROOT
+				owned_by = ROOT
+				development = 20
+				base_production = 7
+				has_production_building_trigger = yes
+				has_trade_building_trigger = yes
+				has_tax_building_trigger = yes
+				has_road_building_trigger = yes
+				OR = {
+					has_building = dock
+					has_building = drydock
+				}
+				NOT = { unrest = 1 }
+				infantry_in_province = 2
+			}
+			1103 = {
+				is_state_core = ROOT
+				owned_by = ROOT
+				development = 20
+				base_production = 7
+				has_production_building_trigger = yes
+				has_trade_building_trigger = yes
+				has_tax_building_trigger = yes
+				has_road_building_trigger = yes
+				OR = {
+					has_building = dock
+					has_building = drydock
+				}
+				NOT = { unrest = 1 }
+				infantry_in_province = 2
+			}
+		}
+		
+		effect = {
+			1102 = {
+				add_prosperity = 50
+				change_province_name = "Dina Arobi"
+				rename_capital = "Pakshithuramukham"
+			}
+			1103 = {
+				center_of_trade = 1
+				change_province_name = "Dina Morgabin"
+				rename_capital = "Puthiya Thuramukham"
+			}
+			country_event = {
+				id = abindia_mission.14
+				days = 1
+			}
+			country_event = {
+				id = abindia_mission.15
+				days = 1
+			}
+		}
 	}
 
 	DGL_develop_cocos = {
