@@ -29,4 +29,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/event_pictures_indiasub/ABindia_australia_eventPicture.dds"
 		allwaystransparent = yes
 	}
+	
+	spriteType = {
+		name = "ABINDIA_TRAPEZOIDAL_TRADE_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/ABindia_trapezoidal_trade_eventPicture.dds"
+		allwaystransparent = yes
+	}
 }

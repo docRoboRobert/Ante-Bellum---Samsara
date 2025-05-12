@@ -234,6 +234,10 @@
  abindia_mission.22.t:0 "Development of Ulimaroan Enterprise"
  abindia_mission.22.d:0 "Our great colony in Ulimaroa has used its available land to the fullest. New plantations beging established, new mines being opened and digging for precious minerals, expansive farms and pastures were slowly made to fill out whole horizon. New centers of population or booming and sophisticated industry develops in them. The riches of this continent are being extracted, refined and sold to our great benefit. Years of settlement and expansion has changed this once wild continent into the backbone and breadbasket of our industry and wealth."
  abindia_mission.22.a:0 "For the first time plunder wasn't the way for wealth"
+ abindia_mission.23.t:0 "Trapezoidal Trade on Indian Ocean"
+ abindia_mission.23.d:0 "While on the other ocean slave trade with New World is booming, here on the Indian Ocean a new form of elaborate exchange has formed as well. The main regions of interest this time being India, Arabian Peninsula, East Coast of Africa and Australia. Each region has its own role in the exchange. Newly disovered continent of Australia offers immense resources and production base but the terrain requires development and its native population is small. Once there was no more Aboriginals to enslave, African slaves had to be imported from coast of East Africa. Their slave labour allowed massive mines and plantations to develop in Australia. Exotic goods produced in Australia were shipped north and, combined with trade from Moluccas, exported to India. India, from where colonial overlords govern Australia, then further refines exotic goods and ships them to Arabia. Arab merchants then sell it off to Europeans while investing the profits into slave trade in East Africa. Thus, the trapezoid of commerical exchange is closed. The 4-way exchange can potentially bring immense wealth to rulers in the region. There's one small problem though... \nIn the fields the bodies burning..."
+ abindia_mission.23.a:0 "...as the trade machine keeps turning."
+ samsara_trapezoidal_trade:0 "Trapezoidal Trade"
  
  #Flavour for Sri Lanka
  abindia_lankan_event.1.t:0 "Looming Upheaval"
