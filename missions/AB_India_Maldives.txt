@@ -848,44 +848,269 @@ abi_maldives_second = {
 		icon = mission_indian_ocean_supremacy
 		position = 9
 		required_missions = { DGL_develop_mauritius } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1998
+				province_id = 1999
+				province_id = 2683
+				province_id = 2684
+			}
+		}
 
-		trigger = {  } 
+		trigger = {
+			1998 = {
+				owned_by = ROOT
+				religion = ROOT
+				culture = ROOT
+				OR = {
+					has_building = dock
+					has_building = drydock
+				}
+				OR = {
+					has_building = shipyard
+					has_building = grand_shipyard
+				}
+				has_road_building_trigger = yes
+				development = 10
+				infantry_in_province = 3
+			}
+			1999 = {
+				owned_by = ROOT
+				religion = ROOT
+				culture = ROOT
+				OR = {
+					has_building = dock
+					has_building = drydock
+				}
+				OR = {
+					has_building = shipyard
+					has_building = grand_shipyard
+				}
+				has_road_building_trigger = yes
+				development = 10
+				infantry_in_province = 3
+			}
+			OR = {
+				2683 = {
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT	
+					has_road_building_trigger = yes
+					development = 12
+					infantry_in_province = 5
+				}
+				2684 = {
+					owned_by = ROOT
+					religion = ROOT
+					culture = ROOT	
+					has_road_building_trigger = yes
+					development = 12
+					infantry_in_province = 5
+				}
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			1998 = {
+				change_province_name = "Ramadan Island"
+				rename_capital = "Tollanavi"
+			}
+			1999 = {
+				change_province_name = "Sharqin Islands"
+				rename_capital = "Sahilsahl"
+			}
+			624 = { add_permanent_claim = ROOT }
+			2686 = { add_permanent_claim = ROOT }
+			if = {
+				limit = {
+					621 = { is_empty = yes }
+				}
+				621 = {
+					add_siberian_construction = 250
+				}
+			}
+			if = {
+				limit = {
+					621 = { is_empty = no }
+				}
+				621 = { add_permanent_claim = ROOT }
+			}
+			add_country_modifier = {
+				name = maldives_exploring_east_indonesia
+				duration = 7300
+			}
+			add_country_modifier = {
+				name = maldives_indian_ocean_lines_secured
+				duration = -1
+			}
+		}
 	}
 
 	DGL_reach_australia = {
 		icon = settle_austrialasia
 		position = 10
 		required_missions = { DGL_develop_cocos } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			region = australia_region
+		}
 
-		trigger = {  } 
+		trigger = {
+			calc_true_if = {
+				all_province = {
+					region = australia_region
+					has_discovered = ROOT
+				}
+				amount = 6
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			add_country_modifier = {
+				name = maldives_colonial_rush
+				duration = 5475
+			}
+			custom_tooltip = DGL_reach_australia.tooltip
+			hidden_effect = {
+				every_province = {
+					limit = {
+						region = australia_region
+						is_empty = no
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			add_country_modifier = {
+				name = maldives_quest_for_australia
+				duration = 14600
+			}
+			country_event = {
+				id = abindia_mission.21
+				days = 1
+			}
+		}
 	}
 
 	DGL_exotic_trade = {
 		icon = colonize_australia
 		position = 11
 		required_missions = { DGL_reach_australia } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			region = australia_region
+		}
 
-		trigger = {  } 
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				region = australia_region
+				has_port = yes
+				development = 10
+				has_trade_building_trigger = yes
+				has_production_building_trigger = yes
+				has_road_building_trigger = yes
+				culture = ROOT
+				religion = ROOT
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 3
+				region = australia_region
+				development = 15
+				has_manufactory_trigger = yes
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 4
+				region = australia_region
+				development = 18
+				has_trade_building_trigger = yes
+				has_production_building_trigger = yes
+				province_has_center_of_trade_of_level = 2
+			}
+			owns_or_non_sovereign_subject_of = 2726
+			owns_or_non_sovereign_subject_of = 4865
+			owns_or_non_sovereign_subject_of = 4866
+			owns_or_non_sovereign_subject_of = 4867
+			owns_or_non_sovereign_subject_of = 4846
+			owns_or_non_sovereign_subject_of = 2728
+			owns_or_non_sovereign_subject_of = 2729
+		}
 
-		effect = {  } 
+		effect = {
+			custom_tooltip = DGL_exotic_trade.tooltip1
+			country_event = {
+				id = abindia_mission.22
+				days = 1
+			}
+			4865 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+				add_permanent_province_modifier = {
+					name = dgl_australian_colonial_port
+					duration = -1
+				}
+			}
+			4865 = {
+				change_province_name = "Kadal Kavaadam"
+				rename_capital = "Chuvannamanal"
+			}
+			custom_tooltip = DGL_exotic_trade.tooltip2
+			hidden_effect = {
+				4865 = {
+					owner = {
+						if = {
+							limit = { is_colonial_nation_of = ROOT }
+							add_adm_power = 200
+							add_dip_power = 200
+							add_mil_power = 200
+							add_years_of_income = 4
+						}
+					}
+				}
+				every_province = {
+					limit = {
+						region = australia_region
+						NOT = { owned_by_subject_of = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
 	}
 
 	DGL_colonize_australia = {
 		icon = mission_lit_harness_steppes
 		position = 12
 		required_missions = { DGL_exotic_trade } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			region = australia_region
+			NOT = { owned_by_subject_of = DGL }
+		}
 
-		trigger = {  } 
+		trigger = {
+			owns_all_provinces = {
+				region = australia_region
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			te_waipounamu_area = { add_permanent_claim = ROOT }
+			te_ika_a_maui_hauauru_area = { add_permanent_claim = ROOT }
+			te_ika_a_maui_waho_area = { add_permanent_claim = ROOT }
+			add_splendor = 200
+			add_years_of_income = 1
+			add_country_modifier = {
+				name = dgl_master_of_australia
+				duration = -1
+			}
+			custom_tooltip = DGL_colonize_australia.tooltip
+			hidden_effect = {
+				australia_region = {
+					add_permanent_province_modifier = {
+						name = maldives_crown_colony_australia
+						duration = -1
+					}
+				}
+			}
+		}
 	}
 }
 abi_maldives_third = {

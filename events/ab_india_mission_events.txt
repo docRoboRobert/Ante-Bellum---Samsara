@@ -1005,3 +1005,211 @@ country_event = {	#Heard and McDonald
 		1632 = { change_province_name = "Veluthadveepa And Paara Islands" }
 	}
 }
+
+country_event = {	#Australia discovered
+	id = abindia_mission.21
+	title = abindia_mission.21.t
+	desc = abindia_mission.21.d
+	picture = ABINDIA_AUSTRALIA_eventPicture
+	
+	is_triggered_only = yes
+	
+	goto = 4865
+	
+	major = yes
+	
+	option = {
+		name = abindia_mission.21.a
+		add_prestige = 5
+		add_splendor = 200
+		add_navy_tradition = 5
+	}
+}
+
+country_event = {	#Exotic goods of Australia
+	id = abindia_mission.22
+	title = abindia_mission.22.t
+	desc = abindia_mission.22.d
+	picture = ABINDIA_AUSTRALIA_eventPicture
+	
+	is_triggered_only = yes
+	
+	goto = 4865
+	
+	option = {
+		name = abindia_mission.22.a
+		2726 = { change_trade_goods = iron }
+		4865 = {
+			add_permanent_province_modifier = {
+				name = australia_exotic_goods_port
+				duration = -1
+			}
+			change_trade_goods = slaves
+		}
+		4866 = { change_trade_goods = gold }
+		4867 = {
+			add_permanent_province_modifier = {
+				name = australia_exotic_goods_port
+				duration = -1
+			}
+			change_trade_goods = livestock
+			add_base_production = 2
+		}
+		4846 = { change_trade_goods = spices }
+		2728 = {
+			add_permanent_province_modifier = {
+				name = australia_exotic_goods_port
+				duration = -1
+			}
+			change_trade_goods = dyes
+		}
+		2729 = {
+			change_trade_goods = cloth
+			add_base_production = 2
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 4864 }
+			4864 = { change_trade_goods = gems }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 4863 }
+			4863 = { change_trade_goods = iron }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 1084 }
+			1084 = { change_trade_goods = incense }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 2727 }
+			2727 = { change_trade_goods = gold }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 4847 }
+			4847 = { change_trade_goods = cotton }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 4848 }
+			4848 = { change_trade_goods = livestock }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 4849 }
+			4849 = { change_trade_goods = gems }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 2730 }
+			2730 = { change_trade_goods = tropical_wood }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 2731 }
+			2731 = { change_trade_goods = tropical_wood }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 2732 }
+			2732 = { change_trade_goods = naval_supplies }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 2733 }
+			2733 = { change_trade_goods = gold }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 1093 }
+			1093 = { change_trade_goods = gold }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 4850 }
+			4850 = { change_trade_goods = incense }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 1094 }
+			1094 = { change_trade_goods = cloth }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 4851 }
+			4851 = { change_trade_goods = naval_supplies }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 4852 }
+			4852 = { change_trade_goods = iron }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 4853 }
+			4853 = { change_trade_goods = incense }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 4854 }
+			4851 = { change_trade_goods = sugar }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 4855 }
+			4855 = { change_trade_goods = cotton }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 4856 }
+			4856 = { change_trade_goods = naval_supplies }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 1091 }
+			1091 = { change_trade_goods = salt }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 1092 }
+			1092 = { change_trade_goods = cloth }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 1089 }
+			1089 = { change_trade_goods = gems }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 4857 }
+			4857 = { change_trade_goods = copper }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 1090 }
+			1090 = { change_trade_goods = paper }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 4860 }
+			4860 = { change_trade_goods = tobacco }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 4861 }
+			4861 = { change_trade_goods = salt }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 4858 }
+			4858 = { change_trade_goods = cloth }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 4859 }
+			4859 = { change_trade_goods = gems }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 1088 }
+			1088 = { change_trade_goods = livestock }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 2734 }
+			2734 = { change_trade_goods = grain }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 1087 }
+			1087 = { change_trade_goods = glass }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 2735 }
+			2735 = { change_trade_goods = livestock }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 1086 }
+			1086 = { change_trade_goods = glass }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 4862 }
+			4862 = { change_trade_goods = wool }
+		}
+		if = {
+			limit = { owns_or_non_sovereign_subject_of = 2736 }
+			2736 = { change_trade_goods = salt }
+		}
+	}
+}
