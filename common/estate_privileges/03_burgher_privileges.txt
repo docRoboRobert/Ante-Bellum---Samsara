@@ -1951,6 +1951,7 @@ estate_burghers_private_trade_fleets = {
 	}
 	conditional_modifier = {
 		trigger = {
+			OR = {
 				mission_completed = gen_merchant_fleet
 				has_country_flag = ab_upgrade_private_fleets
 			}
