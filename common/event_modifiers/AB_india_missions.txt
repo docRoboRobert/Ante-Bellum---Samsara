@@ -575,3 +575,29 @@ maldives_crown_colony_australia = {
 	local_production_efficiency = 0.05
 	trade_goods_size_modifier = 0.025
 }
+
+DGL_vassalized_malankara = {
+	diplomatic_upkeep = 1
+	tolerance_of_heathens_capacity = 1
+	warscore_cost_vs_other_religion = -0.05
+}
+
+DGL_villarvattom_port = {
+	province_trade_power_value = 5
+	local_development_cost = -0.5
+	local_institution_spread = 0.15
+	local_unrest = -1
+	local_religious_unity_contribution = -1
+	local_missionary_strength = -0.1
+	local_religious_conversion_resistance = 1
+	min_local_autonomy = 15
+	statewide_governing_cost = -0.2
+}
+
+DGL_malankara_subjects = {
+	global_heathen_missionary_strength = -0.005
+	religious_unity = 0.05
+	tolerance_of_heathens_capacity = 1
+	relation_with_heathens = 10
+	reverse_relation_with_heathen_religion = 5
+}

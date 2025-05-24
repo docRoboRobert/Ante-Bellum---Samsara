@@ -273,6 +273,12 @@
  desc_dgl_master_of_australia:0 "We have tamed the continent of Australia establishing a strong colony there and fully transforming the vast land into integral part of our realm."
  maldives_crown_colony_australia:0 "Expansion of Ulimaroan Enterprise"
  desc_maldives_crown_colony_australia:0 "It's prime real estate and a jewel of Maldives Republic."
+ DGL_vassalized_malankara:0 "Overlord of Malankara States"
+ desc_DGL_vassalized_malankara:0 ""
+ DGL_villarvattom_port:0 "Prime Port of Villarvattom"
+ desc_DGL_villarvattom_port:0 "Years of rule under merchants and great captains has been very prosperous for religious centre in Villarvattom. Maritime expansion the province experienced has greatly improved its significance for regional economy."
+ DGL_malankara_subjects:0 "New Protector of Malabar Christians"
+ desc_DGL_malankara_subjects:0 "After conquering the holy site of Villarvattom, we have allowed the Malankara Christian population of Malabar coast to practise their religion freely and gave the access to the site. As such, as using tolerance as leverage, we have become the new de-facto protector of numerous Malankara states on the coast. They were forced to be our tributaries."
  
  #Lhasa flavour
  lha_struggle_for_tibet:0 "The Struggle for Tibet"

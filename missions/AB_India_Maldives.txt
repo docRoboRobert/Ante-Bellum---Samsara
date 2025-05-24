@@ -1190,11 +1190,63 @@ abi_maldives_third = {
 		icon = mission_unite_coromandel
 		position = 8
 		required_missions = { raid_malabar_coast } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			region = deccan_region
+			has_port = yes
+			NOT = { owned_by = ROOT }
+		}
 
-		trigger = {  } 
-
-		effect = {  } 
+		trigger = {
+			owns_or_non_sovereign_subject_of = 5286
+			5299 = {
+				NOT = { owned_by = HTC }
+				NOT = { owned_by = ORM }
+			}
+			num_of_owned_provinces_with = {
+				value = 4
+				province_has_center_of_trade_of_level = 1
+				region = deccan_region
+				has_port = yes
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 8
+				region = deccan_region
+				has_port = yes
+			}
+		}
+		
+		effect = {
+			custom_tooltip = DGL_own_western_ports.tooltip1
+			if = {
+				limit = {
+					5279 = { is_empty = yes }
+				}
+				5279 = { add_siberian_construction = 990 }
+			}
+			else = {
+				5279 = { add_base_manpower = 1 }
+			}
+			517 = { add_permanent_claim = ROOT }
+			4457 = { add_permanent_claim = ROOT }
+			2051 = { add_permanent_claim = ROOT }
+			4454 = { add_permanent_claim = ROOT }
+			5266 = { add_permanent_claim = ROOT }
+			if = {
+				limit = {
+					exists = DAB
+					530 = { owned_by = DAB }
+				}
+				country_event = {
+					id = abindia_mission.24
+					days = 1
+				}
+			}
+			custom_tooltip = DGL_own_western_ports.tooltip2
+			country_event = {
+				id = abindia_mission.25
+				days = 1
+			}
+		}
 	}
 
 	DGL_raid_gujarat = {

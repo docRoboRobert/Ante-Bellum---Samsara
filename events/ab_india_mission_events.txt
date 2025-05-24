@@ -1288,3 +1288,112 @@ country_event = {	#Trapezoidal Trade
 		}
 	}
 }
+
+country_event = {	#Submission of Dabhol
+	id = abindia_mission.24
+	title = abindia_mission.24.t
+	desc = abindia_mission.24.d
+	picture = muslimgfx_DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = abindia_mission.24.a
+		create_march = DAB
+		add_dip_power = -25
+		add_piety = 25
+	}
+	option = {
+		name = abindia_mission.24.b
+		530 = { add_permanent_claim = ROOT }
+		add_dip_power = 25
+		add_piety = -25
+	}
+}
+
+country_event = {	#Fate of Malankara christians in Villarvattom
+	id = abindia_mission.25
+	title = abindia_mission.25.t
+	desc = abindia_mission.25.d
+	picture = muslimgfx_CITY_VIEW_eventPicture
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = abindia_mission.25.a
+		add_piety = 25
+		add_country_modifier = {
+			name = DGL_malankara_subjects
+			duration = -1
+		}
+		5286 = {
+			add_core = ROOT
+			cede_province = ROOT
+			add_province_modifier = {
+				name = DGL_villarvattom_port
+				duration = -1
+			}
+		}
+		custom_tooltip = abindia_mission.25.tooltip
+		every_known_country = {
+			limit = {
+				religion = malankara
+				OR = {
+					capital_scope = { area = malabar_area }
+					tag = MNL
+					tag = WYA
+					tag = CMB
+				}
+				NOT = { total_development = 150 }
+			}
+			create_subject = {
+				subject_type = tributary_state
+				subject = THIS
+			}
+		}
+		add_accepted_culture = malayankara_toma
+	}
+	option = {
+		name = abindia_mission.25.b
+		add_mil_power = 25
+		5286 = { add_core = VLR }
+		add_country_modifier = {
+			name = DGL_vassalized_malankara
+			duration = -1
+		}
+		if = {
+			limit = { exists = VLR }
+			create_march = VLR
+			every_owned_province = {
+				limit = { area = malabar_area }
+				add_core = VLR
+				cede_province = VLR
+			}
+			malabar_area = { add_core = VLR }
+			5289 = { add_core = VLR }
+			2029 = { add_core = VLR }
+			5291 = { add_core = VLR }
+		}
+		if = {
+			limit = { 
+				NOT = { exists = VLR }
+			}
+			create_vassal = VLR
+			every_owned_province = {
+				limit = { area = malabar_area }
+				add_core = VLR
+				cede_province = VLR
+			}
+			malabar_area = { add_core = VLR }
+			5289 = { add_core = VLR }
+			2029 = { add_core = VLR }
+			5291 = { add_core = VLR }
+			create_march = VLR
+		}
+		add_republican_tradition = 10
+	}
+}
