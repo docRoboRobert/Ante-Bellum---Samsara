@@ -481,7 +481,6 @@ NED_ideas = {
 			tag = FII
 			tag = UNN
 		}
-		NOT = { has_country_flag = ned_united_crowns_flag }
 	}
 	free = yes		#will be added at load.
 	
@@ -2535,6 +2534,7 @@ PAP_ideas = {
 	
 	trigger = {
 		tag = PAP
+		NOT = { has_country_flag = pap_evolved_ideas1 }
 	}
 	free = yes		#will be added at load.
 	
@@ -5228,6 +5228,7 @@ TEU_ideas = {
 	
 	trigger = {
 		tag = TEU
+		NOT = { has_country_flag = teu_evolved_ideas1 }
 	}
 	free = yes
 	
@@ -10387,8 +10388,8 @@ RSO_ideas = {
 
 EST_ideas = {
 	start = {
-		sailor_maintenance_modifer = -0.1
-		ship_durability = 0.05
+		tolerance_heretic = 2
+		development_cost = -0.1
 	}
 	bonus = {
 		trade_efficiency = 0.1
@@ -10400,6 +10401,7 @@ EST_ideas = {
 	
 	est_brotherhood_of_blackheads = {
 		global_manpower_modifier = 0.15
+		global_sailors_modifier = 0.15
 	}
 	est_baltic_cooperation = {
 		naval_forcelimit_modifier = 0.25
@@ -10413,12 +10415,14 @@ EST_ideas = {
 	}
 	est_baltic_trade = {
 		merchants = 1
+		trade_steering = 0.1
 	}
 	est_estophilia = {
 		diplomatic_reputation = 1
 	}
 	est_national_awakening = {
 		global_unrest = -1
+		same_culture_advisor_cost = -0.2
 	}
 }
 
@@ -11839,6 +11843,7 @@ HSN_ideas = {
 	}
 	trigger = {
 		tag = HSN
+		NOT = { has_country_flag = hsn_ayyubid_ideas }
 	}
 	free = yes
 	
@@ -12877,7 +12882,10 @@ FLA_ideas = {
 	}
 	
 	trigger = {
-		tag = FLA
+		OR = {
+			tag = FLA
+			tag = GHT
+		}
 	}
 	free = yes
 	

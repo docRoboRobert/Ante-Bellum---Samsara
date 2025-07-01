@@ -1,0 +1,1695 @@
+northern_aryan = {
+	graphical_culture = indiangfx
+
+	pahari = {
+		primary = GHR
+		dynasty_names = {
+			Chand Parmar Prakash Katoch
+		}
+	}
+	nepali = {
+		primary = NPL
+		dynasty_names = {
+			"Malla" "Ghorka" Limbu
+		}
+		male_names = {
+			Jayajyotimalla Jayayakshamalla Ratmamalla Suryamalla Amaramalla Narendramalla Mahendramalla Sadashivamalla 
+			Shivasimhamalla Lakshminarasimhamalla Pratapamalla Jayanripendramalla Parthivendramalla Bhupendramalla 
+			Bhaskaramalla Mahendrasimhamalla Jayaprakasamalla Bhimsen Amar Singh Ranjur Singh Bhakti
+		}
+		female_names = {
+			Devaladevi Kaushalyawati Rajendralakshmi Maiya Nanu Nani Maya Pragya Anu Chameli Nirmala Anushka Sarmila Komal 
+			Rita Kamala Goma Srijana Bhawana Pramila Saraswati Laxmi Ganga Radha Radhika Krishna Bishnu Sarita Kalpana 
+			Shanti Aayusha Ramita Gita Sita Sangita Mira Ranjita Ranju Manju Punam Maili Kaili Saili Jamuna Shova Pratiksha 
+			Sanjila Anita Nilam Nira Urmila Kopila Pavitra Iswari Khusbhu Rina Junu Tika Kali Rasmi Rupa Puja Aarati 
+			Mankumari Dhankumari Bechani Mangita Uru Lalita Rekha Prabha Shushila Laila Renu Muna Amrita Seti Gauri 
+			Kaushilya Rama Madhu Madhurima Renuka Chandrakala Fulkumari Indrakala Sabitri Archana Kamana Puspa Putali 
+			Suntali Dipa Ambika Dipshika Sabita Suravi Ramabati Mainabati Kabita Champa Kusum Rampyari
+		}
+	}
+	kashmiri = {
+		primary = KSH
+		dynasty_names = {
+			"Shah Miri" "Sayyidi" "Mirrani"
+			#CK2
+			"Ladakhi"
+		}
+		male_names = {
+			"Sikandar" "Ali Shah" "Zayn al-'Abidin" "Haydar Shah" "Hasan Shah" "Muhammad Shah" "Sayyid Hassan" "Fath Shah" "Ibrahim Shah"
+			"Nazuk Shah" "Shams ad-Din" "Ismail Shah" "Ghazi Shah" "Husayn Shah" "Yusuf Shah" 
+			"Lohir Shah" "Nabib Shah" "Ya'qub Shah" "Ibrahim" "Hassan" "Nazuk" "Yusuf" "Ya'qub" "Muhammad" "Ali" 
+			"Ismail" "Gulab" "Ranbir" "Hari" "Pratap" "Kishore" "Zorawar" "Jonaraja" "Prajna" "Hamza"
+		}
+		female_names = {
+			"Kota" "Sibaia" "Tara Devi"
+		}
+	}
+	male_names = {
+		Achalraj Achalraja Achalraja Achalraja Adhandev Adityadeva Ajmal Alsi Amir Anangpal Anangpala 
+		Anangpala Anangpala Anupapala Anupapala 
+		Anuppal Anupapala "Apara Gangeya" Arjunpal Arjunpala Arjunpala Arjunpala Arjunavarman Bacchdev 
+		Bachraj Baghpal Baghpala Baghpala Baghpala 
+		Bahadur-Singh Beejpal Beejpala Beejpala Beejpala Bhaadar Bhilpala Bhoj Bhoja Bhoja Bhoja 
+		Bhojavarman Bhoja Bhopal Bhumpal Bhumpala 
+		Bhumpala Bhumpala Birpal Birpala Birpala Birpala Bisaldeva Brahmadeva Brahmapala Brahmdevpal Chand 
+		Devapala Devavarman Dhanga Dhanga 
+		Dhangadeva Dhanga Dharmapala Dhaulshaya Dilipapala Dilipapala Dilippal Dilipapala Doth Draupad 
+		Draupada Draupada Draupada Dugarendra 
+		Gambhir Ganapatideva Gandadeva Gangeya Ghatamdeva Gopal Gopala Gopala Gopala Govindachandra 
+		Govindapala Govindaraja Govindaraja Govindraj Govindaraja
+		Hamir Hammiravarman Harpal Harsa Harsa Harshapala Harsa Hirapal Hirapala Hirapala Hirapala Indrapal 
+		Indrapala Indrapala Indrapala Ishtpala 
+		Jaganpal Jaganpala Jaganpala Jaganpala Jagatpal Jagatpala Jagatpala Jagatpala Jagdev Jagdeva 
+		Jagdeva Jagdeva Jaidas Jaipal Jaitugideva Jasapala Jasapala 
+		Jaspal Jasapala Jatanpal Jatanpala Jatanpala Jatanpala Jayapala Jayasakti Jayasimha Jayavarman 
+		Jhetpal Jhetpala Jhetpala Jhetpala Junpala 
+		Kailaspal Kailaspala Kailaspala Kailaspala Kalkurna Kalyanachandra Kakhopal Kakhopala Kakhopala 
+		Kakhopala Kamal Kanhad Kanvarpal Kanvarpala 
+		Kanvarpala Kanvarpala Karnpal Keeratdeva Khadag Khetrapal Khetrapala Khetrapala Khetrapala Kiratpal 
+		Kiratpala Kiratpala Kiratpala Krishnray 
+		Krsnapa Kumarapala Kunwar Kunwar Kunwarpal Kunwar Ladahachandra Lakshmandeva Lokpala Madanapala 
+		Madanavarman Maharana Mahendrapal Mahendrapala 
+		Mahendrapala Mahendrapala Mahipal Mahipala Mahipala Mahipala Mahipata Mahlakadeva Mandandeva 
+		Mangaldeva Margdeva Mihira Nagapala Nagdeo Nannuka 
+		Naravarman Narayanapala Narpal Nayapala Nihaal Nihalray Paramardideva Pavak Peepalraj Popatraj 
+		Pritampal Pritampala Pritampala Pritampala Prithipala 
+		Prithvi Prithvi Prithvipal Prithvi Prithviraj Prithviraja Prithviraja Prithviraja Prithvivarman 
+		Rahila Rajapala Rajyapala Ramabhadra Ramachandra 
+		Rampal Rampala Rampala Rampala Rana Rangraj Rangraja Rangraja Rangraja Ratnapala Rijhpala 
+		Roshandeva Salivaahan Sallaksanavarman Saugandeva Shurapala 
+		Sisupal Sisupala Sisupala Sisupala Sohanpal Somasi Someshvara Sonpal Sonpala Sonpala Sonpala 
+		Srichandra Subhatavarman Sukhinpal Sukhinpala 
+		Sukhinpala Sukhinpala Sulakshanpal Sultanpal Sultanpala Sultanpala Sultanpala Surajpal Surajpala 
+		Surajpala Surajpala Traillokyachandra Tejapala Tejpal 
+		Tejpal Tejpal Tolpal Trailokyavarman Trilochanpala Udayaditya Udaysangh Uddharandeva Vachhal 
+		Vakpati Vapyata Varshapala Varshapala Varshpal Varshapala 
+		Vasudev Vidurathpal Vidurathpala Vidurathpala Vidurathpala Vidyadhara Vigrahapala Vigraharaja 
+		Vihangpal Vijayapala Vijayasakti Vinayakapala Vindhyavarman 
+		Viramdeva Viravarman Virsinghadeva Yasovarman
+	}
+	female_names = {
+		Akal Anantadevi Damayanti Dattadevi Dehanagadevi Dhruvadevi Dhruvasvamini Hemavati 
+		Kakanvati Kalayandevi Kanchuka Kanwar Karmavati Kumaradevi Lakshman Maharani Mahidevi Nattadevi
+		Prabhavati Prabhavatigupta Prasadhanadevi Puppadevi Rajamati Sanyukta Shrimitradevi Aadi Abhirati Aditi Adya Agrata Ahalya Ahisma Ajaya Alka Amaravati Amba Ambar Ambika Ambrosia Amhi Amhika Amma Amritha Anahita Anala Ananda Ananta Anasuya Anga Angirasa Anila Annapurna Anumati Apala Apsaras Arpana Aruna Arundhati Arya Avani Avasa Avatara Baka Ballari Behula Bela Bha Bhadraa Bhagiratha Bharati Bhikkhuni Bhimadevi Bhu Bhudevi Brinda Chamunda Chanda Chandi Chandra Changla Channa Charumati Chhaya Chitra Corona Daeva Dakini Dakshina Damayanti Daru Denali Deva Devaki Devamatar Devayani Devi Devika Dharani Dharma Diti Div Divya Drisana Durga Ellora Eshana Gambhiri Gandhari Ganesa Garima Garuda Garudi Gatha Gaura Gauri Gayatri Gita Guri Haimati Hanita Hara Hariti Harsha Hema Hetal Indi Indira Indra Indrani Indumati Ishana Ishani Jaganmata Jamuna Janna Jarita Jaya Jayanti Jayne Jivanta Jui Jyotika Jyotis Kadru Kailasa Kala Kali Kalinda Kalindi Kalli Kallie Kamala Kamana Kanan Kantha Kanya Karka Karma Karuna Kasi Kaveri Kavindra Kerani Kesava Khasa Kiran Kirati Kiri Kirsi Kirtana Kirti Komala Krodha Kumari Kumuda Kumudavati Kunti Laasya Lajila Laksha Lakshmi Lakya Lalasa Lalita Lanka Latika Lavanya Leya Madhur Madri Mahadevi Mahamari Mahesa Maheshvari Mahila Maina Makara Malini Mallika Manasa Manda Mandara Manju Marisha Matrika Meena Meghana Mehadi Minda Mira Mrinal Muniya Nanda Nandini Narmada Natesa Nayana Neeja Neema Nidra Niloufer Nipa Nirveli Nisha Nitara Niyati Odra Ojal Omana Opal Padma Pallavi Pandara Pandita Parvani Pinga Pishachi Pithasthana Prabha Pramlocha Premala Quasar Rachana Radha Raja Rajni Ramya Ran Rana Rane Ranee Rani Rania Rashmika Rati Ratna Ravati Rekha Riddhi Rohana Rohini Ruana Rubaina Ruma Rupali Sakari Sakina Sakra Sakujna Samvarta Sandhya Saniya Sanjna Sany Sara Sarama Sarisha Sati Satya Satyavati Saura Savarna Savitari  Seema Sevita Sevti Shaibya Shakini Shakra Shakti Shalin Shanata Shanta Shanti Shapa Sharada Sharama Sharvani Shashi Shasti Shitala Shraddha Shri Shyla Sita Sitara Sohalia Soma Subha Suchi Sumana Sumitra Sundari Sunila Supriya Sur Sur Tamanna Tanaya Tanika Tanuja Tapati Tara Taraka Tarala Tarannum Tarika Tira Tirtha Trisha Trishna Trisna Triveni Tulsi Uma Umika Upala Ura Urvi Usha Ushas Uttara Vac Vach Vairocana Vallari Vandana Varana Varaza Varouna Varsha Varuna Varunani Vasanti Vayu Vedas Vema Vijaya Vilina Vina Vinata Vinaya Vineeta Viveka Vivika Yamuna Yasiman Yasmine Yauvani Zahra Zudora
+	}
+}
+
+eastern_aryan = {
+	graphical_culture = indiangfx
+
+	assamese = {
+		primary = ASS
+		dynasty_names = {
+			"Khen" "Ahom" "Nagas" "Chutiya" "Raikat" "Koch"
+			"Sutiya" "Kachari" "Barobhyan"
+		}
+		male_names = {
+			"Sudangpha" "Sujangpha" "Siphakpha" "Susenpha" "Suhempha" "Supimpha" "Suhung" "Sutamla" "Supungmung" 
+			"Sukhampha Khora Raja" "Suklenmung Garghgaya Raja" "Gobar" "Brajnatha"
+			Balavarman Bhaskarvarman Bhattamahabahu Bhutivarman Birapala Brahmapala Chandramukhavarman 
+			Dharmapala Ganapativarman Gopala Harjjaravarman Harshadeva Harshapala Harshavarman 
+			Indrapala Jayamala Jayapala Kalyanavarman Kumarapala Mahendravarman Narayanavarman 
+			Pralambha Purandelapala Pushyavarman Ratnadhwajpala Ratnapala 
+			Salasthamba Samudravarman Sthitavarman Supratisthitavarman Susthitavarman 
+			Timgyadeva Tyagasimha Ummoka Vanamalavarmadeva Vigrahastambha Vijaya Virabahu
+		}
+		female_names = {
+			"Mangaldahi" "Sati Joymati" "Kuranganayani"
+			Ahiavadevi Bhogavati Dattadevi Devavati Durlabha Gandharavati Kuladevi Nayanadevi
+			Ratnavati Suvrata Syamadevi Vasumati Vijnanavati Vijnayavati Yajiyavati Yajnavati
+		}
+	}
+	bengali = {
+		primary = BNG
+		dynasty_names = {
+			"Ilyas Shahi" "Ganesha" "Hussein Shahi" "Najafi" "Afshari" "Nasiri" "Karrani"
+			# CKII
+			"Sur"
+		}
+		male_names = {
+			"Sikandar" "Sher" "Ala-ud-Din Firuz" "Rukn ad-Din Barbak" "Jalal ad-Din Fateh" "Nasir-ud-Din Mahmud" "Nasir ad-Din Nasrat"
+			"Jalaluddin Mohammed" "Islam" "Mirza Muhammad" "Shams-ud-Din Yusuf" "Shams-ud-Din Ahmad" 
+			"Shams-ud-Din Muhammad" "Mir Muhammad Ja'far" "Shihab-ud-Din Bayazid" "Mir Qasim 'Ali" "Sayf-ud-Din Hamza" 
+			"Ghiyasuddin Azam" "Ghiyasuddin Mahmud" "Ghiyat ad-Din Bahadur" "Ghiyat ad-Din Jalal" "Da'ud" "Sulayman" 
+			"Murshid Quli" "Shuja' ad-Din Muhammad" "Azam" "Ahmad" "Abu Nasr" "Barbak" "Farid" "Yusuf" "Husain" "Firuz" 
+			"Nasrat" "Fateh" "Bayazid" "Nasir" "Ghiyasuddin" "Mirza" "Raja" "Hamza"
+			Amritnarayan Balabhata Balinarayan Ballalsen Basudevnayaran 
+			Bhagadatta Bhairabendranarayan Bhatta Bhavashankari Bhimsingha Birnayaran 
+			Chandrasen Chandranarayan Chaturanan Chilarai 
+			Danujmadhava Dasharathadeva Devakhadga Devapala Devendranarayan 
+			Dhairjendranayaran Dharendranarayan Dharmapala Dhirsingha 
+			Gajnarayan Gopala Govindachandra Govindapala 
+			Hajo Harendranarayan Haridevnarayan Hariyamandal Hemantasen Indranarayan 
+			Jadu Jagaddipendranarayan Jatakhadga Jayanarayan Jayapala Jitendranarayan 
+			Kalyanachandra Kamalnarayan Keshabsen Khadgodyama Krishanmishra Krishnaroy 
+			Kumarapala Kumudnarayan Ladahachandra Lakshmansen Lakshmichandra Lakshminarayan Lomapada 
+			Madanapala Mahendrapala Mahendrasingha Mahindranarayan Mahipala Manava Mukundanarayan 
+			Naranarayan Narasingha Narayanapala Narendranarayan Nayapala Nripendranarayan 
+			Parikshitnayaran Prananarayan Prannath Pratapnarayan Pratapnarayanroy Pushkaranadhipa 
+			Raghudev Rajabhata Rajadinaj Rajaganesha Rajendranarayan Rajrajendranarayan Rajyapala 
+			Ramapala Ramnath Ranasura Ranjitsingha Roopnarayan Rudranarayan 
+			Samudrasen Shanibhangar Shashanka Shivanarayan Shivendranarayan Shukladhwaj Shurapala 
+			Srichandra Srimanta Subarnachandra Sukhdev Suryanarayan Traillokyachandra 
+			Udirnakhadga Uditanarayan Upendranayaran Vakapala Vapyata Vigrahapala 
+			Vijaynarayan Vijaysen Vijaysingha Virajdendranarayan Vishwarupsen Vishwasingha
+			"Bhairav Singh" "Bhavesh" "Bhogishwar" "Dev Singh" "Dhir Singh" Dhireshwar 
+			"Ganeshwar Singh" "Gang Dev" Harasimhadeva "Hari Singh" "Hemant Sen" 
+			"Kameshwar" "Kirti Singh" Jyotirishwar "Laxman Sen" "Laxminath Singh Dev" Madanpal 
+			"Nanya Dev" "Nar Singh" "Narsingh Dev" "Padma Singh" "Rambhadra Singh Dev" Rameshwar 
+			"Samant Sen" "Shakrasingh Dev" "Shiv Singh" "Vallal Sen" "Vijay Sen"
+			Agnimitra Andhraka Ayus Bhagabhadra Bhikhari Bhumimitra Devabhuti Ghosha Gopal Govindapal 
+			Khsetravridha Maharshi Mahendra Maurayadhwaj Narayana Pulindaka Pusyamitra 
+			Sahtiya Susarman Vajramitra Vasudeva Vasujyeshtha Vasumitra 
+		}
+		female_names = {
+			Amrapali Amritakala Asima Bhavashankari Bishwas Bhogavati Bibibai Dattadevi Devavati Devi 
+			Ahiylya Gandharavati "Malika Bibi" "Sharat" "Kamala"
+			Gayatri Himadrija Hira Jira Kanchani Mahendrani Malavyadevi Nayanadevi Rani Ratnadevi Suvrata
+			Syamadevi Vijnayavati Vina Yajnavati
+		}
+	}
+	kochi = {
+		primary = KMT
+		dynasty_names = {
+			"Ilyas Shahi" "Ganesha" "Hussein Shahi" "Najafi" "Afshari" "Nasiri" "Karrani"
+			# CKII
+			"Sur"
+		}
+		male_names = {
+			"Sikandar" "Sher" "Ala-ud-Din Firuz" "Rukn ad-Din Barbak" "Jalal ad-Din Fateh" "Nasir-ud-Din Mahmud" "Nasir ad-Din Nasrat"
+			"Jalaluddin Mohammed" "Islam" "Mirza Muhammad" "Shams-ud-Din Yusuf" "Shams-ud-Din Ahmad" 
+			"Shams-ud-Din Muhammad" "Mir Muhammad Ja'far" "Shihab-ud-Din Bayazid" "Mir Qasim 'Ali" "Sayf-ud-Din Hamza" 
+			"Ghiyasuddin Azam" "Ghiyasuddin Mahmud" "Ghiyat ad-Din Bahadur" "Ghiyat ad-Din Jalal" "Da'ud" "Sulayman" 
+			"Murshid Quli" "Shuja' ad-Din Muhammad" "Azam" "Ahmad" "Abu Nasr" "Barbak" "Farid" "Yusuf" "Husain" "Firuz" 
+			"Nasrat" "Fateh" "Bayazid" "Nasir" "Ghiyasuddin" "Mirza" "Raja" "Hamza"
+			Amritnarayan Balabhata Balinarayan Ballalsen Basudevnayaran 
+			Bhagadatta Bhairabendranarayan Bhatta Bhavashankari Bhimsingha Birnayaran 
+			Chandrasen Chandranarayan Chaturanan Chilarai 
+			Danujmadhava Dasharathadeva Devakhadga Devapala Devendranarayan 
+			Dhairjendranayaran Dharendranarayan Dharmapala Dhirsingha 
+			Gajnarayan Gopala Govindachandra Govindapala 
+			Hajo Harendranarayan Haridevnarayan Hariyamandal Hemantasen Indranarayan 
+			Jadu Jagaddipendranarayan Jatakhadga Jayanarayan Jayapala Jitendranarayan 
+			Kalyanachandra Kamalnarayan Keshabsen Khadgodyama Krishanmishra Krishnaroy 
+			Kumarapala Kumudnarayan Ladahachandra Lakshmansen Lakshmichandra Lakshminarayan Lomapada 
+			Madanapala Mahendrapala Mahendrasingha Mahindranarayan Mahipala Manava Mukundanarayan 
+			Naranarayan Narasingha Narayanapala Narendranarayan Nayapala Nripendranarayan 
+			Parikshitnayaran Prananarayan Prannath Pratapnarayan Pratapnarayanroy Pushkaranadhipa 
+			Raghudev Rajabhata Rajadinaj Rajaganesha Rajendranarayan Rajrajendranarayan Rajyapala 
+			Ramapala Ramnath Ranasura Ranjitsingha Roopnarayan Rudranarayan 
+			Samudrasen Shanibhangar Shashanka Shivanarayan Shivendranarayan Shukladhwaj Shurapala 
+			Srichandra Srimanta Subarnachandra Sukhdev Suryanarayan Traillokyachandra 
+			Udirnakhadga Uditanarayan Upendranayaran Vakapala Vapyata Vigrahapala 
+			Vijaynarayan Vijaysen Vijaysingha Virajdendranarayan Vishwarupsen Vishwasingha
+			"Bhairav Singh" "Bhavesh" "Bhogishwar" "Dev Singh" "Dhir Singh" Dhireshwar 
+			"Ganeshwar Singh" "Gang Dev" Harasimhadeva "Hari Singh" "Hemant Sen" 
+			"Kameshwar" "Kirti Singh" Jyotirishwar "Laxman Sen" "Laxminath Singh Dev" Madanpal 
+			"Nanya Dev" "Nar Singh" "Narsingh Dev" "Padma Singh" "Rambhadra Singh Dev" Rameshwar 
+			"Samant Sen" "Shakrasingh Dev" "Shiv Singh" "Vallal Sen" "Vijay Sen"
+			Agnimitra Andhraka Ayus Bhagabhadra Bhikhari Bhumimitra Devabhuti Ghosha Gopal Govindapal 
+			Khsetravridha Maharshi Mahendra Maurayadhwaj Narayana Pulindaka Pusyamitra 
+			Sahtiya Susarman Vajramitra Vasudeva Vasujyeshtha Vasumitra 
+		}
+		female_names = {
+			Amrapali Amritakala Asima Bhavashankari Bishwas Bhogavati Bibibai Dattadevi Devavati Devi 
+			Ahiylya Gandharavati "Malika Bibi" "Sharat" "Kamala"
+			Gayatri Himadrija Hira Jira Kanchani Mahendrani Malavyadevi Nayanadevi Rani Ratnadevi Suvrata
+			Syamadevi Vijnayavati Vina Yajnavati
+		}
+	}
+	bihari = {
+		primary = TRT
+		dynasty_names = {
+			"Sugauna" "Sharqi" "Suri" "Oinwara"
+		}
+		male_names = {
+			"Shiv Singh" "Padma Singh" "Hari Singh" "Nar Singh" "Dhir Singh" "Bhairav Singh" "Rambhadra Singh" 
+			"Laxminath Singh"
+		}
+		female_names = {
+			"Bishwas Devi" "Bhanumati" "Sharat" Amrapali Amritakala Asima Bhavashankari Bishwas Bhogavati Bibibai Dattadevi 
+			Devavati Devi Ahiylya Gandharavati "Malika Bibi" "Kamala"
+		}
+	}
+	oriya = {
+		primary = ORI
+		dynasty_names = {
+			"Chindaka Naga" "Gajapati" "Ganga" "Bhoi" "Chagi" "Pusapati" "Bhanja"
+			"Chindaka-Naga" "Rathore" "Singha" "Gangavanshi" "Chauhan" "Kadamba" "Keshari"
+			"Silavamsi" "Gangabasi" "Sankara" "Parmar"
+			"Somavansha" "Adityavansha" "Chandravansha" "Suryavansha"
+			# CKII
+			"Sailodbhava" "Nagavamsi" "Somavamsi"
+		}
+		male_names = {
+			Narasimhadeva Bhanudeva Kapilesvara Pratâprudra Kaluadeva Govindaraja Vidyadhara Chakrapretâpa Nârashima 
+			Jana Raghurâma Chhotra Mukundadeva Harishandra Râmchandra Deva Râmchandra Purushottama Mukunda Nârsimha 
+			Gangâdar Bâlabhadra Divya Simha Hari Krishna Gapînâth Deva Padmanabha Vîra Kishor Deva Devendravarman 
+			Anantavarman Ananga Bhima Narasimha Bhanu Narayan Gopinath Rudra Mukunda Bira Jagat Saheb Kumar
+			Anangabhima Anantasaktivarman Anantavarman Apsaradeva Arthapatiraja Ayasobhita Balabhadra 
+			Barjena Betta Bhanu Bhavadattavarman Bhimaratha Bhimasena Bhramarbara Bhupendra Bhupendravarman 
+			Chandravarman Charamparaja Damodara Danai Danarnava Dayita Dayitavarman Devananda 
+			Devendravarman Dharmaraja Dharmarstha Dhruvananda Dibyasingha Digbhanja Durgaraja Durjaya 
+			Durjayabhanja Gangadhara Gandhata Gangakavilasa Gayada Gopinatha Gunamaharnava Gunarnava 
+			Gundama Hamvira Harekrushna Hastivarman Hemantavarman Indranatha Indravarman Jahangir Janmejaya 
+			Jayananda Jayaraja Jayasimha Jayasthambha Jayavarma Jayavarmadeva Kakharua Kalaha Kalahastambha 
+			Kalasa Kalua Kalyankalasa Kamarnava Kanchana Kanchanastambha Kapilendra Kapilendradeva 
+			Karnadeva Khadaga Kotta Kottabhanja Ksemankaradeva Kulastambha Lakshmikaradeva Madhavaraja 
+			Madhavavarman Madhukamarnava Mahendraditya Mahendravarman Mahinda Manamatra Matradhyarya 
+			Mukunda Nahusa Nandaprabhanjana Nandaprabhanjanavarman Nandavarman Narasimha Narendra Netta 
+			Nettabhanja Padmanava Paramananda Prasannamatra Prataparudra Pravaraja Prithivarman 
+			Prithivimaharaja Prithvibhanja Prithvidena Pulindasena Puranjaya Purushottama Rajabhanja 
+			Rajaraja Ramachandra Ramachandradeva Ranabhanja Ranabhita Ranadurjaya Ranga Rangabhanja 
+			Sailobhava Sainyabita Saktivarman Samantavarman Sambhuyasa Sankaravarman Santikaradeva Sarabha 
+			Satru Satrubhanja Satyavarman Sila Silabhanja Sivakaradeva Sivananda Skandavarman Sobhanaraja 
+			Solyana Subhakaradeva Sudevaraja Suravala Teja Tejavarsha Tustikara Udaya Udayavarsha Udita 
+			Udyotakesari Umavarman Unmattasimha Utidavarsha Vaaraharaja Vajrahasta Vidhyadhara 
+			Vidhyadharabhanja Vijaya Vinayaditya Vinita Vishakavarman Vrishadhvaja Vyaghraraja Yayati
+		}
+		female_names = {
+			Ahiavadevi Apsaradevi Bhogavati Dandi Dandimahadevi Dattadevi Devavati Dharma Dharmamahadevi 
+			Durlabha Gandharavati Gauri Gaurimahadevi Kalyanavati Karnadevi Kuladevi Lakshmi 
+			Lakshmikaradevi Lilavati Mahadevi Nayanadevi Rajasundari Ratnavati Suvrata Syamadevi Vakula 
+			Vakulamahadevi Vasumati Vijnanavati Vijnayavati Yajiyavati Yajnavati Giriraj Kumari Suratarangini Devi 
+			Krishnapriya Bishnupriya Tikayet Devi
+		}
+	}
+	sinhala = {
+		primary = CEY
+		dynasty_names = {
+			"Kotteid" "Konnapu Bandara" "Gampolan" "Savulu"
+		}
+		male_names = {
+			Parakramabahu Jayabahu Bhuvanaikabahu Vijayabahu Dharmapalabahu Vimala Dharmasuriya Senarut Rajasimha 
+			Narenda Sri Vijaya Rajasimha Kitri Sri Rajasimha Sri Rajadhiraja Simha Dhatmapala
+			Agabala Aggabodhi Agibuti Ananda Anikanga Apaya Arittha Avirada Ayasmantha Bhuvanekabahu 
+			Butisamana Chodaganga Dahamsena 
+			Danamitta Dappula Dathappabhuti Dathopatissa Dharmapala Dharmasena Dharmasoka Dhatusena 
+			Digakassapa Diganaguli 
+			Digasumana Gajabahu Hadaka Hadana Hujata Jayabahu Jetthatissa Jhotisena Kashyapa Kassapa Kitti 
+			Kittisena Kittivarma 
+			Magamitta Mahadeva Mahanaga Mahasattha Mahasena Mahasiva Mahinda Manavanna Mihidala Mihindala 
+			Mitta Moggallana 
+			Nandamitta Narendra Narendrasinha Nirmala Padita Parakkamabahu Parakramabahu Rajasinha Rakasala 
+			Ratana Rohaka 
+			Sadhatissa Sagala Saliya Sanghamitta Sanghatissa Sankha Sena Senarat Sidata Sigaratissa 
+			Silameghavanna Sinhabahu 
+			Siva Sobana Sobika Sudata Sumana Surakita Suratissa Tissa Udaya Upatissa Vassaba Vebeliya 
+			Vepali Vijayabahu 
+			Vikrama Vikrama Vikramabahu Vimaladharma Vimaladharmasuriya Virabahu Viranarendra
+		}
+		female_names = {
+			Abijliguta Ahali Anula Anurada Anuradi Anuridi Asadaguta Asali Aselaya Ata Barani Bodhideva 
+			Bohodevi Butadata 
+			Cadana Citadevi Citaguta Damadina Damaguta Damarajha Damarakita Damaruci Damasena Damati Damika 
+			Damutara 
+			Devanakata Devanapiya Devarakita Dhamarajha Dhamika Jhita Jhotisena Jhotiya Kalyanavati 
+			Kanadasika Kanaguta 
+			Kanatissa Kitaka Kituka Kubira Kumara Kumaradata Kumaratiha Lasani Lilavati Maga Magha Maka 
+			Maki Mita Nagadina 
+			Narayaguta Nuga Nugaya Paduma Palikada Pamatissa Purushadata Pusamitta Rajhita Ramadata 
+			Ramajhata Ramani 
+			Rasumiliya Reva Sagara Samidata Samudaguta Savera Seneya Silmini Siriguta Siripali Sivala 
+			Sivanabuti Somali Sugula 
+			Sujhata Sumanadevi Suri Suriguta Tisi Tissabuti Tissadata Tissadevi Tissamita Tissaraka 
+			Tissarakita Yahasaya Yahasini Sunetra Devi Kalyanavati Swarnamanikya 
+		}
+	}
+	kamrupi = {
+		dynasty_names = {
+			"Khen" "Ahom" "Nagas" "Chutiya" "Raikat" "Koch" "Sutiya" "Kachari" "Barobhyan" "Pala" "Ilyas Shahi" 
+			"Ganesha" "Hussein Shahi" "Najafi" "Afshari" "Nasiri" "Karrani" "Kamara" "Kamarupata"
+		}
+		male_names = {
+			"Sudangpha" "Sujangpha" "Siphakpha" "Susenpha" "Suhempha" "Supimpha" "Suhung" "Sutamla" "Supungmung" 
+			"Sukhampha Khora Raja" "Suklenmung Garghgaya Raja" "Gobar" "Brajnatha"
+			Balavarman Bhaskarvarman Bhattamahabahu Bhutivarman Birapala Brahmapala Chandramukhavarman 
+			Dharmapala Ganapativarman Gopala Harjjaravarman Harshadeva Harshapala Harshavarman 
+			Indrapala Jayamala Jayapala Kalyanavarman Kumarapala Mahendravarman Narayanavarman 
+			Pralambha Purandelapala Pushyavarman Ratnadhwajpala Ratnapala 
+			Salasthamba Samudravarman Sthitavarman Supratisthitavarman Susthitavarman 
+			Timgyadeva Tyagasimha Ummoka Vanamalavarmadeva Vigrahastambha Vijaya Virabahu
+			"Sikandar" "Sher" "Ala-ud-Din Firuz" "Rukn ad-Din Barbak" "Jalal ad-Din Fateh" "Nasir-ud-Din Mahmud" "Nasir ad-Din Nasrat"
+			"Jalaluddin Mohammed" "Islam" "Mirza Muhammad" "Shams-ud-Din Yusuf" "Shams-ud-Din Ahmad" 
+			"Shams-ud-Din Muhammad" "Mir Muhammad Ja'far" "Shihab-ud-Din Bayazid" "Mir Qasim 'Ali" "Sayf-ud-Din Hamza" 
+			"Ghiyasuddin Azam" "Ghiyasuddin Mahmud" "Ghiyat ad-Din Bahadur" "Ghiyat ad-Din Jalal" "Da'ud" "Sulayman" 
+			"Murshid Quli" "Shuja' ad-Din Muhammad" "Azam" "Ahmad" "Abu Nasr" "Barbak" "Farid" "Yusuf" "Husain" "Firuz" 
+			"Nasrat" "Fateh" "Bayazid" "Nasir" "Ghiyasuddin" "Mirza" "Raja" "Hamza"
+			Amritnarayan Balabhata Balinarayan Ballalsen Basudevnayaran 
+			Bhagadatta Bhairabendranarayan Bhatta Bhavashankari Bhimsingha Birnayaran 
+			Chandrasen Chandranarayan Chaturanan Chilarai 
+			Danujmadhava Dasharathadeva Devakhadga Devapala Devendranarayan 
+			Dhairjendranayaran Dharendranarayan Dharmapala Dhirsingha 
+			Gajnarayan Gopala Govindachandra Govindapala 
+			Hajo Harendranarayan Haridevnarayan Hariyamandal Hemantasen Indranarayan 
+			Jadu Jagaddipendranarayan Jatakhadga Jayanarayan Jayapala Jitendranarayan 
+			Kalyanachandra Kamalnarayan Keshabsen Khadgodyama Krishanmishra Krishnaroy 
+			Kumarapala Kumudnarayan Ladahachandra Lakshmansen Lakshmichandra Lakshminarayan Lomapada 
+			Madanapala Mahendrapala Mahendrasingha Mahindranarayan Mahipala Manava Mukundanarayan 
+			Naranarayan Narasingha Narayanapala Narendranarayan Nayapala Nripendranarayan 
+			Parikshitnayaran Prananarayan Prannath Pratapnarayan Pratapnarayanroy Pushkaranadhipa 
+			Raghudev Rajabhata Rajadinaj Rajaganesha Rajendranarayan Rajrajendranarayan Rajyapala 
+			Ramapala Ramnath Ranasura Ranjitsingha Roopnarayan Rudranarayan 
+			Samudrasen Shanibhangar Shashanka Shivanarayan Shivendranarayan Shukladhwaj Shurapala 
+			Srichandra Srimanta Subarnachandra Sukhdev Suryanarayan Traillokyachandra 
+			Udirnakhadga Uditanarayan Upendranayaran Vakapala Vapyata Vigrahapala 
+			Vijaynarayan Vijaysen Vijaysingha Virajdendranarayan Vishwarupsen Vishwasingha
+			"Bhairav Singh" "Bhavesh" "Bhogishwar" "Dev Singh" "Dhir Singh" Dhireshwar 
+			"Ganeshwar Singh" "Gang Dev" Harasimhadeva "Hari Singh" "Hemant Sen" 
+			"Kameshwar" "Kirti Singh" Jyotirishwar "Laxman Sen" "Laxminath Singh Dev" Madanpal 
+			"Nanya Dev" "Nar Singh" "Narsingh Dev" "Padma Singh" "Rambhadra Singh Dev" Rameshwar 
+			"Samant Sen" "Shakrasingh Dev" "Shiv Singh" "Vallal Sen" "Vijay Sen"
+			Agnimitra Andhraka Ayus Bhagabhadra Bhikhari Bhumimitra Devabhuti Ghosha Gopal Govindapal 
+			Khsetravridha Maharshi Mahendra Maurayadhwaj Narayana Pulindaka Pusyamitra 
+			Sahtiya Susarman Vajramitra Vasudeva Vasujyeshtha Vasumitra 
+		}
+		female_names = {
+			"Mangaldahi" "Sati Joymati" "Kuranganayani"
+			Ahiavadevi Bhogavati Dattadevi Devavati Durlabha Gandharavati Kuladevi Nayanadevi
+			Ratnavati Suvrata Syamadevi Vasumati Vijnanavati Vijnayavati Yajiyavati Yajnavati
+			Amrapali Amritakala Asima Bhavashankari Bishwas Bhogavati Bibibai Dattadevi Devavati 
+			Devi Ahiylya "Malika Bibi" "Sharat" "Kamala" Gayatri Himadrija Hira Jira 
+			Kanchani Mahendrani Malavyadevi Rani Ratnadevi Vina
+		}
+	}
+}
+
+hindusthani = {
+	graphical_culture = indiangfx
+
+	avadhi = {
+		primary = ODH
+		dynasty_names = {
+			"ud Daula" "Awadhi" "Chand" "Bundela" "Malikzada" "Tomara" "Raghuvansi" "Parmari"
+		}
+		male_names = {
+			"Muhammad Sa'adat Khan" "Muhammad Safdar Jang" "Shujah ad-Daula" "Asaf ad-Daula" "Wazir 'Ali" 
+			"Sa'adat 'Ali Khan" "Ghazi ud-Din Haidar" "Saadat" "Safdarjung" "Hyder" "Birjis Qadra" "Ali" 
+			"Alauddin" "Bhi" "Malik" "Narendra" "Bismillah" "Obaid" "Iqbal" 
+		}
+		female_names = {
+			"Hazrat Mahal" "Farzana" "Fakhr-un-Nisa"
+		}
+	}
+	kanauji = { #Hindvi
+		primary = DLH
+		dynasty_names = {
+			"Tughluq" "Lodi" "Khilji"
+		}
+		male_names = {
+			"Nusrat" "Sayyid Khidr" "Daulat Khan" "Khidr Khan" "Mubarrak Shah" "Mohammed Shah" "Aladdin Alam Shah" 
+			"Bahlul" "Saikander" "Ibrahim" "Sher" "Islam Shah" "Saadat" "Safdarjung" "Hyder" "Birjis Qadra" "Ali" 
+			"Iqbal" "Alauddin" "Bhi" "Malik" "Narendra" "Bismillah" "Obaid" "Hemu" "Ghazi"
+		}
+		female_names = {
+			"Raziyya" "Bahar" "Roshanara" "Fakhr-un-Nisa"
+		}
+	}
+	vindhyan = { #Bundeli & Bagheli
+		primary = BND
+		dynasty_names = {
+			Baghela Malikzada Bundela Tomara Karkare Newalkar 
+		}
+	}
+	haryan = {
+		dynasty_names = {
+			"Hariya" "Haryana" "Bhatna" "Painipi" "Saman" "Haisari" "Shamnan"
+		}
+		male_names = {
+			"Nusrat" "Sayyid Khidr" "Daulat Khan" "Khidr Khan" "Mubarrak Shah" "Mohammed Shah" "Aladdin Alam Shah" 
+			"Bahlul" "Saikander" "Ibrahim" "Sher" "Islam Shah" "Saadat" "Safdarjung" "Hyder" "Birjis Qadra" "Ali" 
+			"Iqbal" "Alauddin" "Bhi" "Malik" "Narendra" "Bismillah" "Obaid" "Hemu" "Ghazi"
+		}
+		female_names = {
+			"Banhita" "Haraina" "Raziyya" "Bahar" "Roshanara" "Fakhr-un-Nisa"
+		}
+	}
+	bagheli = {
+		dynasty_names = {
+			Baghela Malikzada Tomari Karkare Newalkar Tripura Kalachur
+		}
+	}
+	hindavi = {
+		dynasty_names = {
+			"Hindayaw" "Hinda" "Tughluq" "Lodi" "Khilji"
+		}
+		male_names = {
+			"Nusrat" "Sayyid Khidr" "Daulat Khan" "Khidr Khan" "Mubarrak Shah" "Mohammed Shah" "Aladdin Alam Shah" 
+			"Bahlul" "Saikander" "Ibrahim" "Sher" "Islam Shah" "Saadat" "Safdarjung" "Hyder" "Birjis Qadra" "Ali" 
+			"Iqbal" "Alauddin" "Bhi" "Malik" "Narendra" "Bismillah" "Obaid" "Hemu" "Ghazi"
+		}
+		female_names = {
+			"Raziyya" "Bahar" "Roshanara" "Fakhr-un-Nisa"
+		}
+	}
+	male_names = {
+		Achalraj Achalraja Achalraja Achalraja Adhandev Adityadeva Ajmal Alsi Amir Anangpal Anangpala 
+		Anangpala Anangpala Anupapala Anupapala 
+		Anuppal Anupapala "Apara Gangeya" Arjunpal Arjunpala Arjunpala Arjunpala Arjunavarman Bacchdev 
+		Bachraj Baghpal Baghpala Baghpala Baghpala 
+		Bahadur-Singh Beejpal Beejpala Beejpala Beejpala Bhaadar Bhilpala Bhoj Bhoja Bhoja Bhoja 
+		Bhojavarman Bhoja Bhopal Bhumpal Bhumpala 
+		Bhumpala Bhumpala Birpal Birpala Birpala Birpala Bisaldeva Brahmadeva Brahmapala Brahmdevpal Chand 
+		Devapala Devavarman Dhanga Dhanga 
+		Dhangadeva Dhanga Dharmapala Dhaulshaya Dilipapala Dilipapala Dilippal Dilipapala Doth Draupad 
+		Draupada Draupada Draupada Dugarendra 
+		Gambhir Ganapatideva Gandadeva Gangeya Ghatamdeva Gopal Gopala Gopala Gopala Govindachandra 
+		Govindapala Govindaraja Govindaraja Govindraj Govindaraja
+		Hamir Hammiravarman Harpal Harsa Harsa Harshapala Harsa Hirapal Hirapala Hirapala Hirapala Indrapal 
+		Indrapala Indrapala Indrapala Ishtpala 
+		Jaganpal Jaganpala Jaganpala Jaganpala Jagatpal Jagatpala Jagatpala Jagatpala Jagdev Jagdeva 
+		Jagdeva Jagdeva Jaidas Jaipal Jaitugideva Jasapala Jasapala 
+		Jaspal Jasapala Jatanpal Jatanpala Jatanpala Jatanpala Jayapala Jayasakti Jayasimha Jayavarman 
+		Jhetpal Jhetpala Jhetpala Jhetpala Junpala 
+		Kailaspal Kailaspala Kailaspala Kailaspala Kalkurna Kalyanachandra Kakhopal Kakhopala Kakhopala 
+		Kakhopala Kamal Kanhad Kanvarpal Kanvarpala 
+		Kanvarpala Kanvarpala Karnpal Keeratdeva Khadag Khetrapal Khetrapala Khetrapala Khetrapala Kiratpal 
+		Kiratpala Kiratpala Kiratpala Krishnray 
+		Krsnapa Kumarapala Kunwar Kunwar Kunwarpal Kunwar Ladahachandra Lakshmandeva Lokpala Madanapala 
+		Madanavarman Maharana Mahendrapal Mahendrapala 
+		Mahendrapala Mahendrapala Mahipal Mahipala Mahipala Mahipala Mahipata Mahlakadeva Mandandeva 
+		Mangaldeva Margdeva Mihira Nagapala Nagdeo Nannuka 
+		Naravarman Narayanapala Narpal Nayapala Nihaal Nihalray Paramardideva Pavak Peepalraj Popatraj 
+		Pritampal Pritampala Pritampala Pritampala Prithipala 
+		Prithvi Prithvi Prithvipal Prithvi Prithviraj Prithviraja Prithviraja Prithviraja Prithvivarman 
+		Rahila Rajapala Rajyapala Ramabhadra Ramachandra 
+		Rampal Rampala Rampala Rampala Rana Rangraj Rangraja Rangraja Rangraja Ratnapala Rijhpala 
+		Roshandeva Salivaahan Sallaksanavarman Saugandeva Shurapala 
+		Sisupal Sisupala Sisupala Sisupala Sohanpal Somasi Someshvara Sonpal Sonpala Sonpala Sonpala 
+		Srichandra Subhatavarman Sukhinpal Sukhinpala 
+		Sukhinpala Sukhinpala Sulakshanpal Sultanpal Sultanpala Sultanpala Sultanpala Surajpal Surajpala 
+		Surajpala Surajpala Traillokyachandra Tejapala Tejpal 
+		Tejpal Tejpal Tolpal Trailokyavarman Trilochanpala Udayaditya Udaysangh Uddharandeva Vachhal 
+		Vakpati Vapyata Varshapala Varshapala Varshpal Varshapala 
+		Vasudev Vidurathpal Vidurathpala Vidurathpala Vidurathpala Vidyadhara Vigrahapala Vigraharaja 
+		Vihangpal Vijayapala Vijayasakti Vinayakapala Vindhyavarman 
+		Viramdeva Viravarman Virsinghadeva Yasovarman
+	}
+	female_names = {
+		Akal Anantadevi Damayanti Dattadevi Dehanagadevi Dhruvadevi Dhruvasvamini Hemavati 
+		Kakanvati Kalayandevi Kanchuka Kanwar Karmavati Kumaradevi Lakshman Maharani Mahidevi Nattadevi
+		Prabhavati Prabhavatigupta Prasadhanadevi Puppadevi Rajamati Sanyukta Shrimitradevi Aadi Abhirati Aditi Adya Agrata Ahalya Ahisma Ajaya Alka Amaravati Amba Ambar Ambika Ambrosia Amhi Amhika Amma Amritha Anahita Anala Ananda Ananta Anasuya Anga Angirasa Anila Annapurna Anumati Apala Apsaras Arpana Aruna Arundhati Arya Avani Avasa Avatara Baka Ballari Behula Bela Bha Bhadraa Bhagiratha Bharati Bhikkhuni Bhimadevi Bhu Bhudevi Brinda Chamunda Chanda Chandi Chandra Changla Channa Charumati Chhaya Chitra Corona Daeva Dakini Dakshina Damayanti Daru Denali Deva Devaki Devamatar Devayani Devi Devika Dharani Dharma Diti Div Divya Drisana Durga Ellora Eshana Gambhiri Gandhari Ganesa Garima Garuda Garudi Gatha Gaura Gauri Gayatri Gita Guri Haimati Hanita Hara Hariti Harsha Hema Hetal Indi Indira Indra Indrani Indumati Ishana Ishani Jaganmata Jamuna Janna Jarita Jaya Jayanti Jayne Jivanta Jui Jyotika Jyotis Kadru Kailasa Kala Kali Kalinda Kalindi Kalli Kallie Kamala Kamana Kanan Kantha Kanya Karka Karma Karuna Kasi Kaveri Kavindra Kerani Kesava Khasa Kiran Kirati Kiri Kirsi Kirtana Kirti Komala Krodha Kumari Kumuda Kumudavati Kunti Laasya Lajila Laksha Lakshmi Lakya Lalasa Lalita Lanka Latika Lavanya Leya Madhur Madri Mahadevi Mahamari Mahesa Maheshvari Mahila Maina Makara Malini Mallika Manasa Manda Mandara Manju Marisha Matrika Meena Meghana Mehadi Minda Mira Mrinal Muniya Nanda Nandini Narmada Natesa Nayana Neeja Neema Nidra Niloufer Nipa Nirveli Nisha Nitara Niyati Odra Ojal Omana Opal Padma Pallavi Pandara Pandita Parvani Pinga Pishachi Pithasthana Prabha Pramlocha Premala Quasar Rachana Radha Raja Rajni Ramya Ran Rana Rane Ranee Rani Rania Rashmika Rati Ratna Ravati Rekha Riddhi Rohana Rohini Ruana Rubaina Ruma Rupali Sakari Sakina Sakra Sakujna Samvarta Sandhya Saniya Sanjna Sany Sara Sarama Sarisha Sati Satya Satyavati Saura Savarna Savitari  Seema Sevita Sevti Shaibya Shakini Shakra Shakti Shalin Shanata Shanta Shanti Shapa Sharada Sharama Sharvani Shashi Shasti Shitala Shraddha Shri Shyla Sita Sitara Sohalia Soma Subha Suchi Sumana Sumitra Sundari Sunila Supriya Sur Sur Tamanna Tanaya Tanika Tanuja Tapati Tara Taraka Tarala Tarannum Tarika Tira Tirtha Trisha Trishna Trisna Triveni Tulsi Uma Umika Upala Ura Urvi Usha Ushas Uttara Vac Vach Vairocana Vallari Vandana Varana Varaza Varouna Varsha Varuna Varunani Vasanti Vayu Vedas Vema Vijaya Vilina Vina Vinata Vinaya Vineeta Viveka Vivika Yamuna Yasiman Yasmine Yauvani Zahra Zudora
+	}
+	dynasty_names = {
+		"Gautam" "Ajaka" "Cedi" "Dasaratha" "Salisuka" "Satadhanva" "Gahadvala" "Dhariwal" "Jethani" 
+		"Mansukhani" "Patiala" "Malhi" "Sohota" "Varman" "Ayudha" "Yadava" "Kuru" "Matsya" "Malayaketu" 
+		"Mana" "Chanda" "Haihaya" "Sailavamsa" "Singara" "Gopala" "Baghela" "Baland"  "Bundela" "Rajgond" 
+		"Bhar" "Sonhat" "Chaulukya" "Jadon" "Surasena" "Dahiya" "Mir" "Yayvapala" "Khichar" 
+		"Gahirawar" "Kalachuri"
+	}
+}
+
+western_aryan = {
+	graphical_culture = indiangfx
+
+	gujarati = {
+		primary = GUJ
+		dynasty_names = {
+			"Muzaffarid" "Ahmad Shahi" "Vadher" "Babi" "Rawal" "Jadeja" "Calukya" "Bhil" "Kathi"
+		}
+		male_names = {
+			Zafar Muhammad Mubarak Ahmad Dawud Mahmud Muzaffar Bahadur Sardar Tatar Fath Khalil Sikandar Nasir Amarji 
+			Bhenji Hamirji Bhav Natwar Sidhraj Rajsinhji Fulad Abdul
+			Abhayapala Acharya Ahila Ajairaja Jayaraja Ajayapala Ajay-Singh Alhana Allat Amarangeya 
+			Ambra-Prasad Amritapala Anahilla Ari-Singh Arjunavarman Arnoraja Asaraja Asvapala Balaprasada 
+			Baliraja Bhatarka Bhert-Patt Bhima Bhima Bhimadeva Bhima Bhim-Singh Bhuvan-Singh Bhoja Bhoo-Chand 
+			Chachiga Chamundaraja Chandanaraja Chandraraja Chaud-Singh Dadda Dambarisimha Deopali-Deo Devapala 
+			Dharapatta Dharasena Dharmapala Dhruvasena Dinakarn Dronasinha Dungar-Singh Durlabharaja Gajasimha 
+			Gopala Gopendraka Gopendraraja Gopendraraja Gopendraraja Govinda Govindaraja Govindapala 
+			Govindaraja Govindaraja Govindaraja Guhasena Guvaka Govindaraja Hammira Hammir-Singh Hanspal 
+			Hariraja Harischandra Hemachandra Jagadeva Jaitrasimha Jaitrasimha Jaitra-Singh Jaitrasimha 
+			Jaitugideva Jasapala Jaskarn Jayapala Jayaraja Jayaraja Jayasimha Jayasimha Jay-Singh Jayasimha 
+			Jay-Singh-Deo Jayat-Singh Jayasimha Jayavarman Jayshikari Jendraraja Jojalla Kalbhoj Kanhadadeva 
+			Karandeva Karnadeva Karan-Singh Karnadeva Karnadeva Katudeva Katukaraja Keerti-Verma Kirtivarman 
+			Kelhana Kharagraha Khuman Kirtipala Kirtivarman Kirtivarman Kumarapala Kshemraja Xemraja 
+			Kshem-Singh Kshetra-Singh Kumar-Singh Lakhanapala Lakhshaman-Singh Lakshmana Lakshmanadeva 
+			Lakshmanadeva Lakshmanadeva Lakshmivarman Lavanyakarna Lunavarman Luntiga Madanapala Mahap Mahayak 
+			Mahendra Mahendrapala Mahendrapala Mahendra Mahipala Mahlakadeva Maladeva Manavasimha Mathan-Singh 
+			Mattat Mihira Mulraja Nagabhata Nagarjuna Nagraja Naradeva Narapati Naravarman Naravarman 
+			Naravarmandeva Naravarman Narayanapala Nar-Verma Naravarman Narwahan Nayapala Padam-Singh 
+			Prahladana Pratapa Prithvipal Prithviraja Prithivipala Prithviraja Prithviraja Prithviraja Purnpala 
+			Rahap Rajapala Rajyapala Ramabhadra Ramapala Ratan-Singh Ratnapala Rayapala Rudrapala Sahajapala 
+			Sahanapala Samanta Samanta Samant-Singh Samanta Samantasimha Samanta Samarasimha Samarasimha 
+			Samar-Singh Samarasimha Shakti-Kumar Shaliwahan Shuchi-Verma Shurapala Siladitya Sindhuraja 
+			Singhraja Sinha Sinhad-Deo Siyaka Sohiya Someshwara Subhatavarman Suratrana Tejasimha Tejasimha 
+			Tej-Singh Tejasimha Trailokyavarman Tribhuvanapala Trilochanpala Udayaditya Udayasimha Udayavarman 
+			Upendra Vagbhata Vahadiasimha Vairisimha Vairisimha Vairsingh Vairisimha Vajradeva Vakapati Vakpati 
+			Vakpati Vakpati Vakpatiraja Vakpati Valhana Valhanadeva Valhanadeva Valhanadeva Vallabharaja 
+			Vanraja Vapyata Vasudeva Vatsaraja Vigrahapala Vigraharaja Vigraharaja Vigrharaja Vigraharaja 
+			Vijada-Dasasyandana Vijai-Singh Vikramaditya Vinaykpala Vindhyavarman Virama Viradeva Viranarayana 
+			Virsinh-Deo Viryarama Xemraja Xemraja Yasovarman Yograj
+		}
+		female_names = {
+			Fatima Ahmadi Mumtaz
+			Annaladevi Bauladevi Bhuyikadevi Candrabhattarikadevi Chachinidevi Dehanagadevi Delhanadevi 
+			Desaladevi Hariyadevi Laxmidevi Madhavi Mahalakshmi Mahidevi Manaladevi Mayanalladevi Namalladevi 
+			Padmaladevi Padmini Prasadhanadevi Pratha Rasaladevi Rudaladevi Rudrani Rupadevi Samyukta Sidhawa 
+			Somalladevi Suhava Sundaridevi Tihunaka Udayamati
+		}
+	}
+	parsi = {
+		primary = GUJ
+		dynasty_names = {
+			"Vakil" "Wadia" "Pithawala" "Subedar" "Sanjana" "Surti" "Bulsara" "Damania" "Gandhi" "Marzban"
+			"Jejeebhoy" "Tata"  
+		}
+		male_names = {
+			Abadan Adel Anosh Arshan Azman Azadafoz Bakhtayar Bastavar Baman Darashah Delafruz Delawar Dinyar 
+			Farhad Farrokh Farzan Homyar Hormazd Ishvat Jahanshah Jehangir Kaizaad Khubyar Khufiruz Meheryar
+			Meherzad Nawazish Navroz Parwez Peroz Ramin Rustam Sarafraz Shaharzaad Suroyazat Taronish Varaz
+			Yazdyar Zirak Zubin
+		}
+		female_names = {
+			Aban Armaiti Anahita Arnaz Arzu Asha Ava Azad Bahar Banu Banugul Behafrid Behruz Behzad Bostan Chaman
+			Cheherazad Dadhush Danish Delafruz Delara Delbar Deldar Deyazad Dinaz Dinbanu Fahnik Farida Farnaza
+			Feroza Franak Friya Ganj Gohar Gulzar Homa Kaniz Kharmen Lal Laleh Lilya Mahin Mahpari Mani Meher
+			Naheed Navazesh Pari Shirin Tanaz Zarin Yasmin Yazdin
+		}
+	}
+	saurashtri = {
+		primary = JGD
+		dynasty_names = {
+			"Yadava" "Gohil" "Vadher" "Babi" "Rawal" "Jadeja" "Calukya" "Bhil" "Kathi"
+		}
+		male_names = {
+			Zafar Muhammad Mubarak Ahmad Dawud Mahmud Muzaffar Bahadur Sardar Tatar Fath Khalil Sikandar Nasir Amarji 
+			Bhenji Hamirji Bhav Natwar Sidhraj Rajsinhji Fulad Abdul
+			Abhayapala Acharya Ahila Ajairaja Jayaraja Ajayapala Ajay-Singh Alhana Allat Amarangeya 
+			Ambra-Prasad Amritapala Anahilla Ari-Singh Arjunavarman Arnoraja Asaraja Asvapala Balaprasada 
+			Baliraja Bhatarka Bhert-Patt Bhima Bhima Bhimadeva Bhima Bhim-Singh Bhuvan-Singh Bhoja Bhoo-Chand 
+			Chachiga Chamundaraja Chandanaraja Chandraraja Chaud-Singh Dadda Dambarisimha Deopali-Deo Devapala 
+			Dharapatta Dharasena Dharmapala Dhruvasena Dinakarn Dronasinha Dungar-Singh Durlabharaja Gajasimha 
+			Gopala Gopendraka Gopendraraja Gopendraraja Gopendraraja Govinda Govindaraja Govindapala 
+			Govindaraja Govindaraja Govindaraja Guhasena Guvaka Govindaraja Hammira Hammir-Singh Hanspal 
+			Hariraja Harischandra Hemachandra Jagadeva Jaitrasimha Jaitrasimha Jaitra-Singh Jaitrasimha 
+			Jaitugideva Jasapala Jaskarn Jayapala Jayaraja Jayaraja Jayasimha Jayasimha Jay-Singh Jayasimha 
+			Jay-Singh-Deo Jayat-Singh Jayasimha Jayavarman Jayshikari Jendraraja Jojalla Kalbhoj Kanhadadeva 
+			Karandeva Karnadeva Karan-Singh Karnadeva Karnadeva Katudeva Katukaraja Keerti-Verma Kirtivarman 
+			Kelhana Kharagraha Khuman Kirtipala Kirtivarman Kirtivarman Kumarapala Kshemraja Xemraja 
+			Kshem-Singh Kshetra-Singh Kumar-Singh Lakhanapala Lakhshaman-Singh Lakshmana Lakshmanadeva 
+			Lakshmanadeva Lakshmanadeva Lakshmivarman Lavanyakarna Lunavarman Luntiga Madanapala Mahap Mahayak 
+			Mahendra Mahendrapala Mahendrapala Mahendra Mahipala Mahlakadeva Maladeva Manavasimha Mathan-Singh 
+			Mattat Mihira Mulraja Nagabhata Nagarjuna Nagraja Naradeva Narapati Naravarman Naravarman 
+			Naravarmandeva Naravarman Narayanapala Nar-Verma Naravarman Narwahan Nayapala Padam-Singh 
+			Prahladana Pratapa Prithvipal Prithviraja Prithivipala Prithviraja Prithviraja Prithviraja Purnpala 
+			Rahap Rajapala Rajyapala Ramabhadra Ramapala Ratan-Singh Ratnapala Rayapala Rudrapala Sahajapala 
+			Sahanapala Samanta Samanta Samant-Singh Samanta Samantasimha Samanta Samarasimha Samarasimha 
+			Samar-Singh Samarasimha Shakti-Kumar Shaliwahan Shuchi-Verma Shurapala Siladitya Sindhuraja 
+			Singhraja Sinha Sinhad-Deo Siyaka Sohiya Someshwara Subhatavarman Suratrana Tejasimha Tejasimha 
+			Tej-Singh Tejasimha Trailokyavarman Tribhuvanapala Trilochanpala Udayaditya Udayasimha Udayavarman 
+			Upendra Vagbhata Vahadiasimha Vairisimha Vairisimha Vairsingh Vairisimha Vajradeva Vakapati Vakpati 
+			Vakpati Vakpati Vakpatiraja Vakpati Valhana Valhanadeva Valhanadeva Valhanadeva Vallabharaja 
+			Vanraja Vapyata Vasudeva Vatsaraja Vigrahapala Vigraharaja Vigraharaja Vigrharaja Vigraharaja 
+			Vijada-Dasasyandana Vijai-Singh Vikramaditya Vinaykpala Vindhyavarman Virama Viradeva Viranarayana 
+			Virsinh-Deo Viryarama Xemraja Xemraja Yasovarman Yograj
+		}
+		female_names = {
+			Fatima Ahmadi Mumtaz
+			Annaladevi Bauladevi Bhuyikadevi Candrabhattarikadevi Chachinidevi Dehanagadevi Delhanadevi 
+			Desaladevi Hariyadevi Laxmidevi Madhavi Mahalakshmi Mahidevi Manaladevi Mayanalladevi Namalladevi 
+			Padmaladevi Padmini Prasadhanadevi Pratha Rasaladevi Rudaladevi Rudrani Rupadevi Samyukta Sidhawa 
+			Somalladevi Suhava Sundaridevi Tihunaka Udayamati
+		}
+	}
+	marathi = {
+		primary = MAR
+		primary = BHI
+		primary = STR
+		dynasty_names = {
+			"Bhonsle" "Gaikwar" "Bhat" "Sindhia" "Koli" "Sinda" "Kamadeva" "Gaitonde" "Malviya" "Ruddha"
+		}
+		male_names = {
+			Shivaji Shambaji Rajaram Sahuji Balaji Baji Rao Madhu Rao Narayan Rao Ragunath Rao Pratap Singh Firangoji 
+			Kanhoji Netaji Moropant Baji Prabhu Suryaji Tanaji Chimaji Ranoji Raghunathrao Malhar Tukojirao Haripant 
+			Yashwantrao
+			Abaji Amutrao Bahadur Bahiroji Balaji Bajirao Chimnaji Dattaji Daulatrao Dhanaji Dhondu 
+			Ekoji Fatehsinh Gopalrao Hambirao Harirao Jayajirao Jayappa Janakappa Jivajirao 
+			Khanderao Krishnarao Madhavrao Mahadji Malerao Malharrao Mankoji Martandrao 
+			Moropant Murarirao Nanasaheb Narayanrao Pandurangrao Pratapsinh 
+			Raghunathrao Rajaram Ramaswami Ramchandrapant Ramshastri Ranojirao 
+			Sadashivrao Sambhaji Sayajirao Serfoji Shahuji Shivaji Shivajirao 
+			Tryambakrao Tukkoji Tukojirao Tulojirao Venkatrao Vishwanathpant Yashwantrao
+			Adityavarman Aiyaparaja Anantadeva Aparaditya Aparajita Arikesarin Arthapathi Avasara 
+			Bhavadatta Bhima Bhoja Bijjala Chandra Chandraditya Chhadvaideva Chhittaraja 
+			Daharasena Dhammayira Gandaraditya Goggiraja Gonka Guhala Guhalladeva Haripaladeva 
+			Indradatta Indraraja Jatiga Jayakeshi Jhanjha Kamadeva Kapardin Keshideva Kirtiraja 
+			Mallikarjuna Marsimha Mummuniraja Nagarjuna Nagavarma Naivarman Pullashakti Rattaraja 
+			Sanaphulla Shashthadeva Shivachitta Skandavarman Soddhala Someshvara Sovideva Suketuvarman 
+			Taila Tejahkantha Vappuvanna Vijayaditya Viravarmadeva Vishnuchitta Vyaghrasena 
+		}
+		female_names = {
+			Ahilyabai Ambikabai Anandibai Anubai Bhiubai Deepabai Durgabai Gangabai Gunvantibai 
+			Jankibai Jijibai Kamlabai Kashibai Laxmibai Mahadik Mastani Putalabai 
+			Rajasbai Rajkunvarbai Ramabai Ranubai Saibai Sagunabai Sakavaarbai Sayeebai Soyarabai Sujanbai 
+			Tarabai Yesubai Anjanibai Anuradha Durga Kamadevi Kamaladevi Kesarbai Kishori Kundaladevi 
+			Lasthiyavva Maya Mogubai Radhabai Radhika Shevanti Shudhamati Sovidevi Sudha Sumati Sunita
+			Tarabai Soyarabai Tukabai
+		}
+	}
+	sindhi = {
+		primary = SND
+		dynasty_names = {
+			"Samma" "Kalhora" "Soomra"
+			# CKII
+			"Ghanshani" "Doolani" "Khetpal" "Lohi" "Notani" "Sawai" "Bhambhani" 
+		}
+		male_names = {
+			"Ali Sher" "Fath Khan" "Tughluq" "Nizam ad-Din" "Furuz Salah ad-Din" "Shah Shuja' Beg" "Sanjar" "Nanda" 
+			"Shah Husayn" "Mirza Muhammad 'Isa" "Mirza Muhammad Baqi" "Mirza Jani Beg" "Yar Muhammad Khan" 
+			"Muhammad Murad" "Gulam Shah" "Sarfaraz Khan" "Gulam Nabi Khan" "'Abd an-Nabi Khan" 
+			"'Abd Allah Khan Talpur" "Mir Fath Ali" "Thara" "Mohammed 'Isa" "Mohammed Baqi" "Nur Mahammad" "Mohammad" 
+			"Muzzafar" "Ali" "Khalil" "Sikandar" "Bhenji" "Hamirji" "Bhav" "Natwar" "Sidhraj" "Ghulam" "Hussain" 
+			"Abdullah"
+			Abdullah Abdurrashid Abdurrahman Alauddin "Ali Sher" Amar Arnel Asamuddin Aziz 
+			Banhbina Bhungar "Bhungar Rao" Chanesar Doda "Dadu Phattu" "Dalu Rai" "Deva Rai" 
+			"Fateh Khan" Feruzuddin Genhra Hafif Khafif Hamir Ismail Junah Kahah Karan Khafif Khafif Khaira 
+			Khinrah Mahmud Mubarak Muhammad Muhammed-Tur Munzir Nangar Nizamuddin Pahtu Punhun Raidhan 
+			Sabar Salahuddin Sanghar Sanjar Shahabuddin Sikandar Sumrah Syed Tai Tamachi Taghlak Umar Unar
+		}
+		female_names = {
+			Bhagi Hamide Himu Sad Tari "Zainab Tari" "Noor" "Chaguli" "Khair"
+		}
+	}
+	rajput = {
+		primary = MER
+		dynasty_names = {
+			"Sisodiya" "Faruqi" "Rastraudha" "Solanki" "Khan Zada" "Kachwaha"
+			"Satnami" "Rathore" "Hada" "Chauhan" "Holkar" "Qadirid" "Shaja'atid"
+			"Khalji" "Tomara" "Jadeja" "Khirwara" "Nauhwara" "Sinsiniwar" "Balhara"
+			"Panwara"
+			"Panwar" "Bargujar" "Guhilot"
+			"Dahiya" "Chandela" "Pathan" "Vaghela" 
+			"Pragvata" "Somavansha" "Adityavansha" "Chandravansha" "Suryavansha"
+			"Samma" "Chudasama" "Bhatti" "Sanchore" "Gujar" "Chhinda"
+		}
+		male_names = {
+			"Udai Singh" "Amar Singh" "Lakha" "Mokal" "Kumbha" "Raimal" "Sangha" "Ratan Singh" "Vikramaditya Mahthan" 
+			"Pratap Singh" "Karan" "Jagat Singh" "Raj Singh" "Jay Singh" "Sangrama Singh" "Ari Singh" "Hammir"
+			"Bhim Singh" "Baz" "Kumbhakarna" "Natwar" "Ratan" "Jhala" "Hakim" "Sidhraj" "Raj" "Jai" "Sangram" 
+			"Sejakji" "Dilip" "Kshetra" "Kunwar" "Nath" "Viram" "Baiji Lal" "Jawan" "Bhawani" "Naryan" "Krishna" "Ballu"
+			Achalraj Achalraja Achalraja Achalraja Adhandev Adityadeva Ajmal Alsi Amir Anangpal Anangpala 
+			Anangpala Anangpala Anupapala Anupapala 
+			Anuppal Anupapala "Apara Gangeya" Arjunpal Arjunpala Arjunpala Arjunpala Arjunavarman Bacchdev 
+			Bachraj Baghpal Baghpala 
+			Baghpala Baghpala Bahadur-Singh Beejpal Beejpala Beejpala Beejpala Bhaadar Bhilpala Bhoj Bhoja 
+			Bhoja Bhoja Bhojavarman Bhoja 
+			Bhopal Bhumpal Bhumpala Bhumpala Bhumpala Birpal Birpala Birpala Birpala Bisaldeva Brahmadeva 
+			Brahmapala Brahmdevpal Chand Devapala 
+			Devavarman Dhanga Dhanga Dhangadeva Dhanga Dharmapala Dhaulshaya Dilipapala Dilipapala Dilippal 
+			Dilipapala Doth Draupad Draupada 
+			Draupada Draupada Dugarendra Gambhir Ganapatideva Gandadeva Gangeya Ghatamdeva Gopal Gopala 
+			Gopala Gopala Govindachandra Govindapala 
+			Govindaraja Govindaraja Govindraj Govindaraja Hamir Hammiravarman Harpal Harsa Harsa Harshapala 
+			Harsa Hirapal Hirapala 
+			Hirapala Hirapala Indrapal Indrapala Indrapala Indrapala Ishtpala Jaganpal Jaganpala Jaganpala 
+			Jaganpala Jagatpal Jagatpala 
+			Jagatpala Jagatpala Jagdev Jagdeva Jagdeva Jagdeva Jaidas Jaipal Jaitugideva Jasapala Jasapala 
+			Jaspal Jasapala Jatanpal Jatanpala 
+			Jatanpala Jatanpala Jayapala Jayasakti Jayasimha Jhetpal Jhetpala Jhetpala Jhetpala Junpala 
+			Kailaspal Kailaspala Kailaspala Kailaspala 
+			Kalkurna Kalyanachandra Kakhopal Kakhopala Kakhopala Kakhopala Kamal Kanhad Kanvarpal 
+			Kanvarpala Kanvarpala Kanvarpala Karnpal Keeratdeva 
+			Khadag Khetrapal Khetrapala Khetrapala Khetrapala Kiratpal Kiratpala Kiratpala Kiratpala 
+			Krishnray Krsnapa Kumarapala Kunwar Kunwar 
+			Kunwarpal Kunwar Ladahachandra Lakshmandeva Lokpala Madanapala Madanavarman Maharana 
+			Mahendrapal Mahendrapala Mahendrapala Mahendrapala 
+			Mahipal Mahipala Mahipala Mahipala Mahipata Mahlakadeva Mandandeva Mangaldeva Margdeva Mihira 
+			Nagapala Nagdeo Nannuka Naravarman 
+			Narayanapala Narpal Nayapala Nihaal Nihalray Paramardideva Pavak Peepalraj Popatraj Pritampal 
+			Pritampala Pritampala Pritampala Prithipala 
+			Prithvi Prithvi Prithvipal Prithvi Prithviraj Prithviraja Prithviraja Prithviraja Prithvivarman 
+			Rahila Rajapala Rajyapala Ramabhadra 
+			Ramachandra Rampal Rampala Rampala Rampala Rana Rangraj Rangraja Rangraja Rangraja Ratnapala 
+			Rijhpala Roshandeva Salivaahan 
+			Sallaksanavarman Saugandeva Shurapala Sisupal Sisupala Sisupala Sisupala Sohanpal Somasi 
+			Someshvara Sonpal Sonpala Sonpala Sonpala 
+			Srichandra Subhatavarman Sukhinpal Sukhinpala Sukhinpala Sukhinpala Sulakshanpal Sultanpal 
+			Sultanpala Sultanpala Sultanpala Surajpal Surajpala 
+			Surajpala Surajpala Traillokyachandra Tejapala Tejpal Tejpal Tejpal Tolpal Trailokyavarman 
+			Trilochanpala Udayaditya Udaysangh Uddharandeva 
+			Vachhal Vakpati Vapyata Varshapala Varshapala Varshpal Varshapala Vasudev Vidurathpal 
+			Vidurathpala Vidurathpala Vidurathpala Vidyadhara 
+			Vigrahapala Vigraharaja Vihangpal Vijayapala Vijayasakti Vinayakapala Vindhyavarman Viramdeva 
+			Viravarman Virsinghadeva Yasovarman Abhayapala 
+			Acharya Ahila Ajairaja Jayaraja Ajayapala Ajay-Singh Alhana Allat Amarangeya Ambra-Prasad 
+			Amritapala Anahilla Ari-Singh Arnoraja Asaraja 
+			Asvapala Balaprasada Baliraja Bhatarka Bhert-Patt Bhima Bhima Bhimadeva Bhima Bhim-Singh 
+			Bhuvan-Singh Bhoja Bhoo-Chand Chachiga Chamundaraja
+			Chandanaraja Chandraraja Chaud-Singh Dadda Dambarisimha Deopali-Deo Dharapatta Dharasena 
+			Dhruvasena Dinakarn Dronasinha Dungar-Singh 
+			Durlabharaja Gajasimha Gopala Gopendraka Gopendraraja Gopendraraja Gopendraraja Govinda 
+			Govindaraja Govindapala Govindaraja Guhasena 
+			Guvaka Govindaraja Hammira Hammir-Singh Hanspal Hariraja Harischandra Hemachandra Jagadeva 
+			Jaitrasimha Jaitrasimha Jaitra-Singh Jaitrasimha 
+			Jaitugideva Jasapala Jaskarn Jayaraja Jayaraja Jayasimha Jayasimha Jay-Singh Jayasimha 
+			Jay-Singh-Deo Jayat-Singh Jayasimha Jayshikari Jendraraja 
+			Jojalla Kalbhoj Kanhadadeva Karandeva Karnadeva Karan-Singh Karnadeva Karnadeva Katudeva 
+			Katukaraja Keerti-Verma Kirtivarman Kelhana Kharagraha 
+			Khuman Kirtipala Kirtivarman Kirtivarman Kshemraja Xemraja Kshem-Singh Kshetra-Singh 
+			Lakhanapala Lakhshaman-Singh Lakshmana Lakshmanadeva 
+			Lakshmanadeva Lakshmanadeva Lakshmivarman Lavanyakarna Lunavarman Luntiga Mahap Mahayak 
+			Mahendra Mahendrapala Mahendrapala Mahendra Mahipala Maladeva
+			Manavasimha Mathan-Singh Mattat Mulraja Nagabhata Nagarjuna Nagraja Naradeva Narapati 
+			Naravarman Naravarman Naravarmandeva Naravarman Nar-Verma Naravarman 
+			Narwahan Nayapala Padam-Singh Prahladana Pratapa Prithvipal Prithviraja Prithivipala 
+			Prithviraja Purnpala Rahap Ramapala Ratan-Singh Rayapala Rudrapala
+			Sahajapala Sahanapala Samanta Samanta Samant-Singh Samanta Samantasimha Samanta Samarasimha 
+			Samarasimha Samar-Singh Samarasimha Shaliwahan Shuchi-Verma 
+			Siladitya Sindhuraja Singhraja Sinha Sinhad-Deo Siyaka Sohiya Someshwara Suratrana Tejasimha 
+			Tejasimha Tej-Singh Tejasimha Tribhuvanapala Udayasimha 
+			Udayavarman Upendra Vagbhata Vahadiasimha Vairisimha Vairisimha Vairsingh Vairisimha Vajradeva 
+			Vakapati Vakpati Vakpati Vakpati Vakpatiraja Vakpati
+			Valhana Valhanadeva Valhanadeva Valhanadeva Vallabharaja Vanraja Vasudeva Vatsaraja Vigraharaja 
+			Vigraharaja Vigrharaja Vigraharaja Vijada-Dasasyandana 
+			Vijai-Singh Vikramaditya Vinaykpala Virama Viradeva Viranarayana Virsinh-Deo Viryarama Xemraja 
+			Xemraja Yograj
+		}
+		female_names = {
+			Akal Anantadevi Damayanti Dattadevi Dehanagadevi Dhruvadevi Dhruvasvamini Hemavati 
+			Kakanvati Kalayandevi Kanchuka Kanwar Karmavati Kumaradevi Lakshman Maharani Mahidevi Nattadevi
+			Prabhavati Prabhavatigupta Prasadhanadevi Puppadevi Rajamati Sanyukta Shrimitradevi 
+			Annaladevi Bauladevi Bhuyikadevi Candrabhattarikadevi Chachinidevi Delhanadevi Desaladevi
+			Hariyadevi Laxmidevi Madhavi Mahalakshmi Manaladevi Mayanalladevi Namalladevi Padmaladevi Padmini
+			Pratha Rasaladevi Rudaladevi Rudrani Rupadevi Samyukta Sidhawa Somalladevi Suhava Sundaridevi 
+			Tihunaka Udayamati "Songari" "Ajab" "Kamala" "Dev"
+		}
+	}
+	malvi = {
+		primary = MLW
+		dynasty_names = {
+			"Holkar" "Qadirid" "Shaja'atid" "Khalji"
+		}
+		male_names = {
+			"Dilavar Khan" "Alp Khan Hushang" "Ghazni Khan" "Nasir Shah" "Salim Shah" "Baz Bahadur" "Mali Rao" 
+			"Ahalya Bai" "Mahmud Shah" "Ghiyath Shah" "Qadir Shah" "Shaja'at Khan" "Bahadur" "Mahmud" "Ferishta" 
+			"Ghiyas-ud-din" "Qadir" "Mohammed" "Baz" "Salim" "Nasir" "Amir" "Hoshang"
+		}
+		female_names = {
+			"Qudsia" "Hajjah" "Shahjahan Begum" Amro Anokhi Anup Bhani Dani Gujri Jodhabai Khivi Kishan
+		}
+	}
+	sashindi = {
+		primary = HND
+		dynasty_names = {
+			"Hind" "Hindi" "Satrapa" "Satrapaya" "Leiwa" "Vendha" "Vahad" "Lataur" "Samma" "Kalhora" "Soomra"
+			"Ghanshani" "Doolani" "Khetpal" "Lohi" "Notani" "Sawai" "Bhambhani" "Zornandra" "Zauargid"
+		}
+		male_names = {
+			Kavoos Kuruše Cyrus Mamlan Muhammad Mashad Mehmud Mahmud Mehrab Mehrzad Mensur Mansur Menuçihr 
+			Manuchihr Menušihr Manushihr Merwan Marwan Merzuban Marzuban Mesud Masud Mihemed Muhammad Mîrza 
+			Mirza Mistefa Mustafa Murad Morad Morteza Mozaffar Nard Naveed Nawid Nesir Nazir Nesr Nasr 
+			Nezam Nošîrwan Nawshirwan Neçîrvan Nechirwan Parviz Pujman Pešeng Pashang Pîroz Peroz Revend 
+			Rawwad Reza Ruhollah Rustam Rostam Sadri Salman Sina Surxap Surkhab Tahmasp Tahmasb Vahhab 
+			Vahid Vahusdan Wahustan Vali Varšasp Varshasb Vîštap Vishtasb Xarmandar Kharmandar Xašayar 
+			Khashayar Xuršîd Khurshid Xusrew Khosrau Xušyar Hooshyar Xwedadad Khodadad Xwedayar Khudayar 
+			Yezîd Yazid Yousef Zahak Zakaria Zand Zerdešt Zartosht Zia Šadî Shadhi Šahab Shahab Šahbaz 
+			Shahbaz Šahenšah Shahanshah Šahin Shahin Šahram Shahram Šahryar Shahryar Šahrux Shahrokh Šahruz 
+			Shahruz Šapur Shapur Šarvin Sharwin Šawur Shavur Šayan Shayan Šîrkuh Shirkuh
+			"Ali Sher" "Fath Khan" "Tughluq" "Nizam ad-Din" "Furuz Salah ad-Din" "Shah Shuja' Beg" "Sanjar" "Nanda" 
+			"Shah Husayn" "Mirza Muhammad 'Isa" "Mirza Muhammad Baqi" "Mirza Jani Beg" "Yar Muhammad Khan" 
+			"Muhammad Murad" "Gulam Shah" "Sarfaraz Khan" "Gulam Nabi Khan" "'Abd an-Nabi Khan" 
+			"'Abd Allah Khan Talpur" "Mir Fath Ali" "Thara" "Mohammed 'Isa" "Mohammed Baqi" "Nur Mahammad" "Mohammad" 
+			"Muzzafar" "Ali" "Khalil" "Sikandar" "Bhenji" "Hamirji" "Bhav" "Natwar" "Sidhraj" "Ghulam" "Hussain" 
+			"Abdullah"
+			Abdullah Abdurrashid Abdurrahman Alauddin "Ali Sher" Amar Arnel Asamuddin Aziz 
+			Banhbina Bhungar "Bhungar Rao" Chanesar Doda "Dadu Phattu" "Dalu Rai" "Deva Rai" 
+			"Fateh Khan" Feruzuddin Genhra Hafif Khafif Hamir Ismail Junah Kahah Karan Khafif Khafif Khaira 
+			Khinrah Mahmud Mubarak Muhammad Muhammed-Tur Munzir Nangar Nizamuddin Pahtu Punhun Raidhan 
+			Sabar Salahuddin Sanghar Sanjar Shahabuddin Sikandar Sumrah Syed Tai Tamachi Taghlak Umar Unar
+		}
+		female_names = {
+			Elfeza Handata Bhagi Hamide Himu Sad Tari "Zainab Tari" "Noor" "Chaguli" "Khair" "Qudsia" "Hajjah" "Shahjahan Begum" 
+			Amro Anokhi Anup Bhani Dani Gujri Jodhabai Khivi Kishan
+		}
+	}
+	kathisaura = {
+		primary = JGD
+		dynasty_names = {
+			"Irnimar" "Hind" "Hindi" "Satrapa" "Satrapaya" "Leiwa" "Vendha" "Vahad" "Lataur" "Samma" "Kalhora" "Soomra"
+			"Aljakot" "Ghanshani" "Doolani" "Khetpal" "Lohi" "Notani" "Sawai" "Bhambhani" "Zornandra" "Zauargid"
+			"Maluch" "Rajkat"
+		}
+		male_names = {
+			Dali Ankrum Oauhed Marzipitam Brauah Haliom Juangda Jungidah Untanur Untanpur Maloch
+			Zafar Muhammad Mubarak Ahmad Dawud Mahmud Muzaffar Bahadur Sardar Tatar Fath Khalil Sikandar Nasir Amarji 
+			Bhenji Hamirji Bhav Natwar Sidhraj Rajsinhji Fulad Abdul
+			Abhayapala Acharya Ahila Ajairaja Jayaraja Ajayapala Ajay-Singh Alhana Allat Amarangeya 
+			Ambra-Prasad Amritapala Anahilla Ari-Singh Arjunavarman Arnoraja Asaraja Asvapala Balaprasada 
+			Baliraja Bhatarka Bhert-Patt Bhima Bhima Bhimadeva Bhima Bhim-Singh Bhuvan-Singh Bhoja Bhoo-Chand 
+			Chachiga Chamundaraja Chandanaraja Chandraraja Chaud-Singh Dadda Dambarisimha Deopali-Deo Devapala 
+			Dharapatta Dharasena Dharmapala Dhruvasena Dinakarn Dronasinha Dungar-Singh Durlabharaja Gajasimha 
+			Gopala Gopendraka Gopendraraja Gopendraraja Gopendraraja Govinda Govindaraja Govindapala 
+			Govindaraja Govindaraja Govindaraja Guhasena Guvaka Govindaraja Hammira Hammir-Singh Hanspal 
+			Hariraja Harischandra Hemachandra Jagadeva Jaitrasimha Jaitrasimha Jaitra-Singh Jaitrasimha 
+			Jaitugideva Jasapala Jaskarn Jayapala Jayaraja Jayaraja Jayasimha Jayasimha Jay-Singh Jayasimha 
+			Jay-Singh-Deo Jayat-Singh Jayasimha Jayavarman Jayshikari Jendraraja Jojalla Kalbhoj Kanhadadeva 
+			Karandeva Karnadeva Karan-Singh Karnadeva Karnadeva Katudeva Katukaraja Keerti-Verma Kirtivarman 
+			Kelhana Kharagraha Khuman Kirtipala Kirtivarman Kirtivarman Kumarapala Kshemraja Xemraja 
+			Kshem-Singh Kshetra-Singh Kumar-Singh Lakhanapala Lakhshaman-Singh Lakshmana Lakshmanadeva 
+			Lakshmanadeva Lakshmanadeva Lakshmivarman Lavanyakarna Lunavarman Luntiga Madanapala Mahap Mahayak 
+			Mahendra Mahendrapala Mahendrapala Mahendra Mahipala Mahlakadeva Maladeva Manavasimha Mathan-Singh 
+			Mattat Mihira Mulraja Nagabhata Nagarjuna Nagraja Naradeva Narapati Naravarman Naravarman 
+			Naravarmandeva Naravarman Narayanapala Nar-Verma Naravarman Narwahan Nayapala Padam-Singh 
+			Prahladana Pratapa Prithvipal Prithviraja Prithivipala Prithviraja Prithviraja Prithviraja Purnpala 
+			Rahap Rajapala Rajyapala Ramabhadra Ramapala Ratan-Singh Ratnapala Rayapala Rudrapala Sahajapala 
+			Sahanapala Samanta Samanta Samant-Singh Samanta Samantasimha Samanta Samarasimha Samarasimha 
+			Samar-Singh Samarasimha Shakti-Kumar Shaliwahan Shuchi-Verma Shurapala Siladitya Sindhuraja 
+			Singhraja Sinha Sinhad-Deo Siyaka Sohiya Someshwara Subhatavarman Suratrana Tejasimha Tejasimha 
+			Tej-Singh Tejasimha Trailokyavarman Tribhuvanapala Trilochanpala Udayaditya Udayasimha Udayavarman 
+			Upendra Vagbhata Vahadiasimha Vairisimha Vairisimha Vairsingh Vairisimha Vajradeva Vakapati Vakpati 
+			Vakpati Vakpati Vakpatiraja Vakpati Valhana Valhanadeva Valhanadeva Valhanadeva Vallabharaja 
+			Vanraja Vapyata Vasudeva Vatsaraja Vigrahapala Vigraharaja Vigraharaja Vigrharaja Vigraharaja 
+			Vijada-Dasasyandana Vijai-Singh Vikramaditya Vinaykpala Vindhyavarman Virama Viradeva Viranarayana 
+			Virsinh-Deo Viryarama Xemraja Xemraja Yasovarman Yograj
+			Kavoos Kuruše Cyrus Mamlan Muhammad Mashad Mehmud Mahmud Mehrab Mehrzad Mensur Mansur Menuçihr 
+			Manuchihr Menušihr Manushihr Merwan Marwan Merzuban Marzuban Mesud Masud Mihemed Muhammad Mîrza 
+			Mirza Mistefa Mustafa Murad Morad Morteza Mozaffar Nard Naveed Nawid Nesir Nazir Nesr Nasr 
+			Nezam Nošîrwan Nawshirwan Neçîrvan Nechirwan Parviz Pujman Pešeng Pashang Pîroz Peroz Revend 
+			Rawwad Reza Ruhollah Rustam Rostam Sadri Salman Sina Surxap Surkhab Tahmasp Tahmasb Vahhab 
+			Vahid Vahusdan Wahustan Vali Varšasp Varshasb Vîštap Vishtasb Xarmandar Kharmandar Xašayar 
+			Khashayar Xuršîd Khurshid Xusrew Khosrau Xušyar Hooshyar Xwedadad Khodadad Xwedayar Khudayar 
+			Yezîd Yazid Yousef Zahak Zakaria Zand Zerdešt Zartosht Zia Šadî Shadhi Šahab Shahab Šahbaz 
+			Shahbaz Šahenšah Shahanshah Šahin Shahin Šahram Shahram Šahryar Shahryar Šahrux Shahrokh Šahruz 
+			Shahruz Šapur Shapur Šarvin Sharwin Šawur Shavur Šayan Shayan Šîrkuh Shirkuh
+			Abdullah Abdurrashid Abdurrahman Alauddin "Ali Sher" Amar Arnel Asamuddin Aziz 
+			Banhbina Bhungar "Bhungar Rao" Chanesar Doda "Dadu Phattu" "Dalu Rai" "Deva Rai" 
+			"Fateh Khan" Feruzuddin Genhra Hafif Khafif Hamir Ismail Junah Kahah Karan Khafif Khafif Khaira 
+			Khinrah Mahmud Mubarak Muhammad Muhammed-Tur Munzir Nangar Nizamuddin Pahtu Punhun Raidhan 
+			Sabar Salahuddin Sanghar Sanjar Shahabuddin Sikandar Sumrah Syed Tai Tamachi Taghlak Umar Unar
+		}
+		female_names = {
+			Fatima Ahmadi Mumtaz Ealmusa Jaunkupatra Hatisa Laika Laimaktona Minisiram
+			Annaladevi Bauladevi Bhuyikadevi Candrabhattarikadevi Chachinidevi Dehanagadevi Delhanadevi 
+			Desaladevi Hariyadevi Laxmidevi Madhavi Mahalakshmi Mahidevi Manaladevi Mayanalladevi Namalladevi 
+			Padmaladevi Padmini Prasadhanadevi Pratha Rasaladevi Rudaladevi Rudrani Rupadevi Samyukta Sidhawa 
+			Somalladevi Suhava Sundaridevi Tihunaka Udayamati
+			Elfeza Handata Bhagi Hamide Himu Sad Tari "Zainab Tari" "Noor" "Chaguli" "Khair" "Qudsia" "Hajjah" "Shahjahan Begum" 
+			Amro Anokhi Anup Bhani Dani Gujri Jodhabai Khivi Kishan
+		}
+	}
+	konkan = {
+		primary = KKA
+		dynasty_names = {
+			"Konakanvi" "Konka" "Malduchera " "Bhonsle" "Gaikwar" "Bhat" "Sindhia" "Koli" "Sinda" "Kamadeva" "Gaitonde" "Malviya" "Ruddha"
+		}
+		male_names = {
+			Shivaji Shambaji Rajaram Sahuji Balaji Baji Rao Madhu Rao Narayan Rao Ragunath Rao Pratap Singh Firangoji 
+			Kanhoji Netaji Moropant Baji Prabhu Suryaji Tanaji Chimaji Ranoji Raghunathrao Malhar Tukojirao Haripant 
+			Yashwantrao
+			Abaji Amutrao Bahadur Bahiroji Balaji Bajirao Chimnaji Dattaji Daulatrao Dhanaji Dhondu 
+			Ekoji Fatehsinh Gopalrao Hambirao Harirao Jayajirao Jayappa Janakappa Jivajirao 
+			Khanderao Krishnarao Madhavrao Mahadji Malerao Malharrao Mankoji Martandrao 
+			Moropant Murarirao Nanasaheb Narayanrao Pandurangrao Pratapsinh 
+			Raghunathrao Rajaram Ramaswami Ramchandrapant Ramshastri Ranojirao 
+			Sadashivrao Sambhaji Sayajirao Serfoji Shahuji Shivaji Shivajirao 
+			Tryambakrao Tukkoji Tukojirao Tulojirao Venkatrao Vishwanathpant Yashwantrao
+			Adityavarman Aiyaparaja Anantadeva Aparaditya Aparajita Arikesarin Arthapathi Avasara 
+			Bhavadatta Bhima Bhoja Bijjala Chandra Chandraditya Chhadvaideva Chhittaraja 
+			Daharasena Dhammayira Gandaraditya Goggiraja Gonka Guhala Guhalladeva Haripaladeva 
+			Indradatta Indraraja Jatiga Jayakeshi Jhanjha Kamadeva Kapardin Keshideva Kirtiraja 
+			Mallikarjuna Marsimha Mummuniraja Nagarjuna Nagavarma Naivarman Pullashakti Rattaraja 
+			Sanaphulla Shashthadeva Shivachitta Skandavarman Soddhala Someshvara Sovideva Suketuvarman 
+			Taila Tejahkantha Vappuvanna Vijayaditya Viravarmadeva Vishnuchitta Vyaghrasena 
+		}
+		female_names = {
+			Ahilyabai Ambikabai Anandibai Anubai Bhiubai Deepabai Durgabai Gangabai Gunvantibai 
+			Jankibai Jijibai Kamlabai Kashibai Laxmibai Mahadik Mastani Putalabai 
+			Rajasbai Rajkunvarbai Ramabai Ranubai Saibai Sagunabai Sakavaarbai Sayeebai Soyarabai Sujanbai 
+			Tarabai Yesubai Anjanibai Anuradha Durga Kamadevi Kamaladevi Kesarbai Kishori Kundaladevi 
+			Lasthiyavva Maya Mogubai Radhabai Radhika Shevanti Shudhamati Sovidevi Sudha Sumati Sunita
+			Tarabai Soyarabai Tukabai
+		}
+	}
+	bhili = {
+		primary = LTP
+		primary = CMP
+		primary = SNT
+		dynasty_names = {
+			"Bhil" "Holkar" "Qadirid" "Shaja'atid" "Khalji"
+		}
+		male_names = {
+			Shivaji Shambaji Rajaram Sahuji Balaji Baji Rao Madhu Rao Narayan Rao Ragunath Rao Pratap Singh Firangoji 
+			Kanhoji Netaji Moropant Baji Prabhu Suryaji Tanaji Chimaji Ranoji Raghunathrao Malhar Tukojirao Haripant 
+			Yashwantrao
+			"Dilavar Khan" "Alp Khan Hushang" "Ghazni Khan" "Nasir Shah" "Salim Shah" "Baz Bahadur" "Mali Rao" 
+			"Ahalya Bai" "Mahmud Shah" "Ghiyath Shah" "Qadir Shah" "Shaja'at Khan" "Bahadur" "Mahmud" "Ferishta" 
+			"Ghiyas-ud-din" "Qadir" "Mohammed" "Baz" "Salim" "Nasir" "Amir" "Hoshang"
+		}
+		female_names = {
+			"Qudsia" "Hajjah" "Shahjahan Begum" Amro Anokhi Anup Bhani Dani Gujri Jodhabai Khivi Kishan
+			Rajasbai Rajkunvarbai Ramabai Ranubai Saibai Sagunabai Sakavaarbai Sayeebai Soyarabai Sujanbai 
+			Tarabai Yesubai Anjanibai Anuradha Durga Kamadevi Kamaladevi Kesarbai Kishori Kundaladevi 
+			Lasthiyavva Maya Mogubai Radhabai Radhika Shevanti Shudhamati Sovidevi Sudha Sumati Sunita
+			Tarabai Soyarabai Tukabai
+		}
+	}
+	saraiki = {
+		primary = MUL
+		dynasty_names = {
+			"Saurai" "Saraik" "Holkar" "Qadirid" "Shaja'atid" "Khalji"
+			"Kohkkar" "Gakhkhar" "Phulkian" "Bhullara" "Dhaliwala" "Sandhawalia" "Ahluwalia" "Langa" 
+			"Mirrani" "Abbasi"
+			"Janda" "Jhuti" "Kahlon" "Banu Sama"
+		}
+		male_names = {
+			"Jassa Ahuwalia" "Lahina" "Ranjit" "Bhag" "Kharak" "Duleep" "Fateh" "Maha" "Sobha" "Narnak" 
+			"Ram" "Arjan" "Gobind" "Rai" "Krishan" "Bahadur" "Sardar Badar" "Balbir" "Bhalla" "Daya" 
+			"Gahunia" "Gian" "Nihang " "Granth" "Bhai Bachittar" "Himmat" "Hoora" "Ishnar" "Jhol" "Jhotti" 
+			"Mokham" "Nand" "Parmanand" "Rajsingh" "Sanlib" "Sardul" "Shabeg" "Shergill" "Sodhi" "Sohal" 
+			"Tara" "Udasi" "Angad" "Amar" "Lohaar" "Dharem" "Fakir" Ranjor
+			Ajit Amar "Amar Dasi" Amir Angad Arjun Atar Basawa Bhagwant Bhaimani Budh Chand Charat 
+			Damodar Dasu Datu Dayaram Didar Farid Fateh Gobind Gurdita 
+			Hargobind Hari "Har Krishan" "Har Rai" "Jai Ram" Jetha Jujhar 
+			Kalyan Kapur Kehar Kharak Khushal Lahna Lakhmichand Laxman 
+			Mahadev Mohan Mohri Nanak Narayan Nodha Partap Pheru Prithichand Prithvi "Ram Rai" Ranjit 
+			Sahdev Shamsher Sher Srichand "Tegh Bahadur" "Tej Bhan" Thakur Zorawar
+		}
+		female_names = {
+			Bhagi Hamide Himu Sad Tari "Zainab Tari" "Noor" "Chaguli" "Khair"
+			Amro Anokhi Anup Begum Bhani Dani Gujri Jodhabai Khivi Kishan 
+			Lachmi Nanaki Nihal Ramo Sabhirai Sahib Sulakhni Sundari Tripta
+			"Chand Kaur" "Ratan Kaur" "Kanwal Kaur" "Datar Kaur" "Nand Kaur" "Mahtab"
+		}
+	}
+	zorathi = {
+		primary = BRH
+		dynasty_names = {
+			"Bhonsle" "Gaikwar" "Bhat" "Sindhia" "Koli" "Sinda" "Kamadeva" "Gaitonde" "Malviya" "Ruddha"
+			"Zorkind" "Aurachasi" "Churha" "Churganai" "Mazdatki" "Gilwarh" "Jaaringid" "Keltan" "Vishizawan"
+		}
+		male_names = {
+			Shivaji Shambaji Rajaram Sahuji Balaji Baji Rao Madhu Rao Narayan Rao Ragunath Rao Pratap Singh Firangoji 
+			Kanhoji Netaji Moropant Baji Prabhu Suryaji Tanaji Chimaji Ranoji Raghunathrao Malhar Tukojirao Haripant 
+			Yashwantrao
+			Abaji Amutrao Bahadur Bahiroji Balaji Bajirao Chimnaji Dattaji Daulatrao Dhanaji Dhondu 
+			Ekoji Fatehsinh Gopalrao Hambirao Harirao Jayajirao Jayappa Janakappa Jivajirao 
+			Khanderao Krishnarao Madhavrao Mahadji Malerao Malharrao Mankoji Martandrao 
+			Moropant Murarirao Nanasaheb Narayanrao Pandurangrao Pratapsinh 
+			Raghunathrao Rajaram Ramaswami Ramchandrapant Ramshastri Ranojirao 
+			Sadashivrao Sambhaji Sayajirao Serfoji Shahuji Shivaji Shivajirao 
+			Tryambakrao Tukkoji Tukojirao Tulojirao Venkatrao Vishwanathpant Yashwantrao
+			Adityavarman Aiyaparaja Anantadeva Aparaditya Aparajita Arikesarin Arthapathi Avasara 
+			Bhavadatta Bhima Bhoja Bijjala Chandra Chandraditya Chhadvaideva Chhittaraja 
+			Daharasena Dhammayira Gandaraditya Goggiraja Gonka Guhala Guhalladeva Haripaladeva 
+			Indradatta Indraraja Jatiga Jayakeshi Jhanjha Kamadeva Kapardin Keshideva Kirtiraja 
+			Mallikarjuna Marsimha Mummuniraja Nagarjuna Nagavarma Naivarman Pullashakti Rattaraja 
+			Sanaphulla Shashthadeva Shivachitta Skandavarman Soddhala Someshvara Sovideva Suketuvarman 
+			Taila Tejahkantha Vappuvanna Vijayaditya Viravarmadeva Vishnuchitta Vyaghrasena 
+			Nesr Nasr Nezam Nošîrwan Nawshirwan Neçîrvan Nechirwan Parviz Pujman Pešeng Pashang Pîroz Peroz Revend 
+			Rawwad Reza Ruhollah Rustam Rostam Sadri Salman Sina Surxap Surkhab Tahmasp Tahmasb Vahhab 
+			Vahid Vahusdan Wahustan Vali Varšasp Varshasb Vîštap Vishtasb Xarmandar Kharmandar Xašayar 
+			Khashayar 
+			Xusrew Khosrau Xušyar Hooshyar Xwedadad Khodadad Xwedayar Khudayar 
+			Yezîd Yazid Yousef Zahak Zakaria Zand Zerdešt Zartosht Zia
+		}
+		female_names = {
+			Ahilyabai Ambikabai Anandibai Anubai Bhiubai Deepabai Durgabai Gangabai Gunvantibai 
+			Jankibai Jijibai Kamlabai Kashibai Laxmibai Mahadik Mastani Putalabai 
+			Rajasbai Rajkunvarbai Ramabai Ranubai Saibai Sagunabai Sakavaarbai Sayeebai Soyarabai Sujanbai 
+			Tarabai Yesubai Anjanibai Anuradha Durga Kamadevi Kamaladevi Kesarbai Kishori Kundaladevi 
+			Lasthiyavva Maya Mogubai Radhabai Radhika Shevanti Shudhamati Sovidevi Sudha Sumati Sunita
+			Tarabai Soyarabai Tukabai Somalladevi Suhava Sundaridevi Tihunaka Udayamati
+			Elfeza Handata Bhagi Hamide Himu Sad Tari "Zainab Tari" "Noor" "Chaguli" "Khair" "Qudsia" "Hajjah" "Shahjahan Begum" 
+			Amro Anokhi Anup Bhani Dani Gujri Jodhabai Khivi Kishan
+		}
+	}
+	khandesh = {
+		primary = KHD
+		dynasty_names = {
+			"Thaldesh" "Laling" "Khand" "Khandeshan" "Tripari" "Holkar" "Qadirid" "Shaja'atid" "Khalji"
+		}
+		male_names = {
+			"Dilavar Khan" "Alp Khan Hushang" "Ghazni Khan" "Nasir Shah" "Salim Shah" "Baz Bahadur" "Mali Rao" 
+			"Ahalya Bai" "Mahmud Shah" "Ghiyath Shah" "Qadir Shah" "Shaja'at Khan" "Bahadur" "Mahmud" "Ferishta" 
+			"Ghiyas-ud-din" "Qadir" "Mohammed" "Baz" "Salim" "Nasir" "Amir" "Hoshang"
+		}
+		female_names = {
+			"Qudsia" "Hajjah" "Shahjahan Begum" Amro Anokhi Anup Bhani Dani Gujri Jodhabai Khivi Kishan
+		}
+	}
+	videsheani = {
+		dynasty_names = {
+			"Rastraudha" "Solanki" "Khan Zada" "Kachwaha"
+			"Satnami" "Rathore" "Hada" "Chauhan" "Holkar" "Qadirid" "Shaja'atid"
+			"Khalji" "Tomara" "Jadeja" "Khirwara" "Nauhwara" "Sinsiniwar" "Balhara"
+			"Panwara" "Timanari" "Alukhanda" "Leiwah" "Fartaini" "Jaiper" "Muerpat"
+			"Panwar" "Bargujar" "Guhilot" "Mereta" "Merteidi" "Mamalulk" "Munhadar"
+			"Dahiya" "Chandela" "Pathan" "Vaghela" "Muhadarnid" "Gardgin" "Jaisali"
+			"Pragvata" "Somavansha" "Adityavansha" "Chandravansha" "Suryavansha"
+			"Samma" "Chudasama" "Bhatti" "Sanchore" "Gujar" "Chhinda" "Hiunanda"
+		}
+		male_names = {
+			"Udai Singh" "Amar Singh" "Lakha" "Mokal" "Kumbha" "Raimal" "Sangha" "Ratan Singh" "Vikramaditya Mahthan" 
+			"Pratap Singh" "Karan" "Jagat Singh" "Raj Singh" "Jay Singh" "Sangrama Singh" "Ari Singh" "Hammir"
+			"Bhim Singh" "Baz" "Kumbhakarna" "Natwar" "Ratan" "Jhala" "Hakim" "Sidhraj" "Raj" "Jai" "Sangram" 
+			"Sejakji" "Dilip" "Kshetra" "Kunwar" "Nath" "Viram" "Baiji Lal" "Jawan" "Bhawani" "Naryan" "Krishna" "Ballu"
+			Achalraj Achalraja Achalraja Achalraja Adhandev Adityadeva Ajmal Alsi Amir Anangpal Anangpala 
+			Anangpala Anangpala Anupapala Anupapala 
+			Anuppal Anupapala "Apara Gangeya" Arjunpal Arjunpala Arjunpala Arjunpala Arjunavarman Bacchdev 
+			Bachraj Baghpal Baghpala 
+			Baghpala Baghpala Bahadur-Singh Beejpal Beejpala Beejpala Beejpala Bhaadar Bhilpala Bhoj Bhoja 
+			Bhoja Bhoja Bhojavarman Bhoja 
+			Bhopal Bhumpal Bhumpala Bhumpala Bhumpala Birpal Birpala Birpala Birpala Bisaldeva Brahmadeva 
+			Brahmapala Brahmdevpal Chand Devapala 
+			Devavarman Dhanga Dhanga Dhangadeva Dhanga Dharmapala Dhaulshaya Dilipapala Dilipapala Dilippal 
+			Dilipapala Doth Draupad Draupada 
+			Draupada Draupada Dugarendra Gambhir Ganapatideva Gandadeva Gangeya Ghatamdeva Gopal Gopala 
+			Gopala Gopala Govindachandra Govindapala 
+			Govindaraja Govindaraja Govindraj Govindaraja Hamir Hammiravarman Harpal Harsa Harsa Harshapala 
+			Harsa Hirapal Hirapala 
+			Hirapala Hirapala Indrapal Indrapala Indrapala Indrapala Ishtpala Jaganpal Jaganpala Jaganpala 
+			Jaganpala Jagatpal Jagatpala 
+			Jagatpala Jagatpala Jagdev Jagdeva Jagdeva Jagdeva Jaidas Jaipal Jaitugideva Jasapala Jasapala 
+			Jaspal Jasapala Jatanpal Jatanpala 
+			Jatanpala Jatanpala Jayapala Jayasakti Jayasimha Jhetpal Jhetpala Jhetpala Jhetpala Junpala 
+			Kailaspal Kailaspala Kailaspala Kailaspala 
+			Kalkurna Kalyanachandra Kakhopal Kakhopala Kakhopala Kakhopala Kamal Kanhad Kanvarpal 
+			Kanvarpala Kanvarpala Kanvarpala Karnpal Keeratdeva 
+			Khadag Khetrapal Khetrapala Khetrapala Khetrapala Kiratpal Kiratpala Kiratpala Kiratpala 
+			Krishnray Krsnapa Kumarapala Kunwar Kunwar 
+			Kunwarpal Kunwar Ladahachandra Lakshmandeva Lokpala Madanapala Madanavarman Maharana 
+			Mahendrapal Mahendrapala Mahendrapala Mahendrapala 
+			Mahipal Mahipala Mahipala Mahipala Mahipata Mahlakadeva Mandandeva Mangaldeva Margdeva Mihira 
+			Nagapala Nagdeo Nannuka Naravarman 
+			Narayanapala Narpal Nayapala Nihaal Nihalray Paramardideva Pavak Peepalraj Popatraj Pritampal 
+			Pritampala Pritampala Pritampala Prithipala 
+			Prithvi Prithvi Prithvipal Prithvi Prithviraj Prithviraja Prithviraja Prithviraja Prithvivarman 
+			Rahila Rajapala Rajyapala Ramabhadra 
+			Ramachandra Rampal Rampala Rampala Rampala Rana Rangraj Rangraja Rangraja Rangraja Ratnapala 
+			Rijhpala Roshandeva Salivaahan 
+			Sallaksanavarman Saugandeva Shurapala Sisupal Sisupala Sisupala Sisupala Sohanpal Somasi 
+			Someshvara Sonpal Sonpala Sonpala Sonpala 
+			Srichandra Subhatavarman Sukhinpal Sukhinpala Sukhinpala Sukhinpala Sulakshanpal Sultanpal 
+			Sultanpala Sultanpala Sultanpala Surajpal Surajpala 
+			Surajpala Surajpala Traillokyachandra Tejapala Tejpal Tejpal Tejpal Tolpal Trailokyavarman 
+			Trilochanpala Udayaditya Udaysangh Uddharandeva 
+			Vachhal Vakpati Vapyata Varshapala Varshapala Varshpal Varshapala Vasudev Vidurathpal 
+			Vidurathpala Vidurathpala Vidurathpala Vidyadhara 
+			Vigrahapala Vigraharaja Vihangpal Vijayapala Vijayasakti Vinayakapala Vindhyavarman Viramdeva 
+			Viravarman Virsinghadeva Yasovarman Abhayapala 
+			Acharya Ahila Ajairaja Jayaraja Ajayapala Ajay-Singh Alhana Allat Amarangeya Ambra-Prasad 
+			Amritapala Anahilla Ari-Singh Arnoraja Asaraja 
+			Asvapala Balaprasada Baliraja Bhatarka Bhert-Patt Bhima Bhima Bhimadeva Bhima Bhim-Singh 
+			Bhuvan-Singh Bhoja Bhoo-Chand Chachiga Chamundaraja
+			Chandanaraja Chandraraja Chaud-Singh Dadda Dambarisimha Deopali-Deo Dharapatta Dharasena 
+			Dhruvasena Dinakarn Dronasinha Dungar-Singh 
+			Durlabharaja Gajasimha Gopala Gopendraka Gopendraraja Gopendraraja Gopendraraja Govinda 
+			Govindaraja Govindapala Govindaraja Guhasena 
+			Guvaka Govindaraja Hammira Hammir-Singh Hanspal Hariraja Harischandra Hemachandra Jagadeva 
+			Jaitrasimha Jaitrasimha Jaitra-Singh Jaitrasimha 
+			Jaitugideva Jasapala Jaskarn Jayaraja Jayaraja Jayasimha Jayasimha Jay-Singh Jayasimha 
+			Jay-Singh-Deo Jayat-Singh Jayasimha Jayshikari Jendraraja 
+			Jojalla Kalbhoj Kanhadadeva Karandeva Karnadeva Karan-Singh Karnadeva Karnadeva Katudeva 
+			Katukaraja Keerti-Verma Kirtivarman Kelhana Kharagraha 
+			Khuman Kirtipala Kirtivarman Kirtivarman Kshemraja Xemraja Kshem-Singh Kshetra-Singh 
+			Lakhanapala Lakhshaman-Singh Lakshmana Lakshmanadeva 
+			Lakshmanadeva Lakshmanadeva Lakshmivarman Lavanyakarna Lunavarman Luntiga Mahap Mahayak 
+			Mahendra Mahendrapala Mahendrapala Mahendra Mahipala Maladeva
+			Manavasimha Mathan-Singh Mattat Mulraja Nagabhata Nagarjuna Nagraja Naradeva Narapati 
+			Naravarman Naravarman Naravarmandeva Naravarman Nar-Verma Naravarman 
+			Narwahan Nayapala Padam-Singh Prahladana Pratapa Prithvipal Prithviraja Prithivipala 
+			Prithviraja Purnpala Rahap Ramapala Ratan-Singh Rayapala Rudrapala
+			Sahajapala Sahanapala Samanta Samanta Samant-Singh Samanta Samantasimha Samanta Samarasimha 
+			Samarasimha Samar-Singh Samarasimha Shaliwahan Shuchi-Verma 
+			Siladitya Sindhuraja Singhraja Sinha Sinhad-Deo Siyaka Sohiya Someshwara Suratrana Tejasimha 
+			Tejasimha Tej-Singh Tejasimha Tribhuvanapala Udayasimha 
+			Udayavarman Upendra Vagbhata Vahadiasimha Vairisimha Vairisimha Vairsingh Vairisimha Vajradeva 
+			Vakapati Vakpati Vakpati Vakpati Vakpatiraja Vakpati
+			Valhana Valhanadeva Valhanadeva Valhanadeva Vallabharaja Vanraja Vasudeva Vatsaraja Vigraharaja 
+			Vigraharaja Vigrharaja Vigraharaja Vijada-Dasasyandana 
+			Vijai-Singh Vikramaditya Vinaykpala Virama Viradeva Viranarayana Virsinh-Deo Viryarama Xemraja 
+			Xemraja Yograj
+		}
+		female_names = {
+			Akal Anantadevi Damayanti Dattadevi Dehanagadevi Dhruvadevi Dhruvasvamini Hemavati 
+			Kakanvati Kalayandevi Kanchuka Kanwar Karmavati Kumaradevi Lakshman Maharani Mahidevi Nattadevi
+			Prabhavati Prabhavatigupta Prasadhanadevi Puppadevi Rajamati Sanyukta Shrimitradevi 
+			Annaladevi Bauladevi Bhuyikadevi Candrabhattarikadevi Chachinidevi Delhanadevi Desaladevi
+			Hariyadevi Laxmidevi Madhavi Mahalakshmi Manaladevi Mayanalladevi Namalladevi Padmaladevi Padmini
+			Pratha Rasaladevi Rudaladevi Rudrani Rupadevi Samyukta Sidhawa Somalladevi Suhava Sundaridevi 
+			Tihunaka Udayamati "Songari" "Ajab" "Kamala" "Dev"
+		}
+	}
+	saraihizan = {
+		primary = SHS
+		dynasty_names = {
+			"Barchidios" "Dyrrykani" "Anegheli" "Aengelihi" "Saurai" "Saraik" "Holkar" "Shaja'atid" "Khalji"
+			"Geoledion" "Kohkkar" "Gakhkhar" "Phulkian" "Bhullara" "Dhaliwala" "Sandhawalia" "Ahluwalia" "Langa" 
+			"Helliut" "Arachosiani" "Arachas" "Erneteli" "Sarachasi" "Mirrani" "Janda" "Jhuti" "Kahlon" "Indos"
+			"Fevdelipoji" "Yutermi" "Laenimnos" "Lemnetidi" "Seluminilon" "Pehefasso" "Akrunudi" "Beresilippoli"
+		}
+		male_names = {
+			Archenelos Enumeni Hellipol Gajarenos Feiop Jainop Budevellhi Sisodynios Enumehia Altop Leondess
+			"Jassa Ahuwalia" "Lahina" "Ranjit" "Bhag" "Kharak" "Duleep" "Fateh" "Maha" "Sobha" "Narnak" 
+			"Ram" "Arjan" "Gobind" "Rai" "Krishan" "Bahadur" "Sardar Badar" "Balbir" "Bhalla" "Daya" 
+			"Gahunia" "Gian" "Nihang " "Granth" "Bhai Bachittar" "Himmat" "Hoora" "Ishnar" "Jhol" "Jhotti" 
+			"Mokham" "Nand" "Parmanand" "Rajsingh" "Sanlib" "Sardul" "Shabeg" "Shergill" "Sodhi" "Sohal" 
+			"Tara" "Udasi" "Angad" "Amar" "Lohaar" "Dharem" "Fakir" Ranjor
+			Ajit Amar "Amar Dasi" Amir Angad Arjun Atar Basawa Bhagwant Bhaimani Budh Chand Charat 
+			Damodar Dasu Datu Dayaram Didar Farid Fateh Gobind Gurdita 
+			Hargobind Hari "Har Krishan" "Har Rai" "Jai Ram" Jetha Jujhar 
+			Kalyan Kapur Kehar Kharak Khushal Lahna Lakhmichand Laxman 
+			Mahadev Mohan Mohri Nanak Narayan Nodha Partap Pheru Prithichand Prithvi "Ram Rai" Ranjit 
+			Sahdev Shamsher Sher Srichand "Tegh Bahadur" "Tej Bhan" Thakur Zorawar
+		}
+		female_names = {
+			Aemisa Hestessi Celpaia Venhosia Amulltta Tamatri Demetera Kallipa
+			Bhagi Hamide Himu Sad Tari "Zainab Tari" "Noor" "Chaguli" "Khair"
+			Amro Anokhi Anup Begum Bhani Dani Gujri Jodhabai Khivi Kishan 
+			Lachmi Nanaki Nihal Ramo Sabhirai Sahib Sulakhni Sundari Tripta
+			"Chand Kaur" "Ratan Kaur" "Kanwal Kaur" "Datar Kaur" "Nand Kaur" "Mahtab"
+		}
+	}
+	panjabi = {
+		primary = PUN
+		primary = SRH
+		primary = LAH
+		dynasty_names = {
+			"Kohkkar" "Gakhkhar" "Phulkian" "Bhullara" "Dhaliwala" "Sandhawalia" "Ahluwalia" "Langa" 
+			"Mirrani" "Abbasi"
+			"Janda" "Jhuti" "Kahlon" "Banu Sama"
+		}
+		male_names = {
+			"Jassa Ahuwalia" "Lahina" "Ranjit" "Bhag" "Kharak" "Duleep" "Fateh" "Maha" "Sobha" "Narnak" 
+			"Ram" "Arjan" "Gobind" "Rai" "Krishan" "Bahadur" "Sardar Badar" "Balbir" "Bhalla" "Daya" 
+			"Gahunia" "Gian" "Nihang " "Granth" "Bhai Bachittar" "Himmat" "Hoora" "Ishnar" "Jhol" "Jhotti" 
+			"Mokham" "Nand" "Parmanand" "Rajsingh" "Sanlib" "Sardul" "Shabeg" "Shergill" "Sodhi" "Sohal" 
+			"Tara" "Udasi" "Angad" "Amar" "Lohaar" "Dharem" "Fakir" Ranjor
+			Ajit Amar "Amar Dasi" Amir Angad Arjun Atar Basawa Bhagwant Bhaimani Budh Chand Charat 
+			Damodar Dasu Datu Dayaram Didar Farid Fateh Gobind Gurdita 
+			Hargobind Hari "Har Krishan" "Har Rai" "Jai Ram" Jetha Jujhar 
+			Kalyan Kapur Kehar Kharak Khushal Lahna Lakhmichand Laxman 
+			Mahadev Mohan Mohri Nanak Narayan Nodha Partap Pheru Prithichand Prithvi "Ram Rai" Ranjit 
+			Sahdev Shamsher Sher Srichand "Tegh Bahadur" "Tej Bhan" Thakur Zorawar
+		}
+		female_names = {
+			Amro Anokhi Anup Begum Bhani Dani Gujri Jodhabai Khivi Kishan 
+			Lachmi Nanaki Nihal Ramo Sabhirai Sahib Sulakhni Sundari Tripta
+			"Chand Kaur" "Ratan Kaur" "Kanwal Kaur" "Datar Kaur" "Nand Kaur" "Mahtab"
+		}
+	}
+}
+
+dravidian = {
+	graphical_culture = indiangfx
+
+	kannada = {
+		primary = MYS
+		dynasty_names = {
+			"Wodeyar" "Sangama" "Saluva" "Tuluva" "Alupa" "Keladi" "Ummattur" "Chowta"
+			"Vaidumba" "Chalukya" "Sendraka" "Sangama" "Kalachuri" "Hoysala" "Wodeyar"
+			"Ganga"
+		}
+		male_names = {
+			"Yadu Raya" "Châma Râja" "Timmaraja" "Chamaraja" "Bettada Devaraja" "Raja Wadiyar" "Immadai Raja" 
+			"Kanthirava Narasaraja" "Chikkadevaraja" "Krishnaraja" "Narayanan" "Lakshmisa" "Singaraya" "Chidananda" 
+			"Mahesh" "Manjunatha" "Mallappa" "Murthy" "Ramachandra" "Tirumalevaidya" "Lakshmisha" "Venkayarya" 
+			Achugi Adikavi Ahavamalla Amoghavarsha Anekonda Asaga Avinita Ayanna Bhuvikrama Bijjama Bukka 
+			Butuga Chavundaraya Dantidurga Dashavarman Dhruva Durgasimha Durvinita Ereganga Ereyanga 
+			Gangaraja Gajankusha Gobburi Govinda Hakka Harihara Harivarman Indra 
+			Jagadhekamalla Jagaraya Jagattunga Jayasimha Jogama 
+			Kambarasa Kannama Karka Khottiga Kiriyasaga Kirtivarman Konganivarman Krishna 
+			Madhava Madhura Mallikarjuna Mallugi Mangalesi Marasimha Marulaganga Mushkara Narasanayaka
+			Narasimha Neetimarga Nripakama Permadi Permanadi Polavira Praudharaya Pulakesi Purandaradasa 
+			Rachamalla Ramachandra Ramadeva Ramaraya Sankama Satyasraya Sharva Shivamara Singhana 
+			Somesvara Sovideva Sripadaraya Sripurusha Sriranga Srivikrama Tailapa Thimma Tirumalaraya 
+			Uchita Venkatadri Venkatapathi Vikramaditya Vijayaditya Vinayaditya Viraballala Viravijaya 
+			Virupaksha Vishnugopa Vishnuvardhana Yachama Yachamanedu 
+			Achyutadeva Krishnadevaraya Sadashiva Vendakadri Viranarasimha
+		}
+		female_names = {
+			Akkadevi Bhavanaga Bijjabbe Chandaladevi Chandrabbalabbe Gangambika Hoysaladevi Kundakadevi 
+			Lakshmi Mahadevi Mailaladevi Obayamma Pertal Revakanimmadi Shantaladevi Vijamba
+			Chinnambike Thirumalambike "Sujaya" "Lakshmi" "Chikka Krishna"
+		}
+	}
+	malayalam = {
+		primary = VND
+		dynasty_names = {
+			"Kolathiri" "Saamoothiri" "Perumal" "Perumpadappu" "Kulasekhara" "Cheraman"
+		}
+		male_names = {
+			"Chera Udaya" "Mootha" "Sri Vira Martanda" "Aditya" "Bala Rama" "Martanda" 
+			"Sri Vira" "Udaya Martanda" "Gouri Laksmi Bai" "Gouri Parvati Bai" "Ravi" "Kotha Aditya" "Ravi Ravi" "Rama" "Unni" "Sri Vira Udaya" "Sri Vira" "Marthanda" "Udaya" "Ravi" "Unni" "Kallada" "Marthanda" "Raman" "Eman" "Ramayyan" 
+			"Thiruvattar" "Kodassery" "Koratty"
+		}
+		female_names = {
+			"Parvati Bai" "Ummayama Rani" Ummayama "Ghauri Lakshmi Bai" Rani Lakshmi Ghauri Bai Parvati
+		}
+	}
+	tamil = {
+		primary = MAD
+		dynasty_names = {
+			"Saadatullahid" "Anwarudid" "Pandya" "Thondaiman" "Thanjavuri" "Sethupathy" "Saluva" 
+			"Thanjavur Mutharaiyar" "Udayagiri Mutharaiyar" "Simhapuri Mutharaiyar" "Ay" "Pallava" "Chola" 
+			"Pandya" "Chera" "Aryacakravarti" 
+		}
+		male_names = {
+			"Vira Pandya" "Narasa" "Tenna" "Naransa Pillai" "Kuru Kuru Timmappa" "Kattyama Kamaiya" "Cimappa" 
+			"Ayyakarai Veyyapa" "Vishvanatha" "Krishnappa" "Virappa" "Muttu Krishnappa" "Muttu Virappa" "Tirumala" 
+			"Chokkanatha" "Muttu Linga" "Vijayaranga Chokkanatha" "Minaski" "Yachama" "Raghunatha" "Ariyanatha" 
+			"Chanda" "Ramayyan" "Shungrasoobyer" "Seshayya" "Ramaswami" 
+			Amarapuyankan Amarabhujanga Aparâcita Aparajita Aparâcitavarman Aparajitavarman Apputaiyân 
+			Arikecari Arikesari Arincaya Arinjaya Arulmolitevar 
+			Arulmolivarman Atirâcentira Athirajendra Atitta Aditya Avaniyâlappirantâr Avraaham Abraham 
+			Brahmamârâyar Cadayan Cankili Cataiyavarman Sadayavarman Catturukâlamakalâtittan Cayantavarman 
+			Jayantavarman
+			Celiyancentan Cekarâcacekaran Segarajasekaran Cevakattevan Ceyavîra Chaacko Jacob Chaandy 
+			Alexander Cimmavisnu Simhavishnu Cinkapâku Singhabahu Civakkoluntân Cuntara Sundara 
+			Câramutaiyân Câttanân 
+			Cîvallapa Seervallabha Cîvallapan Seervallabhan Daniyel Daniel Eappen Stephen Eccavarâkan Eisow 
+			Jesus Impânâyarpattan Irattapadikonda Irâcacimman Rajasingan Irâcakecaripanmar Irâcarâca 
+			Rajaraja 
+			Irâcâcekara Rajasekhara Irâcâtirâca Rajadhiraja Irâcâtirâcatevar Irâcâtitta Rajaditya 
+			Irâcentira Rajendra Ittac Isaac Iyob Job Kadarangkonda Kanakacuriya Kantarâtitta Gandarditya 
+			Karaikkiyemarrayilaiyân Karunandadakkan Karunandan Katunkon Kilân Kirâmarâcapattan Kontân Kossy 
+			Joshua Kotukulapattan Kulacekara Kulasekhara Kulacekaran Kulasekharan 
+			Kulôttunka Kulothunga Kunapusana Kunavîra Kurian Cyrus Kutameratiruvatikal Kôpperuncimman 
+			Kopperunchinga Lukose Luke Makentiravarman Mahendravarman Manappâkkîlan 
+			Manavâlapperumâl Munnurruvappattan Mâmpâkkamutaiyân Mânaticcuran Mârapanmar Mâravarman 
+			Maravarman Mârkantaiyan Markose Marcus Mâtevapattan Mâtevipattan Nantivarman Nandivarman 
+			Naracimmavarman Narasimhavarman Nirupatunkavarman Nirupatonkavarman Niyâyaparipâlapattan 
+			Nârpattennâyirapattan Nâtittancâttan Pantâram Pandaram 
+			Parakesaripanmar Paramesvaravarman Parameswaravarman Paranirupacinkam Paranirupasingham 
+			Pararâcacekaran Pararajasekharan Parâkkirama Parakrama 
+			Parânkucan Parankusan Parântaka Parantaka Pathrose Peter Pancavan Paulose Paul Periyapillai 
+			Perumâl Peruncintevar Piramârâyan Piyliypaos Philip Puvirâca Puviraja Pâkkilân Pâlarâvâyan 
+			Ranatitta Ranaditya 
+			Ranatîran Ranadhiran Ravivarman Samuel Samuel Tantivarman Dantivarman Tennavan Thoma Thomas 
+			Tiruccirrampalapattan Tirunattapperumâl Tirupuvanavîratevar Tripuvanacakkaravattikal 
+			Uravâkkinân Utaiya Udaya Uttama Varakunan Varagunan Varakunavarman Varagunavarman Varôtaya 
+			Varughese George Vellantânkinân Vicayâlaya Vijayalaya Vicayâraka Vijayaraga 
+			Vicayâtitta Vijayaditya Vikkirama Vikramâtittâ Vikramaditya Viranârâyanapattan 
+			Virâcakecaripanmar Vîracekara Virasekhara Vîrakecari Virakhesari 
+			Vîrarâcentira Virarajendra Vîrôtaya Virodaya Yohannaan John Yosef Joseph Zacharria Zachariah 
+			Âccinataratippan Ânurrenmanpiccan Âyirattalipattan
+		}
+		female_names = {
+			Aaleyaamma Elizabeth Accamma Rebecca Accattevi Annamma Anna Aiyyârratikal Akkâranankayâr 
+			Amittiravalli Ammaiyâlvi Ammakkanâr Ammankâtevi Ammangadevi Ankâti Aramutaiyâl 
+			Aricukâti Ariyapillai Arincikai Arincikaipirâtti Arincikaippirâttiyâr Arulmolinankaiyâr 
+			Aruvanki Atavallâl Atittapatâriyâr Atittapitâri 
+			Atittapitâriyâr Atticapitâriyâr Avutaiyâlccâni Cankâni Cantirâdevi Cenkulam Ceyyacôlam 
+			Ceyyavâymani Civatevi Civallapatevi 
+			Corappaiyâr Câmuntappai Ceramankai Côlamâtevi Eccumantai Eluvanai Eluvattur Etuttapâtam 
+			Irâcinkam Irâcâticci Irâcacuntari 
+			Kalacci Kalicci Kanavati Kannapparaciyâr Kantiyur Kariyamâtevi Karumânikkam Kaucalaiyâr 
+			Kavatiyakkan Kanciakkan Kutitânkinâl 
+			Kuncaramalli Kunciramalli Kâmuttiri Kâraikkâl Kôkilânadigal Kôlâliyâr Kômalavalli 
+			Kôyinâccipitâriyâr Kurrantevi Kuttâtunâcci 
+			Mahâdeviyâr Malaiyamân Malapâti Maraikkâtu Mancavi Mânikkam Mariamma MariMâtevatikal 
+			Mâtevatikalâr Nakarattâl Nalteviyâr Namaiyâr Nankaiyâr Nantirinankai 
+			Netuntukkai Nilammai Nimmatikal Nâcci Nâcciyâlvi Nârani Nârâyani Nâncuri Nîlakanti Nîliyâr 
+			Olimatiyâr Orriâlvi Pavitram Pennaraciyâr 
+			Peranankai Periyanâcci Perrappai Pillayâlvi Piramaccâni Piratamâtevi Pirriccâni Pollâtapillai 
+			Pommavâyi Ponnampalattatikalâr Punniyavâtti Puvânti
+			Raahelamma Rachel Râcateviyâr Râcakecari Sâmavâyi Saramma Sarah Sosamma Susan Taturântakiyâr 
+			Tavanceytâl Tayânitiyâr Thresiamma Teresa Tirumulattânam Tiruvaranki Tiruvennâval Tiruvânaikkâvi 
+			Tiruvenkatam Tunaiyiruntâlcâni Tânatonkiyâr Tecappukal Tempâvai Tevânrâl Tunkânai Umaiyâlvâr 
+			Utaiyaval Utaiyanceytâl Vaccavaiyâr 
+			Varakuni Vatavâyil Venankai Vennâval Vicciyakkan Viccâtiri Vikkiramâtitti Viraiyâccilai Vitari 
+			Vânavanmâtevi "Mangammal" "Meenakshi" "Velunatchiyar"
+		}
+	}
+	telegu = {
+		primary = GOC
+		dynasty_names = {
+			"Reddi" "Aravidu" "Talpura" "Velama" "Saluva" "Tuluva" "Sangama" "Pemmasani" "Tupakula"
+			# CKII
+			"Nanduri" "Chalukya" "Pattavardhani" "Chola"
+		}
+		male_names = {
+			"Quli" "Jamshid" "Subhan Quli" "Ibrahim" "Muhammed Quli" "Muhammed" "'Abdullah" "Abul'l-Hassan" "Kabir" 
+			"Mir Musa" "Quli Sultan" "Mahmud Gawan" "Sayid Hanif" "Imad al-Mulk" "Saif Allah" "Iftikhar al-Mulk" "Mir Abu'l-Qasim" "Ubbaid Allah" "Sayid Nasir al-Din" "Shah Khalil Allah" "Mullah Qutb al-Din" "Abd Allah" 
+			"Rustam Khan" "Mir Shams al-Din" "Qasim Beg" "Khwaja Imad al-Din" "Mir Ali" "Khusrau" "Daud Khan" "Mujahid" 
+			"Quazi Siraj-ud-din" "Fulad Khan" "Jamal-ud-din" "Abdul" "Malik" "Ala-ud-din" "Malik-ut-Tujjar" "Sikandar" 
+			"Hakim"
+			Allada Allayavema Amma Ammaraja Anavema Anavota Ayyapayya Baladitya Ballaladeva Beta Bhima 
+			Bhandanaditya Chennappa 
+			Danamava Devanayaka Durgaraja Ganapathideva Ganapathinayaka Indrabhattaraka Jayasimha 
+			Kaapayanayaka Kadeyaraja Kalakampa 
+			Kammanayaka Katayavema Kumaragiri Kubjavishnuvardhana Mahadeva Mahakala Mangiyuvaraja Mallapa 
+			Nachana Narendra 
+			Niravadyadhavala Nrpakama Pandaranga Prataparudra Prola Prolayanayak Prolayavema Prthiviyaraja 
+			Rajanayaka Rajaraja 
+			Rudradeva Saktivarman Singamanayaka Somaditya Vengabhupathi Vijayaditya Vimaladitya Virabhadra 
+			Vishnuvardhana 
+			Yuddamalla Yuddamalla Yuddhamalla Yuddamalla
+		}
+		female_names = {
+			Anitalli Chamekamba Chandena Chellava Gamakamba Hariharamba Nagipoti Pammava Rudramba 
+			Rudramadevi Srimahadevi Tundaka "Bashirunissa" "Umda" "Samiya" "Dawudunissa"
+		}
+	}
+	north_tamil = {
+		dynasty_names = {
+			"Reddi" "Saadatullahid" "Anwarudid" "Pandya" "Thondaiman" "Thanjavuri" "Sethupathy" "Saluva" 
+			"Thanjavur Mutharaiyar" "Udayagiri Mutharaiyar" "Simhapuri Mutharaiyar" "Ay" "Pallava" "Chola" 
+			"Pandya" "Chera" "Aryacakravarti" "Aravidu" "Talpura" "Velama" "Saluva" "Tuluva" "Sangama" 
+			"Pemmasani" "Tupakula" "Nanduri" "Chalukya" "Pattavardhani" "Chola"
+		}
+		male_names = {
+			"Vira Pandya" "Narasa" "Tenna" "Naransa Pillai" "Kuru Kuru Timmappa" "Kattyama Kamaiya" "Cimappa" 
+			"Ayyakarai Veyyapa" "Vishvanatha" "Krishnappa" "Virappa" "Muttu Krishnappa" "Muttu Virappa" "Tirumala" 
+			"Chokkanatha" "Muttu Linga" "Vijayaranga Chokkanatha" "Minaski" "Yachama" "Raghunatha" "Ariyanatha" 
+			"Chanda" "Ramayyan" "Shungrasoobyer" "Seshayya" "Ramaswami" 
+			Amarapuyankan Amarabhujanga Aparâcita Aparajita Aparâcitavarman Aparajitavarman Apputaiyân 
+			Arikecari Arikesari Arincaya Arinjaya Arulmolitevar 
+			Arulmolivarman Atirâcentira Athirajendra Atitta Aditya Avaniyâlappirantâr Avraaham Abraham 
+			Brahmamârâyar Cadayan Cankili Cataiyavarman Sadayavarman Catturukâlamakalâtittan Cayantavarman 
+			Jayantavarman
+			Celiyancentan Cekarâcacekaran Segarajasekaran Cevakattevan Ceyavîra Chaacko Jacob Chaandy 
+			Alexander Cimmavisnu Simhavishnu Cinkapâku Singhabahu Civakkoluntân Cuntara Sundara 
+			Câramutaiyân Câttanân 
+			Cîvallapa Seervallabha Cîvallapan Seervallabhan Daniyel Daniel Eappen Stephen Eccavarâkan Eisow 
+			Jesus Impânâyarpattan Irattapadikonda Irâcacimman Rajasingan Irâcakecaripanmar Irâcarâca 
+			Rajaraja 
+			Irâcâcekara Rajasekhara Irâcâtirâca Rajadhiraja Irâcâtirâcatevar Irâcâtitta Rajaditya 
+			Irâcentira Rajendra Ittac Isaac Iyob Job Kadarangkonda Kanakacuriya Kantarâtitta Gandarditya 
+			Karaikkiyemarrayilaiyân Karunandadakkan Karunandan Katunkon Kilân Kirâmarâcapattan Kontân Kossy 
+			Joshua Kotukulapattan Kulacekara Kulasekhara Kulacekaran Kulasekharan  
+			Kulôttunka Kulothunga Kunapusana Kunavîra Kurian Cyrus Kutameratiruvatikal Kôpperuncimman 
+			Kopperunchinga Lukose Luke Makentiravarman Mahendravarman Manappâkkîlan 
+			Manavâlapperumâl Munnurruvappattan Mâmpâkkamutaiyân Mânaticcuran Mârapanmar Mâravarman 
+			Maravarman Mârkantaiyan Markose Marcus Mâtevapattan Mâtevipattan Nantivarman Nandivarman 
+			Naracimmavarman Narasimhavarman Nirupatunkavarman Nirupatonkavarman Niyâyaparipâlapattan 
+			Nârpattennâyirapattan Nâtittancâttan Pantâram Pandaram 
+			Parakesaripanmar Paramesvaravarman Parameswaravarman Paranirupacinkam Paranirupasingham 
+			Pararâcacekaran Pararajasekharan Parâkkirama Parakrama 
+			Parânkucan Parankusan Parântaka Parantaka Pathrose Peter Pancavan Paulose Paul Periyapillai 
+			Perumâl Peruncintevar Piramârâyan Piyliypaos Philip Puvirâca Puviraja Pâkkilân Pâlarâvâyan 
+			Ranatitta Ranaditya 
+			Ranatîran Ranadhiran Ravivarman Samuel Samuel Tantivarman Dantivarman Tennavan Thoma Thomas 
+			Tiruccirrampalapattan Tirunattapperumâl Tirupuvanavîratevar Tripuvanacakkaravattikal 
+			Uravâkkinân Utaiya Udaya Uttama Varakunan Varagunan Varakunavarman Varagunavarman Varôtaya 
+			Varughese George Vellantânkinân Vicayâlaya Vijayalaya Vicayâraka Vijayaraga 
+			Vicayâtitta Vijayaditya Vikkirama Vikramâtittâ Vikramaditya Viranârâyanapattan 
+			Virâcakecaripanmar Vîracekara Virasekhara Vîrakecari Virakhesari 
+			Vîrarâcentira Virarajendra Vîrôtaya Virodaya Yohannaan John Yosef Joseph Zacharria Zachariah 
+			Âccinataratippan Ânurrenmanpiccan Âyirattalipattan
+			"Quli" "Jamshid" "Subhan Quli" "Ibrahim" "Muhammed Quli" "Muhammed" "'Abdullah" "Abul'l-Hassan" "Kabir" 
+			"Mir Musa" "Quli Sultan" "Mahmud Gawan" "Sayid Hanif" "Imad al-Mulk" "Saif Allah" "Iftikhar al-Mulk" "Mir Abu'l-Qasim" "Ubbaid Allah" "Sayid Nasir al-Din" "Shah Khalil Allah" "Mullah Qutb al-Din" "Abd Allah" 
+			"Rustam Khan" "Mir Shams al-Din" "Qasim Beg" "Khwaja Imad al-Din" "Mir Ali" "Khusrau" "Daud Khan" "Mujahid" 
+			"Quazi Siraj-ud-din" "Fulad Khan" "Jamal-ud-din" "Abdul" "Malik" "Ala-ud-din" "Malik-ut-Tujjar" "Sikandar" 
+			"Hakim"
+			Allada Allayavema Amma Ammaraja Anavema Anavota Ayyapayya Baladitya Ballaladeva Beta Bhima 
+			Bhandanaditya Chennappa 
+			Danamava Devanayaka Durgaraja Ganapathideva Ganapathinayaka Indrabhattaraka Jayasimha 
+			Kaapayanayaka Kadeyaraja Kalakampa 
+			Kammanayaka Katayavema Kumaragiri Kubjavishnuvardhana Mahadeva Mahakala Mangiyuvaraja Mallapa 
+			Nachana Narendra 
+			Niravadyadhavala Nrpakama Pandaranga Prataparudra Prola Prolayanayak Prolayavema Prthiviyaraja 
+			Rajanayaka Rajaraja 
+			Rudradeva Saktivarman Singamanayaka Somaditya Vengabhupathi Vijayaditya Vimaladitya Virabhadra 
+			Vishnuvardhana 
+			Yuddamalla Yuddamalla Yuddhamalla Yuddamalla
+		}
+		female_names = {
+			Aaleyaamma Elizabeth Accamma Rebecca Accattevi Annamma Anna Aiyyârratikal Akkâranankayâr 
+			Amittiravalli Ammaiyâlvi Ammakkanâr Ammankâtevi Ammangadevi Ankâti Aramutaiyâl 
+			Aricukâti Ariyapillai Arincikai Arincikaipirâtti Arincikaippirâttiyâr Arulmolinankaiyâr 
+			Aruvanki Atavallâl Atittapatâriyâr Atittapitâri 
+			Atittapitâriyâr Atticapitâriyâr Avutaiyâlccâni Cankâni Cantirâdevi Cenkulam Ceyyacôlam 
+			Ceyyavâymani Civatevi Civallapatevi 
+			Corappaiyâr Câmuntappai Ceramankai Côlamâtevi Eccumantai Eluvanai Eluvattur Etuttapâtam 
+			Irâcinkam Irâcâticci Irâcacuntari 
+			Kalacci Kalicci Kanavati Kannapparaciyâr Kantiyur Kariyamâtevi Karumânikkam Kaucalaiyâr 
+			Kavatiyakkan Kanciakkan Kutitânkinâl 
+			Kuncaramalli Kunciramalli Kâmuttiri Kâraikkâl Kôkilânadigal Kôlâliyâr Kômalavalli 
+			Kôyinâccipitâriyâr Kurrantevi Kuttâtunâcci 
+			Mahâdeviyâr Malaiyamân Malapâti Maraikkâtu Mancavi Mânikkam Mariamma MariMâtevatikal 
+			Mâtevatikalâr Nakarattâl Nalteviyâr Namaiyâr Nankaiyâr Nantirinankai 
+			Netuntukkai Nilammai Nimmatikal Nâcci Nâcciyâlvi Nârani Nârâyani Nâncuri Nîlakanti Nîliyâr 
+			Olimatiyâr Orriâlvi Pavitram Pennaraciyâr 
+			Peranankai Periyanâcci Perrappai Pillayâlvi Piramaccâni Piratamâtevi Pirriccâni Pollâtapillai 
+			Pommavâyi Ponnampalattatikalâr Punniyavâtti Puvânti
+			Raahelamma Rachel Râcateviyâr Râcakecari Sâmavâyi Saramma Sarah Sosamma Susan Taturântakiyâr 
+			Tavanceytâl Tayânitiyâr Thresiamma Teresa Tirumulattânam Tiruvaranki Tiruvennâval Tiruvânaikkâvi 
+			Tiruvenkatam Tunaiyiruntâlcâni Tânatonkiyâr Tecappukal Tempâvai Tevânrâl Tunkânai Umaiyâlvâr 
+			Utaiyaval Utaiyanceytâl Vaccavaiyâr 
+			Varakuni Vatavâyil Venankai Vennâval Vicciyakkan Viccâtiri Vikkiramâtitti Viraiyâccilai Vitari 
+			Vânavanmâtevi "Mangammal" "Meenakshi" "Velunatchiyar"
+			Anitalli Chamekamba Chandena Chellava Gamakamba Hariharamba Nagipoti Pammava Rudramba 
+			Rudramadevi Srimahadevi Tundaka "Bashirunissa" "Umda" "Samiya" "Dawudunissa"
+		}
+	}
+	malayankara_toma = {
+		dynasty_names = {
+			"Hindisyria" "Villatoma" "Mara" "Marthoma" "Arkkadiyokkon" "Valiya Mar" "Villari" "Villara" "Thoma" "Malkari" "Kolathiri" "Saamoothiri" "Perumal" "Perumpadappu" "Kulasekhara" "Cheraman" "Dervadiman"
+		}
+		male_names = {
+			"Thomas" "Thoma" "Vallar" "Matthias" "Matthyialama" "Marakos" "Marakos Uidama" "Thomas Albitrahat" "Hatakiva" "Yakob" "Davidi" "Jakobi" "Yamankobi" "Marcos Kallivar" "Alber" "Manaveda" "Dervadi"
+			"Emanuli" "Emanualani" "Bethelyam" "Bepantam" "Sylvertos" "Garuhatni" "Kallikarp"
+			"Chera Udaya" "Mootha" "Sri Vira Martanda" "Aditya" "Bala Rama" "Martanda" 
+			"Sri Vira" "Udaya Martanda" "Gouri Laksmi Bai" "Gouri Parvati Bai" "Ravi" "Kotha Aditya" "Ravi Ravi" "Rama" "Unni" "Sri Vira Udaya" "Sri Vira" "Marthanda" "Udaya" "Ravi" "Unni" "Kallada" "Marthanda" "Raman" "Eman" "Ramayyan" 
+			"Thiruvattar" "Kodassery" "Koratty"
+		}
+		female_names = {
+			"Elusena" "Nayya" "Nayapatna" "Maruia" "Alikertna" "Patravai"
+			"Parvati Bai" "Ummayama Rani" Ummayama "Ghauri Lakshmi Bai" Rani Lakshmi Ghauri Bai Parvati
+		}
+	}
+	brahui = {
+		dynasty_names = {
+			"Gurgnari" "Iltazay" "Qalandarani" "Mirwari" "Qambarani" "Rodani" "Sasoli" "Sumalani" "Bangulzay" "Bizanjo"
+			"Kurd" "Lahri" "Langaw" "Mahmasay" "Mahmasani" "Mengal" "Nicari" "Omarani" "Perikani" "Raysani" "Sajidi"
+			"Sarparra" "Satakzay" "Sahwani" "Yagizi" "Zahri" "Zirkari"
+		}
+		male_names = {
+			"Quli" "Jamshid" "Subhan Quli" "Ibrahim" "Muhammed Quli" "Muhammed" "'Abdullah" "Abul'l-Hassan" "Kabir" 
+			"Mir Musa" "Quli Sultan" "Mahmud Gawan" "Sayid Hanif" "Imad al-Mulk" "Saif Allah" "Iftikhar al-Mulk" "Mir Abu'l-Qasim" "Ubbaid Allah" "Sayid Nasir al-Din" "Shah Khalil Allah" "Mullah Qutb al-Din" "Abd Allah" 
+			"Rustam Khan" "Mir Shams al-Din" "Qasim Beg" "Khwaja Imad al-Din" "Mir Ali" "Khusrau" "Daud Khan" "Mujahid" 
+			"Quazi Siraj-ud-din" "Fulad Khan" "Jamal-ud-din" "Abdul" "Malik" "Ala-ud-din" "Malik-ut-Tujjar" "Sikandar" 
+			"Hakim"
+			Allada Allayavema Amma Ammaraja Anavema Anavota Ayyapayya Baladitya Ballaladeva Beta Bhima 
+			Bhandanaditya Chennappa 
+			Danamava Devanayaka Durgaraja Ganapathideva Ganapathinayaka Indrabhattaraka Jayasimha 
+			Kaapayanayaka Kadeyaraja Kalakampa 
+			Kammanayaka Katayavema Kumaragiri Kubjavishnuvardhana Mahadeva Mahakala Mangiyuvaraja Mallapa 
+			Nachana Narendra 
+			Niravadyadhavala Nrpakama Pandaranga Prataparudra Prola Prolayanayak Prolayavema Prthiviyaraja 
+			Rajanayaka Rajaraja 
+			Rudradeva Saktivarman Singamanayaka Somaditya Vengabhupathi Vijayaditya Vimaladitya Virabhadra 
+			Vishnuvardhana 
+			Yuddamalla Yuddamalla Yuddhamalla Yuddamalla
+		}
+		female_names = {
+			Anitalli Chamekamba Chandena Chellava Gamakamba Hariharamba Nagipoti Pammava Rudramba 
+			Rudramadevi Srimahadevi Tundaka "Bashirunissa" "Umda" "Samiya" "Dawudunissa"
+			Aaleyaamma Elizabeth Accamma Rebecca Accattevi Annamma Anna Aiyyârratikal Akkâranankayâr 
+			Amittiravalli Ammaiyâlvi Ammakkanâr Ammankâtevi Ammangadevi Ankâti Aramutaiyâl 
+			Aricukâti Ariyapillai Arincikai Arincikaipirâtti Arincikaippirâttiyâr Arulmolinankaiyâr 
+			Aruvanki Atavallâl Atittapatâriyâr Atittapitâri 
+			Atittapitâriyâr Atticapitâriyâr Avutaiyâlccâni Cankâni Cantirâdevi Cenkulam Ceyyacôlam 
+			Ceyyavâymani Civatevi Civallapatevi 
+			Corappaiyâr Câmuntappai Ceramankai Côlamâtevi Eccumantai Eluvanai Eluvattur Etuttapâtam 
+			Irâcinkam Irâcâticci Irâcacuntari 
+			Kalacci Kalicci Kanavati Kannapparaciyâr Kantiyur Kariyamâtevi Karumânikkam Kaucalaiyâr 
+			Kavatiyakkan Kanciakkan Kutitânkinâl 
+			Kuncaramalli Kunciramalli Kâmuttiri Kâraikkâl Kôkilânadigal Kôlâliyâr Kômalavalli 
+			Kôyinâccipitâriyâr Kurrantevi Kuttâtunâcci 
+			Mahâdeviyâr Malaiyamân Malapâti Maraikkâtu Mancavi Mânikkam Mariamma MariMâtevatikal 
+			Mâtevatikalâr Nakarattâl Nalteviyâr Namaiyâr Nankaiyâr Nantirinankai 
+			Netuntukkai Nilammai Nimmatikal Nâcci Nâcciyâlvi Nârani Nârâyani Nâncuri Nîlakanti Nîliyâr 
+			Olimatiyâr Orriâlvi Pavitram Pennaraciyâr 
+			Peranankai Periyanâcci Perrappai Pillayâlvi Piramaccâni Piratamâtevi Pirriccâni Pollâtapillai 
+			Pommavâyi Ponnampalattatikalâr Punniyavâtti Puvânti
+			Raahelamma Rachel Râcateviyâr Râcakecari Sâmavâyi Saramma Sarah Sosamma Susan Taturântakiyâr 
+			Tavanceytâl Tayânitiyâr Thresiamma Teresa Tirumulattânam Tiruvaranki Tiruvennâval Tiruvânaikkâvi 
+			Tiruvenkatam Tunaiyiruntâlcâni Tânatonkiyâr Tecappukal Tempâvai Tevânrâl Tunkânai Umaiyâlvâr 
+			Utaiyaval Utaiyanceytâl Vaccavaiyâr 
+			Varakuni Vatavâyil Venankai Vennâval Vicciyakkan Viccâtiri Vikkiramâtitti Viraiyâccilai Vitari 
+			Vânavanmâtevi "Mangammal" "Meenakshi" "Velunatchiyar"
+		}
+	}
+	eelami = {
+		primary = VNN
+		dynasty_names = {
+			"Saadatullahid" "Pandya" "Sethupathy" "Saluva" 
+			"Ay" "Pallava" "Chola" 
+			"Chera" "Aryacakravarti" "Vanni" "Tissa" "Vijayabahui" "Aryacakravarti"
+		}
+		male_names = {
+			"Vira Pandya" "Narasa" "Tenna" "Naransa Pillai" "Kuru Kuru Timmappa" "Kattyama Kamaiya" "Cimappa" 
+			"Ayyakarai Veyyapa" "Vishvanatha" "Krishnappa" "Virappa" "Muttu Krishnappa" "Muttu Virappa" "Tirumala" 
+			"Chokkanatha" "Muttu Linga" "Vijayaranga Chokkanatha" "Minaski" "Yachama" "Raghunatha" "Ariyanatha" 
+			"Chanda" "Ramayyan" "Shungrasoobyer" "Seshayya" "Ramaswami" 
+			Amarapuyankan Amarabhujanga Aparâcita Aparajita Aparâcitavarman Aparajitavarman Apputaiyân 
+			Arikecari Arikesari Arincaya Arinjaya Arulmolitevar 
+			Arulmolivarman Atirâcentira Athirajendra Atitta Aditya Avaniyâlappirantâr Avraaham Abraham 
+			Brahmamârâyar Cadayan Cankili Cataiyavarman Sadayavarman Catturukâlamakalâtittan Cayantavarman 
+			Jayantavarman
+			Celiyancentan Cekarâcacekaran Segarajasekaran Cevakattevan Ceyavîra Chaacko Jacob Chaandy 
+			Alexander Cimmavisnu Simhavishnu Cinkapâku Singhabahu Civakkoluntân Cuntara Sundara 
+			Câramutaiyân Câttanân 
+			Cîvallapa Seervallabha Cîvallapan Seervallabhan Daniyel Daniel Eappen Stephen Eccavarâkan Eisow 
+			Jesus Impânâyarpattan Irattapadikonda Irâcacimman Rajasingan Irâcakecaripanmar Irâcarâca 
+			Rajaraja 
+			Irâcâcekara Rajasekhara Irâcâtirâca Rajadhiraja Irâcâtirâcatevar Irâcâtitta Rajaditya 
+			Irâcentira Rajendra Ittac Isaac Iyob Job Kadarangkonda Kanakacuriya Kantarâtitta Gandarditya 
+			Karaikkiyemarrayilaiyân Karunandadakkan Karunandan Katunkon Kilân Kirâmarâcapattan Kontân Kossy 
+			Joshua Kotukulapattan Kulacekara Kulasekhara Kulacekaran Kulasekharan  
+			Kulôttunka Kulothunga Kunapusana Kunavîra Kurian Cyrus Kutameratiruvatikal Kôpperuncimman 
+			Kopperunchinga Lukose Luke Makentiravarman Mahendravarman Manappâkkîlan 
+			Manavâlapperumâl Munnurruvappattan Mâmpâkkamutaiyân Mânaticcuran Mârapanmar Mâravarman 
+			Maravarman Mârkantaiyan Markose Marcus Mâtevapattan Mâtevipattan Nantivarman Nandivarman 
+			Naracimmavarman Narasimhavarman Nirupatunkavarman Nirupatonkavarman Niyâyaparipâlapattan 
+			Nârpattennâyirapattan Nâtittancâttan Pantâram Pandaram 
+			Parakesaripanmar Paramesvaravarman Parameswaravarman Paranirupacinkam Paranirupasingham 
+			Pararâcacekaran Pararajasekharan Parâkkirama Parakrama 
+			Parânkucan Parankusan Parântaka Parantaka Pathrose Peter Pancavan Paulose Paul Periyapillai 
+			Perumâl Peruncintevar Piramârâyan Piyliypaos Philip Puvirâca Puviraja Pâkkilân Pâlarâvâyan 
+			Ranatitta Ranaditya 
+			Ranatîran Ranadhiran Ravivarman Samuel Samuel Tantivarman Dantivarman Tennavan Thoma Thomas 
+			Tiruccirrampalapattan Tirunattapperumâl Tirupuvanavîratevar Tripuvanacakkaravattikal 
+			Uravâkkinân Utaiya Udaya Uttama Varakunan Varagunan Varakunavarman Varagunavarman Varôtaya 
+			Varughese George Vellantânkinân Vicayâlaya Vijayalaya Vicayâraka Vijayaraga 
+			Vicayâtitta Vijayaditya Vikkirama Vikramâtittâ Vikramaditya Viranârâyanapattan 
+			Virâcakecaripanmar Vîracekara Virasekhara Vîrakecari Virakhesari 
+			Vîrarâcentira Virarajendra Vîrôtaya Virodaya Yohannaan John Yosef Joseph Zacharria Zachariah 
+			Âccinataratippan Ânurrenmanpiccan Âyirattalipattan
+			"Quli" "Jamshid" "Subhan Quli" "Ibrahim" "Muhammed Quli" "Muhammed" "'Abdullah" "Abul'l-Hassan" "Kabir" 
+			"Mir Musa" "Quli Sultan" "Mahmud Gawan" "Sayid Hanif" "Imad al-Mulk" "Saif Allah" "Iftikhar al-Mulk" "Mir Abu'l-Qasim" "Ubbaid Allah" "Sayid Nasir al-Din" "Shah Khalil Allah" "Mullah Qutb al-Din" "Abd Allah" 
+			"Rustam Khan" "Mir Shams al-Din" "Qasim Beg" "Khwaja Imad al-Din" "Mir Ali" "Khusrau" "Daud Khan" "Mujahid" 
+			"Quazi Siraj-ud-din" "Fulad Khan" "Jamal-ud-din" "Abdul" "Malik" "Ala-ud-din" "Malik-ut-Tujjar" "Sikandar" 
+			"Hakim"
+			Allada Allayavema Amma Ammaraja Anavema Anavota Ayyapayya Baladitya Ballaladeva Beta Bhima 
+			Bhandanaditya Chennappa 
+			Danamava Devanayaka Durgaraja Ganapathideva Ganapathinayaka Indrabhattaraka Jayasimha 
+			Kaapayanayaka Kadeyaraja Kalakampa 
+			Kammanayaka Katayavema Kumaragiri Kubjavishnuvardhana Mahadeva Mahakala Mangiyuvaraja Mallapa 
+			Nachana Narendra 
+			Niravadyadhavala Nrpakama Pandaranga Prataparudra Prola Prolayanayak Prolayavema Prthiviyaraja 
+			Rajanayaka Rajaraja 
+			Rudradeva Saktivarman Singamanayaka Somaditya Vengabhupathi Vijayaditya Vimaladitya Virabhadra 
+			Vishnuvardhana 
+			Yuddamalla Yuddamalla Yuddhamalla Yuddamalla
+		}
+		female_names = {
+			Aaleyaamma Elizabeth Accamma Rebecca Accattevi Annamma Anna Aiyyârratikal Akkâranankayâr 
+			Amittiravalli Ammaiyâlvi Ammakkanâr Ammankâtevi Ammangadevi Ankâti Aramutaiyâl 
+			Aricukâti Ariyapillai Arincikai Arincikaipirâtti Arincikaippirâttiyâr Arulmolinankaiyâr 
+			Aruvanki Atavallâl Atittapatâriyâr Atittapitâri 
+			Atittapitâriyâr Atticapitâriyâr Avutaiyâlccâni Cankâni Cantirâdevi Cenkulam Ceyyacôlam 
+			Ceyyavâymani Civatevi Civallapatevi 
+			Corappaiyâr Câmuntappai Ceramankai Côlamâtevi Eccumantai Eluvanai Eluvattur Etuttapâtam 
+			Irâcinkam Irâcâticci Irâcacuntari 
+			Kalacci Kalicci Kanavati Kannapparaciyâr Kantiyur Kariyamâtevi Karumânikkam Kaucalaiyâr 
+			Kavatiyakkan Kanciakkan Kutitânkinâl 
+			Kuncaramalli Kunciramalli Kâmuttiri Kâraikkâl Kôkilânadigal Kôlâliyâr Kômalavalli 
+			Kôyinâccipitâriyâr Kurrantevi Kuttâtunâcci 
+			Mahâdeviyâr Malaiyamân Malapâti Maraikkâtu Mancavi Mânikkam Mariamma MariMâtevatikal 
+			Mâtevatikalâr Nakarattâl Nalteviyâr Namaiyâr Nankaiyâr Nantirinankai 
+			Netuntukkai Nilammai Nimmatikal Nâcci Nâcciyâlvi Nârani Nârâyani Nâncuri Nîlakanti Nîliyâr 
+			Olimatiyâr Orriâlvi Pavitram Pennaraciyâr 
+			Peranankai Periyanâcci Perrappai Pillayâlvi Piramaccâni Piratamâtevi Pirriccâni Pollâtapillai 
+			Pommavâyi Ponnampalattatikalâr Punniyavâtti Puvânti
+			Raahelamma Rachel Râcateviyâr Râcakecari Sâmavâyi Saramma Sarah Sosamma Susan Taturântakiyâr 
+			Tavanceytâl Tayânitiyâr Thresiamma Teresa Tirumulattânam Tiruvaranki Tiruvennâval Tiruvânaikkâvi 
+			Tiruvenkatam Tunaiyiruntâlcâni Tânatonkiyâr Tecappukal Tempâvai Tevânrâl Tunkânai Umaiyâlvâr 
+			Utaiyaval Utaiyanceytâl Vaccavaiyâr 
+			Varakuni Vatavâyil Venankai Vennâval Vicciyakkan Viccâtiri Vikkiramâtitti Viraiyâccilai Vitari 
+			Vânavanmâtevi "Mangammal" "Meenakshi" "Velunatchiyar"
+		}
+	}
+}
+
+central_indic = {
+	graphical_culture = indiangfx
+
+	gondi = {
+		primary = GDW
+		dynasty_names = {
+			"Chanda" "Raj Gondi" "Kherli" "Deogadhi" "Ballar Sahi" "Haihaya" "Gadhi"
+		}
+		male_names = {
+			"Narsingh Rai" "Arjuna Simha" "Sangrama Simha" "Daipat Simha" "Vir Narayana" "Chandra Sahi" "Hirde" 
+			"Madhukara Sahi" "Dhundya Ram Sah" "Krasna Sah" "Bir Sah" "Hiradi" "Ram Sah" "Nilkanth Sah" "Chanda" "Bahkt Buland" "Bhuma" "Lokba" "Babji" "Dhundya" "Kondya" "Ram" "Krasna"
+		}
+		female_names = {
+			"Durgavati" "Hirai" "Ratna Kuvar"
+		}
+	}
+	garjati = {
+		primary = GRJ
+		dynasty_names = {
+			"Nagavamsi" "Sankara" "Bhuyavamsha" "Gangabansi" "Bhanja" "Karan" "Keshari" "Suryavanshi" "Baghal"
+		}
+		male_names = {
+			"Haria" "Jugasai" "Pratapnayan" "Harirudra" "Anku" "Raghunath" "Biswambhar" "Raisingh" "Dusmant" 
+			"Pratap Deo" "Padman" "Khadag Rai" "Yuvaraj" "Birabar" "Harichandra" "Gopinath" "Raghuraj" "Haria" 
+			"Bishwanath" 
+			"Rai" "Sunder" "Krishna" "Barman" "Biwarta" "Jagannath" "Narayana" "Bebarta" "Chandra" "Damodar" "Jadunath" 
+			"Pradeep"
+		}
+		female_names = {
+			"Giriraj" "Suratarangini Devi" "Malavika Devi"
+		}
+	}
+	jharkhandi = {
+		primary = NGP
+		dynasty_names = { "Porohat" "Nagavamsi" "Raksel" "Munda" "Ho" "Bhuiyan" }
+		male_names = {
+			"Maharato" "Madhu Singh" "Durjan Sal" "Anant" "Medini" "Pratap" "Narendra Rudra" "Jaswant Singh" 
+			"Bahadur Singh" "Sheo Singh" "Ajit Singh" "Balbhadra Singh"
+		}
+		female_names = {
+			"Durgavati" "Hirai" "Ratna Kuvar"
+		}
+	}
+	female_names = {
+		Abha Abhilasha Aditi Aishwarya Akanksha Amala Amita Amit Amrita Amrit Ananda Anand Anandi Anand Ananta Anantha 
+		Ananta Anika Anik Anila Anil Anima Anita Anit Anjali Ankita Anuja Anuj Anupama Anupam Aparajita Aradhana Archana 
+		Arundhati Arya Asha Avani Avanti Bala Chanda Chandana Chandan Chandra Chandrakanta Chandrakant Chetana Chetan 
+		Damayanti Darshana Deepali Dipali Deepti Dipti Devi Devika Dipali Dipika Dipti Divya Draupadi Drupada Drishti Durga 
+		Esha Gauri Gita Gowri Gauri Gulshanpu Golshan Ila Inderjitp Pindrajit Indira Indrani Indra Indu Ihindra Jaswinderp 
+		Jaya Jayanti Jayanta Jayashri Jyothi Jyoti Jyotsana Jyotsna Kajal Kala Kali Kalpana Kalyani Kalyan Kamala Kamini 
+		Kanchana Kanta Kanti Karishma Kashi Kasi Kashi Kaur Kausalya Kaveri Kri Kavita Kiran Kirtida Kishori Kishor 
+		Kshitija Kshitij Kumari Kumara Kunti Lakshmi Lalita Lata Lavanya Laxmi Lakshmi Leela Lila Lila Lilavati Lina 
+		Lochana Lochan Madhavi Madhava Madhu Madhur Madhuri Mala Malati Malini Mandeepp Manisha Manju Manjula Manjusha Maya 
+		Meena Mina Meera Mira Mina Minali Mira Mitra Mithra Mohana Mohini Mridula Mukta Nalini Nandita Neela Nila Neelam 
+		Nilam Neha Niketa Nikita Nikhila Nikhil Nikita Nila Nilam Nilima Nirmalai Nirupama Nisha Nithya Nitya Nitika Nitya 
+		Padma Padmavati Padmini Pallavi Pallav Parvati Poornima Purnima Pratibha Pratima Preeti Priti Prema Prem Pritha 
+		Priti Priya Purnima Pushpa Rachana Rachna Rachana Radha Rajani Rajkumari Rajni Rani Rashmi Rati Ratna Ravinderp 
+		Pravindra Reena Rina Reshmi Reva Rina Ritika Riya Roshanp Roshanarap Roshnip Rukmini Rupinderp Sandhya Sanjana 
+		Sarala Saral Saraswati Sarika Sarita Sashi Shashi Sati Savitri Seema Sima Seeta Sita Seetha Sita Shailaja Shakti 
+		Shakuntala Shanta Shanthi Sshanti Shanti Sharmila Shashi Sheela Shila Shila Shivali Shiva Shobha Shreya Shri Shweta 
+		Shyama Shyamala Shyamal Siddhi Sima Sita Sitara Sona Sonal Sri Shri Sudarshana Sudarshan Sulabha Sumati Sunita 
+		Sunitha Suniti Susheela Sushila Sushila Swapna Swarna Swati Tara Trishna Uma Upasana Urvi Usha Ushas Usha Vasanti 
+		Vasanta Vasuda Vasudha Vasundhara Veda Vena Vidya Vijaya Vimala Vimal Vina Yami Yamuna Yami
+	}
+	male_names = {
+		Abhay Aditya Aditi Agni Ajeet Vajit Ajit Ajith Vajit Akash Akhil Amar Amit Amitabh Amrit Anand Ananta Ananth Ananta 
+		Anantha Vananta Anik Anil Aniruddha Anish Anit Ankur Anuj Anupam Aravind Aravinda Varavind Arjun Arjuna Arjuna Arun 
+		Aruna Aruna Arya Aseem Vasim Ashok Ashoka Ashoka Asim Avinash Azad Bala Baladeva  Baldev Baladeva Basantb Bvasanta 
+		Basub Bvasu Bharat Bharata Bharata Bhaskar Bhaskara Bhaskara Bijayb Bvijay Bijoyb Bvijay Bipinb Bvipin Bishen 
+		Vishnu Brahma Brijesh Brijesha Brijesha Buddha Chanda Chandan Chander Chandra Chandra Chandrakant Chetan 
+		Chiranjeevi Vchiranjivi Chiranjivi Damodar Damodara Damodara Dayaram Debdanb Bdevdan Deepak Dipaka Deo Dev 
+		Deodan Devdan Dev Devadas Devaraja Devdan Devdas Vdevadas Devraj Devaraja Dhananjay Dhaval Dili Dilipa Dilipa 
+		Dinesh Dipak Dipaka Dipaka Drupada Dulee Dilip Durait Ganesh Ganesha Ganesha Gautam Gautama Gautama Gotamas 
+		Geevarghese George Girish Girisha Girisha Gobind Govinda Gopal Gopala Gopala Gopinath Gopinatha Gopinatha Gotam 
+		Gotama Gotama Govind Govinda Govinda Gulshanu Golshan Harendra Hari Harinder Arendra Harish Arisha Harisha Harsha 
+		Harshad Harshal Inderjit Indrajit Inderpal Indrajit Isha Jagannath Jagannatha Jagannatha Jagdish Jagjit Jai Jay 
+		Jaidev Jaswinder Jay Jaya Jaya Jayant Jayanta Jayanta Jayendra Jaywant Jeetendra Vjitendra Jitender Jitinder Jyothi 
+		Sjyoti Jyoti Kailash Kalidas Kalidasa Kalidasa Kkali Kalyan Kalyana Kalyana Kama Kamal Kamala Kamala Kapil 
+		Kapila Kapila Karan Karna Karna Kavi Kiran Kishan Krishna Kishen Krishna Kishor Kishore Vkishor Kistna Krishna 
+		Krishna Kshitij Kumar Kumara Kumara Kunal Kunala Kunala Lakshman Lakshmana Lakshmana Lal Lalit Lalita Lalita Laxman 
+		Vlakshman Lochan Madhav Madhava Madhava Madhu Madhukar Madhur Mahavir Mahavira Mahavira Mahendra Mahesh Mahesha 
+		Mahesha Mahinder Mahendra Mandee Mani Maninder Manish Manu Mayur Mitra Mithra Mitul Mohan Mohana Mohana Mohandas 
+		Mmohana Mohinder Mahendra Mukesh Mukesha Mukesha Mukul Murali Nagendra Nala Nanda Narayan Narayana Narayana 
+		Narendra Narinder Narendra Naveen Vnavin Navin Neelam Vnilam Nikhil Nilam Ninad Niraj Nirav Nishant Nithya Vnitya 
+		Nitin Nitya Om Padma Pallab Allav Pallav Pankaj Ankaja Pankaja Parth Artha Partha Ritha Pitambar Itambara Pitambara 
+		Prabhakar Rabhakara Prabhakara Prabhat Prabhu Prabodh Pradee Radip Pradi Prakash Pramod Ramoda Pramoda Pran Pranav 
+		Pranay Prasad Prasanna Prata Pravin Prem Punit Purushottam Purushottama Rabindrab Bravindra Raghu Rahul Raj Raja 
+		Raj Rajender Rajendra Rajendra Rajesh Rajinder Rajendra Rajiv Rajneesh Vrajnish Rajnish Rakesh Ram Rama Rama 
+		Ramachander Ramachandra Ramachandra Ramakrishna Ramesh Ramesha Ramesha Rameshwar Rama Ranj Sranjit Ranjeet Vranjit 
+		Ranjit Ratan Vratna Rathna Ratna Ratna Ratnam Ratna Ravi Ravinder Ravindra Ravindra Rishi Rohan Rohit Roshan Sachin 
+		Samir Sandee Vsandip Sandi Sanjay Sanjaya Sanjaya Sanjeet Vsanjit Sanjeev Vsanjiv Sanjit Sanjiv Sankar Vshankar 
+		Saral Sashi Vshashi Satish Ssati Savitr Sekar Vshekhar Shahrukhu Shahrokh Shankar Shankara Shankara Shantanu Sharma 
+		Shashi Shekhar Shiva Shresth Shrinivas Shri Shripati Sshri Shrivatsa Shri Shyam Shyama Shyama Shyamal Shiva 
+		Siddharta Vsiddhartha Siddhartha Singh Skanda Subhash Sudarshan Sudhir Sujay Suman Sumantra Sundar Sundara Sundara 
+		Sunder Sundara Sunil Suraj Surendra Suresh Suresha Surinder Surendra Surya Sushil Sushila Sushila Swapan Swapna 
+		Swapnil Swaran Swarna Varghese Vasant Vasanta Vasu Venkat Venkata Vijay Vikram Vikrama Vikrama Vimal Vinay Vipin 
+		Vipul Vishal Vishnu Vivek Yama Yash 
+	}
+}

@@ -791,7 +791,7 @@ christian = {
 			taborite_resurgence_aspect
 			orphan_hetmans_aspect
 			freedom_to_preach_aspect
-			#rekindle_the_hussite_wars_aspect
+			rekindle_the_hussite_wars_aspect
 		}
 		aspects_name = PROTESTANT_ASPECTS
 		
@@ -1539,6 +1539,8 @@ christian = {
 		}
 		has_patriarchs = yes		# Uses patriarch authority
 		misguided_heretic = yes		# Other christians hate them less
+		
+		heretic = { OLD_BELIEVER MOLOKAN DUKHOBOR KHLYST SKOPTSY ICONOCLAST }
 		
 		orthodox_icons = {
 			# If no icon has ai_will_do above 1 - <current patriarch authority> , the AI will not enact it. (60% PA = 0.6 -> ai_will_do has to be at least 0.4)
@@ -3525,6 +3527,11 @@ reformed_pagan = {
 			blessing_kuu 
 			blessing_ahti 
 			blessing_ilmarinen 
+			blessing_hoidja
+			blessing_ruohta
+			blessing_vanemuine
+			blessing_biejjenniejte
+			blessing_metsaema
 		}
 		aspects_name = SUOMI_BLESSINGS
 		

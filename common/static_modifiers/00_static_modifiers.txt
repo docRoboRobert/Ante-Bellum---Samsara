@@ -280,7 +280,7 @@ development = {
 	province_trade_power_value = 0.2
 	local_amount_of_banners = 0.066
 	local_amount_of_cawa = 0.125
-	local_amount_of_carolean = 0.1
+	local_amount_of_carolean = 0 # AB
 	local_amount_of_hussars = 0.01
 }
 
@@ -644,7 +644,7 @@ positive_stability = {
 	# We don't have ottoman decadence
 	#monthly_ottoman_decadence = -0.05
 	# ]]]
-	monthly_authority_power = -0.01							
+	monthly_authority_power = -0.01
 }
 
 privateering = {
@@ -664,7 +664,7 @@ negative_stability = {
 	# We don't have ottoman decadence
 	#monthly_ottoman_decadence = -0.15
 	# ]]]
-	monthly_authority_power = 0.05						   
+	monthly_authority_power = 0.05
 }
 
 positive_mandate = {	# 100% strength at 100 mandate, 0% at 50 mandate

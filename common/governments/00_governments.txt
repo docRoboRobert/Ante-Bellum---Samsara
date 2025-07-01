@@ -472,48 +472,6 @@ monarchy = {
 				# ]]]
 			}
 		}
-		# state_and_religion = {
-		# 	reforms = {
-		# 		papal_embassy_reform
-		# 		lands_for_the_monasteries_reform
-		# 		focus_of_the_patriarchy_reform
-		# 		#the_avestan_dogma_reform
-		# 		zoroastrian_focus_reform
-		# 		power_to_the_synagogoues_reform
-		# 		head_of_the_reformed_church_reform
-		# 		confucian_governing_reform
-		# 		empower_buddhist_temples_reform
-		# 		public_hindu_practices_reform
-		# 		strengthen_shaman_privileges_reform
-		# 		abolished_caste_system_reform
-		# 		strengthen_the_ulema_reform
-		# 		strengthen_the_dhimmi_reform
-		# 		legacy_of_the_steppes_reform
-		# 		state_and_shrines_intertwined_reform
-		# 		embedded_norse_government_reform
-		# 		strengthen_clergy_reform
-		# 		curtail_clergy_power_reform
-		# 		secure_clergy_power_reform
-		# 		maintain_clergy_balance_of_power_reform
-		# 		separate_clergy_from_state_affairs_reform
-		# 		restoration_of_clergy_reform
-		# 		cult_of_reason_reform
-		# 		#Visible but locked
-		# 		secularization_of_the_state_reform
-		# 		#Invisible until unlocked
-		# 		#1.35
-		# 		fiqh_laws_reform
-		# 		sufism_decree_reform
-		# 		holy_synod_reform
-		# 		strengthened_the_patriarchy_reform
-		# 		head_of_the_patriarchy_reform
-		# 		anglican_state_church_reform
-		# 		english_conciliarism_reform
-		# 		#1.36
-		# 		legacy_of_the_safavid_reform
-		# 		state_madrasas_reform
-		# 	}
-		# }
 		military_doctrines = {
 			reforms = {
 				organized_military_staff_reform
@@ -743,32 +701,6 @@ monarchy = {
 				# ]]]
 			}
 		}
-		# deliberative_assembly = {
-		# 	reforms = {
-		# 		parliamentary_reform
-		# 		royal_decree_reform
-		# 		aristocratic_court_reform
-		# 		general_estates_reform
-		# 		states_general_reform
-		# 		legislative_sejm
-		# 		integrated_sejmiks
-		# 		feuillant_reform
-		# 		two_chamber_reform
-		# 		imperial_decree_reform
-		# 		become_a_republic_reform
-		# 		install_theocratic_government_reform
-		# 		become_rev_republic_reform
-		# 		#1.35
-		# 		ottoman_siyasah_tax_reform
-		# 		governing_senate_reform
-		# 		enforced_autocracy_reform
-		# 		justicia_de_aragon_reform
-		# 		catalan_cortes_reform
-		# 		great_council_of_mechelen_reform
-		# 		parliament_vs_monarchy_reform
-		# 		restoration_of_the_senate_reform
-		# 	}
-		# }
 		growth_of_administration = {
 			reforms = {
 				clergy_in_administration_reform
@@ -1361,50 +1293,6 @@ republic = {
 				# ]]]
 			}
 		}
-		# republic_and_religion = {
-		# 	reforms = {
-		# 		papal_embassy_reform
-		# 		lands_for_the_monasteries_reform
-		# 		focus_of_the_patriarchy_reform
-		# 		#the_avestan_dogma_reform
-		# 		zoroastrian_focus_reform
-		# 		power_to_the_synagogoues_reform
-		# 		head_of_the_reformed_church_reform
-		# 		confucian_governing_reform
-		# 		empower_buddhist_temples_reform
-		# 		public_hindu_practices_reform
-		# 		strengthen_shaman_privileges_reform
-		# 		abolished_caste_system_reform
-		# 		strengthen_the_ulema_reform
-		# 		strengthen_the_dhimmi_reform
-		# 		legacy_of_the_steppes_reform
-		# 		state_and_shrines_intertwined_reform
-		# 		embedded_norse_government_reform
-		# 		strengthen_clergy_reform
-		# 		curtail_clergy_power_reform
-		# 		secure_clergy_power_reform
-		# 		maintain_clergy_balance_of_power_reform
-		# 		separate_clergy_from_state_affairs_reform
-		# 		cult_of_reason_reform
-		# 		conserve_the_religion_reform
-		# 		secularization_of_the_state_reform
-		# 		crew_before_faith_reform
-		# 		relgious_freedom_reform
-		# 		respect_for_the_sea_reform
-		# 		establish_religious_institution_for_pirates_reform
-		# 		#1.35
-		# 		fiqh_laws_reform
-		# 		sufism_decree_reform
-		# 		holy_synod_reform
-		# 		strengthened_the_patriarchy_reform
-		# 		head_of_the_patriarchy_reform
-		# 		anglican_state_church_reform
-		# 		english_conciliarism_reform
-		# 		#1.36
-		# 		legacy_of_the_safavid_reform
-		# 		state_madrasas_reform
-		# 	}
-		# }
 		military_doctrines = {
 			reforms = {
 				organized_military_staff_reform
@@ -2122,6 +2010,8 @@ theocracy = {
 				bav_south_german_confederation
 				fkn_holy_knights
 				rhl_confederation_reform
+				teu_order_of_steppes
+				ab_kingdom_of_god
 				# Samsara
 				lhasa_theocratic_state
 				vlr_st_thomas_apostle
@@ -2162,6 +2052,7 @@ theocracy = {
 				# ]]]
 				# Blood and Iron
 				bav_council_of_eight
+				mission_expand_orders_buffed
 				# ]]]
 			}
 
@@ -2182,41 +2073,6 @@ theocracy = {
 				# ]]]
 			}
 		}
-		# religoius_doctrine = {
-		# 	reforms = {
-		# 		i_am_the_church_reform
-		# 		papal_embassy_reform
-		# 		lands_for_the_monasteries_reform
-		# 		focus_of_the_patriarchy_reform
-		# 		#the_avestan_dogma_reform
-		# 		zoroastrian_focus_reform
-		# 		power_to_the_synagogoues_reform
-		# 		head_of_the_reformed_church_reform
-		# 		confucian_governing_reform
-		# 		empower_buddhist_temples_reform
-		# 		public_hindu_practices_reform
-		# 		strengthen_shaman_privileges_reform
-		# 		abolished_caste_system_reform
-		# 		strengthen_the_ulema_reform
-		# 		strengthen_the_dhimmi_reform
-		# 		legacy_of_the_steppes_reform
-		# 		state_and_shrines_intertwined_reform
-		# 		embedded_norse_government_reform
-		# 		strengthen_clergy_reform
-		# 		curtail_clergy_power_reform
-		# 		secure_clergy_power_reform
-		# 		maintain_clergy_balance_of_power_reform
-		# 		#1.35
-		# 		fiqh_laws_reform
-		# 		sufism_decree_reform
-		# 		holy_synod_reform
-		# 		strengthened_the_patriarchy_reform
-		# 		head_of_the_patriarchy_reform
-		# 		anglican_state_church_reform
-		# 		#1.36
-		# 		legacy_of_the_safavid_reform
-		# 	}
-		# }
 		military_doctrines = {
 			reforms = {
 				organized_military_staff_reform
@@ -2363,25 +2219,12 @@ theocracy = {
 				fkn_blitzkrieg
 				fkn_improved_blitzkrieg
 				rhl_imperial_guards
+				teu_hussars
 				# ]]]
 				#Samsara
 				dzong_system
 			}
 		}
-		# secularization = {
-		# 	reforms = {
-		# 		partial_secularisation_reform
-		# 		maintain_religious_head_reform
-		# 		hereditary_religious_leadership_reform
-		# 		crown_leader_reform
-		# 		proclaim_republic_reform
-		# 		battle_pope_reform
-		# 		conciliarism_reform
-		# 		#1.35
-		# 		governing_senate_reform
-		# 		enforced_autocracy_reform
-		# 	}
-		# }
 		religoius_doctrine = {
 			reforms = {
 				i_am_the_church_reform

@@ -2498,7 +2498,7 @@ babbling_buffoon_personality = {
 			NOT = { has_country_flag = boh_prevent_negative_traits }
 			NOT = { dip = 5 }
 			# AB {{{
-			NOT = { mission_completed = byzantium_nomos }
+			NOT = { has_country_flag = ab_prevent_ruler_negative_trait }
 			# }}}
 		}
 	
@@ -2530,7 +2530,7 @@ babbling_buffoon_personality = {
 			NOT = { has_country_flag = boh_prevent_negative_traits }
 			NOT = { heir_dip = 5 }
 			# AB {{{
-			NOT = { mission_completed = byzantium_nomos }
+			NOT = { has_country_flag = ab_prevent_ruler_negative_trait }
 			# }}}
 		}
 	
@@ -2610,7 +2610,7 @@ embezzler_personality = {
 			NOT = {ruler_has_personality = enlightened_personality}											  
 			NOT = { ruler_has_personality = incorruptible_personality }
 			# AB {{{
-			NOT = { mission_completed = byzantium_nomos }
+			NOT = { has_country_flag = ab_prevent_ruler_negative_trait }
 			# }}}
 		}
 	
@@ -2639,7 +2639,7 @@ embezzler_personality = {
 		allow = {
 			NOT = { heir_has_personality = incorruptible_personality }
 			# AB {{{
-			NOT = { mission_completed = byzantium_nomos }
+			NOT = { has_country_flag = ab_prevent_ruler_negative_trait }
 			# }}}
 		}
 	
@@ -2716,7 +2716,7 @@ infertile_personality = {
 		allow = {
 			NOT = { ruler_has_personality = fertile_personality }
 			# AB {{{
-			NOT = { mission_completed = byzantium_nomos }
+			NOT = { has_country_flag = ab_prevent_ruler_negative_trait }
 			# }}}
 		}
 	
@@ -2749,7 +2749,7 @@ infertile_personality = {
 		allow = {
 			NOT = { heir_has_personality = fertile_personality }
 			# AB {{{
-			NOT = { mission_completed = byzantium_nomos }
+			NOT = { has_country_flag = ab_prevent_ruler_negative_trait }
 			# }}}
 		}
 	
@@ -2838,7 +2838,7 @@ drunkard_personality = {
 			NOT = { ruler_has_personality = entrepreneur_personality }
 			NOT = { ruler_has_personality = zealot_personality }
 			# AB {{{
-			NOT = { mission_completed = byzantium_nomos }
+			NOT = { has_country_flag = ab_prevent_ruler_negative_trait }
 			# }}}
 		}
 	
@@ -2869,7 +2869,7 @@ drunkard_personality = {
 			NOT = { heir_has_personality = entrepreneur_personality }
 			NOT = { heir_has_personality = zealot_personality }
 			# AB {{{
-			NOT = { mission_completed = byzantium_nomos }
+			NOT = { has_country_flag = ab_prevent_ruler_negative_trait }
 			# }}}
 		}
 	
@@ -2948,7 +2948,7 @@ sinner_personality = {
 			NOT = {ruler_has_personality = enlightened_personality}											  
 			NOT = { ruler_has_personality = pious_personality }
 			NOT = { ruler_has_personality = zealot_personality }
-			NOT = { mission_completed = byzantium_nomos }
+			NOT = { has_country_flag = ab_prevent_ruler_negative_trait }
 		}
 	
 		chance = {
@@ -2977,7 +2977,7 @@ sinner_personality = {
 			NOT = { heir_has_personality = pious_personality }
 			NOT = { heir_has_personality = zealot_personality }
 			# AB {{{
-			NOT = { mission_completed = byzantium_nomos }
+			NOT = { has_country_flag = ab_prevent_ruler_negative_trait }
 			# }}}
 		}
 	
@@ -3061,7 +3061,7 @@ greedy_personality = {
 			NOT = {ruler_has_personality = enlightened_personality}											  
 			NOT = { ruler_has_personality = midas_touched_personality }
 			# AB {{{
-			NOT = { mission_completed = byzantium_nomos }
+			NOT = { has_country_flag = ab_prevent_ruler_negative_trait }
 			# }}}
 		}
 	
@@ -3090,7 +3090,7 @@ greedy_personality = {
 		allow = {
 			NOT = { heir_has_personality = midas_touched_personality }
 			# AB {{{
-			NOT = { mission_completed = byzantium_nomos }
+			NOT = { has_country_flag = ab_prevent_ruler_negative_trait }
 			# }}}
 		}
 	
@@ -3201,7 +3201,7 @@ cruel_personality = {
 			NOT = { ruler_has_personality = kind_hearted_personality }
 			NOT = { has_country_flag = hsn_prevent_leader_trait }
 			# AB {{{
-			NOT = { mission_completed = byzantium_nomos }
+			NOT = { has_country_flag = ab_prevent_ruler_negative_trait }
 			# }}}
 		}
 	
@@ -3232,7 +3232,7 @@ cruel_personality = {
 			NOT = { heir_has_personality = kind_hearted_personality }
 			NOT = { has_country_flag = hsn_prevent_leader_trait }
 			# AB {{{
-			NOT = { mission_completed = byzantium_nomos }
+			NOT = { has_country_flag = ab_prevent_ruler_negative_trait }
 			# }}}
 		}
 	
@@ -3306,7 +3306,7 @@ naive_personality = {
 			NOT = { ruler_has_personality = careful_personality }
 			NOT = { has_country_flag = boh_prevent_negative_traits }
 			# AB {{{
-			NOT = { mission_completed = byzantium_nomos }
+			NOT = { has_country_flag = ab_prevent_ruler_negative_trait }
 			# }}}
 		}
 	
@@ -3341,7 +3341,7 @@ naive_personality = {
 			NOT = { heir_has_personality = careful_personality }
 			NOT = { has_country_flag = boh_prevent_negative_traits }
 			# AB {{{
-			NOT = { mission_completed = byzantium_nomos }
+			NOT = { has_country_flag = ab_prevent_ruler_negative_trait }
 			# }}}
 		}
 	
@@ -3430,7 +3430,7 @@ craven_personality = {
 			NOT = { ruler_has_personality = bold_fighter_personality }
 			NOT = { has_country_flag = hsn_prevent_leader_trait }
 			# AB {{{
-			NOT = { mission_completed = byzantium_nomos }
+			NOT = { has_country_flag = ab_prevent_ruler_negative_trait }
 			# }}}
 		}
 	
@@ -3471,7 +3471,7 @@ craven_personality = {
 			NOT = { heir_has_personality = bold_fighter_personality }
 			NOT = { has_country_flag = hsn_prevent_leader_trait }
 			# AB {{{
-			NOT = { mission_completed = byzantium_nomos }
+			NOT = { has_country_flag = ab_prevent_ruler_negative_trait }
 			# }}}
 		}
 	
@@ -3558,7 +3558,7 @@ loose_lips_personality = {
 			NOT = { ruler_has_personality = intricate_web_weaver_personality }
 			NOT = { ruler_has_personality = secretive_personality }
 			# AB {{{
-			NOT = { mission_completed = byzantium_nomos }
+			NOT = { has_country_flag = ab_prevent_ruler_negative_trait }
 			# }}}
 		}
 	
@@ -3588,7 +3588,7 @@ loose_lips_personality = {
 			NOT = { heir_has_personality = intricate_web_weaver_personality }
 			NOT = { heir_has_personality = secretive_personality }
 			# AB {{{
-			NOT = { mission_completed = byzantium_nomos }
+			NOT = { has_country_flag = ab_prevent_ruler_negative_trait }
 			# }}}
 		}
 	
@@ -3666,7 +3666,7 @@ obsessive_perfectionist_personality = {
 				NOT = { ruler_has_personality = architectural_visionary_personality }
 			}
 			# AB {{{
-			NOT = { mission_completed = byzantium_nomos }
+			NOT = { has_country_flag = ab_prevent_ruler_negative_trait }
 			# }}}
 		}
 	
@@ -3695,7 +3695,7 @@ obsessive_perfectionist_personality = {
 		allow = {
 			NOT = { heir_has_personality = architectural_visionary_personality }
 			# AB {{{
-			NOT = { mission_completed = byzantium_nomos }
+			NOT = { has_country_flag = ab_prevent_ruler_negative_trait }
 			# }}}
 		}
 	
@@ -3769,7 +3769,7 @@ malevolent_personality = {
 			NOT = { ruler_has_personality = benevolent_personality }
 			NOT = { ruler_has_personality = kind_hearted_personality }
 			# AB {{{
-			NOT = { mission_completed = byzantium_nomos }
+			NOT = { has_country_flag = ab_prevent_ruler_negative_trait }
 			# }}}
 		}
 	
@@ -3799,7 +3799,7 @@ malevolent_personality = {
 			NOT = { heir_has_personality = benevolent_personality }
 			NOT = { heir_has_personality = kind_hearted_personality }
 			# AB {{{
-			NOT = { mission_completed = byzantium_nomos }
+			NOT = { has_country_flag = ab_prevent_ruler_negative_trait }
 			# }}}
 		}
 	
@@ -4019,7 +4019,7 @@ petty_personality = {
 		allow = {
 			NOT = {ruler_has_personality = enlightened_personality}											  
 			NOT = { ruler_has_personality = humane_personality }
-			NOT = { mission_completed = byzantium_nomos }
+			NOT = { has_country_flag = ab_prevent_ruler_negative_trait }
 		}
 	
 		chance = {
@@ -4188,7 +4188,7 @@ reformist_personality = {
 
 legendary_conqueror_personality = { 
 	
-	allow = { has_country_flag = TIM_legendary_conqueror_flag }
+	allow = { }
 	
 	shock_damage = 0.1 
 	years_of_nationalism = -5
@@ -4200,16 +4200,28 @@ legendary_conqueror_personality = {
 	building_budget_multiplier = 0.2
 	gift_chance = -50
 	wants_land = yes
+	
+	chance = {
+		modifier = {
+			factor = 0.01
+		}
+	}
 }
 
 great_engineer_personality = {
 	
-	allow = { has_country_flag = TIM_legendary_architect_flag }
+	allow = { }
 	
 	building_budget_multiplier = 1.8
 	build_cost = -0.15
 	build_time = -0.5
 	nation_designer_cost = 10
+	
+	chance = {
+		modifier = {
+			factor = 0.01
+		}
+	}
 }
 
 patron_of_arts_personality = {
