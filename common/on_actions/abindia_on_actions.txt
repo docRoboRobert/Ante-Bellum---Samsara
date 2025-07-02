@@ -108,6 +108,31 @@ on_siege_won_country = {
 		}
 		FROM = { add_core = ROOT }
 	}
+	if = {
+		limit = {
+			ROOT = { has_country_modifier = DGL_pirate_raiding_west_india }
+			FROM = {
+				NOT = { owned_by = ROOT }
+				NOT = { owned_by_subject_of = ROOT }
+				OR = {
+					region = hindusthan_region
+					region = west_india_region
+				}
+			}
+		}
+		ROOT = {
+			add_treasury = 50
+			add_adm_power = 10
+			add_dip_power = 10
+			add_mil_power = 10
+		}
+		FROM = {
+			add_devastation = 50
+			add_base_tax = -1
+			add_base_production = -1
+			add_base_manpower = -1
+		}
+	}
 }
 
 on_startup = {

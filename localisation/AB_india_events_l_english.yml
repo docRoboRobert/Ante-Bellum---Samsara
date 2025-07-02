@@ -247,6 +247,11 @@
  abindia_mission.25.a:0 "Path of tolerance will ensure their submission"
  abindia_mission.25.tooltip:0 "§PEvery Malankara nation that was traditionally part of Villarvattom Coastal Federation or with capital in Malabar Area will become our§! §YTributary State.§!"
  abindia_mission.25.b:0 "The petty states must be united under puppet administration"
+ abindia_mission.26.t:0 "Fate of Gujarati Ports"
+ abindia_mission.26.d:0 "We have subjugated most of Saurashtra Peninsula and seized strategic seaports of Gujarat Region. Our influence over the trade routes in there is enormous and so is our power to decide the fate of those we've conquered. The wealthy region can easily be exploited for its wealth and stolen riches can be brought back to our coves to enrich our nation. Such action would have devastating effect on the local economy and whole trade could collapse for decades if we raze it all to the ground... but do we really care? We've chosen the pirate life for a reason, so we such matters would only be a domain of land rats. Alternatively, we could pursuit a long-time investment and let the region prosper under the new management.
+ abindia_mission.26.a:0 "They were our great scourge and they shall be punished!"
+ abindia_mission.26.tooltip:0 "§YEvery province in Saurashtra, Ahmedabad and Patan Areas, owned by us or our subject, will be razed and looted to the ground. All target provinces will§! §Rgain 90 devastation and have their development flattened.§!"
+ abindia_mission.26.b:0 "But the economy! Anything for the economy!"
  
  #Flavour for Sri Lanka
  abindia_lankan_event.1.t:0 "Looming Upheaval"

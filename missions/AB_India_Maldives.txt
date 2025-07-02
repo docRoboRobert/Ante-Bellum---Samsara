@@ -1253,18 +1253,129 @@ abi_maldives_third = {
 		icon = mission_conquer_gujarat_dlh
 		position = 10
 		required_missions = { DGL_own_western_ports } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 517
+				province_id = 4457
+				province_id = 2051
+				province_id = 4454
+				province_id = 5266
+				province_id = 5243
+			}
+			NOT = { owned_by = ROOT }
+		}
 
-		trigger = {  } 
+		trigger = {
+			OR = {
+				has_won_war_against = {
+					who = GUJ
+					max_years_since = 15
+				}
+				NOT = { exists = GUJ }
+			}
+			owns_or_non_sovereign_subject_of = 517
+			owns_or_non_sovereign_subject_of = 4457
+			owns_or_non_sovereign_subject_of = 2051
+			owns_or_non_sovereign_subject_of = 4454
+			owns_or_non_sovereign_subject_of = 5266
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 8
+				OR = {
+					area = saurashtra_area
+					area = patan_area
+					area = ahmedabad_area
+				}
+			}
+			OR = {
+				517 = {
+					has_great_project = {
+						type = any
+						tier = 2
+					}
+				}
+				4457 = {
+					trade_share = {
+						country = ROOT
+						share = 33
+					}
+				}
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			sindh_area = { add_permanent_claim = ROOT }
+			custom_tooltip = DGL_raid_gujarat.tooltip1
+			hidden_effect = {
+				if = {
+					limit = {
+						4454 = {
+							NOT = {
+								has_great_project = {
+									type = any
+									tier = 2
+								}
+							}
+						}
+					}
+					4454 = {
+						add_great_project_tier = {
+							type = probandar_port
+							tier = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						517 = {
+							NOT = {
+								has_great_project = {
+									type = any
+									tier = 2
+								}
+							}
+						}
+					}
+					517 = {
+						add_great_project_tier = {
+							type = navsari_port
+							tier = 1
+						}
+					}
+				}
+			}
+			country_event = {
+				id = abindia_mission.26
+				days = 1
+			}
+			custom_tooltip = DGL_raid_gujarat.tooltip2
+			add_country_modifier = {
+				name = DGL_pirate_raiding_west_india
+				duration = 10950
+			}
+			if = {
+				limit = { exists = GUJ }
+				GUJ = {
+					add_stability = -1
+					add_splendor = -200
+					add_prestige = -20
+				}
+			}
+		}
 	}
 
 	DGL_sack_indus_river = {
 		icon = mission_advance_to_the_arabian_sea
 		position = 12
 		required_missions = { DGL_raid_gujarat } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				area = sindh_area
+				area = northern_sindh_area
+				area = multan_area
+				area = lahore_area
+				area = sind_sagar_area
+			}
+		}
 
 		trigger = {  } 
 

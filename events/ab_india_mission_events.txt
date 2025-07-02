@@ -1397,3 +1397,63 @@ country_event = {	#Fate of Malankara christians in Villarvattom
 		add_republican_tradition = 10
 	}
 }
+
+country_event = {	#Fate of ports in Gujarat
+	id = abindia_mission.26
+	title = abindia_mission.26.t
+	desc = abindia_mission.26.d
+	picture = muslimgfx_BORDER_TENSION_eventPicture
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {	#Sacking time
+		name = abindia_mission.26.a
+		add_splendor = 250
+		add_adm_power = 200
+		add_dip_power = 200
+		add_mil_power = 200
+		add_treasury = 1000
+		add_years_of_income = 2
+		add_prestige = 20
+		add_power_projection = {
+			type = mission_rewards_power_projection
+			amount = 25
+		}
+		custom_tooltip = abindia_mission.26.tooltip
+		hidden_effect = {
+			every_province = {
+				limit = {
+					OR = {
+						owned_by_subject_of = ROOT
+						owned_by = ROOT
+					}
+					OR = {
+						area = saurashtra_area
+						area = ahmedabad_area
+						area = patan_area
+					}
+				}
+				add_devastation = 90
+				set_base_tax = 1
+				set_base_production = 1
+				set_base_manpower = 1
+			}
+		}
+	}
+	option = {	#Leave it
+		name = abindia_mission.26.b
+		4457 = {
+			add_base_manpower = 3
+			add_base_production = 2
+			add_center_of_trade_level = 1
+		}
+		517 = {
+			add_base_tax = 1
+			add_base_manpower = 2
+			add_base_production = 2
+			add_center_of_trade_level = 1
+		}
+	}
+}

@@ -601,3 +601,7 @@ DGL_malankara_subjects = {
 	relation_with_heathens = 10
 	reverse_relation_with_heathen_religion = 5
 }
+
+DGL_pirate_raiding_west_india = {
+	loot_amount = 0.2
+}

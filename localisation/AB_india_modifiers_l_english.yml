@@ -279,6 +279,8 @@
  desc_DGL_villarvattom_port:0 "Years of rule under merchants and great captains has been very prosperous for religious centre in Villarvattom. Maritime expansion the province experienced has greatly improved its significance for regional economy."
  DGL_malankara_subjects:0 "New Protector of Malabar Christians"
  desc_DGL_malankara_subjects:0 "After conquering the holy site of Villarvattom, we have allowed the Malankara Christian population of Malabar coast to practise their religion freely and gave the access to the site. As such, as using tolerance as leverage, we have become the new de-facto protector of numerous Malankara states on the coast. They were forced to be our tributaries."
+ DGL_pirate_raiding_west_india:0 "Pillaging of Important Cities"
+ desc_DGL_pirate_raiding_west_india:0 "§OWhile this modifier is active, sieging down§! §Jany province with at least 10 development§! §Owill grant§! §T10 monarch points £adm£ £dip£ £mil£§! §Oand§! §T50 ¤§! §Obut in exchange the province will gain§! §R50 devastation§! §Oand lose§! §R1 of each development!§! §OThis mechanic works only for provinces in§! §YWestern India and Hindustan§! §Oregions.§!"
  
  #Lhasa flavour
  lha_struggle_for_tibet:0 "The Struggle for Tibet"
