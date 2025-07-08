@@ -118,6 +118,7 @@ on_siege_won_country = {
 					region = hindusthan_region
 					region = west_india_region
 				}
+				NOT = { has_province_modifier = pirates_recently_pillaged }
 			}
 		}
 		ROOT = {
@@ -131,6 +132,56 @@ on_siege_won_country = {
 			add_base_tax = -1
 			add_base_production = -1
 			add_base_manpower = -1
+			add_province_modifier = {
+				name = pirates_recently_pillaged
+				duration = 365
+			}
+		}
+	}
+	if = {
+		limit = {
+			ROOT = { has_country_modifier = DGL_allow_port_pillaging }
+			FROM = {
+				NOT = { owned_by = ROOT }
+				NOT = { owned_by_subject_of = ROOT }
+				is_port = yes
+				development = 15
+				NOT = { has_province_modifier = pirates_recently_pillaged }
+			}
+		}
+		ROOT = {
+			add_treasury = 100
+			add_adm_power = 15
+			add_dip_power = 15
+			add_mil_power = 15
+			add_prestige = 3
+			add_splendor = 10
+			add_republican_tradition = 1
+		}
+		FROM = {
+			add_devastation = 75
+			add_base_tax = -2
+			add_base_production = -2
+			add_base_manpower = -2
+			remove_building = marketplace
+			remove_building = trade_depot
+			remove_building = stock_exchange
+			remove_building = greatmarket
+			remove_building = workshop
+			remove_building = counting_house
+			remove_building = factory
+			remove_building = shipyard
+			remove_building = grand_shipyard
+			remove_building = temple
+			remove_building = cathedral
+			remove_building = courthouse
+			remove_building = town_hall
+			remove_building = dock
+			remove_building = drydock
+			add_province_modifier = {
+				name = pirates_recently_pillaged
+				duration = 1825
+			}
 		}
 	}
 }

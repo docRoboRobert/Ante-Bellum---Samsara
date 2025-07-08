@@ -281,6 +281,18 @@
  desc_DGL_malankara_subjects:0 "After conquering the holy site of Villarvattom, we have allowed the Malankara Christian population of Malabar coast to practise their religion freely and gave the access to the site. As such, as using tolerance as leverage, we have become the new de-facto protector of numerous Malankara states on the coast. They were forced to be our tributaries."
  DGL_pirate_raiding_west_india:0 "Pillaging of Important Cities"
  desc_DGL_pirate_raiding_west_india:0 "§OWhile this modifier is active, sieging down§! §Jany province with at least 10 development§! §Owill grant§! §T10 monarch points £adm£ £dip£ £mil£§! §Oand§! §T50 ¤§! §Obut in exchange the province will gain§! §R50 devastation§! §Oand lose§! §R1 of each development!§! §OThis mechanic works only for provinces in§! §YWestern India and Hindustan§! §Oregions.§!"
+ pirates_recently_pillaged:0 "Recently Plundered"
+ desc_pirates_recently_pillaged:0 "This province has been recently plundered and it will take some time before it recovers and can be ravaged again for meaningful loot."
+ indus_river_breadbasket:0 "Breadbasket of the Indian Empire"
+ desc_indus_river_breadbasket:0 "Fertile river valley of Indus provides irrigation and fertile soil that allows this region to be extremely developed in terms of food production and supplying the armies of whoever owns it."
+ dgl_grain_shipments_secured:0 "Supply Hub of Indus Valley"
+ desc_dgl_grain_shipments_secured:0 "This province is of extreme importance to the nation holding it. All of food and other goods produced around Indus River are shipped down to this port where they are stockpiled, counted and finally sent away all over the empire to supply its grand fleets."
+ DGL_pirate_empire:0 "Pirate Empire of Indian Ocean"
+ desc_DGL_pirate_empire:0 "The greatest pirate state to ever exist, allegedly."
+ DGL_pirate_marines:0 "New Maritime Army of Indian Ocean"
+ desc_DGL_pirate_marines:0 "Go pirate boy, go!"
+ DGL_allow_port_pillaging:0 "§VPirate Raids on Coastal Ports§!"
+ desc_DGL_allow_port_pillaging:0 "§OWhile this modifier is active, sieging down§! §Jany coastal province with at least 15 development§! §Owill grant§! §T15 monarch points £adm£ £dip£ £mil£, 3 prestige, 10 splendor, 1 republican tradition§! §Oand§! §T100 ¤§! §Obut in exchange the province will gain§! §R75 devastation, lose all trade, production, tax, government, port building§! §Oand lose§! §R2 of each development!§! §OThis mechanic works only for provinces that hasn't suffered such raid in§! §Y5 years§! §O.§!"
  
  #Lhasa flavour
  lha_struggle_for_tibet:0 "The Struggle for Tibet"

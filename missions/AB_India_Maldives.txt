@@ -1377,9 +1377,82 @@ abi_maldives_third = {
 			}
 		}
 
-		trigger = {  } 
+		trigger = {
+			owns_core_province = 5246
+			owns_core_province = 504
+			owns_core_province = 5245
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 27
+				OR = {
+					area = sindh_area
+					area = northern_sindh_area
+					area = multan_area
+					area = lahore_area
+					area = sind_sagar_area
+				}
+				has_production_building_trigger = yes
+				has_tax_building_trigger = yes
+				has_road_building_trigger = yes
+				development = 10
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				OR = {
+					area = sindh_area
+					area = northern_sindh_area
+					area = multan_area
+					area = lahore_area
+					area = sind_sagar_area
+				}
+				has_manufactory_trigger = yes
+				development = 20
+			}
+			5246 = { province_has_center_of_trade_of_level = 2 }
+			507 = { province_has_center_of_trade_of_level = 2 }
+		}
 
-		effect = {  } 
+		effect = {
+			504 = {
+				add_permanent_province_modifier = {
+					name = indus_river_breadbasket
+					duration = -1
+				}
+				add_province_modifier = {
+					name = dgl_grain_shipments_secured
+					duration = -1
+				}
+			}
+			custom_tooltip = DGL_sack_indus_river.tooltip1
+			if = {
+				limit = {
+					504 = { development = 27 }
+				}
+				center_of_trade = 1
+			}
+			makran_area = { add_permanent_claim = ROOT }
+			custom_tooltip = DGL_sack_indus_river.tooltip2
+			hidden_effect = {
+				every_province = {
+					limit = {
+						OR = {
+							area = sindh_area
+							area = northern_sindh_area
+							area = multan_area
+							area = lahore_area
+							area = sind_sagar_area
+						}
+						OR = {
+							trade_goods = grain
+							trade_goods = livestock
+						}
+					}
+					add_permanent_province_modifier = {
+						name = indus_river_breadbasket
+						duration = -1
+					}
+				}
+			}
+		}
 	}
 
 	maldives_pirate_empire = {
@@ -1392,9 +1465,38 @@ abi_maldives_third = {
 		}
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			is_great_power = yes
+			OR = {
+				is_hegemon_of_type = naval_hegemon
+				NOT = { great_power_rank = 2 }
+				num_of_cities = 250
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			override_country_name = FREE_EMPIRE_OF_INDOLEMURIA
+			add_splendor = 500
+			add_prestige = 50
+			add_stability = 3
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 25
+			}
+			add_country_modifier = {
+				name = DGL_pirate_empire
+				duration = -1
+			}
+			add_country_modifier = {
+				name = DGL_pirate_marines
+				duration = -1
+			}
+			custom_tooltip = maldives_pirate_empire.tooltip
+			add_country_modifier = {
+				name = DGL_allow_port_pillaging
+				duration = -1
+			}
+		}
 	}
 }
 abi_maldives_fourth = {
