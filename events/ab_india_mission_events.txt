@@ -1457,3 +1457,160 @@ country_event = {	#Fate of ports in Gujarat
 		}
 	}
 }
+
+country_event = {	#Jolly Crescent Surpasses Tamil Tiger
+	id = abindia_mission.27
+	title = abindia_mission.27.t
+	desc = abindia_mission.27.d
+	picture = ABINDIA_JOLLY_CRESCENT_eventPicture
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = abindia_mission.27.a
+		add_splendor = 200
+		add_power_projection = {
+			type = mission_rewards_power_projection
+			amount = 20
+		}
+		change_adm = 1
+		change_dip = 1
+		change_mil = 1
+		capital_scope = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+	}
+}
+
+country_event = {	#Pirate intentions towards Burma
+	id = abindia_mission.28
+	title = abindia_mission.28.t
+	desc = abindia_mission.28.d
+	picture = SHWEDAGON_PAGON_eventPicture
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #Conquer it all directly
+		name = abindia_mission.28.a
+		burma_region = {
+			type = all
+			add_permanent_claim = ROOT
+		}
+		add_accepted_culture = mon
+		add_country_modifier = {
+			name = dgl_burmese_conquest
+			duration = 7300
+		}
+	}
+	
+	option = { #Set up tributaries
+		name = abindia_mission.28.b
+		add_country_modifier = {
+			name = dgl_burmese_conquest
+			duration = 7300
+		}
+		add_accepted_culture = mon
+		custom_tooltip = abindia_mission.28.tooltip
+		hidden_effect = {
+			every_country = {
+				limit = {
+					NOT = { total_development = 100 }
+					capital_scope = { region = burma_region }
+				}
+				create_subject = {
+					subject_type = tributary_state
+					subject = THIS
+				}
+			}
+			if = {
+				limit = {
+					exists = TAU
+				}
+				create_march = TAU
+				1815 = {
+					cede_province = TAU
+					add_core = TAU
+				}
+				4399 = {
+					cede_province = TAU
+					add_core = TAU
+				}
+				2403 = {
+					cede_province = TAU
+					add_core = TAU
+				}
+				every_province = {
+					limit = {
+						region = burma_region
+						NOT = { owned_by = ROOT }
+					}
+					add_core = TAU
+				}
+				TAU = { override_country_name = BURMA_VASSAL_RENAME }
+			}
+			else = {
+				1815 = {
+					add_core = TAU
+				}
+				4399 = {
+					add_core = TAU
+				}
+				2403 = {
+					add_core = TAU
+				}
+				586 = {
+					remove_core = TAU
+				}
+				590 = {
+					remove_core = TAU
+				}
+				create_vassal = TAU
+				create_march = TAU
+				every_province = {
+					limit = {
+						region = burma_region
+						NOT = { owned_by = ROOT }
+					}
+					add_core = TAU
+				}
+				TAU = { override_country_name = BURMA_VASSAL_RENAME }
+			}
+		}
+	}
+}
+
+country_event = {	#Maldives dominates SEA
+	id = abindia_mission.29
+	title = abindia_mission.29.t
+	desc = abindia_mission.29.d
+	picture = ABINDIA_SEASIA_MAP_eventPicture
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = abindia_mission.29.a
+		add_splendor = 100
+		add_prestige = 25
+		add_years_of_income = 1
+		add_power_projection = {
+			type = mission_rewards_power_projection
+			amount = 15
+		}
+		change_adm = 1
+		change_dip = 1
+		change_mil = 1
+		capital_scope = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+	}
+}

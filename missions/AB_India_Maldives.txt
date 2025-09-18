@@ -1916,33 +1916,297 @@ abi_maldives_fourth = {
 			pirate_sumatran_puppets
 			palk_strait_toll
 		}
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 539
+				province_id = 540
+				province_id = 4418
+				area = west_bengal_area
+				area = east_bengal_area
+				province_id = 2038
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 
-		trigger = {  } 
+		trigger = {
+			owns_or_non_sovereign_subject_of = 539
+			owns_or_non_sovereign_subject_of = 540
+			owns_or_non_sovereign_subject_of = 4418
+			OR = {
+				NEL = { is_subject_of = ROOT }
+				NOT = { exists = NEL }
+			}
+			OR = {
+				PUL = { is_subject_of = ROOT }
+				NOT = { exists = PUL }
+				num_of_owned_provinces_with = {
+					value = 4
+					OR = {
+						area = west_bengal_area
+						area = east_bengal_area
+						province_id = 2038
+					}
+				}
+				1343 = {
+					trade_share = {
+						country = ROOT
+						share = 15
+					}
+				}
+				navy_size = BNG
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			custom_tooltip = DGL_around_bengal_bay.tooltip
+			if = {
+				limit = {
+					PUL = { is_subject_of = ROOT }
+				}
+				inherit = PUL
+			}
+			else_if = {
+				limit = {
+					NOT = { exists = PUL }
+				}
+				add_dip_power = 50
+			}
+			
+			if = {
+				limit = {
+					NEL = { is_subject_of = ROOT }
+				}
+				inherit = NEL
+			}
+			else_if = {
+				limit = {
+					NOT = { exists = NEL }
+				}
+				add_dip_power = 50
+			}
+			
+			west_bengal_area = { add_permanent_claim = ROOT }
+			east_bengal_area = { add_permanent_claim = ROOT }
+			add_navy_tradition = 10
+			add_country_modifier = {
+				name = maldives_influence_in_bengal
+				duration = 5475
+			}
+		}
 	}
 
 	DGL_sailing_the_delta = {
 		icon = mission_unite_bengal
 		position = 8
 		required_missions = { DGL_around_bengal_bay } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				area = east_bengal_area
+				area = west_bengal_area
+				area = north_bengal_area
+				area = gaur_area
+				province_id = 568
+				province_id = 2038
+				province_id = 2043
+				province_id = 2096
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 
-		trigger = {  } 
+		trigger = {
+			west_bengal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_bengal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_bengal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			gaur_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns_or_non_sovereign_subject_of = 568
+			owns_or_non_sovereign_subject_of = 2038
+			owns_or_non_sovereign_subject_of = 2043
+			owns_or_non_sovereign_subject_of = 2096
+			4477 = {
+				owned_by = ROOT
+				fort_level = 2
+				development = 18
+				province_has_center_of_trade_of_level = 2
+			}
+			564 = {
+				owned_by = ROOT
+				fort_level = 2
+				development = 18
+				province_has_center_of_trade_of_level = 2
+			}
+			561 = {
+				owned_by = ROOT
+				fort_level = 2
+				development = 18
+				province_has_center_of_trade_of_level = 2
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			every_province = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					region = bengal_region
+				}
+				add_permanent_claim = ROOT
+			}
+			add_prestige = 20
+			add_navy_tradition = 10
+			add_republican_tradition = 10
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+			4477 = {
+				add_province_modifier = {
+					name = strategic_pirate_ganges_port
+					duration = -1
+				}
+			}
+			564 = {
+				add_province_modifier = {
+					name = strategic_pirate_ganges_port
+					duration = -1
+				}
+			}
+			561 = {
+				add_province_modifier = {
+					name = strategic_pirate_ganges_port
+					duration = -1
+				}
+			}
+			add_permanent_claim = 579
+			add_permanent_claim = 2402
+			custom_tooltip = DGL_sailing_the_delta.tooltip
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						has_port = yes
+						region = coromandel_region
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			add_accepted_culture = bengali
+			define_conquistador = {
+				shock = 5
+				fire = 4
+				manuever = 5
+				siege = 2
+			}
+		}
 	}
 
 	DGL_vassalize_east_india = {
 		icon = mission_conquer_andhra_vij
 		position = 9
 		required_missions = { DGL_sailing_the_delta } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				area = andhra_area
+				area = north_carnatic_area
+				area = south_carnatic_area
+				province_id = 552
+				province_id = 4441
+				province_id = 2090
+				province_id = 4423
+				province_id = 542
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 
-		trigger = {  } 
+		trigger = {
+			andhra_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_carnatic_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_carnatic_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns_or_non_sovereign_subject_of = 552
+			owns_or_non_sovereign_subject_of = 4441
+			owns_or_non_sovereign_subject_of = 2090
+			owns_or_non_sovereign_subject_of = 4423
+			543 = {
+				owned_by = ROOT
+				province_has_center_of_trade_of_level = 2
+				development = 25
+				has_road_building_trigger = yes
+				has_production_building_trigger = yes
+				has_trade_building_trigger = yes
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			add_accepted_culture = telegu
+			543 = { remove_core = GOC }
+			5221 = { add_core = GOC }
+			5222 = { add_core = GOC }
+			add_country_modifier = {
+				name = pacifying_tamil_lands
+				duration = 5475
+			}
+			custom_tooltip = DGL_vassalize_east_india.tooltip1
+			hidden_effect = {
+				every_province = {
+					limit = {
+						OR = {
+							region = burma_region
+							region = malaya_region
+						}
+						NOT = { owned_by = ROOT }
+						has_port = yes
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			custom_tooltip = DGL_vassalize_east_india.tooltip2
+			hidden_effect = {
+				if = {
+					limit = {
+						542 = { owned_by = ROOT }
+					}
+					create_march = GOC
+					542 = {
+						add_base_tax = 2
+						add_base_production = 2
+						add_base_manpower = 2
+					}
+					add_years_of_income = 2
+					add_splendor = 100
+					every_province = {
+						limit = {
+							region = deccan_region
+							NOT = { owned_by = ROOT }
+						}
+						add_permanent_claim = GOC
+					}
+					542 = {
+						add_great_project_tier = {
+							type = golconda_mine
+							tier = 1
+						}
+					}
+				}
+			}
+		}
 	}
 
 	DGL_follow_chola = {
@@ -1952,33 +2216,235 @@ abi_maldives_fourth = {
 			DGL_vassalize_east_india
 			DGL_develop_cocos
 		}
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				region = burma_region
+				region = malaya_region
+			}
+			has_port = yes
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			OR = {
+				government_rank = 3
+				is_great_power = yes
+			}
+			owns = 1815
+			owns = 4399
+			owns = 586
+			owns = 590
+			owns = 2403
+			OR = {
+				owns = 4815
+				owns = 2686
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 40
+				OR = {
+					region = burma_region
+					region = malaya_region
+				}
+				has_port = yes
+			}
+		}
 
-		trigger = {  } 
-
-		effect = {  } 
+		effect = {
+			add_splendor = 100
+			add_prestige = 20
+			add_republican_tradition = 20
+			#Jolly Crescent outshines Tamil Tiger
+			country_event = {
+				id = abindia_mission.27
+				days = 1
+			}
+			#Intentions towards Burma
+			country_event = {
+				id = abindia_mission.28
+				days = 1
+			}
+		}
 	}
 
 	DGL_malacca_piracy = {
 		icon = mission_sail_to_the_east_indies
 		position = 11
 		required_missions = { DGL_follow_chola } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				region = malaya_region
+				region = indonesia_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 
-		trigger = {  } 
+		trigger = {
+			4815 = {
+				owned_by = ROOT
+				development = 30
+				has_tax_building_trigger = yes
+				has_road_building_trigger = yes
+				has_production_building_trigger = yes
+				has_trade_building_trigger = yes
+				fort_level = 3
+				OR = {
+					has_building = shipyard
+					has_building = grand_shipyard
+				}
+				infantry_in_province = 20
+				artillery_in_province = 5
+			}
+			num_of_owned_provinces_with = {
+				value = 8
+				province_has_center_of_trade_of_level = 1
+				has_trade_building_trigger = yes
+				development = 15
+				OR = {
+					region = malaya_region
+					region = indonesia_region
+				}
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 60
+				OR = {
+					region = malaya_region
+					region = indonesia_region
+				}
+			}
+			1361 = {
+				has_trader = ROOT
+				OR = {
+					has_privateer_share_in_trade_node = {
+						who = ROOT
+						share = 40
+					}
+					trade_share = {
+						country = ROOT
+						share = 60
+					}
+				}
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			add_country_modifier = {
+				name = dgl_quest_for_moluccas
+				duration = 10950
+			}
+			custom_tooltip = DGL_malacca_piracy.tooltip
+			hidden_effect = {
+				every_province = {
+					limit = {
+						region = moluccas_region
+						is_city = yes
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			country_event = { #Pirate domination in SEA
+				id = abindia_mission.29
+				days = 1
+			}
+			4815 = {
+				center_of_trade = 1
+				change_culture = ROOT
+				change_religion = ROOT
+				add_province_modifier = {
+					name = pirate_stronghold_singapore
+					duration = -1
+				}
+				change_trade_goods = dyes
+			}
+		}
 	}
 
 	DGL_dominate_moluccas = {
 		icon = mission_mnd_maj_cloves
 		position = 12
 		required_missions = { DGL_malacca_piracy } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				area = timor_area
+				area = makassar_area
+				area = sulawesi_area
+				area = south_sulawesi_area
+				area = mindanao_area
+				area = spice_islands_area
+				area = molluca_area
+				area = vogelkop_area
+				area = papua_area
+			}
+			NOT = { owned_by = ROOT }
+		}
 
-		trigger = {  } 
+		trigger = {
+			owns_all_provinces = {
+				OR = {
+					area = timor_area
+					area = makassar_area
+					area = sulawesi_area
+					area = south_sulawesi_area
+					area = mindanao_area
+					area = spice_islands_area
+					area = molluca_area
+					area = vogelkop_area
+					area = papua_area
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 25
+				region = moluccas_region
+				development = 12
+				has_production_building_trigger = yes
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			666 = { add_permanent_claim = ROOT }
+			668 = { add_permanent_claim = ROOT }
+			738 = { add_permanent_claim = ROOT }
+			2160 = { add_permanent_claim = ROOT }
+			5106 = { add_permanent_claim = ROOT }
+			custom_tooltip = DGL_dominate_moluccas.tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						region = moluccas_region
+					}
+					add_base_production = 1
+				}
+				633 = { change_trade_goods = cloves }
+				635 = { change_trade_goods = sugar }
+				641 = { change_trade_goods = cloth }
+				643 = { change_trade_goods = tea }
+				644 = { change_trade_goods = spices }
+				645 = { change_trade_goods = spices }
+				646 = { change_trade_goods = cloves }
+				647 = { change_trade_goods = cloves }
+				648 = { change_trade_goods = cloves }
+				1237 = { change_trade_goods = spices }
+				1245 = { change_trade_goods = spices }
+				2695 = { change_trade_goods = naval_supplies }
+				2696 = { change_trade_goods = tropical_wood }
+				2701 = { change_trade_goods = cloves }
+				2713 = { change_trade_goods = naval_supplies }
+				2714 = { change_trade_goods = chinaware }
+				2717 = { change_trade_goods = incense }
+				2718 = { change_trade_goods = spices }
+				2721 = { change_trade_goods = dyes }
+				2722 = { change_trade_goods = tea }
+				2723 = { change_trade_goods = tropical_wood }
+				2724 = { change_trade_goods = cloves }
+				2725 = { change_trade_goods = gems }
+				4355 = { change_trade_goods = tropical_wood }
+				4795 = { change_trade_goods = cloves }
+				4796 = { change_trade_goods = gems }
+				4845 = { change_trade_goods = tropical_wood }
+			}
+			647 = { center_of_trade = 1 }
+			649 = { center_of_trade = 1 }
+			2721 = { center_of_trade = 1 }
+		}
 	}
 }
 abi_maldives_fifth = {

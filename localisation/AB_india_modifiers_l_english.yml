@@ -293,6 +293,18 @@
  desc_DGL_pirate_marines:0 "Go pirate boy, go!"
  DGL_allow_port_pillaging:0 "§VPirate Raids on Coastal Ports§!"
  desc_DGL_allow_port_pillaging:0 "§OWhile this modifier is active, sieging down§! §Jany coastal province with at least 15 development§! §Owill grant§! §T15 monarch points £adm£ £dip£ £mil£, 3 prestige, 10 splendor, 1 republican tradition§! §Oand§! §T100 ¤§! §Obut in exchange the province will gain§! §R75 devastation, lose all trade, production, tax, government, port building§! §Oand lose§! §R2 of each development!§! §OThis mechanic works only for provinces that hasn't suffered such raid in§! §Y5 years§! §O.§!"
+ maldives_influence_in_bengal:0 "Influence Over Bengal Trade"
+ desc_maldives_influence_in_bengal:0 "Our presence in Bengal markets has grown stronger."
+ strategic_pirate_ganges_port:0 "Ganges Estuary Pirate Stronghold"
+ desc_strategic_pirate_ganges_port:0 "This is a stronghold of pirate republic that serves both as trade hub to channel goods coming from the region, as well as fortress to extort control over nearby population."
+ pacifying_tamil_lands:0 "Pacifying Dravidian Realm"
+ desc_pacifying_tamil_lands:0 "Increased effort is being put to subdue and integrate recently acquired territory in Coromandel."
+ dgl_burmese_conquest:0 "Burmese Conquest"
+ desc_dgl_burmese_conquest:0 "We have a goal on dominating region of Burma."
+ dgl_quest_for_moluccas:0 "Quest for the Moluccas"
+ desc_dgl_quest_for_moluccas:0 "Our goal is to either colonize or conquer spice islands of Moluccas and our men are eager to do so."
+ pirate_stronghold_singapore:0 "Pirate Stronghold of Singapore"
+ desc_pirate_stronghold_singapore:0 "The great pirate heaven of Singapore is the most developed and most powerful pirate base in Indochina. From there, pirate spread their dominance over all seas around Indonesia."
  
  #Lhasa flavour
  lha_struggle_for_tibet:0 "The Struggle for Tibet"

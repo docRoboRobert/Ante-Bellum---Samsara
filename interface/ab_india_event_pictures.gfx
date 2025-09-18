@@ -35,4 +35,22 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/event_pictures_indiasub/ABindia_trapezoidal_trade_eventPicture.dds"
 		allwaystransparent = yes
 	}
+	
+	spriteType = {
+		name = "ABINDIA_CHOLA_MAP_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/ABindia_chola_map_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "ABINDIA_JOLLY_CRESCENT_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/ABindia_jolly_crescent_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "ABINDIA_SEASIA_MAP_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/ABindia_seasia_map_eventPicture.dds"
+		allwaystransparent = yes
+	}
 }

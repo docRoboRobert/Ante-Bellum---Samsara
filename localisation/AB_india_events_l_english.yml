@@ -252,6 +252,17 @@
  abindia_mission.26.a:0 "They were our great scourge and they shall be punished!"
  abindia_mission.26.tooltip:0 "§YEvery province in Saurashtra, Ahmedabad and Patan Areas, owned by us or our subject, will be razed and looted to the ground. All target provinces will§! §Rgain 90 devastation and have their development flattened.§!"
  abindia_mission.26.b:0 "But the economy! Anything for the economy!"
+ abindia_mission.27.t:0 "Jolly Crescent outshines Tamil Tiger"
+ abindia_mission.27.d:0 "The rapid maritime expansion has led Maldive Pirate state to rapidly expand along the Bay of Bengal and consequently expand into all lands once owned by the great Chola Empire. Unlike Cholas that eventually declined, pirate state shows no signs of slowdown. In fact, the might of pirate kings has greatly surpassed that of Chola, leading to formation of even greater empire than Tamil Tigers could've dreamt of! Set on its course to dominate the rest of Southeast Asia, the era of Tamil Guids domination fades into distant past. Now the Jolly Roger flies above all of Indies' waters!"
+ abindia_mission.27.a:0 "The old empires belong to the past"
+ abindia_mission.28.t:0 "Setting Course for Burma"
+ abindia_mission.28.d:0 "Having conquered all of Bengal Bay' coastline, we have landed in Irrawaddy eastuary - a gateway to rich but tropical lands of Burma. Subjugating this fertile region will bring us great wealth and ensure even steadier flow of exotic goods. The kings that rule this region also understand those intentions and know how powerful we've become. The question shall be not 'when' but 'how' are we going to dominate Burma?"
+ abindia_mission.28.a:0 "Direct control will ensure maximum profits"
+ abindia_mission.28.b:0 "Set puppet king and demand local submission"
+ abindia_mission.28.tooltip:0 "§YRelease @TAU Taungu nation in Lower Burma as a puppet state of our empire. We will retain the control of strategic provinces of§! §PPegu§! §Yand§! §PMartaban§!§Y. The newly established puppet kingdom will be known as§! §MBurma§!§Y. The nation will receive§! §GCores§! §Yon every province in§! §MBurma Region§! §Ythat we don't own already.§! \n§MEvery other nation with capital in§! §YBurma Region§! §Mand less than§! §O100 development§! §Mwill become our tributary state out of fear.§!"
+ abindia_mission.29.t:0 "Pirate Republic Dominates Southeast Asia"
+ abindia_mission.29.d:0 "Pirates from Maldives have secured Straits of Johor and established themselves deep within Indonesia region. Their presence and power in undoubted. With that, it appears that every bit of the coastline from Coromandel to Indochina is within possession of Maldives. The total rule over Southeast Asian seas and ports gives complete control to the pirates, which now can dictate prices and terms on which highly-desired goods are shipped west. \nThe captains are already planning their next move. With control over Malacca, they can now turn their eyes to spice islands in Moluccas, and seize the last and prime source of rare goods. This will truly complete their grand campaign."
+ abindia_mission.29.a:0 "Onwards, Stardust Crusaders. Towards the stars!"
  
  #Flavour for Sri Lanka
  abindia_lankan_event.1.t:0 "Looming Upheaval"

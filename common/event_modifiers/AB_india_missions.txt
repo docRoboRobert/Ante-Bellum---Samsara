@@ -659,3 +659,53 @@ DGL_pirate_marines = {
 DGL_allow_port_pillaging = {
 	recover_army_morale_speed = 0.05
 }
+
+maldives_influence_in_bengal = {
+	ship_power_propagation = 0.1
+	placed_merchant_power = 3
+}
+
+strategic_pirate_ganges_port = {
+	trade_goods_size = 1
+	province_trade_power_value = 10
+	min_local_autonomy = -10
+	allowed_num_of_buildings = 1
+	local_institution_spread = 0.2
+	local_defensiveness = 0.15
+	supply_limit_modifier = 0.15
+}
+
+pacifying_tamil_lands = {
+	overextension_impact_modifier = -0.1
+	global_rebel_suppression_efficiency = -0.2
+	core_creation = -0.05
+}
+
+dgl_burmese_conquest = {
+	num_accepted_cultures = 2
+	diplomatic_upkeep = 1
+}
+
+dgl_quest_for_moluccas = {
+	global_colonial_growth = 10
+	native_uprising_chance = -0.25
+	naval_morale = 0.05
+	transport_attrition = -0.2
+}
+
+pirate_stronghold_singapore = {
+	allowed_num_of_manufactories = 1
+	local_monthly_devastation = -0.25
+	local_institution_spread = 0.33
+	trade_value = 2
+	province_trade_power_modifier = 0.1
+	block_slave_raid = yes
+	local_own_coast_naval_combat_bonus = 1
+	supply_limit_modifier = 0.2
+	local_garrison_size = 0.25
+	local_defender_dice_roll_bonus = 1
+	local_defensiveness = 0.2
+	hostile_disembark_speed = 0.5
+	local_ship_repair = 0.2
+	local_development_cost = -0.15
+}
