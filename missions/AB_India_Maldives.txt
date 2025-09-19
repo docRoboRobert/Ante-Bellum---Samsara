@@ -2584,11 +2584,45 @@ abi_maldives_fifth = {
 		icon = mission_dominate_trade_in_aden
 		position = 6
 		required_missions = { sieze_socotra_outpost } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				region = arabia_region
+				province_id = 1212
+				province_id = 2786
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 
-		trigger = {  } 
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				region = arabia_region
+				has_port = yes
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 15
+				region = arabia_region
+			}
+			owns = 387
+			owns = 388
+			owns = 4283
+			owns_or_non_sovereign_subject_of = 1212
+			owns_or_non_sovereign_subject_of = 2786
+		}
 
-		effect = {  } 
+		effect = {
+			add_permanent_claim = 2793
+			add_permanent_claim = 1209
+			add_permanent_claim = 2790
+			add_permanent_claim = 2789
+			add_permanent_claim = 2788
+			oman_area = { add_permanent_claim = ROOT }
+			dhofar_area = { add_permanent_claim = ROOT }
+			add_country_modifier = {
+				name = dgl_arabian_expedition
+				duration = 7300
+			}
+		}
 	}
 
 	DGL_oman_and_turical_states = {
@@ -2598,43 +2632,310 @@ abi_maldives_fifth = {
 			DGL_land_in_arabia
 			DGL_end_hormuz
 		}
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				area = bahrain_area
+				area = pirate_coast_area
+				area = oman_area
+				area = mascat_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 
-		trigger = {  } 
+		trigger = {
+			bahrain_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			pirate_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			oman_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			mascat_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			394 = { development = 20 }
+			400 = { development = 20 }
+		}
 
-		effect = {  } 
+		effect = {
+			custom_tooltip = DGL_oman_and_turical_states.tooltip
+			hidden_effect = {
+				if = {
+					limit = {
+						OMA = { is_subject_of = ROOT }
+					}
+					add_dip_power = 50
+					add_adm_power = 50
+					create_march = OMA
+					OMA = {
+						change_government = republic
+						add_government_reform = pirate_republic_reform
+					}
+					404 = {
+						cede_province = OMA
+						add_core = OMA
+					}
+					397 = {
+						cede_province = OMA
+						add_core = OMA
+					}
+					404 = {
+						cede_province = OMA
+						add_core = OMA
+					}
+					2333 = {
+						cede_province = OMA
+						add_core = OMA
+					}
+					398 = {
+						cede_province = OMA
+						add_core = OMA
+					}
+					4286 = {
+						cede_province = OMA
+						add_core = OMA
+					}
+					399 = {
+						cede_province = OMA
+						add_core = OMA
+					}
+					395 = {
+						cede_province = OMA
+						add_core = OMA
+					}
+					2347 = {
+						cede_province = OMA
+						add_core = OMA
+					}
+					394 = {
+						cede_province = OMA
+						add_core = OMA
+					}
+					2340 = {
+						cede_province = OMA
+						add_core = OMA
+					}
+				}
+				else = {
+					add_adm_power = 100
+					add_dip_power = 100
+					add_stability = 1
+					add_manpower = 15
+					add_sailors = 5000
+				}
+				every_province = {
+					limit = {
+						region = arabia_region
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			add_country_modifier = {
+				name = dgl_arabian_conquest
+				duration = 7300
+			}
+		}
 	}
 
 	DGL_arabian_mission = {
 		icon = geo_crade_of_civilization
 		position = 8
 		required_missions = { DGL_oman_and_turical_states } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			region = arabia_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 
-		trigger = {  } 
+		trigger = {
+			owns_core_province = 385
+			owns_core_province = 2331
+			owns_core_province = 384
+			owns_all_provinces = {
+				region = arabia_region
+			}
+			385 = {
+				has_great_project = {
+					type = any
+					tier = 2
+				}
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			add_country_modifier = {
+				name = dgl_religious_authority
+				duration = -1
+			}
+			add_stability = 2
+			add_prestige = 50
+			add_corruption = -2
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 25
+			}
+			add_permanent_claim = 2315
+			add_permanent_claim = 4316
+			add_permanent_claim = 408
+			add_permanent_claim = 431
+			add_permanent_claim = 410
+		}
 	}
 
 	DGL_vassalize_burma = {
 		icon = mission_conquer_lower_burma_tau
 		position = 11
 		required_missions = { DGL_follow_chola } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			region = burma_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 
-		trigger = {  } 
+		trigger = {
+			burma_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			586 = {
+				development = 25
+				has_great_project = {
+					type = any
+					tier = 2
+				}
+				province_has_center_of_trade_of_level = 2
+				has_manufactory_trigger = yes
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			add_adm_power = 100
+			add_dip_power = 50
+			add_mil_power = 50
+			custom_tooltip = DGL_vassalize_burma.tooltip
+			hidden_effect = {
+				every_province = {
+					limit = {
+						region = indo_china_region
+						has_port = yes
+					}
+					add_permanent_claim = ROOT
+				}
+				589 = {
+					add_permanent_claim = ROOT
+					owner = {
+						reverse_add_casus_belli = {
+							target = ROOT
+							type = cb_vassalize_mission
+							months = 120
+						}
+					}
+				}
+				600 = {
+					add_permanent_claim = ROOT
+					owner = {
+						reverse_add_casus_belli = {
+							target = ROOT
+							type = cb_vassalize_mission
+							months = 120
+						}
+					}
+				}
+				614 = {
+					add_permanent_claim = ROOT
+					owner = {
+						reverse_add_casus_belli = {
+							target = ROOT
+							type = cb_vassalize_mission
+							months = 120
+						}
+					}
+				}
+				2380 = {
+					add_permanent_claim = ROOT
+					owner = {
+						reverse_add_casus_belli = {
+							target = ROOT
+							type = cb_vassalize_mission
+							months = 120
+						}
+					}
+				}
+			}
+		}
 	}
 
 	DGL_indochina_expansion = {
 		icon = mission_rule_indochina
 		position = 12
 		required_missions = { DGL_vassalize_burma } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			region = indo_china_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 
-		trigger = {  } 
+		trigger = {
+			owns_core_province = 4831
+			owns_core_province = 2376
+			owns_core_province = 1022
+			num_of_owned_provinces_with = {
+				value = 10
+				region = indo_china_region
+				has_port = yes
+				development = 15
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 50
+				region = indo_china_region
+			}
+			4831 = {
+				development = 25
+				fort_level = 3
+				has_production_building_trigger = yes
+				has_tax_building_trigger = yes
+				has_trade_building_trigger = yes
+				has_road_building_trigger = yes
+				OR = {
+					has_building = shipyard
+					has_building = grand_shipyard
+				}
+				has_great_project = {
+					type = any
+					tier = 1
+				}
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			custom_tooltip = DGL_indochina_expansion.tooltip
+			hidden_effect = {
+				4831 = {
+					add_devastation = -100
+					add_prosperity = 100
+					add_permanent_province_modifier = {
+						name = growth_of_bangkok_city
+						duration = -1
+					}
+					change_trade_goods = paper
+					center_of_trade = 1
+				}
+			}
+			1022 = {
+				add_province_modifier = {
+					name = indochina_pirate_stronghold
+					duration = -1
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			add_prestige = 25
+			add_republican_tradition = 10
+			667 = { add_permanent_claim = ROOT }
+		}
 	}
 }

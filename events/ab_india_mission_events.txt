@@ -1496,6 +1496,18 @@ country_event = {	#Pirate intentions towards Burma
 
 	is_triggered_only = yes
 	
+	immediate = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					NOT = { total_development = 100 }
+					capital_scope = { region = burma_region }
+				}
+				save_event_target_as = target_valid_tributary
+			}
+		}
+	}
+	
 	option = { #Conquer it all directly
 		name = abindia_mission.28.a
 		burma_region = {
@@ -1518,15 +1530,9 @@ country_event = {	#Pirate intentions towards Burma
 		add_accepted_culture = mon
 		custom_tooltip = abindia_mission.28.tooltip
 		hidden_effect = {
-			every_country = {
-				limit = {
-					NOT = { total_development = 100 }
-					capital_scope = { region = burma_region }
-				}
-				create_subject = {
-					subject_type = tributary_state
-					subject = THIS
-				}
+			create_subject = {
+				subject_type = tributary_state
+				subject = event_target:target_valid_tributary
 			}
 			if = {
 				limit = {
@@ -1599,6 +1605,7 @@ country_event = {	#Maldives dominates SEA
 		name = abindia_mission.29.a
 		add_splendor = 100
 		add_prestige = 25
+		add_dip_power = 100
 		add_years_of_income = 1
 		add_power_projection = {
 			type = mission_rewards_power_projection

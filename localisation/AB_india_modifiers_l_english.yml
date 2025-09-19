@@ -305,6 +305,16 @@
  desc_dgl_quest_for_moluccas:0 "Our goal is to either colonize or conquer spice islands of Moluccas and our men are eager to do so."
  pirate_stronghold_singapore:0 "Pirate Stronghold of Singapore"
  desc_pirate_stronghold_singapore:0 "The great pirate heaven of Singapore is the most developed and most powerful pirate base in Indochina. From there, pirate spread their dominance over all seas around Indonesia."
+ growth_of_bangkok_city:0 "Growth of Bangkok City"
+ desc_growth_of_bangkok_city:0 "City of Bangkok used to be a small port under Ayutthaya dynasty but now it has grown to become one of the biggest and most bustling ports of Indochina."
+ indochina_pirate_stronghold:0 "Pirate Stronghold of Da Nang"
+ desc_indochina_pirate_stronghold:0 "With the Maldive expansion in Indochina, ports around Da Nang have become pirate-controlled fortress. Powerful naval base is used by pirates as a beacon to control the region and adjacant seas."
+ dgl_arabian_expedition:0 "Pirate Expedition to Arabia"
+ desc_dgl_arabian_expedition:0 "We have set our eyes on the lands in Arabia. Vastly different landscape forces us to adapt our tactics to desert climate."
+ dgl_arabian_conquest:0 "Expansion Into Arabia"
+ desc_dgl_arabian_conquest:0 "Our goal is to conquer all of Arabian tribes."
+ dgl_religious_authority:0 "Control of Muslim Holy Sites"
+ desc_dgl_religious_authority:0 "We are in control of all Muslim holy sites in Arabia. Our great religious authority influences our subjects of the same faith."
  
  #Lhasa flavour
  lha_struggle_for_tibet:0 "The Struggle for Tibet"
