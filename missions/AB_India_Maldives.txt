@@ -1132,17 +1132,72 @@ abi_maldives_third = {
 		}
 
 		trigger = {
-			4410 = { has_province_modifier = slaves_raided } 
-			537 = { has_province_modifier = slaves_raided } 
-			5286 = { has_province_modifier = slaves_raided } 
-			535 = { has_province_modifier = slaves_raided } 
-			534 = { has_province_modifier = slaves_raided } 
-			4413 = { has_province_modifier = slaves_raided } 
-			2029 = { has_province_modifier = slaves_raided } 
-			5299 = { has_province_modifier = slaves_raided } 
-			531 = { has_province_modifier = slaves_raided } 
-			4427 = { has_province_modifier = slaves_raided } 
-			2030 = { has_province_modifier = slaves_raided } 
+			4410 = {
+				OR = {
+					has_province_modifier = slaves_raided
+					owned_by = ROOT
+				}
+			}
+			537 = {
+				OR = {
+					has_province_modifier = slaves_raided
+					owned_by = ROOT
+				}
+			}
+			5286 = {
+				OR = {
+					has_province_modifier = slaves_raided
+					owned_by = ROOT
+				}
+			}
+			535 = {
+				OR = {
+					has_province_modifier = slaves_raided
+					owned_by = ROOT
+				}
+			}
+			534 = {
+				OR = {
+					has_province_modifier = slaves_raided
+					owned_by = ROOT
+				}
+			}
+			4413 = {
+				OR = {
+					has_province_modifier = slaves_raided
+					owned_by = ROOT
+				}
+			}
+			2029 = {
+				OR = {
+					has_province_modifier = slaves_raided
+					owned_by = ROOT
+				}
+			}
+			5299 = {
+				OR = {
+					has_province_modifier = slaves_raided
+					owned_by = ROOT
+				}
+			}
+			531 = {
+				OR = {
+					has_province_modifier = slaves_raided
+					owned_by = ROOT
+				}
+			}
+			4427 = {
+				OR = {
+					has_province_modifier = slaves_raided
+					owned_by = ROOT
+				}
+			}
+			2030 = {
+				OR = {
+					has_province_modifier = slaves_raided
+					owned_by = ROOT
+				}
+			}
 			calc_true_if = {
 				all_province = {
 					has_port = yes
