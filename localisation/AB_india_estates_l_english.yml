@@ -1,4 +1,5 @@
 ﻿l_english:
+ #Estate Tamil Guilds
  estate_tamil_guilds:0 "Tamil Guilds"
  estate_tamil_guilds_desc:0 "Tamil Guilds are present throughout all of Tamil Nandu region but their influence streatches much further. For centuries, they have been a dominant merchant caste in all of Coromandel, amassing great wealth from commerce. Tamils have found many guilds, on the coast and in central lands, focused on exchanging and producting exotic goods that are then shipped west, towards the Middle East. Naval and economic strength the Tamil guilds hold over the region, allowed them to elevate themselves above lower merchants and establish themselves as commercial and political powerhouse that must be reckoned with."
  
@@ -6,11 +7,12 @@
  
  tamil_guilds_loyalty_modifier:0 "Tamil Guilds Loyalty Equilibrium"
  tamil_guilds_influence_modifier:0 "Tamil Guilds Influence"
+ tamil_guilds_privilege_slots:0 "Tamil Guild Privilege Slots"
  
  EST_VAL_HIGH_TRADE_INCOME_TAMIL:0 "Over 50% of income coming from trade"
  EST_VAL_SUPER_TRADE_INCOME_TAMIL:0 "Over 75% of income coming from trade"
  EST_VAL_INCOMPETENT_RULER_TAMIL:0 "Incompetent diplomatic and administrative ruler"
- EST_MANY_LOANS_TAMIL:0 "10 active loans"
+ EST_MANY_LOANS_TAMIL:0 "At least 10 active loans"
  EST_MANY_BIG_PROVINCES_TAMIL:0 "5 coastal provinces with 25+ development"
  EST_MANY_MEGA_PROVINCES_TAMIL:0 "5 coastal provinces with 35+ development"
  EST_MANY_PORTS_TAMIL:0 "Owns over 20 ports"
@@ -41,7 +43,46 @@
  estate_tamil_guilds_accomodate_in_cities_desc:0 "Granting Tamils a real estate in all our large, developed towns will greatly improve their productivity and prosperity. Tamil Guilds will be granted free land within all our large cities and free reign to expand their business within them. Despite improving our towns, this edict may upset other merchants who already established themselves in the towns and it can also loosen our direct control over those settlements."
  estate_tamil_guilds_accomodate_in_cities_tooltip:0 "Every owned province with at least §G15§! §YDevelopment§! will gain the following modifier: (§Vupdated yearly!§!)"
  
+ #
+ #Estate Mitnachal Mizrahi
+ estate_mizrahi_jews:0 "Mitnachal Mizrahi"
+ estate_mizrahi_jews_desc:0 "The term, which translates from Hebrew to 'Eastern Settler', refers to entirety of Jewish diaspora present in Western Asia, especially in regions of Arabia, Persia and India. Mizrahi Jews include all types of Jewish minorities composed of exiles, settlers, merchants and converts, that are located east of Canaan. As a result of few great eastward migrations, most of Mizrahi Jews have settled in Western India, which became their new promised land and where they established actual colonies. The most successful diaspora - in Baruch, has managed to build robust social structure and colonial enterprise, although smaller communities of Mitnachal Mizrahi can be found in Persia - especially on the coast, and few smaller ones inhabit Southeast Arabia."
  
+ estate_mizrahi_jews_ownership:0 "Mitnachal Mizrahi Land Ownership"
+ 
+ mizrahi_jews_loyalty_modifier:0 "Mitnachal Mizrahi Loyalty Equilibrium"
+ mizrahi_jews_influence_modifier:0 "Mitnachal Mizrahi Influence"
+ mizrahi_jews_privilege_slots:0 "Mitnachal Mizrahi Privilege Slots"
+ 
+ EST_VAL_HIGH_TRADE_INCOME_MIZRAHI_JEWS:0 "Over 50% of income coming from trade"
+ EST_VAL_IS_REPUBLIC_MIZRAHI_JEWS:0 "Government type - Republic"
+ EST_VAL_LOW_JEWISH_FRACTION_MIZRAHI:0 "Non-Jewish nation with >10% Jewish provinces"
+ EST_VAL_SIZEABLE_JEWISH_FRACTION_MIZRAHI:0 "Non-Jewish nation with >20% Jewish provinces"
+ EST_VAL_MODERATE_JEWISH_FRACTION_MIZRAHI:0 "Non-Jewish nation with >33% Jewish provinces"
+ EST_VAL_HIGH_JEWISH_FRACTION_MIZRAHI:0 "Non-Jewish nation with above half Jewish provinces"
+ EST_VAL_DOMINANT_JEWISH_FRACTION_MIZRAHI:0 "Non-Jewish nation with >75% Jewish provinces"
+ EST_VAL_ABSOLUTE_JEWISH_FRACTION_MIZRAHI:0 "Non-Jewish nation with >95% Jewish provinces"
+ EST_VAL_INCOMPETENT_RULER_MIZRAHI_JEWS:0 "Incompetent diplomatic and administrative ruler"
+ EST_INCAPABLE_ADM_RULER_MIZRAHI_JEWS:0 "Ruler inept in administrative skills"
+ EST_HAS_LOANS_MIZRAHI_JEWS:0 "Nation has loads"
+ EST_MANY_LOANS_MIZRAHI_JEWS:0 "At least 10 active loans"
+ EST_JEWISH_ADVISOR_EMPLOYED:0 "Non-Jewish nation employs Jewish advisor"
+ EST_VERY_LOW_JEWISH_TOLERANCE:0 "Below -2 tolerance for Jewish religion"
+ EST_LOW_JEWISH_TOLERANCE:0 "Negative tolerance for Jewish religion"
+ EST_HAS_JEWISH_TOLERANCE:0 "Positive tolerance for Jewish religion"
+ EST_HIGH_JEWISH_TOLERANCE:0 "Above 2 tolerance for Jewish religion"
+ EST_JEWISH_PRIMARY_RELIGION:0 "Is primary religion"
+ EST_MANY_COT_MIZRAHI:0 "7 small Centers of Trade"
+ EST_MANY_COT_2_MIZRAHI:0 "5 medium Centers of Trade"
+ EST_MANY_COT_3_MIZRAHI:0 "3 huge Centers of Trade"
+ EST_VAL_OWNS_JERUSALEM_MIZRAHI:0 "Owns Holy City of Jerusalem"
+ EST_VAL_IS_JEWISH_MIZRAHI:0 "Is primary religion"
+ EST_VAL_ADM_FOCUS_MIZRAHI:0 "Administrative Focus"
+ EST_VAL_HIGH_CHURCH_POWER_MIZRAHI:0 "Above 75 Faith Power"
+ EST_VAL_VERY_HIGH_CHURCH_POWER_MIZRAHI:0 "Above 100 Faith Power"
+ 
+ #
+ #Estate Hill Clans 
  estate_hill_clans:0 "Hill Clans"
  estate_hill_clans_desc:0 "Scattered across the towering Himalayas, the rugged highlands of Nepal and the surrounding hill regions have long been home to independent clans, each with its own traditions, warriors, and chieftains. These mountain folk are hardened by the elements, their resilience and discipline forged by the unforgiving terrain they call home. Though historically divided, their fierce martial culture and deep-rooted sense of loyalty make them an invaluable asset to our realm."
  estate_hill_clans_ownership:0 "Hill Clans Land Ownership"
@@ -83,6 +124,9 @@
  estate_hill_clans_himalayan_guerrillas_granted_tooltip:0 "Every owned province in the §YTibet§! region, §YNepal§!, §YBaisi Rajya§!, §YKashmir§! and §YHimalayan Hills§! areas will gain the following modifier:"
  estate_hill_clans_himalayan_guerrillas_granted_postwar_tooltip:0 "§RThis privilege will be revoked once we are at peace, and all provinces will lose the above modifier.§!\n"
  estate_hill_clans_guerrillas_influence:0 "Hill Clans Supported Our War Effort Directly: §Y$VAL$%§!"
+ 
+ #
+ #Estate Gya
  estate_gya:0 "Gya"
  estate_gya_desc:0 "The Gya are the people of the Middle Kingdom, heirs to a civilization that has endured for millennia. Though their lands have known war and upheaval, their traditions remain strong, adapting to new rulers and faiths without losing their core identity. Across the southern provinces, Vajrayana Buddhism has taken root, not as a foreign creed but as a guiding force interwoven with their daily lives. Their scholars have embraced Lhasan Tibetan as the language of governance and learning, though their own dialects remain distinct, shaped by generations of local heritage. With a history of administration and commerce unmatched in the known world, the Gya continue to serve as governors, traders, and scholars, ensuring the flow of wealth and order across the land. While some cling to the ways of the past, many see this era as one of renewal, a chance to build a society founded on stability and wisdom. As the Dharma spreads, so too does the influence of the Gya, their customs shaping the empire just as the empire reshapes them."
  gya_loyalty_modifier:0 "Gya Loyalty Equilibrium"

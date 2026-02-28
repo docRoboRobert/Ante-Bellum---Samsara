@@ -59,3 +59,219 @@ hind_restored_admin = {
 		same_culture_advisor_cost = -0.1
 	}
 }
+
+hind_empower_hindu = {
+	icon = "hind_empower_hindu"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = HND
+			tag = IDS
+			tag = WHS
+			primary_culture = sashindi
+			AND = {
+				religion = zoroastrian
+				capital_scope = { superregion = india_superregion }
+			}
+		}
+	}
+	trigger = {
+		OR = {
+			tag = IDS
+			tag = HND
+			tag = WHS
+			primary_culture = sashindi
+			AND = {
+				religion = zoroastrian
+				capital_scope = { superregion = india_superregion }
+			}
+		}
+	}
+	modifiers = {
+		stability_cost_modifier = 0.1
+		num_accepted_cultures = 1
+		vassal_income = 0.1
+		nobles_loyalty_modifier = -0.05
+		nobles_influence_modifier = -0.1
+		maratha_influence_modifier = 0.1
+		maratha_loyalty_modifier = 0.05
+		rajput_influence_modifier = 0.1
+		rajput_loyalty_modifier = 0.05
+		global_tax_modifier = 0.075
+		global_manpower_modifier = 0.075
+		religious_unity = 0.1
+	}
+	different_religion_group_acceptance = 10
+}
+
+hind_empower_persians = {
+	icon = "hind_empower_persians"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = HND
+			tag = IDS
+			tag = WHS
+			primary_culture = sashindi
+			AND = {
+				religion = zoroastrian
+				capital_scope = { superregion = india_superregion }
+			}
+			AND = {
+				culture_group = iranian
+				capital_scope = { superregion = india_superregion }
+			}
+		}
+	}
+	trigger = {
+		OR = {
+			tag = IDS
+			tag = HND
+			tag = WHS
+			primary_culture = sashindi
+			AND = {
+				religion = zoroastrian
+				capital_scope = { superregion = india_superregion }
+			}
+			AND = {
+				culture_group = iranian
+				capital_scope = { superregion = india_superregion }
+			}
+		}
+	}
+	modifiers = {
+		vassal_manpower_bonus = 0.1
+		nobles_loyalty_modifier = 0.05
+		nobles_influence_modifier = 0.1
+		maratha_influence_modifier = -0.1
+		maratha_loyalty_modifier = -0.05
+		rajput_influence_modifier = -0.1
+		rajput_loyalty_modifier = -0.05
+		tolerance_own = 2
+		global_unrest = 1
+		same_culture_advisor_cost = -0.1
+	}
+}
+
+hind_establish_immortals = {
+	icon = "hind_establish_immortals"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = HND
+			tag = IDS
+			tag = WHS
+			primary_culture = sashindi
+			AND = {
+				culture_group = iranian
+				capital_scope = { superregion = india_superregion }
+			}
+		}
+	}
+	trigger = {
+		OR = {
+			tag = IDS
+			tag = HND
+			tag = WHS
+			primary_culture = sashindi
+			AND = {
+				culture_group = iranian
+				capital_scope = { superregion = india_superregion }
+			}
+		}
+		OR = {
+			mil_tech = 9
+			full_idea_group = quality_ideas
+			full_idea_group = aristocratic_ideas
+			alliance_with = PER
+			alliance_with = PRC
+			alliance_with = PRZ
+			owns_core_province = 431
+			owns_core_province = 2218
+			owns_core_province = 428
+		}
+	}
+	modifiers = {
+		infantry_cost = -0.05
+		has_carolean = yes
+	}
+	effect = {
+		hidden_effect = {
+			capital_scope = {
+				add_province_modifier = {
+					name = samsara_unlocked_immortals_prov
+					duration = -1
+				}
+			}
+			add_country_modifier = {
+				name = samsara_indian_immortals_weak
+				duration = -1
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			capital_scope = {
+				remove_province_modifier = samsara_unlocked_immortals_prov
+			}
+			remove_country_modifier = samsara_indian_immortals_weak
+		}
+	}
+}
+
+hind_zoro_priest = {
+	icon = "hind_zoro_priest"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = HND
+			tag = IDS
+			tag = WHS
+			primary_culture = sashindi
+		}
+	}
+	trigger = {
+		OR = {
+			tag = IDS
+			tag = HND
+			tag = WHS
+			primary_culture = sashindi
+		}
+	}
+	modifiers = {
+		church_loyalty_modifier = 0.1
+		church_influence_modifier = 0.1
+		church_privilege_slots = 1
+		global_heathen_missionary_strength = 0.01
+		relation_with_same_religion = 10
+		reverse_relation_with_same_religion = 15
+		yearly_corruption = 0.05
+		embracement_cost = 0.1
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_tax_building_trigger = yes
+				}
+				add_province_modifier = {
+					name = samsara_zoro_priest_government_mod
+					duration = -1
+				}
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = samsara_zoro_priest_government_mod
+				}
+				remove_province_modifier = samsara_zoro_priest_government_mod
+			}
+		}
+	}
+	custom_attributes = {
+		samsara_zoro_temples_modifier = yes
+	}
+}

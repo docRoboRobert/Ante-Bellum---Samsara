@@ -78,6 +78,41 @@ on_yearly_pulse = {
 			remove_province_modifier = abi_tamil_guilds_town
 		}
 	}
+	if = {
+		limit = {
+			has_global_flag = hnd_peace_with_christians_mechanic_active
+			has_country_modifier = hnd_peace_with_christians_utility
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					religion = nestorian
+					religion = malankara
+				}
+				NOT = { has_province_modifier = hnd_peace_with_christians_prov_modifier }
+			}
+			add_province_modifier = {
+				name = hnd_peace_with_christians_prov_modifier
+				duration = -1
+			}
+		}
+	}
+	if = {
+		limit = { has_reform = samsara_zoro_hindu_union }
+		every_owned_province = {
+			limit = {
+				OR = {
+					religion = hinduism
+					religion = zoroastrian
+				}
+				NOT = { has_province_modifier = samsara_zoro_hindu_union_prov_mod }
+			}
+			add_province_modifier = {
+				name = samsara_zoro_hindu_union_prov_mod
+				duration = -1
+			}
+		}
+	}
 }
 
 # Country scope
@@ -144,7 +179,7 @@ on_siege_won_country = {
 			FROM = {
 				NOT = { owned_by = ROOT }
 				NOT = { owned_by_subject_of = ROOT }
-				is_port = yes
+				has_port = yes
 				development = 15
 				NOT = { has_province_modifier = pirates_recently_pillaged }
 			}

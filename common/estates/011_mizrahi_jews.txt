@@ -1,0 +1,459 @@
+# For Government Reforms to identify properly influence and loyalty modifiers, remember to put disqualifying triggers before the has_reform
+
+estate_mizrahi_jews = {
+	icon = 17
+
+	# If true, country will get estate
+	trigger = {
+		has_dlc = "Domination"
+		NOT = { has_country_flag = disables_estate_mizrahi_jews_flag }
+		OR = {
+			tag = BUH
+			AND = {
+				capital_scope = {
+					OR = {
+						superregion = india_superregion
+						superregion = persia_superregion
+						region = arabia_region
+						region = mashriq_region
+					}
+				}
+				any_owned_province = {
+					OR = {
+						religion = jewish
+						province_id = 361
+						province_id = 390
+						province_id = 388
+						province_id = 408
+						province_id = 388
+						province_id = 395
+						province_id = 400
+						province_id = 431
+						province_id = 430
+						province_id = 2200
+						province_id = 2999
+						province_id = 504
+						province_id = 5246
+						province_id = 2052
+						province_id = 5266
+						province_id = 4455
+						province_id = 2051
+						province_id = 4512
+						province_id = 5225
+						province_id = 2089
+						province_id = 530
+						province_id = 2030
+						province_id = 534
+						province_id = 535
+						province_id = 446	#Merv survived Mongol invasions
+					}
+				}
+			}
+			AND = {
+				capital_scope = { superregion = india_superregion }
+				religion = jewish
+			}
+			has_country_flag = enables_estate_mizrahi_jews_flag
+		}
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		state_maintenance_modifier = -0.2
+		global_tax_modifier = 0.15
+		monthly_gold_inflation_modifier = -0.2
+	}
+	country_modifier_neutral = {
+		inflation_action_cost = -0.05
+	}
+	country_modifier_angry = {
+		global_tax_modifier = -0.15
+		production_efficiency = -0.1
+		yearly_corruption = 0.1
+		trade_efficiency = -0.15
+		global_spy_defence = -0.3
+	}
+	land_ownership_modifier = {
+		mizrahi_jews_loyalty_modifier = 0.2
+		build_cost = -0.1
+		trade_company_investment_cost = -0.1
+		center_of_trade_upgrade_cost = -0.1
+		yearly_corruption = 0.25
+		global_autonomy = 0.001
+	}
+	
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 1.25
+			development = 25
+		}	
+		modifier = {
+			factor = 2.5
+			religion = jewish
+		}
+		modifier = {
+			factor = 1.2
+			trade_goods = cloth
+		}
+		modifier = {
+			factor = 1.1
+			trade_goods = silk
+		}
+		modifier = {
+			factor = 1.2
+			trade_goods = glass
+		}
+		modifier = {
+			factor = 1.2
+			trade_goods = paper
+		}
+		modifier = {
+			factor = 1.05
+			base_production = 5
+		}
+		modifier = {
+			factor = 1.1
+			base_production = 8
+		}
+		modifier = {
+			factor = 1.25
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 1.4
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 1.5
+			province_has_center_of_trade_of_level = 3
+		}
+		modifier = {
+			factor = 1.2
+			province_trade_power = 5
+		}
+		modifier = {
+			factor = 1.4
+			province_trade_power = 10
+		}
+		modifier = {
+			factor = 1.6
+			province_trade_power = 15
+		}
+		modifier = {
+			factor = 1.8
+			province_trade_power = 20
+		}
+		modifier = {
+			factor = 2.0
+			province_trade_power = 30
+		}
+	}
+
+	# Influence modifiers
+	base_influence = 10
+	influence_modifier = {
+		desc = EST_VAL_HIGH_TRADE_INCOME_MIZRAHI_JEWS
+		trigger = {
+			trade_income_percentage = 0.5
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_VAL_IS_REPUBLIC_MIZRAHI_JEWS
+		trigger = {
+			government = republic
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_VAL_LOW_JEWISH_FRACTION_MIZRAHI
+		trigger = {
+			num_of_religion = {
+				religion = jewish
+				value = 0.1
+			}
+			NOT = { religion = jewish }
+		}
+		influence = 2.5
+	}
+	influence_modifier = {
+		desc = EST_VAL_SIZEABLE_JEWISH_FRACTION_MIZRAHI
+		trigger = {
+			num_of_religion = {
+				religion = jewish
+				value = 0.2
+			}
+			NOT = { religion = jewish }
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_VAL_MODERATE_JEWISH_FRACTION_MIZRAHI
+		trigger = {
+			num_of_religion = {
+				religion = jewish
+				value = 0.33
+			}
+			NOT = { religion = jewish }
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_VAL_HIGH_JEWISH_FRACTION_MIZRAHI
+		trigger = {
+			num_of_religion = {
+				religion = jewish
+				value = 0.5
+			}
+			NOT = { religion = jewish }
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_VAL_DOMINANT_JEWISH_FRACTION_MIZRAHI
+		trigger = {
+			num_of_religion = {
+				religion = jewish
+				value = 0.75
+			}
+			NOT = { religion = jewish }
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_VAL_ABSOLUTE_JEWISH_FRACTION_MIZRAHI
+		trigger = {
+			num_of_religion = {
+				religion = jewish
+				value = 0.95
+			}
+			NOT = { religion = jewish }
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_VAL_INCOMPETENT_RULER_MIZRAHI_JEWS
+		trigger = {
+			NOT = { dip = 2 }
+			NOT = { adm = 2 }
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+				has_disaster = estate_nomadic_tribes_disaster
+			}
+		}
+		influence = -40
+	}
+	influence_modifier = {
+		desc = EST_INCAPABLE_ADM_RULER_MIZRAHI_JEWS
+		trigger = { 
+			NOT = { adm = 1 } 
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_MANY_LOANS_MIZRAHI_JEWS
+		trigger = {
+			num_of_loans = 10
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_HAS_LOANS_MIZRAHI_JEWS
+		trigger = {
+			num_of_loans = 1
+		}
+		influence = 2.5
+	}
+	influence_modifier = {
+		desc = EST_JEWISH_ADVISOR_EMPLOYED
+		trigger = {
+			employed_advisor = {
+				religion = jewish
+			}
+			NOT = { religion = jewish }
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_VERY_LOW_JEWISH_TOLERANCE
+		trigger = {
+			any_owned_province = {
+				religion = jewish
+				NOT = { tolerance_to_this = -2 }
+			}
+			NOT = { region = jewish }
+		}
+		influence = -5
+	}
+	influence_modifier = {
+		desc = EST_LOW_JEWISH_TOLERANCE
+		trigger = {
+			any_owned_province = {
+				religion = jewish
+				NOT = { tolerance_to_this = 0 }
+			}
+			NOT = { region = jewish }
+		}
+		influence = -2.5
+	}
+	influence_modifier = {
+		desc = EST_HAS_JEWISH_TOLERANCE
+		trigger = {
+			any_owned_province = {
+				religion = jewish
+				tolerance_to_this = 0
+			}
+			NOT = { region = jewish }
+		}
+		influence = 2.5
+	}
+	influence_modifier = {
+		desc = EST_HIGH_JEWISH_TOLERANCE
+		trigger = {
+			any_owned_province = {
+				religion = jewish
+				tolerance_to_this = 2
+			}
+			NOT = { region = jewish }
+		}
+		influence = 2.5
+	}
+	influence_modifier = {
+		desc = EST_JEWISH_PRIMARY_RELIGION
+		trigger = {
+			religion = jewish
+		}
+		influence = 10
+	}
+	influence_modifier = {
+		desc = EST_MANY_COT_MIZRAHI
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 7
+				province_has_center_of_trade_of_level = 1
+			}
+		}
+		influence = 2.5
+	}
+	influence_modifier = {
+		desc = EST_MANY_COT_2_MIZRAHI
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				province_has_center_of_trade_of_level = 2
+			}
+		}
+		influence = 2.5
+	}
+	influence_modifier = {
+		desc = EST_MANY_COT_3_MIZRAHI
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 3
+				province_has_center_of_trade_of_level = 3
+			}
+		}
+		influence = 5
+	}
+	
+	#Loyalty Modifiers
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+				has_disaster = estate_nomadic_tribes_disaster
+			}
+		}
+		loyalty = -20
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_OWNS_JERUSALEM_MIZRAHI
+		trigger = {
+			owns = 379
+		}
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_IS_JEWISH_MIZRAHI
+		trigger = {
+			religion = jewish
+		}
+		loyalty = 20
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_HIGH_STABILITY
+		trigger = { stability = 3 }
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_ADM_FOCUS_MIZRAHI
+		trigger = { 
+			national_focus = ADM
+		}
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_HIGH_PP
+		trigger = { power_projection = 50 }
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_HIGH_CHURCH_POWER_MIZRAHI
+		trigger = {
+			religion = jewish
+			church_power = 75
+		}
+		loyalty = 2.5
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_VERY_HIGH_CHURCH_POWER_MIZRAHI
+		trigger = {
+			religion = jewish
+			church_power = 100
+		}
+		loyalty = 2.5
+	}
+	
+	privileges = {
+		estate_tamil_guilds_land_rights
+	}
+
+	agendas = {
+		estate_eunuchs_develop_x_agenda
+		estate_eunuchs_gather_x_gov_reform_agenda
+		estate_eunuchs_have_x_decree_agenda
+		estate_eunuchs_monthly_adm_agenda
+		estate_eunuchs_recover_meritocracy_agenda
+		estate_eunuchs_improve_imperial_mandate_agenda
+		estate_eunuchs_hire_advisor_agenda
+		estate_eunuchs_fire_advisor_agenda
+		estate_eunuchs_harmonization_agenda
+		estate_eunuchs_four_privileges_agenda
+		estate_eunuchs_subject_gifts_agenda
+		estate_eunuchs_forbidden_city_agenda
+		estate_eunuchs_porcelain_tower_agenda
+		estate_eunuchs_subsidize_subjects_agenda
+	}
+
+	color = { 10 137 245 }
+	
+	influence_from_dev_modifier = 1.0
+}

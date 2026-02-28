@@ -757,3 +757,452 @@ dgl_religious_authority = {
 	tolerance_of_heathens_capacity = 1
 	global_heretic_missionary_strength = 0.02
 }
+
+hnd_fighting_pirates_modifier = {
+	global_ship_recruit_speed = -0.1
+	naval_tradition_from_battle = 0.25
+	own_coast_naval_combat_bonus = 1.0
+}
+
+abi_coastal_fortifications = {
+	supply_limit_modifier = 0.1
+	regiment_recruit_speed = -0.1
+	blockade_force_required = 0.5
+	hostile_disembark_speed = 0.5
+	hostile_fleet_attrition = 1
+	block_slave_raid = yes
+}
+
+hnd_new_naval_power = {
+	naval_morale = 0.05
+	galley_number_of_cannons_modifier = 0.1
+	recover_navy_morale_speed = 0.1
+}
+
+hnd_royal_port_base = {
+	local_garrison_size = 0.15
+	supply_limit_modifier = 0.1
+	local_ship_repair = 0.1
+	local_sailors = 250
+	ship_recruit_speed = -0.15
+	min_local_autonomy = -5
+	province_trade_power_modifier = 0.1
+	block_slave_raid = yes
+}
+
+hnd_thatta_royal_ship_academy = {
+	local_institution_spread = 0.33
+	province_trade_power_modifier = 0.1
+	allowed_num_of_buildings = 1
+	blockade_force_required = 0.75
+	local_ship_cost = -0.15
+	local_ship_repair = 0.15
+	ship_recruit_speed = -0.15
+	tax_income = -12
+	block_slave_raid = yes
+	navy_tradition = 0.2
+	leader_naval_manuever = 1
+}
+
+hnd_sarnizeh_keshti_tech = {
+	galley_power = 0.05
+	transport_power = 0.1
+	max_admiral_shock = 1
+	regiment_disembark_speed = 0.1
+	transport_number_of_cannons_modifier = 0.25
+	transport_hull_size_modifier = -0.1
+}
+
+kutch_new_salt_basins = {
+	tax_income = 12
+	local_development_cost = -0.05
+	trade_goods_size = 0.75
+}
+
+hnd_crossing_supplies = {
+	land_attrition = -0.10
+	reinforce_cost_modifier = -0.15
+	movement_speed = 0.05
+}
+
+debal_new_indus_port = {
+	local_development_cost = -0.05
+	allowed_num_of_buildings = 1
+	supply_limit_modifier = 0.2
+	local_sailors_modifier = 0.1
+}
+
+debal_water_works = {
+	local_development_cost = -0.2
+	local_build_cost = -0.15
+	center_of_trade_upgrade_cost = -0.25
+}
+
+indus_bridge_logistics_reach = {
+	supply_limit_modifier = 0.25
+	local_friendly_movement_speed = 0.33
+	local_build_time = -0.1
+	local_development_cost = -0.15
+	local_governing_cost = -0.15
+	trade_value = 1
+}
+
+indus_bridge_megaproject = {
+	province_trade_power_value = 10
+	min_local_autonomy = -25
+	local_institution_spread = 0.33
+	allowed_num_of_buildings = 1
+	local_prosperity_growth = 0.1
+	supply_limit = 2
+	local_defensiveness = 0.1
+	picture = "allowed_num_of_buildings"
+}
+
+recovering_from_indus_bridge_build = {
+	all_power_cost = 0.05
+	global_tax_modifier = -0.15
+	stability_cost_to_declare_war = 1
+	global_manpower_modifier = -0.15
+	country_admin_power = -1
+	country_diplomatic_power = -1
+}
+
+hnd_back_on_the_offensive = {
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.1
+	same_culture_advisor_cost = -0.1
+	morale_damage_received = -0.05
+}
+
+hnd_rajput_experience = {
+	cavalry_power = 0.10
+	land_attrition = -0.075
+}
+
+hnd_new_fire_temples = {
+	local_unrest = -1
+	province_trade_power_value = 0.5
+	local_build_cost = -0.05
+	picture = "monthly_ottoman_decadence"
+}
+
+thatta_fortified_capital = {
+	local_defensiveness = 0.15
+	local_garrison_size = 0.2
+}
+
+thatta_grain_collection_hub = {
+	trade_value = 2
+	local_development_cost = -0.05
+	picture = "gain_field_hub_picture"
+}
+
+indus_irrigation_channels = {
+	local_development_cost = -0.1
+	local_production_efficiency = 0.1
+	local_monthly_devastation = -0.05
+	trade_value = 0.5
+	picture = "grain_field_picture"
+}
+
+dry_land_terraforming = {
+	local_development_cost = -0.1
+	supply_limit_modifier = 0.1
+	trade_value = 0.5
+	picture = "grain_field_picture"
+}
+
+hnd_extensive_river_development = {
+	global_manpower_modifier = -0.10
+	global_tax_modifier = -0.1
+	development_cost_modifier = -0.05
+	production_efficiency = 0.05
+	build_time = -0.1
+	build_cost = -0.1
+	expand_infrastructure_cost_modifier = -0.25
+}
+
+hnd_local_center_of_power = {
+	local_institution_spread = 0.2
+	statewide_governing_cost = -0.2
+	local_governing_cost_increase = -10
+	min_local_autonomy = -10
+	province_trade_power_value = 2
+}
+
+hnd_new_capital_chosen = {
+	local_development_cost = -0.05
+	trade_value_modifier = 0.1
+	allowed_num_of_buildings = 1
+	local_production_efficiency = 0.05
+	local_manpower_modifier = 0.2
+	local_defensiveness = 0.15
+	local_garrison_size = 0.2
+}
+
+zoro_temple_restoration_effort = {
+	local_great_project_upgrade_cost = -0.5
+	local_great_project_upgrade_time = -0.2
+	local_monthly_devastation = -0.05
+	local_unrest = -2
+}
+
+zoroastrian_rites_expanded = {
+	global_unrest = -1
+	stability_cost_modifier = -0.05
+	global_missionary_strength = 0.01
+	same_religion_advisor_cost = -0.075
+	church_loyalty_modifier = 0.05
+	institution_spread_from_true_faith = 0.1
+	reverse_relation_with_same_religion = 10
+}
+
+hnd_ready_for_comeback = {
+	spy_offence = 0.15
+	land_morale_constant = 0.25
+}
+
+hnd_defeated_enemy = {
+	land_morale = 0.075
+	rival_border_fort_maintenance = -0.10
+	ae_impact = -0.075
+	prestige_decay = -0.01
+}
+
+hind_united_again = {
+	advisor_pool = 1
+	all_estate_influence_modifier = -0.05
+	culture_conversion_cost = -0.1
+	global_autonomy = -0.05
+	core_creation = -0.05
+	recover_army_morale_speed = 0.10
+}
+
+hnd_grain_and_cotton_soldiers = {
+	infantry_cost = -0.05
+	cavalry_cost = -0.05
+	land_attrition = -0.1
+	war_exhaustion_cost = -0.2
+	reinforce_speed = 0.10
+}
+
+attracting_persian_scholars = {
+	diplomatic_reputation = 1
+	innovativeness_gain = 0.1
+	advisor_pool = 1
+	idea_cost = -0.05
+	embracement_cost = -0.1
+	global_tax_modifier = -0.05
+}
+
+abi_establishing_persia_connections = {
+	envoy_travel_time = -0.1
+	improve_relation_modifier = 0.075
+}
+
+abi_hind_persia_target = { }		#Utility modifier for marking targets
+
+hnd_persian_auxiliaries = {
+	reinforce_cost_modifier = -0.05
+	manpower_recovery_speed = 0.10
+	improve_relation_modifier = 0.05
+	institution_spread_from_true_faith = 0.1
+}
+
+persian_prince_help_from_hind = {
+	land_morale = 0.075
+	shock_damage = 0.05
+	reinforce_cost_modifier = -0.10
+	siege_ability = 0.10
+	manpower_in_true_faith_provinces = 0.15
+	ae_impact = -0.1
+	unjustified_demands = -0.2
+	core_creation = -0.1
+	same_religion_advisor_cost = -0.1
+}
+
+hind_cooperation_from_persia = {
+	unjustified_demands = -0.2
+	core_creation = -0.1
+	manpower_in_true_faith_provinces = 0.1
+	fabricate_claims_cost = -0.15
+	siege_ability = 0.05
+}
+
+hnd_sabotaged_persian_court = {
+	diplomatic_reputation = -1
+	prestige_decay = 0.03
+	advisor_cost = 0.15
+	monthly_heir_claim_increase = -0.15
+	improve_relation_modifier = -0.15
+}
+
+hnd_sabotaged_persian_army = {
+	drill_decay_modifier = 0.25
+	land_morale = -0.05
+	recover_army_morale_speed = -0.10
+	reinforce_cost_modifier = 0.15
+	reinforce_speed = -0.15
+	global_regiment_recruit_speed = 0.10
+	defensiveness = -0.10
+	fort_maintenance_modifier = 0.10
+	war_exhaustion_cost = 0.33
+	leader_cost = 0.15
+	land_attrition = 0.10
+}
+
+hnd_sabotaged_persian_economy = {
+	global_tax_modifier = -0.1
+	inflation_reduction = -0.05
+	build_cost = 0.1
+	build_time = 0.2
+	production_efficiency = -0.05
+	burghers_loyalty_modifier = -0.1
+	global_foreign_trade_power = -0.15
+	trade_efficiency = -0.075
+}
+
+hnd_sabotaged_persian_countryside = {
+	liberty_desire_from_subject_development = 0.15
+	state_maintenance_modifier = 0.2
+	development_cost = 0.1
+	centralize_state_cost = 0.15
+	global_institution_spread = -0.1
+	state_governing_cost = 0.1
+	nobles_loyalty_modifier = -0.05
+	culture_conversion_cost = 0.2
+	global_unrest = 1
+	stability_cost_modifier = 0.15
+	global_autonomy = 0.05
+	global_supply_limit_modifier = -0.10
+}
+
+hnd_sabotaged_persian_ruler = {
+	unjustified_demands = 0.1
+	administrative_efficiency = -0.075
+	idea_cost = 0.05
+	advisor_pool = -1
+	monarch_admin_power = -1
+	monarch_diplomatic_power = -1
+	monarch_military_power = -1
+	governing_capacity_modifier = -0.1
+	monthly_reform_progress_modifier = -0.15
+	all_estate_influence_modifier = 0.05
+	all_estate_loyalty_equilibrium = -0.1
+	global_unrest = 1
+	years_of_nationalism = 4
+	global_spy_defence = -0.15
+}
+
+splendid_court_modifier = {
+	monthly_splendor = 1
+	all_estate_influence_modifier = -0.05
+	all_estate_loyalty_equilibrium = 0.05
+	promote_culture_cost = -0.2
+	stability_cost_modifier = -0.05
+	prestige_decay = -0.01
+	all_power_cost = -0.02
+	heir_chance = 0.15
+}
+
+hind_multinational_court = {
+	num_accepted_cultures = 1
+	advisor_pool = 1
+}
+
+hnd_completed_timed_mission = {
+	land_morale = 0.05
+	siege_ability = 0.1
+	diplomatic_reputation = 1
+}
+
+hind_buff_for_ai_persia = {
+	land_morale = 0.15
+	discipline = 0.1
+	cavalry_fire = 1
+	recover_army_morale_speed = 0.2
+	land_attrition = -0.2
+	land_forcelimit = 15
+	no_cost_for_reinforcing = yes
+	global_manpower = 15
+	manpower_recovery_speed = 0.2
+	siege_ability = 0.25
+	war_exhaustion_cost = -0.5
+	own_territory_dice_roll_bonus = 1
+	province_warscore_cost = -0.15
+	ae_impact = -0.2
+	global_tax_income = 96
+	administrative_efficiency = 0.1
+	core_creation = -0.2
+	country_military_power = 1
+	advisor_cost = -0.2
+	all_estate_loyalty_equilibrium = 0.1
+	global_unrest = -2
+	global_autonomy = -0.1
+	no_stability_loss_on_monarch_death = yes
+	religious_unity = 0.5
+	global_trade_goods_size = 0.5
+	global_own_trade_power = 0.2
+}
+
+hnd_tolerance_for_christians = {
+	tolerance_heathen = 1
+	tolerance_of_heathens_capacity = 1
+}
+
+hnd_convert_all_christians = {
+	tolerance_of_heathens_capacity = -1
+	global_heathen_missionary_strength = 0.01
+	relation_with_heathens = -10
+	prestige_per_development_from_conversion = 0.2
+}
+
+hnd_peace_with_christians_utility = {
+	#utility modifier
+	religion = yes
+}
+
+hnd_peace_with_christians_prov_modifier = {
+	local_missionary_strength = -1
+	local_religious_unity_contribution = -1
+	local_tolerance_of_heathens = 3
+}
+
+persia_friendly_to_hnd = {
+	improve_relation_modifier = 0.05
+	discovered_relations_impact = -0.1
+}
+
+hnd_anti_persian_fortification = {
+	max_attrition = 2
+	local_hostile_attrition = 3
+	local_defender_dice_roll_bonus = 1
+	local_defensiveness = 0.1
+	local_garrison_size = 0.2
+	local_friendly_movement_speed = 0.1
+	local_tax_modifier = -0.2
+	local_production_efficiency = -0.1
+}
+
+hind_advancing_into_persia = {
+	siege_ability = 0.15
+	may_build_supply_depot = yes
+	reinforce_cost_modifier = -0.10
+	land_attrition = -0.10
+}
+
+hind_anti_persian_espionage = {
+	assault_fort_ability = 0.2
+	reinforce_cost_modifier = -0.10
+	spy_offence = 0.15
+	no_claim_cost_increasement = yes
+}
+
+hind_infiltrated_military = {
+	defensiveness = -0.15
+	garrison_damage = -0.2
+	land_maintenance_modifier = 0.10
+	global_regiment_recruit_speed = 0.2
+	reinforce_speed = -0.15
+	land_morale = -0.05
+}

@@ -1,0 +1,2093 @@
+HND_branch_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = HND
+			tag = IDS
+			tag = WHS
+		}
+	}
+
+	hnd_combat_piracy = {
+		icon = mission_pirate_flag
+		position = 1
+		provinces_to_highlight = { province_id = 1336 } 
+
+		trigger = {
+			1336 = {
+				galleys_in_province = 2
+				galleys_in_province = ROOT
+			}
+			num_of_galley = 2
+			navy_size_percentage = 1
+		}
+
+		effect = {
+			add_dip_power = 20
+			add_country_modifier = {
+				name = "hnd_fighting_pirates_modifier"
+				duration = 5475
+			}
+		}
+	}
+
+	hnd_fortify_coastline = {
+		icon = gfx_ab_india_indus_coast
+		position = 2
+		required_missions = {
+			hnd_combat_piracy
+			hnd_develop_debal
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5246
+				province_id = 504
+			}
+		}
+
+		trigger = {
+			5246 = {
+				OR = {
+					has_building = dock
+					has_building = drydock
+				}
+				has_influencing_fort = yes
+				OR = {
+					has_building = coastal_defence
+					has_building = naval_battery
+				}
+				base_production = 5
+				infantry_in_province = 4
+			}
+			504 = {
+				OR = {
+					has_building = dock
+					has_building = drydock
+				}
+				has_influencing_fort = yes
+				OR = {
+					has_building = coastal_defence
+					has_building = naval_battery
+				}
+				base_production = 5
+				infantry_in_province = 4
+			}
+		}
+
+		effect = {
+			504 = {
+				add_province_modifier = {
+					name = "abi_coastal_fortifications"
+					duration = -1
+				}
+			}
+			5246 = {
+				add_province_modifier = {
+					name = "abi_coastal_fortifications"
+					duration = -1
+				}
+			}
+			add_claim = 5273
+		}
+	}
+
+	hnd_expand_naval_base = {
+		icon = mission_arabian_ports
+		position = 3
+		required_missions = { hnd_fortify_coastline } 
+		provinces_to_highlight = {
+			owned_by = ROOT
+			has_port = yes
+		}
+
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				has_port = yes
+				num_of_times_improved_by_owner = 5
+				development = 15
+				OR = {
+					has_building = shipyard
+					has_building = grand_shipyard
+				}
+				OR = {
+					has_building = dock
+					has_building = drydock
+				}
+			}
+			naval_forcelimit = 25
+			navy_size = 25
+			num_of_heavy_ship = 3
+		}
+
+		effect = {
+			create_admiral = {
+				tradition = 75
+				add_siege = 1
+				add_manuever = 1
+			}
+			add_navy_tradition = 10
+			add_country_modifier = {
+				name = "hnd_new_naval_power"
+				duration = -1
+			}
+		}
+	}
+
+	hnd_royal_shipyards = {
+		icon = mission_shipyards_of_gujarat
+		position = 4
+		required_missions = {
+			hnd_expand_naval_base
+			hnd_indus_bridge_project
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			has_port = yes
+		}
+
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				has_port = yes
+				num_of_times_improved_by_owner = 10
+				development = 25
+				base_production = 8
+				OR = {
+					has_building = shipyard
+					has_building = grand_shipyard
+				}
+				has_trade_building_trigger = yes
+				has_production_building_trigger = yes
+				has_road_building_trigger = yes
+				has_manufactory_trigger = yes
+			}
+			num_of_owned_provinces_with = {
+				value = 3
+				province_has_center_of_trade_of_level = 2
+				has_port = yes
+			}
+			naval_forcelimit = 50
+			navy_size = 50
+			num_of_heavy_ship = 5
+			employed_advisor = {
+				category = DIP
+				type = naval_reformer
+				skill = 2
+			}
+		}
+
+		effect = {
+			custom_tooltip = hnd_royal_shipyards.tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_port = yes
+						superregion = india_superregion
+						province_has_center_of_trade_of_level = 2
+						base_production = 8
+					}
+					add_province_modifier = {
+						name = hnd_royal_port_base
+						duration = -1
+					}
+				}
+			}
+			504 = {
+				add_province_modifier = {
+					name = hnd_thatta_royal_ship_academy
+					duration = -1
+				}
+			}
+		}
+	}
+
+	hnd_naval_tech_development = {
+		icon = mission_follow_the_brahmaputra
+		position = 5
+		required_missions = { hnd_royal_shipyards } 
+		provinces_to_highlight = {
+			province_id = 504
+		}
+
+		trigger = {
+			navy_tradition = 80
+			innovativeness = 10
+			employed_advisor = {
+				category = DIP
+				type = naval_reformer
+				skill = 2
+			}
+			OR = {
+				is_ahead_of_time_in_technology = { tech = dip }
+				is_ahead_of_time_in_technology = { tech = mil }
+			}
+			num_of_transport = 25
+			num_of_admirals_with_traits = 1
+			has_leader_with = {
+				fire = 2
+				shock = 4
+				manuever = 4
+				siege = 1
+				admiral = yes
+			}
+		}
+
+		effect = {
+			custom_tooltip = hnd_naval_tech_development.tooltip
+			add_country_modifier = {
+				name = hnd_sarnizeh_keshti_tech
+				duration = -1
+			}
+			change_innovativeness = 3
+		}
+	}
+
+	hnd_seize_hormuz_bases = {
+		icon = gfx_ab_india_makran_coast
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5273
+				province_id = 575
+			}
+			NOT = { owned_by = ROOT }
+		}
+
+		trigger = {
+			owns = 5273
+			owns = 575
+			5273 = {
+				religion = ROOT
+				culture = ROOT
+			}
+		}
+
+		effect = {
+			country_event = {
+				id = abindia_mission.30
+				days = 0
+			}
+			add_claim = 4286
+			add_claim = 400
+			add_claim = 399
+			add_claim = 4454
+			add_claim = 5266
+		}
+	}
+
+	hnd_cross_white_rann = {
+		icon = gfx_ab_india_white_rann
+		position = 11
+		required_missions = { hnd_end_sindh } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 503
+				province_id = 4456
+				province_id = 2053
+			}
+			NOT = { owned_by = ROOT }
+		}
+
+		trigger = {
+			owns_core_province = 503
+			503 = {
+				base_production = 5
+				base_tax = 5
+				num_of_times_improved_by_owner = 8
+				has_production_building_trigger = yes
+				has_road_building_trigger = yes
+			}
+			owns_or_non_sovereign_subject_of = 4456
+			owns_or_non_sovereign_subject_of = 2053
+		}
+
+		effect = {
+			503 = {
+				add_province_modifier = {
+					name = kutch_new_salt_basins
+					duration = -1
+				}
+			}
+			add_country_modifier = {
+				name = hnd_crossing_supplies
+				duration = 3650
+			}
+		}
+	}
+}
+HND_branch_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = HND
+			tag = IDS
+			tag = WHS
+		}
+	}
+
+	hnd_develop_debal = {
+		icon = gfx_ab_india_debal_site
+		position = 1
+		provinces_to_highlight = {
+			province_id = 5246
+		}
+
+		trigger = {
+			5246 = {
+				base_production = 5
+				base_manpower = 4
+				num_of_times_improved_by_owner = 6
+				has_road_building_trigger = yes
+				has_trade_building_trigger = yes
+				OR = {
+					has_building = dock
+					has_building = drydock
+					light_ships_in_province = 10
+					heavy_ships_in_province = 2
+					galleys_in_province = 5
+				}
+			}
+		}
+
+		effect = {
+			5246 = {
+				add_province_modifier = {
+					name = debal_new_indus_port
+					duration = -1
+				}
+				add_province_modifier = {
+					name = debal_water_works
+					duration = 7300
+				}
+			}
+		}
+	}
+
+	hnd_indus_bridge_project = {
+		icon = gfx_ab_india_bridge_project
+		position = 3
+		required_missions = { hnd_indus_irrigation_system } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2072
+				province_id = 5247
+			}
+		}
+
+		trigger = {
+			owns_core_province = 2072
+			owns_core_province = 5247
+			2072 = {
+				development = 20
+				has_road_building_trigger = yes
+				has_production_building_trigger = yes
+				OR = {
+					has_building = regimental_camp
+					has_building = conscription_center
+				}
+				NOT = { unrest = 1 }
+			}
+			5247 = {
+				development = 20
+				has_road_building_trigger = yes
+				has_production_building_trigger = yes
+				OR = {
+					has_building = regimental_camp
+					has_building = conscription_center
+				}
+				NOT = { unrest = 1 }
+			}
+			treasury = 1000
+			adm_power = 150
+			dip_power = 75
+			OR = {
+				architect = 2
+				visionary = 2
+				planner = 2
+				scholar = 2
+				natural_scientist = 2
+			}
+			OR = {
+				dockmaster = 2
+				statesman = 2
+			}
+		}
+
+		effect = {
+			add_splendor = 250
+			5247 = {
+				center_of_trade = 1
+				add_prosperity = 100
+				add_permanent_province_modifier = {
+					name = indus_bridge_logistics_reach
+					duration = -1
+				}
+			}
+			country_event = {
+				id = abindia_mission.31
+				days = 30
+			}
+			2072 = {
+				add_permanent_province_modifier = {
+					name = indus_bridge_logistics_reach
+					duration = -1
+				}
+			}
+		}
+	}
+
+	hnd_saurashtra_bases = {
+		icon = mission_conquer_kathiawar
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = saurashtra_area
+				area = ahmedabad_area
+			}
+			owner = { religion_group = muslim }
+		}
+
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 1
+				area = saurashtra_area
+			}
+			NOT = {
+				any_province = {
+					OR = {
+						area = saurashtra_area
+						area = ahmedabad_area
+					}
+					owner = { religion_group = muslim }
+				}
+			}
+		}
+
+		effect = {
+			add_prestige = 10
+			add_mil_power = 50
+			custom_tooltip = hnd_saurashtra_bases.tooltip
+			hidden_effect = {
+				every_known_country = {
+					limit = {
+						religion = zoroastrian
+						capital_scope = {
+							superregion = india_superregion
+						}
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = pushed_arabs_out_of_saurashtra
+					}
+				}
+				every_province = {
+					limit = {
+						OR = {
+							area = saurashtra_area
+							area = ahmedabad_area
+						}
+						OR = {
+							religion_group = muslim
+							religion = zoroastrian
+							province_has_center_of_trade_of_level = 1
+						}
+					}
+					add_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					owns = 5266
+				}
+				add_core = 5266
+				5266 = {
+					change_religion = zoroastrian
+					set_base_tax = 2
+					set_base_production = 2
+					set_base_manpower = 2
+					change_culture = ROOT
+					add_devastation = 25
+				}
+			}
+		}
+	}
+
+	hnd_gather_support = {
+		icon = per_sino_persians_relations
+		position = 9
+		required_missions = { hnd_prepare_army } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			num_of_allies = 2
+			diplomatic_reputation = 2
+			dip_power = 100
+			employed_advisor = { category = DIP }
+			OR = {
+				diplomatic_reputation = 3
+				num_of_allies = 3
+				num_of_subjects = 2
+			}
+			calc_true_if = {
+				all_country = { is_enemy = ROOT }
+				amount = 3
+			}
+			OR = {
+				NOT = { exists = SND }
+				has_spy_network_in = {
+					who = SND
+					value = 50
+				}
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = hnd_back_on_the_offensive
+				duration = 3650
+			}
+			every_ally = {
+				add_trust = {
+					who = ROOT
+					value = 20
+					mutual = yes
+				}
+				add_favors = {
+					who = ROOT
+					amount = 5
+				}
+			}
+			5273 = { add_permanent_claim = ROOT }
+			2231 = { add_permanent_claim = ROOT }
+		}
+	}
+
+	hnd_secure_the_west = {
+		icon = gfx_ab_india_defeat_kyn
+		position = 10
+		required_missions = { hnd_gather_support } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5273
+				province_id = 2231
+				province_id = 5274
+				province_id = 5285
+				province_id = 2232
+				province_id = 5274
+				province_id = 576
+			}
+			OR = {
+				owned_by = KYN
+				NOT = { owned_by = ROOT }
+			}
+		}
+
+		trigger = {
+			owns_core_province = 5273
+			owns_core_province = 2231
+			OR = {
+				NOT = { exists = KYN }
+				has_won_war_against = {
+					who = KYN
+					max_years_since = 20
+				}
+				KYN = { is_subject_of = ROOT }
+			}
+			OR = {
+				has_eclipsed = KYN
+				NOT = { exists = KYN }
+			}
+			OR = {
+				KYN = { humiliated_by = ROOT }
+				AND = {
+					NOT = { exists = KYN }
+					owns_core_province = 576
+					owns_core_province = 5274
+				}
+			}
+		}
+
+		effect = {
+			add_stability = 1
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 15
+			}
+			576 = { add_permanent_claim = ROOT }
+			577 = { add_permanent_claim = ROOT }
+			447 = { add_permanent_claim = ROOT }
+			if = {
+				limit = {
+					5274 = {
+						country_or_non_sovereign_subject_holds = ROOT
+						NOT = { fort_level = 2 }
+					}
+				}
+				5274 = {
+					add_building = fort_15th
+					add_base_manpower = 1
+				}
+			}
+		}
+	}
+
+	hnd_march_into_desert = {
+		icon = mission_afghan_frontier
+		position = 11
+		required_missions = { hnd_end_sindh } 
+		provinces_to_highlight = {
+			area = marwar_area
+			NOT = { owned_by = ROOT }
+		}
+
+		trigger = {
+			marwar_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+				NOT = { unrest = 1 }
+				NOT = { local_autonomy_above_min = 5 }
+			}
+			NOT = { exists = MHD }
+			NOT = { exists = MAW }
+			OR = {
+				NOT = { exists = GUJ }
+				has_won_war_against = {
+					who = GUJ
+					max_years_since = 10
+				}
+			}
+		}
+
+		effect = {
+			add_army_tradition = 15
+			add_mil_power = 50
+			jangladesh_area = { add_permanent_claim = ROOT }
+			mewar_area = { add_permanent_claim = ROOT }
+			add_country_modifier = {
+				name = hnd_rajput_experience
+				duration = 7300
+			}
+			capital_scope = {
+				rajput_infantry = ROOT
+				rajput_infantry = ROOT
+				rajput_infantry = ROOT
+				rajput_infantry = ROOT
+			}
+		}
+	}
+
+	hnd_spread_zoroastrian_flame = {
+		icon = per_balance_the_three_flames
+		position = 12
+		required_missions = {
+			hnd_march_into_desert
+			hnd_cross_white_rann
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			OR = {
+				NOT = { religion = zoroastrian }
+				NOT = { has_tax_building_trigger = yes }
+			}
+		}
+
+		trigger = {
+			dominant_religion = zoroastrian
+			religious_unity = 0.90
+			num_of_owned_provinces_with = {
+				value = 24
+				OR = {
+					area = multan_area
+					area = sindh_area
+					area = northern_sindh_area
+					area = patan_area
+					area = marwar_area
+				}
+				OR = {
+					has_owner_religion = yes
+					has_province_modifier = abi_local_peace_with_christians
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 16
+				has_tax_building_trigger = yes
+				num_of_times_improved_by_owner = 3
+			}
+		}
+
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_stability = 1
+			define_advisor = {
+				type = inquisitor
+				skill = 3
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.25
+			}
+			define_advisor = {
+				type = theologian
+				skill = 3
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.25
+			}
+			custom_tooltip = hnd_spread_zoroastrian_flame.tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						superregion = india_superregion
+						religion = zoroastrian
+						has_tax_building_trigger = yes
+					}
+					add_base_tax = 1
+					add_prosperity = 10
+					add_devastation = -10
+					add_province_modifier = {
+						name = hnd_new_fire_temples
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+}
+HND_branch_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = HND
+			tag = IDS
+			tag = WHS
+		}
+	}
+
+	hnd_thatta_fortified = {
+		icon = mission_coromandel_trade
+		position = 1
+		provinces_to_highlight = {
+			province_id = 504
+		}
+
+		trigger = {
+			504 = {
+				base_manpower = 4
+				OR = {
+					has_building = fort_15th
+					fort_level = 3
+				}
+				num_of_units_in_province = {
+					who = ROOT
+					amount = 8
+				}
+			}
+			OR = {
+				planner = 1
+				architect = 1
+				natural_scientist = 1
+				siegeengineer = 1
+				quartermaster = 1
+				fortification_expert = 1
+			}
+		}
+
+		effect = {
+			add_mil_power = 50
+			define_advisor = {
+				type = fortification_expert = 1
+				skill = 1
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.25
+			}
+			504 = {
+				add_province_modifier = {
+					name = thatta_fortified_capital
+					duration = -1
+				}
+			}
+		}
+	}
+
+	hnd_indus_irrigation_system = {
+		icon = mission_pue_irrigation_cannals
+		position = 2
+		required_missions = {
+			hnd_develop_debal
+			hnd_thatta_fortified
+			hnd_grain_for_soldiers
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 504
+				province_id = 505
+				province_id = 2072
+				province_id = 2068
+			}
+		}
+
+		trigger = {
+			504 = {
+				has_road_building_trigger = yes
+				has_production_building_trigger = yes
+				development = 18
+				base_production = 7
+				num_of_times_improved_by_owner = 8
+				NOT = { devastation = 1 }
+				NOT = { unrest = 1 }
+				num_of_times_expanded_infrastructure = 1
+			}
+			505 = {
+				has_road_building_trigger = yes
+				has_production_building_trigger = yes
+				development = 18
+				base_production = 7
+				num_of_times_improved_by_owner = 8
+				NOT = { devastation = 1 }
+				NOT = { unrest = 1 }
+				num_of_times_expanded_infrastructure = 1
+			}
+			2072 = {
+				has_road_building_trigger = yes
+				has_production_building_trigger = yes
+				development = 18
+				base_production = 7
+				num_of_times_improved_by_owner = 8
+				NOT = { devastation = 1 }
+				NOT = { unrest = 1 }
+				num_of_times_expanded_infrastructure = 1
+			}
+			2068 = {
+				has_road_building_trigger = yes
+				has_production_building_trigger = yes
+				development = 18
+				base_production = 7
+				num_of_times_improved_by_owner = 8
+				NOT = { devastation = 1 }
+				NOT = { unrest = 1 }
+			}
+		}
+
+		effect = {
+			add_treasury = 400
+			504 = {
+				add_province_modifier = {
+					name = thatta_grain_collection_hub
+					duration = -1
+				}
+			}
+			505 = {
+				add_province_modifier = {
+					name = indus_irrigation_channels
+					duration = -1
+				}
+			}
+			2072 = {
+				add_province_modifier = {
+					name = indus_irrigation_channels
+					duration = -1
+				}
+			}
+			2068 = {
+				add_province_modifier = {
+					name = dry_land_terraforming
+					duration = -1
+				}
+			}
+		}
+	}
+
+	hnd_cross_indus = {
+		icon = mission_conquer_malwa_guj
+		position = 3
+		required_missions = { hnd_indus_irrigation_system } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5245
+				province_id = 4504
+				province_id = 4503
+				province_id = 4505
+				province_id = 5247
+			}
+		}
+
+		trigger = {
+			5245 = {
+				owned_by = ROOT
+				has_road_building_trigger = yes
+				has_production_building_trigger = yes
+				has_trade_building_trigger = yes
+				development = 18
+				base_production = 7
+				num_of_times_improved_by_owner = 10
+				NOT = { devastation = 1 }
+				NOT = { unrest = 1 }
+				num_of_times_expanded_infrastructure = 1
+			}
+			4504 = {
+				owned_by = ROOT
+				has_road_building_trigger = yes
+				has_production_building_trigger = yes
+				has_trade_building_trigger = yes
+				development = 18
+				base_production = 7
+				num_of_times_improved_by_owner = 10
+				NOT = { devastation = 1 }
+				NOT = { unrest = 1 }
+				num_of_times_expanded_infrastructure = 1
+			}
+			4503 = {
+				owned_by = ROOT
+				has_road_building_trigger = yes
+				has_production_building_trigger = yes
+				has_trade_building_trigger = yes
+				development = 20
+				base_production = 8
+				num_of_times_improved_by_owner = 10
+				NOT = { devastation = 1 }
+				NOT = { unrest = 1 }
+				num_of_times_expanded_infrastructure = 1
+				province_has_center_of_trade_of_level = 2
+			}
+			4505 = {
+				owned_by = ROOT
+				has_road_building_trigger = yes
+				has_production_building_trigger = yes
+				has_trade_building_trigger = yes
+				development = 18
+				base_production = 7
+				num_of_times_improved_by_owner = 10
+				NOT = { devastation = 1 }
+				NOT = { unrest = 1 }
+				num_of_times_expanded_infrastructure = 1
+				has_manufactory_trigger = yes
+			}
+			5247 = {
+				owned_by = ROOT
+				has_road_building_trigger = yes
+				has_production_building_trigger = yes
+				has_trade_building_trigger = yes
+				development = 18
+				base_production = 7
+				num_of_times_improved_by_owner = 10
+				NOT = { devastation = 1 }
+				NOT = { unrest = 1 }
+				num_of_times_expanded_infrastructure = 1
+				has_manufactory_trigger = yes
+			}
+		}
+
+		effect = {
+			add_treasury = 400
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 50
+			define_advisor = {
+				type = planner
+				skill = 2
+				religion = ROOT
+				culture = ROOT
+				cost_multiplier = 0.5
+			}
+			add_country_modifier = {
+				name = hnd_extensive_river_development
+				duration = 7300
+			}
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+			}
+			if = {
+				limit = {
+					4503 = {
+						NOT = { has_manufactory_trigger = yes }
+					}
+				}
+				4503 = {
+					add_building_construction = {
+						building = textile
+						speed = 1.5
+						cost = 0
+					}
+				}
+			}
+		}
+	}
+
+	hnd_new_lands_integrated = {
+		icon = gfx_ab_india_sindh_united
+		position = 4
+		required_missions = {
+			hnd_indus_bridge_project
+			hnd_cross_indus
+			hnd_rebuild_aror_monument
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5245
+				province_id = 4504
+				province_id = 4503
+				province_id = 4505
+				province_id = 5247
+				province_id = 2088
+			}
+		}
+
+		trigger = {
+			accepted_culture = sindhi
+			sindh_area = {
+				type = all
+				is_state_core = ROOT
+				NOT = { devastation = 1 }
+				NOT = { unrest = 1 }
+				OR = {
+					has_owner_accepted_culture = yes
+					has_owner_culture = yes
+				}
+				NOT = { nationalism = 1 }
+				num_of_buildings_in_province = 3
+				num_of_times_improved_by_owner = 3
+				has_road_building_trigger = yes
+				is_prosperous = yes
+			}
+			northern_sindh_area = {
+				type = all
+				is_state_core = ROOT
+				NOT = { devastation = 1 }
+				NOT = { unrest = 1 }
+				OR = {
+					has_owner_accepted_culture = yes
+					has_owner_culture = yes
+				}
+				NOT = { nationalism = 1 }
+				num_of_buildings_in_province = 3
+				num_of_times_improved_by_owner = 3
+				has_road_building_trigger = yes
+				is_prosperous = yes
+			}
+			5247 = {
+				has_courthouse_building_trigger = yes
+				num_of_units_in_province = {
+					who = ROOT
+					amount = 10
+				}
+			}
+			4503 = {
+				has_courthouse_building_trigger = yes
+				num_of_units_in_province = {
+					who = ROOT
+					amount = 10
+				}
+			}
+		}
+
+		effect = {
+			add_splendor = 100
+			add_adm_power = 50
+			add_dip_power = 50
+			change_government_reform_progress = 100
+		}
+	}
+
+	hnd_new_capitals = {
+		icon = mission_conquer_sindh_dlh
+		position = 5
+		required_missions = { hnd_new_lands_integrated } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 504
+				province_id = 4503
+				province_id = 5247
+				province_id = 506
+			}
+		}
+
+		trigger = {
+			owns_core_province = 504
+			owns_core_province = 4503
+			owns_core_province = 5247
+			owns_core_province = 506
+			504 = {
+				development = 25
+				has_manufactory_trigger = yes
+				fort_level = 2
+				has_trade_building_trigger = yes
+				has_production_building_trigger = yes
+				has_tax_building_trigger = yes
+				has_road_building_trigger = yes
+				has_manpower_building_trigger = yes
+				num_of_times_improved_by_owner = 15
+				num_of_times_expanded_infrastructure = 2
+			}
+			4503 = {
+				development = 25
+				has_manufactory_trigger = yes
+				fort_level = 2
+				has_trade_building_trigger = yes
+				has_production_building_trigger = yes
+				has_tax_building_trigger = yes
+				has_road_building_trigger = yes
+				has_manpower_building_trigger = yes
+				num_of_times_improved_by_owner = 15
+				num_of_times_expanded_infrastructure = 2
+			}
+			5247 = {
+				development = 25
+				has_manufactory_trigger = yes
+				fort_level = 2
+				has_trade_building_trigger = yes
+				has_production_building_trigger = yes
+				has_tax_building_trigger = yes
+				has_road_building_trigger = yes
+				has_manpower_building_trigger = yes
+				num_of_times_improved_by_owner = 15
+				num_of_times_expanded_infrastructure = 2
+			}
+			506 = {
+				development = 25
+				has_manufactory_trigger = yes
+				fort_level = 2
+				has_trade_building_trigger = yes
+				has_production_building_trigger = yes
+				has_tax_building_trigger = yes
+				has_road_building_trigger = yes
+				has_manpower_building_trigger = yes
+				num_of_times_improved_by_owner = 15
+				num_of_times_expanded_infrastructure = 2
+			}
+		}
+
+		effect = {
+			add_splendor = 200
+			change_adm = 1
+			change_dip = 1
+			504 = {
+				add_province_modifier = {
+					name = hnd_local_center_of_power
+					duration = -1
+				}
+			}
+			4503 = {
+				add_province_modifier = {
+					name = hnd_local_center_of_power
+					duration = -1
+				}
+			}
+			5247 = {
+				add_province_modifier = {
+					name = hnd_local_center_of_power
+					duration = -1
+				}
+			}
+			506 = {
+				add_province_modifier = {
+					name = hnd_local_center_of_power
+					duration = -1
+				}
+			}
+			country_event = {
+				id = abindia_mission.33
+				days = 1
+			}
+		}
+	}
+
+	hnd_zoro_temples = {
+		icon = per_build_the_fire_temples
+		position = 6
+		provinces_to_highlight = {
+			province_id = 5247
+		}
+
+		trigger = {
+			owns_core_province = 5247
+			OR = {
+				inquisitor = 2
+				missionary = 2
+			}
+			OR = {
+				monthly_adm = 10
+				full_idea_group = religious_ideas
+			}
+			5247 = {
+				has_great_project = {
+					type = samsara_zoro_temple
+					tier = 2
+				}
+			}
+			num_of_estate_privileges = {
+				estate = estate_church
+				value = 6
+			}
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 60
+			}
+			religious_unity = 0.95
+			num_of_owned_provinces_with = {
+				value = 15
+				has_tax_building_trigger = yes
+			}
+		}
+
+		effect = {
+			5247 = {
+				add_province_modifier = {
+					name = zoro_temple_restoration_effort
+					duration = 7300
+				}
+			}
+			add_country_modifier = {
+				name = zoroastrian_rites_expanded
+				duration = 18250
+			}
+			add_prestige = 10
+		}
+	}
+
+	hnd_prepare_army = {
+		icon = mission_persian_soldiers
+		position = 8
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			OR = {
+				is_heir_leader = yes
+				is_monarch_leader = yes
+				num_of_generals = 2
+			}
+			OR = {
+				has_leader_with = {
+					fire = 3
+				}
+				has_leader_with = {
+					shock = 3
+				}
+				has_leader_with = {
+					manuever = 3
+				}
+				has_leader_with = {
+					siege = 3
+				}
+			}
+			num_of_cavalry = 2
+			army_size_percentage = 1
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = hnd_ready_for_comeback
+				duration = 3650
+			}
+		}
+	}
+
+	hnd_crossing_indus = {
+		icon = gfx_ab_india_cross_indus_river
+		position = 9
+		required_missions = { hnd_prepare_army } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5247
+				province_id = 4505
+			}
+			NOT = { owned_by = ROOT }
+		}
+
+		trigger = {
+			owns = 4505
+			owns = 5247
+			OR = {
+				war_with = SND
+				has_won_war_against = {
+					who = SND
+					max_years_since = 10
+				}
+				NOT = { exists = SND }
+			}
+		}
+
+		effect = {
+			4505 = { add_core = ROOT }
+			5247 = { add_core = ROOT }
+			5245 = { add_core = ROOT }
+			if = {
+				limit = { exists = SND }
+				SND = {
+					add_stability = -1
+					add_prestige = -20
+				}
+			}
+			sindh_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT 
+			}
+		}
+	}
+
+	hnd_end_sindh = {
+		icon = mission_spoils_of_war
+		position = 10
+		required_missions = {
+			hnd_crossing_indus
+			hnd_gather_support
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = sindh_area
+				area = northern_sindh_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+
+		trigger = {
+			sindh_area = {
+				type = all
+				owned_by = ROOT
+			}
+			northern_sindh_area = {
+				type = all
+				owned_by = ROOT
+			}
+			NOT = { exists = SND }
+		}
+
+		effect = {
+			add_prestige = 10
+			add_army_tradition = 10
+			add_adm_power = 50
+			marwar_area = { add_permanent_claim = ROOT }
+			503 = { add_permanent_claim = ROOT }
+			add_country_modifier = {
+				name = hnd_defeated_enemy
+				duration = 3650
+			}
+		}
+	}
+
+	hnd_sindh_united_again = {
+		icon = gfx_ab_india_sindh_conquered
+		position = 11
+		required_missions = { hnd_end_sindh } 
+		provinces_to_highlight = {
+			OR = {
+				area = sindh_area
+				area = northern_sindh_area
+			}
+		}
+
+		trigger = {
+			northern_sindh_area = {
+				type = all
+				is_state_core = ROOT
+				NOT = { local_autonomy = 5 }
+				NOT = { devastation = 1 }
+				NOT = { nationalism = 2 }
+				num_of_buildings_in_province = 2
+				infantry_in_province = 2
+			}
+			sindh_area = {
+				type = all
+				is_state_core = ROOT
+				NOT = { local_autonomy = 5 }
+				NOT = { devastation = 1 }
+				NOT = { nationalism = 2 }
+				num_of_buildings_in_province = 2
+				infantry_in_province = 2
+			}
+			legitimacy_equivalent = 90
+			stability = 1
+		}
+
+		effect = {
+			change_government_reform_progress = 50
+			add_country_modifier = {
+				name = hind_united_again
+				duration = 7300
+			}
+			change_mil = 1
+			country_event = {
+				id = abindia_mission.34
+				days = 10
+			}
+		}
+	}
+
+	hnd_hind_satrapy_restored = {
+		icon = gfx_ab_india_hind_satrapy_restored
+		position = 13
+		required_missions = {
+			hnd_sindh_united_again
+			hnd_capture_multan_area
+			hnd_spread_zoroastrian_flame
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 506
+				province_id = 2067
+				province_id = 2231
+				province_id = 514
+				province_id = 504
+				province_id = 5247
+				province_id = 4503
+			}
+		}
+
+		trigger = {
+			OR = {
+				legitimacy_equivalent = 99
+				prestige = 90
+			}
+			grown_by_development = 150
+			grown_by_states = 4
+		}
+		
+		effect = {
+			custom_tooltip = hnd_hind_satrapy_restored.tooltip
+			add_splendor = 250
+			add_stability = 1
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 20
+			}
+		}
+	}
+}
+HND_branch_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = HND
+			tag = IDS
+			tag = WHS
+		}
+	}
+
+	hnd_grain_for_soldiers = {
+		icon = gfx_ab_india_cotton_grain
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2072
+				province_id = 505
+				province_id = 2068
+			}
+		}
+
+		trigger = {
+			2072 = {
+				base_production = 6
+				has_production_building_trigger = yes
+			}
+			OR = {
+				505 = {
+					base_production = 6
+					has_production_building_trigger = yes
+				}
+				2068 = {
+					base_production = 6
+					has_production_building_trigger = yes
+				}
+			}
+			manpower = 8
+		}
+
+		effect = {
+			add_manpower = -2
+			add_treasury = 100
+			add_country_modifier = {
+				name = hnd_grain_and_cotton_soldiers
+				duration = 7300
+			}
+		}
+	}
+
+	hnd_rebuild_aror_monument = {
+		icon = gfx_ab_india_aror_kadeh
+		position = 3
+		required_missions = { hnd_indus_irrigation_system } 
+		provinces_to_highlight = {
+			province_id = 5247
+		}
+
+		trigger = {
+			owns_core_province = 5274
+			OR = {
+				planner = 2
+				architect = 2
+			}
+			5247 = {
+				has_great_project = {
+					type = samsara_zoro_temple
+					tier = 2
+				}
+				has_tax_building_trigger = yes
+				development = 18
+			}
+		}
+
+		effect = {
+			add_splendor = 100
+			change_innovativeness = 2
+			define_advisor = {
+				type = architect
+				skill = 3
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.5
+			}
+			define_advisor = {
+				type = inquisitor
+				skill = 3
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.5
+			}
+			4430 = { add_permanent_claim = ROOT }
+		}
+	}
+
+	hnd_support_from_zoroastrian = {
+		icon = per_zoroastrian_community
+		position = 4
+		required_missions = { hnd_persian_diplo_mission } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			diplomatic_reputation = 3.25
+			diplomat = 2
+			any_known_country = {
+				capital_scope = { superregion = persia_superregion }
+				religion = zoroastrian
+				has_opinion = {
+					who = ROOT
+					value = 50
+				}
+				NOT = {
+					ai_attitude = {
+						who = ROOT
+						attitude = attitude_hostile
+					}
+				}
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = hnd_persian_auxiliaries
+				duration = 3650
+			}
+			custom_tooltip = hnd_support_from_zoroastrian.tooltip
+			every_known_country = {
+				limit = {
+					capital_scope = { superregion = persia_superregion }
+					religion = zoroastrian
+					has_opinion = {
+						who = ROOT
+						value = 50
+					}
+					NOT = {
+						ai_attitude = {
+							who = ROOT
+							attitude = attitude_hostile
+						}
+					}
+				}
+				ROOT = {
+					add_manpower = 3
+					add_adm_power = 15
+					add_dip_power = 15
+					add_treasury = 50
+					add_sailors = 500
+					add_splendor = 10
+				}
+			}
+		}
+	}
+
+	hnd_persian_scholars = {
+		icon = per_expand_our_influence
+		position = 6
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			has_institution = renaissance
+			is_institution_enabled = renaissance
+			splendor = 250
+			num_of_different_cultures_in_court = 3
+			OR = {
+				splendor = 600
+				innovativeness = 10
+			}
+			OR = {
+				diplomat = 2
+				naval_reformer = 2
+				trader = 2
+			}
+			OR = {
+				visionary = 2
+				scholar = 2
+				in_advisor = 2
+				philosopher = 2
+				natural_scientist = 2
+			}
+			OR = {
+				army_reformer = 2
+				siegeengineer = 2
+			}
+			any_ally = {
+				culture_group = iranian
+				has_institution = renaissance
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+				trust = {
+					who = ROOT
+					value = 75
+				}
+			}
+		}
+
+		effect = {
+			change_innovativeness = 2
+			add_splendor = -250
+			add_dip_power = 50
+			add_country_modifier = {
+				name = attracting_persian_scholars
+				duration = 14600
+			}
+			custom_tooltip = hnd_persian_scholars.tooltip
+			if = {
+				limit = {
+					any_neighbor_country = {
+						tech_difference = 3
+					} 
+				}
+				add_adm_tech = 1
+				add_dip_tech = 1
+				add_mil_tech = 1
+			}
+			if = {
+				limit = {
+					any_ally = {
+						tech_difference = 1
+						culture_group = iranian
+					}
+				}
+				random_list = {
+					33 = { add_adm_tech = 1 }
+					33 = { add_dip_tech = 1 }
+					33 = { add_mil_tech = 1 }
+				}
+			}
+		}
+	}
+
+	hnd_strike_wicked_north = {
+		icon = gfx_ab_india_advance_to_multan
+		position = 9
+		required_missions = { hnd_prepare_army } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2079
+				province_id = 2086
+			}
+			NOT = { owned_by = ROOT }
+		}
+
+		trigger = {
+			2079 = { owned_by = ROOT }
+			2086 = { owned_by = ROOT }
+			OR = {
+				NOT = { exists = SHS }
+				has_won_war_against = {
+					who = SHS
+					max_years_since = 10
+				}
+				OR = {
+					army_tradition = 15
+					num_of_generals_with_traits = 1
+				}
+			}
+		}
+
+		effect = {
+			multan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_army_tradition = 5
+			add_adm_power = 50
+			country_event = {
+				id = abindia_mission.35
+				days = 10
+			}
+		}
+	}
+
+	hnd_capture_multan_area = {
+		icon = mission_restore_rule_over_multan
+		position = 12
+		required_missions = {
+			hnd_strike_wicked_north
+			hnd_sindh_united_again
+		}
+		provinces_to_highlight = {
+			area = multan_area
+			NOT = { owned_by = ROOT }
+		}
+
+		trigger = {
+			multan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			owns_core_province = 506
+			OR = {
+				NOT = { exists = MUL }
+				506 = {
+					NOT = { local_autonomy = 5 }
+				}
+				506 = { has_courthouse_building_trigger = yes }
+			}
+		}
+
+		effect = {
+			add_army_tradition = 10
+			add_prestige = 10
+			507 = { add_permanent_claim = ROOT }
+			custom_tooltip = hnd_capture_multan_area.tooltip
+			hidden_effect = {
+				every_province = {
+					limit = {
+						is_core = LAH
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			add_casus_belli = {
+				target = PSW
+				type = cb_vassalize_mission
+				months = 120
+			}
+		}
+	}
+}
+HND_branch_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = HND
+			tag = IDS
+			tag = WHS
+		}
+	}
+
+	hnd_persian_diplo_mission = {
+		icon = mission_diplomatic_relation
+		position = 3
+		provinces_to_highlight = {
+			superregion = persia_superregion
+			is_capital = yes
+			owner = { culture_group = iranian }
+		}
+
+		trigger = {
+			any_known_country = {
+				culture_group = iranian
+				capital_scope = { superregion = persia_superregion }
+				has_reform = persianprince
+				has_opinion = {
+					who = ROOT
+					value = 75
+				}
+				NOT = {
+					ai_attitude = {
+						who = ROOT
+						attitude = attitude_hostile
+					}
+				}
+			}
+		}
+
+		effect = {
+			add_dip_power = 25
+			country_event = {
+				id = abindia_mission.36
+				days = 1
+			}
+		}
+	}
+
+	hnd_pick_persian_side = {
+		icon = mission_princespersia
+		position = 4
+		required_missions = { hnd_persian_diplo_mission } 
+		provinces_to_highlight = {
+			superregion = persia_superregion
+			is_capital = yes
+			owner = {
+				OR = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+					has_country_modifier = abi_hind_persia_target
+				}
+			}
+		}
+
+		trigger = {
+			diplomat = 2
+			OR = {
+				exists = PER
+				exists = PRC
+				exists = PRZ
+				any_known_country = {
+					has_country_modifier = abi_hind_persia_target
+					has_opinion = {
+						who = ROOT
+						value = 125
+					}
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = sent_gift
+					}
+				}
+			}
+		}
+
+		effect = {
+			custom_tooltip = hnd_pick_persian_side.tooltip		#If Persia already formed, no reward
+			if = {
+				limit = {
+					OR = {
+						exists = PER
+						exists = PRC
+						exists = PRZ
+					}
+				}
+				add_treasury = 1
+			}
+			else = {
+				country_event = {
+					id = abindia_mission.37
+					days = 30
+				}
+			}
+		}
+	}
+
+	hnd_prepare_for_inevitable = {
+		icon = per_reborn_in_fire
+		position = 5
+		required_missions = {
+			hnd_pick_persian_side
+			hnd_support_from_zoroastrian
+		}
+		provinces_to_highlight = {
+			owner = {
+				OR = {
+					tag = PER
+					tag = PRC
+					tag = PRZ
+				}
+			}
+		}
+
+		trigger = {
+			OR = {
+				exists = PER
+				exists = PRC
+				exists = PRZ
+			}
+		}
+		
+		effect = {
+			add_mil_power = 50
+			#If remained ally of Persia, unlocks new option in Persian demands decision
+			custom_tooltip = hnd_prepare_for_inevitable.tooltip
+			if = {
+				limit = {
+					any_known_country = {
+						has_country_modifier = abi_hind_persia_target
+						alliance_with = ROOT
+					}
+				}
+				add_stability = 1
+				random_known_country = {
+					limit = {
+						has_country_modifier = abi_hind_persia_target
+						alliance_with = ROOT
+					}
+					add_country_modifier = {
+						name = persia_friendly_to_hnd
+						duration = 18250
+					}
+				}
+			}
+			else = { #Otherwise get the event
+				country_event = {
+					id = abindia_mission.38
+					days = 1
+				}
+			}
+		}
+	}
+
+	hnd_splendid_court = {
+		icon = mission_prosperity_in_bengal
+		position = 6
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			employed_advisor = {
+				category = ADM
+				skill = 3
+				religion = ROOT
+			}
+			employed_advisor = {
+				category = DIP
+				skill = 3
+				religion = ROOT
+			}
+			employed_advisor = {
+				category = MIL
+				skill = 3
+				religion = ROOT
+			}
+			has_institution = renaissance
+			monthly_adm = 10
+			monthly_dip = 10
+			monthly_mil = 10
+			monthly_income = 15
+			prestige = 90
+			legitimacy_equivalent = 95
+			splendor = 500
+			num_of_estate_agendas_completed = {
+				estate = estate_church
+				value = 3
+			}
+			num_of_estate_agendas_completed = {
+				estate = estate_maratha
+				value = 3
+			}
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 60
+			}
+			estate_loyalty = {
+				estate = estate_maratha
+				loyalty = 60
+			}
+			OR = {
+				has_idea_group = humanist_ideas
+				has_idea_group = innovativeness_ideas
+				has_idea_group = court_ideas
+				has_idea_group = aristocracy_ideas
+				has_idea_group = state_governance_ideas
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = splendid_court_modifier
+				duration = 10950
+			}
+			add_country_modifier = {
+				name = hind_multinational_court
+				duration = -1
+			}
+		}
+	}
+
+	hnd_shatter_sarachosia = {
+		icon = mission_timed
+		position = 8
+		provinces_to_highlight = {
+			province_id = 2079
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = hnd_shatter_sarachosia_trigger_tooltip
+				NOT = { is_year = 1450 }
+				2079 = { owned_by = ROOT }
+				NOT = { exists = SHS }
+			}
+		}
+
+		effect = {
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 20
+			}
+			add_country_modifier = {
+				name = hnd_completed_timed_mission
+				duration = 3650
+			}
+		}
+	}
+
+	hnd_christian_relations = {
+		icon = chivalry_is_not_dead
+		position = 10
+		required_missions = { hnd_strike_wicked_north } 
+		provinces_to_highlight = {
+			owned_by = ROOT
+			OR = {
+				religion = nestorian
+				religion = malankara
+			}
+		}
+
+		trigger = {
+			stability = 2
+			OR = {
+				inquisitor = 2
+				scholar = 2
+				missionary = 2
+			}
+			num_of_owned_provinces_with = {
+				value = 3
+				OR = {
+					religion = nestorian
+					religion = malankara
+				}
+			}
+		}
+
+		effect = {
+			country_event = {
+				id = abindia_mission.39
+				days = 1
+			}
+		}
+	}
+}

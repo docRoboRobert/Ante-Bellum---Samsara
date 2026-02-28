@@ -56,3 +56,18 @@ lha_accepted_pilgrimage = {
 	opinion = 50
 	yearly_decay = 2
 }
+
+ceded_important_port_opinion = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+pushed_arabs_out_of_saurashtra = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+hnd_diplomatic_mission = {
+	opinion = 25
+	yearly_decay = 5
+}

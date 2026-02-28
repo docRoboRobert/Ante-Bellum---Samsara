@@ -53,4 +53,35 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/event_pictures_indiasub/ABindia_seasia_map_eventPicture.dds"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "ABINDIA_SAURASHTRA_MAP_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/ABindia_saurashtra_map_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "ABINDIA_JEWISH_SAURASHTRA_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/ABindia_jewish_saurashtra_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "ABINDIA_LONG_BRIDGE_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/ABindia_LONG_BRIDGE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "ABINDIA_INDUS_BRIDGE_CHART_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/ABindia_indus_bridge_chart_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "ABINDIA_INDUS_BRIDGE_CHART_COLOURED_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/ABindia_indus_bridge_chart_coloured_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "ABINDIA_SARAHOSIA_CAPITAL_LOST_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_indiasub/ABindia_sarahosia_capital_lost_eventPicture.dds"
+		allwaystransparent = yes
+	}
 }

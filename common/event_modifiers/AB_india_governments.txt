@@ -1,0 +1,29 @@
+#Modifiers related to government reforms and mechanics
+
+samsara_unlocked_immortals_prov = {
+	local_amount_of_carolean = 5
+}
+
+samsara_indian_immortals_weak = {
+	drill_decay_modifier = 0.05
+	morale_damage = -0.15
+	is_carolean_modifier = yes
+}
+
+samsara_zoro_priest_government_mod = {
+	local_governing_cost = -0.1
+}
+
+samsara_zoro_hindu_union_prov_mod = {
+	local_missionary_strength = -1
+	local_religious_conversion_resistance = 1
+}
+
+hind_reformed_immortals_mod = {
+	morale_damage = 0.15
+	drill_decay_modifier = -0.1
+	morale_damage_received = -0.05
+	reinforce_cost_modifier = 0.1
+	discipline = 0.02
+	is_carolean_modifier = yes
+}

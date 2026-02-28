@@ -1,0 +1,12 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_grain_field_picture"
+		texturefile = "gfx/interface/ideas_EU4/grain_field_picture.dds"
+	}
+	spriteType = {
+		name = "GFX_grain_field_hub_picture"
+		texturefile = "gfx/interface/ideas_EU4/grain_field_hub_picture.dds"
+	}
+	
+}

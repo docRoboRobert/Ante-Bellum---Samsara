@@ -1,0 +1,385 @@
+country_decisions = {
+
+	abi_sabotage_persian_court = {
+		potential = {
+			has_country_flag = hind_against_persia_flag
+			NOT = { exists = PER }
+			NOT = { exists = PRC }
+			NOT = { exists = PRZ }
+		}
+		provinces_to_highlight = {
+			superregion = persia_superregion
+			is_capital = yes
+			owner = {
+				culture_group = iranian
+				has_spy_network_from = {
+					who = ROOT
+					value = 50
+				}
+			}
+		}
+		color = { 217 217 92 }
+		allow = {
+			dip_power = 50
+			any_known_country = {
+				culture_group = iranian
+				capital_scope = { superregion = persia_superregion }
+				NOT = { alliance_with = ROOT }
+				has_spy_network_from = {
+					who = ROOT
+					value = 50
+				}
+			}
+		}
+		effect = {
+			add_dip_power = -50
+			every_known_country = {
+				limit = {
+					culture_group = iranian
+					capital_scope = { superregion = persia_superregion }
+					NOT = { alliance_with = ROOT }
+					has_spy_network_from = {
+						who = ROOT
+						value = 50
+					}
+				}
+				add_prestige = -10
+				add_adm_power = -25
+				add_dip_power = -25
+				add_splendor = -25
+				add_corruption = 2
+				add_country_modifier = {
+					name = hnd_sabotaged_persian_court
+					duration = 1460
+				}
+				add_spy_network_from = {
+					who = ROOT
+					value = -50
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	abi_sabotage_persian_army = {
+		potential = {
+			has_country_flag = hind_against_persia_flag
+			NOT = { exists = PER }
+			NOT = { exists = PRC }
+			NOT = { exists = PRZ }
+		}
+		provinces_to_highlight = {
+			superregion = persia_superregion
+			is_capital = yes
+			owner = {
+				culture_group = iranian
+				has_spy_network_from = {
+					who = ROOT
+					value = 50
+				}
+			}
+		}
+		color = { 217 217 92 }
+		allow = {
+			dip_power = 50
+			any_known_country = {
+				culture_group = iranian
+				capital_scope = { superregion = persia_superregion }
+				NOT = { alliance_with = ROOT }
+				has_spy_network_from = {
+					who = ROOT
+					value = 50
+				}
+			}
+		}
+		effect = {
+			add_dip_power = -50
+			every_known_country = {
+				limit = {
+					culture_group = iranian
+					capital_scope = { superregion = persia_superregion }
+					NOT = { alliance_with = ROOT }
+					has_spy_network_from = {
+						who = ROOT
+						value = 50
+					}
+				}
+				add_manpower = -5
+				add_sailors = -1000
+				add_mil_power = -25
+				add_army_tradition = -10
+				add_country_modifier = {
+					name = hnd_sabotaged_persian_army
+					duration = 1460
+				}
+				add_spy_network_from = {
+					who = ROOT
+					value = -50
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	abi_sabotage_persian_economy = {
+		potential = {
+			has_country_flag = hind_against_persia_flag
+			NOT = { exists = PER }
+			NOT = { exists = PRC }
+			NOT = { exists = PRZ }
+		}
+		provinces_to_highlight = {
+			superregion = persia_superregion
+			is_capital = yes
+			owner = {
+				culture_group = iranian
+				has_spy_network_from = {
+					who = ROOT
+					value = 50
+				}
+			}
+		}
+		color = { 217 217 92 }
+		allow = {
+			dip_power = 50
+			any_known_country = {
+				culture_group = iranian
+				capital_scope = { superregion = persia_superregion }
+				NOT = { alliance_with = ROOT }
+				has_spy_network_from = {
+					who = ROOT
+					value = 50
+				}
+			}
+		}
+		effect = {
+			add_dip_power = -50
+			every_known_country = {
+				limit = {
+					culture_group = iranian
+					capital_scope = { superregion = persia_superregion }
+					NOT = { alliance_with = ROOT }
+					has_spy_network_from = {
+						who = ROOT
+						value = 50
+					}
+				}
+				add_adm_power = -20
+				add_dip_power = -20
+				add_inflation = 2
+				add_mercantilism = -1
+				add_years_of_income = -0.5
+				add_loan = {
+					fixed_interest = 6
+					duration = 60
+				}
+				add_country_modifier = {
+					name = hnd_sabotaged_persian_economy
+					duration = 1460
+				}
+				add_spy_network_from = {
+					who = ROOT
+					value = -50
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	abi_sabotage_persian_countryside = {
+		potential = {
+			has_country_flag = hind_against_persia_flag
+			NOT = { exists = PER }
+			NOT = { exists = PRC }
+			NOT = { exists = PRZ }
+		}
+		provinces_to_highlight = {
+			superregion = persia_superregion
+			is_capital = yes
+			owner = {
+				culture_group = iranian
+				has_spy_network_from = {
+					who = ROOT
+					value = 50
+				}
+			}
+		}
+		color = { 217 217 92 }
+		allow = {
+			dip_power = 50
+			any_known_country = {
+				culture_group = iranian
+				capital_scope = { superregion = persia_superregion }
+				NOT = { alliance_with = ROOT }
+				has_spy_network_from = {
+					who = ROOT
+					value = 50
+				}
+			}
+		}
+		effect = {
+			add_dip_power = -50
+			every_known_country = {
+				limit = {
+					culture_group = iranian
+					capital_scope = { superregion = persia_superregion }
+					NOT = { alliance_with = ROOT }
+					has_spy_network_from = {
+						who = ROOT
+						value = 50
+					}
+				}
+				add_adm_power = -20
+				add_dip_power = -20
+				add_mil_power = -20
+				add_years_of_income = -0.5
+				add_corruption = 1
+				random_owned_province = {
+					anti_tax_rebels = 1
+				}
+				random_owned_province = {
+					anti_tax_rebels = 1
+				}
+				add_country_modifier = {
+					name = hnd_sabotaged_persian_countryside
+					duration = 1460
+				}
+				add_spy_network_from = {
+					who = ROOT
+					value = -50
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	abi_sabotage_persian_ruler = {
+		potential = {
+			has_country_flag = hind_against_persia_flag
+			NOT = { exists = PER }
+			NOT = { exists = PRC }
+			NOT = { exists = PRZ }
+		}
+		provinces_to_highlight = {
+			superregion = persia_superregion
+			is_capital = yes
+			owner = {
+				culture_group = iranian
+				has_spy_network_from = {
+					who = ROOT
+					value = 75
+				}
+			}
+		}
+		color = { 217 217 92 }
+		allow = {
+			adm_power = 25
+			dip_power = 50
+			mil_power = 25
+			any_known_country = {
+				culture_group = iranian
+				capital_scope = { superregion = persia_superregion }
+				NOT = { alliance_with = ROOT }
+				has_spy_network_from = {
+					who = ROOT
+					value = 75
+				}
+			}
+		}
+		effect = {
+			add_adm_power = -25
+			add_dip_power = -50
+			add_mil_power = -25
+			add_years_of_income = -0.33
+			every_known_country = {
+				limit = {
+					culture_group = iranian
+					capital_scope = { superregion = persia_superregion }
+					NOT = { alliance_with = ROOT }
+					has_spy_network_from = {
+						who = ROOT
+						value = 75
+					}
+				}
+				add_corruption = 2
+				kill_advisor = random
+				kill_leader = { type = random }
+				random_list = {
+					40 = {
+						kill_heir = { allow_new_heir = no }
+					}
+					40 = {
+						kill_ruler = yes
+					}
+					10 = {
+						kill_ruler = yes
+						kill_heir = { allow_new_heir = no }
+					}
+					10 = { add_prestige = -1 }
+				}
+				add_country_modifier = {
+					name = hnd_sabotaged_persian_ruler
+					duration = 1460
+				}
+				add_spy_network_from = {
+					who = ROOT
+					value = -75
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	abi_give_buffs_to_ai_persia = {
+		potential = {
+			has_country_flag = hind_helped_persia_flag
+			NOT = { has_global_flag = hind_enabled_ai_buff_flag }
+			NOT = { exists = PER }
+			NOT = { exists = PRC }
+			NOT = { exists = PRZ }
+		}
+		provinces_to_highlight = {
+			is_capital = yes
+			owner = {
+				has_country_modifier = abi_hind_persia_target
+			}
+		}
+		color = { 200 200 200 }
+		allow = {
+			any_known_country = {
+				has_country_modifier = abi_hind_persia_target
+				NOT = { has_country_modifier = hind_buff_for_ai_persia }
+			}
+		}
+		effect = {
+			random_known_country = {
+				limit = { has_country_modifier = abi_hind_persia_target }
+				add_country_modifier = {
+					name = hind_buff_for_ai_persia
+					duration = 5475
+				}
+				set_global_flag = hind_enabled_ai_buff_flag
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 1
+	}
+	
+}

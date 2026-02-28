@@ -2327,7 +2327,7 @@ mlankara_patriarchate = {
 			global_missionary_strength = 0.015
 			tolerance_own = 2
 			church_power_modifier = 0.25
-			yearly_patriarch_authority = 0.3
+			yearly_patriarch_authority = 0.03
 			relation_with_same_religion = 15
 			warscore_cost_vs_other_religion = -0.1
 		}

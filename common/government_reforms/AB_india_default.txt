@@ -71,3 +71,96 @@ parmistan_emperor_man = {
 		max_flagships = 1
 	}
 }
+
+samsara_empower_zoro_priests = {
+	icon = "samsara_empower_zoro_priests"
+	allow_normal_conversion = yes
+	potential = {
+		religion = zoroastrian
+		capital_scope = { superregion = india_superregion }
+	}
+	trigger = {
+		religion = zoroastrian
+		capital_scope = { superregion = india_superregion }
+	}
+	modifiers = {
+		tolerance_own = 1
+		tolerance_of_heathens_capacity = -1
+		missionary_maintenance_cost = -0.1
+		same_religion_advisor_cost = -0.1
+		
+		church_influence_modifier = 0.075
+		church_loyalty_modifier = 0.05
+		jains_influence_modifier = -0.05
+	}
+}
+
+samsara_zoro_hindu_union = {
+	icon = "samsara_zoro_hindu_union"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			AND = {
+				religion = zoroastrian
+				capital_scope = { superregion = india_superregion }
+			}
+			religion = hinduism
+		}
+	}
+	trigger = {
+		OR = {
+			AND = {
+				religion = zoroastrian
+				capital_scope = { superregion = india_superregion }
+				any_owned_province = {
+					religion = hinduism
+				}
+			}
+			AND = {
+				religion = hinduism
+				any_owned_province = {
+					religion = zoroastrian
+				}
+			}
+		}
+	}
+	modifiers = {
+		no_religion_penalty = yes
+		global_heathen_missionary_strength = -0.01
+		reverse_relation_with_heathen_religion = 20
+		relation_with_heathens = 10
+		global_prosperity_growth = 0.25
+		build_cost = -0.05
+		stability_cost_modifier = 0.1
+		
+		church_influence_modifier = 0.05
+		church_loyalty_modifier = -0.025
+		jains_influence_modifier = 0.05
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						religion = hinduism
+						religion = zoroastrian
+					}
+				}
+				add_province_modifier = {
+					name = samsara_zoro_hindu_union_prov_mod
+					duration = -1
+				}
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = samsara_zoro_hindu_union_prov_mod
+				}
+				remove_province_modifier = samsara_zoro_hindu_union_prov_mod
+			}
+		}
+	}
+}

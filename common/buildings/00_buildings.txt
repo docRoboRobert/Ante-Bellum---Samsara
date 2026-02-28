@@ -206,6 +206,17 @@ temple = {
 				duration = -1
 			}
 		}
+		#Samsara
+		if = {
+			limit = {
+				FROM = { has_government_attribute = samsara_zoro_temples_modifier }
+				owned_by = FROM 
+			}
+			add_province_modifier = {
+				name = samsara_zoro_priest_government_mod
+				duration = -1
+			}
+		}
 	}
 	on_destroyed = {
 		on_province_tax_building_destroyed_estate_privileges_effect = yes
@@ -272,11 +283,16 @@ temple = {
 				duration = 3650
 			}
 		}
+		#Samsara
 		if = {
 			limit = {
 				has_province_modifier = lha_local_dzong
 			}
 			remove_province_modifier = lha_local_dzong
+		}
+		if = {
+			limit = { has_province_modifier = samsara_zoro_priest_government_mod }
+			remove_province_modifier = samsara_zoro_priest_government_mod
 		}
 	}
 	on_obsolete = {
@@ -1098,6 +1114,17 @@ cathedral = {
 				remove_province_modifier = lha_local_dzong
 			}
 		}
+		#Samsara
+		if = {
+			limit = {
+				FROM = { has_government_attribute = samsara_zoro_temples_modifier }
+				owned_by = FROM 
+			}
+			add_province_modifier = {
+				name = samsara_zoro_priest_government_mod
+				duration = -1
+			}
+		}
 	}
 	on_destroyed = {
 		on_province_tax_building_destroyed_estate_privileges_effect = yes
@@ -1164,11 +1191,16 @@ cathedral = {
 				duration = 3650
 			}
 		}
+		#Samsara
 		if = {
 			limit = {
-				has_province_modifier = lha_local_great_dzong
+				has_province_modifier = lha_local_dzong
 			}
-			remove_province_modifier = lha_local_great_dzong
+			remove_province_modifier = lha_local_dzong
+		}
+		if = {
+			limit = { has_province_modifier = samsara_zoro_priest_government_mod }
+			remove_province_modifier = samsara_zoro_priest_government_mod
 		}
 	}
 	on_obsolete = {

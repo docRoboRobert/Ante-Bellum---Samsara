@@ -30,5 +30,6 @@ vlr_st_thomas_apostle = {
 		morale_damage_received = -0.05
 		defensiveness = 0.10
 		church_power_modifier = 0.075
+		governing_capacity_modifier = -0.2
     }
 }

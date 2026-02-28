@@ -3,4 +3,68 @@ spriteTypes = {
 		name = "gfx_ab_india_mission_timed"
 		texturefile = "gfx//interface//missions//mission_timed.dds"
 	}
+	spriteType = {
+		name = "gfx_ab_india_cotton_grain"
+		texturefile = "gfx//interface//missions//mission_cotton_grain.dds"
+	}
+	spriteType = {
+		name = "gfx_ab_india_debal_site"
+		texturefile = "gfx//interface//missions//mission_debal_site.dds"
+	}
+	spriteType = {
+		name = "gfx_ab_india_indus_coast"
+		texturefile = "gfx//interface//missions//mission_indus_coast.dds"
+	}
+	spriteType = {
+		name = "gfx_ab_india_bridge_project"
+		texturefile = "gfx//interface//missions//mission_bridge_project.dds"
+	}
+	spriteType = {
+		name = "gfx_ab_india_long_bridge"
+		texturefile = "gfx//interface//missions//mission_long_bridge.dds"
+	}
+	spriteType = {
+		name = "gfx_ab_india_aror_kadeh"
+		texturefile = "gfx//interface//missions//mission_aror_kadeh.dds"
+	}
+	spriteType = {
+		name = "gfx_ab_india_sindh_united"
+		texturefile = "gfx//interface//missions//mission_sindh_united.dds"
+	}
+	spriteType = {
+		name = "gfx_ab_india_makran_coast"
+		texturefile = "gfx//interface//missions//mission_makran_coast.dds"
+	}
+	spriteType = {
+		name = "gfx_ab_india_advance_to_multan"
+		texturefile = "gfx//interface//missions//mission_advance_to_multan.dds"
+	}
+	spriteType = {
+		name = "gfx_ab_india_cross_indus_river"
+		texturefile = "gfx//interface//missions//mission_cross_indus_river.dds"
+	}
+	spriteType = {
+		name = "gfx_ab_india_defeat_kyn"
+		texturefile = "gfx//interface//missions//mission_defeat_kyn.dds"
+	}
+	spriteType = {
+		name = "gfx_ab_india_hind_satrapy_restored"
+		texturefile = "gfx//interface//missions//mission_hind_satrapy_restored.dds"
+	}
+	spriteType = {
+		name = "gfx_ab_india_salt_marsh"
+		texturefile = "gfx//interface//missions//mission_salt_marsh.dds"
+	}
+	spriteType = {
+		name = "gfx_ab_india_salt_ponds"
+		texturefile = "gfx//interface//missions//mission_salt_ponds.dds"
+	}
+	spriteType = {
+		name = "gfx_ab_india_sindh_conquered"
+		texturefile = "gfx//interface//missions//mission_sindh_conquered.dds"
+	}
+	spriteType = {
+		name = "gfx_ab_india_white_rann"
+		texturefile = "gfx//interface//missions//mission_white_rann.dds"
+	}
 }

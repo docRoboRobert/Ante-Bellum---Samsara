@@ -43,5 +43,54 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
+	
+	reform_indian_immortals = {
+		potential = {
+			has_reform = hind_establish_immortals
+			NOT = { has_country_modifier = hind_reformed_immortals_mod }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 431
+				province_id = 428
+				province_id = 2218
+				province_id = 4326
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			has_reform = hind_establish_immortals
+			mil_tech = 9
+			OR = {
+				AND = {
+					owns_core_province = 431
+					owns_core_province = 428
+					owns_core_province = 2218
+					owns_core_province = 4326
+				}
+				any_ally = {
+					OR = {
+						tag = PER
+						tag = PRC
+						tag = PRZ
+					}
+					owns_core_province = 431
+					owns_core_province = 428
+					owns_core_province = 2218
+					owns_core_province = 4326
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = hind_reformed_immortals_mod
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
 
 }

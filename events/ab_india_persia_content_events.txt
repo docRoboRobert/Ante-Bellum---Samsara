@@ -1,0 +1,508 @@
+#Events regarding Persia and their relations with India
+namespace = abi_persia_extra_events
+
+country_event = {
+	id = abi_persia_extra_events.1
+	title = abi_persia_extra_events.1.t
+	desc = abi_persia_extra_events.1.d
+	picture = AFRICAN_INDIAN_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {	#Accept
+		name = abi_persia_extra_events.1.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				OR = {
+					PER = { religion = zoroastrian }
+					PRC = { religion = zoroastrian }
+					PRZ = { religion = zoroastrian }
+				}
+			}
+		}
+		add_prestige = -25
+		custom_tooltip = abi_persia_extra_events.1.tooltip
+		if = {
+			limit = { exists = PER }
+			PER = {
+				create_subject = {
+					subject_type = satrapy
+					subject = ROOT
+				}
+				add_prestige = 10
+				if = {
+					limit = { was_tag = SRN }
+					ROOT = { override_country_name = INDO_PARTHIA_RENAME }
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						superregion = persia_superregion
+						NOT = { province_id = 2068 }
+						NOT = { province_id = 5273 }
+					}
+					cede_province = PER
+					add_core = PER
+					remove_core = ROOT
+				}
+			}
+		}
+		if = {
+			limit = { exists = PRC }
+			PRC = {
+				create_subject = {
+					subject_type = satrapy
+					subject = ROOT
+				}
+				add_prestige = 10
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						superregion = persia_superregion
+						NOT = { province_id = 2068 }
+						NOT = { province_id = 5273 }
+					}
+					cede_province = PRC
+					add_core = PRC
+					remove_core = ROOT
+				}
+			}
+		}
+		if = {
+			limit = { exists = PRZ }
+			change_religion = sunni
+			PRZ = {
+				create_subject = {
+					subject_type = satrapy
+					subject = ROOT
+				}
+				add_prestige = 10
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						superregion = persia_superregion
+						NOT = { province_id = 2068 }
+						NOT = { province_id = 5273 }
+					}
+					cede_province = PRZ
+					add_core = PRZ
+					remove_core = ROOT
+				}
+			}
+		}
+	}
+	
+	option = {	#Refuse
+		name = abi_persia_extra_events.1.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				total_development = 200
+			}
+			modifier = {
+				factor = 2
+				total_development = 400
+			}
+			modifier = {
+				factor = 10
+				total_development = 600
+			}
+			modifier = {
+				factor = 10
+				total_development = PER
+			}
+			modifier = {
+				factor = 10
+				total_development = PRC
+			}
+			modifier = {
+				factor = 10
+				total_development = PRZ
+			}
+			modifier = {
+				factor = 3
+				tag = IDS
+			}
+		}
+		add_war_exhaustion = 2
+		if = {
+			limit = { exists = PER }
+			PER = {
+				declare_war_with_cb = {
+					who = ROOT
+					casus_belli = cb_annex
+				}
+			}
+		}
+		if = {
+			limit = { exists = PRC }
+			PRC = {
+				declare_war_with_cb = {
+					who = ROOT
+					casus_belli = cb_annex
+				}
+			}
+		}
+		if = {
+			limit = { exists = PRZ }
+			PRZ = {
+				declare_war_with_cb = {
+					who = ROOT
+					casus_belli = cb_annex
+				}
+			}
+		}
+	}
+	
+}
+
+country_event = {
+	id = abi_persia_extra_events.2
+	title = abi_persia_extra_events.2.t
+	desc = abi_persia_extra_events.2.d
+	picture = DIPLOMACY_SIGNING_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {	#Submit to Persia
+		name = abi_persia_extra_events.2.a
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 2
+				OR = {
+					PER = { religion = zoroastrian }
+					PRC = { religion = zoroastrian }
+					PRZ = { religion = zoroastrian }
+				}
+			}
+			modifier = {
+				factor = 20
+				OR = {
+					PER = { alliance_with = ROOT }
+					PRC = { alliance_with = ROOT }
+					PRZ = { alliance_with = ROOT }
+				}
+			}
+			modifier = {
+				factor = 10
+				OR = {
+					PER = { historical_friend_with = ROOT }
+					PRC = { historical_friend_with = ROOT }
+					PRZ = { historical_friend_with = ROOT }
+				}
+			}
+			modifier = {
+				factor = 5
+				OR = {
+					has_opinion = {
+						who = PER
+						value = 75
+					}
+					has_opinion = {
+						who = PRC
+						value = 75
+					}
+					has_opinion = {
+						who = PRZ
+						value = 75
+					}
+				}
+			}
+		}
+		add_prestige = -20
+		custom_tooltip = abi_persia_extra_events.2.tooltip
+		if = {
+			limit = { exists = PER }
+			PER = {
+				create_subject = {
+					subject_type = satrapy
+					subject = ROOT
+				}
+				add_prestige = 10
+				if = {
+					limit = { was_tag = SRN }
+					ROOT = { override_country_name = INDO_PARTHIA_RENAME }
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						superregion = persia_superregion
+						NOT = { province_id = 2068 }
+						NOT = { province_id = 5273 }
+					}
+					cede_province = PER
+					add_core = PER
+					remove_core = ROOT
+				}
+			}
+		}
+		if = {
+			limit = { exists = PRC }
+			PRC = {
+				create_subject = {
+					subject_type = satrapy
+					subject = ROOT
+				}
+				add_prestige = 10
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						superregion = persia_superregion
+						NOT = { province_id = 2068 }
+						NOT = { province_id = 5273 }
+					}
+					cede_province = PRC
+					add_core = PRC
+					remove_core = ROOT
+				}
+			}
+		}
+		if = {
+			limit = { exists = PRZ }
+			change_religion = sunni
+			PRZ = {
+				create_subject = {
+					subject_type = satrapy
+					subject = ROOT
+				}
+				add_prestige = 10
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						superregion = persia_superregion
+						NOT = { province_id = 2068 }
+						NOT = { province_id = 5273 }
+					}
+					cede_province = PRZ
+					add_core = PRZ
+					remove_core = ROOT
+				}
+			}
+		}
+	}
+	
+	option = {	#Refuse
+		name = abi_persia_extra_events.2.b
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				total_development = 200
+			}
+			modifier = {
+				factor = 2
+				total_development = 400
+			}
+			modifier = {
+				factor = 10
+				total_development = 600
+			}
+			modifier = {
+				factor = 10
+				total_development = PER
+			}
+			modifier = {
+				factor = 10
+				total_development = PRC
+			}
+			modifier = {
+				factor = 10
+				total_development = PRZ
+			}
+			modifier = {
+				factor = 3
+				tag = IDS
+			}
+		}
+		add_war_exhaustion = 2
+		if = {
+			limit = { exists = PER }
+			PER = {
+				declare_war_with_cb = {
+					who = ROOT
+					casus_belli = cb_annex
+				}
+			}
+		}
+		if = {
+			limit = { exists = PRC }
+			PRC = {
+				declare_war_with_cb = {
+					who = ROOT
+					casus_belli = cb_annex
+				}
+			}
+		}
+		if = {
+			limit = { exists = PRZ }
+			PRZ = {
+				declare_war_with_cb = {
+					who = ROOT
+					casus_belli = cb_annex
+				}
+			}
+		}
+	}
+	
+	option = {	#Submit on favourable terms
+		name = abi_persia_extra_events.2.c
+		trigger = {
+			OR = {
+				has_country_flag = hind_helped_persia_flag
+				any_known_country = {
+					has_country_modifier = abi_hind_persia_target
+				}
+			}
+		}
+		highlight = yes
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 25
+				always = yes
+			}
+		}
+		add_prestige = -10
+		custom_tooltip = abi_persia_extra_events.2.tooltip2
+		if = {
+			limit = { exists = PER }
+			PER = {
+				create_subject = {
+					subject_type = satrapy
+					subject = ROOT
+				}
+				add_prestige = 10
+				if = {
+					limit = { was_tag = SRN }
+					ROOT = { override_country_name = INDO_PARTHIA_RENAME }
+				}
+			}
+		}
+		if = {
+			limit = { exists = PRC }
+			PRC = {
+				create_subject = {
+					subject_type = satrapy
+					subject = ROOT
+				}
+				add_prestige = 10
+			}
+		}
+		if = {
+			limit = { exists = PRZ }
+			change_religion = sunni
+			PRZ = {
+				create_subject = {
+					subject_type = satrapy
+					subject = ROOT
+				}
+				add_prestige = 10
+			}
+		}
+	}
+	
+	option = {	#Submit and switch to playing as Persia
+		name = abi_persia_extra_events.2.e
+		trigger = {
+			OR = {
+				has_country_flag = hind_helped_persia_flag
+				any_known_country = {
+					has_country_modifier = abi_hind_persia_target
+				}
+			}
+		}
+		highlight = yes
+		ai_chance = { factor = 0 }
+		add_prestige = -10
+		custom_tooltip = abi_persia_extra_events.2.tooltip3
+		if = {
+			limit = { exists = PER }
+			PER = {
+				create_subject = {
+					subject_type = satrapy
+					subject = ROOT
+				}
+				add_prestige = 10
+				if = {
+					limit = { was_tag = SRN }
+					ROOT = { override_country_name = INDO_PARTHIA_RENAME }
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						superregion = persia_superregion
+						NOT = { province_id = 2068 }
+						NOT = { province_id = 5273 }
+					}
+					cede_province = PER
+					add_core = PER
+					remove_core = ROOT
+				}
+			}
+			switch_tag = PER
+		}
+		if = {
+			limit = { exists = PRC }
+			PRC = {
+				create_subject = {
+					subject_type = satrapy
+					subject = ROOT
+				}
+				add_prestige = 10
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						superregion = persia_superregion
+						NOT = { province_id = 2068 }
+						NOT = { province_id = 5273 }
+					}
+					cede_province = PRC
+					add_core = PRC
+					remove_core = ROOT
+				}
+			}
+			switch_tag = PRC
+		}
+		if = {
+			limit = { exists = PRZ }
+			change_religion = sunni
+			PRZ = {
+				create_subject = {
+					subject_type = satrapy
+					subject = ROOT
+				}
+				add_prestige = 10
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						superregion = persia_superregion
+						NOT = { province_id = 2068 }
+						NOT = { province_id = 5273 }
+					}
+					cede_province = PRZ
+					add_core = PRZ
+					remove_core = ROOT
+				}
+			}
+			switch_tag = PRZ
+		}
+	}
+	
+}

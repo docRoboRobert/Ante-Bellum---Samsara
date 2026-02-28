@@ -1,11 +1,13 @@
 ﻿l_english:
- central_semitic_group:0 "Central Semitic"
+ canaanite_semitic_group:0 "Canaanite Semitic"
  northern_aryan:0 "Northern Aryan"
  
  indian_arabic:0 "Alhindi"
  north_tamil:0 "Andhran Tamil"
  malayankara_toma:0 "Malayankartoma"
  baruchi:0 "Baruchi"
+ samaritan:0 "Samaritan"
+ mizrahi:0 "Mizrahi"        #Eastern Jewish people living in West Asia, under Muslim rule
  brahui:0 "Brahui"
  sashindi:0 "Hindi"
  kathisaura:0 "Kathisaura"

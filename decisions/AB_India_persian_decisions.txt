@@ -1,0 +1,156 @@
+country_decisions = {
+
+	abi_demand_hind_subjugation = {		#Decision if you never allied Hind
+		potential = {
+			OR = {
+				tag = PER
+				tag = PRC
+				tag = PRZ
+			}
+			OR = {
+				exists = HND
+				exists = IDS
+			}
+			NOT = { has_country_flag = demanded_hind_subjugation_flag }
+		}
+		provinces_to_highlight = {
+			is_capital = yes
+			owner = {
+				OR = {
+					tag = HND
+					tag = IDS
+				}
+			}
+		}
+		color = { 152 22 181 }
+		allow = {
+			dip_power = 50
+			OR = {
+				exists = HND
+				exists = IDS
+			}
+			OR = {
+				HND = { is_subject = no }
+				IDS = { is_subject = no }
+			}
+			OR = {
+				AND = {
+					NOT = { alliance_with = HND }
+					NOT = { historical_friend_with = HND }
+				}
+				NOT = { alliance_with = IDS }
+			}
+			custom_trigger_tooltip = {
+				tooltip = abi_demand_hind_subjugation.tooltip
+				NOT = { has_country_modifier = abi_hind_persia_target }
+				NOT = { has_country_flag = persia_cut_ties_with_hind_flag }
+			}
+		}
+		effect = {
+			add_dip_power = -50
+			if = {
+				limit = { exists = HND }
+				HND = {
+					country_event = {
+						id = abi_persia_extra_events.1
+						days = 60
+					}
+				}
+			}
+			if = {
+				limit = { exists = IDS }
+				IDS = {
+					country_event = {
+						id = abi_persia_extra_events.1
+						days = 60
+					}
+				}
+			}
+			hidden_effect = {
+				set_country_flag = demanded_hind_subjugation_flag
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	abi_discuss_hind_subjugation = {	#Decision if you made relations with Hind
+		potential = {
+			OR = {
+				tag = PER
+				tag = PRC
+				tag = PRZ
+			}
+			OR = {
+				exists = HND
+				exists = IDS
+			}
+			NOT = { has_country_flag = discussed_hind_subjugation_flag }
+		}
+		provinces_to_highlight = {
+			is_capital = yes
+			owner = {
+				OR = {
+					tag = HND
+					tag = IDS
+				}
+			}
+		}
+		color = { 152 22 181 }
+		allow = {
+			dip_power = 50
+			OR = {
+				exists = HND
+				exists = IDS
+			}
+			OR = {
+				HND = { is_subject = no }
+				IDS = { is_subject = no }
+			}
+			OR = {
+				alliance_with = HND
+				historical_friend_with = HND
+				alliance_with = IDS
+				historical_friend_with = IDS
+				custom_trigger_tooltip = {
+					tooltip = abi_discuss_hind_subjugation.tooltip
+					OR = {
+						has_country_modifier = abi_hind_persia_target
+						has_country_flag = persia_cut_ties_with_hind_flag
+					}
+				}
+			}
+		}
+		effect = {
+			add_dip_power = -50
+			if = {
+				limit = { exists = HND }
+				HND = {
+					country_event = {
+						id = abi_persia_extra_events.2
+						days = 60
+					}
+				}
+			}
+			if = {
+				limit = { exists = IDS }
+				IDS = {
+					country_event = {
+						id = abi_persia_extra_events.2
+						days = 60
+					}
+				}
+			}
+			hidden_effect = {
+				set_country_flag = discussed_hind_subjugation_flag
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+}

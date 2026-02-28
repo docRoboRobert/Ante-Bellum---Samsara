@@ -5,6 +5,7 @@ primary_culture = sindhi
 religion = jainism
 capital = 4504
 religious_school = bhumivastra_school
+historical_rival = HND
 
 change_estate_land_share = {
 	estate = estate_nobles
