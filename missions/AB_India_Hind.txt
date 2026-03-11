@@ -806,7 +806,7 @@ HND_branch_3 = {
 		effect = {
 			add_mil_power = 50
 			define_advisor = {
-				type = fortification_expert = 1
+				type = fortification_expert
 				skill = 1
 				culture = ROOT
 				religion = ROOT

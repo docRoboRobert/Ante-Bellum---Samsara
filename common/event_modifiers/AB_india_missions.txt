@@ -1029,6 +1029,13 @@ hind_cooperation_from_persia = {
 	siege_ability = 0.05
 }
 
+hind_covert_actions_against_persia = {
+	spy_offence = 0.2
+	spy_action_cost_modifier = -0.15
+	rebel_support_efficiency = 0.25
+	technology_cost = -0.01
+}
+
 hnd_sabotaged_persian_court = {
 	diplomatic_reputation = -1
 	prestige_decay = 0.03

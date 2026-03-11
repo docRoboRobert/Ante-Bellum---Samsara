@@ -400,6 +400,8 @@
  desc_persian_prince_help_from_hind:0 "Together towards unified Persia. We've been blessed at the legitimate successor of Persian empire by our old satrapy."
  hind_cooperation_from_persia:0 "Persian Aid and Cooperation"
  desc_hind_cooperation_from_persia:0 "We are receiving aid and expertise from our Persian allies. We've agreed to work together towards unifying our realms as we've both established ourselves as legitimate heirs of Persian Empire."
+ hind_covert_actions_against_persia:0 "Persian Espionage Mission"
+ desc_hind_covert_actions_against_persia:0 "We are focused on training our spies and infiltrators to be as effective as possible in order to undermine possible Persian threat."
  hnd_sabotaged_persian_court:0 "Court Sabotaged!"
  desc_hnd_sabotaged_persian_court:0 "Covert actions of our enemies sabotaged our royal court and hindered its abilities to act!"
  hnd_sabotaged_persian_army:0 "Army Sabotaged!"

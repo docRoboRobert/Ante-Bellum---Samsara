@@ -1791,7 +1791,6 @@ tribal = {
 				mch_clansociety
 				glh_saddle
 				cmnmongol
-				ilk_saddle
 				mgs_ferghana
 				mgygyula
 				# ]]]
@@ -1900,7 +1899,6 @@ tribal = {
 				kha_kurultai_reform
 				glh_kurultai
 				cmncanon
-				ilk_kurultai
 				mgs_patriarchate
 				# ]]]
 			}
