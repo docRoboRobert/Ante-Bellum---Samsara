@@ -101,7 +101,6 @@ monarchy = {
 				persian_government_reform
 				# zoroastrian_persian_government_reform
 				# portuguese_monarchy_reform
-				holy_imperial_monarchy_reform
 				# burgundian_state_reform
 				bohemian_elective_kingdom_reform
 				stadthalter_monarchy_reform
@@ -199,7 +198,9 @@ monarchy = {
 				# Baltic
 				prr_pruthenian_warchiefdom
 				est_council_of_chiefs
-				krz_tsardom_of_krievzeme		
+				krz_tsardom_of_krievzeme
+				# France
+				fraelective
 				# ]]]
 				#Samsara
 				parmistan_emperor_man
@@ -472,6 +473,7 @@ monarchy = {
 				polintegrateclergy
 				# Blood and Iron
 				ger_state_captains_reform
+				holy_imperial_monarchy_reform
 				# ]]]
 			}
 		}
@@ -701,7 +703,7 @@ monarchy = {
 				# Blood and Iron
 				rhl_atheist_ideas
 				# Baltic
-				est_harmony	 
+				est_harmony
 				# ]]]
 				#Samsara
 				hind_zoro_priest
@@ -875,7 +877,7 @@ monarchy = {
 				# pol
 				poljews
 				# Baltic
-				blt_amber_trade_charter 
+				blt_amber_trade_charter
 				# ]]]
 			}
 		}
@@ -1225,6 +1227,10 @@ republic = {
 				ab_tuscan_peasants_reform
 				rhl_confederation_reform
 				ab_roman_republic
+				# France
+				frarepublic
+				fragrandrepublic
+				fradictatorialconsulship
 				# ]]]
 			}
 		}

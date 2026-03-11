@@ -787,6 +787,9 @@ regimental_camp = {
 		update_improved_military_buildings_modifier = {
 			building = regimental_camp
 		}
+		# AB [[[
+		ab_building_forcelimit_effect = yes
+		# ]]]
 		if = {
 			limit = {
 				FROM = {
@@ -807,6 +810,9 @@ regimental_camp = {
 		update_improved_military_buildings_modifier = {
 			building = regimental_camp
 		}
+		# AB [[[
+		ab_removing_forcelimit_effect = yes
+		# ]]]
 		if = {
 			limit = {
 				FROM = {
@@ -2161,6 +2167,9 @@ conscription_center = {
 		update_improved_military_buildings_modifier = {
 			building = conscription_center
 		}
+		# AB [[[
+		ab_building_forcelimit_effect = yes
+		# ]]]
 		if = {
 			limit = {
 				FROM = {
@@ -2181,6 +2190,9 @@ conscription_center = {
 		update_improved_military_buildings_modifier = {
 			building = conscription_center
 		}
+		# AB [[[
+		ab_removing_forcelimit_effect = yes
+		# ]]]
 		if = {
 			limit = {
 				FROM = {

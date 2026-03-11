@@ -496,6 +496,9 @@ nationalism = {
 
 harsh_treatment = {
 	local_unrest = -10
+	#AB [[[
+	monthly_royalistsvpeasants = 1
+	#]]]]
 }
 
 local_autonomy_multiplicative = {
@@ -643,6 +646,7 @@ positive_stability = {
 	# AB [[[
 	# We don't have ottoman decadence
 	#monthly_ottoman_decadence = -0.05
+	monthly_royalistsvpeasants = -0.25
 	# ]]]
 	monthly_authority_power = -0.01
 }
@@ -663,6 +667,7 @@ negative_stability = {
 	# AB [[[
 	# We don't have ottoman decadence
 	#monthly_ottoman_decadence = -0.15
+	monthly_royalistsvpeasants = -0.25
 	# ]]]
 	monthly_authority_power = 0.05
 }
@@ -1199,13 +1204,19 @@ republican_tradition = {
 	reform_progress_growth = 1.0
 	burghers_loyalty_modifier = 0.05
 	vaisyas_loyalty_modifier = 0.05
-	monthly_authority_power = -0.05							
+	monthly_authority_power = -0.05
+	#AB [[[
+	monthly_royalistsvpeasants = -0.5
+	#]]]]
 }
 
 inverse_republican_tradition = {
 	stability_cost_modifier = 2.0
 	rr_jacobins_influence = -0.1
-	monthly_authority_power = 0.25						   
+	monthly_authority_power = 0.25
+	#AB [[[
+	monthly_royalistsvpeasants = -0.5
+	#]]]]
 }
 
 ########################################
@@ -1641,10 +1652,16 @@ autonomy_increased = {
 	local_unrest = -10
 	
 	picture="autonomy_increased"
+	#AB [[[
+	monthly_royalistsvpeasants = -0.05
+	#]]]]
 }
 
 autonomy_decreased = {
 	local_unrest = 10
+	#AB [[[
+	monthly_royalistsvpeasants = -0.05
+	#]]]]
 }
 
 revolution_target = {

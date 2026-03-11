@@ -1000,6 +1000,10 @@ zealot_personality = {
 			factor = 2 
 			has_country_flag = egypt_better_traits_flag
 		}
+		modifier = {
+			factor = 3
+			has_country_flag = sic_zealot_flag
+		}
 	}
 
 	# AB {{{
@@ -1990,9 +1994,9 @@ conqueror_personality = {
 	wants_avoid_ugly_borders = yes
 	knowledge_sharing = yes
 	underestimate_ae = yes
-	building_budget_multiplier = 0.2
-	easy_war_chance_multiplier = 2
-	war_chance_multiplier = 1.75
+	building_budget_multiplier = 1.1
+	easy_war_chance_multiplier = 3
+	war_chance_multiplier = 2
 	# }}}
 
 	gift_chance = -50
