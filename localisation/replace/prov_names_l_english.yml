@@ -1,4 +1,8 @@
 ﻿l_english:
+ PROV544:0 "Bhingar" #Ahmadnagar
+ PROV_ADJ544:0 "Bhingari"
+ PROV546:0 "East Varada" #East Berar
+ PROV_ADJ546:0 "Eastern Varadi"
  PROV1248:0 "Northern Maldives"
  PROV1949:0 "Anantapur"
  PROV_ADJ1949:0 "Anantapuran"
@@ -23,3 +27,15 @@
  PROV1798:0 "Western Desert"
  PROV2251:0 "Syrian Desert"
  PROV5206:0 "West Saharan Coast" #Used to be Southern Bohemian Mountains
+ 
+ #Area renames in India
+ ahmedabad_area:0 "Gujarat"
+ ahmedabad_area_adj:0 "Gujarati"
+ madura_area:0 "Pandya"
+ madura_area_adj:0 "Pandyan"
+ ahmednagar_area:0 "Marathwada"
+ ahmednagar_area_adj:0 "Marathwadi"
+ berar_area:0 "Vidarbha"
+ berar_area_adj:0 "Vidarbhan"
+ himalayan_hills_area:0 "Pahar"
+ himalayan_hills_area_adj:0 "Pahari"
