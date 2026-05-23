@@ -1660,7 +1660,7 @@ autonomy_increased = {
 autonomy_decreased = {
 	local_unrest = 10
 	#AB [[[
-	monthly_royalistsvpeasants = -0.05
+	monthly_royalistsvpeasants = 0.05
 	#]]]]
 }
 

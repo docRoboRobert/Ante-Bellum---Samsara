@@ -16,6 +16,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			tag = IBE
 			adm_tech = 10
 		}
 		effect = {

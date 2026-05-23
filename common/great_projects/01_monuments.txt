@@ -27,46 +27,21 @@ hagia_sophia = {
 
 	#can we build it?
 	build_trigger = {
-		custom_trigger_tooltip = {
-			tooltip = hagia_sophia_tt
-			OR = {
-				AND = {
-					OR = {
-						religion = orthodox
-						religion = coptic
-						religion = catholic
-						# AB {{{
-						religion = nestorian
-						# }}}
-						religion_group = muslim
-					}
-					has_owner_religion = yes
-				}
-				AND = {
-					owner = {
-						OR = {
-							secondary_religion = orthodox
-							secondary_religion = coptic
-							secondary_religion = catholic
-							# AB {{{
-							secondary_religion = nestorian
-							# }}}
-							secondary_religion = sunni
-							secondary_religion = shiite
-							secondary_religion = ibadi
-						}
-					}
-					OR = {
-						religion = orthodox
-						religion = coptic
-						religion = catholic
-						# AB {{{
-						religion = nestorian
-						# }}}
-						religion_group = muslim
-						has_owner_religion = yes
-					}
-				}
+		OR = {
+			province_is_or_accepts_religion = {
+				religion = orthodox
+			}
+			province_is_or_accepts_religion = {
+				religion = coptic
+			}
+			province_is_or_accepts_religion = {
+				religion = catholic
+			}
+			province_is_or_accepts_religion = {
+				religion = nestorian
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = muslim
 			}
 		}
 	}
@@ -92,92 +67,42 @@ hagia_sophia = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		custom_trigger_tooltip = {
-			tooltip = hagia_sophia_tt
-			OR = {
-				AND = {
-					OR = {
-						religion = orthodox
-						religion = coptic
-						religion = catholic
-						# AB {{{
-						religion = nestorian
-						# }}}
-						religion_group = muslim
-					}
-					has_owner_religion = yes
-				}
-				AND = {
-					owner = {
-						OR = {
-							secondary_religion = orthodox
-							secondary_religion = coptic
-							secondary_religion = catholic
-							# AB {{{
-							secondary_religion = nestorian
-							# }}}
-							secondary_religion = sunni
-							secondary_religion = shiite
-							secondary_religion = ibadi
-						}
-					}
-					OR = {
-						religion = orthodox
-						religion = coptic
-						religion = catholic
-						# AB {{{
-						religion = nestorian
-						# }}}
-						religion_group = muslim
-						has_owner_religion = yes
-					}
-				}
+		OR = {
+			province_is_or_accepts_religion = {
+				religion = orthodox
+			}
+			province_is_or_accepts_religion = {
+				religion = coptic
+			}
+			province_is_or_accepts_religion = {
+				religion = catholic
+			}
+			province_is_or_accepts_religion = {
+				religion = nestorian
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = muslim
 			}
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		custom_trigger_tooltip = {
-			tooltip = hagia_sophia_tt
-			OR = {
-				AND = {
-					OR = {
-						religion = orthodox
-						religion = coptic
-						religion = catholic
-						# AB {{{
-						religion = nestorian
-						# }}}
-						religion_group = muslim
-					}
-					has_owner_religion = yes
-				}
-				AND = {
-					owner = {
-						OR = {
-							secondary_religion = orthodox
-							secondary_religion = coptic
-							secondary_religion = catholic
-							# AB {{{
-							secondary_religion = nestorian
-							# }}}
-							secondary_religion = sunni
-							secondary_religion = shiite
-							secondary_religion = ibadi
-						}
-					}
-					OR = {
-						religion = orthodox
-						religion = coptic
-						religion = catholic
-						# AB {{{
-						religion = nestorian
-						# }}}
-						religion_group = muslim
-						has_owner_religion = yes
-					}
-				}
+		OR = {
+			province_is_or_accepts_religion = {
+				religion = orthodox
+			}
+			province_is_or_accepts_religion = {
+				religion = coptic
+			}
+			province_is_or_accepts_religion = {
+				religion = catholic
+			}
+			province_is_or_accepts_religion = {
+				religion = nestorian
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = muslim
 			}
 		}
 	}
@@ -357,15 +282,12 @@ stonehenge = {
 	#can we build it?
 	build_trigger = {
 		OR = {
-			OR = {
-				province_is_or_accepts_religion_group = {
-					religion_group = pagan
-				}
-				province_is_or_accepts_religion_group = {
-					religion_group = reformed_pagan
-				}
+			province_is_or_accepts_religion_group = {
+				religion_group = pagan
 			}
-			
+			province_is_or_accepts_religion_group = {
+				religion_group = reformed_pagan
+			}
 			AND = {
 				OR = {
 					if = {
@@ -376,10 +298,9 @@ stonehenge = {
 					}
 					else = { culture = english }
 					# AB [[[
-					# culture = anglois
 					culture = Anglois
 					culture_group = gaelic
-					culture_group = west_germanic			  
+					culture_group = west_germanic
 					# ]]]
 				}
 				province_is_or_accepts_culture = yes
@@ -416,13 +337,14 @@ stonehenge = {
 					}
 					else = { culture = english }
 					# AB [[[
-					# culture = anglois
 					culture = Anglois
+					culture_group = gaelic
+					culture_group = west_germanic
 					# ]]]
 				}
 				province_is_or_accepts_culture = yes
 			}
-		}	
+		}
 	}
 
 	#can our country upgrade it?
@@ -444,8 +366,9 @@ stonehenge = {
 					}
 					else = { culture = english }
 					# AB [[[
-					# culture = anglois
 					culture = Anglois
+					culture_group = gaelic
+					culture_group = west_germanic
 					# ]]]
 				}
 				province_is_or_accepts_culture = yes
@@ -613,17 +536,10 @@ tower_of_london = {
 	#can we build it?
 	build_trigger = {
 		OR = {
-			AND = {
-				culture = normand
-				province_is_or_accepts_culture = yes
-			}
-			AND = {
-				# AB {{{
-				culture = Anglois
-				# }}}
-				province_is_or_accepts_culture = yes
-			}
+			culture = normand
+			culture = Anglois
 		}
+		province_is_or_accepts_culture = yes
 	}
 
 	#what to do when it's built
@@ -639,33 +555,19 @@ tower_of_london = {
 	#can our country use it?
 	can_use_modifiers_trigger = {
 		OR = {
-			AND = {
-				culture = normand
-				province_is_or_accepts_culture = yes
-			}
-			AND = {
-				# AB {{{
-				culture = Anglois
-				# }}}
-				province_is_or_accepts_culture = yes
-			}
+			culture = normand
+			culture = Anglois
 		}
+		province_is_or_accepts_culture = yes
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
 		OR = {
-			AND = {
-				culture = normand
-				province_is_or_accepts_culture = yes
-			}
-			AND = {
-				# AB {{{
-				culture = Anglois
-				# }}}	
-				province_is_or_accepts_culture = yes
-			}
+			culture = normand
+			culture = Anglois
 		}
+		province_is_or_accepts_culture = yes
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
@@ -1015,33 +917,16 @@ parthenon = {
 				culture = greek
 				province_is_or_accepts_culture = yes
 			}
-			AND = {
-				culture = athenian
-				province_is_or_accepts_culture = yes
-			}
-			AND = {
-				culture = roman
-				province_is_or_accepts_culture = yes
-			}
-		}	
+		}
 	}
 
 	#what to do when it's built
 	on_built = {
-		if = {
-			limit = { 
-				has_global_flag = parthenon_now_mosque 
-			}
-			show_ambient_object = parthenon_minaret
-		}
-		else = {
-			show_ambient_object = parthenon
-		}
+		show_ambient_object = parthenon
 	}
 	
 	#what to do when it's destroyed
 	on_destroyed = {
-		hide_ambient_object = parthenon_minaret
 		hide_ambient_object = parthenon
 	}
 
@@ -1058,14 +943,6 @@ parthenon = {
 				culture = greek
 				province_is_or_accepts_culture = yes
 			}
-			AND = {
-				culture = athenian
-				province_is_or_accepts_culture = yes
-			}
-			AND = {
-				culture = roman
-				province_is_or_accepts_culture = yes
-			}
 		}
 	}
 
@@ -1080,14 +957,6 @@ parthenon = {
 			}
 			AND = {
 				culture = greek
-				province_is_or_accepts_culture = yes
-			}
-			AND = {
-				culture = athenian
-				province_is_or_accepts_culture = yes
-			}
-			AND = {
-				culture = roman
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -1216,6 +1085,21 @@ parthenon = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+			if = {
+				limit = {
+					owner = {
+						OR = {
+							religion = hellenic
+							religion = reformed_hellenic
+						}
+					}
+				}
+				owner = {
+					country_event = {
+						id = ab_mpf.5
+					}
+				}
+			}
 		}
 	}
 }
@@ -1631,15 +1515,10 @@ petra = {
 	#can we build it?
 	build_trigger = {
 		OR = {
-			AND = {
-				culture = al_suryah_arabic
-				province_is_or_accepts_culture = yes
-			}
-			AND = {
-				culture = bedouin_arabic
-				province_is_or_accepts_culture = yes
-			}
+			culture = al_suryah_arabic
+			culture = bedouin_arabic
 		}
+		province_is_or_accepts_culture = yes
 	}
 
 	#what to do when it's built
@@ -1655,29 +1534,19 @@ petra = {
 	#can our country use it?
 	can_use_modifiers_trigger = {
 		OR = {
-			AND = {
-				culture = al_suryah_arabic
-				province_is_or_accepts_culture = yes
-			}
-			AND = {
-				culture = bedouin_arabic
-				province_is_or_accepts_culture = yes
-			}
+			culture = al_suryah_arabic
+			culture = bedouin_arabic
 		}
+		province_is_or_accepts_culture = yes
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
 		OR = {
-			AND = {
-				culture = al_suryah_arabic
-				province_is_or_accepts_culture = yes
-			}
-			AND = {
-				culture = bedouin_arabic
-				province_is_or_accepts_culture = yes
-			}
+			culture = al_suryah_arabic
+			culture = bedouin_arabic
 		}
+		province_is_or_accepts_culture = yes
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
@@ -1972,7 +1841,9 @@ cologne_cathedral = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = RHL_KOL_CATHEDRAL_CONDITION
-					has_country_flag = kol_unlock_cathedral_flag
+					owner = {
+						has_country_flag = kol_unlock_cathedral_flag
+					}
 				}
 			}
 
@@ -2026,7 +1897,9 @@ cologne_cathedral = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = RHL_KOL_CATHEDRAL_CONDITION
-					has_country_flag = kol_unlock_cathedral_flag
+					owner = {
+						has_country_flag = kol_unlock_cathedral_flag
+					}
 				}
 			}
 
@@ -3135,6 +3008,21 @@ stpeters_cathedral = {
 				}
 			}
 		}
+		# AB [[[
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = PAP_STPETER_CONDITION
+					owner = {
+						has_country_flag = pap_unlock_stpeter_flag
+					}
+				}
+			}
+			modifier = {
+				administrative_efficiency = 0.05
+			}
+		}
+		# ]]]
 	}
 
 	tier_3 = {
@@ -3171,8 +3059,28 @@ stpeters_cathedral = {
 					estate = estate_church
 					loyalty = 20
 				}
+				# AB [[[
+				country_event = {
+					id = monument_events.3
+				}
+				# ]]]
 			}
 		}
+		# AB [[[
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = PAP_STPETER_CONDITION
+					owner = {
+						has_country_flag = pap_unlock_stpeter_flag
+					}
+				}
+			}
+			modifier = {
+				administrative_efficiency = 0.05
+			}
+		}
+		# ]]]
 	}
 }
 
@@ -4665,21 +4573,14 @@ taj_mahal = {
 		# AB {{{
 		OR = {
 			owner = {
-				custom_trigger_tooltip = {
-					tooltip = completed_mission_persia_architecture
-					OR = {
-						mission_completed = per_architecture
-						mission_completed = perc_architecture
-						mission_completed = perm_architecture
-						mission_completed = mper_architecture
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = completed_mission_persia_architecture
+						has_country_flag = per_unlocked_indian_projects
 					}
+					mission_completed = zun_integrate
+					has_reform = shhdharmic
 				}
-			}
-			owner = {
-				has_reform = shhdharmic
-			}
-			owner = {
-				mission_completed = zun_integrate
 			}
 			province_is_or_accepts_religion_group = {
 				religion_group = muslim
@@ -4703,21 +4604,14 @@ taj_mahal = {
 		# AB {{{
 		OR = {
 			owner = {
-				custom_trigger_tooltip = {
-					tooltip = completed_mission_persia_architecture
-					OR = {
-						mission_completed = per_architecture
-						mission_completed = perc_architecture
-						mission_completed = perm_architecture
-						mission_completed = mper_architecture
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = completed_mission_persia_architecture
+						has_country_flag = per_unlocked_indian_projects
 					}
+					mission_completed = zun_integrate
+					has_reform = shhdharmic
 				}
-			}
-			owner = {
-				has_reform = shhdharmic
-			}
-			owner = {
-				mission_completed = zun_integrate
 			}
 			province_is_or_accepts_religion_group = {
 				religion_group = muslim
@@ -4731,21 +4625,14 @@ taj_mahal = {
 		# AB {{{
 		OR = {
 			owner = {
-				custom_trigger_tooltip = {
-					tooltip = completed_mission_persia_architecture
-					OR = {
-						mission_completed = per_architecture
-						mission_completed = perc_architecture
-						mission_completed = perm_architecture
-						mission_completed = mper_architecture
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = completed_mission_persia_architecture
+						has_country_flag = per_unlocked_indian_projects
 					}
+					mission_completed = zun_integrate
+					has_reform = shhdharmic
 				}
-			}
-			owner = {
-				has_reform = shhdharmic
-			}
-			owner = {
-				mission_completed = zun_integrate
 			}
 			province_is_or_accepts_religion_group = {
 				religion_group = muslim
@@ -4886,10 +4773,7 @@ taj_mahal = {
 
 alhambra = {
 	# province it starts in
-	# AB {{{
-	# Andalusia built it in their capital 
-	start = 225
-	# }}}
+	start = 223
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1333.01.01 #Yusuf I
@@ -5821,21 +5705,14 @@ golden_temple = {
 		# AB {{{
 		OR = {
 			owner = {
-				custom_trigger_tooltip = {
-					tooltip = completed_mission_persia_architecture
-					OR = {
-						mission_completed = per_architecture
-						mission_completed = perc_architecture
-						mission_completed = perm_architecture
-						mission_completed = mper_architecture
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = completed_mission_persia_architecture
+						has_country_flag = per_unlocked_indian_projects
 					}
+					mission_completed = zun_integrate
+					has_reform = shhdharmic
 				}
-			}
-			owner = {
-				has_reform = shhdharmic
-			}
-			owner = {
-				mission_completed = zun_integrate
 			}
 			province_is_or_accepts_religion_group = {
 				religion_group = dharmic
@@ -5859,21 +5736,14 @@ golden_temple = {
 		# AB {{{
 		OR = {
 			owner = {
-				custom_trigger_tooltip = {
-					tooltip = completed_mission_persia_architecture
-					OR = {
-						mission_completed = per_architecture
-						mission_completed = perc_architecture
-						mission_completed = perm_architecture
-						mission_completed = mper_architecture
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = completed_mission_persia_architecture
+						has_country_flag = per_unlocked_indian_projects
 					}
+					mission_completed = zun_integrate
+					has_reform = shhdharmic
 				}
-			}
-			owner = {
-				has_reform = shhdharmic
-			}
-			owner = {
-				mission_completed = zun_integrate
 			}
 			province_is_or_accepts_religion_group = {
 				religion_group = dharmic
@@ -5887,21 +5757,14 @@ golden_temple = {
 		# AB {{{
 		OR = {
 			owner = {
-				custom_trigger_tooltip = {
-					tooltip = completed_mission_persia_architecture
-					OR = {
-						mission_completed = per_architecture
-						mission_completed = perc_architecture
-						mission_completed = perm_architecture
-						mission_completed = mper_architecture
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = completed_mission_persia_architecture
+						has_country_flag = per_unlocked_indian_projects
 					}
+					mission_completed = zun_integrate
+					has_reform = shhdharmic
 				}
-			}
-			owner = {
-				has_reform = shhdharmic
-			}
-			owner = {
-				mission_completed = zun_integrate
 			}
 			province_is_or_accepts_religion_group = {
 				religion_group = dharmic
@@ -6627,7 +6490,9 @@ temple_of_confucius = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = has_completed_khiva_mission
-					has_country_flag = ab_mnk_buffed_confusius
+					owner = {
+						has_country_flag = ab_mnk_buffed_confusius
+					}
 				}
 			}
 
@@ -7231,8 +7096,15 @@ pyramid_of_cheops = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture = egyptian_greek
 				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				mission_completed = rmr_egyptian_ambition
+				OR = {
+					tag = RMR
+					was_tag = RMR
+				}
 			}
 		}
 	}
@@ -7261,8 +7133,15 @@ pyramid_of_cheops = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture = egyptian_greek
 				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				mission_completed = rmr_egyptian_ambition
+				OR = {
+					tag = RMR
+					was_tag = RMR
+				}
 			}
 		}
 	}
@@ -7281,8 +7160,15 @@ pyramid_of_cheops = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture = egyptian_greek
 				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				mission_completed = rmr_egyptian_ambition
+				OR = {
+					tag = RMR
+					was_tag = RMR
+				}
 			}
 		}
 	}
@@ -8177,17 +8063,6 @@ kiev_pechersk_lavra = {
 			province_is_or_accepts_religion = {
 				religion = orthodox
 			}
-			AND = {
-				custom_trigger_tooltip = {
-					tooltip = is_nestorian_tartaria
-					owner = {
-						mission_completed = glh_tartaria
-					}
-				}
-				province_is_or_accepts_religion = {
-					religion = nestorian
-				}
-			}
 		}
 	}
 
@@ -8220,17 +8095,6 @@ kiev_pechersk_lavra = {
 			province_is_or_accepts_religion = {
 				religion = orthodox
 			}
-			AND = {
-				custom_trigger_tooltip = {
-					tooltip = is_nestorian_tartaria
-					owner = {
-						mission_completed = glh_tartaria
-					}
-				}
-				province_is_or_accepts_religion = {
-					religion = nestorian
-				}
-			}
 		}
 	}
 
@@ -8252,17 +8116,6 @@ kiev_pechersk_lavra = {
 			}
 			province_is_or_accepts_religion = {
 				religion = orthodox
-			}
-			AND = {
-				custom_trigger_tooltip = {
-					tooltip = is_nestorian_tartaria
-					owner = {
-						mission_completed = glh_tartaria
-					}
-				}
-				province_is_or_accepts_religion = {
-					religion = nestorian
-				}
 			}
 		}
 	}
@@ -8402,200 +8255,6 @@ kiev_pechersk_lavra = {
 		}
 	}
 }
-
-#pena_palace = { #Replaced by Belém Tower, as requested by community
-	# province it starts in
-	# start = 227
-	
-	# date built in real life (so anything built during game time will be there if you start a game after that date)
-	# date = 1444.01.01 #1493 monastery
-	
-	#time to build
-	# time = {
-	# 	months = 0
-	# }
-	
-	#how much to build one
-	# build_cost = 0
-	
-	#can we move it?
-	# can_be_moved = no
-	
-	#time to move the project one unit of distance, in days
-	# move_days_per_unit_distance = 1
-	
-	#tier that the project starts at when first placed in the game (be that at game start or when built by a country as the game progresses)
-	# starting_tier = 0
-	
-	#project type
-	# type = monument
-
-	#can we build it?
-	# build_trigger = {
-	# 	#anyone
-	# }
-
-	#what to do when it's built
-	# on_built = {
-	# 	show_ambient_object = pena_palace 
-	# }
-	
-	#what to do when it's destroyed
-	# on_destroyed = {
-	# 	hide_ambient_object = pena_palace 
-	# }
-
-	#can our country use it?
-	# can_use_modifiers_trigger = {
-	# 	#anyone
-	# }
-
-	#can our country upgrade it?
-	# can_upgrade_trigger = {
-	# 	#anyone
-	# }
-
-	#can our country keep it or is it destroyed when we get hold of it?
-	# keep_trigger = {
-	# }
-
-	#tier data
-	# tier_0 = {
-		#time to upgrade to this level (0 for tier 0)
-		# upgrade_time = {
-		# 	months = 0
-		# }
-
-		#cost to upgrade to this level (0 for tier 0)
-		# cost_to_upgrade = {
-		# 	factor = 0
-		# }
-
-		#what modifiers are added to the province when we have this project here on this tier
-		# province_modifiers = {
-		# }
-
-		#what modifiers are added to the provinces in the map area when we have this project here on this tier
-		# area_modifier = {
-		# }
-
-		#what modifiers are added to the country when we have this project here on this tier
-		# country_modifiers = {
-		# }
-
-		#what effects happen when this tier is achieved
-		# on_upgraded = {
-			
-		# }
-	# }
-
-	# tier_1 = {
-		#time to upgrade to this level (0 for tier 0)
-		# upgrade_time = {
-		# 	months = 120
-		# }
-
-		#cost to upgrade to this level (0 for tier 0)
-		# cost_to_upgrade = {
-		# 	factor = 1000
-		# }
-
-		#what modifiers are added to the province when we have this project here on this tier
-		# province_modifiers = {
-		# 	local_manpower_modifier = 0.15
-		# }
-
-		#what modifiers are added to the provinces in the map area when we have this project here on this tier
-		# area_modifier = {
-		# }
-
-		#what modifiers are added to the country when we have this project here on this tier
-		# country_modifiers = {
-		# }
-
-		#what effects happen when this tier is achieved
-		# on_upgraded = {
-		# 	owner = {
-		# 		add_estate_loyalty = {
-		# 			estate = estate_nobles
-		# 			loyalty = 5
-		# 		}
-		# 	}
-		# }
-	# }
-
-	#tier_2 = {
-		#time to upgrade to this level (0 for tier 0)
-		# upgrade_time = {
-		# 	months = 240
-		# }
-
-		#cost to upgrade to this level (0 for tier 0)
-		# cost_to_upgrade = {
-		# 	factor = 2500
-		# }
-
-		#what modifiers are added to the province when we have this project here on this tier
-		# province_modifiers = {
-		# }
-
-		#what modifiers are added to the provinces in the map area when we have this project here on this tier
-		# area_modifier = {
-		# 	local_manpower_modifier = 0.25
-		# }
-
-		#what modifiers are added to the country when we have this project here on this tier
-		# country_modifiers = {
-		# }
-
-		#what effects happen when this tier is achieved
-		# on_upgraded = {
-		# 	owner = {
-		# 		add_estate_loyalty = {
-		# 			estate = estate_nobles
-		# 			loyalty = 10
-		# 		}
-		# 	}
-		# }
-	# }
-
-	# tier_3 = {
-		#time to upgrade to this level (0 for tier 0)
-		# upgrade_time = {
-		# 	months = 480
-		# }
-
-		#cost to upgrade to this level (0 for tier 0)
-		# cost_to_upgrade = {
-		# 	factor = 5000
-		# }
-
-		#what modifiers are added to the province when we have this project here on this tier
-		# province_modifiers = {
-		# }
-
-		#what modifiers are added to the provinces in the map area when we have this project here on this tier
-		# area_modifier = {
-		# 	local_manpower_modifier = 0.5
-		# }
-
-		#what modifiers are added to the country when we have this project here on this tier
-		# country_modifiers = {
-		# 	global_missionary_strength = 0.005
-		# 	nobles_loyalty_modifier = 0.05
-		# }
-
-		#what effects happen when this tier is achieved
-		# on_upgraded = {	
-		# 	owner = {
-		# 		add_estate_loyalty = {
-		# 			estate = estate_nobles
-		# 			loyalty = 15
-		# 		}
-		# 	}
-		# }
-	# }
-# }
 
 belem_tower = {
 	# province it starts in
@@ -9914,9 +9573,7 @@ kaaba = {
 		}
 		custom_trigger_tooltip = {
 			tooltip = ab_per_destroyed_monument
-			NOT = {
-				has_global_flag = per_destroyed_mecca
-			}
+			NOT = { has_province_flag = per_destroyed_mecca }
 		}
 	}
 
@@ -9934,9 +9591,7 @@ kaaba = {
 	can_use_modifiers_trigger = {
 		custom_trigger_tooltip = {
 			tooltip = ab_per_destroyed_monument
-			NOT = {
-				has_global_flag = per_destroyed_mecca
-			}
+			NOT = { has_province_flag = per_destroyed_mecca }
 		}
 		OR = {
 			province_is_or_accepts_religion_group = {
@@ -9944,7 +9599,7 @@ kaaba = {
 			}
 			owner = {
 				custom_trigger_tooltip = {
-					tooltip = BYZ_may_use_kaaba 
+					tooltip = enable_korean_palace_tt 
 					has_country_flag = BYZ_may_use_kaaba
 				}
 			}
@@ -9955,9 +9610,7 @@ kaaba = {
 	can_upgrade_trigger = {
 		custom_trigger_tooltip = {
 			tooltip = ab_per_destroyed_monument
-			NOT = {
-				has_global_flag = per_destroyed_mecca
-			}
+			NOT = { has_province_flag = per_destroyed_mecca }
 		}
 		OR = {
 			province_is_or_accepts_religion_group = {
@@ -9965,7 +9618,7 @@ kaaba = {
 			}
 			owner = {
 				custom_trigger_tooltip = {
-					tooltip = BYZ_may_use_kaaba 
+					tooltip = enable_korean_palace_tt 
 					has_country_flag = BYZ_may_use_kaaba
 				}
 			}
@@ -10032,30 +9685,16 @@ kaaba = {
 		}
 		conditional_modifier = {
 			tooltip_potential = {
-				owner = { tag = BYZ }
+				owner = {
+					has_country_flag = BYZ_may_use_kaaba
+				}
 			}
 			trigger = {
-				owner = {
-					custom_trigger_tooltip = {
-						tooltip = BYZ_may_use_kaaba 
-						has_country_flag = BYZ_may_use_kaaba
-					}
-				}
 			}
 			modifier = {
 				religious_unity = -0.05
 			}
 		}
-		#conditional_modifier = {
-		#	trigger = {
-		#		owner = { mission_completed = YEM_islamic_ambitions }
-		#	}
-		#	modifier = {
-		#		global_prov_trade_power_modifier = 0.025
-		#	}
-		#}
-		
-		#what effects happen when this tier is achieved
 		on_upgraded = {
 		}
 	}
@@ -10088,30 +9727,17 @@ kaaba = {
 
 		conditional_modifier = {
 			tooltip_potential = {
-				owner = { tag = BYZ }
+				owner = {
+					has_country_flag = BYZ_may_use_kaaba
+				}
 			}
 			trigger = {
-				owner = {
-					custom_trigger_tooltip = {
-						tooltip = BYZ_may_use_kaaba 
-						has_country_flag = BYZ_may_use_kaaba
-					}
-				}
 			}
 			modifier = {
 				religious_unity = -0.075
 				warscore_cost_vs_other_religion = 0.05
 			}
 		}
-		#conditional_modifier = {
-		#	trigger = {
-		#		owner = { mission_completed = YEM_islamic_ambitions }
-		#	}
-		#	modifier = {
-		#		global_prov_trade_power_modifier = 0.05
-		#	}
-		#}
-		#what effects happen when this tier is achieved
 		on_upgraded = {
 		}
 	}
@@ -10144,31 +9770,32 @@ kaaba = {
 
 		conditional_modifier = {
 			tooltip_potential = {
-				owner = { tag = BYZ }
+				owner = {
+					has_country_flag = BYZ_may_use_kaaba
+				}
 			}
 			trigger = {
-				owner = {
-					custom_trigger_tooltip = {
-						tooltip = BYZ_may_use_kaaba 
-						has_country_flag = BYZ_may_use_kaaba
-					}
-				}
 			}
 			modifier = {
 				religious_unity = -0.1
 				warscore_cost_vs_other_religion = 0.1
 			}
 		}
-		#conditional_modifier = {
-		#	trigger = {
-		#		owner = { mission_completed = YEM_islamic_ambitions }
-		#	}
-		#	modifier = {
-		#		global_prov_trade_power_modifier = 0.1
-		#	}
-		#}
-		
-		#what effects happen when this tier is achieved
+		# AB [[[
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = enable_korean_palace_tt
+					owner = {
+						has_country_flag = arb_upgrade_kaaba
+					}
+				}
+			}
+			modifier = {
+				technology_cost = -0.1
+			}
+		}
+		# ]]]
 		on_upgraded = {
 		}
 	}
@@ -10214,12 +9841,19 @@ holy_city_jerusalem = {
 			province_is_or_accepts_religion = {
 				religion = jewish
 			}
+			AND = {
+				province_is_or_accepts_religion = {
+					religion = reformed_hellenic
+				}
+				custom_trigger_tooltip = {
+					tooltip = ab_mpf_hellenic_jerusalem_tt
+					has_province_flag = ab_mpf_zeus_jerusalem
+				}
+			}
 		}
 		custom_trigger_tooltip = {
 			tooltip = ab_per_destroyed_monument
-			NOT = {
-				has_global_flag = per_destroyed_jerusalem
-			}
+			NOT = { has_province_flag = per_destroyed_jerusalem }
 		}
 	}
 
@@ -10245,12 +9879,19 @@ holy_city_jerusalem = {
 			province_is_or_accepts_religion = {
 				religion = jewish
 			}
+			AND = {
+				province_is_or_accepts_religion = {
+					religion = reformed_hellenic
+				}
+				custom_trigger_tooltip = {
+					tooltip = ab_mpf_hellenic_jerusalem_tt
+					has_province_flag = ab_mpf_zeus_jerusalem
+				}
+			}
 		}
 		custom_trigger_tooltip = {
 			tooltip = ab_per_destroyed_monument
-			NOT = {
-				has_global_flag = per_destroyed_jerusalem
-			}
+			NOT = { has_province_flag = per_destroyed_jerusalem }
 		}
 	}
 
@@ -10266,12 +9907,19 @@ holy_city_jerusalem = {
 			province_is_or_accepts_religion = {
 				religion = jewish
 			}
+			AND = {
+				province_is_or_accepts_religion = {
+					religion = reformed_hellenic
+				}
+				custom_trigger_tooltip = {
+					tooltip = ab_mpf_hellenic_jerusalem_tt
+					has_province_flag = ab_mpf_zeus_jerusalem
+				}
+			}
 		}
 		custom_trigger_tooltip = {
 			tooltip = ab_per_destroyed_monument
-			NOT = {
-				has_global_flag = per_destroyed_jerusalem
-			}
+			NOT = { has_province_flag = per_destroyed_jerusalem }
 		}
 	}
 
@@ -10406,7 +10054,21 @@ holy_city_jerusalem = {
 			church_power_modifier = 0.15
 			papal_influence = 1
 		}
-
+		# AB [[[
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = enable_korean_palace_tt
+					owner = {
+						has_country_flag = koj_buff_great_project
+					}
+				}
+			}
+			modifier = {
+				all_power_cost = -0.03
+			}
+		}
+		# ]]]
 		#what effects happen when this tier is achieved
 		on_upgraded = {
 		}
@@ -11018,36 +10680,18 @@ bara_katra = {
 	build_trigger = {
 		# AB {{{
 		OR = {
-			owner = {
-				custom_trigger_tooltip = {
-					tooltip = completed_mission_persia_architecture
-					OR = {
-						mission_completed = per_architecture
-						mission_completed = perc_architecture
-						mission_completed = perm_architecture
-						mission_completed = mper_architecture
-					}
-				}
+			province_is_or_accepts_religion_group = {
+				religion_group = muslim
 			}
 			owner = {
-				has_reform = shhdharmic
-			}
-			owner = {
-				mission_completed = zun_integrate
-			}
-			AND = {
-				province_is_or_accepts_religion_group = {
-					religion_group = muslim
-				}
 				OR = {
-					culture_group = eastern_aryan
-					culture_group = hindusthani
+					custom_trigger_tooltip = {
+						tooltip = completed_mission_persia_architecture
+						has_country_flag = per_unlocked_indian_projects
+					}
+					mission_completed = zun_integrate
+					has_reform = shhdharmic
 				}
-				province_is_or_accepts_culture = yes
-			}
-			AND = {
-				has_owner_religion = yes
-				religion = zoroastrian
 			}
 		}
 		# }}}
@@ -11062,36 +10706,18 @@ bara_katra = {
 	can_use_modifiers_trigger = {
 		# AB {{{
 		OR = {
-			owner = {
-				custom_trigger_tooltip = {
-					tooltip = completed_mission_persia_architecture
-					OR = {
-						mission_completed = per_architecture
-						mission_completed = perc_architecture
-						mission_completed = perm_architecture
-						mission_completed = mper_architecture
-					}
-				}
+			province_is_or_accepts_religion_group = {
+				religion_group = muslim
 			}
 			owner = {
-				has_reform = shhdharmic
-			}
-			owner = {
-				mission_completed = zun_integrate
-			}
-			AND = {
-				province_is_or_accepts_religion_group = {
-					religion_group = muslim
-				}
 				OR = {
-					culture_group = eastern_aryan
-					culture_group = hindusthani
+					custom_trigger_tooltip = {
+						tooltip = completed_mission_persia_architecture
+						has_country_flag = per_unlocked_indian_projects
+					}
+					mission_completed = zun_integrate
+					has_reform = shhdharmic
 				}
-				province_is_or_accepts_culture = yes
-			}
-			AND = {
-				has_owner_religion = yes
-				religion = zoroastrian
 			}
 		}
 		# }}}
@@ -11100,36 +10726,18 @@ bara_katra = {
 	can_upgrade_trigger = {
 		# AB {{{
 		OR = {
-			owner = {
-				custom_trigger_tooltip = {
-					tooltip = completed_mission_persia_architecture
-					OR = {
-						mission_completed = per_architecture
-						mission_completed = perc_architecture
-						mission_completed = perm_architecture
-						mission_completed = mper_architecture
-					}
-				}
+			province_is_or_accepts_religion_group = {
+				religion_group = muslim
 			}
 			owner = {
-				has_reform = shhdharmic
-			}
-			owner = {
-				mission_completed = zun_integrate
-			}
-			AND = {
-				province_is_or_accepts_religion_group = {
-					religion_group = muslim
-				}
 				OR = {
-					culture_group = eastern_aryan
-					culture_group = hindusthani
+					custom_trigger_tooltip = {
+						tooltip = completed_mission_persia_architecture
+						has_country_flag = per_unlocked_indian_projects
+					}
+					mission_completed = zun_integrate
+					has_reform = shhdharmic
 				}
-				province_is_or_accepts_culture = yes
-			}
-			AND = {
-				has_owner_religion = yes
-				religion = zoroastrian
 			}
 		}
 		# }}}
@@ -11594,120 +11202,6 @@ buda_castle = {
 	}
 }
 
-cahokia = {
-	start = 917 #Cahokia
-	date = 100.01.01
-	time = { months = 0	}
-	build_cost = 0
-	can_be_moved = no
-	move_days_per_unit_distance = 10
-	starting_tier = 2
-	type = monument
-
-	build_trigger = {
-		province_is_or_accepts_religion = {
-			religion = totemism
-		}
-	}
-
-	on_built = {
-	}
-
-	on_destroyed = {
-	}
-
-	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion = {
-			religion = totemism
-		}
-	}
-
-	can_upgrade_trigger = {
-		province_is_or_accepts_religion = {
-			religion = totemism
-		}
-	}
-
-	keep_trigger = {
-	}
-
-	tier_0 = {
-		upgrade_time = {
-			months = 0
-		}
-		cost_to_upgrade = {
-			factor = 0
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-		}
-		country_modifiers = {
-		}
-		on_upgraded = {
-		}
-	}
-
-	tier_1 = {
-		upgrade_time = {
-			months = 120
-		}
-		cost_to_upgrade = {
-			factor = 1000
-		}
-		province_modifiers = {
-			local_monthly_devastation = -0.25
-		}
-		area_modifier = {
-		}
-		country_modifiers = {
-			tribal_development_growth = 0.01			
-		}
-		on_upgraded = {
-		}
-	}
-
-	tier_2 = {
-		upgrade_time = {
-			months = 240
-		}
-		cost_to_upgrade = {
-			factor = 2500
-		}
-		province_modifiers = {
-			local_monthly_devastation = -0.5
-		}
-		area_modifier = {
-		}
-		country_modifiers = {
-			tribal_development_growth = 0.02
-			global_manpower_modifier = 0.1
-		}
-		on_upgraded = {
-		}
-	}
-
-	tier_3 = {
-		upgrade_time = {
-			months = 480
-		}
-		cost_to_upgrade = {
-			factor = 5000
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-			local_monthly_devastation = -1
-		}
-		country_modifiers = {
-			tribal_development_growth = 0.03
-			global_manpower_modifier = 0.2
-		}
-		on_upgraded = {
-		}
-	}
-}
-
 cartagena_de_indias = {
 	start = 828 #Cartagena
 	date = 1444.01.01	#1719.01.01
@@ -12035,6 +11529,21 @@ doges_palace = {
 		}
 		on_upgraded = {
 		}
+		# AB [[[
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = VEN_PALACE_CONDITION
+					owner = {
+						has_country_flag = ven_unlock_palace_flag
+					}
+				}
+			}
+			modifier = {
+				governing_capacity_modifier = 0.15
+			}
+		}
+		# ]]]
 	}
 }
 
@@ -12049,8 +11558,16 @@ duomo_milano = {
 	type = monument
 
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = christian
+		OR = {
+			province_is_or_accepts_religion_group = {
+				religion_group = christian
+			}
+			custom_trigger_tooltip = {
+				tooltip = enable_korean_palace_tt
+				owner = {
+					has_country_flag = sic_unlocked_italian_project
+				}
+			}
 		}
 	}
 
@@ -12061,14 +11578,30 @@ duomo_milano = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = christian
+		OR = {
+			province_is_or_accepts_religion_group = {
+				religion_group = christian
+			}
+			custom_trigger_tooltip = {
+				tooltip = enable_korean_palace_tt
+				owner = {
+					has_country_flag = sic_unlocked_italian_project
+				}
+			}
 		}
 	}
 
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = christian
+		OR = {
+			province_is_or_accepts_religion_group = {
+				religion_group = christian
+			}
+			custom_trigger_tooltip = {
+				tooltip = enable_korean_palace_tt
+				owner = {
+					has_country_flag = sic_unlocked_italian_project
+				}
+			}
 		}
 	}
 
@@ -12325,6 +11858,20 @@ dutch_polders = {
 		}
 		on_upgraded = {
 		}
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = NED_COMPLETED_CANAL_WORKS_MISSION
+					owner = {
+						has_country_flag = ned_buff_dutch_polders_great_project_flag
+					}
+				}
+			}
+			modifier = {
+				global_trade_goods_size_modifier = 0.05
+				global_prov_trade_power_modifier = 0.2
+			}
+		}
 	}
 }
 
@@ -12342,25 +11889,17 @@ ellora_caves = {
 		# AB {{{
 		OR = {
 			owner = {
-				custom_trigger_tooltip = {
-					tooltip = completed_mission_persia_architecture
-					OR = {
-						mission_completed = per_architecture
-						mission_completed = perc_architecture
-						mission_completed = perm_architecture
-						mission_completed = mper_architecture
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = completed_mission_persia_architecture
+						has_country_flag = per_unlocked_indian_projects
 					}
+					mission_completed = zun_integrate
+					has_reform = shhdharmic
 				}
 			}
-			owner = {
-				has_reform = shhdharmic
-			}
-			owner = {
-				mission_completed = zun_integrate
-			}
-			AND = {
+			province_is_or_accepts_religion_group = {
 				religion_group = dharmic
-				has_owner_religion = yes
 			}
 			province_is_buddhist_or_accepts_buddhism = yes
 		}
@@ -12377,34 +11916,19 @@ ellora_caves = {
 		# AB {{{
 		OR = {
 			owner = {
-				custom_trigger_tooltip = {
-					tooltip = completed_mission_persia_architecture
-					OR = {
-						mission_completed = per_architecture
-						mission_completed = perc_architecture
-						mission_completed = perm_architecture
-						mission_completed = mper_architecture
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = completed_mission_persia_architecture
+						has_country_flag = per_unlocked_indian_projects
 					}
+					mission_completed = zun_integrate
+					has_reform = shhdharmic
 				}
 			}
-			owner = {
-				has_reform = shhdharmic
-			}
-			owner = {
-				mission_completed = zun_integrate
-			}
-			AND = {
+			province_is_or_accepts_religion_group = {
 				religion_group = dharmic
-				has_owner_religion = yes
 			}
 			province_is_buddhist_or_accepts_buddhism = yes
-
-			AND = {
-				owner = {
-					religion = malankara
-					secondary_religion_group = dharmic
-				}
-            }
 		}
 		# }}}
 	}
@@ -12413,34 +11937,19 @@ ellora_caves = {
 		# AB {{{
 		OR = {
 			owner = {
-				custom_trigger_tooltip = {
-					tooltip = completed_mission_persia_architecture
-					OR = {
-						mission_completed = per_architecture
-						mission_completed = perc_architecture
-						mission_completed = perm_architecture
-						mission_completed = mper_architecture
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = completed_mission_persia_architecture
+						has_country_flag = per_unlocked_indian_projects
 					}
+					mission_completed = zun_integrate
+					has_reform = shhdharmic
 				}
 			}
-			owner = {
-				has_reform = shhdharmic
-			}
-			owner = {
-				mission_completed = zun_integrate
-			}
-			AND = {
+			province_is_or_accepts_religion_group = {
 				religion_group = dharmic
-				has_owner_religion = yes
 			}
 			province_is_buddhist_or_accepts_buddhism = yes
-
-			AND = {
-				owner = {
-					religion = malankara
-					secondary_religion_group = dharmic
-				}
-            }
 		}
 		# }}}
 	}
@@ -12541,9 +12050,8 @@ erdene_zuu = {
 
 	build_trigger = {
 		OR = {
-			AND = {
+			province_is_or_accepts_religion = {
 				religion = tengri_pagan_reformed
-				has_owner_religion = yes
 			}
 			province_is_buddhist_or_accepts_buddhism = yes
 			owner = { mission_completed = mgs_capital }
@@ -12904,21 +12412,14 @@ gomateshwara_statue = {
 		# AB {{{
 		OR = {
 			owner = {
-				custom_trigger_tooltip = {
-					tooltip = completed_mission_persia_architecture
-					OR = {
-						mission_completed = per_architecture
-						mission_completed = perc_architecture
-						mission_completed = perm_architecture
-						mission_completed = mper_architecture
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = completed_mission_persia_architecture
+						has_country_flag = per_unlocked_indian_projects
 					}
+					mission_completed = zun_integrate
+					has_reform = shhdharmic
 				}
-			}
-			owner = {
-				has_reform = shhdharmic
-			}
-			owner = {
-				mission_completed = zun_integrate
 			}
 			province_is_or_accepts_religion_group = {
 				religion_group = dharmic
@@ -12937,21 +12438,14 @@ gomateshwara_statue = {
 		# AB {{{
 		OR = {
 			owner = {
-				custom_trigger_tooltip = {
-					tooltip = completed_mission_persia_architecture
-					OR = {
-						mission_completed = per_architecture
-						mission_completed = perc_architecture
-						mission_completed = perm_architecture
-						mission_completed = mper_architecture
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = completed_mission_persia_architecture
+						has_country_flag = per_unlocked_indian_projects
 					}
+					mission_completed = zun_integrate
+					has_reform = shhdharmic
 				}
-			}
-			owner = {
-				has_reform = shhdharmic
-			}
-			owner = {
-				mission_completed = zun_integrate
 			}
 			province_is_or_accepts_religion_group = {
 				religion_group = dharmic
@@ -12964,21 +12458,14 @@ gomateshwara_statue = {
 		# AB {{{
 		OR = {
 			owner = {
-				custom_trigger_tooltip = {
-					tooltip = completed_mission_persia_architecture
-					OR = {
-						mission_completed = per_architecture
-						mission_completed = perc_architecture
-						mission_completed = perm_architecture
-						mission_completed = mper_architecture
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = completed_mission_persia_architecture
+						has_country_flag = per_unlocked_indian_projects
 					}
+					mission_completed = zun_integrate
+					has_reform = shhdharmic
 				}
-			}
-			owner = {
-				has_reform = shhdharmic
-			}
-			owner = {
-				mission_completed = zun_integrate
 			}
 			province_is_or_accepts_religion_group = {
 				religion_group = dharmic
@@ -13094,21 +12581,14 @@ chola_temples = {
 		# AB {{{
 		OR = {
 			owner = {
-				custom_trigger_tooltip = {
-					tooltip = completed_mission_persia_architecture
-					OR = {
-						mission_completed = per_architecture
-						mission_completed = perc_architecture
-						mission_completed = perm_architecture
-						mission_completed = mper_architecture
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = completed_mission_persia_architecture
+						has_country_flag = per_unlocked_indian_projects
 					}
+					mission_completed = zun_integrate
+					has_reform = shhdharmic
 				}
-			}
-			owner = {
-				has_reform = shhdharmic
-			}
-			owner = {
-				mission_completed = zun_integrate
 			}
 			province_is_or_accepts_religion_group = {
 				religion_group = dharmic
@@ -13127,21 +12607,14 @@ chola_temples = {
 		# AB {{{
 		OR = {
 			owner = {
-				custom_trigger_tooltip = {
-					tooltip = completed_mission_persia_architecture
-					OR = {
-						mission_completed = per_architecture
-						mission_completed = perc_architecture
-						mission_completed = perm_architecture
-						mission_completed = mper_architecture
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = completed_mission_persia_architecture
+						has_country_flag = per_unlocked_indian_projects
 					}
+					mission_completed = zun_integrate
+					has_reform = shhdharmic
 				}
-			}
-			owner = {
-				has_reform = shhdharmic
-			}
-			owner = {
-				mission_completed = zun_integrate
 			}
 			province_is_or_accepts_religion_group = {
 				religion_group = dharmic
@@ -13154,21 +12627,14 @@ chola_temples = {
 		# AB {{{
 		OR = {
 			owner = {
-				custom_trigger_tooltip = {
-					tooltip = completed_mission_persia_architecture
-					OR = {
-						mission_completed = per_architecture
-						mission_completed = perc_architecture
-						mission_completed = perm_architecture
-						mission_completed = mper_architecture
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = completed_mission_persia_architecture
+						has_country_flag = per_unlocked_indian_projects
 					}
+					mission_completed = zun_integrate
+					has_reform = shhdharmic
 				}
-			}
-			owner = {
-				has_reform = shhdharmic
-			}
-			owner = {
-				mission_completed = zun_integrate
 			}
 			province_is_or_accepts_religion_group = {
 				religion_group = dharmic
@@ -14657,6 +14123,22 @@ malbork_castle = {
 		}
 		on_upgraded = {
 		}
+		# AB [[[
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = TEU_MALBORK_CONDITION
+					owner = {
+						has_country_flag = teu_unlock_malbork_flag
+					}
+				}
+			}
+			modifier = {
+				fort_maintenance_modifier = -0.25
+				garrison_size = 0.33
+			}
+		}
+		# ]]]
 	}
 
 	tier_3 = {
@@ -14680,6 +14162,22 @@ malbork_castle = {
 		}
 		on_upgraded = {
 		}
+		# AB [[[
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = TEU_MALBORK_CONDITION
+					owner = {
+						has_country_flag = teu_unlock_malbork_flag
+					}
+				}
+			}
+			modifier = {
+				fort_maintenance_modifier = -0.25
+				garrison_size = 0.33
+			}
+		}
+		# ]]]
 	}
 }
 
@@ -15825,8 +15323,16 @@ santa_maria_del_fiore = {
 	type = monument
 
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = christian
+		OR = {
+			province_is_or_accepts_religion_group = {
+				religion_group = christian
+			}
+			custom_trigger_tooltip = {
+				tooltip = enable_korean_palace_tt
+				owner = {
+					has_country_flag = sic_unlocked_italian_project
+				}
+			}
 		}
 	}
 
@@ -15837,14 +15343,30 @@ santa_maria_del_fiore = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = christian
+		OR = {
+			province_is_or_accepts_religion_group = {
+				religion_group = christian
+			}
+			custom_trigger_tooltip = {
+				tooltip = enable_korean_palace_tt
+				owner = {
+					has_country_flag = sic_unlocked_italian_project
+				}
+			}
 		}
 	}
 
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = christian
+		OR = {
+			province_is_or_accepts_religion_group = {
+				religion_group = christian
+			}
+			custom_trigger_tooltip = {
+				tooltip = enable_korean_palace_tt
+				owner = {
+					has_country_flag = sic_unlocked_italian_project
+				}
+			}
 		}
 	}
 
@@ -15910,7 +15432,9 @@ santa_maria_del_fiore = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = TUS_IMPROVE_SANTA_MARIA
-					owner = { has_country_flag = ab_completed_tus_great_project }
+					owner = {
+						has_country_flag = ab_completed_tus_great_project
+					}
 				}
 			}
 
@@ -15945,7 +15469,9 @@ santa_maria_del_fiore = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = TUS_IMPROVE_SANTA_MARIA
-					owner = { has_country_flag = ab_completed_tus_great_project }
+					owner = {
+						has_country_flag = ab_completed_tus_great_project
+					}
 				}
 			}
 
@@ -16203,21 +15729,14 @@ sun_temple_konarak = {
 		# AB {{{
 		OR = {
 			owner = {
-				custom_trigger_tooltip = {
-					tooltip = completed_mission_persia_architecture
-					OR = {
-						mission_completed = per_architecture
-						mission_completed = perc_architecture
-						mission_completed = perm_architecture
-						mission_completed = mper_architecture
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = completed_mission_persia_architecture
+						has_country_flag = per_unlocked_indian_projects
 					}
+					mission_completed = zun_integrate
+					has_reform = shhdharmic
 				}
-			}
-			owner = {
-				has_reform = shhdharmic
-			}
-			owner = {
-				mission_completed = zun_integrate
 			}
 			province_is_or_accepts_religion_group = {
 				religion_group = dharmic
@@ -16236,21 +15755,14 @@ sun_temple_konarak = {
 		# AB {{{
 		OR = {
 			owner = {
-				custom_trigger_tooltip = {
-					tooltip = completed_mission_persia_architecture
-					OR = {
-						mission_completed = per_architecture
-						mission_completed = perc_architecture
-						mission_completed = perm_architecture
-						mission_completed = mper_architecture
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = completed_mission_persia_architecture
+						has_country_flag = per_unlocked_indian_projects
 					}
+					mission_completed = zun_integrate
+					has_reform = shhdharmic
 				}
-			}
-			owner = {
-				has_reform = shhdharmic
-			}
-			owner = {
-				mission_completed = zun_integrate
 			}
 			province_is_or_accepts_religion_group = {
 				religion_group = dharmic
@@ -16263,21 +15775,14 @@ sun_temple_konarak = {
 		# AB {{{
 		OR = {
 			owner = {
-				custom_trigger_tooltip = {
-					tooltip = completed_mission_persia_architecture
-					OR = {
-						mission_completed = per_architecture
-						mission_completed = perc_architecture
-						mission_completed = perm_architecture
-						mission_completed = mper_architecture
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = completed_mission_persia_architecture
+						has_country_flag = per_unlocked_indian_projects
 					}
+					mission_completed = zun_integrate
+					has_reform = shhdharmic
 				}
-			}
-			owner = {
-				has_reform = shhdharmic
-			}
-			owner = {
-				mission_completed = zun_integrate
 			}
 			province_is_or_accepts_religion_group = {
 				religion_group = dharmic
@@ -16380,21 +15885,14 @@ swayambhunath = {
 		# AB {{{
 		OR = {
 			owner = {
-				custom_trigger_tooltip = {
-					tooltip = completed_mission_persia_architecture
-					OR = {
-						mission_completed = per_architecture
-						mission_completed = perc_architecture
-						mission_completed = perm_architecture
-						mission_completed = mper_architecture
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = completed_mission_persia_architecture
+						has_country_flag = per_unlocked_indian_projects
 					}
+					mission_completed = zun_integrate
+					has_reform = shhdharmic
 				}
-			}
-			owner = {
-				has_reform = shhdharmic
-			}
-			owner = {
-				mission_completed = zun_integrate
 			}
 			province_is_buddhist_or_accepts_buddhism = yes
 		}
@@ -16411,21 +15909,14 @@ swayambhunath = {
 		# AB {{{
 		OR = {
 			owner = {
-				custom_trigger_tooltip = {
-					tooltip = completed_mission_persia_architecture
-					OR = {
-						mission_completed = per_architecture
-						mission_completed = perc_architecture
-						mission_completed = perm_architecture
-						mission_completed = mper_architecture
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = completed_mission_persia_architecture
+						has_country_flag = per_unlocked_indian_projects
 					}
+					mission_completed = zun_integrate
+					has_reform = shhdharmic
 				}
-			}
-			owner = {
-				has_reform = shhdharmic
-			}
-			owner = {
-				mission_completed = zun_integrate
 			}
 			province_is_buddhist_or_accepts_buddhism = yes
 		}
@@ -16436,21 +15927,14 @@ swayambhunath = {
 		# AB {{{
 		OR = {
 			owner = {
-				custom_trigger_tooltip = {
-					tooltip = completed_mission_persia_architecture
-					OR = {
-						mission_completed = per_architecture
-						mission_completed = perc_architecture
-						mission_completed = perm_architecture
-						mission_completed = mper_architecture
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = completed_mission_persia_architecture
+						has_country_flag = per_unlocked_indian_projects
 					}
+					mission_completed = zun_integrate
+					has_reform = shhdharmic
 				}
-			}
-			owner = {
-				has_reform = shhdharmic
-			}
-			owner = {
-				mission_completed = zun_integrate
 			}
 			province_is_buddhist_or_accepts_buddhism = yes
 		}
@@ -16544,7 +16028,7 @@ swayambhunath = {
 
 white_house = {
 	start = 953 #Piscataway
-	date = 1444.01.01	#1800.01.01
+	date = 1895.06.20
 	time = { months = 0	}
 	build_cost = 0
 	can_be_moved = no
@@ -16556,18 +16040,8 @@ white_house = {
 		owner = {
 			OR = {
 				is_former_colonial_nation = yes
-				tag = USA
-				AND = {
-					NOT = { government = native }
-					is_subject = no
-					capital_scope = {
-						OR = {
-							continent = north_america
-							continent = south_america
-						}
-					}
-				}
-			}			
+				is_colonial_nation = yes
+			}
 		}
 	}
 
@@ -16581,18 +16055,8 @@ white_house = {
 		owner = {
 			OR = {
 				is_former_colonial_nation = yes
-				tag = USA
-				AND = {
-					NOT = { government = native }
-					is_subject = no
-					capital_scope = {
-						OR = {
-							continent = north_america
-							continent = south_america
-						}
-					}
-				}
-			}			
+				is_colonial_nation = yes
+			}
 		}
 	}
 
@@ -17303,7 +16767,12 @@ winter_palace = {
 				culture_group = east_slavic
 				province_is_or_accepts_culture = yes
 			}
-			mission_completed = est_build_nevalinn
+			custom_trigger_tooltip = {
+				tooltip = enable_korean_palace_tt
+				owner = {
+					has_country_flag = est_unlocked_winterplace_project
+				}
+			}
 		}
 	}
 
@@ -17319,7 +16788,12 @@ winter_palace = {
 				culture_group = east_slavic
 				province_is_or_accepts_culture = yes
 			}
-			mission_completed = est_build_nevalinn
+			custom_trigger_tooltip = {
+				tooltip = enable_korean_palace_tt
+				owner = {
+					has_country_flag = est_unlocked_winterplace_project
+				}
+			}
 		}
 	}
 
@@ -17329,7 +16803,12 @@ winter_palace = {
 				culture_group = east_slavic
 				province_is_or_accepts_culture = yes
 			}
-			mission_completed = est_build_nevalinn
+			custom_trigger_tooltip = {
+				tooltip = enable_korean_palace_tt
+				owner = {
+					has_country_flag = est_unlocked_winterplace_project
+				}
+			}
 		}
 	}
 
@@ -18416,37 +17895,13 @@ edinburgh_castle = {
 
 	build_trigger = {
 		OR = {
-			AND = {
-				culture = scottish
-				province_is_or_accepts_culture = yes
-			}
-			AND = {
-				culture = highland_scottish
-				province_is_or_accepts_culture = yes
-			}
-			AND = {
-				# AB [[[
-				# british -> west_germanic
-				# anglois -> Anglois
-				OR = {
-					culture_group = west_germanic
-					culture = Anglois
-					culture_group = united_germanic
-				}
-				# ]]]
-				province_is_or_accepts_culture = yes
-			}
-			# AB [[[
-			AND = {
-				culture = goidelic
-				province_is_or_accepts_culture = yes
-			}
-			# ]]]
-			custom_trigger_tooltip = {
-				tooltip = enabled_via_mission
-				owner = { has_country_flag = enable_edinburgh_castle_flag }
-			}
+			culture = highland_scottish
+			culture = goidelic
+			culture = Anglois
+			culture_group = west_germanic
+			culture_group = united_germanic
 		}
+		province_is_or_accepts_culture = yes
 	}
 
 	on_built = {
@@ -18457,72 +17912,24 @@ edinburgh_castle = {
 
 	can_use_modifiers_trigger = {
 		OR = {
-			AND = {
-				culture = scottish
-				province_is_or_accepts_culture = yes
-			}
-			AND = {
-				culture = highland_scottish
-				province_is_or_accepts_culture = yes
-			}
-			AND = {
-				# AB [[[
-				# british -> west_germanic
-				# anglois -> Anglois
-				OR = {
-					culture_group = west_germanic
-					culture = Anglois
-					culture_group = united_germanic
-				}
-				# ]]]
-				province_is_or_accepts_culture = yes
-			}
-			# AB [[[
-			AND = {
-				culture = goidelic
-				province_is_or_accepts_culture = yes
-			}
-			# ]]]
-			custom_trigger_tooltip = {
-				tooltip = enabled_via_mission
-				owner = { has_country_flag = enable_edinburgh_castle_flag }
-			}
+			culture = highland_scottish
+			culture = goidelic
+			culture = Anglois
+			culture_group = west_germanic
+			culture_group = united_germanic
 		}
+		province_is_or_accepts_culture = yes
 	}
 
 	can_upgrade_trigger = {
 		OR = {
-			AND = {
-				culture = scottish
-				province_is_or_accepts_culture = yes
-			}
-			AND = {
-				culture = highland_scottish
-				province_is_or_accepts_culture = yes
-			}
-			AND = {
-				# AB [[[
-				# british -> west_germanic
-				# anglois -> Anglois
-				OR = {
-					culture_group = west_germanic
-					culture = Anglois
-					culture_group = united_germanic
-				}
-				# ]]]
-				province_is_or_accepts_culture = yes
-			}
-			# AB [[[
-			AND = {
-				culture = goidelic
-				province_is_or_accepts_culture = yes
-			}
-			# ]]]
-			custom_trigger_tooltip = {
-				tooltip = enabled_via_mission
-				owner = { has_country_flag = enable_edinburgh_castle_flag }
-			}
+			culture = highland_scottish
+			culture = goidelic
+			culture = Anglois
+			culture_group = west_germanic
+			culture_group = united_germanic
 		}
+		province_is_or_accepts_culture = yes
 	}
 
 	keep_trigger = {
@@ -19141,7 +18548,7 @@ imperial_city_kyoto = {
 
 kazan_kremlin = {
 	start = 1082 
-	date = 1214.12.2 #Built: 10th�16th centuries
+	date = 1214.12.2 #Built: 10th 16th centuries
 	time = { months = 0	}
 	build_cost = 0
 	can_be_moved = no
@@ -19375,16 +18782,12 @@ golestan_palace = {
 	on_destroyed = {
 	}
 	can_use_modifiers_trigger = {
-		AND = {
-			culture = persian
-			province_is_or_accepts_culture = yes
-		}
+		culture = persian
+		province_is_or_accepts_culture = yes
 	}
 	can_upgrade_trigger = {
-		AND = {
-			culture = persian
-			province_is_or_accepts_culture = yes
-		}
+		culture = persian
+		province_is_or_accepts_culture = yes
 	}
 	keep_trigger = {
 		
@@ -19586,18 +18989,14 @@ itchan_kala = {
 
 shah_rukn_e_alam_tomb = {
 	start = 506 
-	#date = 1324.5.12
-	date = 1445.1.1
+	date = 1324.5.12
 	time = { months = 0	}
 	build_cost = 0
 	can_be_moved = no
 	move_days_per_unit_distance = 10
-	starting_tier = 0
+	starting_tier = 1
 	type = monument
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
-		}
 	}
 	on_built = {
 	}
@@ -19810,6 +19209,21 @@ nizwa_fort = {
 			all_estate_possible_privileges = 1
 			max_absolutism = 10
 		}
+		# AB [[[
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = enable_korean_palace_tt
+					owner = {
+						has_country_flag = arb_upgrade_nizwa
+					}
+				}
+			}
+			modifier = {
+				defensiveness = 0.15
+			}
+		}
+		# ]]]
 		on_upgraded = {
 			add_base_manpower = 3
 		}
@@ -19915,6 +19329,22 @@ city_of_sanaa = {
 			mercantilism_cost = -0.33
 			merchants = 1
 		}
+		# AB [[[
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = enable_korean_palace_tt
+					owner = {
+						has_country_flag = arb_upgrade_sanaa
+					}
+				}
+			}
+			modifier = {
+				manpower_in_true_faith_provinces = 0.25
+				dip_tech_cost_modifier = -0.1
+			}
+		}
+		# ]]]
 		on_upgraded = {
 			center_of_trade = 1
 		}
@@ -20165,17 +19595,12 @@ amsterdam_bourse = {
 			limit = {
 				owner = { culture_group = united_germanic }
 			}
-			OR = {
-				culture = dutch_new
-				owner = { accepted_culture = dutch_new }
-			}
+			culture = dutch_new
 		}
 		else = {
-			OR = { 
-				culture = dutch
-				owner = { accepted_culture = dutch } 
-			}
+			culture = dutch
 		}
+		province_is_or_accepts_culture = yes
 	}
 	
 	can_use_modifiers_trigger = {
@@ -20183,17 +19608,12 @@ amsterdam_bourse = {
 			limit = {
 				owner = { culture_group = united_germanic }
 			}
-			OR = {
-				culture = dutch_new
-				owner = { accepted_culture = dutch_new }
-			}
+			culture = dutch_new
 		}
 		else = {
-			OR = { 
-				culture = dutch
-				owner = { accepted_culture = dutch } 
-			}
+			culture = dutch
 		}
+		province_is_or_accepts_culture = yes
 	}
 
 	can_upgrade_trigger = {
@@ -20201,17 +19621,12 @@ amsterdam_bourse = {
 			limit = {
 				owner = { culture_group = united_germanic }
 			}
-			OR = {
-				culture = dutch_new
-				owner = { accepted_culture = dutch_new }
-			}
+			culture = dutch_new
 		}
 		else = {
-			OR = { 
-				culture = dutch
-				owner = { accepted_culture = dutch } 
-			}
+			culture = dutch
 		}
+		province_is_or_accepts_culture = yes
 	}
 
 	keep_trigger = {}
@@ -20494,7 +19909,9 @@ schonbrunn_palace = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = TIR_SCHONBRUNN_CONDITION
-					has_country_flag = tir_unlock_schonbrunn_flag
+					owner = {
+						has_country_flag = tir_unlock_schonbrunn_flag
+					}
 				}
 			}
 
@@ -20522,7 +19939,9 @@ schonbrunn_palace = {
 			trigger = {
 				custom_trigger_tooltip = {
 					tooltip = TIR_SCHONBRUNN_CONDITION
-					has_country_flag = tir_unlock_schonbrunn_flag
+					owner = {
+						has_country_flag = tir_unlock_schonbrunn_flag
+					}
 				}
 			}
 

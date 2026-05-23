@@ -1509,13 +1509,11 @@ christian = {
 	}
 	
 	# AB [[[
-	# TODO: add `heretic = { HERETIC_NAME_1 HERETIC_NAME_2 HERETIC_NAME_N... }`
 	nestorian = {
-	
 		flags_with_emblem_percentage = 0
 		flag_emblem_index_range = { 1 44 }
 		
-		color = { 255  199  44 }
+		color = { 255 199 44 }
 		icon = 33
 		
 		country = {
@@ -2492,7 +2490,7 @@ muslim = {
 		  allowed_center_conversion = {
 			sunni
 			shiite
-		}			   
+		}
 		country = {
 			heir_chance = 1.0
 			global_trade_goods_size_modifier = 0.1
@@ -3437,6 +3435,17 @@ reformed_pagan = {
 			aspect_athena
 			aspect_hades
 			aspect_artemis
+			aspect_hephaestus
+			aspect_hermes
+			aspect_mithra
+			aspect_jupiter
+			aspect_neptune
+			aspect_ceres
+			aspect_mars
+			aspect_juno
+			aspect_minerva
+			aspect_pluto
+			aspect_diana
 		}
 		aspects_name = GREEK_PANTHEON
 		
@@ -3622,7 +3631,7 @@ pagan = {
 		
 		authority = yes
 		religious_reforms = yes
-		require_reformed_for_institution_development = yes											
+		require_reformed_for_institution_development = yes
 		reform_tooltip = INTI_REFORM_TOOLTIP
 		
 		heretic = { INTI_HERETIC }	
@@ -3647,7 +3656,7 @@ pagan = {
 		doom = yes
 		declare_war_in_regency = yes
 		religious_reforms = yes
-		require_reformed_for_institution_development = yes											
+		require_reformed_for_institution_development = yes
 		reform_tooltip = NAHUATL_REFORM_TOOLTIP
 		
 		heretic = { NAHUATL_HERETIC }	
@@ -3669,7 +3678,7 @@ pagan = {
 			local_missionary_strength = 0.02
 		}
 		
-		require_reformed_for_institution_development = yes											
+		require_reformed_for_institution_development = yes
 		religious_reforms = yes
 		reform_tooltip = MESOAMERICAN_REFORM_TOOLTIP
 		

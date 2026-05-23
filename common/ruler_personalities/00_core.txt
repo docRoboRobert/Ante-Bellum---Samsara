@@ -163,9 +163,9 @@ righteous_personality = {
 			government = monarchy
 		}
 		NOT = { OR = {
-			has_reform = MIN_celestial_empire
-			has_reform = celestial_empire
-		} }
+            has_reform = MIN_celestial_empire
+            has_reform = celestial_empire
+        } }
 		NOT = { government = tribal }
 		NOT = { government = native }
 	}
@@ -1384,10 +1384,6 @@ scholar_personality = {
 			# AB {{{
 			modifier = {
 				factor = 3
-				mission_completed = byzantium_university
-			}
-			modifier = {
-				factor = 3
 				has_country_flag = koj_scholar_chance
 			}
 			modifier = {
@@ -1413,10 +1409,6 @@ scholar_personality = {
 				has_country_flag = hsn_scholar_trait
 			}
 			# AB {{{
-			modifier = {
-				factor = 3
-				mission_completed = byzantium_university
-			}
 			modifier = {
 				factor = 3
 				mission_completed = ghu_nalanda
@@ -1496,18 +1488,6 @@ entrepreneur_personality = {
 			}
 			modifier = {
 				factor = 3
-				mission_completed = perm_terminus
-			}
-			modifier = {
-				factor = 3
-				mission_completed = perc_terminus
-			}
-			modifier = {
-				factor = 3
-				mission_completed = mper_terminus
-			}
-			modifier = {
-				factor = 3
 				mission_completed = rum_terminus
 			}
 			modifier = {
@@ -1536,18 +1516,6 @@ entrepreneur_personality = {
 			modifier = {
 				factor = 3
 				mission_completed = per_terminus
-			}
-			modifier = {
-				factor = 3
-				mission_completed = perm_terminus
-			}
-			modifier = {
-				factor = 3
-				mission_completed = perc_terminus
-			}
-			modifier = {
-				factor = 3
-				mission_completed = mper_terminus
 			}
 			modifier = {
 				factor = 3
