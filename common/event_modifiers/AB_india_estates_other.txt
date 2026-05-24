@@ -116,3 +116,19 @@ estate_gya_levy_of_the_middle_kingdom_chinese_culture_group = {
 estate_gya_levy_of_the_middle_kingdom_penalty ={
 	local_tax_modifier = -0.4
 }
+
+emergency_loans_from_mizrahi_jews_modifier = {
+	mizrahi_jews_influence_modifier = 0.1
+	church_loyalty_modifier = -0.05
+	nobles_loyalty_modifier = -0.05
+	stability_cost_modifier = 0.05
+	global_prov_trade_power_modifier = -0.05
+	
+	expand_administration_cost = 0.2
+	prestige_decay = 0.01
+	prestige = -0.25
+	inflation_reduction = -0.025
+	inflation_action_cost = 0.2
+	monthly_gold_inflation_modifier = 0.2
+	build_cost = 0.05
+}

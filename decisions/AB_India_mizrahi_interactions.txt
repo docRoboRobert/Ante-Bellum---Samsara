@@ -1,0 +1,247 @@
+country_decisions = {
+
+	expel_mizrahi_jews_estate = {
+		major = yes
+		potential = {
+			has_estate = estate_mizrahi_jews
+			NOT = { has_country_flag = disables_estate_mizrahi_jews_flag }
+			NOT = { religion = jewish }
+		}
+		allow = {
+			NOT = { religion = jewish }
+			NOT = { secondary_religion = jewish }
+			NOT = {
+				estate_influence = {
+					estate = estate_mizrahi_jews
+					influence = 80
+				}
+			}
+			NOT = { ruler_has_personality = tolerant_personality }
+			AND = {
+				NOT = {
+					has_global_modifier_value = {
+						which = tolerance_heathen
+						value = 0.01
+					}
+				}
+				NOT = {
+					has_global_modifier_value = {
+						which = tolerance_own
+						value = 0.07
+					}
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = expel_mizrahi_jews_estate.tooltip
+			add_years_of_income = 0.25
+			add_adm_power = -25
+			add_mil_power = -25
+			random_list = {
+				25 = {
+					add_stability = -1
+					add_corruption = 1
+				}
+				75 = {
+					add_manpower = -1
+					add_corruption = 2
+				}
+			}
+			if = {
+				limit = { has_country_modifier = emergency_loans_from_mizrahi_jews_modifier }
+				remove_country_modifier = emergency_loans_from_mizrahi_jews_modifier
+				add_prestige = -5
+			}
+			hidden_effect = {
+				set_country_flag = disables_estate_mizrahi_jews_flag
+			}
+		}
+		ai_will_do = {	#AI will never expell the estate... for now
+			factor = 0
+			
+			modifier = {
+				factor = 0
+				NOT = { adm_power = 600 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { dip_power = 800 }
+			}
+		}
+		ai_importance = 200
+	}
+	
+	restore_mizrahi_jews_estate = {
+		major = yes
+		potential = {
+			has_country_flag = disables_estate_mizrahi_jews_flag
+		}
+		allow = {
+			stability = 1
+			is_at_war = no
+			years_of_income = 0.25
+			OR = { 
+				ruler_has_personality = tolerant_personality
+				has_global_modifier_value = {
+					which = tolerance_heathen
+					value = 0.01
+				}
+				has_global_modifier_value = {
+					which = tolerance_own
+					value = 0.07
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = restore_mizrahi_jews_estate.tooltip
+			add_years_of_income = -0.25
+			add_adm_power = -50
+			add_dip_power = -25
+			hidden_effect = {
+				clr_country_flag = disables_estate_mizrahi_jews_flag
+			}
+		}
+		ai_will_do = {	#AI will never do this because it shouldn't in the first place
+			factor = 0
+		}
+		ai_importance = 200
+	}
+	
+	ask_mizrahi_jews_for_emergency_loans = {
+		potential = {
+			NOT = { has_country_modifier = emergency_loans_from_mizrahi_jews_modifier }
+			has_estate = estate_mizrahi_jews
+		}
+		allow = {
+			NOT = { years_of_income = 1.0 }
+			OR = {
+				NOT = { current_income_balance = 1 }
+				has_estate_loan = yes
+				num_of_loans = 5
+				war_exhaustion = 10
+			}
+			estate_loyalty = {
+				estate = estate_mizrahi_jews
+				loyalty = 40
+			}
+		}
+		effect = {
+			custom_tooltip = ask_mizrahi_jews_for_emergency_loans.tooltip
+			add_treasury = 100
+			add_years_of_income = 2
+			add_corruption = 0.25
+			add_country_modifier = {
+				name = emergency_loans_from_mizrahi_jews_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				years_of_income = 2
+			}
+			modifier = {
+				factor = 0.05
+				years_of_income = 1.5
+			}
+			modifier = {
+				factor = 0.1
+				years_of_income = 1
+			}
+			modifier = {
+				factor = 0.01
+				current_income_balance = 2
+			}
+			modifier = {
+				factor = 3
+				is_in_deficit = yes
+			}
+			modifier = {
+				factor = 0.1
+				NOT = { war_exhaustion = 2 }
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { war_exhaustion = 5 }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { war_exhaustion = 15 }
+			}
+			modifier = {
+				factor = 2.5
+				NOT = { war_exhaustion = 19 }
+			}
+			modifier = {
+				factor = 0.5
+				corruption = 1
+			}
+			modifier = {
+				factor = 0.25
+				corruption = 4
+			}
+			modifier = {
+				factor = 0.1
+				corruption = 8
+			}
+			modifier = {
+				factor = 0
+				NOT = { num_of_loans = 5 }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { num_of_loans = 10 }
+			}
+			modifier = {
+				factor = 2
+				NOT = { num_of_loans = 15 }
+			}
+			modifier = {
+				factor = 4
+				NOT = { num_of_loans = 20 }
+			}
+			modifier = {
+				factor = 10
+				NOT = { num_of_loans = 25 }
+			}
+		}
+		ai_importance = 200
+	}
+	
+	repay_emergency_loans_from_mizrahi_jews = {
+		potential = {
+			has_country_modifier = emergency_loans_from_mizrahi_jews_modifier
+			has_estate = estate_mizrahi_jews
+		}
+		allow = {
+			has_country_modifier = emergency_loans_from_mizrahi_jews_modifier
+			years_of_income = 2
+			treasury = 100
+		}
+		effect = {
+			add_treasury = -100
+			add_years_of_income = -2
+			remove_country_modifier = emergency_loans_from_mizrahi_jews_modifier
+		}
+		ai_will_do = {
+			factor = 10
+			
+			modifier = {	#AI should repay its main loans first
+				factor = 0
+				num_of_loans = 5
+			}
+			modifier = {
+				factor = 0.2
+				num_of_loans = 2
+			}
+			modifier = {
+				factor = 0
+				is_in_deficit = yes
+			}
+		}
+		ai_importance = 300
+	}
+
+}

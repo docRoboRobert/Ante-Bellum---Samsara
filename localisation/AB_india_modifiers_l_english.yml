@@ -74,6 +74,8 @@
  #Estates and estate mechanics
  abi_tamil_guilds_town:0 "Tamil Guilds Accomodated"
  desc_abi_tamil_guilds_town:0 "This province has over 15 development, so Tamil Guilds were granted free estate in the province' towns."
+ emergency_loans_from_mizrahi_jews_modifier:0 "Emergency Loans from Mizrahi Estate"
+ desc_emergency_loans_from_mizrahi_jews_modifier:0 "Our nation reached out to Jewish diaspora within our borders and asked them for monetary help as it was in dire need of financial help. Jewish merchants agreed to give us large financial injection in exchange for future payout. Until this bid gets repayed, the devilish pact is putting a long-time strain on our economy."
  
  #Governments and government mechanics
  samsara_unlocked_immortals_prov:0 "Indian Immortals Recruitment"

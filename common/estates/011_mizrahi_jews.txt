@@ -367,6 +367,14 @@ estate_mizrahi_jews = {
 		}
 		influence = 5
 	}
+	influence_modifier = {
+		desc = EST_NOT_PRIMARY_RELIGION_MIZRAHI
+		trigger = {
+			NOT = { religion = jewish }
+			total_development = 100
+		}
+		influence = -5
+	}
 	
 	#Loyalty Modifiers
 	loyalty_modifier = {

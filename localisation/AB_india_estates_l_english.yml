@@ -64,7 +64,7 @@
  EST_VAL_ABSOLUTE_JEWISH_FRACTION_MIZRAHI:0 "Non-Jewish nation with >95% Jewish provinces"
  EST_VAL_INCOMPETENT_RULER_MIZRAHI_JEWS:0 "Incompetent diplomatic and administrative ruler"
  EST_INCAPABLE_ADM_RULER_MIZRAHI_JEWS:0 "Ruler inept in administrative skills"
- EST_HAS_LOANS_MIZRAHI_JEWS:0 "Nation has loads"
+ EST_HAS_LOANS_MIZRAHI_JEWS:0 "Nation has loans"
  EST_MANY_LOANS_MIZRAHI_JEWS:0 "At least 10 active loans"
  EST_JEWISH_ADVISOR_EMPLOYED:0 "Non-Jewish nation employs Jewish advisor"
  EST_VERY_LOW_JEWISH_TOLERANCE:0 "Below -2 tolerance for Jewish religion"
@@ -76,10 +76,11 @@
  EST_MANY_COT_2_MIZRAHI:0 "5 medium Centers of Trade"
  EST_MANY_COT_3_MIZRAHI:0 "3 huge Centers of Trade"
  EST_VAL_OWNS_JERUSALEM_MIZRAHI:0 "Owns Holy City of Jerusalem"
- EST_VAL_IS_JEWISH_MIZRAHI:0 "Is primary religion"
+ EST_VAL_IS_JEWISH_MIZRAHI:0 "Jewish is primary religion"
  EST_VAL_ADM_FOCUS_MIZRAHI:0 "Administrative Focus"
  EST_VAL_HIGH_CHURCH_POWER_MIZRAHI:0 "Above 75 Faith Power"
  EST_VAL_VERY_HIGH_CHURCH_POWER_MIZRAHI:0 "Above 100 Faith Power"
+ EST_NOT_PRIMARY_RELIGION_MIZRAHI:0 "Large nation without Jewish primary religion"
  
  #
  #Estate Hill Clans 
