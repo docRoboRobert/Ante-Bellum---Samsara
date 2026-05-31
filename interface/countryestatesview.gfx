@@ -1037,4 +1037,44 @@ spriteTypes = {
 		name = "guilds_in_town"
 		texturefile = "gfx/interface/privileges/guilds_in_town.dds"
 	}
+	spriteType = {
+		name = "court_doctors_lifespan"
+		texturefile = "gfx/interface/privileges/court_doctors_lifespan.dds"
+	}
+	spriteType = {
+		name = "diplomacy_extra_upkeep"
+		texturefile = "gfx/interface/privileges/diplomacy_extra_upkeep.dds"
+	}
+	spriteType = {
+		name = "diplomacy_improve_relations"
+		texturefile = "gfx/interface/privileges/diplomacy_improve_relations.dds"
+	}
+	spriteType = {
+		name = "diplomatic_support_culture"
+		texturefile = "gfx/interface/privileges/diplomatic_support_culture.dds"
+	}
+	spriteType = {
+		name = "jewish_advisors_plus"
+		texturefile = "gfx/interface/privileges/jewish_advisors_plus.dds"
+	}
+	spriteType = {
+		name = "mizrahi_diplomatic_rep"
+		texturefile = "gfx/interface/privileges/mizrahi_diplomatic_rep.dds"
+	}
+	spriteType = {
+		name = "mizrahi_extra_diplomat"
+		texturefile = "gfx/interface/privileges/mizrahi_extra_diplomat.dds"
+	}
+	spriteType = {
+		name = "mizrahi_religious_relations"
+		texturefile = "gfx/interface/privileges/mizrahi_religious_relations.dds"
+	}
+	spriteType = {
+		name = "mizrahi_tax_collectors"
+		texturefile = "gfx/interface/privileges/mizrahi_tax_collectors.dds"
+	}
+	spriteType = {
+		name = "mizrahi_vassal_delegation"
+		texturefile = "gfx/interface/privileges/mizrahi_vassal_delegation.dds"
+	}
 }

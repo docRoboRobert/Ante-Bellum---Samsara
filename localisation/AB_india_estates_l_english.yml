@@ -80,7 +80,13 @@
  EST_VAL_ADM_FOCUS_MIZRAHI:0 "Administrative Focus"
  EST_VAL_HIGH_CHURCH_POWER_MIZRAHI:0 "Above 75 Faith Power"
  EST_VAL_VERY_HIGH_CHURCH_POWER_MIZRAHI:0 "Above 100 Faith Power"
- EST_NOT_PRIMARY_RELIGION_MIZRAHI:0 "Large nation without Jewish primary religion"
+ EST_NOT_PRIMARY_RELIGION_MIZRAHI:0 "Large nation without Jewish primary religion: §Y-5.0%§!"
+ 
+ estate_mizrahi_jews_land_rights:0 "Mizrahi Land Rights"
+ estate_mizrahi_jews_land_rights_desc:0 "Being one of the important contributors of our economy, Mizrahi Jews deserve a share in the nation's resources. Granting them more real estate will buy their loyalty and they will ease the government by managing newly-given possessions by themselves."
+ estate_mizrahi_jews_indebted_to_mizrahi:0 "Take Loan from Mizrahi Merchants"
+ estate_mizrahi_jews_indebted_to_mizrahi_desc:0 "Wealthy class of Mizrahi Mitnachal that specialize in commerce offer us extra monetary help in form of favourable loan. We can ask to borrow some money from them in exchange for minimal political influence."
+ estate_mizrahi_jews_indebted_to_mizrahi_effect_tooltip:0 "Take §Yone§! five-year loan at §Y1%§! interest."
  
  #
  #Estate Hill Clans 

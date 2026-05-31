@@ -150,6 +150,10 @@ estate_tamil_guilds_land_rights = {
 			factor = 0.75
 			has_estate_privilege = estate_rajput_land_rights
 		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_mizrahi_jews_land_rights
+		}
 	}
 }
 

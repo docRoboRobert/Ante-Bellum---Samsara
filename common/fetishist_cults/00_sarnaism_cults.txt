@@ -242,16 +242,8 @@ chalapachho_devi = {
 
 	allow = {
 		religion = sarnaism
-		OR = {
-			tag = GRJ
-			owns = 2049
-			reverse_has_opinion = {
-				who = GRJ
-				value = 100
-			}
-		}
 	}
-	sprite = 25
+	sprite = 26
 
 	ai_will_do = {
 		factor = 1
@@ -262,6 +254,317 @@ chalapachho_devi = {
 		modifier = {
 			NOT = { stability = 0 }
 			factor = 2
+		}
+	}
+}
+
+holy_river_deity = {
+	development_cost = -0.05
+	global_prov_trade_power_modifier = 0.1
+
+	allow = {
+		religion = sarnaism
+		OR = {
+			tag = BMB
+			owns = 5213
+			owns = 552
+			owns = 4452
+			owns = 4451
+			owns = 553
+			reverse_has_opinion = {
+				who = BMB
+				value = 100
+			}
+		}
+	}
+	sprite = 27
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_balanced
+			factor = 2
+		}
+		modifier = {
+	        personality = ai_capitalist
+			factor = 2
+		}
+		modifier = {
+			stability = 0
+			factor = 1.5
+		}
+	}
+}
+
+jal_sarnaism = {
+	trade_range_modifier = 0.1
+	placed_merchant_power = 2
+	center_of_trade_upgrade_cost = -0.2
+
+	allow = {
+		religion = sarnaism
+		OR = {
+			tag = GRJ
+			tag = PLH
+			owns = 2049
+			owns = 5215
+			reverse_has_opinion = {
+				who = GRJ
+				value = 100
+			}
+			reverse_has_opinion = {
+				who = PLH
+				value = 100
+			}
+		}
+	}
+	sprite = 28
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_balanced
+			factor = 2
+		}
+		modifier = {
+	        personality = ai_capitalist
+			factor = 2
+		}
+		modifier = {
+			stability = 0
+			factor = 1.5
+		}
+	}
+}
+
+jungle_sarnaism = {
+	development_cost = -0.05
+	attack_bonus_in_capital_terrain = 1
+	native_assimilation = 0.25
+
+	allow = {
+		religion = sarnaism
+		OR = {
+			tag = PRD
+			tag = PLH
+			owns = 5219
+			owns = 4448
+			any_owned_province = {
+				OR = {
+					has_terrain = jungle
+					has_terrain = woods
+					has_terrain = forest
+				}
+			}
+			reverse_has_opinion = {
+				who = PRD
+				value = 100
+			}
+			reverse_has_opinion = {
+				who = PLH
+				value = 100
+			}
+		}
+	}
+	sprite = 29
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_balanced
+			factor = 1.5
+		}
+		modifier = {
+	        personality = ai_militarist
+			factor = 1.25
+		}
+		modifier = {
+			num_of_colonists = 1
+			factor = 2
+		}
+		modifier = {
+			num_of_colonies = 1
+			factor = 2
+		}
+	}
+}
+
+zameen = {
+	global_trade_goods_size_modifier = 0.05
+	build_cost = -0.1
+
+	allow = {
+		religion = sarnaism
+		any_owned_province = {
+			OR = {
+				has_terrain = woods
+				has_terrain = grasslands
+				has_terrain = farmlands
+				has_terrain = drylands
+				has_terrain = steppe
+				has_terrain = savanna
+			}
+		}
+	}
+	sprite = 30
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_balanced
+			factor = 1.5
+		}
+		modifier = {
+	        personality = ai_capitalist
+			factor = 2.5
+		}
+	}
+}
+
+marangburu = {
+	shock_damage_received = -0.05
+	defensiveness = 0.1
+	innovativeness_gain = 0.5
+
+	allow = {
+		religion = sarnaism
+		any_owned_province = {
+			OR = {
+				has_terrain = hills
+				has_terrain = mountain
+				has_terrain = highlands
+				has_terrain = glacier
+			}
+		}
+	}
+	sprite = 31
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_militarist
+			factor = 1.75
+		}
+		modifier = {
+	        is_at_war = yes
+			factor = 1.5
+		}
+		modifier = {
+			innovativeness = 10
+			factor = 2
+		}
+		modifier = {
+			innovativeness = 20
+			factor = 2
+		}
+		modifier = {
+			innovativeness = 40
+			factor = 2
+		}
+		modifier = {
+			capital_scope = { fort_level = 3 }
+			factor = 1.25
+		}
+	}
+}
+
+shingbonga = {
+	fire_damage = 0.05
+	global_heathen_missionary_strength = 0.015
+
+	allow = {
+		religion = sarnaism
+		OR = {
+			tag = KJH
+			tag = RTT
+			tag = SRG
+			owns = 2082
+			owns = 2098
+			owns = 5214
+			owns = 4452
+			reverse_has_opinion = {
+				who = KJH
+				value = 100
+			}
+			reverse_has_opinion = {
+				who = RTT
+				value = 100
+			}
+			reverse_has_opinion = {
+				who = SRG
+				value = 100
+			}
+		}
+	}
+	sprite = 32
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_militarist
+			factor = 2
+		}
+		modifier = {
+	        is_at_war = yes
+			factor = 1.5
+		}
+		modifier = {
+			NOT = { religious_unity = 0.8 }
+			factor = 2
+		}
+		modifier = {
+			NOT = { religious_unity = 0.5 }
+			factor = 3
+		}
+		modifier = {
+			any_owned_province = {
+				NOT = { religion = sarnaism }
+			}
+			factor = 1.25
+		}
+	}
+}
+
+water_deity = {
+	global_trade_power = 0.05
+	own_coast_naval_combat_bonus = 1.0
+	naval_tradition_from_trade = 0.15
+
+	allow = {
+		religion = sarnaism
+		any_owned_province = { has_port = yes }
+	}
+	sprite = 33
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_militarist
+			factor = 1.25
+		}
+		modifier = {
+	        personality = ai_capitalist
+			factor = 1.5
+		}
+		modifier = {
+			full_idea_group = naval_ideas
+			factor = 1.5
+		}
+		modifier = {
+			NOT = { navy_size_percentage = 0.25 }
+			factor = 3
+		}
+		modifier = {
+			NOT = { navy_size_percentage = 0.33 }
+			factor = 2
+		}
+		modifier = {
+			NOT = { navy_size_percentage = 0.5 }
+			factor = 1.5
+		}
+		modifier = {
+			NOT = { navy_size_percentage = 0.67 }
+			factor = 1.25
 		}
 	}
 }

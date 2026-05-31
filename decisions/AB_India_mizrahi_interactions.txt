@@ -21,13 +21,13 @@ country_decisions = {
 				NOT = {
 					has_global_modifier_value = {
 						which = tolerance_heathen
-						value = 0.01
+						value = 1
 					}
 				}
 				NOT = {
 					has_global_modifier_value = {
 						which = tolerance_own
-						value = 0.07
+						value = 7
 					}
 				}
 			}

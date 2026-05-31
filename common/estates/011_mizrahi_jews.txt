@@ -441,7 +441,8 @@ estate_mizrahi_jews = {
 	}
 	
 	privileges = {
-		estate_tamil_guilds_land_rights
+		estate_mizrahi_jews_land_rights
+		estate_mizrahi_jews_indebted_to_mizrahi
 	}
 
 	agendas = {
