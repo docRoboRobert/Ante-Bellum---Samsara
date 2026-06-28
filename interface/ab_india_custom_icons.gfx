@@ -8,5 +8,13 @@ spriteTypes = {
 		name = "GFX_grain_field_hub_picture"
 		texturefile = "gfx/interface/ideas_EU4/grain_field_hub_picture.dds"
 	}
+	spriteType = {
+		name = "GFX_mizrahi_presence_modifier_picture"
+		texturefile = "gfx/interface/ideas_EU4/mizrahi_presence_modifier_picture.dds"
+	}
+	spriteType = {
+		name = "GFX_mizrahi_presence_big_modifier_picture"
+		texturefile = "gfx/interface/ideas_EU4/mizrahi_presence_big_modifier_picture.dds"
+	}
 	
 }

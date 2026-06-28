@@ -26,4 +26,9 @@ add_permanent_province_modifier = {
 	name = indus_estuary_modifier
 	duration = -1
 }
+add_permanent_province_modifier = {
+	name = mizrahi_presence_province_modifier
+	duration = -1
+}
+
 1498.1.1 = { discovered_by = POR }

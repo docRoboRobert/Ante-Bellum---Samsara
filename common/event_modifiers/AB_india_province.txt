@@ -30,3 +30,23 @@ lakshadweep_island_modifier = {
 	local_development_cost = 0.45
 	supply_limit_modifier = -0.25
 }
+
+mizrahi_presence_province_modifier = {
+	local_institution_spread = 0.05
+	min_local_autonomy = 5
+	local_governing_cost = -0.05
+	trade_value = 0.5
+	
+	picture = "mizrahi_presence_modifier_picture"
+}
+
+center_of_mizrahi_diaspora_modifier = {
+	local_institution_spread = 0.05
+	min_local_autonomy = 10
+	local_governing_cost = -0.075
+	trade_value = 0.5
+	local_development_cost = -0.05
+	local_missionary_strength = -0.04
+	
+	picture = "mizrahi_presence_big_modifier_picture"
+}

@@ -25,12 +25,12 @@ estate_mizrahi_jews = {
 						province_id = 390
 						province_id = 388
 						province_id = 408
-						province_id = 388
+						province_id = 398
 						province_id = 395
 						province_id = 400
 						province_id = 431
 						province_id = 430
-						province_id = 2200
+						province_id = 2220
 						province_id = 2999
 						province_id = 504
 						province_id = 5246
@@ -46,6 +46,7 @@ estate_mizrahi_jews = {
 						province_id = 534
 						province_id = 535
 						province_id = 446	#Merv survived Mongol invasions
+						has_province_modifier = mizrahi_presence_province_modifier
 					}
 				}
 			}
@@ -442,7 +443,11 @@ estate_mizrahi_jews = {
 	
 	privileges = {
 		estate_mizrahi_jews_land_rights
+		estate_mizrahi_jews_tax_collectors
+		estate_mizrahi_jews_diplomacy_culture_translation
+		estate_mizrahi_jews_extra_advisor
 		estate_mizrahi_jews_indebted_to_mizrahi
+		estate_mizrahi_jews_vassal_tax_delegation
 	}
 
 	agendas = {
