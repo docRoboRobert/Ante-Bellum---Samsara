@@ -88,14 +88,14 @@
  estate_mizrahi_jews_indebted_to_mizrahi_desc:0 "Wealthy class of Mizrahi Mitnachal that specialize in commerce offer us extra monetary help in form of favourable loan. We can ask to borrow some money from them in exchange for minimal political influence."
  estate_mizrahi_jews_indebted_to_mizrahi_effect_tooltip:0 "Take §Yone§! five-year loan at §Y1%§! interest."
  estate_mizrahi_jews_diplomacy_culture_translation:0 "Allow State Translators Positions"
- estate_mizrahi_jews_diplomacy_culture_translation_desc:0 ""
+ estate_mizrahi_jews_diplomacy_culture_translation_desc:0 "Mizrahi merchants are known to come from all regions of the world and travel long distances in their endeavours. As such, many of them are masters of foreign languages are will be extremely useful translators in conducting diplomacy in other cultures."
  estate_mizrahi_jews_vassal_tax_delegation:0 "Mizrahi Vassal Tribute Delegation"
- estate_mizrahi_jews_vassal_tax_delegation_desc:0 ""
+ estate_mizrahi_jews_vassal_tax_delegation_desc:0 "Mizrahi delegates and emissars shall aid in efficient tax and tribute extorsion from our subjects."
  estate_mizrahi_jews_tax_collectors:0 "Establish Mizrahi Tax Collection Bureau"
- estate_mizrahi_jews_tax_collectors_desc:0 ""
+ estate_mizrahi_jews_tax_collectors_desc:0 "The creation of new tax collection bureau led by educated Mizrahi class will boost our income significantly while also landing them a fixed position within a state that we can leverage in the future."
  estate_mizrahi_jews_extra_advisor:0 "Permanent Seat in Advisory Board"
- estate_mizrahi_jews_extra_advisor_desc:0 ""
- estate_mizrahi_jews_extra_advisor_effect_tooltip:0 "Unlocks decision tooltip"
+ estate_mizrahi_jews_extra_advisor_desc:0 "Mizrahi Jews have many noble and wise men among their ranks. It would be foolish to exclude their prowess from our advisor pool."
+ estate_mizrahi_jews_extra_advisor_effect_tooltip:0 "Unlocks decision allowing you to recruit Jewish advisors at §Y50%§! of the cost."
  
  #
  #Estate Hill Clans 
