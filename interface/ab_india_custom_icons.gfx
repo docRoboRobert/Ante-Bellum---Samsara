@@ -16,5 +16,9 @@ spriteTypes = {
 		name = "GFX_mizrahi_presence_big_modifier_picture"
 		texturefile = "gfx/interface/ideas_EU4/mizrahi_presence_big_modifier_picture.dds"
 	}
+	spriteType = {
+		name = "GFX_sarnaism_integration_bonus_picture"
+		texturefile = "gfx/interface/ideas_EU4/sarnaism_integration_bonus_picture.dds"
+	}
 	
 }

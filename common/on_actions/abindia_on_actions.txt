@@ -244,6 +244,20 @@ on_startup = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				OR = {
+					tag = MLW
+					tag = ML2
+					tag = ML3
+				}
+			}
+			ROOT = {
+				country_event = {
+					id = abindia_starting_lore.3
+				}
+			}
+		}
 	}
 	
 	#Lhasa starting unrest
@@ -253,6 +267,65 @@ on_startup = {
 			add_country_modifier = {
 				name = lha_unorthodox_population_of_lhasa
 				duration = -1
+			}
+		}
+	}
+	
+	#Malwa civil war rebels spawning
+	if = {
+		limit = {
+			tag = MLW
+			ai = no
+		}
+		MLW = {
+			country_event = {
+				id = abindia_malwa_events.1
+				days = 150
+				random = 30
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = ML2
+			ai = no
+			MLW = { ai = yes }
+			ML3 = { ai = yes }
+		}
+		ML2 = {
+			country_event = {
+				id = abindia_malwa_events.1
+				days = 150
+				random = 30
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = ML3
+			ai = no
+			MLW = { ai = yes }
+		}
+		ML3 = {
+			country_event = {
+				id = abindia_malwa_events.1
+				days = 150
+				random = 30
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = MLW
+			ai = yes
+			ML2 = { ai = yes }
+			ML3 = { ai = yes }
+		}
+		ROOT = {
+			country_event = {
+				id = abindia_malwa_events.1
+				days = 150
+				random = 30
 			}
 		}
 	}

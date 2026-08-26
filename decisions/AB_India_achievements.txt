@@ -647,4 +647,61 @@ country_decisions = {
 		}
 		ai_importance = 0
 	}
+	
+	india_achievement_collect_them_all = {
+		major = yes
+		potential = {
+			religion = sarnaism
+			capital_scope = { superregion = india_superregion }
+			NOT = { has_country_flag = achiev_collect_them_all }
+		}
+		provinces_to_highlight = {
+			OR = {
+				religion = bon_religion
+				religion = nestorian
+				religion = hinduism
+				religion = malankara
+				religion = tengri_pagan_reformed
+				religion = zoroastrian
+				religion = manichaean
+				religion = jewish
+				religion_group = muslim
+				religion = jainism
+				religion = confucianism
+				religion = shinto
+				religion = buddhism
+				religion = vajrayana
+				religion = mahayana
+				religion = animism
+				religion = shamanism
+				religion = maitreya
+				religion = zunist
+				religion = reformed_norse
+				religion = norse_pagan_reformed
+				religion = slavic_pagan
+				religion = reformed_slavic
+				religion = baltic_pagan
+				religion = reformed_baltic
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = india_achievement_ironman_on
+				ironman = yes
+			}
+			religion = sarnaism
+			num_of_unlocked_cults = 32
+		}
+		effect = {
+			custom_tooltip = india_achievement_diff_5
+			custom_tooltip = achiev_collect_them_all_desc
+			set_country_flag = achiev_collect_them_all
+			add_treasury = 1
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
 }

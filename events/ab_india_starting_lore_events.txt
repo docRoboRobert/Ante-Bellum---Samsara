@@ -37,3 +37,23 @@ country_event = {
 		}
 	}
 }
+
+#Starting event for Malwa tags
+country_event = {
+	id = abindia_starting_lore.3
+	title = abindia_starting_lore.3.t
+	desc = abindia_starting_lore.3.d
+	picture = indiangfx_RELIGIOUS_TURMOIL_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = abindia_starting_lore.3.a
+		custom_tooltip = abindia_starting_lore.3.tooltip
+		MLW = { add_army_tradition = 10 }
+		ML2 = { add_army_tradition = 10 }
+		ML3 = { add_army_tradition = 10 }
+	}
+}

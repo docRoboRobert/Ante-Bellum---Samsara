@@ -1,0 +1,878 @@
+country_decisions = {
+	
+	sarnaism_adopt_bon_teachings = {
+		potential = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = bon_sarnaism_integration }
+			OR = {
+				any_owned_province = { religion = bon_religion }
+				any_neighbor_province = {
+					religion = bon_religion
+					owner = {
+						has_opinion = {
+							who = ROOT
+							value = 0
+						}
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			religion = bon_religion
+		}
+		color = { 96 198 235 }
+		allow = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = bon_sarnaism_integration }
+			any_owned_province = { religion = bon_religion }
+		}
+		effect = {
+			every_country = {
+				limit = { religion = sarnaism }
+				unlock_cult = bon_sarnaism_integration
+			}
+			custom_tooltip = sarnaism_adopt_bon_teachings.tooltip
+			add_country_modifier = { 
+				name = sarnaism_bon_bonus
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	sarnaism_reconcile_hinduism = {
+		potential = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = hinduism_sarnaism_integration }
+			OR = {
+				owns_or_subject_of = 541
+				owns_or_subject_of = 4466
+				owns_or_subject_of = 2095
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 541
+				province_id = 4466
+				province_id = 2095
+			}
+		}
+		color = { 96 198 235 }
+		allow = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = hinduism_sarnaism_integration }
+			OR = {
+				owns_or_subject_of = 541
+				owns_or_subject_of = 4466
+				owns_or_subject_of = 2095
+			}
+			num_of_owned_provinces_with = {
+				value = 25
+				religion = sarnaism
+			}
+		}
+		effect = {
+			every_country = {
+				limit = { religion = sarnaism }
+				unlock_cult = hinduism_sarnaism_integration
+			}
+			custom_tooltip = sarnaism_reconcile_hinduism.tooltip
+			add_country_modifier = { 
+				name = sarnaism_hinduism_bonus
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	sarnaism_adopt_jain_teachings = {
+		potential = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = jainism_sarnaism_integration }
+			OR = {
+				any_owned_province = { religion = jainism }
+				any_neighbor_province = {
+					religion = jainism
+					owner = {
+						has_opinion = {
+							who = ROOT
+							value = 0
+						}
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			religion = jainism
+		}
+		color = { 96 198 235 }
+		allow = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = jainism_sarnaism_integration }
+			any_owned_province = { religion = jainism }
+		}
+		effect = {
+			every_country = {
+				limit = { religion = sarnaism }
+				unlock_cult = jainism_sarnaism_integration
+			}
+			custom_tooltip = sarnaism_adopt_jain_teachings.tooltip
+			add_country_modifier = { 
+				name = sarnaism_jainism_bonus
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	sarnaism_adopt_nestorian_teachings = {
+		potential = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = nestorian_sarnaism_integration }
+			OR = {
+				any_owned_province = { religion = nestorian }
+				any_neighbor_province = {
+					religion = nestorian
+					owner = {
+						has_opinion = {
+							who = ROOT
+							value = 0
+						}
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			religion = nestorian
+		}
+		color = { 96 198 235 }
+		allow = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = nestorian_sarnaism_integration }
+			any_owned_province = { religion = nestorian }
+		}
+		effect = {
+			every_country = {
+				limit = { religion = sarnaism }
+				unlock_cult = nestorian_sarnaism_integration
+			}
+			custom_tooltip = sarnaism_adopt_nestorian_teachings.tooltip
+			add_country_modifier = { 
+				name = sarnaism_nestorian_bonus
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	sarnaism_adopt_buddhist_teachings = {
+		potential = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = buddhism_sarnaism_integration }
+			OR = {
+				any_owned_province = {
+					OR = {
+						religion = buddhism
+						religion = vajrayana
+						religion = maitreya
+						religion = mahayana
+					}
+				}
+				any_neighbor_province = {
+					OR = {
+						religion = buddhism
+						religion = vajrayana
+						religion = maitreya
+						religion = mahayana
+					}
+					owner = {
+						has_opinion = {
+							who = ROOT
+							value = 0
+						}
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				religion = buddhism
+				religion = vajrayana
+				religion = maitreya
+				religion = mahayana
+			}
+		}
+		color = { 96 198 235 }
+		allow = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = buddhism_sarnaism_integration }
+			any_owned_province = {
+				OR = {
+					religion = buddhism
+					religion = vajrayana
+					religion = maitreya
+					religion = mahayana
+				}
+			}
+		}
+		effect = {
+			every_country = {
+				limit = { religion = sarnaism }
+				unlock_cult = buddhism_sarnaism_integration
+			}
+			custom_tooltip = sarnaism_adopt_buddhist_teachings.tooltip
+			add_country_modifier = { 
+				name = sarnaism_buddhism_bonus
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	sarnaism_adopt_animist_teachings = {
+		potential = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = animism_sarnaism_integration }
+			OR = {
+				any_owned_province = { religion = animism }
+				any_neighbor_province = {
+					religion = animism
+					owner = {
+						has_opinion = {
+							who = ROOT
+							value = 0
+						}
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			religion = animism
+		}
+		color = { 96 198 235 }
+		allow = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = animism_sarnaism_integration }
+			any_owned_province = { religion = animism }
+		}
+		effect = {
+			every_country = {
+				limit = { religion = sarnaism }
+				unlock_cult = animism_sarnaism_integration
+			}
+			custom_tooltip = sarnaism_adopt_animist_teachings.tooltip
+			add_country_modifier = { 
+				name = sarnaism_animism_bonus
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	sarnaism_adopt_zunist_teachings = {
+		potential = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = zunist_sarnaism_integration }
+			OR = {
+				any_owned_province = { religion = zunist }
+				any_neighbor_province = {
+					religion = zunist
+					owner = {
+						has_opinion = {
+							who = ROOT
+							value = 0
+						}
+					}
+				}
+				owns_or_subject_of = 2225
+			}
+		}
+		provinces_to_highlight = {
+			religion = zunist
+		}
+		color = { 96 198 235 }
+		allow = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = zunist_sarnaism_integration }
+			OR = {
+				any_owned_province = { religion = zunist }
+				owns_or_subject_of = 2225
+			}
+		}
+		effect = {
+			every_country = {
+				limit = { religion = sarnaism }
+				unlock_cult = zunist_sarnaism_integration
+			}
+			custom_tooltip = sarnaism_adopt_zunist_teachings.tooltip
+			add_country_modifier = { 
+				name = sarnaism_zunist_bonus
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	sarnaism_adopt_norse_teachings = {
+		potential = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = norse_sarnaism_integration }
+			OR = {
+				any_owned_province = {
+					OR = {
+						religion = reformed_norse
+						religion = norse_pagan_reformed
+					}
+				}
+				any_neighbor_province = {
+					OR = {
+						religion = reformed_norse
+						religion = norse_pagan_reformed
+					}
+					owner = {
+						has_opinion = {
+							who = ROOT
+							value = 0
+						}
+					}
+				}
+				owns_or_subject_of = 17
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				religion = reformed_norse
+				religion = norse_pagan_reformed
+				province_id = 17
+			}
+		}
+		color = { 96 198 235 }
+		allow = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = norse_sarnaism_integration }
+			OR = {
+				any_owned_province = {
+					OR = {
+						religion = reformed_norse
+						religion = norse_pagan_reformed
+					}
+				}
+				owns_or_subject_of = 17
+			}
+		}
+		effect = {
+			every_country = {
+				limit = { religion = sarnaism }
+				unlock_cult = norse_sarnaism_integration
+			}
+			custom_tooltip = sarnaism_adopt_norse_teachings.tooltip
+			add_country_modifier = { 
+				name = sarnaism_norse_bonus
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	sarnaism_adopt_baltoslavic_teachings = {
+		potential = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = baltoslavic_sarnaism_integration }
+			OR = {
+				any_owned_province = {
+					OR = {
+						religion = slavic_pagan
+						religion = reformed_slavic
+						religion = baltic_pagan
+						religion = reformed_baltic
+					}
+				}
+				any_neighbor_province = {
+					OR = {
+						religion = slavic_pagan
+						religion = reformed_slavic
+						religion = baltic_pagan
+						religion = reformed_baltic
+					}
+					owner = {
+						has_opinion = {
+							who = ROOT
+							value = 0
+						}
+					}
+				}
+				owns_or_subject_of = 41
+				owns_or_subject_of = 4745
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				religion = slavic_pagan
+				religion = reformed_slavic
+				religion = baltic_pagan
+				religion = reformed_baltic
+				province_id = 41
+				province_id = 4745
+			}
+		}
+		color = { 96 198 235 }
+		allow = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = baltoslavic_sarnaism_integration }
+			OR = {
+				any_owned_province = {
+					OR = {
+						religion = slavic_pagan
+						religion = reformed_slavic
+						religion = baltic_pagan
+						religion = reformed_baltic
+					}
+				}
+				owns_or_subject_of = 41
+				owns_or_subject_of = 4745
+			}
+		}
+		effect = {
+			every_country = {
+				limit = { religion = sarnaism }
+				unlock_cult = baltoslavic_sarnaism_integration
+			}
+			custom_tooltip = sarnaism_adopt_baltoslavic_teachings.tooltip
+			add_country_modifier = { 
+				name = sarnaism_baltoslavic_bonus
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	sarnaism_adopt_shamanism_teachings = {
+		potential = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = shamanism_sarnaism_integration }
+			OR = {
+				any_owned_province = {
+					religion = shamanism
+				}
+				any_neighbor_province = {
+					religion = shamanism
+					owner = {
+						has_opinion = {
+							who = ROOT
+							value = 0
+						}
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			religion = shamanism
+		}
+		color = { 96 198 235 }
+		allow = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = shamanism_sarnaism_integration }
+			any_owned_province = { religion = shamanism }
+		}
+		effect = {
+			every_country = {
+				limit = { religion = sarnaism }
+				unlock_cult = shamanism_sarnaism_integration
+			}
+			custom_tooltip = sarnaism_adopt_shamanism_teachings.tooltip
+			add_country_modifier = { 
+				name = sarnaism_shamanism_bonus
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	sarnaism_adopt_islam_teachings = {
+		potential = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = islam_sarnaism_integration }
+			OR = {
+				any_owned_province = {
+					religion_group = muslim
+				}
+				any_neighbor_province = {
+					religion_group = muslim
+					owner = {
+						has_opinion = {
+							who = ROOT
+							value = 0
+						}
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			religion_group = muslim
+		}
+		color = { 96 198 235 }
+		allow = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = islam_sarnaism_integration }
+			any_owned_province = { religion_group = muslim }
+		}
+		effect = {
+			every_country = {
+				limit = { religion = sarnaism }
+				unlock_cult = islam_sarnaism_integration
+			}
+			custom_tooltip = sarnaism_adopt_islam_teachings.tooltip
+			add_country_modifier = { 
+				name = sarnaism_islam_bonus
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	sarnaism_adopt_malankara_teachings = {
+		potential = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = malankara_sarnaism_integration }
+			OR = {
+				any_owned_province = {
+					religion = malankara
+				}
+				any_neighbor_province = {
+					religion = malankara
+					owner = {
+						has_opinion = {
+							who = ROOT
+							value = 0
+						}
+					}
+				}
+				owns_or_subject_of = 5286
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				religion = malankara
+				province_id = 5286
+			}
+		}
+		color = { 96 198 235 }
+		allow = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = malankara_sarnaism_integration }
+			OR = {
+				any_owned_province = { religion = malankara }
+				owns_or_subject_of = 5286
+			}
+		}
+		effect = {
+			every_country = {
+				limit = { religion = sarnaism }
+				unlock_cult = malankara_sarnaism_integration
+			}
+			custom_tooltip = sarnaism_adopt_malankara_teachings.tooltip
+			add_country_modifier = { 
+				name = sarnaism_malankara_bonus
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	sarnaism_adopt_tengri_teachings = {
+		potential = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = tengri_sarnaism_integration }
+			OR = {
+				any_owned_province = {
+					religion = tengri_pagan_reformed
+				}
+				any_neighbor_province = {
+					religion = tengri_pagan_reformed
+					owner = {
+						has_opinion = {
+							who = ROOT
+							value = 0
+						}
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			religion = tengri_pagan_reformed
+		}
+		color = { 96 198 235 }
+		allow = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = tengri_sarnaism_integration }
+			any_owned_province = { religion = tengri_pagan_reformed }
+		}
+		effect = {
+			every_country = {
+				limit = { religion = sarnaism }
+				unlock_cult = tengri_sarnaism_integration
+			}
+			custom_tooltip = sarnaism_adopt_tengri_teachings.tooltip
+			add_country_modifier = { 
+				name = sarnaism_tengri_bonus
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	sarnaism_adopt_jewish_teachings = {
+		potential = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = jewish_sarnaism_integration }
+			OR = {
+				any_owned_province = {
+					religion = jewish
+				}
+				any_neighbor_province = {
+					religion = jewish
+					owner = {
+						has_opinion = {
+							who = ROOT
+							value = 0
+						}
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				religion = jewish
+				province_id = 4512
+			}
+		}
+		color = { 96 198 235 }
+		allow = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = jewish_sarnaism_integration }
+			OR = {
+				any_owned_province = { religion = jewish }
+				owns_or_subject_of = 4512
+			}
+		}
+		effect = {
+			every_country = {
+				limit = { religion = sarnaism }
+				unlock_cult = jewish_sarnaism_integration
+			}
+			custom_tooltip = sarnaism_adopt_jewish_teachings.tooltip
+			add_country_modifier = { 
+				name = sarnaism_jewish_bonus
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	sarnaism_adopt_zoroastrian_teachings = {
+		potential = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = zoroastrian_sarnaism_integration }
+			OR = {
+				any_owned_province = {
+					OR = {
+						religion = zoroastrian
+						religion = manichaean
+					}
+				}
+				any_neighbor_province = {
+					OR = {
+						religion = zoroastrian
+						religion = manichaean
+					}
+					owner = {
+						has_opinion = {
+							who = ROOT
+							value = 0
+						}
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				religion = zoroastrian
+				religion = manichaean
+			}
+		}
+		color = { 96 198 235 }
+		allow = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = zoroastrian_sarnaism_integration }
+			any_owned_province = {
+				OR = {
+					religion = zoroastrian
+					religion = manichaean
+				}
+			}
+		}
+		effect = {
+			every_country = {
+				limit = { religion = sarnaism }
+				unlock_cult = zoroastrian_sarnaism_integration
+			}
+			custom_tooltip = sarnaism_adopt_zoroastrian_teachings.tooltip
+			add_country_modifier = { 
+				name = sarnaism_zoroastrian_bonus
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	sarnaism_adopt_confucian_teachings = {
+		potential = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = confucian_sarnaism_integration }
+			OR = {
+				any_owned_province = {
+					OR = {
+						religion = confucianism
+						religion = shinto
+					}
+				}
+				any_neighbor_province = {
+					OR = {
+						religion = confucianism
+						religion = shinto
+					}
+					owner = {
+						has_opinion = {
+							who = ROOT
+							value = 0
+						}
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				religion = confucianism
+				religion = shinto
+			}
+		}
+		color = { 96 198 235 }
+		allow = {
+			religion = sarnaism
+			NOT = { has_unlocked_cult = confucian_sarnaism_integration }
+			any_owned_province = {
+				OR = {
+					religion = confucianism
+					religion = shinto
+				}
+			}
+		}
+		effect = {
+			every_country = {
+				limit = { religion = sarnaism }
+				unlock_cult = confucian_sarnaism_integration
+			}
+			custom_tooltip = sarnaism_adopt_confucian_teachings.tooltip
+			add_country_modifier = { 
+				name = sarnaism_confucian_bonus
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	sarnaism_unlock_external_cb = {
+		potential = {
+			religion = sarnaism
+			NOT = { has_country_flag = sarnaism_external_perfectionism_allow }
+			num_of_owned_provinces_with = {
+				value = 10
+				religion = sarnaism
+			}
+		}
+		provinces_to_highlight = {
+			NOT = { religion = sarnaism }
+			NOT = { owned_by = ROOT }
+			any_neighbor_province = { owned_by = ROOT }
+		}
+		major = yes
+		allow = {
+			religion = sarnaism
+			prestige = 70
+			legitimacy_equivalent = 90
+			garjat_area = {
+				type = all
+				religion = sarnaism
+			}
+			upper_mahanadi_area = {
+				type = all
+				religion = sarnaism
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 16
+				religion = sarnaism
+			}
+		}
+		effect = {
+			hidden_effect = { set_country_flag = sarnaism_external_perfectionism_allow }
+			custom_tooltip = sarnaism_unlock_external_cb.tooltip
+			add_country_modifier = { 
+				name = sarnaism_manifest_destiny_modifier
+				duration = 7300
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+}

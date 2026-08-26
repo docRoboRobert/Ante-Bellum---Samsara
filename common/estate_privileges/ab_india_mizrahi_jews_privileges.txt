@@ -608,7 +608,6 @@ estate_mizrahi_jews_tax_collectors = {
 	}
 }
 
-
 estate_mizrahi_jews_extra_advisor = {
 	icon = jewish_advisors_plus
 	max_absolutism = -5

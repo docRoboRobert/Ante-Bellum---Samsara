@@ -31,50 +31,61 @@ historical_units = {
 }
 
 monarch_names = {
-	"Dilavar Khan #0" = 10
-	"Alp Khan Hushang #0" = 10
-	"Ghazni Khan #0" = 10
-	"Nasir Shah #0" = 10
-	"Salim Shah #0" = 10
-	"Baz Bahadur #0" = 10
-	"Mali Rao #0" = 10
-	"Ahalya Bai #0" = 10
-	"Mahmud Shah #0" = 20
-	"Ghiyath Shah #0" = 10
-	"Qadir Shah #0" = 10
-	"Shaja'at Khan #0" = 10
-	"Bahadur #0" = 10
-	"Mahmud  #0" = 0
-	"Ferishta #0" = 0
-	"Ghiyas-ud-din #0" = 0
-	"Qadir #0" = 0
-	"Mohammed #0" = 0
-	"Baz #0" = 0
-	"Salim #0" = 0
-	"Nasir #0" = 0
-	"Amir #0" = 0
-	"Hoshang #0" = 0
+	"Upendra #0" = 5
+	"Krishnraja #0" = 5
+	"Upendra Krishnraja #0" = 5
+	"Paramara #0" = 5
+	"Vairisimha #1" = 5
+	"Siyaka #2" = 5
+	"Vakpatiraj #2" = 5
+	"Mali Rao #0" = 5
+	"Ahalya Bai #0" = 5
+	"Vairisimha #2" = 5
+	"Sindhuraja #1" = 5
+	"Bhoja #2" = 5
+	"Jayasimha #1" = 5
+	"Udayaditya #0" = 5
+	"Lakshmadeva #0" = 5
+	"Naravarman #0" = 5
+	"Yashovarman #0" = 5
+	"Jayavarman #2" = 5
+	"Ballala #0" = 5
+	"Vindhyavarman #0" = 5
+	"Subhatavarman #0" = 5
+	"Arjunavarman #2" = 5
+	"Devapala #0" = 5
+	"Hoshang #0" = 5
+	"Jaitugideva #0" = 5
+	"Mahalakadeva #1" = 5
+	"Lakshmivarman #0" = 5
+	"Goga Deva #1" = 5
 	"Qudsia #0" = -5
-	"Hajjah #0" = -5
-	"Shahjahan Begum #0" = -5
+	"Vadaja #0" = -5
+	"Kusumavati #1" = -5
+	"Savitri #0" = -5
+	"Shashiprabha #0" = -5
+	"Lilavati #0" = -5
+	"Jayashri #0" = -5
+	"Sarvakala #1" = -5
 }
 
 leader_names = {
 	Mori
 	Haji
-	Uzbek
+	Mahala
 	Gilani
 	Paramara
 	Bahadur
 	Gauri
 	Jurjani
-	Khan
-	Malik
-	Sultan
-	Khorasani
+	Khandala
+	Malipal
+	Odauha
+	Parkom
 	Farooqi
 	Changezi
-	Turani
+	Bhoja
+	Deva
 	Latif
 	Bhilala
 	Solanki
@@ -86,6 +97,11 @@ leader_names = {
 	Pahore
 	Tomara
 	Solanki
+	Goga
+	Zoraman
+	Arwerak
+	Mani
+	Maboda
 }
 
 ship_names = {
@@ -94,5 +110,5 @@ ship_names = {
 	"Lal Jahazi" Mahi Narmada Nausena
 	"Nav ka Yudh" Niknaz "Nila Jahazi"
 	Niloufa Sagar Salima Suhalia Shameena
-	Shipra Yasmine
+	Shipra Yasmine Malwala Zoraman
 }

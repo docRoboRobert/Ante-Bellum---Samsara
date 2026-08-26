@@ -17,3 +17,25 @@ cb_chakravartin_order_crusade = {
 
 	war_goal = superiority_grand_crusade
 }
+
+cb_external_perfectionism_sarnaism = {
+	valid_for_subject = no
+	holy_war = yes
+	prerequisites_self = {
+		religion = sarnaism
+		is_revolutionary = no
+		OR = {
+			has_country_flag = sarnaism_external_perfectionism_allow
+			cb_on_religious_enemies = yes
+		}
+	}
+	prerequisites = {
+		is_neighbor_of = FROM
+		FROM = {
+			NOT = {
+				religion = ROOT
+			}
+		}
+	}
+	war_goal = superiority_crusade
+}

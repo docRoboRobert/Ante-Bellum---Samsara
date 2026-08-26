@@ -87,6 +87,15 @@
  estate_mizrahi_jews_indebted_to_mizrahi:0 "Take Loan from Mizrahi Merchants"
  estate_mizrahi_jews_indebted_to_mizrahi_desc:0 "Wealthy class of Mizrahi Mitnachal that specialize in commerce offer us extra monetary help in form of favourable loan. We can ask to borrow some money from them in exchange for minimal political influence."
  estate_mizrahi_jews_indebted_to_mizrahi_effect_tooltip:0 "Take §Yone§! five-year loan at §Y1%§! interest."
+ estate_mizrahi_jews_diplomacy_culture_translation:0 "Allow State Translators Positions"
+ estate_mizrahi_jews_diplomacy_culture_translation_desc:0 ""
+ estate_mizrahi_jews_vassal_tax_delegation:0 "Mizrahi Vassal Tribute Delegation"
+ estate_mizrahi_jews_vassal_tax_delegation_desc:0 ""
+ estate_mizrahi_jews_tax_collectors:0 "Establish Mizrahi Tax Collection Bureau"
+ estate_mizrahi_jews_tax_collectors_desc:0 ""
+ estate_mizrahi_jews_extra_advisor:0 "Permanent Seat in Advisory Board"
+ estate_mizrahi_jews_extra_advisor_desc:0 ""
+ estate_mizrahi_jews_extra_advisor_effect_tooltip:0 "Unlocks decision tooltip"
  
  #
  #Estate Hill Clans 

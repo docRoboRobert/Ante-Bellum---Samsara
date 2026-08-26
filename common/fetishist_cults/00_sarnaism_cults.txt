@@ -568,3 +568,695 @@ water_deity = {
 		}
 	}
 }
+
+bon_sarnaism_integration = {
+	defensiveness = 0.15
+	morale_damage_received = -0.05
+	hostile_attrition = 1
+
+	allow = {
+		religion = sarnaism
+		has_unlocked_cult = bon_sarnaism_integration
+	}
+	sprite = 34
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_militarist
+			factor = 1.5
+		}
+		modifier = {
+	        personality = ai_capitalist
+			factor = 1.2
+		}
+		modifier = {
+	        is_at_war = yes
+			factor = 1.5
+		}
+		modifier = {
+			capital_scope = { fort_level = 3 }
+			factor = 1.25
+		}
+	}
+}
+
+hinduism_sarnaism_integration = {
+	religious_unity = 0.25
+	diplomatic_reputation = 1
+	tolerance_heathen = 1
+
+	allow = {
+		religion = sarnaism
+		has_unlocked_cult = hinduism_sarnaism_integration
+	}
+	sprite = 36
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			NOT = { religious_unity = 0.75 }
+			factor = 1.25
+		}
+		modifier = {
+			NOT = { religious_unity = 0.6 }
+			factor = 1.5
+		}
+		modifier = {
+			NOT = { religious_unity = 0.5 }
+			factor = 1.5
+		}
+		modifier = {
+			NOT = { religious_unity = 0.33 }
+			factor = 1.75
+		}
+		modifier = {
+			NOT = { religious_unity = 0.25 }
+			factor = 2
+		}
+		modifier = {
+			NOT = { religious_unity = 0.1 }
+			factor = 2
+		}
+	}
+}
+
+jainism_sarnaism_integration = {
+	state_maintenance_modifier = -0.2
+	tolerance_heathen = 2
+	religious_unity = 0.1
+
+	allow = {
+		religion = sarnaism
+		has_unlocked_cult = jainism_sarnaism_integration
+	}
+	sprite = 35
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			NOT = { religious_unity = 0.75 }
+			factor = 1.25
+		}
+		modifier = {
+			NOT = { religious_unity = 0.5 }
+			factor = 1.5
+		}
+		modifier = {
+			NOT = { religious_unity = 0.33 }
+			factor = 1.75
+		}
+		modifier = {
+			NOT = { religious_unity = 0.25 }
+			factor = 2
+		}
+		modifier = {
+			average_unrest = 1
+			factor = 1.25
+		}
+		modifier = {
+			average_unrest = 2
+			factor = 1.5
+		}
+		modifier = {
+			average_unrest = 4
+			factor = 2
+		}
+		modifier = {
+			NOT = { current_income_balance = 0 }
+			factor = 1.5
+		}
+	}
+}
+
+nestorian_sarnaism_integration = {
+	improve_relation_modifier = 0.15
+	global_institution_spread = 0.1
+	religious_unity = 0.15
+
+	allow = {
+		religion = sarnaism
+		has_unlocked_cult = nestorian_sarnaism_integration
+	}
+	sprite = 37
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			NOT = { religious_unity = 0.75 }
+			factor = 1.25
+		}
+		modifier = {
+			NOT = { religious_unity = 0.6 }
+			factor = 1.25
+		}
+		modifier = {
+			NOT = { religious_unity = 0.5 }
+			factor = 1.5
+		}
+		modifier = {
+			NOT = { religious_unity = 0.33 }
+			factor = 1.75
+		}
+		modifier = {
+			NOT = { religious_unity = 0.25 }
+			factor = 2
+		}
+		modifier = {
+			is_lacking_institutions = yes
+			factor = 2.5
+		}
+		modifier = {
+			any_neighbor_country = {
+				tech_difference = 3
+			}
+			factor = 1.5
+		}
+	}
+}
+
+buddhism_sarnaism_integration = {
+	stability_cost_modifier = -0.1
+	religious_unity = 0.2
+	
+	allow = {
+		religion = sarnaism
+		has_unlocked_cult = buddhism_sarnaism_integration
+	}
+	sprite = 38
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			NOT = { religious_unity = 0.75 }
+			factor = 1.25
+		}
+		modifier = {
+			NOT = { religious_unity = 0.6 }
+			factor = 1.5
+		}
+		modifier = {
+			NOT = { religious_unity = 0.5 }
+			factor = 1.5
+		}
+		modifier = {
+			NOT = { religious_unity = 0.33 }
+			factor = 1.75
+		}
+		modifier = {
+			NOT = { religious_unity = 0.25 }
+			factor = 2
+		}
+		modifier = {
+			NOT = { religious_unity = 0.1 }
+			factor = 2
+		}
+		modifier = {
+			stability = 3
+			factor = 0.1
+		}
+		modifier = {
+			stability = 2
+			factor = 0.2
+		}
+		modifier = {
+			stability = 1
+			factor = 0.25
+		}
+		modifier = {
+			NOT = { stability = 1 }
+			factor = 1.1
+		}
+		modifier = {
+			NOT = { stability = 0 }
+			factor = 1.5
+		}
+		modifier = {
+			NOT = { stability = -1 }
+			factor = 2.5
+		}
+		modifier = {
+			NOT = { stability = -2 }
+			factor = 4
+		}
+	}
+}
+
+animism_sarnaism_integration = {
+	global_unrest = -1
+	native_uprising_chance = -0.5
+	native_assimilation = 0.25
+	
+	allow = {
+		religion = sarnaism
+		has_unlocked_cult = animism_sarnaism_integration
+	}
+	sprite = 39
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			stability = 1
+			factor = 0.1
+		}
+		modifier = {
+			NOT = { stability = 1 }
+			factor = 0.5
+		}
+		modifier = {
+			NOT = { stability = 0 }
+			factor = 1.1
+		}
+		modifier = {
+			NOT = { stability = -1 }
+			factor = 1.25
+		}
+		modifier = {
+			NOT = { stability = -2 }
+			factor = 2
+		}
+		modifier = {
+			num_of_colonies = 1
+			factor = 2.5
+		}
+		modifier = {
+			num_of_colonies = 3
+			factor = 2.5
+		}
+		modifier = {
+			num_of_colonists = 2
+			factor = 1.5
+		}
+		modifier = {
+			NOT = { num_of_colonists = 1 }
+			factor = 0.1
+		}
+		modifier = {
+			any_owned_province = { has_empty_adjacent_province = yes }
+			factor = 2
+		}
+	}
+}
+
+zunist_sarnaism_integration = {
+	land_morale = 0.10
+	leader_land_fire = 2
+	
+	allow = {
+		religion = sarnaism
+		has_unlocked_cult = zunist_sarnaism_integration
+	}
+	sprite = 40
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			is_at_war = yes
+			factor = 2.5
+		}
+		modifier = {
+			at_war_with_religious_enemy = yes
+			factor = 1.5
+		}
+		modifier = {
+			personality = ai_militarist
+			factor = 2.5
+		}
+	}
+}
+
+norse_sarnaism_integration = {
+	shock_damage = 0.10
+	recover_army_morale_speed = 0.05
+	naval_morale_damage = 0.1
+	
+	allow = {
+		religion = sarnaism
+		has_unlocked_cult = norse_sarnaism_integration
+	}
+	sprite = 41
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			is_at_war = yes
+			factor = 2
+		}
+		modifier = {
+			at_war_with_religious_enemy = yes
+			factor = 1.25
+		}
+		modifier = {
+			personality = ai_militarist
+			factor = 2.5
+		}
+		modifier = {
+			full_idea_group = naval_ideas
+			factor = 1.5
+		}
+		modifier = {
+			navy_size_percentage = 0.75
+			factor = 1.5
+		}
+		modifier = {
+			any_neighbor_country = { offensive_war_with = ROOT }
+			factor = 1.5
+		}
+	}
+}
+
+baltoslavic_sarnaism_integration = {
+	movement_speed = 0.10
+	development_cost = -0.1
+	religious_unity = 0.15
+	
+	allow = {
+		religion = sarnaism
+		has_unlocked_cult = baltoslavic_sarnaism_integration
+	}
+	sprite = 42
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			NOT = { religious_unity = 0.75 }
+			factor = 1.75
+		}
+		modifier = {
+			NOT = { religious_unity = 0.6 }
+			factor = 1.5
+		}
+		modifier = {
+			NOT = { religious_unity = 0.5 }
+			factor = 1.2
+		}
+		modifier = {
+			personality = ai_balanced
+			factor = 4
+		}
+	}
+}
+
+shamanism_sarnaism_integration = {
+	stability_cost_modifier = -0.15
+	manpower_recovery_speed = 0.10
+	land_attrition = -0.1
+	
+	allow = {
+		religion = sarnaism
+		has_unlocked_cult = shamanism_sarnaism_integration
+	}
+	sprite = 43
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_balanced
+			factor = 1.25
+		}
+		modifier = {
+			is_at_war = yes
+			factor = 2
+		}
+		modifier = {
+			at_war_with_religious_enemy = yes
+			factor = 1.25
+		}
+		modifier = {
+			personality = ai_militarist
+			factor = 2
+		}
+		modifier = {
+			NOT = { manpower_percentage = 0.75 }
+			factor = 1.25
+		}
+		modifier = {
+			NOT = { manpower_percentage = 0.5 }
+			factor = 1.5
+		}
+		modifier = {
+			NOT = { manpower_percentage = 0.33 }
+			factor = 1.75
+		}
+		modifier = {
+			NOT = { manpower_percentage = 0.25 }
+			factor = 2
+		}
+		modifier = {
+			NOT = { manpower_percentage = 0.01 }
+			factor = 3
+		}
+		modifier = {
+			NOT = { stability = -1 }
+			factor = 1.5
+		}
+		modifier = {
+			NOT = { stability = -2 }
+			factor = 1.75
+		}
+	}
+}
+
+islam_sarnaism_integration = {
+	ae_impact = -0.15
+	global_tax_modifier = 0.1
+	administrative_efficiency = 0.05
+	
+	allow = {
+		religion = sarnaism
+		has_unlocked_cult = islam_sarnaism_integration
+	}
+	sprite = 44
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_balanced
+			factor = 1.5
+		}
+		modifier = {
+			is_at_war = yes
+			factor = 2.5
+		}
+		modifier = {
+			at_war_with_religious_enemy = yes
+			factor = 1.25
+		}
+		modifier = {
+			personality = ai_militarist
+			factor = 4
+		}
+	}
+}
+
+malankara_sarnaism_integration = {
+	global_prov_trade_power_modifier = 0.1
+	technology_cost = -0.1
+	
+	allow = {
+		religion = sarnaism
+		has_unlocked_cult = malankara_sarnaism_integration
+	}
+	sprite = 45
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_balanced
+			factor = 2.5
+		}
+		modifier = {
+			personality = ai_capitalist
+			factor = 2.5
+		}
+		modifier = {
+			is_lacking_institutions = yes
+			factor = 1.25
+		}
+		modifier = {
+			any_neighbor_country = {
+				tech_difference = 2
+			}
+			factor = 1.5
+		}
+		modifier = {
+			any_neighbor_country = {
+				tech_difference = 3
+			}
+			factor = 1.75
+		}
+	}
+}
+
+tengri_sarnaism_integration = {
+	core_creation = -0.1
+	cavalry_cost = -0.10
+	cavalry_shock = 1
+	
+	allow = {
+		religion = sarnaism
+		has_unlocked_cult = tengri_sarnaism_integration
+	}
+	sprite = 46
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_militarist
+			factor = 2.5
+		}
+		modifier = {
+			is_at_war = yes
+			factor = 1.2
+		}
+		modifier = {
+			cavalry_fraction = 0.33
+			factor = 1.5
+		}
+		modifier = {
+			cavalry_fraction = 0.5
+			factor = 2
+		}
+		modifier = {
+			cavalry_fraction = 0.75
+			factor = 3
+		}
+		modifier = {
+			has_global_modifier_value = {
+				which = cavalry_power
+				value = 0.5
+			}
+			factor = 2
+		}
+		modifier = {
+			NOT = { core_percentage = 0.99 }
+			factor = 2
+		}
+	}
+}
+
+jewish_sarnaism_integration = {
+	num_accepted_cultures = 2
+	spy_offence = 0.2
+	monthly_gold_inflation_modifier = -0.2
+	
+	allow = {
+		religion = sarnaism
+		has_unlocked_cult = jewish_sarnaism_integration
+	}
+	sprite = 47
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_balanced
+			factor = 2.5
+		}
+		modifier = {
+			personality = ai_capitalist
+			factor = 2.5
+		}
+		modifier = {
+			gold_income_percentage = 0.1
+			factor = 1.25
+		}
+		modifier = {
+			gold_income_percentage = 0.25
+			factor = 1.5
+		}
+		modifier = {
+			gold_income_percentage = 0.33
+			factor = 1.75
+		}
+		modifier = {
+			inflation = 5
+			factor = 1.2
+		}
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 3
+				trade_goods = gold
+			}
+			factor = 1.5
+		}
+	}
+}
+
+zoroastrian_sarnaism_integration = {
+	advisor_cost = -0.15
+	infantry_power = 0.10
+	
+	allow = {
+		religion = sarnaism
+		has_unlocked_cult = zoroastrian_sarnaism_integration
+	}
+	sprite = 48
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_balanced
+			factor = 3
+		}
+		modifier = {
+			personality = ai_militarist
+			factor = 1.5
+		}
+		modifier = {
+			is_at_war = yes
+			factor = 1.2
+		}
+		modifier = {
+			infantry_fraction = 0.67
+			factor = 1.5
+		}
+		modifier = {
+			infantry_fraction = 0.8
+			factor = 2
+		}
+		modifier = {
+			has_global_modifier_value = {
+				which = infantry_power
+				value = 0.2
+			}
+			factor = 3
+		}
+	}
+}
+
+confucian_sarnaism_integration = {
+	all_estate_loyalty_equilibrium = 0.1
+	monthly_reform_progress_modifier = 0.1
+	advisor_cost = -0.1
+	
+	allow = {
+		religion = sarnaism
+		has_unlocked_cult = confucian_sarnaism_integration
+	}
+	sprite = 49
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_balanced
+			factor = 3.5
+		}
+		modifier = {
+			NOT = { crown_land_share = 50 }
+			factor = 2
+		}
+		modifier = {
+			NOT = { crown_land_share = 33 }
+			factor = 2
+		}
+		modifier = {
+			reform_level = 5
+			is_tribal = yes
+			factor = 0.5
+		}
+		modifier = {
+			reform_level = 9
+			factor = 0.5
+		}
+	}
+}
