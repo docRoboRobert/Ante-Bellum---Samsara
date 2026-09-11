@@ -2608,3 +2608,96 @@ ECL_ideas = {
 		trade_efficiency = 0.1
 	}
 }
+
+#Seuna Ideas
+YAD_ideas = {
+	start = {
+		move_capital_cost_modifier = -0.5
+		fabricate_claims_cost = -0.15
+	}
+	
+	bonus = {
+		envoy_travel_time = -0.2
+	}
+	
+	trigger = {
+		tag = YAD
+	}
+	free = yes
+
+	YAD_legend_of_yadu = {
+		land_morale = 0.10
+		warscore_from_battles_modifier = 0.2
+	}
+	YAD_legitimizing_ancestry = {
+		improve_relation_modifier = 0.1
+		legitimacy = 1
+		republican_tradition = 1
+		devotion = 1
+		horde_unity = 1
+		meritocracy = 1
+	}
+	YAD_towards_homeland = {
+		core_creation = -0.1
+		governing_capacity_modifier = 0.1
+	}
+	YAD_between_two_rivers = {
+		defensiveness = 0.10
+		development_cost = -0.05
+	}
+	YAD_jain_legend = {
+		tolerance_heathen = 2
+	}
+	YAD_incorporate_marathas = {
+		leader_land_fire = 1
+		manpower_in_accepted_culture_provinces = 0.15
+	}
+	YAD_konkan_trade = {
+		global_trade_goods_size_modifier = 0.05
+	}
+}
+
+#Yadava Empire Ideas
+YDW_ideas = {
+	start = {
+		siege_ability = 0.15
+		fabricate_claims_cost = -0.15
+	}
+	
+	bonus = {
+		movement_speed = 0.15
+	}
+	
+	trigger = {
+		tag = YDW
+	}
+	free = yes
+
+	YDW_legend_of_yadu = {
+		land_morale = 0.10
+		warscore_from_battles_modifier = 0.2
+	}
+	YDW_legitimate_mathura_rule = {
+		monthly_splendor = 1
+		diplomatic_reputation = 1
+	}
+	YDW_unitied_homeland = {
+		manpower_in_culture_group_provinces = 0.2
+		state_governing_cost = -0.15
+	}
+	YDW_develop_old_wonders = {
+		build_cost = -0.15
+		development_cost = -0.1
+	}
+	YDW_jain_integration = {
+		tolerance_heathen = 2
+		num_accepted_cultures = 1
+	}
+	YDW_build_yadava_legend = {
+		max_general_fire = 1
+		liberty_desire_from_subject_development = -0.125
+	}
+	YDW_administrating_empire = {
+		administrative_efficiency = 0.075
+	}
+}
