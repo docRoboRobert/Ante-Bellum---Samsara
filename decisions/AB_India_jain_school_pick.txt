@@ -54,4 +54,165 @@ country_decisions = {
 		}
 		ai_importance = 25
 	}
+	
+	india_convert_to_jainism = {
+		potential = {
+			NOT = { religion = jainism }
+			OR = {
+				capital_scope = { superregion = india_superregion }
+				religion = hinduism
+			}
+			any_owned_province = { religion = jainism }
+		}
+		allow = {
+			OR = {
+				capital_scope = { superregion = india_superregion }
+				religion = hinduism
+			}
+			any_owned_province = { religion = jainism }
+			NOT = { secondary_religion = jainism }
+			NOT = { religion = malankara }
+			NOT = { religion = nestorian }
+			NOT = { religion_group = muslim }
+			OR = {
+				num_of_religion = {
+					religion = jainism
+					value = 0.75
+				}
+				AND = {
+					dominant_religion = jainism
+					num_of_religion = {
+						religion = jainism
+						value = 0.5
+					}
+					NOT = { religious_unity = 0.8 }
+				}
+			}
+			has_any_disaster = no
+			stability = 1
+			NOT = { ruler_has_personality = zealot_personality }
+		}
+		effect = {
+			add_prestige = -25
+			add_stability = -2
+			change_religion = jainism
+			if = {
+				limit = {
+					NOT = {
+						num_of_religion = {
+							religion = jainism
+							value = 0.9
+						}
+					}
+				}
+				random_owned_province = {
+					limit = {
+						NOT = { religion = jainism }
+					}
+					spawn_rebels = {
+						type = noble_rebels
+						size = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						num_of_religion = {
+							religion = jainism
+							value = 0.5
+						}
+						religious_unity = 0.8
+					}
+				}
+				add_country_modifier = {
+					name = abi_unpopular_jain_conversion
+					duration = 3650
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					num_of_religion = {
+						religion = jainism
+						value = 0.6
+					}
+				}
+			}
+			modifier = {
+				factor = 0.1
+				NOT = {
+					num_of_religion = {
+						religion = jainism
+						value = 0.7
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					num_of_religion = {
+						religion = jainism
+						value = 0.75
+					}
+				}
+			}
+			modifier = {
+				factor = 0.75
+				NOT = {
+					num_of_religion = {
+						religion = jainism
+						value = 0.8
+					}
+				}
+			}
+			modifier = {
+				factor = 1.25
+				NOT = {
+					num_of_religion = {
+						religion = jainism
+						value = 0.9
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					num_of_religion = {
+						religion = jainism
+						value = 0.95
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+			modifier = {
+				factor = 0
+				government = theocracy
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { stability = 2 }
+			}
+			modifier = {
+				factor = 0.1
+				NOT = { prestige = 50 }
+				prestige = -60
+			}
+			modifier = {
+				factor = 2.5
+				NOT = { prestige = -60 }
+			}
+			modifier = {
+				factor = 1.25
+				prestige = 75
+			}
+		}
+		ai_importance = 50
+	}
 }

@@ -78,8 +78,14 @@
  abi_united_maratha_formation_desc:0 "After the fall of first Maratha Confederacy, Marathi people have been left without clear state identity. We can revert that and revive unified Marathas state if we manage to once again secure key forts and areas of Maratho homeland. With that, the Maratha warriors will once again gather under our strong leadership and begin marching under one banner."
  marathas_formation_tooltip:0 "Marathi state is once again united! Our brothers and sisters may be unified under one common banner. Maratho realm is now rightfully ours and people living within it will confirm it. Thus, we will gain §Gcore on every province with§! §MMarathi§! §Gor§! §MKonkan§! §Gculture§!."
  abi_yadava_formation_title:0 "@YDW Reclaim Homeland of the Yadavas"
- abi_yadava_formation_desc: "According to old legends and literature, Seuna family directly descends from the ancient Yadava dynasty that once ruled Yaudheya in Upper Doab before being exiled (Mahabharata) to Dwarka. Around 850 earliest rulers of Seuna came to rule land south of Narmanda river, claiming direct descent from old Yadavas. Known as Yadavas of Devagiri, Seuna kings can once again reclaim the long-lost cradle and truly legitimize their identity shall they reconquer the land between Mathura and Sirhind."
+ abi_yadava_formation_desc:0 "According to old legends and literature, Seuna family directly descends from the ancient Yadava dynasty that once ruled Yaudheya in Upper Doab before being exiled (Mahabharata) to Dwarka. Around 850 earliest rulers of Seuna came to rule land south of Narmanda river, claiming direct descent from old Yadavas. Known as Yadavas of Devagiri, Seuna kings can once again reclaim the long-lost cradle and truly legitimize their identity shall they reconquer the land between Mathura and Sirhind."
  yadava_formation_tooltip:0 "§YGain§! §GCore§! §Yon every province within the§! §MHindustani§! §Yculture group.§!"
+ abi_unite_low_chhattisgarh_title:0 "@LCH Unite Low Chhattisgarh"
+ abi_unite_low_chhattisgarh_desc:0 "Unite the Gondi and Garjati tribes of Low Chhattisgarh into one central entity. Together, communities of South-Western Gond have a chance to prosper."
+ abi_reunite_garjat_title:0 "Re-unite Garjat Kingdom"
+ abi_reunite_garjat_desc:0 "Previous state of Garjat has fallen into disarray and the lands of Eastern Indian Hills, where Garjati people live, remain scattered. Shall one tribe unite Garjat area and reclaim the lost land, Kingdom of Garjat can once again see the rise and prosperity in the lands dominated by jungle."
+ abi_unite_chhattisgarh_title:0 "@CTG Complete Unification of Chhattisgarh @CTG"
+ abi_unite_chhattisgarh_desc:0 "Low Chhattisgarh in the south and High Chhattisgarh in the north exist as separate entities but once one of them rises to control the other, both realms can be united and whole Chhattisgarh would stand united against other Garjati tribes or even external threats. For the first time in history, wild and disunified states of Eastern Indian Hills can see centralized state."
  
  #Malankara decisions
  
@@ -105,6 +111,8 @@
  india_pick_jain_school_title:0 "Change Jain school of thought"
  india_pick_jain_school_desc:0 "Jain branch we are currently following no longer suits our nation. We shall pick new jain school to follow and invite new scholars."
  india_pick_jain_school_cooldown_tooltip:0 "Did not change religious school in the last §Y10 Years§!"
+ india_convert_to_jainism_title:0 "Convert to Jainism"
+ india_convert_to_jainism_desc:0 "Jainism has spread to our nation's borders. With its growing popularity, its influence becomes too great to ignore. With enough population adopting Jainism as their faith, maybe it's time for the rulers and court to do the same. Abandoning our old faith will be met with strong rection though."
  
  #Sarnaism religious integration
  

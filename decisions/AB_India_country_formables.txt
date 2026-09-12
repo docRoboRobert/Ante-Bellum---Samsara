@@ -2689,4 +2689,217 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
+	
+	abi_unite_low_chhattisgarh = {
+		major = yes
+		potential = {
+			NOT = { tag = GON }
+			OR = {
+				tag = BST
+				tag = KNK
+				tag = RTT
+				primary_culture = gondi
+				primary_culture = garjati
+			}
+			NOT = { has_country_flag = formed_LCH_flag }
+			NOT = { exists = LCH }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5212
+				province_id = 547
+				province_id = 4445
+				province_id = 2082
+				province_id = 4452
+			}
+		}
+		allow = {
+			NOT = { exists = LCH }
+			legitimacy_equivalent = 70
+			prestige = 20
+			owns_core_province = 5212
+			owns_core_province = 547
+			owns_core_province = 4445
+			owns_core_province = 2082
+			owns_core_province = 4452
+			OR = {
+				primary_culture = gondi
+				primary_culture = garjati
+			}
+		}
+		effect = {
+			change_tag = LCH
+			restore_country_name = yes
+			add_prestige = 20
+			set_capital = 2082
+			set_government_rank = 2
+			2082 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+				add_devastation = -50
+				add_prosperity = 50
+			}
+			upper_mahanadi_area = {
+				add_permanent_claim = ROOT
+			}
+			every_province = {
+				limit = { is_core = NCH }
+				add_core = ROOT
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_LCH_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_army_tradition = 10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	abi_reunite_garjat = {
+		major = yes
+		potential = {
+			NOT = { tag = GRJ }
+			NOT = { tag = GON }
+			NOT = { tag = NCH }
+			NOT = { tag = LCH }
+			primary_culture = garjati
+			NOT = { has_country_flag = formed_garjat_flag }
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = garjat_area
+				province_id = 4447
+				province_id = 2049
+				province_id = 4451
+			}
+		}
+		allow = {
+			NOT = { exists = GRJ }
+			garjat_area = {
+				type = all
+				owned_by = ROOT
+			}
+			owns_core_province = 4447
+			owns_core_province = 2049
+			owns_core_province = 4451
+			primary_culture = garjati
+		}
+		effect = {
+			change_tag = GRJ
+			restore_country_name = yes
+			add_prestige = 20
+			set_government_rank = 2
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				add_devastation = -25
+				add_prosperity = 25
+			}
+			upper_mahanadi_area = {
+				add_permanent_claim = ROOT
+			}
+			5213 = { add_permanent_claim = ROOT }
+			swap_non_generic_missions = yes
+			set_country_flag = formed_garjat_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_army_tradition = 10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	abi_unite_chhattisgarh = {
+		major = yes
+		potential = {
+			OR = {
+				tag = NCH
+				tag = LCH
+			}
+			NOT = { has_country_flag = formed_chhattisgarh_flag }
+			NOT = { exists = CTG }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5212
+				province_id = 547
+				province_id = 4445
+				province_id = 2082
+				province_id = 4452
+				province_id = 5219
+				province_id = 2098
+				province_id = 5216
+				province_id = 553
+			}
+		}
+		allow = {
+			NOT = { exists = CTG }
+			owns_core_province = 5212
+			owns_core_province = 547
+			owns_core_province = 4445
+			owns_core_province = 2082
+			owns_core_province = 4452
+			owns_core_province = 5219
+			owns_core_province = 2098
+			owns_core_province = 5216
+			owns_core_province = 553
+		}
+		effect = {
+			change_tag = CTG
+			restore_country_name = yes
+			add_prestige = 10
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			set_capital = 553
+			553 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				add_devastation = -25
+				add_prosperity = 25
+			}
+			every_province = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					region = bengal_region
+					culture_group = central_indic
+				}
+				add_permanent_claim = ROOT
+			}
+			swap_non_generic_missions = yes
+			set_country_flag = formed_chhattisgarh_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_army_tradition = 10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
 }

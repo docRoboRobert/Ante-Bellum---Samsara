@@ -94,6 +94,8 @@
  #Decision rewards modifiers
  sarnaism_manifest_destiny_modifier:0 "Advance Sarna's Destiny"
  desc_sarnaism_manifest_destiny_modifier:0 "With Sarnaism on the rise, we are more then blessed to manifest its destiny and spread our faith outside of our homeland hills. The wave of religious fervor overwhelms our people."
+ abi_unpopular_jain_conversion:0 "Unpopular Conversion"
+ desc_abi_unpopular_jain_conversion:0 "Our recent conversion to Jainism was met with widespread dissatisfaction and unrest on all societal levels as large portion of our nation still doesn't follow the new faith. The wide opposition that doesn't follow Jainism is causing a lot of problems to our reforming society."
  
  #Permanent province modifiers
  narmada_river_estuary_modifier:0 "Narmada Estuary"
